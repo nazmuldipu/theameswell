@@ -1,0 +1,38 @@
+{
+  "name": "skipper-site-template",
+  "version": "1.0.0",
+  "description": "Skipper Hospitality Website Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "NODE_ENV=production node tooling/build.js.js",
+    "watch:js": "node tooling/dev.js.js",
+    "build:html": "NODE_ENV=production npx @11ty/eleventy --config=.eleventy.cjs",
+    "watch:css": "node tooling/dev.css.js",
+    "build:css": "NODE_ENV=production node tooling/build.css.js",
+    "build": "NODE_ENV=production node tooling/build.js",
+    "watch:html": "npx @11ty/eleventy --config=.eleventy.cjs --serve",
+    "watch": "node tooling/dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "type": "module",
+  "author": "Skipper Hospitality",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.2.3",
+    "browser-sync": "^2.26.14",
+    "chokidar": "^3.5.1",
+    "cssnano": "^4.1.10",
+    "esbuild": "^0.8.28",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-nesting": "^7.0.1",
+    "tailwindcss": "^2.0.2"
+  }
+}

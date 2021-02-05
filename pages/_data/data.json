@@ -1,0 +1,9 @@
+{
+    "ga_id": "FAKE_ID",
+    "fonts": [
+        {
+            "href": "fonts/SpaceMono-Regular.ttf",
+            "type": "font/ttf"
+        }
+    ]
+}

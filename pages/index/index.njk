@@ -1,0 +1,18 @@
+---
+layout: base.njk
+pagename: index
+meta_title: "The Index Page"
+permalink: "build/index.html"
+permalinkBypassOutputDir: true
+nickname: "You Thing"
+---
+
+<article>
+    <section x-data="{x: 'PIIi'}" x-init="console.log(x)">
+        <h1>BYE BYE There {{ fake_name }} you {{ nickname }}</h1>
+        <h2 class="hover:text-indigo-900">YO DUDE DUUDE</h2>
+        <h3 x-cloak>alpineJS has Loaded</h3>
+        <h4 x-html="x"></h4>
+        <p class="w-24 medium:w-32 large:w-64 text-xl text-purple-400 large:text-blue-500">TEST TEST TEST</p>
+    </section>
+</article>

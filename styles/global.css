@@ -1,0 +1,67 @@
+/****  start imports  ********************************/
+@import "./variables.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/****  end imports  ********************************/
+
+/**** base style additions ****/
+/** https://tailwindcss.com/docs/functions-and-directives#layer **/
+@layer base {
+    @font-face {
+        font-display: swap;
+        font-family: 'SpaceMono';
+        src: url('../fonts/SpaceMono-Regular.ttf');
+        font-weight: 700;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
+}
+
+/**** custom utilities ****/
+@layer utilities {
+    /** https://tailwindcss.com/docs/functions-and-directives#variants **/
+    @variants responsive {
+        .wrmode-vrl {
+            writing-mode: vertical-rl;
+        }
+        .wrmode-vlr {
+            writing-mode: vertical-lr;
+        }
+        .wrmode-htb {
+            writing-mode: horizontal-tb;
+        }
+    }
+}
+
+/**** custom component styles ****/
+/** https://tailwindcss.com/docs/functions-and-directives#apply **/
+@layer components {
+    /** https://tailwindcss.com/docs/functions-and-directives#responsive **/
+    @responsive {
+        .btn-purple {
+            @apply py-2 px-4 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75;
+        }
+    }
+
+    /** https://tailwindcss.com/docs/functions-and-directives#screen **/
+    @screen medium {
+        .subtitle {
+            text-decoration: underline;
+        }
+    }
+}
+
+x-cloak {
+    display: none;
+}
+
+body {
+    font-family: 'SpaceMono', monospace;
+    font-size: var(--base-font-size);
+    background-color: var(--color__primary);
+    color: var(--color__secondary);
+    /** https://tailwindcss.com/docs/functions-and-directives#theme **/
+    font-weight: theme('fontWeight.medium');
+}

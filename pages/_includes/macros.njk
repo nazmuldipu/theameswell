@@ -1,0 +1,30 @@
+{% macro cardcard(title, eyebrow, description, image, alt, url)%}
+<div class="container px-12 mx-auto grid grid-cols-3 gap-2 place-items-auto">
+    <img class="rounded" src="{{ image }}" alt="{{ alt }}">
+    <div class="mt-2">
+      <div>
+        <div class="text-xs text-green-300 uppercase font-bold">{{ eyebrow }}</div>
+        <div class="font-bold text-green-400 leading-snug">
+          <a href="{{ url }}" class="hover:underline">{{ title }}</a>
+        </div>
+        <div class="mt-2 text-sm text-green-300">{{ description }}</div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro tester(foo, bar) %}
+<h1 class="text-purple-700 font-bold uppercase">{{ foo }} {{ bar }}</h1>
+{% endmacro %}
+
+{% macro section_maker(section) %}
+<div class="container mx-auto bg-{{ section.backgroundColor }}">
+    <div class="grid place-content-stretch {{ section.grid.backgroundColor }} {{ section.grid.cols | join(' ')}} {{ section.grid.gaps | join(' ') }}">
+    {% for component in section.components %}
+        <div class="{{ component.classes | join(' ') }}">
+          {% include component.path %}
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endmacro %}

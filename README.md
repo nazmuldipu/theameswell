@@ -1,1 +1,1 @@
-# theameswell
+# SKIPPER SITE TEMPLATE

@@ -1,0 +1,10 @@
+/* colors */
+:root {
+    --color__primary: #870000;
+    --color__secondary: #00bed3;
+    --color_tertiary: #4a8546;
+}
+/* fonts */
+:root {
+    --base-font-size: calc(32px + (52 - 32) * ((100vw - 320px) / (1600 - 320))); /* 32px - 52px */
+}
