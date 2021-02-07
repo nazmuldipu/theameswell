@@ -40,18 +40,36 @@ module.exports = {
         serif: ['Eksell Display Small', 'serif']
       },
       gridTemplateRows: {
-        'hero-row--home': '120px auto',
-        'hero-row__xmed--home': '230px auto'
-      }
+        'hero-home': '400px auto',
+        'slideshow': 'repeat(3, auto)'
+      },
+      gridTemplateColumns: {
+        'sm-main-sm': '20% auto 20%',
+        '40-60': '2fr 3fr',
+        'slideshow': '55% 45%'
+      },
+      gridTemplateAreas: {
+        'slideshow': ['slide', 'details', 'amenities', 'cta'],
+        'slideshow-xmed': ['slide slide', 'amenities cta', 'amenities details']
+      },
+      textIndent: (theme, { negative }) => ({
+        ...negative({
+          'xl': '9999px'
+        }),
+      }),
     },
   },
   variants: {
+    textIndent: ['responsive'],
+    gridTemplateAreas: ['responsive'],
     extend: {
       textColor: ['active'],
       backgroundColor: ['active']
     },
   },
   plugins: [
+    require('@savvywombat/tailwindcss-grid-areas'),
+    require('tailwindcss-text-indent')(),
     plugin(function({ addUtilities, addComponents, theme }) {
       const utilities = {
         '.txtor-mixed': {
