@@ -65,11 +65,26 @@
     }
 }
 
+
+/****  start base styles  ********************************/
 x-cloak {
     display: none;
 }
+.segment__cta--link:after{
+    content: '';
+    display: block;
+    border-top: solid 1px theme(colors.ams-gold);
+    bottom: -4px;
+    height: 0;
+    left: 40%;
+    margin: 0 auto;
+    position: absolute;
+    width: 20%;
+}
+/****  end base styles  ********************************/
 
 
+/****  start page-header  ********************************/
 .page-header__menu {
     transform: scaleY(0);
 }
@@ -82,22 +97,35 @@ x-cloak {
     transition: transform 0.3s ease-in;
     transform-origin: top;
 }
-
-.segment__cta--link:after{
+.page-header__toggle-button:before,
+.page-header__toggle-button:after {
+    border-top: solid 1px theme(colors.ams-white);
     content: '';
     display: block;
-    border-top: solid 1px theme(colors.ams-gold);
-    bottom: -4px;
-    height: 0;
-    left: 40%;
-    margin: 0 auto;
     position: absolute;
-    width: 20%;
+    top: 6.5px;
+    transition: transform 0.3s ease;
+    width: 100%;
 }
+.page-header__toggle-button:after {
+    top: 14.5px;
+}
+.page-header__toggle:checked ~ .page-header__toggle-button {
+    border-top: 0;
+}
+.page-header__toggle:checked ~ .page-header__toggle-button:before,
+.page-header__toggle:checked ~ .page-header__toggle-button:after {
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg);
+}
+.page-header__toggle:checked ~ .page-header__toggle-button:after {
+    transform: rotate(-45deg);
+}
+/****  end page-header  ********************************/
 
 
-
-/* start index page specific styling */
+/****  start page-index ********************************/
 .page-index .page-header--docked{
     background: transparent;
 }
@@ -118,7 +146,7 @@ x-cloak {
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__label{
+    .page-index .page-header--docked .page-header__toggle-button{
         display: none;
     }
 }
@@ -140,7 +168,13 @@ x-cloak {
         width: 100%;
     }
 }
-/* end index page specific styling */
+@media all and ( min-width: 900px ) {
+    /* TODO: removing menu close transition on home due to docked styling at top, perhaps consider a different approach to animation? */
+    .page-index .page-header:not(.page-header--docked) .page-header__toggle:not(:checked) ~ .page-header__menu {
+        transition: all 0s ease 0s;
+    }
+}
+/****  end page-index ********************************/
 
 
 
