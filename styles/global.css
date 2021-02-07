@@ -17,6 +17,18 @@
         font-style: normal;
         unicode-range: U+000-5FF;
     }
+
+    .title--1,
+    .title--2,
+    .title--3,
+    .title--4,
+    .title--5 {
+        @apply text-ams-primary;
+        @apply font-serif;
+        @apply pb-3;
+    }
+
+
 }
 
 /**** custom utilities ****/
@@ -57,11 +69,92 @@ x-cloak {
     display: none;
 }
 
+
+.page-header__menu {
+    transform: scaleY(0);
+}
+.page-header__toggle:checked ~ .page-header__menu {
+    transition: transform 0.3s ease-out;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.page-header__toggle:not(:checked) ~ .page-header__menu {
+    transition: transform 0.3s ease-in;
+    transform-origin: top;
+}
+
+.segment__cta--link:after{
+    content: '';
+    display: block;
+    border-top: solid 1px theme(colors.ams-gold);
+    bottom: -4px;
+    height: 0;
+    left: 40%;
+    margin: 0 auto;
+    position: absolute;
+    width: 20%;
+}
+
+
+
+/* start index page specific styling */
+.page-index .page-header--docked{
+    background: transparent;
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked{
+        grid-template-columns: 100%;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__logo{
+        display: none;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__nav{
+        justify-items: center;
+        margin-top: 80px;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__label{
+        display: none;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__menu{
+        background: transparent;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 40px;
+        grid-template-columns: auto;
+        height: auto;
+        justify-content: space-between;
+        max-width: 1008px;
+        padding: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: scaleY(1);
+        width: 100%;
+    }
+}
+/* end index page specific styling */
+
+
+
+
+
+
+
+
+/** https://tailwindcss.com/docs/functions-and-directives#theme **/
+/*
 body {
     font-family: 'SpaceMono', monospace;
     font-size: var(--base-font-size);
-    background-color: var(--color__primary);
     color: var(--color__secondary);
-    /** https://tailwindcss.com/docs/functions-and-directives#theme **/
     font-weight: theme('fontWeight.medium');
 }
+*/
