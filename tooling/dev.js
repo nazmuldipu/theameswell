@@ -62,7 +62,7 @@ try {
         // 11ty
         exec('npm run build:html')
     ]);
-    console.log('js and css and htlm built; now setting up dev server and file watchers');
+    console.log('js and css and html built; now setting up dev server and file watchers');
     // watch
     const watcher = chokidar.watch(
         [
@@ -93,6 +93,19 @@ try {
         ui: false,
         port: 8080
     });
+
+    const exitHandler = signal => {
+        console.log(`received termination signal ${signal}. Cleaning up and exiting`);
+        bs.exit();
+        watcher.close().then(() => {
+            console.log('watcher and browsersync safely terminated');
+            process.exit(0);
+        });
+    }
+    process.on('SIGINT', exitHandler);
+    process.on('SIGABRT', exitHandler);
+    process.on('SIGQUIT', exitHandler);
+    process.on('SIGTERM', exitHandler);
 }
 catch(e) {
     console.log('ERROR in DEV build and watching: ', e)

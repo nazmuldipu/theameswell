@@ -31,8 +31,8 @@ const rebuildPageJSON = async (assetMap) => {
     return await Promise.all(promises);
 }
 
-const isTemplateFile = path => {
-    switch(extname(path)) {
+const isTemplateExt = ext => {
+    switch(ext) {
         case '.njk':
         case '.json':
             return true;
@@ -69,11 +69,21 @@ const shouldRebuildPageJSON = path => {
  * @param {URL} outputDir
  * @param {Function} cb -- a callback to execute at the end of the event handler
  */
-export const watchEventHandler = (watcher, extensions, outputDir, cb) => event => async path => {
+
+// to do -- may want to eventually evolve these stateful variables
+// enclosed in this module and closed over by the exported handler
+// into a proper class
+let isCurrentlyBuilding = false;
+let nextBuild;
+let buildTypes = new Set();
+
+const rebuildAssets = async (
+    watcher, extensions, outputDir, cb, event, pathsToBuild, path
+) => {
     console.log(`REBUILDING event::'${event}'`, path);
     const pageAssetMap = getPageAssetsExtMap(PAGES_DIR, extensions);
     const buildPromises = [];
-    if (pageAssetMap.has('.css') && extname(path) === '.css') {
+    if (pageAssetMap.has('.css') && pathsToBuild.has('.css')) {
         buildPromises.push(
             buildCSS(
                 pageAssetMap.get('.css'),
@@ -82,7 +92,7 @@ export const watchEventHandler = (watcher, extensions, outputDir, cb) => event =
             )
         );
     }
-    if (pageAssetMap.has('.js') && extname(path) === '.js') {
+    if (pageAssetMap.has('.js') && pathsToBuild.has('.js')) {
         buildPromises.push(
             buildJS(
                 pageAssetMap.get('.js'),
@@ -92,7 +102,7 @@ export const watchEventHandler = (watcher, extensions, outputDir, cb) => event =
             ).then(({ buildDeps }) => buildDeps)
         );
     }
-    if (isTemplateFile(path)) {
+    if ([...pathsToBuild].some(isTemplateExt)) {
         // we assume no need to add or remove manual files for this
         // class of files
         // resolves to a set to match resolutions of CSS and JS promises
@@ -102,20 +112,61 @@ export const watchEventHandler = (watcher, extensions, outputDir, cb) => event =
     }
     let depPathSet = await Promise.all(buildPromises)
                                 .then(pathSets => setUnion(pathSets));
+                                // need to get extensions to govern build process, push to promises for Promises.all
+    const watchedFiles = getWatchedPaths(watcher);
+    const watchedFilesSet = new Set(watchedFiles);
+    // we want to add dependencies that are not yet watched
+    const pathsToAdd = setDifference(depPathSet, watchedFilesSet);
+
+    watcher.add([...pathsToAdd]);
     console.log('ASSETS REBUILT');
 
     if (shouldRebuildPageJSON(path)) {
         await rebuildPageJSON(pageAssetMap);
         console.log('JSON metafiles rebuilt');
     }
-    // need to get extensions to govern build process, push to promises for Promises.all
-    const watchedFiles = getWatchedPaths(watcher);
-    const watchedFilesSet = new Set(watchedFiles);
-    const pathsToAdd = setDifference(depPathSet, watchedFilesSet);
 
-    watcher.add([...pathsToAdd]);
     console.log('REBUILD DONE');
     if (cb) {
         cb();
+    }
+    // kickoff enqueued build if available
+    if (nextBuild) {
+        console.log(`enqueued rebuild beginning for ${nextBuild.path}`);
+        const cache = { ...nextBuild }
+        nextBuild = null;
+        const typesCache = new Set([...buildTypes]);
+        buildTypes.clear();
+        await rebuildAssets(
+            cache.watcher,
+            cache.extensions,
+            cache.outputDir,
+            cache.cb,
+            cache.event,
+            typesCache,
+            cache.path
+        );
+    }
+}
+
+export const watchEventHandler = (watcher, extensions, outputDir, cb) => event => async path => {
+    buildTypes.add(extname(path));
+    if (isCurrentlyBuilding) {
+        console.log(`Currently building. Will queue up next build for ${path} when ready.`);
+        // we only enqueue the most recent build request
+        nextBuild = { 
+            watcher, 
+            extensions, 
+            outputDir, 
+            cb, 
+            buildTypes, 
+            event,
+            path 
+        };
+    }
+    else {
+        isCurrentlyBuilding = true;
+        await rebuildAssets(watcher, extensions, outputDir, cb, event, buildTypes, path);
+        isCurrentlyBuilding = false;
     }
 };
