@@ -1,0 +1,19 @@
+{% macro lazyvideo(sources, poster, width='', height='') %}
+<video
+    class="lazy"
+    autoplay 
+    muted 
+    loop 
+    playsinline
+    {% if height %}
+    height="{{ height }}"
+    {% endif %}
+    {% if width %}
+    width="{{ width }}"
+    {% endif %}
+    poster="{{ poster }}">
+    {% for source in sources %}
+    <source data-src="{{ source.src }}" type="{{ source.type }}">
+    {% endfor %}
+</video>
+{% endmacro %}
