@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
         return array[index];
     });
 
+    eleventyConfig.addPassthroughCopy('videos');
+    
     eleventyConfig.addPassthroughCopy('images');
 
     eleventyConfig.addPassthroughCopy('fonts');
