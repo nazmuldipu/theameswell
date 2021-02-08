@@ -132,6 +132,17 @@ x-cloak {
 /****  end page-header  ********************************/
 
 
+/****  start page-footer  ********************************/
+.page-footer__toggle:checked ~ .page-footer__toggle-button .page-footer__toggle-button--arrow {
+    top: 0;
+    transform: rotate(-135deg);
+}
+.page-footer__toggle:checked ~ .page-footer__menu {
+    display: block;
+}
+/****  end page-footer  ********************************/
+
+
 /****  start page-index ********************************/
 .page-index .page-header--docked{
     background: transparent;

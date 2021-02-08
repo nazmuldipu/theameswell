@@ -33,8 +33,13 @@ module.exports = {
         'ams-orange': '#f7941e',
         'ams-magenta': '#ec008c',
         'ams-yellow': '#f6e948',
-        'ams-white': '#fff'
+        'ams-white': '#fff',
+        'ams-base': '#f6f4f2',
+        'ams-label': '#f4f4f4',
+        'ams-footer-bg': '#2a4b5d',
+        'ams-footer-col': '#383843'
       },
+      placeholderColor: theme => theme('colors'),
       fontFamily: {
         sans: ['Mark Pro', 'sans-serif'],
         serif: ['Eksell Display Small', 'serif']
