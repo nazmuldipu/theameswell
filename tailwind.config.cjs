@@ -22,6 +22,9 @@ module.exports = {
         'medium': '1024px',
         'large': '1280px'
       },
+      minWidth: {
+       '2xs': '14rem'
+      },
       colors: {
         'rose': colors.rose,
         'ams-primary': '#213e4c',
@@ -46,16 +49,19 @@ module.exports = {
       },
       gridTemplateRows: {
         'hero-home': '400px auto',
-        'slideshow': 'repeat(3, auto)'
+        'slideshow': 'repeat(3, auto)',
+        'footer': 'repeat(3, auto)'
       },
       gridTemplateColumns: {
         'sm-main-sm': '20% auto 20%',
         '40-60': '2fr 3fr',
-        'slideshow': '55% 45%'
+        'slideshow': '55% 45%',
+        'footer': 'repeat(3, 1fr)'
       },
       gridTemplateAreas: {
         'slideshow': ['slide', 'details', 'amenities', 'cta'],
-        'slideshow-xmed': ['slide slide', 'amenities cta', 'amenities details']
+        'slideshow-xmed': ['slide slide', 'amenities cta', 'amenities details'],
+        'footer': ['logo contact media', 'address legal media', 'credit legal media']
       },
       textIndent: (theme, { negative }) => ({
         ...negative({
