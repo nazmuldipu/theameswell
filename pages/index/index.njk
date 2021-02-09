@@ -7,6 +7,7 @@ permalinkBypassOutputDir: true
 nickname: "You Thing"
 ---
 
+{% from "sample_carousel.njk" import sample_carousel %}
 <article>
     <section x-data="{x: 'PIIi'}" x-init="console.log(x)">
         <h1>BYE BYE There {{ fake_name }} you {{ nickname }}</h1>
@@ -14,5 +15,8 @@ nickname: "You Thing"
         <h3 x-cloak>alpineJS has Loaded</h3>
         <h4 x-html="x"></h4>
         <p class="w-24 medium:w-32 large:w-64 text-xl text-purple-400 large:text-blue-500">TEST TEST TEST</p>
+    </section>
+    <section class="mt-8">
+        {{ sample_carousel(slides, title, "sample-carousel") }}
     </section>
 </article>
