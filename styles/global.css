@@ -6,25 +6,53 @@
 @import "tailwindcss/utilities";
 /****  end imports  ********************************/
 
+
 /**** base style additions ****/
 /** https://tailwindcss.com/docs/functions-and-directives#layer **/
 @layer base {
+    /****  start fonts  ********************************/
     @font-face {
         font-display: swap;
-        font-family: 'SpaceMono';
-        src: url('../fonts/SpaceMono-Regular.ttf');
+        font-family: 'Mark Pro';
+        src: url('../fonts/MarkPro.otf') format("opentype");
+        font-weight: 400;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
+    @font-face {
+        font-display: swap;
+        font-family: 'Mark Pro';
+        src: url('../fonts/MarkPro-Bold.otf') format("opentype");
         font-weight: 700;
         font-style: normal;
         unicode-range: U+000-5FF;
     }
+    @font-face {
+        font-display: swap;
+        font-family: 'Eksell Display Small';
+        src: url('../fonts/EksellDisplaySmall.otf') format("opentype");
+        font-weight: 400;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
+    @font-face {
+        font-display: swap;
+        font-family: 'Eksell Display Large';
+        src: url('../fonts/EksellDisplayLarge.otf') format("opentype");
+        font-weight: 400;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
+    /****  end fonts  ********************************/
 
+
+    /****  start base styles  ********************************/
     .title {
         @apply text-ams-primary;
         @apply font-serif;
         @apply pb-3;
     }
-
-
+    /****  end base styles  ********************************/
 }
 
 /**** custom utilities ****/
@@ -92,15 +120,15 @@ x-cloak {
 
 
 /****  start page-header  ********************************/
-.page-header__menu {
+.page-header__menu-container {
     transform: scaleY(0);
 }
-.page-header__toggle:checked ~ .page-header__menu {
+.page-header__toggle:checked ~ .page-header__menu-container {
     transition: transform 0.3s ease-out;
     transform: scaleY(1);
     transform-origin: top;
 }
-.page-header__toggle:not(:checked) ~ .page-header__menu {
+.page-header__toggle:not(:checked) ~ .page-header__menu-container {
     transition: transform 0.3s ease-in;
     transform-origin: top;
 }
@@ -148,7 +176,7 @@ x-cloak {
     background: transparent;
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked{
+    .page-index .page-header--docked .page-header__section{
         grid-template-columns: 100%;
     }
 }
@@ -169,26 +197,34 @@ x-cloak {
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__menu{
+    .page-index .page-header--docked .page-header__menu-container{
         background: transparent;
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: 40px;
-        grid-template-columns: auto;
-        height: auto;
-        justify-content: space-between;
-        max-width: 1008px;
-        padding: 0;
+        padding-top: 0;
         position: relative;
         right: 0;
         top: 0;
         transform: scaleY(1);
-        width: 100%;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__menu{
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 40px;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        max-width: 1008px;
+        padding: 0;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .bg-segment-pattern--1 {
+        display: none;
     }
 }
 @media all and ( min-width: 900px ) {
     /* TODO: removing menu close transition on home due to docked styling at top, perhaps consider a different approach to animation? */
-    .page-index .page-header:not(.page-header--docked) .page-header__toggle:not(:checked) ~ .page-header__menu {
+    .page-index .page-header:not(.page-header--docked) .page-header__toggle:not(:checked) ~ .page-header__menu-container {
         transition: all 0s ease 0s;
     }
 }
