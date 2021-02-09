@@ -7,9 +7,10 @@ permalinkBypassOutputDir: true
 nickname: "Sample Sample"
 ---
 {% from "macros.njk" import cardcard, tester %}
+{% from "videos.njk" import lazyvideo %}
 
 <article class="grid grid-flow-cols grid-cols-2">
-    <section class="group" x-data="{ count: 0 }">
+    <section class="group m-96" x-data="{ count: 0 }">
         <h1 class="group-hover:text-indigo-500 medium:txtor-upright small:wrmode-vrl">Hallllo There {{ fake_name }} you {{ nickname }}</h1>
         <h2 class="group-hover:text-green-500">YOooooOO</h2>
         <button class="btn-purple active:text-green-200 active:bg-indigo-700" @click="count++">Click MEEEE</button>
@@ -17,8 +18,11 @@ nickname: "Sample Sample"
         <h4 x-text="count"></h4>
         {{ tester('yee', 'haw') }}
     </section>
-    <section class="container mx-auto px-24">
+    <section class="container mx-auto px-24 mt-96">
         {{ cardcard('great job', 'SUPER', 'wow such a fantastic', 'https://cdn.images.express.co.uk/img/dynamic/galleries/x701/152480.jpg', 'doing it right', 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.express.co.uk%2Fpictures%2Fpics%2F7049%2FMeet-Graham-deformed-Transport-Accident-Commission&psig=AOvVaw3v_CkiD392xa49eRYzros7&ust=1612484819197000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCPCG55z8zu4CFQAAAAAdAAAAABAO') }}
     </section>
     {% include "directory/sample_includes.njk" %}
 </article>
+<section class="mt-96">
+    {{ lazyvideo([{ src: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4", type: "video/mp4" }], "images/ameswell_entrance.png") }}
+</section>
