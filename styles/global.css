@@ -238,6 +238,10 @@ x-cloak {
         transition: all 0s ease 0s;
     }
 }
+
+/* TODO: add in no-webp bg hero images once Modernizr is added */
+
+
 /****  end page-index ********************************/
 
 
