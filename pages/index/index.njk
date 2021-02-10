@@ -6,6 +6,7 @@ permalink: "build/index.html"
 permalinkBypassOutputDir: true
 nickname: "You Thing"
 ---
+{% from "videos.njk" import lazyvideo %}
 
 <!-- page-header -->
 <header class="page-header--docked page-header w-full fixed z-40 grid justify-items-center text-ams-white bg-ams-primary" id="pageHeader">
@@ -96,6 +97,7 @@ nickname: "You Thing"
     <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
         <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
             <div class="mx-4 xmed:mx-0">
+                {{ lazyvideo([{ src: "videos/homepage-video-1.mp4", type: "video/mp4"}], "images/ameswell_entrance.png") }}
                 <img src="images/homepage-video-bg-1.jpg">
             </div>
             <div class="max-w-screen-xmed pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
