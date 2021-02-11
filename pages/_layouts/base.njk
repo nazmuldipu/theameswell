@@ -55,10 +55,23 @@ meta_description: Some description here DOOD
         {% endif %}
 <!-- end scripts -->
     </head>
-    <body class="preload page-{{pagename}}">
+    <body class="preload page-{{pagename}} grid justify-items-center bg-ams-white text-base sans">
         {{content | safe}}
         <script>
+            /* preload class */
             document.body.classList.remove("preload");
+
+            /* sticky pageHeader */
+            const pageHeader = document.querySelector('#pageHeader');
+            const navTop = pageHeader.offsetTop;
+            function stickyPageHeader() {
+                if (window.scrollY > navTop) {
+                    pageHeader.classList.remove('page-header--docked');
+                } else {
+                    pageHeader.classList.add('page-header--docked');
+                }
+            }
+            window.addEventListener('scroll', stickyPageHeader);
         </script>
     </body>
 </html>

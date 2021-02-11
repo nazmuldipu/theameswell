@@ -2,8 +2,20 @@
     "ga_id": "FAKE_ID",
     "fonts": [
         {
-            "href": "fonts/SpaceMono-Regular.ttf",
-            "type": "font/ttf"
+            "href": "fonts/MarkPro.otf",
+            "type": "font/otf"
+        },
+        {
+            "href": "fonts/MarkPro-Bold.otf",
+            "type": "font/otf"
+        },
+        {
+            "href": "fonts/EksellDisplaySmall.otf",
+            "type": "font/otf"
+        },
+        {
+            "href": "fonts/EksellDisplayLarge.otf",
+            "type": "font/otf"
         }
     ]
 }

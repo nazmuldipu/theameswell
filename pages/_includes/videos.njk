@@ -1,6 +1,6 @@
-{% macro lazyvideo(sources, poster, width='', height='') %}
+{% macro lazyvideo(sources, poster, className='lazy', width='', height='') %}
 <video
-    class="lazy"
+    class="{{ className }}"
     autoplay 
     muted 
     loop 

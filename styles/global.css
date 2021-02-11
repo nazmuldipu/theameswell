@@ -6,17 +6,56 @@
 @import "tailwindcss/utilities";
 /****  end imports  ********************************/
 
+
 /**** base style additions ****/
 /** https://tailwindcss.com/docs/functions-and-directives#layer **/
 @layer base {
+    /****  start fonts  ********************************/
     @font-face {
         font-display: swap;
-        font-family: 'SpaceMono';
-        src: url('../fonts/SpaceMono-Regular.ttf');
+        font-family: 'Mark Pro';
+        src: url('../fonts/MarkPro.otf') format("opentype");
+        font-weight: 400;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
+    @font-face {
+        font-display: swap;
+        font-family: 'Mark Pro';
+        src: url('../fonts/MarkPro-Bold.otf') format("opentype");
         font-weight: 700;
         font-style: normal;
         unicode-range: U+000-5FF;
     }
+    @font-face {
+        font-display: swap;
+        font-family: 'Eksell Display Small';
+        src: url('../fonts/EksellDisplaySmall.otf') format("opentype");
+        font-weight: 400;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
+    @font-face {
+        font-display: swap;
+        font-family: 'Eksell Display Large';
+        src: url('../fonts/EksellDisplayLarge.otf') format("opentype");
+        font-weight: 400;
+        font-style: normal;
+        unicode-range: U+000-5FF;
+    }
+    /****  end fonts  ********************************/
+
+
+    /****  start base styles  ********************************/
+    .page-content a{
+        @apply text-ams-cyan;
+    }
+    .title {
+        @apply text-ams-primary;
+        @apply font-serif;
+        @apply pb-4;
+    }
+    /****  end base styles  ********************************/
 }
 
 /**** custom utilities ****/
@@ -53,15 +92,171 @@
     }
 }
 
+
+/****  start base styles  ********************************/
 x-cloak {
     display: none;
 }
+.segment__cta:after{
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    bottom: -4px;
+    height: 0;
+    left: 40%;
+    margin: 0 auto;
+    max-width: 30px;
+    position: absolute;
+    width: 30%;
+}
+.segment__cta--gold:after{
+    border-color: theme(colors.ams-gold);
+}
+.segment__cta--green:after{
+    border-color: theme(colors.ams-green);
+}
+@media all and ( max-width: 899px ) {
+    .segment__cta--green:after{
+        border-top-width: 2px;
+        left: 0;
+        width: 40px;
+    }
+}
+.segment__cta--white:after{
+    border-color: theme(colors.ams-white);
+}
+/****  end base styles  ********************************/
 
+
+/****  start page-header  ********************************/
+.page-header__menu-container {
+    transform: scaleY(0);
+}
+.page-header__toggle:checked ~ .page-header__menu-container {
+    transition: transform 0.3s ease-out;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.page-header__toggle:not(:checked) ~ .page-header__menu-container {
+    transition: transform 0.3s ease-in;
+    transform-origin: top;
+}
+.page-header__toggle-button:before,
+.page-header__toggle-button:after {
+    border-top: solid 1px theme(colors.ams-white);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6.5px;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+.page-header__toggle-button:after {
+    top: 14.5px;
+}
+.page-header__toggle:checked ~ .page-header__toggle-button {
+    border-top: 0;
+}
+.page-header__toggle:checked ~ .page-header__toggle-button:before,
+.page-header__toggle:checked ~ .page-header__toggle-button:after {
+    left: 0;
+    top: 50%;
+    transform: rotate(45deg);
+}
+.page-header__toggle:checked ~ .page-header__toggle-button:after {
+    transform: rotate(-45deg);
+}
+.page-header--docked{
+    background: transparent;
+}
+/****  end page-header  ********************************/
+
+
+/****  start page-footer  ********************************/
+.page-footer__toggle:checked ~ .page-footer__toggle-button .page-footer__toggle-button--arrow {
+    top: 0;
+    transform: rotate(-135deg);
+}
+.page-footer__toggle:checked ~ .page-footer__menu {
+    display: block;
+}
+/****  end page-footer  ********************************/
+
+
+/****  start page-index ********************************/
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__section{
+        grid-template-columns: 100%;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__logo{
+        display: none;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__nav{
+        justify-items: center;
+        margin-top: 80px;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__toggle-button{
+        display: none;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__menu-container{
+        background: transparent;
+        padding-top: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: scaleY(1);
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .page-header__menu{
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 40px;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        max-width: 1008px;
+        padding: 0;
+    }
+}
+@media all and ( min-width: 900px ) {
+    .page-index .page-header--docked .bg-segment-pattern--1 {
+        display: none;
+    }
+}
+@media all and ( min-width: 900px ) {
+    /* TODO: removing menu close transition on home due to docked styling at top, perhaps consider a different approach to animation? */
+    .page-index .page-header:not(.page-header--docked) .page-header__toggle:not(:checked) ~ .page-header__menu-container {
+        transition: all 0s ease 0s;
+    }
+}
+
+/* TODO: add in no-webp bg hero images once Modernizr is added */
+
+
+/****  end page-index ********************************/
+
+
+
+
+
+
+
+
+/** https://tailwindcss.com/docs/functions-and-directives#theme **/
+/*
 body {
     font-family: 'SpaceMono', monospace;
     font-size: var(--base-font-size);
-    background-color: var(--color__primary);
     color: var(--color__secondary);
-    /** https://tailwindcss.com/docs/functions-and-directives#theme **/
     font-weight: theme('fontWeight.medium');
 }
+*/

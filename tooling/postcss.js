@@ -16,7 +16,7 @@ const plugins = [
 
 if (process.env.NODE_ENV === 'production') {
     plugins.push(require('autoprefixer'));
-    plugins.push(require('cssnano')({ preset: 'default' }));
+    //plugins.push(require('cssnano')({ preset: 'default' }));
 }
 
 const processor = postcss(plugins);
