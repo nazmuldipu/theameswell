@@ -1,3 +1,33 @@
 {
-    "fake_name": "Person GUD"
+    "fake_name": "Person GUD",
+    "sample_carousel": {
+        "title": "SAMPLE TITLE",
+        "slides": [
+            {
+                "src": "https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/media/images/best-practices-stock-photos.jpg",
+                "title": "title 1",
+                "caption": "caption caption caption"
+            },
+            {
+                "src": "https://img.buzzfeed.com/buzzfeed-static/static/2017-08/2/11/asset/buzzfeed-prod-fastlane-01/sub-buzz-5511-1501688542-1.jpg",
+                "title": "title 2",
+                "caption": "caption caption caption"
+            },
+            {
+                "src": "https://static.boredpanda.com/blog/wp-content/uploads/2017/12/funny-weird-wtf-stock-photos-19-5a3926af95d9d__700.jpg",
+                "title": "title 3",
+                "caption": "caption caption caption"
+            },
+            {
+                "src": "https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg",
+                "title": "title 4",
+                "caption": "caption caption caption"
+            },
+            {
+                "src": "https://www.liveabout.com/thmb/s6wcupyhjrstpTmxv_3K8kLIPYM=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/feet-face-599c412c22fa3a0011d92add.jpg",
+                "title": "title 5",
+                "caption": "caption caption caption"
+            }
+        ]
+    }
 }

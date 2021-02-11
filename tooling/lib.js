@@ -1,6 +1,6 @@
 'use strict';
 import {extname, join, sep} from 'path';
-import {readdirSync} from 'fs';
+import {readdirSync, lstatSync} from 'fs';
 import {rm, writeFile} from 'fs/promises';
 
 export const prettyJSONStringify = json => JSON.stringify(json, null, 2);
@@ -77,8 +77,11 @@ export const getPageAssetsExtMap = (pagesDir, extensions) =>
 export const getPageAssets = (pagesDir, isValidExt=defaultExtValidator) => readdirSync(pagesDir)
     .flatMap(pageName => {
         // ignore non-page dirs
-        if (!pageName.startsWith("_")) {
-            const pageDirContents = readdirSync(join(pagesDir.pathname, pageName))
+        const pageDirPath = join(pagesDir.pathname, pageName);
+        if (!pageName.startsWith("_")
+                // make sure pageDirPath is a dir
+                && lstatSync(pageDirPath, { throwIfNoEntry: false }).isDirectory()) {
+            const pageDirContents = readdirSync(pageDirPath)
                 // only process certain file types
                 .flatMap(fileName => isValidExt(fileName)
                                         ? [ join(pagesDir.pathname, pageName, fileName) ]
