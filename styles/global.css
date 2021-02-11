@@ -167,6 +167,9 @@ x-cloak {
 .page-header__toggle:checked ~ .page-header__toggle-button:after {
     transform: rotate(-45deg);
 }
+.page-header--docked{
+    background: transparent;
+}
 /****  end page-header  ********************************/
 
 
@@ -182,9 +185,6 @@ x-cloak {
 
 
 /****  start page-index ********************************/
-.page-index .page-header--docked{
-    background: transparent;
-}
 @media all and ( min-width: 900px ) {
     .page-index .page-header--docked .page-header__section{
         grid-template-columns: 100%;

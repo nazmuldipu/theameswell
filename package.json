@@ -27,13 +27,13 @@
     "browser-sync": "^2.26.14",
     "chokidar": "^3.5.1",
     "cssnano": "^4.1.10",
-    "esbuild": "^0.8.42",
+    "esbuild": "^0.8.44",
     "html-minifier": "^4.0.0",
-    "postcss": "^8.2.5",
+    "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
     "postcss-nesting": "^7.0.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^1.2.0",

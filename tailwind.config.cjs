@@ -13,10 +13,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
+        /* TODO: add webp and jpg fallback URLs */
         'hero--home': "url('/images/hero-home.webp')",
         'hero--home-900': "url('/images/hero-home-900.webp')",
-        'hero--home-fallback': "url('/images/hero-home.jpg')",
-        'hero--home-900-fallback': "url('/images/hero-home-900.jpg')",
+        'hero--page-detail': "url('/images/hero-page-detail.jpg')",
+        'hero--page-detail-900': "url('/images/hero-page-detail-900.jpg')",
         'segment-pattern--1': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%'><defs><pattern id='ameswellPattern' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23C2B8AB;'/></pattern></defs><rect width='200%' height='200%' fill='url(%23ameswellPattern)' transform='scale(0.5)'/></svg>\")"
       }),
       screens: {
