@@ -1,6 +1,6 @@
 {
     "ga_id": "FAKE_ID",
-    "fonts": [
+    "preload_fonts": [
         {
             "href": "fonts/MarkPro.otf",
             "type": "font/otf"
