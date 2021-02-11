@@ -1,3 +1,7 @@
-import {bar} from '../../scripts/sample';
+'use strict';
 
-console.log('BAR BAR BAR', bar)
+import { lazyLoadVideos } from '../../scripts/lazyloading.js';
+
+document.addEventListener('DOMContentLoaded', lazyLoadVideos('lazy', {
+    rootMargin: '100px'
+}));
