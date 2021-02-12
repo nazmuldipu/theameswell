@@ -3,12 +3,9 @@ const plugin = require('tailwindcss/plugin');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      './pages/**/*.njk'
-    ],
-  },
+  purge: [
+    './pages/**/*.njk'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

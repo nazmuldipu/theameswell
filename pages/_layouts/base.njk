@@ -37,8 +37,8 @@ meta_description: Some description here DOOD
         {% endif %}
 <!-- end sync css -->
 <!-- start font preloads -->
-        {% if preload_fonts %}
-            {% for font in preload_fonts %}
+        {% if data.preload_fonts %}
+            {% for font in data.preload_fonts %}
                 <link rel="preload" href="{{font.href}}" as="font" type="{{font.type}}" crossorigin>
             {% endfor %}
         {% endif %}
