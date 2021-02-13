@@ -56,7 +56,9 @@ meta_description: Some description here DOOD
 <!-- end scripts -->
     </head>
     <body class="preload page-{{pagename}} grid justify-items-center bg-ams-white text-base sans">
+        {% include "_page-header.njk" %}
         {{content | safe}}
+        {% include "_page-footer.njk" %}
         <script>
             /* preload class */
             document.body.classList.remove("preload");
