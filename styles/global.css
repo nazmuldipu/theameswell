@@ -126,6 +126,26 @@ x-cloak {
 .segment__cta--white:after{
     border-color: theme(colors.ams-white);
 }
+.segment__cta--grey:after{
+    border-color: theme(colors.ams-grey);
+}
+@media all and ( max-width: 899px ) {
+    .segment__cta--grey:after{
+        border-top-width: 2px;
+        left: 0;
+        width: 40px;
+    }
+}
+.segment__cta--yellow:after{
+    border-color: theme(colors.ams-yellow);
+}
+@media all and ( max-width: 899px ) {
+    .segment__cta--yellow:after{
+        border-top-width: 2px;
+        left: 0;
+        width: 40px;
+    }
+}
 /****  end base styles  ********************************/
 
 
@@ -228,7 +248,7 @@ x-cloak {
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .bg-segment-pattern--1 {
+    .page-index .page-header--docked .bg-pattern--ams-grey {
         display: none;
     }
 }
