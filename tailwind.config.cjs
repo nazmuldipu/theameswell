@@ -32,6 +32,9 @@ module.exports = {
       minWidth: {
        '2xs': '14rem'
       },
+      minHeight: {
+       'l': '8rem'
+      },
       colors: {
         'rose': colors.rose,
         'ams-primary': '#213e4c',
