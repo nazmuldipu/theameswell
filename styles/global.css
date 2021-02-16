@@ -151,15 +151,15 @@ x-cloak {
 
 /****  start page-header  ********************************/
 .page-header__menu-container {
-    transform: scaleY(0);
+    transform: translateY(-100%);
 }
 .page-header__toggle:checked ~ .page-header__menu-container {
-    transition: transform 0.3s ease-out;
-    transform: scaleY(1);
+    transition: transform 0.5s ease-out;
+    transform: translateY(0%);
     transform-origin: top;
 }
 .page-header__toggle:not(:checked) ~ .page-header__menu-container {
-    transition: transform 0.3s ease-in;
+    transition: transform 0.5s ease-in;
     transform-origin: top;
 }
 .page-header__toggle-button:before,
