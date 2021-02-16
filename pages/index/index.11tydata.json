@@ -29,5 +29,19 @@
                 "caption": "caption caption caption"
             }
         ]
-    }
+    },
+    "preload_images": [
+        {
+            
+            "href": "images/hero-home-4500.webp",
+            "onload": "this.onload=null;heroImageLoad()",
+            "media": "(min-width:900.1px)"
+        },
+        {
+            
+            "href": "images/hero-home-900.webp",
+            "onload": "this.onload=null;heroImageLoad()",
+            "media": "(max-width:900px)"
+        }
+    ]
 }

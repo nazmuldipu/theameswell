@@ -11,7 +11,9 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         /* TODO: add webp and jpg fallback URLs */
-        'hero--home': "url('/images/hero-home.webp')",
+        'hero--home-vector': "url('/images/hero-vector.svg')",
+        'hero--home-vector-900': "url('/images/hero-vector-900.svg')",
+        'hero--home': "url('/images/hero-home-4500.webp')",
         'hero--home-900': "url('/images/hero-home-900.webp')",
         'hero--page-detail': "url('/images/hero-page-detail.jpg')",
         'hero--page-detail-900': "url('/images/hero-page-detail-900.jpg')",
