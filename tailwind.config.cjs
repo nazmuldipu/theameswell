@@ -93,11 +93,15 @@ module.exports = {
     gridTemplateAreas: ['responsive'],
     extend: {
       textColor: ['active'],
-      backgroundColor: ['active']
+      backgroundColor: ['active', 'checked'],
+      borderColor: ['checked'],
+      borderStyle: ['focus'],
+      borderWidth: ['focus']
     },
   },
   plugins: [
     require('@savvywombat/tailwindcss-grid-areas'),
+    require('@tailwindcss/forms'),
     require('tailwindcss-text-indent')(),
     plugin(function({ addUtilities, addComponents, theme }) {
       const utilities = {
