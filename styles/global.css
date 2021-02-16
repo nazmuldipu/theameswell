@@ -151,7 +151,7 @@ x-cloak {
 
 /****  start page-header  ********************************/
 .page-header__menu-container {
-    transform: translateY(-100%);
+    transform: translateY(-150%);
 }
 .page-header__toggle:checked ~ .page-header__menu-container {
     transition: transform 0.5s ease-out;
@@ -206,28 +206,28 @@ x-cloak {
 
 /****  start page-index ********************************/
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__section{
+    .page-index .page-header--splayed .page-header__section{
         grid-template-columns: 100%;
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__logo{
+    .page-index .page-header--splayed .page-header__logo{
         display: none;
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__nav{
+    .page-index .page-header--splayed .page-header__nav{
         justify-items: center;
         margin-top: 80px;
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__toggle-button{
+    .page-index .page-header--splayed .page-header__toggle-button{
         display: none;
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__menu-container{
+    .page-index .page-header--splayed .page-header__menu-container{
         background: transparent;
         padding-top: 0;
         position: relative;
@@ -237,7 +237,7 @@ x-cloak {
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .page-header__menu{
+    .page-index .page-header--splayed .page-header__menu{
         display: grid;
         grid-auto-flow: column;
         grid-gap: 40px;
@@ -248,13 +248,13 @@ x-cloak {
     }
 }
 @media all and ( min-width: 900px ) {
-    .page-index .page-header--docked .bg-pattern--ams-grey {
+    .page-index .page-header--splayed .bg-pattern--ams-grey {
         display: none;
     }
 }
 @media all and ( min-width: 900px ) {
     /* TODO: removing menu close transition on home due to docked styling at top, perhaps consider a different approach to animation? */
-    .page-index .page-header:not(.page-header--docked) .page-header__toggle:not(:checked) ~ .page-header__menu-container {
+    .page-index .page-header:not(.page-header--splayed) .page-header__toggle:not(:checked) ~ .page-header__menu-container {
         transition: all 0s ease 0s;
     }
 }

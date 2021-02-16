@@ -65,12 +65,23 @@ meta_description: Some description here DOOD
 
             /* sticky pageHeader */
             const pageHeader = document.querySelector('#pageHeader');
+            const pageHero = document.querySelector('#pageHero');
             const navTop = pageHeader.offsetTop;
+            const navHeight = pageHeader.offsetHeight;
+            const heroOffset = pageHero ? pageHero.offsetTop + pageHero.offsetHeight : navTop;
             function stickyPageHeader() {
-                if (window.scrollY > navTop) {
+                if (window.scrollY > heroOffset - navHeight) {
                     pageHeader.classList.remove('page-header--docked');
                 } else {
                     pageHeader.classList.add('page-header--docked');
+                }
+
+                if (window.scrollY > navTop) {
+                    pageHeader.classList.remove('page-header--splayed');
+                } else {
+                    if(document.body.classList.contains('page-index')) {
+                        pageHeader.classList.add('page-header--splayed');
+                    }
                 }
             }
             window.addEventListener('scroll', stickyPageHeader);
