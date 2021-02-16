@@ -43,6 +43,10 @@ module.exports = {
       minHeight: {
        'l': '8rem'
       },
+      spacing: {
+         'fab-sm': '23rem',
+         'fab-lg': '35rem',
+       },
       colors: {
         'rose': colors.rose,
         'ams-primary': '#213e4c',
