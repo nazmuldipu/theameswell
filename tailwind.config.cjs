@@ -44,7 +44,7 @@ module.exports = {
        'l': '8rem'
       },
       spacing: {
-         'fab-sm': '23rem',
+         'fab-sm': '26rem',
          'fab-lg': '35rem',
        },
       colors: {
