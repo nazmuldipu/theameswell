@@ -5,6 +5,7 @@ meta_title: "The Room Detail Page"
 permalink: "build/room-detail.html"
 permalinkBypassOutputDir: true
 ---
+{% from "videos.njk" import lazyvideo %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--page-detail-900 xmed:bg-hero--page-detail bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -82,7 +83,7 @@ permalinkBypassOutputDir: true
     <article class="max-w-screen-lg mt-5">
         <section>
             <figure class="grid justify-items-center">
-                <img src="images/homepage-video-bg-2.jpg">
+                {{ lazyvideo([{ src: "videos/homepage-video-3.mp4", type: "video/mp4"}], "images/homepage-video-bg-3.webp", "lazy") }}
                 <nav class="relative -top-4 py-2 px-4 bg-ams-white shadow-md">
                     <a href="#" class="inline-block w-3 h-3 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold -indent-xl overflow-hidden">
                         previous
