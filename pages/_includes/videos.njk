@@ -13,7 +13,7 @@
     {% endif %}
     poster="{{ poster }}">
     {% for source in sources %}
-    <source data-src="{{ source.src }}" type="{{ source.type }}">
+    <source data-src="{{ source.src }}" type="{{ source.type }}" src="{{ source.src }}">
     {% endfor %}
 </video>
 {% endmacro %}
