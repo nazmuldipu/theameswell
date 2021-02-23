@@ -1,14 +1,14 @@
 import ImageTracer from 'imagetracerjs';
-import fs from 'fs';
+import fs, { readdir } from 'fs/promises';
 import sharp from 'sharp';
 import path, { join } from 'path';
 
 const imagesPath = new URL('../images', import.meta.url);
 
-const { data, info } = await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(800).raw().toBuffer({ resolveWithObject: true })
-const { data: data1, info: info1 } = await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(600, 800).raw().toBuffer({ resolveWithObject: true })
+/* const { data, info } = await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(800).raw().toBuffer({ resolveWithObject: true })
+const { data: data1, info: info1 } = await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(600, 800).raw().toBuffer({ resolveWithObject: true }) */
 
-const svgStr = ImageTracer.imagedataToSVG(
+/* const svgStr = ImageTracer.imagedataToSVG(
     {
         width: info.width,
         height: info.height,
@@ -27,7 +27,41 @@ const svgStr1 = ImageTracer.imagedataToSVG(
     },
     { qtres:10, ltres:10, numberofcolors:16, blurradius:100, blurdelta: 256, strokewidth:16, scale: 1.5 }
 );
-fs.writeFileSync(path.join(imagesPath.pathname, 'hero-vector-900.svg'), svgStr1)
+fs.writeFileSync(path.join(imagesPath.pathname, 'hero-vector-900.svg'), svgStr1) */
+
+const getResponsivePaths = async imgFile => {
+    // need dimensions
+    // iteratively add to paths until and not including width as long as itself
+    const paths = [imgFile];
+    let dimension = 300;
+    const { width } = await sharp(imgFile).metadata()
+    while (dimension < width) {
+        paths.push(
+            `${path.dirname(imgFile)}/${path.basename(imgFile, path.extname(imgFile))}-${dimension}${path.extname(imgFile)}`
+        );
+        dimension *= 2;
+    }
+    return paths;
+};
+
+try {
+    const paths = await readdir(imagesPath.pathname).then(imgFiles => {
+        console.log('imgFiles', imgFiles)
+        return Promise.all(
+            imgFiles
+            .filter(imgFile => imgFile.match(/.(jpg|jpeg|png|svg|webp)$/i))
+            .map(async imgFile => await getResponsivePaths(join(imagesPath.pathname, imgFile)))
+        )
+    })
+    
+    console.log('pahts', paths.flat())
+}
+catch (e) {
+    console.error('error', e)
+}
+
+
+
 
 /* await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(900, 1800)
     .toFile(join(imagesPath.pathname, `hero-home-900.jpg`))
@@ -38,8 +72,8 @@ await sharp(heroWebp).resize(900, 1200).toFile(join(imagesPath.pathname, 'hero-h
 await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(900, 1200)
     .toFile(join(imagesPath.pathname, `hero-home-900.jpg`))
 await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(4500)
-    .toFile(join(imagesPath.pathname, `hero-home-4500.jpg`))
- */
+    .toFile(join(imagesPath.pathname, `hero-home-4500.jpg`)) */
+
 /**
  * TODO:
  * - Do this for all input images
