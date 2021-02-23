@@ -233,7 +233,7 @@ nickname: "You Thing"
 </div>
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="py-4 xmed:px-4 my-4">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-40-60 gap-4 xmed:py-8 xmed:px-4 xmed:bg-ams-white xmed:shadow-md">
+        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-auto-600 gap-4 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
             <div class="mx-4 xmed:mx-0 mb-8 xmed:mb-0 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
                 <h2 class="title text-2xl pt-4 pb-4">
                     Our Mountain View Wedding Venue
@@ -246,7 +246,10 @@ nickname: "You Thing"
                 </div>
             </div>
             <figure>
-                <img src="images/homepage-6.jpg">
+                <picture>
+                    <source srcset="images/homepage-6.webp" type="image/webp">
+                    <img srcset="images/homepage-6.jpg" src="images/homepage-6.jpg">
+                </picture>
             </figure>
         </section>
     </article>

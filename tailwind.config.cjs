@@ -77,6 +77,7 @@ module.exports = {
         'sm-main-sm': '20% auto 20%',
         '40-60': '2fr 3fr',
         '60-40': '3fr 2fr',
+        'auto-600': 'auto 600px',
         'slideshow': '55% 45%',
         'sm-auto': 'auto 1fr',
         'footer': 'repeat(3, 1fr)'
