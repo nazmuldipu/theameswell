@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('videos');
     
-    eleventyConfig.addPassthroughCopy('images');
+    eleventyConfig.addPassthroughCopy({ 'images/output': 'images' });
 
     eleventyConfig.addPassthroughCopy('fonts');
 

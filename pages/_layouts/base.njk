@@ -36,21 +36,10 @@ meta_description: Some description here DOOD
             <link rel="stylesheet" type="text/css" href="{{sync_css}}">
         {% endif %}
 <!-- end sync css -->
-<script>
-            function heroImageLoad() {
-                console.log('HERE HOMIES', document.body.classList.contains('page-index'))
-                if(false && document.body.classList.contains('page-index')) {
-                    pageHero.classList.remove('.bg-hero--home-vector-900');
-                    pageHero.classList.remove('.xmed:bg-hero--home-vector');
-                    pageHero.classList.add('.bg-hero--home-900');
-                    pageHero.classList.add('.xmed:bg-hero--home-4500');
-                }
-            }
-        </script>
 <!-- start image preloads -->
     {% if preload_images %}
         {% for image in preload_images %}
-            <!--link rel="preload" href="{{image.href}}" as="image" media="{{image.media}}"-->
+            <link rel="preload" href="{{image.href}}" as="image" media="{{image.media}}">
         {% endfor %}
     {% endif %}
 <!-- end image preloads -->
