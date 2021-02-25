@@ -36,6 +36,13 @@ meta_description: Some description here DOOD
             <link rel="stylesheet" type="text/css" href="{{sync_css}}">
         {% endif %}
 <!-- end sync css -->
+<!-- start image preloads -->
+    {% if preload_images %}
+        {% for image in preload_images %}
+            <link rel="preload" href="{{image.href}}" as="image" media="{{image.media}}">
+        {% endfor %}
+    {% endif %}
+<!-- end image preloads -->
 <!-- start font preloads -->
         {% if data.preload_fonts %}
             {% for font in data.preload_fonts %}
@@ -69,6 +76,7 @@ meta_description: Some description here DOOD
             const navTop = pageHeader.offsetTop;
             const navHeight = pageHeader.offsetHeight;
             const heroOffset = pageHero ? pageHero.offsetTop + pageHero.offsetHeight : navTop;
+            const isHomePage = document.body.classList.contains('page-index');
             function stickyPageHeader() {
                 if (window.scrollY > heroOffset - navHeight) {
                     pageHeader.classList.remove('page-header--docked');
@@ -79,7 +87,7 @@ meta_description: Some description here DOOD
                 if (window.scrollY > navTop) {
                     pageHeader.classList.remove('page-header--splayed');
                 } else {
-                    if(document.body.classList.contains('page-index')) {
+                    if(isHomePage) {
                         pageHeader.classList.add('page-header--splayed');
                     }
                 }
