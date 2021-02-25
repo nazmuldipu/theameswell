@@ -10,8 +10,8 @@ permalinkBypassOutputDir: true
 </div>
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:border-2 xmed:shadow-md">
-        <div class="w-full grid justify-items-center -mt-16 xmed:m-0 p-0 xmed:pt-0 px-8 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
-            <article class="w-full grid justify-items-center pt-4 xmed:pt-0">
+        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-8 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
+            <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
                 <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
                     <h2 class="title text-2xl xmed:text-5xl py-4 xmed:py-8">
                         Start Planning Your Event
@@ -22,7 +22,7 @@ permalinkBypassOutputDir: true
                 </section>
             </article>
         </div>
-        <div class="w-full grid justify-items-center px-8 xmed:px-0 bg-ams-base xmed:bg-transparent">
+        <div class="w-full grid justify-items-center xmed:-mt-16 px-8 xmed:px-0 bg-ams-base xmed:bg-transparent">
             <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
                 <h2 class="title text-2xl xmed:text-5xl py-4 xmed:py-8">
                     Event request form
@@ -50,7 +50,13 @@ permalinkBypassOutputDir: true
                     </label>
                     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                         EVENT TYPE *<br>
-                        <input type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        <select class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
+                            <option value="" disabled selected hidden></option>
+                            <option>wedding</option>
+                            <option>event</option>
+                            <option>meeting</option>
+                            <option>other</option>
+                        </select>
                     </label>
                     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                         START DATE<br>
@@ -60,17 +66,19 @@ permalinkBypassOutputDir: true
                         END DATE<br>
                         <input type="text" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                     </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                         GUEST ROOMS NEEDED?<br>
-                        <input type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        <div class="space-x-2 items-center"><input type="radio" checked name="guestrooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                        <div class="space-x-2 items-center"><input type="radio" name="guestrooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
                     </label>
                     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                         IF SO, HOW MANY?<br>
-                        <input type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        <input type="number" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                     </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                         DO YOU REQUIRE A/V?<br>
-                        <input type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        <div class="space-x-2 items-center"><input type="radio" name="avneeded" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                        <div class="space-x-2 items-center"><input type="radio" name="avneeded" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
                     </label>
                     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                         OTHER INFORMATION<br>

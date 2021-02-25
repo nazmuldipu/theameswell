@@ -1,3 +1,16 @@
+{% macro fab(fabUrl, fabBg) %}
+<a href="{{ fabUrl if fabUrl else 'contact.html' }}" class="fixed bottom-0 right-4 z-50 w-fab-sm xmed:w-fab-lg">
+    <span class="absolute bottom-5 xmed:bottom-8 right-11 xmed:right-16 mr-0.5 text-center text-xl xmed:text-2xl text-ams-white font-serif">
+        Contact<br>
+        Us
+    </span>
+    <svg viewBox="0 0 375 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+        <path d="M272 28H340L359 100H253L272 28Z" fill="#{{ fabBg if fabBg else 'D1357D' }}"/>
+        <path d="M342 36.5C340 27 337.76 18.0553 331.102 11.3977C324.445 4.74017 315.415 1 306 1C296.585 0.999999 287.555 4.74017 280.898 11.3977C274.24 18.0552 272 27.5 270 36.5H306H342Z" fill="#{{ fabBg if fabBg else 'D1357D' }}"/>
+    </svg>
+</a>
+{% endmacro %}
+
 {% macro cardcard(title, eyebrow, description, image, alt, url)%}
 <div class="container px-12 mx-auto grid grid-cols-3 gap-2 place-items-auto">
     <img class="rounded" src="{{ image }}" alt="{{ alt }}">

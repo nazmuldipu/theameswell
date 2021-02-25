@@ -30,7 +30,7 @@
     "browser-sync": "^2.26.14",
     "chokidar": "^3.5.1",
     "cssnano": "^4.1.10",
-    "esbuild": "^0.8.44",
+    "esbuild": "^0.8.46",
     "html-minifier": "^4.0.0",
     "imagetracerjs": "^1.2.6",
     "p-all": "^3.0.0",

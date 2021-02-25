@@ -41,7 +41,7 @@ nickname: "You Thing"
     <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
         <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
             <div class="mx-4 xmed:mx-0">
-                {{ lazyvideo([{ src: "videos/homepage-video-1.mp4", type: "video/mp4"}], "images/homepage-video-bg-1.jpg", "lazy") }}
+                {{ lazyvideo([{ src: "videos/homepage-video-1.mp4", type: "video/mp4"}], "images/homepage-video-bg-1.webp", "lazy") }}
             </div>
             <div class="z-0 max-w-screen-xmed pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                 <h2 class="title text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
@@ -51,7 +51,7 @@ nickname: "You Thing"
                     Nestled on 11 acres in sunny Mountain View, The Ameswell Hotel brings together innovation, natural beauty and an opportunity to play unlike any other hotel in the Bay Area.
                 </div>
                 <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
-                    <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">LEARN MORE</a>
+                    <a href="about.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">LEARN MORE</a>
                 </div>
             </div>
         </section>
@@ -68,13 +68,13 @@ nickname: "You Thing"
                     Each of our 255 guest rooms is defined by comfort and space, privacy and respite. Sitting area and workspace for your waking hours, organic bath products for self-care, and luxurious sleep.
                 </div>
                 <div class="pt-4 pb-4 xmed:text-center">
-                    <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">VIEW ALL ROOMS</a>
+                    <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">VIEW ALL ROOMS</a>
                 </div>
             </div>
         </section>
         <section class="grid justify-items-center max-w-screen-lg grid-areas-slideshow xmed:grid-areas-slideshow-xmed xmed:grid-cols-slideshow xmed:grid-rows-slideshow pt-4 px-4 xmed:pr-0 xmed:pb-4 xmed:pl-0 mb-5 bg-ams-white shadow-md">
             <figure class="justify-items-center xmed:relative xmed:mx-4 grid-in-slide">
-                <img src="images/homepage-1.jpg">
+                {{ lazyvideo([{ src: "videos/homepage-video-3.mp4", type: "video/mp4"}], "images/homepage-video-bg-3.webp", "lazy") }}
                 <figcaption>
                     <header class="grid grid-cols-sm-main-sm gap-2 justify-items-center text-2xl pt-4 xmed:block">
                         <span class="xmed:absolute xmed:top-1/3 xmed:left-0 xmed:bg-ams-white xmed:px-1">
@@ -94,7 +94,7 @@ nickname: "You Thing"
                 </figcaption>
             </figure>
             <div class="pb-4 xmed:pt-4 xmed:text-center grid-in-details">
-                <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">VIEW DETAILS</a>
+                <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">VIEW DETAILS</a>
             </div>
             <ul class="grid grid-cols-3 content-center grid-in-amenities xmed:pl-4">
                 <li class="text-center">
@@ -144,10 +144,13 @@ nickname: "You Thing"
         <p class="pb-6 text-ams-white">
             Options for every meal and in between craving, and every dietary desire—you can eat and drink with us all day, every day.
         </p>
-        <a href="#" class="segment__cta segment__cta--white relative text-ams-white text-lg font-serif uppercase">LEARN MORE</a>
+        <a href="dining.html" class="segment__cta segment__cta--white relative text-ams-white text-lg font-serif uppercase">LEARN MORE</a>
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:items-start">
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                <img src="images/homepage-7.jpg">
+                <picture>
+                    <source srcset="images/homepage-3.webp" type="image/webp">
+                    <img srcset="images/homepage-3.jpg" src="images/homepage-3.jpg">
+                </picture>
                 <figcaption class="text-ams-white">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif text-xl text-ams-white">
@@ -160,7 +163,10 @@ nickname: "You Thing"
                 </figcaption>
             </figure>
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                <img src="images/homepage-3.jpg">
+                <picture>
+                    <source srcset="images/homepage-7.webp" type="image/webp">
+                    <img srcset="images/homepage-7.jpg" src="images/homepage-7.jpg">
+                </picture>
                 <figcaption class="text-ams-white">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif text-xl text-ams-white">
@@ -173,7 +179,10 @@ nickname: "You Thing"
                 </figcaption>
             </figure>
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                <img src="images/homepage-4.jpg">
+                <picture>
+                    <source srcset="images/homepage-4.webp" type="image/webp">
+                    <img srcset="images/homepage-4.jpg" src="images/homepage-4.jpg">
+                </picture>
                 <figcaption class="text-ams-white">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif text-xl text-ams-white">
@@ -190,7 +199,7 @@ nickname: "You Thing"
 </div>
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="p-4 mt-5">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-40-60 gap-4 xmed:p-4 xmed:bg-ams-white xmed:shadow-md">
+        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-40-60 gap-4 xmed:py-8 xmed:px-4 xmed:bg-ams-white xmed:shadow-md">
             <div class="p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
                 <h2 class="title text-2xl pt-4 pb-4">
                     Not your typical meeting
@@ -199,11 +208,11 @@ nickname: "You Thing"
                     Whether you’re looking for a tech-enabled meeting room or an inspirational outdoor space for your Silicon Valley corporate gathering, The Ameswell Hotel offers a diverse array of spaces to meet any need. 
                 </p>
                 <div class="pt-4 pb-4">
-                    <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">LEARN MORE</a>
+                    <a href="events.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">LEARN MORE</a>
                 </div>
             </div>
             <figure class="hidden xmed:block">
-                {{ lazyvideo([{ src: "videos/homepage-video-2.mp4", type: "video/mp4"}], "images/homepage-video-bg-2.jpg", "lazy") }}
+                {{ lazyvideo([{ src: "videos/homepage-video-2.mp4", type: "video/mp4"}], "images/homepage-video-bg-2.webp", "lazy") }}
             </figure>
         </section>
     </article>
@@ -212,7 +221,10 @@ nickname: "You Thing"
     <article class="max-w-screen-lg mt-5">
         <section>
             <figure class="grid justify-items-center bg-ams-white xmed:bg-ams-base">
-                <img src="images/homepage-5.jpg">
+                <picture>
+                    <source srcset="images/homepage-5.webp" type="image/webp">
+                    <img srcset="images/homepage-5.jpg" src="images/homepage-5.jpg">
+                </picture>
                 <nav class="relative -top-4 py-2 px-4 bg-ams-white shadow-md">
                     <a href="#" class="inline-block w-3 h-3 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold -indent-xl overflow-hidden">
                         previous
@@ -233,7 +245,7 @@ nickname: "You Thing"
 </div>
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="py-4 xmed:px-4 my-4">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-40-60 gap-4 xmed:p-4 xmed:bg-ams-white xmed:shadow-md">
+        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-auto-600 gap-4 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
             <div class="mx-4 xmed:mx-0 mb-8 xmed:mb-0 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
                 <h2 class="title text-2xl pt-4 pb-4">
                     Our Mountain View Wedding Venue
@@ -242,11 +254,14 @@ nickname: "You Thing"
                     Celebrate your wedding at one of the most unique and inspiring venues in the Bay Area.
                 </p>
                 <div class="pt-4 pb-4">
-                    <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">LEARN MORE</a>
+                    <a href="weddings.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif uppercase">LEARN MORE</a>
                 </div>
             </div>
             <figure>
-                <img src="images/homepage-6.jpg">
+                <picture>
+                    <source srcset="images/homepage-6.webp" type="image/webp">
+                    <img srcset="images/homepage-6.jpg" src="images/homepage-6.jpg">
+                </picture>
             </figure>
         </section>
     </article>
@@ -254,27 +269,26 @@ nickname: "You Thing"
 <div class="grid justify-items-center bg-ams-primary w-full p-8">
     <article class="max-w-screen-lg p-4 bg-ams-white w-full">
         <section class="xmed:grid xmed:grid-cols-2 xmed:gap-4">
-            <figure>
-                <img src="https://via.placeholder.com/1196x507/c2b8ab?text=placeholder+image" class=" xmed:hidden">
+            <header>
                 <h2 class="title text-2xl pt-4 pb-4">
                     Join Our A-List
                 </h2>
                 <p>
                     You'll be the first to hear about events and promotions.
                 </p>
-            </figure>
+            </header>
             <form class="pt-4">
                 <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                     FIRST NAME *<br>
-                    <input type="text" placeholder="John" class="block w-full bg-ams-label text-base placeholder-ams-primary placeholder-opacity-100">
+                    <input type="text" placeholder="John" class="block w-full p-0 border-0 border-b-2 border-ams-label focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                 </label>
                 <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                     LAST NAME *<br>
-                    <input type="text" placeholder="Glenn" class="block w-full bg-ams-label text-base placeholder-ams-primary placeholder-opacity-100">
+                    <input type="text" placeholder="Glenn" class="block w-full p-0 border-0 border-b-2 border-ams-label focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                 </label>
                 <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                     EMAIL ADDRESS *<br>
-                    <input type="text" placeholder="johnglenn@example.com" class="block w-full bg-ams-label text-base placeholder-ams-primary placeholder-opacity-100">
+                    <input type="text" placeholder="johnglenn@example.com" class="block w-full p-0 border-0 border-b-2 border-ams-label focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                 </label>
                 <a href="#" class="inline-block py-2 px-8 bg-ams-magenta text-ams-white font-serif">Join the A-List</a>
             </form>
