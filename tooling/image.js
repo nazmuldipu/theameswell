@@ -1,4 +1,4 @@
-import { readdir } from 'fs/promises';
+import { readdir, mkdir } from 'fs/promises';
 import sharp from 'sharp';
 import pAll from 'p-all';
 import { join, extname, basename } from 'path';
@@ -55,9 +55,9 @@ const formatTranslation = ext => {
 }
 
 try {
-    await rmNoExist(join(imagesPath.pathname, OUTPUT_DIR, '*'))
+    await rmNoExist(join(imagesPath.pathname, OUTPUT_DIR));
+    await mkdir(join(imagesPath.pathname, OUTPUT_DIR));
     const imgFiles = await readdir(join(imagesPath.pathname, SRC_DIR));
-    console.log('imagFi', imgFiles)
     const images = imgFiles
         .filter(imgFile => imgFile.match(/.(jpg|jpeg|png|svg|webp)$/i))
         .map(imgFile => ({
@@ -80,9 +80,8 @@ try {
         )
     }
     const start = performance.now();
-    const results = await pAll(conversions, { concurrency: 4 }); //we get diminishing returns around 4
+    await pAll(conversions, { concurrency: 4 }); //we get diminishing returns around 4
     const end = performance.now();
-    console.log('results', results);
     console.log('time', end - start)
 }
 catch (e) {
