@@ -9,7 +9,7 @@ nickname: "Sample Sample"
 {% from "macros.njk" import cardcard, tester %}
 {% from "videos.njk" import lazyvideo %}
 
-<article class="grid grid-flow-cols grid-cols-2">
+<article class="grid-flow-cols grid-cols-2">
     <section class="group m-96" x-data="{ count: 0 }">
         <h1 class="group-hover:text-indigo-500 medium:txtor-upright small:wrmode-vrl">Hallllo There {{ fake_name }} you {{ nickname }}</h1>
         <h2 class="group-hover:text-green-500">YOooooOO</h2>
@@ -25,4 +25,35 @@ nickname: "Sample Sample"
 </article>
 <section class="mt-96">
     {{ lazyvideo([{ src: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4", type: "video/mp4" }], "images/ameswell_entrance.png") }}
+</section>
+
+<section class="container mt-96">
+<media-carousel>
+    <div class="splide">
+        <div class="splide__arrows">
+            <button class="bg-rose-500 splide__arrow splide__arrow--prev">
+                Prev
+            </button>
+            <button class="bg-green-400 splide__arrow splide__arrow--next">
+                Next
+            </button>
+        </div>
+        <div class="splide__track">
+            <ul class="splide__list bg-yellow-500">
+                <li class="splide__slide">
+                    <img data-splide-lazy="https://burst.shopifycdn.com/photos/spinal-twist-yoga-wheel.jpg" alt="stuff">
+                </li>
+                <li class="splide__slide">
+                    <img data-splide-lazy="https://burst.shopifycdn.com/photos/dusty-rose.jpg" alt="dog">
+                </li>
+                <li class="splide__slide">
+                    <img data-splide-lazy="https://burst.shopifycdn.com/photos/berries-granola.jpg" alt="cat">
+                </li>
+            </ul>
+        </div>
+        <div class="splide__numbers text-8xl text-yellow-900">
+            <span class="splide__index">0</span> of <span class="splide__length">0</span>
+        </div>
+    </div>
+</media-carousel>
 </section>

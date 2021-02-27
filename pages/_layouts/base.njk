@@ -32,6 +32,8 @@ meta_description: Some description here DOOD
         {% endif %}
 <!-- end critical css -->
 <!-- start sync css -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide-core.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@latest/dist/css/splide-extension-video.min.css">
         {% if sync_css %}
             <link rel="stylesheet" type="text/css" href="{{sync_css}}">
         {% endif %}
@@ -56,6 +58,9 @@ meta_description: Some description here DOOD
         {% endif %}
         {% if async_js %}
             <script src="{{async_js}}" async></script>
+        {% endif %}
+        {% if module_js %}
+            <script src="{{module_js}}" type="module"></script>
         {% endif %}
         {% if sync_js %}
             <script src="{{sync_js}}"></script>

@@ -1,1 +1,1 @@
-{"sync_css":"sample/sample-sync.css","defer_js":"sample/index-defer.js","sync_js":"sample/index-sync.js"}
+{"defer_js":"sample/index-defer.js","sync_js":"sample/index-sync.js","module_js":"sample/sample-module.js","sync_css":"sample/sample-sync.css"}
