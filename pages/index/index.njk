@@ -7,6 +7,7 @@ permalinkBypassOutputDir: true
 nickname: "You Thing"
 ---
 {% from "videos.njk" import lazyvideo %}
+{% from "buttons.njk" import primaryButton %}
 {% from "icons.njk" import svgicon %}
 
 <div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-top w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
@@ -204,7 +205,7 @@ nickname: "You Thing"
                 ) }}
             </ul>
             <div class="mt-9 xmed:mt-0 mb-9 xmed:mb-0 grid-in-cta">
-                <a href="#" class="inline-block py-2 px-8 bg-ams-magenta text-ams-white font-serif xmed:w-full">Coming Summer 2021</a>
+                {{ primaryButton("room-detail.html", 'Coming Summer 2021') }}
             </div>
         </section>
     </article>
@@ -372,7 +373,7 @@ nickname: "You Thing"
                     EMAIL ADDRESS *<br>
                     <input type="text" placeholder="johnglenn@example.com" class="block w-full p-0 border-0 border-b-2 border-ams-label focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                 </label>
-                <a href="#" class="inline-block py-2 px-8 bg-ams-magenta text-ams-white font-serif">Join the A-List</a>
+                {{ primaryButton("#", 'Join the A-List') }}
             </form>
         </section>
     </article>
