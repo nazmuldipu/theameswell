@@ -5,6 +5,7 @@ meta_title: "The Contact Page"
 permalink: "build/contact.html"
 permalinkBypassOutputDir: true
 ---
+{% from "buttons.njk" import primaryButton %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--page-detail-xmed xmed:bg-hero--page-detail bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -57,7 +58,7 @@ permalinkBypassOutputDir: true
                         MESSAGE<br>
                         <textarea class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary min-h-l bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50"></textarea>
                     </label>
-                    <a href="#" class="inline-block py-2 px-8 bg-ams-magenta text-ams-white font-serif">Submit</a>
+                    {{ primaryButton("#", 'Submit') }}
                 </form>
             </article>
         </div>

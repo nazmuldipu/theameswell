@@ -5,6 +5,7 @@ meta_title: "The RFP Page"
 permalink: "build/rfp.html"
 permalinkBypassOutputDir: true
 ---
+{% from "buttons.njk" import primaryButton %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--events-xmed xmed:bg-hero--events bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -58,13 +59,13 @@ permalinkBypassOutputDir: true
                             <option>other</option>
                         </select>
                     </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                    <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                         START DATE<br>
-                        <input type="text" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        <input type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                     </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                    <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                         END DATE<br>
-                        <input type="text" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        <input type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                     </label>
                     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                         GUEST ROOMS NEEDED?<br>
@@ -84,7 +85,7 @@ permalinkBypassOutputDir: true
                         OTHER INFORMATION<br>
                         <input type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                     </label>
-                    <a href="#" class="inline-block py-2 px-8 bg-ams-magenta text-ams-white font-serif">Submit</a>
+                    {{ primaryButton("#", 'Submit') }}
                 </form>
             </article>
         </div>
