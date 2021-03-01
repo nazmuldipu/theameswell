@@ -163,12 +163,20 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 /****  start page-header  ********************************/
 .page-header__menu-container {
-    transform: translateY(-150%);
+    opacity: 0;
+    height: 0;
 }
 .page-header__toggle:checked ~ .page-header__menu-container {
-    transition: transform 0.5s ease-out;
-    transform: translateY(0%);
-    transform-origin: top;
+    height: 100vh;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+@media all and ( min-width: 900px ) {
+    .page-header__toggle:checked ~ .page-header__menu-container {
+        height: auto;
+    }
 }
 .page-header__toggle:not(:checked) ~ .page-header__menu-container {
     transition: transform 0.5s ease-in;
@@ -241,11 +249,12 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 @media all and ( min-width: 900px ) {
     .page-index .page-header--splayed .page-header__menu-container{
         background: transparent;
+        opacity: 1;
+        overflow: visible;
         padding-top: 0;
         position: relative;
         right: 0;
         top: 0;
-        transform: scaleY(1);
     }
 }
 @media all and ( min-width: 900px ) {
@@ -265,7 +274,6 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     }
 }
 @media all and ( min-width: 900px ) {
-    /* TODO: removing menu close transition on home due to docked styling at top, perhaps consider a different approach to animation? */
     .page-index .page-header:not(.page-header--splayed) .page-header__toggle:not(:checked) ~ .page-header__menu-container {
         transition: all 0s ease 0s;
     }
