@@ -36,6 +36,7 @@ export default class MediaCarousel extends ProgressiveElement {
                 console.log('mod', mod)
                 if(mod.Splide) {
                     console.log(this.firstElementChild, this.firstChild)
+                    // TODO -- look for .splide -- if multiple, sync and then mount all
                     this.splideInstance = new mod.Splide(this.firstElementChild, mod.defaultConfig).mount({ 
                         Video: mod.Extensions.Video,
                         Numbers: mod.NumberExtension

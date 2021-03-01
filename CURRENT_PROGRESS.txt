@@ -1,0 +1,10 @@
+Currently
+--- need to position the nav element in the carousel
+--- however, can not position it relatively given: caption and slide architecture
+--- Solution ideas
+    --- break caption outside of the Splide track and then use JS to load (e.g. data-splide-caption?)
+        --- downside is losing ability to flip through with caption / have nice caption transition automatically
+            --- can Splide handle this? Maybe through "sync" -- but then would have slides with no images
+    --- absolutely position nav
+        --- would have to be with reference to picture, and picture would then have to have a priori known height
+            --- height known at different breakpoints...
