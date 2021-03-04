@@ -32,23 +32,27 @@ export default class MediaCarousel extends ProgressiveElement {
     _onLoad(moduleId, entries, observer) {
         if(entries.some(entry => entry.isIntersecting)) {
             super._onLoad(moduleId).then(({ mod }) => {
-                // expect { Splide, Extensions, defaultConfig } to be there
                 console.log('mod', mod)
                 if(mod.Splide) {
                     console.log(this.firstElementChild, this.firstChild)
-                    // TODO -- look for .splide -- if multiple, sync and then mount all
-                    this.splideInstance = new mod.Splide(this.firstElementChild, mod.defaultConfig).mount({ 
+                    // TODO -- look for .splide class -- if multiple, sync and then mount all
+                    // will need to differentiate caption version from normal version
+                    this.splideImagesInstance = new mod.Splide(
+                        this.getElementsByClassName('splide splide__images')?.[0],
+                        mod.defaultConfig
+                    ).mount({
                         Video: mod.Extensions.Video,
                         Numbers: mod.NumberExtension
-                     });
-                }
+                    });
 
-                // to do -- need to figure out how to use mod.id?
-                // not sure if we do.... using the element should be enough
-                // this is where we mount the Splide
-                // if this is a Splide to mount
-                //this.splideInstance = new Splide(this, defaultConfig).mount(Extensions);
-            })
+                    this.splideCaptionsInstance = new mod.Splide(
+                        this.getElementsByClassName('splide splide__captions')?.[0],
+                        mod.captionsConfig
+                    );
+
+                    this.splideCaptionsInstance.sync(this.splideImagesInstance).mount();
+                }
+            });
         }
     }
 }

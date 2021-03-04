@@ -2,7 +2,6 @@
 
 export default class ProgressiveElement extends HTMLElement {
     static loadCSS(cssPath) {
-        console.log('loadCSS', cssPath)
         return new Promise((resolve, reject) => {
             // first, see if the link already exists on the document
             const alreadyLoaded = [...document.styleSheets].find(style => style.href === cssPath);
@@ -14,7 +13,6 @@ export default class ProgressiveElement extends HTMLElement {
                 link.rel = 'stylesheet';
                 link.onload = function() { 
                     resolve(link);
-                    console.log('style has loaded'); 
                 };
                 link.href = cssPath;
             
@@ -49,7 +47,6 @@ export default class ProgressiveElement extends HTMLElement {
      * @param {String} moduleId 
      */
     async _onLoad(moduleId) {
-        console.log('onLoad', moduleId)
         let mod = this._moduleMap.get(moduleId)
         if(mod) {
             mod.observer.destroy();

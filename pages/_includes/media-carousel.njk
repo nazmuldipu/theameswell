@@ -1,7 +1,7 @@
 {% macro media_carousel(slides, background_color) %}
     <figure class="{{ background_color }}">
     <media-carousel>
-        <div class="splide">
+        <div class="splide splide__images">
             <div class="splide__track">
                 <ul class="splide__list">
                     {% for slide in slides %}
@@ -10,33 +10,31 @@
                         {% else %}
                         <li class="splide__slide">
                         {% endif %}
-                            <div class="splide__slide__container">
                                 <!--picture-->
                                     <!--source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp"-->
                                     <img data-splide-lazy="{{ slide.image }}.jpg">
                                 <!--/picture-->
-                            </div>
-                        {% if slide.caption %}
+                        <!--{% if slide.caption %}
                         <figcaption class="max-w-xl pt-6 pb-4 px-4 m-auto text-center text-ams-primary">
                             {{ slide.caption }}
                         </figcaption>
-                        {% endif %}
+                        {% endif %}-->
                         </li>
                     {% endfor %}
                 </ul>
             </div>
-            <nav class="splide__arrows flex flex-row items-center relative m-auto w-max py-2 px-4 bg-ams-white shadow-md">
-                <button class="splide__arrow splide__arrow--prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold -indent-xl overflow-hidden">
+            <nav class="splide__arrows flex flex-row items-center relative m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
+                <button class="splide__arrow splide__arrow--prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                     previous
                 </button>
                 <span class="px-4 whitespace-nowrap text-ams-gold font-bold">
                     <span class="splide__index">0</span> of <span class="splide__length">0</span>
                 </span>
-                <button class="splide__arrow splide__arrow--next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold -indent-xl overflow-hidden">
+                <button class="splide__arrow splide__arrow--next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                     next
                 </button>
             </nav>
-            <div class="splide">
+            <div class="splide splide__captions">
             <div class="splide__track">
                 <ul class="splide__list">
                     {% for slide in slides %}

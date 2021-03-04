@@ -6,6 +6,7 @@ const Extensions = window.splide.Extensions;
 const Splide = window.Splide;
 const defaultConfig = {
     type: 'loop',
+    rewind: true,
     lazyLoad: 'nearby',
     cover: true,
     heightRatio: 0.5,
@@ -18,8 +19,15 @@ const defaultConfig = {
     }
 };
 
+const captionsConfig = {
+    type: 'loop',
+    arrows: false,
+    perPage: 1,
+    rewind: true
+};
+
 const NumberExtension = ( Splide, Components ) => {
-    let indexEl, lengthEl; 
+    let indexEl, lengthEl;
     return {
         mount() {
             indexEl = Splide.root.getElementsByClassName('splide__index')?.[0];
@@ -51,9 +59,11 @@ const NumberExtension = ( Splide, Components ) => {
     }
 }
 
+
 export {
     Splide,
     Extensions,
     NumberExtension,
-    defaultConfig
+    defaultConfig,
+    captionsConfig
 }
