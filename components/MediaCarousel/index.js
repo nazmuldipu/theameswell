@@ -40,10 +40,10 @@ export default class MediaCarousel extends ProgressiveElement {
                     this.splideImagesInstance = new mod.Splide(
                         this.getElementsByClassName('splide splide__images')?.[0],
                         mod.defaultConfig
-                    ).mount({
+                    ).mount(/* {
                         Video: mod.Extensions.Video,
                         Numbers: mod.NumberExtension
-                    });
+                    } */);
 
                     this.splideCaptionsInstance = new mod.Splide(
                         this.getElementsByClassName('splide splide__captions')?.[0],

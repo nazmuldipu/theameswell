@@ -6,11 +6,9 @@ const Extensions = window.splide.Extensions;
 const Splide = window.Splide;
 const defaultConfig = {
     type: 'loop',
-    rewind: true,
     lazyLoad: 'nearby',
     cover: true,
     heightRatio: 0.5,
-    pagination: false,
     video: {
         autoplay: true,
         mute: true,
@@ -22,8 +20,7 @@ const defaultConfig = {
 const captionsConfig = {
     type: 'loop',
     arrows: false,
-    perPage: 1,
-    rewind: true
+    perPage: 1
 };
 
 const NumberExtension = ( Splide, Components ) => {

@@ -1,24 +1,18 @@
-Currently
---- need to position the nav element in the carousel
---- however, can not position it relatively given: caption and slide architecture
---- Solution ideas
-    --- break caption outside of the Splide track and then use JS to load (e.g. data-splide-caption?)
-        --- downside is losing ability to flip through with caption / have nice caption transition automatically
-            --- can Splide handle this? 
-                --- A) Maybe through "sync" and another slider -- but then would have slides with no images
-                    --- would also need to hide the arrows [done]
-                    --- need numbers to sync on image "drag" event...
-                    --- need buttons to not have highlighted outline -- some extra margin / padding for pressing would be good too
-                --- B) what about use of Splide Extensions (e.g. Splide caption)? Would then have to define transitions
-POSSIBLY USEFUL SPLIDE FEATURES
-    --- 
-    --- absolutely position nav
-        --- would have to be with reference to picture, and picture would then have to have a priori known height
-            --- height would need to be known at different breakpoints...
+Current Agenda
+- need to get responsiveness for the slider on index page
+- need to test with videos
+- need to put slider on rest of pages
+- need to apply slider behavior to room carousel
+- need to get slider content right
+- test
+- merge
+
+NEW CAROUSEL DESIGN
+- for image galleries will only have single caption -- so don't need to sync with images
+    - hopefully this will make the responsiveness issue go away
+- for Room carousel, single image with <room-title> + <room-description> pairs that have slider behavior
 
 
---- How can I access Components? -- e.g. Drag...
-MAIN ISSUE -- how to get 'drag' in navigational Component to effect an appropriate 'move'?
-emit a move event?
-
---- the silence of being the navigational Component messes things up...
+LATER
+- possibility of caption per image
+- move away from Splide to proprietary Web Component based solution
