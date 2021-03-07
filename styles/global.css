@@ -55,6 +55,11 @@
         @apply font-serif;
         @apply pb-4;
     }
+    .title-display {
+        @apply text-ams-primary;
+        @apply font-serif-display;
+        @apply pb-4;
+    }
     /****  end base styles  ********************************/
 }
 
