@@ -9,7 +9,8 @@
     viewboxHeight='48',
     svgFill='none',
     stroke='',
-    strokeWidth=''
+    strokeWidth='',
+    preserveAspectRatio='none'
 ) %}
     <li class="{{ containerClassName }}">
         <svg
@@ -20,6 +21,7 @@
             fill="{{ svgFill }}"
             stroke="{{ stroke }}"
             stroke-width="{{ strokeWidth }}"
+            preserveAspectRatio="{{ preserveAspectRatio }}"
             xmlns="http://www.w3.org/2000/svg">
 
             {% for path in paths %}
