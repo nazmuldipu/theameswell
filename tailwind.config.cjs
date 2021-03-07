@@ -66,7 +66,8 @@ module.exports = {
       placeholderColor: theme => theme('colors'),
       fontFamily: {
         sans: ['Mark Pro', 'sans-serif'],
-        serif: ['Eksell Display Small', 'serif']
+        serif: ['Eksell Display Small', 'serif'],
+        'serif-display': ['Eksell Display Large', 'serif']
       },
       gridTemplateRows: {
         'hero-home': '400px auto',
