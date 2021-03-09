@@ -1,0 +1,59 @@
+{% macro svgicon(
+    paths=[],
+    copy='',
+    containerClassName='grid grid-cols-sm-auto items-center content-start gap-4 mb-2 xmed:grid-cols-1 xmed:justify-items-center xmed:px-8 xmed:text-center',
+    svgClassName='icon inline-block',
+    width='48',
+    height='48',
+    viewboxWidth='48',
+    viewboxHeight='48',
+    svgFill='none',
+    stroke='',
+    strokeWidth='',
+    preserveAspectRatio='none'
+) %}
+    <li class="{{ containerClassName }}">
+        <svg
+            class="{{ svgClassName }}"
+            width="{{ width }}"
+            height="{{ height }}"
+            viewBox="0 0 {{ viewboxWidth }} {{ viewboxHeight }}"
+            fill="{{ svgFill }}"
+            stroke="{{ stroke }}"
+            stroke-width="{{ strokeWidth }}"
+            preserveAspectRatio="{{ preserveAspectRatio }}"
+            xmlns="http://www.w3.org/2000/svg">
+
+            {% for path in paths %}
+                {% if path.maskId %}
+                    <mask
+                        id="{{ path.maskId }}"
+                        mask-type="{{ path.maskType }}"
+                        maskUnits="{{ path.maskUnits }}"
+                        x="{{ path.maskX }}"
+                        y="{{ path.maskY }}"
+                        width="{{ path.maskWidth }}"
+                        height="{{ path.maskHeight }}">
+                        <path
+                            fill="{{ path.maskFill }}"
+                            d="{{ path.maskD }}"/>
+                    </mask>
+                {% endif %}
+                <g{% if path.maskId %} mask="{{ path.maskId }}"{% endif %}>
+                    <path
+                        fill-rule="{{ path.fillRule }}"
+                        clip-rule="{{ path.clipRule }}"
+                        fill="{{ path.fill }}"
+                        stroke="{{ path.stroke }}"
+                        stroke-linecap="{{ path.strokeLinecap }}"
+                        stroke-linejoin="{{ path.strokeLinejoin }}"
+                        d="{{ path.d }}"/>
+                </g>
+            {% endfor %}
+
+        </svg>
+        {% if copy %}
+            {{ copy }}
+        {% endif %}
+    </li>
+{% endmacro %}
