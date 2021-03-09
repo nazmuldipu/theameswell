@@ -29,6 +29,7 @@ export const buildJS = async (inputPaths, outDir, outBase, metafilePath) => {
     await esbuild.build({
         entryPoints: inputPaths,
         bundle: true,
+        format: 'esm',
         external:[ 
             '*.jpg',
             '*.webp',

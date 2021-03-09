@@ -10,5 +10,15 @@
             "href": "images/hero-home_xmed.webp",
             "media": "(max-width:900px)"
         }
+    ],
+    "groundslides": [
+        {
+            "image": "images/homepage-5",
+            "caption": "Located on eleven scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer planners endless opportunities to create memorable meeting experiences."
+        },
+        {
+            "image": "images/homepage-6",
+            "caption": "stuff stuff stuff stuff STUFF STUFF STUFS STUFADF"
+        }
     ]
 }

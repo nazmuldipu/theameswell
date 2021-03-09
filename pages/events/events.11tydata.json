@@ -1,0 +1,21 @@
+{
+    "eventslides": [
+        {
+            "image": "images/hero-events",
+            "caption": "Our flexible Ballroom has floor-to-ceiling windows to create a generous space filled with natural light, easily accommodating groups up to 490. For smaller meetings, the Boardroom, Breakout Room, Library and Art Gallery offer a variety of opportunities for creative gatherings or breakout sessions. The expansive Event Lawn offers a unique open air venue where the sky really is the limit on what you and our team can create."
+        },
+        {
+            "image": "images/homepage-6"
+        }
+    ],
+    "groundslides": [
+        {
+            "image": "images/homepage-5",
+            "caption": "Located on eleven scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer planners endless opportunities to create memorable meeting experiences."
+        },
+        {
+            "image": "images/homepage-6",
+            "caption": "test test"
+        }
+    ]
+}

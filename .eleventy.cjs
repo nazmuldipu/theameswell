@@ -7,6 +7,9 @@ module.exports = function(eleventyConfig) {
         return array[index];
     });
 
+    // TODO will need to minify on the backend
+    eleventyConfig.addPassthroughCopy({ 'components/lib': 'lib' })
+
     eleventyConfig.addPassthroughCopy('videos');
     
     eleventyConfig.addPassthroughCopy({ 'images/output': 'images' });

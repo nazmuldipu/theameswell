@@ -1,0 +1,40 @@
+{% macro media_carousel(slides, background_color, caption) %}
+    <figure class="{{ background_color if background_color }}">
+    <media-carousel>
+        <div class="swiper-container w-full h-full">
+            <div class="swiper-wrapper">
+                    {% for slide in slides %}
+                        {% if slide.video %}
+                        <div class="swiper-slide" data-splide-html-video="{{ slide.video }}">
+                        {% else %}
+                        <div class="swiper-slide">
+                        {% endif %}
+                        <!--picture-->
+                            <!--source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp"-->
+                            <img data-src="{{ slide.image }}.jpg" class="swiper-lazy w-full h-auto">
+                            <div class="swiper-lazy-preloader"></div>
+                        <!--/picture-->
+                        </div>
+                    {% endfor %}
+            </div>
+            <nav class="flex flex-row items-center relative z-10 m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
+                <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                    previous
+                </button>
+                <span class="px-4 whitespace-nowrap text-ams-gold">
+                    <span class="carousel-pagination"></span>
+                </span>
+                <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                    next
+                </button>
+            </nav>
+            {% if caption %}
+            <figcaption class="max-w-xl pt-6 pb-4 px-4 m-auto text-center text-ams-primary">
+                {{ caption }}
+            </figcaption>
+            {% endif %}
+        </div>
+    </media-carousel>
+    </figure>
+    
+{% endmacro %}

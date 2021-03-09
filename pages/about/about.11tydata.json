@@ -1,0 +1,11 @@
+{
+    "slides": [
+        {
+            "image": "images/homepage-5"
+        },
+        {
+            "image": "images/homepage-6",
+            "caption": "hello"
+        }
+    ]
+}

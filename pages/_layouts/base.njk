@@ -56,6 +56,9 @@ meta_description: The Ameswell Hotel offers uncommon luxury in Silicon Valley. N
         {% if async_js %}
             <script src="{{async_js}}" async></script>
         {% endif %}
+        {% if module_js %}
+            <script src="{{module_js}}" type="module"></script>
+        {% endif %}
         {% if sync_js %}
             <script src="{{sync_js}}"></script>
         {% endif %}

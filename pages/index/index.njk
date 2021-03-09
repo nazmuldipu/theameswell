@@ -7,6 +7,7 @@ permalink: "build/index.html"
 permalinkBypassOutputDir: true
 ---
 {% from "videos.njk" import lazyvideo %}
+{% from "media-carousel.njk" import media_carousel %}
 {% from "buttons.njk" import primaryButton %}
 {% from "icons.njk" import svgicon %}
 
@@ -294,35 +295,10 @@ permalinkBypassOutputDir: true
         </section>
     </article>
 </div>
-
-
-
-
-
-
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="max-w-screen-lg mt-8">
+<div class="grid auto-cols-fr justify-items-center w-full bg-ams-base">
+    <article class="mt-5 w-full max-w-screen-lg overflow-hidden">
         <section>
-            <figure class="grid justify-items-center bg-ams-white xmed:bg-ams-base">
-                <picture>
-                    <source srcset="images/homepage-5.webp" type="image/webp">
-                    <img srcset="images/homepage-5.jpg" src="images/homepage-5.jpg">
-                </picture>
-                <nav class="relative -top-4 py-2 px-4 bg-ams-white shadow-md">
-                    <a href="#" class="inline-block w-3 h-3 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold -indent-xl overflow-hidden">
-                        previous
-                    </a>
-                    <span class="px-2 xmed:px-4 whitespace-nowrap text-ams-gold font-bold">
-                        1 of 4
-                    </span>
-                    <a href="#" class="inline-block w-3 h-3 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold -indent-xl overflow-hidden">
-                        next
-                    </a>
-                </nav>
-                <figcaption class="max-w-xl pt-2 pb-4 px-4 text-center text-ams-primary">
-                    Located on 11 scenic acres in Mountain View with over 15,000 square feet of indoor and outdoor event space, we offer planners endless opportunities to create memorable meeting experiences at the newest and cleanest hotel in Silicon Valley.
-                </figcaption>
-            </figure>
+            {{ media_carousel(groundslides, "bg-ams-white xmed:bg-ams-base", "Located on eleven scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer planners endless opportunities to create memorable meeting experiences.") }}
         </section>
     </article>
 </div>
