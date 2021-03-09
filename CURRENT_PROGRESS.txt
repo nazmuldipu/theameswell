@@ -1,18 +1,3 @@
-Current Agenda
-- need to get responsiveness for the slider on index page
-- need to test with videos
-- need to put slider on rest of pages
-- need to apply slider behavior to room carousel
-- need to get slider content right
-- test
-- merge
-
-NEW CAROUSEL DESIGN
-- for image galleries will only have single caption -- so don't need to sync with images
-    - hopefully this will make the responsiveness issue go away
-- for Room carousel, single image with <room-title> + <room-description> pairs that have slider behavior
-
-
 LATER
 - possibility of caption per image
-- move away from Splide to proprietary Web Component based solution
+- tune imports to only what is needed
