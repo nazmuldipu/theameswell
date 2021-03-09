@@ -1,11 +1,28 @@
 {
     "slides": [
         {
-            "image": "images/homepage-5"
+            "image": "images/about-gallery-1",
+            "imgtype": "png"
         },
         {
-            "image": "images/homepage-6",
-            "caption": "hello"
+            "image": "images/about-gallery-2",
+            "imgtype": "png"
+        },
+        {
+            "image": "images/about-gallery-3",
+            "imgtype": "png"
+        },
+        {
+            "image": "images/about-gallery-4",
+            "imgtype": "png"
+        },
+        {
+            "image": "images/about-gallery-5",
+            "imgtype": "png"
+        },
+        {
+            "image": "images/about-gallery-6",
+            "imgtype": "png"
         }
     ]
 }
