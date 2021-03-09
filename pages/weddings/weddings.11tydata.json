@@ -1,8 +1,10 @@
 {
     "slides": [
         {
-            "image": "images/weddings-1",
-            "video": "videos/weddings-video-1.mp4"
+            "image": "images/weddings-1"
+        },
+        {
+            "image": "images/homepage-3"
         }
     ]
 }
