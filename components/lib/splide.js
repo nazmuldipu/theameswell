@@ -17,12 +17,6 @@ const defaultConfig = {
     }
 };
 
-const captionsConfig = {
-    type: 'loop',
-    arrows: false,
-    perPage: 1
-};
-
 const NumberExtension = ( Splide, Components ) => {
     let indexEl, lengthEl;
     return {
@@ -61,6 +55,5 @@ export {
     Splide,
     Extensions,
     NumberExtension,
-    defaultConfig,
-    captionsConfig
+    defaultConfig
 }

@@ -1,48 +1,36 @@
 {% macro media_carousel(slides, background_color) %}
     <figure class="{{ background_color }}">
     <media-carousel>
-        <div class="splide splide__images">
-            <div class="splide__track">
-                <ul class="splide__list">
+        <div class="swiper-container w-full h-full">
+            <div class="swiper-wrapper">
                     {% for slide in slides %}
                         {% if slide.video %}
-                        <li class="splide__slide" data-splide-html-video="{{ slide.video }}">
+                        <div class="swiper-slide" data-splide-html-video="{{ slide.video }}">
                         {% else %}
-                        <li class="splide__slide">
+                        <div class="swiper-slide">
                         {% endif %}
-                                <!--picture-->
-                                    <!--source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp"-->
-                                    <img data-splide-lazy="{{ slide.image }}.jpg">
-                                <!--/picture-->
-                        </li>
+                        <!--picture-->
+                            <!--source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp"-->
+                            <img data-src="{{ slide.image }}.jpg" class="swiper-lazy w-full h-auto">
+                            <div class="swiper-lazy-preloader"></div>
+                        <!--/picture-->
+                        </div>
                     {% endfor %}
-                </ul>
             </div>
-            <nav class="splide__arrows flex flex-row items-center relative m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
-                <button class="splide__arrow splide__arrow--prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+            <nav class="flex flex-row items-center relative z-10 m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
+                <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                     previous
                 </button>
-                <span class="px-4 whitespace-nowrap text-ams-gold font-bold">
-                    <span class="splide__index">0</span> of <span class="splide__length">0</span>
+                <span class="px-4 whitespace-nowrap text-ams-gold">
+                    <span class="carousel-pagination"></span>
                 </span>
-                <button class="splide__arrow splide__arrow--next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                     next
                 </button>
             </nav>
-            <div class="splide splide__captions">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    {% for slide in slides %}
-                        <li class="splide__slide">
-                        {% if slide.caption %}
-                        <figcaption class="max-w-xl pt-6 pb-4 px-4 m-auto text-center text-ams-primary">
-                            {{ slide.caption }}
-                        </figcaption>
-                        {% endif %}
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
+            <figcaption class="max-w-xl pt-6 pb-4 px-4 m-auto text-center text-ams-primary">
+                Located on eleven scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer planners endless opportunities to create memorable meeting experiences.
+            </figcaption>
         </div>
     </media-carousel>
     </figure>
