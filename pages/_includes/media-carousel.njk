@@ -11,7 +11,7 @@
                         {% endif %}
                         <!--picture-->
                             <!--source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp"-->
-                            <img data-src="{{ slide.image }}.jpg" class="swiper-lazy w-full h-auto">
+                            <img data-src="{{ slide.image }}.{{ slide.imgtype if slide.imgtype else 'jpg' }}" class="swiper-lazy w-full h-auto">
                             <div class="swiper-lazy-preloader"></div>
                         <!--/picture-->
                         </div>
