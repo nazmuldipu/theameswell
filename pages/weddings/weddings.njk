@@ -11,7 +11,6 @@ fabCopy: "Plan<br>Wedding"
 fabPos: "bottom-5 xmed:bottom-8 right-7 xmed:right-12 mr-3"
 ---
 {% from "videos.njk" import lazyvideo %}
-{% from "media-carousel.njk" import media_carousel %}
 {% from "icons.njk" import svgicon %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--weddings-xmed xmed:bg-hero--weddings bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
@@ -32,7 +31,7 @@ fabPos: "bottom-5 xmed:bottom-8 right-7 xmed:right-12 mr-3"
 </div>
 <div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
     <article class="w-full max-w-screen-lg overflow-hidden">
-        {{ media_carousel(slides, "", "") }}
+        {{ lazyvideo([{ src: "videos/weddings-video-1.mp4", type: "video/mp4"}], "images/weddings-1.webp", "lazy") }}
     </article>
 </div>
 <div class="w-full grid justify-items-center px-4 pb-8 bg-ams-base">
