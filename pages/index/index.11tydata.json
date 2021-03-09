@@ -2,7 +2,7 @@
     "preload_images": [
         {
             
-            "href": "images/hero-home.webp",
+            "href": "images/hero-home-large-4800.webp",
             "media": "(min-width:900.1px)"
         },
         {
