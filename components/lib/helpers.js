@@ -5,10 +5,15 @@ import {
 } from './constants.js';
 
 const shouldRecordFormEl = el => {
-    if(el instanceof HTMLInputElement && (el.type === 'checkbox' || el.type === 'radio')) {
-        return el.checked;
+    if(el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement || el instanceof HTMLSelectElement) {
+        if(el.type === 'checkbox' || el.type === 'radio') {
+            return el.checked;
+        }
+        // check for empty text
+        return el.value !== "";
     }
-    return true;
+    
+    return false;
 }
 
 export const getBodyFromForm = form => {
@@ -17,10 +22,10 @@ export const getBodyFromForm = form => {
         if (shouldRecordFormEl(el)) {
             if(body[el.name]) {
                 //we assume that for multiply encountered names, we want to send all registered values
-                if(isArray(body[el.name])) {
+                if(Array.isArray(body[el.name])) {
                     body[el.name].push(el.value);
                 } else {
-                    body[el.name] = [el.value];
+                    body[el.name] = [ body[el.name], el.value ];
                 }
             } else {
                 body[el.name] = el.value;
@@ -34,7 +39,7 @@ export async function sendContact(form, contactType) {
     const requestBody = getBodyFromForm(form);
     console.log('sendContact req body', requestBody)
 
-    const response = await fetch(`${CONTACT_URL}/${contactType}`, {
+    const response = await fetch(`${CONTACT_URL}${contactType}`, {
         method: 'POST',
         mode: 'cors',
         headers: {

@@ -55,10 +55,10 @@ permalinkBypassOutputDir: true
                             EVENT TYPE *<br>
                             <select name="eventType" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
                                 <option value="" disabled selected hidden></option>
-                                <option>wedding</option>
-                                <option>event</option>
-                                <option>meeting</option>
-                                <option>other</option>
+                                <option value="wedding">wedding</option>
+                                <option value="event">event</option>
+                                <option value="meeting">meeting</option>
+                                <option value="other">other</option>
                             </select>
                         </label>
                         <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
@@ -71,8 +71,8 @@ permalinkBypassOutputDir: true
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                             GUEST ROOMS NEEDED?<br>
-                            <div class="space-x-2 items-center"><input type="radio" checked name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                            <div class="space-x-2 items-center"><input type="radio" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                            <div class="space-x-2 items-center"><input type="radio" value="yes" checked name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                            <div class="space-x-2 items-center"><input type="radio" value="no" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             IF SO, HOW MANY?<br>
@@ -80,8 +80,8 @@ permalinkBypassOutputDir: true
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                             DO YOU REQUIRE A/V?<br>
-                            <div class="space-x-2 items-center"><input type="radio" name="audioVisual" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                            <div class="space-x-2 items-center"><input type="radio" name="audioVisual" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                            <div class="space-x-2 items-center"><input type="radio" value="yes" name="audioVisual" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                            <div class="space-x-2 items-center"><input type="radio" value="no" name="audioVisual" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             OTHER INFORMATION<br>
