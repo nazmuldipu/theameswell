@@ -29,65 +29,66 @@ permalinkBypassOutputDir: true
                 <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
                     Event request form
                 </h2>
-                <form>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        FIRST NAME *<br>
-                        <input type="text" placeholder="Al" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        LAST NAME *<br>
-                        <input type="text" placeholder="Shepard" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        PHONE NUMBER *<br>
-                        <input type="text" placeholder="718-555-1212" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        EMAIL ADDRESS *<br>
-                        <input type="text" placeholder="ashepard@example.com" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        EVENT NAME *<br>
-                        <input type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        EVENT TYPE *<br>
-                        <select class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
-                            <option value="" disabled selected hidden></option>
-                            <option>wedding</option>
-                            <option>event</option>
-                            <option>meeting</option>
-                            <option>other</option>
-                        </select>
-                    </label>
-                    <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        START DATE<br>
-                        <input type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        END DATE<br>
-                        <input type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                        GUEST ROOMS NEEDED?<br>
-                        <div class="space-x-2 items-center"><input type="radio" checked name="guestrooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                        <div class="space-x-2 items-center"><input type="radio" name="guestrooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        IF SO, HOW MANY?<br>
-                        <input type="number" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                        DO YOU REQUIRE A/V?<br>
-                        <div class="space-x-2 items-center"><input type="radio" name="avneeded" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                        <div class="space-x-2 items-center"><input type="radio" name="avneeded" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
-                    </label>
-                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                        OTHER INFORMATION<br>
-                        <input type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                    </label>
-                    {{ primaryButton("#", 'Submit') }}
-                </form>
+                <form-sender data-type="event">
+                    <form>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            FIRST NAME *<br>
+                            <input name="firstName" type="text" placeholder="Al" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            LAST NAME *<br>
+                            <input name="lastName" type="text" placeholder="Shepard" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            PHONE NUMBER *<br>
+                            <input name="phone" type="text" placeholder="718-555-1212" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            EMAIL ADDRESS *<br>
+                            <input name="email" type="text" placeholder="ashepard@example.com" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            EVENT NAME *<br>
+                            <input name="eventName" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            EVENT TYPE *<br>
+                            <select name="eventType" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
+                                <option value="" disabled selected hidden></option>
+                                <option>wedding</option>
+                                <option>event</option>
+                                <option>meeting</option>
+                                <option>other</option>
+                            </select>
+                        </label>
+                        <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            START DATE<br>
+                            <input name="startDate" type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            END DATE<br>
+                            <input name="endDate" type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
+                            GUEST ROOMS NEEDED?<br>
+                            <div class="space-x-2 items-center"><input type="radio" checked name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                            <div class="space-x-2 items-center"><input type="radio" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            IF SO, HOW MANY?<br>
+                            <input name="guestRoomCount" type="number" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
+                            DO YOU REQUIRE A/V?<br>
+                            <div class="space-x-2 items-center"><input type="radio" name="audioVisual" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                            <div class="space-x-2 items-center"><input type="radio" name="audioVisual" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                        </label>
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
+                            OTHER INFORMATION<br>
+                            <input name="additionalInfo" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                        </label>
+                        {{ primaryButton("#", 'Submit','submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
+                    </form>
             </article>
         </div>
     </div>
