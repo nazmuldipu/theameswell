@@ -1,11 +1,11 @@
 {% macro fab(fabUrl, fabBg, fabCopy, fabPos) %}
-<a href="{{ fabUrl if fabUrl else 'contact.html' }}" class="fixed bottom-0 right-4 z-50 w-fab-sm xmed:w-fab-lg">
+<a href="{{ fabUrl if fabUrl else 'contact.html' }}" class="fixed bottom-0 right-4 z-50 w-fab-container-sm xmed:w-fab-container-lg">
     <span class="absolute {{ fabPos if fabPos else 'bottom-5 xmed:bottom-8 right-11 xmed:right-16 mr-0.5' }} text-center text-xl xmed:text-2xl text-ams-white font-serif">
         {{ (fabCopy if fabCopy else 'Contact<br>Us') | safe }}
     </span>
-    <svg viewBox="0 0 375 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
-        <path d="M272 28H340L359 100H253L272 28Z" fill="#{{ fabBg if fabBg else '857550' }}"/>
-        <path d="M342 36.5C340 27 337.76 18.0553 331.102 11.3977C324.445 4.74017 315.415 1 306 1C296.585 0.999999 287.555 4.74017 280.898 11.3977C274.24 18.0552 272 27.5 270 36.5H306H342Z" fill="#{{ fabBg if fabBg else '857550' }}"/>
+    <svg viewBox="0 0 176 163" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-fab-width-sm h-fab-height-sm xmed:w-fab-width-lg xmed:h-fab-height-lg">
+        <path d="M31.5472 44H144.453L176 164H0L31.5472 44Z" fill="#{{ fabBg if fabBg else '857550' }}"/>
+        <path d="M148 56C144.694 41.0141 140.992 26.9041 129.989 16.402C118.985 5.89998 104.061 1.1213e-06 88.5 0C72.9388 -1.1213e-06 58.0149 5.89998 47.0115 16.402C36.0081 26.9041 32.3056 41.8028 29 56H88.5H148Z" fill="#{{ fabBg if fabBg else '857550' }}"/>
     </svg>
 </a>
 {% endmacro %}
