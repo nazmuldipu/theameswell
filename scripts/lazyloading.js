@@ -15,7 +15,6 @@ export const lazyLoadVideos = (lazyClass, observerOptions) => () => {
                     }
 
                     video.target.load();
-                    console.log('LOADING VIDEO')
                     video.target.classList.remove(lazyClass);
                     // observe just once to initiate the load
                     lazyVideoObserver.unobserve(video.target);

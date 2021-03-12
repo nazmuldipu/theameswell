@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksShortcode('access', function(array, index) {
         return array[index];
     });
-
+    
     // TODO will need to minify on the backend
     eleventyConfig.addPassthroughCopy({ 'components/lib': 'lib' })
 
