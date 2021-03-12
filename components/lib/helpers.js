@@ -41,7 +41,6 @@ export const getBodyFromForm = form => {
 
 export async function sendContact(form, contactType) {
     const requestBody = getBodyFromForm(form);
-    console.log('sendContact req body', requestBody)
 
     const response = await fetch(`${CONTACT_URL}${contactType}`, {
         method: 'POST',

@@ -23,7 +23,6 @@ export default class FormSender extends HTMLElement {
         this.form = this.getElementsByTagName('form')?.[0];
 
         this.formInteractionHandler = (e) => {
-            console.log('form interaction hanlding', e)
             this.clearFormInteractionListeners();
             this.hideStatus();
         };
@@ -46,8 +45,6 @@ export default class FormSender extends HTMLElement {
                             this.clearForm();
                         })
                     } else {
-                        console.log('res err', res)
-
                         if (res.body instanceof ReadableStream) {
                             // then we have an error object
                             res.json().then(e => {
@@ -60,7 +57,6 @@ export default class FormSender extends HTMLElement {
                 .catch(err => {
                     this.setStatusCopy(ERROR_MESSAGE);
                     this.setStatusColor(STATUS_COLOR_ERROR);
-                    console.error('contact response error', err)
                 })
                 .finally(() => {
                     this.applyFormInteractionListeners();
