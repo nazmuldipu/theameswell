@@ -47,8 +47,12 @@ module.exports = {
        'l': '8rem'
       },
       spacing: {
-         'fab-sm': '26rem',
-         'fab-lg': '35rem',
+          'fab-container-sm': '8.5rem',
+         'fab-container-lg': '12.2rem',
+         'fab-width-sm': '116px',
+         'fab-height-sm': '108px',
+         'fab-width-lg': '176px',
+         'fab-height-lg': '163px'
        },
       colors: {
         'rose': colors.rose,
