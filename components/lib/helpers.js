@@ -16,6 +16,10 @@ const shouldRecordFormEl = el => {
     return false;
 }
 
+export const isValid = (form) => {
+    return Array.from(form.elements).every( el => (el.required && el.value) || !el.required );
+}
+
 export const getBodyFromForm = form => {
     const elements = form.elements;
     return Array.from(elements).reduce((body, el) => {

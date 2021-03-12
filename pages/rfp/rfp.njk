@@ -33,27 +33,27 @@ permalinkBypassOutputDir: true
                     <form>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             FIRST NAME *<br>
-                            <input name="firstName" type="text" placeholder="Al" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                            <input required="required" aria-required="true" name="firstName" type="text" placeholder="Al" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             LAST NAME *<br>
-                            <input name="lastName" type="text" placeholder="Shepard" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                            <input required="required" aria-required="true" name="lastName" type="text" placeholder="Shepard" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             PHONE NUMBER *<br>
-                            <input name="phone" type="text" placeholder="718-555-1212" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                            <input required="required" aria-required="true" name="phone" type="text" placeholder="718-555-1212" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             EMAIL ADDRESS *<br>
-                            <input name="email" type="text" placeholder="ashepard@example.com" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                            <input required="required" aria-required="true" name="email" type="text" placeholder="ashepard@example.com" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             EVENT NAME *<br>
-                            <input name="eventName" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+                            <input required="required" aria-required="true" name="eventName" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             EVENT TYPE *<br>
-                            <select name="eventType" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
+                            <select required="required" aria-required="true" name="eventType" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
                                 <option value="" disabled selected hidden></option>
                                 <option value="wedding">wedding</option>
                                 <option value="event">event</option>
@@ -71,8 +71,8 @@ permalinkBypassOutputDir: true
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                             GUEST ROOMS NEEDED?<br>
-                            <div class="space-x-2 items-center"><input type="radio" value="yes" checked name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                            <div class="space-x-2 items-center"><input type="radio" value="no" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                            <div class="space-x-2 items-center"><input required="required" aria-required="true" type="radio" value="yes" checked name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                            <div class="space-x-2 items-center"><input required="required" aria-required="true" type="radio" value="no" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             IF SO, HOW MANY?<br>
@@ -80,14 +80,14 @@ permalinkBypassOutputDir: true
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                             DO YOU REQUIRE A/V?<br>
-                            <div class="space-x-2 items-center"><input type="radio" value="yes" name="audioVisual" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                            <div class="space-x-2 items-center"><input type="radio" value="no" name="audioVisual" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                            <div class="space-x-2 items-center"><input trequired="required" aria-required="true" ype="radio" value="yes" name="audioVisual" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
+                            <div class="space-x-2 items-center"><input required="required" aria-required="true" type="radio" value="no" name="audioVisual" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
                         </label>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             OTHER INFORMATION<br>
                             <input name="additionalInfo" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
                         </label>
-                        {{ primaryButton("#", 'Submit','submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
+                        {{ primaryButton("#", 'Submit','submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
                     </form>
             </article>
         </div>
