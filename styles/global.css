@@ -102,6 +102,12 @@
 x-cloak {
     display: none;
 }
+
+input[type="date"]
+{
+    -webkit-appearance: none;
+}
+
 .segment__cta:after{
     content: '';
     display: block;
