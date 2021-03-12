@@ -187,6 +187,16 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     transition: transform 0.5s ease-in;
     transform-origin: top;
 }
+.page-header__toggle:checked ~ .page-header__menu-container .page-header__menu {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+@media all and ( min-width: 900px ) {
+    .page-header__toggle:checked ~ .page-header__menu-container .page-header__menu {
+        padding-bottom: 6rem;
+        padding-top: 8rem;
+    }
+}
 .page-header__toggle-button:before,
 .page-header__toggle-button:after {
     border-top: solid 1px theme(colors.ams-white);
