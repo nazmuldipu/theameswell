@@ -14,23 +14,28 @@
     "groundslides": [
         {
             "image": "images/homepage-gallery-1",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "People recreating on the lawn of the Ameswell Hotel in front of the Airstream Bar"
         },
         {
             "image": "images/homepage-gallery-2",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "A panoramic view of the main event space at the Ameswell Hotel"
         },
         {
             "image": "images/homepage-gallery-3",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "A close up of the Airstream Bar outside of the Ameswell Hotel"
         },
         {
             "image": "images/events-gallery-1",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "A speaker speaking in the Infinity Ballroom to an audience seated at tables at the Ameswell Hotel"
         },
         {
             "image": "images/homepage-gallery-5",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "A wedding setup outside on the front lawn of the Ameswell Hotel"
         }
     ]
 }
