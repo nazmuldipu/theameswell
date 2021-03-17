@@ -11,8 +11,8 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         /* TODO: add webp and jpg fallback URLs */
-        'hero--home': "url('/images/hero-home-large-4800.webp')",
-        'hero--home-xmed': "url('/images/hero-home_xmed.webp')",
+        'hero--home': "url('/images/hero-home-large-2400.webp')",
+        'hero--home-xmed': "url('/images/hero-home_xmed-600.webp')",
         'hero--page-detail': "url('/images/hero-page-detail.jpg')",
         'hero--page-detail-xmed': "url('/images/hero-page-detail_xmed.jpg')",
         'hero--dining-xmed': "url('/images/hero-dining_xmed.jpg')",
