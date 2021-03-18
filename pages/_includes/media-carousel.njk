@@ -10,8 +10,17 @@
                         <div class="swiper-slide">
                         {% endif %}
                         <picture>
-                            <source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp">
-                            <img data-src="{{ slide.image }}.{{ slide.imgtype if slide.imgtype else 'jpg' }}" class="swiper-lazy w-full h-auto" alt="{{ slide.imgalt }}">
+                            <source 
+                                data-src="{{ slide.image }}.webp"
+                                data-srcset="{{ slide | slideImgSrcSet('webp') }}"
+                                sizes="{{ slide.sizes if slide.sizes else '75vw' }}"
+                                type="image/webp">
+                            <img 
+                                data-src="{{ slide.image }}.{{ slide.imgtype if slide.imgtype else 'jpg' }}"
+                                data-srcset="{{ slide | slideImgSrcSet(slide.imgtype) }}"
+                                class="swiper-lazy w-full h-auto"
+                                sizes="{{ slide.sizes if slide.sizes else '75vw' }}" 
+                                alt="{{ slide.imgalt }}">
                             <div class="swiper-lazy-preloader"></div>
                         </picture>
                         </div>

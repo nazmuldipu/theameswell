@@ -2,12 +2,12 @@
     "preload_images": [
         {
             
-            "href": "images/hero-home-large-2400.webp",
+            "href": "images/hero-home-large_2400.webp",
             "media": "(min-width:900.1px)"
         },
         {
             
-            "href": "images/hero-home_xmed-600.webp",
+            "href": "images/hero-home_xmed_600.webp",
             "media": "(max-width:900px)"
         }
     ],
@@ -15,27 +15,32 @@
         {
             "image": "images/homepage-gallery-1",
             "imgtype": "png",
-            "imgalt": "People recreating on the lawn of the Ameswell Hotel in front of the Airstream Bar"
+            "imgalt": "People recreating on the lawn of the Ameswell Hotel in front of the Airstream Bar",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/homepage-gallery-2",
             "imgtype": "png",
-            "imgalt": "A panoramic view of the main event space at the Ameswell Hotel"
+            "imgalt": "A panoramic view of the main event space at the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/homepage-gallery-3",
             "imgtype": "png",
-            "imgalt": "A close up of the Airstream Bar outside of the Ameswell Hotel"
+            "imgalt": "A close up of the Airstream Bar outside of the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/events-gallery-1",
             "imgtype": "png",
-            "imgalt": "A speaker speaking in the Infinity Ballroom to an audience seated at tables at the Ameswell Hotel"
+            "imgalt": "A speaker speaking in the Infinity Ballroom to an audience seated at tables at the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/homepage-gallery-5",
             "imgtype": "png",
-            "imgalt": "A wedding setup outside on the front lawn of the Ameswell Hotel"
+            "imgalt": "A wedding setup outside on the front lawn of the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         }
     ]
 }

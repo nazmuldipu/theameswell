@@ -1,10 +1,18 @@
 'use strict';
 
 const htmlmin = require('html-minifier');
+const { basename } = require('path');
+const { getImgSizes, getSrcSet } = require('./tooling/eleventy.cjs');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksShortcode('access', function(array, index) {
         return array[index];
+    });
+
+    eleventyConfig.addNunjucksFilter('slideImgSrcSet', function(slide, imgext) {
+        const name = basename(slide.image);
+        const sizes = getImgSizes(name);
+        return getSrcSet(name, sizes, slide.intrinsicwidth, imgext);
     });
     
     // TODO will need to minify on the backend

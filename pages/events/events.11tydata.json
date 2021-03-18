@@ -3,17 +3,20 @@
         {
             "image": "images/events-gallery-1",
             "imgtype": "png",
-            "imgalt": "A speaker giving a speech to an audience seated around tables in the Infinity Ballroom at the Ameswell Hotel"
+            "imgalt": "A speaker giving a speech to an audience seated around tables in the Infinity Ballroom at the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/events-gallery-2",
             "imgtype": "png",
-            "imgalt": "The Infinity Ballroom decorated for a social event"
+            "imgalt": "The Infinity Ballroom decorated for a social event",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/events-gallery-3",
             "imgtype": "png",
-            "imgalt": "The grounds of the Ameswell Hotel setup with tables and chairs for the hosting of an event"
+            "imgalt": "The grounds of the Ameswell Hotel setup with tables and chairs for the hosting of an event",
+            "intrinsicwidth": "1920"
         }
     ]
 }
