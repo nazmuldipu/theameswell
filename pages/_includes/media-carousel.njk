@@ -9,11 +9,11 @@
                         {% else %}
                         <div class="swiper-slide">
                         {% endif %}
-                        <!--picture-->
-                            <!--source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp"-->
+                        <picture>
+                            <source data-splide-lazy-srcset="{{ slide.image }}.webp" type="image/webp">
                             <img data-src="{{ slide.image }}.{{ slide.imgtype if slide.imgtype else 'jpg' }}" class="swiper-lazy w-full h-auto" alt="{{ slide.imgalt }}">
                             <div class="swiper-lazy-preloader"></div>
-                        <!--/picture-->
+                        </picture>
                         </div>
                     {% endfor %}
             </div>
