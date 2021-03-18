@@ -1,10 +1,12 @@
 {
     "slides": [
         {
-            "image": "images/hero-wellness"
+            "image": "images/hero-wellness",
+            "imgalt": "The outdoor pool at the Ameswell Hotel in the evening"
         },
         {
-            "image": "images/weddings-1"
+            "image": "images/weddings-1",
+            "imgalt": "The front lawn of the Ameswell Hotel decorated for a wedding with tables and chairs underneath a tent"
         }
     ]
 }

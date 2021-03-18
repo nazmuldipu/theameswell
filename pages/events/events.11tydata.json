@@ -2,15 +2,18 @@
     "eventslides": [
         {
             "image": "images/events-gallery-1",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "A speaker giving a speech to an audience seated around tables in the Infinity Ballroom at the Ameswell Hotel"
         },
         {
             "image": "images/events-gallery-2",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "The Infinity Ballroom decorated for a social event"
         },
         {
             "image": "images/events-gallery-3",
-            "imgtype": "png"
+            "imgtype": "png",
+            "imgalt": "The grounds of the Ameswell Hotel setup with tables and chairs for the hosting of an event"
         }
     ]
 }
