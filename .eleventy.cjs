@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('fonts');
 
-    eleventyConfig.addPassthroughCopy('favicon.*')
+    eleventyConfig.addPassthroughCopy('favicon.*');
     
     eleventyConfig.addTransform('htmlmin', function(content, outputPath) {
         if(outputPath.endsWith('.html')) {
