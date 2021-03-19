@@ -60,7 +60,7 @@ try {
     await mkdir(join(imagesPath.pathname, OUTPUT_DIR));
     const imgFiles = await readdir(join(imagesPath.pathname, SRC_DIR));
     const images = imgFiles
-        .filter(imgFile => imgFile.match(/.(jpg|jpeg|png|svg|webp)$/i))
+        .filter(imgFile => imgFile.match(/.(jpg|jpeg|png|webp)$/i))
         .map(imgFile => ({
             data: sharp(join(imagesPath.pathname, SRC_DIR, imgFile)),
             path: join(imagesPath.pathname, SRC_DIR, imgFile)

@@ -106,7 +106,7 @@ module.exports = {
       gridTemplateAreas: {
         'slideshow': ['slide', 'details', 'amenities', 'cta'],
         'slideshow-xmed': ['slide slide', 'amenities cta', 'amenities details'],
-        'footer': ['logo contact media', 'address legal media', 'credit legal media']
+        'footer': ['logo hotel contact']
       },
       textIndent: (theme, { negative }) => ({
         ...negative({

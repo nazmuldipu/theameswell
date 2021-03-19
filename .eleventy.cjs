@@ -22,6 +22,8 @@ module.exports = function(eleventyConfig) {
     
     eleventyConfig.addPassthroughCopy({ 'images/output': 'images' });
 
+    eleventyConfig.addPassthroughCopy({ 'images/svg': 'images' });
+
     eleventyConfig.addPassthroughCopy('fonts');
 
     eleventyConfig.addPassthroughCopy('favicon.*');
