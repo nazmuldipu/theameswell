@@ -21,6 +21,9 @@ canonical_href: https://theameswellhotel.com
             <meta name="description" content="{{meta_description}}">
         {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% if noindex %}
+            <meta name="robots" content="noindex">
+        {% endif %}
         <title>{{meta_title}}</title>
         <link rel="canonical" href="{{ canonical_href }}" />
         <link rel="icon" href="favicon.svg" type="image/svg+xml">
