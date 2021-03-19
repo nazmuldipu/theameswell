@@ -8,6 +8,7 @@ import {rmNoExist} from './lib.js';
 const imagesPath = new URL('../images', import.meta.url);
 const SRC_DIR = 'src';
 const OUTPUT_DIR = 'output';
+const DIMENSION_SEP = '_';
 
 /**
  * For image paths that are non-webp rasters, we want to additionally produce a webp image for them
@@ -17,12 +18,12 @@ const OUTPUT_DIR = 'output';
 const pathsForDimension = (imgFile, dimension) => {
     const ext = extname(imgFile);
     const paths = [{
-        path: `${imagesPath.pathname}/${OUTPUT_DIR}/${basename(imgFile, ext)}${dimension ? '-' + dimension : ''}${ext}`,
+        path: `${imagesPath.pathname}/${OUTPUT_DIR}/${basename(imgFile, ext)}${dimension ? DIMENSION_SEP + dimension : ''}${ext}`,
         dimension
     }]
     if (!ext.match(/.(svg|webp)$/i)) {
         paths.push({
-            path: `${imagesPath.pathname}/${OUTPUT_DIR}/${basename(imgFile, ext)}${dimension ? '-' + dimension : ''}.webp`,
+            path: `${imagesPath.pathname}/${OUTPUT_DIR}/${basename(imgFile, ext)}${dimension ? DIMENSION_SEP + dimension : ''}.webp`,
             dimension
         })
     }

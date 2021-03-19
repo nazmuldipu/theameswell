@@ -13,7 +13,7 @@ export default class MediaCarousel extends ProgressiveElement {
                 ],
                 type: 'IntersectionObserver',
                 observerConfig: {
-                    rootMargin: '200px'
+                    rootMargin: '400px'
                 }
             }
         ]);
