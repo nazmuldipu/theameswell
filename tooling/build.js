@@ -11,7 +11,8 @@ import {
     getPageDataMap,
     getPageJSONFilePromises,
     filterForExt,
-    rmNoExist
+    rmNoExist,
+    constructSiteMap
 } from './lib.js';
 import { buildCSS } from './postcss.js';
 import { buildJS } from './esbuild.js';
@@ -53,6 +54,8 @@ try {
         // html
         exec('npm run build:html')
     ]);
+
+    constructSiteMap(BUILD_DIR.pathname, 'https://theameswellhotel.com')
     
     console.log('SUCCESS -- site assets built');
 }

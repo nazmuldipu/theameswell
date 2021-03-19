@@ -1,7 +1,8 @@
 ---
 pagename: base
 meta_title: The Ameswell Hotel
-meta_description: The Ameswell Hotel offers uncommon luxury in Silicon Valley. Nestled on 11 acres in sunny Mountain View, we bring together innovation, natural beauty and an opportunity to play unlike any other hotel in the Bay Area.
+meta_description: "Enjoy uncommon luxury at Silicon Valley’s newest resort-like hotel, featuring 11 acres of outdoor space, spacious guest rooms, three restaurants, over 15,000 sq. ft. of meeting space, and a Wellness Wing with spa and fitness center."
+canonical_href: https://theameswellhotel.com
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +21,23 @@ meta_description: The Ameswell Hotel offers uncommon luxury in Silicon Valley. N
             <meta name="description" content="{{meta_description}}">
         {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% if noindex %}
+            <meta name="robots" content="noindex">
+        {% endif %}
         <title>{{meta_title}}</title>
+        <link rel="canonical" href="{{ canonical_href }}" />
         <link rel="icon" href="favicon.svg" type="image/svg+xml">
         <link rel="alternate icon" href="favicon.ico">
+        <!-- start open graph meta tags -->
+        <meta property="og:title" content="{{ meta_title }}">
+        <meta property="og:site_name" content="The Ameswell Hotel">
+        <meta property="og:description" content="{{ meta_description }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ canonical_href }}">
+        <meta property="og:image" content="images/homepage-video-bg-1_1200.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="510">
+        <!-- end open graph meta tags -->
 <!-- start critical css -->
         {% if critical_css %}
         <style>
