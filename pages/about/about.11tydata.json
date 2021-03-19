@@ -3,32 +3,38 @@
         {
             "image": "images/about-gallery-1",
             "imgtype": "png",
-            "imgalt": "The main entrance of the Ameswell Hotel"
+            "imgalt": "The main entrance of the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/about-gallery-2",
             "imgtype": "png",
-            "imgalt": "The lobby interior of the Ameswell Hotel"
+            "imgalt": "The lobby interior of the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/about-gallery-3",
             "imgtype": "png",
-            "imgalt": "The outdoor pool in the evening at the Ameswell Hotel"
+            "imgalt": "The outdoor pool in the evening at the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/about-gallery-4",
             "imgtype": "png",
-            "imgalt": "Art, lounge spaces, and the Flyby cafe in the lobby of the Ameswell Hotel"
+            "imgalt": "Art, lounge spaces, and the Flyby cafe in the lobby of the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/about-gallery-5",
             "imgtype": "png",
-            "imgalt": "Roger, an indoor/outdoor bar and restaurant at the Ameswell Hotel, in the daylight"
+            "imgalt": "Roger, an indoor/outdoor bar and restaurant at the Ameswell Hotel, in the daylight",
+            "intrinsicwidth": "1920"
         },
         {
             "image": "images/about-gallery-6",
             "imgtype": "png",
-            "imgalt": "The Flyby, a casual cafe at the Ameswell Hotel"
+            "imgalt": "The Flyby, a casual cafe at the Ameswell Hotel",
+            "intrinsicwidth": "1920"
         }
     ]
 }

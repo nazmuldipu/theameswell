@@ -11,7 +11,7 @@ export default class RoomsGallery extends ProgressiveElement {
                 stylePaths: [],
                 type: 'IntersectionObserver',
                 observerConfig: {
-                    rootMargin: '200px'
+                    rootMargin: '400px'
                 }
             }
         ]);
