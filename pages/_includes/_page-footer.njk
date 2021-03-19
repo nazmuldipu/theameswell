@@ -1,8 +1,9 @@
 {% from "macros.njk" import fab %}
+{% from "skipper-footer.njk" import skipper_footer %}
 
 <footer class="grid justify-items-center bg-ams-primary xmed:bg-ams-primary w-full px-4">
-    <div class="xmed:grid xmed:grid-areas-footer xmed:grid-cols-footer xmed:grid-rows-footer xmed:items-stretch xmed:gap-x-4 px-4 xmed:px-0 pb-32 xmed:pb-0 max-w-screen-lg">
-        <a href="index.html" class="grid justify-items-center xmed:justify-items-start py-10 xmed:pt-10 xmed:px-4 grid-in-logo">
+    <div class="xmed:grid xmed:grid-areas-footer xmed:grid-cols-footer xmed:grid-rows-footer xmed:items-stretch xmed:gap-x-8 px-4 xmed:px-0 pb-32 xmed:pb-16 max-w-screen-lg">
+        <a href="index.html" class="grid justify-items-center xmed:justify-items-start py-10 xmed:pt-14 xmed:px-4 grid-in-logo">
             <svg aria-labelledby="footerLogo" role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 589.6 160.6" xml:space="preserve" class="fill-current text-ams-white w-3/5 max-w-xs min-w-2xs">
                 <title id="footerLogo">The Ameswell Hotel</title>
                 <path d="M165.1,113.5h241.3l-1.9-5.9H167L165.1,113.5z"/>
@@ -24,35 +25,21 @@
                 <path d="M192.3,36.3l6.3-20c1.1-3,2.7-7.5,10.2-7.5c0.1,0,2.7,0,4.3,0.6c4,1.3,5.2,4.7,5.9,6.8l6.3,20h-33V36.3z M243.2,61.1l-15.3-47.9c0-0.1-4.2-13.2-19-13.2c-14.8,0-19,13-19,13.2l-15.3,47.9h9.7l4.8-15h39.7l4.8,15H243.2z"/>
             </svg>
         </a>
-        <div class="xmed:pb-4 mt-4 xmed:px-4 grid-in-address">
-            <p class="pb-4">
-                <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-white underline">
-                    800 Moffett Boulevard.,<br>
-                    Mountain View, CA 94043
-                </a>
-            </p>
-            <p class="pb-4">
-                <a href="tel:1-650-880-1000" class="text-ams-white underline">650-880-1000</a>
-            </p>
-            <p class="pb-4">
-                <a href="mailto:info@theameswellhotel.com"  class="text-ams-white underline">info@theameswellhotel.com</a>
-            </p>
-        </div>
-        <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-contact">
+        <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-hotel">
             <input type="checkbox" id="page-footer__nav--1" class="page-footer__toggle hidden">
             <label for="page-footer__nav--1" class="page-footer__toggle-button block border-b font-bold xmed:border-0">
-                Property
+                Hotel
                 <span class="page-footer__toggle-button--arrow relative -top-1 inline-block w-2 h-2 border-r-2 border-b-2 transform rotate-45 ml-2 xmed:hidden"></span>
             </label>
-            <ul class="page-footer__menu hidden xmed:block">
+            <ul class="xmed:grid xmed:grid-cols-40-60 xmed:pt-4 page-footer__menu hidden">
                 <li class="py-2">
-                    <a href="contact.html" class="text-ams-white">Contact Us</a>
+                    <a href="accessibility.html" class="text-ams-white">Accessibility</a>
                 </li>
                 <li class="py-2">
                     <a href="privacy.html" class="text-ams-white">Privacy Policy</a>
                 </li>
                 <li class="py-2">
-                    <a href="accessibility.html" class="text-ams-white">Accessibility</a>
+                    <a href="contact.html" class="text-ams-white">Contact Us</a>
                 </li>
                 <li class="py-2">
                     <a href="sitemap.xml" class="text-ams-white">Sitemap</a>
@@ -60,11 +47,37 @@
                 <li class="py-2">
                     <a href="mailto:laurarose@theameswellhotel.com?subject=I%20am%20interested%20in%20a%20career%20at%20The%20Ameswell%20Hotel" class="text-ams-white">Careers</a>
                 </li>
+                <li class="py-2">
+                    <a href="https://www.storeyhospitality.com/" rel="no-referrer" class="text-ams-white">Storey Hospitality</a>
+                </li>
             </ul>
         </nav>
-        <div class="pt-4 xmed:pb-10 xmed:px-4 text-ams-white grid-in-credit">
-            Storey Hotel Management Group 
-        </div>
+        <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-contact">
+            <label for="page-footer__nav--2" class="page-footer__toggle-button block border-b font-bold xmed:border-0">
+                Contacts
+            </label>
+            <address class="page-footer__menu xmed:grid xmed:pt-4 not-italic">
+                <p class="py-2">
+                    <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-white">
+                        800 Moffett Boulevard.,<br>
+                        Mountain View, CA 94043
+                    </a>
+                </p>
+                <p class="py-2">
+                    <a href="tel:1-650-880-1000" class="text-ams-white">650-880-1000</a>
+                </p>
+                <p class="py-2">
+                    <a href="mailto:info@theameswellhotel.com"  class="text-ams-white">info@theameswellhotel.com</a>
+                </p>
+                <div class="flex space-x-4 -ml-2">
+                    <a href="https://www.instagram.com/theameswellhotel/"><img class="p-2" src="/images/insta_icon.svg"></a>
+                    <a href="https://twitter.com/ameswellhotel"><img class="p-2" src="/images/twitter_icon.svg"></a>
+                    <a href="https://www.linkedin.com/company/the-ameswell-hotel/about/"><img class="p-2" src="/images/linkedin_icon.svg"></a>
+                    <a href="https://www.facebook.com/theameswellhotel/"><img class="p-2" src="/images/facebook_icon.svg"></a>
+                </div>
+            </address>
+        </nav>
     </div>
 </footer>
+{{ skipper_footer("text-ams-primary uppercase", "bg-ams-white") }}
 {{ fab(fabUrl, fabBg, fabCopy, fabPos) }}
