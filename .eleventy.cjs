@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
         return array[index];
     });
 
-    eleventyConfig.addNunjucksFilter('slideImgSrcSet', function(slide, imgext) {
+    eleventyConfig.addNunjucksFilter('slideImgSrcSet', function(slide, imgext="jpg") {
         const name = basename(slide.image);
         const sizes = getImgSizes(name);
         return getSrcSet(name, sizes, slide.intrinsicwidth, imgext);
