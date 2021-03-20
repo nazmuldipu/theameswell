@@ -6,7 +6,7 @@ module.exports = {
   purge: {
     content: ['./pages/**/*.njk'],
     options: {
-      safelist: [/^bg-no-webp__[\w-]+$/]
+      safelist: [/^(xmed:)?bg-no-webp__[\w-]+$/]
     }
   },
   darkMode: false, // or 'media' or 'class'
