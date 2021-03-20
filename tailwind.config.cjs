@@ -3,9 +3,12 @@ const plugin = require('tailwindcss/plugin');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: [
-    './pages/**/*.njk'
-  ],
+  purge: {
+    content: ['./pages/**/*.njk'],
+    options: {
+      safelist: [/^bg-no-webp__[\w-]+$/]
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
