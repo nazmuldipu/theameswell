@@ -10,8 +10,12 @@
     svgFill='none',
     stroke='',
     strokeWidth='',
-    preserveAspectRatio='none'
+    preserveAspectRatio='none',
+    href=false
 ) %}
+{% if href %}
+<a href="{{ href }}">
+{% endif %}
     <li class="{{ containerClassName }}">
         <svg
             class="{{ svgClassName }}"
@@ -56,4 +60,7 @@
             {{ copy }}
         {% endif %}
     </li>
+{% if href %}
+</a>
+{% endif %}
 {% endmacro %}
