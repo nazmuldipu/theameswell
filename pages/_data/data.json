@@ -1,21 +1,20 @@
 {
-    "ga_id": "FAKE_ID",
     "preload_fonts": [
         {
-            "href": "fonts/MarkPro.otf",
-            "type": "font/otf"
+            "href": "fonts/MarkPro.woff2",
+            "type": "font/woff2"
         },
         {
-            "href": "fonts/MarkPro-Bold.otf",
-            "type": "font/otf"
+            "href": "fonts/MarkPro-Bold.woff2",
+            "type": "font/woff2"
         },
         {
-            "href": "fonts/EksellDisplaySmall.otf",
-            "type": "font/otf"
+            "href": "fonts/EksellDisplayWeb-Small.woff2",
+            "type": "font/woff2"
         },
         {
-            "href": "fonts/EksellDisplayLarge.otf",
-            "type": "font/otf"
+            "href": "fonts/EksellDisplayWeb-Large.woff2",
+            "type": "font/woff2"
         }
     ]
 }
