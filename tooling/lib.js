@@ -150,3 +150,19 @@ export const getPageJSONFilePromises = (dataMap, dirPath) =>
                                                     join(dirPath, page, `${page}.json`),
                                                     JSON.stringify(assets)
                                                 ));
+
+export const constructSiteMap = (dirPath, urlBase) => {
+    const urls = readdirSync(dirPath)
+        .filter(fileName => extname(fileName) === '.html')
+        .map(fileName => `<url>
+        <loc>${new URL(fileName, urlBase).href}</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        </url>`);
+
+    const sitemapStr = `<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${urls.join('\n')}
+    </urlset>`;
+
+    writeFileSync(join(dirPath, 'sitemap.xml'), sitemapStr);
+}
