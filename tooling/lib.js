@@ -1,6 +1,7 @@
 'use strict';
 import {extname, join, sep} from 'path';
-import {readdirSync, lstatSync, writeFileSync} from 'fs';
+import {readdirSync, statSync} from 'fs';
+import {platform} from 'os';
 import {rm, writeFile} from 'fs/promises';
 
 export const prettyJSONStringify = json => JSON.stringify(json, null, 2);
@@ -36,9 +37,32 @@ export const getWatchedPaths = watcher => {
 export const filterForExt = ext => filename => extname(filename) === ext;
 export const globForPrefixExt = prefix => exts => join(prefix, `!(_)**/*@(${exts.join('|')})`);
 
-export const PAGES_DIR = new URL('../pages', import.meta.url);
+const pagesURL = new URL('../pages', import.meta.url);
+const buildURL = new URL('../build', import.meta.url);
+const rootURL = new URL('..', import.meta.url);
+
+let buildPathName = decodeURI(buildURL.pathname);
+let pagesPathName = decodeURI(pagesURL.pathname);
+let rootPathName = decodeURI(rootURL.pathname);
+
+if (platform() === 'win32') {
+    // need to get rid of prefixing path on windows
+    rootPathName = rootPathName.slice(1);
+    buildPathName = buildPathName.slice(1);
+    pagesPathName = pagesPathName.slice(1);
+}
+
+export const ROOT_DIR = {
+    pathname: rootPathName
+};
+export const BUILD_DIR = {
+    pathname: buildPathName
+};
+export const PAGES_DIR = {
+    pathname: pagesPathName
+};
+
 export const globForPages = globForPrefixExt(PAGES_DIR.pathname);
-export const BUILD_DIR = new URL('../build', import.meta.url);
 
 /**
  * 
@@ -59,14 +83,14 @@ export const removePrefix = (str, prefix) => str.slice( str.indexOf(prefix) + pr
  * @param {URL} pagesDir -- absolute directory path
  * @param {Set} extensions -- valid file extensions
  */
-export const getPageAssetsExtMap = (pagesDir, extensions) => 
-    readdirSync(pagesDir).reduce((extMap, pageName) => {
+export const getPageAssetsExtMap = ({ pathname }, extensions) => 
+    readdirSync(pathname).reduce((extMap, pageName) => {
         if (!pageName.startsWith("_")) {
-            readdirSync(join(pagesDir.pathname, pageName)).forEach(fileName => {
+            readdirSync(join(pathname, pageName)).forEach(fileName => {
                 const ext = extname(fileName);
                 if (extensions.has(ext)) {
                     !extMap.has(ext) && extMap.set(ext, []);
-                    const filePath = join(pagesDir.pathname, pageName, fileName);
+                    const filePath = join(pathname, pageName, fileName);
                     extMap.get(ext).push(filePath);
                 }
             })
@@ -74,17 +98,17 @@ export const getPageAssetsExtMap = (pagesDir, extensions) =>
         return extMap;
     }, new Map());
 
-export const getPageAssets = (pagesDir, isValidExt=defaultExtValidator) => readdirSync(pagesDir)
+export const getPageAssets = ({ pathname }, isValidExt=defaultExtValidator) => readdirSync(pathname)
     .flatMap(pageName => {
         // ignore non-page dirs
-        const pageDirPath = join(pagesDir.pathname, pageName);
+        const pageDirPath = join(pathname, pageName);
         if (!pageName.startsWith("_")
                 // make sure pageDirPath is a dir
-                && lstatSync(pageDirPath, { throwIfNoEntry: false }).isDirectory()) {
+                && statSync(pageDirPath, { throwIfNoEntry: false }).isDirectory()) {
             const pageDirContents = readdirSync(pageDirPath)
                 // only process certain file types
                 .flatMap(fileName => isValidExt(fileName)
-                                        ? [ join(pagesDir.pathname, pageName, fileName) ]
+                                        ? [ join(pathname, pageName, fileName) ]
                                         : [] );
             return [ pageDirContents ]
         }
@@ -126,19 +150,3 @@ export const getPageJSONFilePromises = (dataMap, dirPath) =>
                                                     join(dirPath, page, `${page}.json`),
                                                     JSON.stringify(assets)
                                                 ));
-
-export const constructSiteMap = (dirPath, urlBase) => {
-    const urls = readdirSync(dirPath)
-        .filter(fileName => extname(fileName) === '.html')
-        .map(fileName => `<url>
-        <loc>${new URL(fileName, urlBase).href}</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        </url>`);
-
-    const sitemapStr = `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    ${urls.join('\n')}
-    </urlset>`;
-
-    writeFileSync(join(dirPath, 'sitemap.xml'), sitemapStr);
-}
