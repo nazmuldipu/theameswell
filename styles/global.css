@@ -14,15 +14,16 @@
     @font-face {
         font-display: swap;
         font-family: 'Mark Pro';
-        src: url('../fonts/MarkPro.otf') format("opentype");
+        src: url('../fonts/MarkPro.woff2'), url('../fonts/MarkPro.woff');
         font-weight: 400;
         font-style: normal;
         unicode-range: U+000-5FF;
     }
+    /* TODO: add additional font styles once critical FOFT fully implemented*/
     @font-face {
         font-display: swap;
         font-family: 'Mark Pro';
-        src: url('../fonts/MarkPro-Bold.otf') format("opentype");
+        src: url('../fonts/MarkPro-Bold.woff2'), url('../fonts/MarkPro-Bold.woff');
         font-weight: 700;
         font-style: normal;
         unicode-range: U+000-5FF;
@@ -30,7 +31,7 @@
     @font-face {
         font-display: swap;
         font-family: 'Eksell Display Small';
-        src: url('../fonts/EksellDisplaySmall.otf') format("opentype");
+        src: url('../fonts/EksellDisplayWeb-Small.woff2'), url('../fonts/EksellDisplayWeb-Small.woff');
         font-weight: 400;
         font-style: normal;
         unicode-range: U+000-5FF;
@@ -38,7 +39,7 @@
     @font-face {
         font-display: swap;
         font-family: 'Eksell Display Large';
-        src: url('../fonts/EksellDisplayLarge.otf') format("opentype");
+        src: url('../fonts/EksellDisplayWeb-Large.woff2'), url('../fonts/EksellDisplayWeb-Large.woff');
         font-weight: 400;
         font-style: normal;
         unicode-range: U+000-5FF;
