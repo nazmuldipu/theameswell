@@ -14,7 +14,7 @@ import {
     rmNoExist,
     constructSiteMap
 } from './lib.js';
-import { buildCSS } from './postcss.js';
+import { buildCSS, generateTailwindSafeList } from './postcss.js';
 import { buildJS } from './esbuild.js';
 
 const exec = promisify(child_process.exec)
@@ -31,6 +31,9 @@ promises.push(rmNoExist(BUILD_DIR.pathname));
 
 const metafilePath = join(BUILD_DIR.pathname, 'meta.json');
 try {
+    console.log('generating tailwindcss safelist')
+    generateTailwindSafeList();
+    console.log('tailwindcss safelist generated')
     console.log('calculating built site filepaths');
     console.log('removing previous builds');
     await Promise.all(promises);

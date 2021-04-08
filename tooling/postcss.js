@@ -1,12 +1,19 @@
 'use strict';
 
 import { readFile, writeFile, mkdir } from 'fs/promises';
+import { writeFileSync } from 'fs';
 import { join, basename, dirname } from 'path';
 import { createRequire } from 'module';
 import postcss from 'postcss';
-import { replacePathBase, setUnion } from './lib.js';
+import { replacePathBase, setUnion, getNestedProperty, ROOT_DIR } from './lib.js';
+import config from '../tailwind.config.cjs';
 
 const require = createRequire(import.meta.url);
+
+const SAFELIST_PAIRS = [
+    [ ['theme.extend.backgroundImage', 'bg'], ['no-webp__'] ]
+];
+const SCREENS_CONFIG_PATH = 'theme.extend.screens';
 
 const plugins = [
     require('postcss-import'),
@@ -20,6 +27,26 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const processor = postcss(plugins);
+
+/**
+ * This function generates a text file of classes for TailwindCSS to ignore in its purge logic
+ * It generates classes using screen sizes and selected utility classes defined in the Tailwind config
+ */
+export const generateTailwindSafeList = () => {
+    const safelist = SAFELIST_PAIRS.flatMap(( [ [ configPath, typePrefix ], classPrefixes ] ) => {
+        const configKeys = Object.keys( getNestedProperty(config, configPath) )
+                            .filter(key => classPrefixes.some( prefix => key.includes(prefix) ));
+        const screenSizes = Object.keys( getNestedProperty(config, SCREENS_CONFIG_PATH) );
+        const safelist = configKeys.reduce((safelist, key) => {
+            const sizes = screenSizes.map(size => `${size}:${typePrefix}-${key}`);
+            sizes.push(`${typePrefix}-${key}`);
+            return safelist.concat(sizes);
+        }, []);
+        return safelist;
+    });
+    
+    writeFileSync(join(ROOT_DIR.pathname, 'tailwind-class-safelist.txt'), safelist.join('\n'));
+}
 
 /**
  * 
