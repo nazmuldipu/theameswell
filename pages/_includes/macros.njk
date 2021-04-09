@@ -1,6 +1,6 @@
 {% macro fab(fabUrl, fabBg, fabCopy, fabPos) %}
-<a href="{{ fabUrl if fabUrl else 'contact.html' }}" class="fixed bottom-0 right-4 z-50 w-fab-container-sm xmed:w-fab-container-lg">
-    <span class="absolute {{ fabPos if fabPos else 'bottom-5 xmed:bottom-8 right-11 xmed:right-16 mr-0.5' }} text-center text-xl xmed:text-2xl text-ams-white font-serif">
+<a href="{{ fabUrl if fabUrl else 'contact.html' }}" class="page-fab fixed bottom-0 right-4 z-50 w-fab-container-sm xmed:w-fab-container-lg">
+    <span class="page-fab__copy absolute {{ fabPos if fabPos else 'right-11 xmed:right-16 mr-0.5' }} text-center text-xl xmed:text-2xl text-ams-white font-serif">
         {{ (fabCopy if fabCopy else 'Contact<br>Us') | safe }}
     </span>
     <svg viewBox="0 0 176 163" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-fab-width-sm h-fab-height-sm xmed:w-fab-width-lg xmed:h-fab-height-lg">
