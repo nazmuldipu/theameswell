@@ -11,6 +11,8 @@ import {
     INVALID_MESSAGE
 } from '../lib/constants.js';
 
+const clientErrorMessage = (errs) => `The following fields have invalid values: ${Object.keys(errs).join(', ')}`
+
 export default class FormSender extends HTMLElement {
 
     static formInteractionEvents = ['click', 'keydown'];
@@ -47,11 +49,13 @@ export default class FormSender extends HTMLElement {
                     } else {
                         if (res.body instanceof ReadableStream) {
                             // then we have an error object
-                            res.json().then(e => {
-                                throw e;
+                            res.json().then(({ errs }) => {
+                                this.setStatusColor(STATUS_COLOR_ERROR);
+                                this.setStatusCopy( clientErrorMessage(errs) )
                             });
+                        } else {
+                            throw new Error(`SERVER ERROR ${res.status} -- ${res.statusText}`);
                         }
-                        throw new Error(`SERVER ERROR ${res.status} -- ${res.statusText}`);
                     }
                 })
                 .catch(err => {
