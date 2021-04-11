@@ -22,7 +22,7 @@ import {
     globForExts
 } from './lib.js'
 import { buildJS } from './esbuild.js';
-import { buildCSS } from './postcss.js';
+import { buildCSS, generateTailwindSafeList } from './postcss.js';
 import { watchEventHandler } from './watching.js';
 
 
@@ -40,11 +40,14 @@ const metafilePath = join(BUILD_DIR.pathname, 'meta.json');
 
 try {
     // execute first builds
-    console.log('Beginning Development Builds')
+    console.log('Beginning Development Builds');
     console.log('calculating built site filepaths');
     console.log('removing previous builds');
     await Promise.all(promises);
     console.log('Created bundled file data JSON files');
+    console.log('generating tailwindcss safelist');
+    generateTailwindSafeList();
+    console.log('tailwindcss safelist generated');
     console.log('beginning site build processes');
     const [cssDepSet, {buildDeps: jsDepSet}] = await Promise.all([
         buildCSS(

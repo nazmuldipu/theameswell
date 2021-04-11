@@ -12,7 +12,7 @@
     "build:css": "cross-env NODE_ENV=production node tooling/build.css.js",
     "build": "cross-env NODE_ENV=production node tooling/build.js",
     "watch:html": "npx @11ty/eleventy --config=.eleventy.cjs --serve",
-    "watch": "node tooling/dev.js"
+    "watch": "cross-env TAILWIND_MODE=watch node tooling/dev.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
     "postcss-import": "^14.0.0",
     "postcss-nesting": "^7.0.1",
     "sharp": "^0.27.1",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.1.0"
   },
   "devDependencies": {
     "@savvywombat/tailwindcss-grid-areas": "^1.2.0",

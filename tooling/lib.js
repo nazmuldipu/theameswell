@@ -24,6 +24,16 @@ export const defaultExtValidator = fileName => {
     return extension === '.js' || extension === '.css';
 };
 
+/**
+ * 
+ * @param {Object} obj 
+ * @param {String} propertyPath -- a dotted path like 'a.b.c'
+ */
+export const getNestedProperty = (obj, propertyPath) => 
+    propertyPath.split('.').reduce((layer, prop) => {
+        return layer?.[prop]
+    }, obj);
+
 export const globForExts = (extensions, prefix='**/*') => join(prefix, `**/*@(${extensions.join('|')})`);
 
 export const getWatchedPaths = watcher => {
