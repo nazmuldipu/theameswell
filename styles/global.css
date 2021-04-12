@@ -170,14 +170,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     top: 17px;
     width: 23px;
 }
-.page-fab__copy{
-    top: calc( 50% - 18px );
-}
-@media all and ( min-width: 900px ) {
-    .page-fab__copy{
-        top: calc( 50% - 22px );
-    }
-}
+
 /****  end base styles  ********************************/
 
 
