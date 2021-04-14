@@ -3,9 +3,12 @@ import sharp from 'sharp';
 import pAll from 'p-all';
 import { join, extname, basename } from 'path';
 import { performance } from 'perf_hooks';
-import {rmNoExist} from './lib.js';
+import { rmNoExist } from './lib.js';
+import { platform } from 'os';
 
-const imagesPath = new URL('../images', import.meta.url);
+const imagesURL = new URL('../images', import.meta.url);
+// on windows, need to get rid of leading '/' that URL generates for later path logic to work
+const imagesPath = platform() === 'win32' ? decodeURI(imagesURL.pathname.slice(1)) : decodeURI(imagesURL.pathname);
 const SRC_DIR = 'src';
 const OUTPUT_DIR = 'output';
 const DIMENSION_SEP = '_';
@@ -18,12 +21,12 @@ const DIMENSION_SEP = '_';
 const pathsForDimension = (imgFile, dimension) => {
     const ext = extname(imgFile);
     const paths = [{
-        path: `${imagesPath.pathname}/${OUTPUT_DIR}/${basename(imgFile, ext)}${dimension ? DIMENSION_SEP + dimension : ''}${ext}`,
+        path: join(imagesPath, OUTPUT_DIR, `${basename(imgFile, ext)}${dimension ? DIMENSION_SEP + dimension : ''}${ext}`),
         dimension
     }]
     if (!ext.match(/.(svg|webp)$/i)) {
         paths.push({
-            path: `${imagesPath.pathname}/${OUTPUT_DIR}/${basename(imgFile, ext)}${dimension ? DIMENSION_SEP + dimension : ''}.webp`,
+            path: join(imagesPath, OUTPUT_DIR, `${basename(imgFile, ext)}${dimension ? DIMENSION_SEP + dimension : ''}.webp`),
             dimension
         })
     }
@@ -56,14 +59,14 @@ const formatTranslation = ext => {
 }
 
 try {
-    await rmNoExist(join(imagesPath.pathname, OUTPUT_DIR));
-    await mkdir(join(imagesPath.pathname, OUTPUT_DIR));
-    const imgFiles = await readdir(join(imagesPath.pathname, SRC_DIR));
+    await rmNoExist(join(imagesPath, OUTPUT_DIR));
+    await mkdir(join(imagesPath, OUTPUT_DIR));
+    const imgFiles = await readdir(join(imagesPath, SRC_DIR));
     const images = imgFiles
         .filter(imgFile => imgFile.match(/.(jpg|jpeg|png|webp)$/i))
         .map(imgFile => ({
-            data: sharp(join(imagesPath.pathname, SRC_DIR, imgFile)),
-            path: join(imagesPath.pathname, SRC_DIR, imgFile)
+            data: sharp(join(imagesPath, SRC_DIR, imgFile)),
+            path: join(imagesPath, SRC_DIR, imgFile)
         }))
     
     const conversions = [];
@@ -96,8 +99,8 @@ catch (e) {
 
 //import ImageTracer from 'imagetracerjs';
 
-/* const { data, info } = await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(800).raw().toBuffer({ resolveWithObject: true })
-const { data: data1, info: info1 } = await sharp(join(imagesPath.pathname, 'hero-home-large.jpg')).resize(600, 800).raw().toBuffer({ resolveWithObject: true }) */
+/* const { data, info } = await sharp(join(imagesPath, 'hero-home-large.jpg')).resize(800).raw().toBuffer({ resolveWithObject: true })
+const { data: data1, info: info1 } = await sharp(join(imagesPath, 'hero-home-large.jpg')).resize(600, 800).raw().toBuffer({ resolveWithObject: true }) */
 
 /* const svgStr = ImageTracer.imagedataToSVG(
     {
@@ -108,7 +111,7 @@ const { data: data1, info: info1 } = await sharp(join(imagesPath.pathname, 'hero
     { qtres:10, ltres:10, numberofcolors:16, blurradius:100, blurdelta: 256, strokewidth:32, scale: 5.625 }
 );
 
-fs.writeFileSync(path.join(imagesPath.pathname, 'hero-vector.svg'), svgStr)
+fs.writeFileSync(path.join(imagesPath, 'hero-vector.svg'), svgStr)
 
 const svgStr1 = ImageTracer.imagedataToSVG(
     {
@@ -118,4 +121,4 @@ const svgStr1 = ImageTracer.imagedataToSVG(
     },
     { qtres:10, ltres:10, numberofcolors:16, blurradius:100, blurdelta: 256, strokewidth:16, scale: 1.5 }
 );
-fs.writeFileSync(path.join(imagesPath.pathname, 'hero-vector-900.svg'), svgStr1) */
+fs.writeFileSync(path.join(imagesPath, 'hero-vector-900.svg'), svgStr1) */
