@@ -57,7 +57,7 @@
 
         </svg>
         {% if copy %}
-            {{ copy }}
+            <span>{{ copy | safe}}</span>
         {% endif %}
     </li>
 {% if href %}
