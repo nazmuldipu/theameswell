@@ -51,9 +51,11 @@ export default class RoomsGallery extends ProgressiveElement {
         // change title
         this._titleEl.textContent = this._rooms[this._currentIndex].title;
         // change icons
-        this._sqftEl.lastChild.textContent = this._rooms[this._currentIndex].sqft;
-        this._workspaceEl.lastChild.textContent = this._rooms[this._currentIndex].workspace;
-        this._sleepsEl.lastChild.textContent = this._rooms[this._currentIndex].sleeps;
+        this._sqftEl.lastElementChild.innerHTML = this._rooms[this._currentIndex].sqft;
+        // change the below from textContent to innerHTML if we ever want to augment beyond text
+        // e.g. with <sup> as in above
+        this._workspaceEl.lastElementChild.textContent = this._rooms[this._currentIndex].workspace;
+        this._sleepsEl.lastElementChild.textContent = this._rooms[this._currentIndex].sleeps;
     }
 
     next() {
