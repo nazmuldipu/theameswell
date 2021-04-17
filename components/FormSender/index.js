@@ -23,11 +23,17 @@ export default class FormSender extends HTMLElement {
         this.ajaxStatusEl = this.getElementsByClassName('ajax__status')?.[0];
         this.setStatusColor(STATUS_COLOR_NORMAL);
         this.form = this.getElementsByTagName('form')?.[0];
+        this.formDisabled = false;
 
         this.formInteractionHandler = (e) => {
             this.clearFormInteractionListeners();
             this.hideStatus();
         };
+
+        if(this.submitButton instanceof HTMLAnchorElement) {
+            this.submitButton.onclick = this.form.submit;
+            this.href = this.submitButton.href;
+        }
 
         this.form.onsubmit = (e) => {
             // validate form here -- idealy we combine the iteration of form fields
@@ -37,6 +43,7 @@ export default class FormSender extends HTMLElement {
                 this.showStatus();
                 this.setStatusCopy(LOADING_MESSAGE);
                 this.setStatusColor(STATUS_COLOR_NORMAL);
+                this.formDisabled = true;
                 sendContact(this.form, this.dataset.type)
                 .then(res => {
                     if(res.ok) {
@@ -64,6 +71,7 @@ export default class FormSender extends HTMLElement {
                 })
                 .finally(() => {
                     this.applyFormInteractionListeners();
+                    this.formDisabled = false;
                 });
             } else  {
                 this.setStatusCopy(INVALID_MESSAGE);
@@ -87,6 +95,27 @@ export default class FormSender extends HTMLElement {
 
     clearForm() {
         this.form.reset();
+    }
+
+    set formDisabled(isDisabled) {
+        switch(true) {
+            case this.submitButton instanceof HTMLButtonElement:
+                this.submitButton.disabled = isDisabled;
+                break;
+
+            case this.submitButton instanceof HTMLAnchorElement:
+                if(isDisabled) {
+                    this.submitButton.href = 'javascript:void(0)';
+                    this.submitButton.onclick = false;
+                } else {
+                    this.submitButton.href = this.href;
+                    this.submitButton.onclick = this.form.submit();
+                }
+                break;
+            default:
+                // do nothing
+                break;
+        }
     }
 
     setStatusCopy(copy) {
