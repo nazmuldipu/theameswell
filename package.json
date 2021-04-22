@@ -12,7 +12,8 @@
     "build:css": "cross-env NODE_ENV=production node tooling/build.css.js",
     "build": "cross-env NODE_ENV=production node tooling/build.js",
     "watch:html": "npx @11ty/eleventy --config=.eleventy.cjs --serve",
-    "watch": "cross-env TAILWIND_MODE=watch node tooling/dev.js"
+    "watch": "cross-env TAILWIND_MODE=watch node tooling/dev.js",
+    "resize-images": "node tooling/images.js"
   },
   "repository": {
     "type": "git",
