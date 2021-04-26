@@ -278,6 +278,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
         position: relative;
         right: 0;
         top: 0;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 @media all and ( min-width: 900px ) {
