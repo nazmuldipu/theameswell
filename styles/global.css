@@ -171,6 +171,18 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     width: 23px;
 }
 
+.floating-input>input::placeholder {
+    color: transparent;
+}
+.floating-input>input:focus,
+.floating-input>input:not(:placeholder-shown) { 
+    @apply pt-6 pl-1 -mb-4
+}
+.floating-input>input:focus~label, 
+.floating-input>input:not(:placeholder-shown)~label {
+  @apply opacity-75 scale-75 -translate-y-3 translate-x-1; 
+}
+
 /****  end base styles  ********************************/
 
 
