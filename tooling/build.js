@@ -58,7 +58,7 @@ try {
         exec('npm run build:html')
     ]);
 
-    constructSiteMap(BUILD_DIR.pathname, 'https://theameswellhotel.com')
+    constructSiteMap(BUILD_DIR.pathname, 'https://www.theameswellhotel.com')
     
     console.log('SUCCESS -- site assets built');
 }
