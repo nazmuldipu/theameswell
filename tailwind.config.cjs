@@ -119,6 +119,16 @@ module.exports = {
         'slideshow-xmed': ['slide slide', 'amenities cta', 'amenities details'],
         'footer': ['logo hotel contact']
       },
+      transitionDuration: {
+        '0': '0ms',
+        '250': '250ms'
+      },
+      transitionDelay: {
+        '0': '0ms',
+      },
+      rotate: { 
+        '-135': '-135deg',
+      },
       textIndent: (theme, { negative }) => ({
         ...negative({
           'xl': '9999px'

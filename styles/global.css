@@ -182,9 +182,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 .page-header__toggle:checked ~ .page-header__menu-container {
     height: 100vh;
     opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    @apply transition-opacity duration-250 ease-in-out;
 }
 @media all and ( min-width: 900px ) {
     .page-header__toggle:checked ~ .page-header__menu-container {
@@ -192,8 +190,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     }
 }
 .page-header__toggle:not(:checked) ~ .page-header__menu-container {
-    transition: transform 0.5s ease-in;
-    transform-origin: top;
+    @apply transition-transform duration-500 ease-in origin-top;
 }
 .page-header__toggle:checked ~ .page-header__menu-container .page-header__menu {
     padding-bottom: 6rem;
@@ -212,8 +209,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     display: block;
     position: absolute;
     top: 6.5px;
-    transition: transform 0.3s ease;
     width: 100%;
+    @apply transition-transform duration-300 ease-linear;
 }
 .page-header__toggle-button:after {
     top: 14.5px;
@@ -225,10 +222,10 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 .page-header__toggle:checked ~ .page-header__toggle-button:after {
     left: 0;
     top: 50%;
-    transform: rotate(45deg);
+    @apply transform rotate-45;
 }
 .page-header__toggle:checked ~ .page-header__toggle-button:after {
-    transform: rotate(-45deg);
+    @apply transform -rotate-45;
 }
 .page-header--docked{
     background: transparent;
@@ -239,7 +236,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 /****  start page-footer  ********************************/
 .page-footer__toggle:checked ~ .page-footer__toggle-button .page-footer__toggle-button--arrow {
     top: 0;
-    transform: rotate(-135deg);
+    @apply transform -rotate-135;
 }
 .page-footer__toggle:checked ~ .page-footer__menu {
     display: block;
@@ -300,7 +297,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 @media all and ( min-width: 900px ) {
     .page-index .page-header:not(.page-header--splayed) .page-header__toggle:not(:checked) ~ .page-header__menu-container {
-        transition: all 0s ease 0s;
+        @apply transition-all duration-0 ease-linear delay-0;
     }
 }
 
