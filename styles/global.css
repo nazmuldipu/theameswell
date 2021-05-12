@@ -183,6 +183,25 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   @apply opacity-75 scale-75 -translate-y-3 translate-x-1; 
 }
 
+.loading-icon-container:before {
+    width: 50px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    background: url('/images/loading_icon.svg');
+    background-size: 100%;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% {  transform: rotate(359deg); }
+  }
+
 /****  end base styles  ********************************/
 
 
