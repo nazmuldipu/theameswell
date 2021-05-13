@@ -1,3 +1,7 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+
+.page-fab {
+    @apply hidden;
+}
