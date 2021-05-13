@@ -194,7 +194,8 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     background-size: 100%;
     z-index: -1;
     animation: spin 2s linear infinite;
-    @apply absolute top-6 left-1/2 transform -translate-x-2/4;
+    left: calc(50% - 23px);
+    @apply absolute top-6 transform -translate-x-2/4;
   }
   
   @keyframes spin {
