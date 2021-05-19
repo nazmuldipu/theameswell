@@ -1,9 +1,9 @@
-import { readdir, mkdir } from 'fs/promises';
+import { readdir, mkdir, writeFile } from 'fs/promises';
 import sharp from 'sharp';
 import pAll from 'p-all';
 import { join, extname, basename } from 'path';
 import { performance } from 'perf_hooks';
-import { rmNoExist } from './lib.js';
+import { rmNoExist, GITIGNORE_EMPTY_DIR } from './lib.js';
 import { platform } from 'os';
 
 const imagesURL = new URL('../images', import.meta.url);
@@ -59,8 +59,11 @@ const formatTranslation = ext => {
 }
 
 try {
-    await rmNoExist(join(imagesPath, OUTPUT_DIR));
-    await mkdir(join(imagesPath, OUTPUT_DIR));
+    const outputPath = join(imagesPath, OUTPUT_DIR);
+    await rmNoExist(outputPath);
+    await mkdir(outputPath);
+    // replace .gitignore
+    await writeFile(join(outputPath, '.gitignore'), GITIGNORE_EMPTY_DIR);
     const imgFiles = await readdir(join(imagesPath, SRC_DIR));
     const images = imgFiles
         .filter(imgFile => imgFile.match(/.(jpg|jpeg|png|webp)$/i))
