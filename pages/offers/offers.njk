@@ -10,6 +10,7 @@ fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
 {% from "icons.njk" import svgicon %}
+{% from "buttons.njk" import primaryButton %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--offers-xmed xmed:bg-hero--offers bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -39,9 +40,10 @@ fabExternalLink: true
                         Food &amp; Beverag Credit Package
                     </h2>
                 </header>
-                <p>
+                <p class="mb-4">
                     Indoor/outdoor bar and restaurant offering cocktails on tap and apps by the piece—redefining dinner and drinks. Join us for year-around open air offers and seasonal menus featuring what you know and love about California cuisine, with some Ameswell innovation.
                 </p>
+                {{ primaryButton('', 'Book Now') }}
             </figcaption>
         </figure>
     </section>
