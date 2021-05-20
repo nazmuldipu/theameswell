@@ -3,20 +3,23 @@
         {
             "image": "images/offers-1",
             "imgalt": "The main entrance of the Ameswell Hotel",
-            "link": "link",
-            "p1": "1920"
+            "link": "https://reservations.travelclick.com/111994",
+            "title": "Food &amp; Beverag Credit Package",
+            "p1": "Savor something tasty at The Canal Club restaurant, bar, or poolside. Or choose to relax in your room with In-Room Dining."
         },
         {
             "image": "images/offers-2",
             "imgalt": "The lobby interior of the Ameswell Hotel",
-            "link": "link",
-            "p1": "1920"
+            "link": "https://reservations.travelclick.com/111994",
+            "title": "The Canal Club",
+            "p1": "Whether you’re staying with us at The Scott Resort & Spa or dropping by after a day in Old Town, The Canal Club is the perfect Scottsdale escape — a memorable dining experience blending old world and new."
         },
         {
             "image": "images/offers-3",
             "imgalt": "The outdoor pool in the evening at the Ameswell Hotel",
-            "link": "link",
-            "p1": "1920"
+            "link": "https://reservations.travelclick.com/111994",
+            "title": "Spa Credit Package",
+            "p1": "Relax and unwind at La Vidorra Spa with a daily $100 Spa Credit"
         }
     ]
 }
