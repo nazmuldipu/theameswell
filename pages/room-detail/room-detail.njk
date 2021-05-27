@@ -11,6 +11,7 @@ fabExternalLink: true
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "icons.njk" import svgicon %}
+{% from "media-carousel.njk" import media_carousel %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--page-detail-xmed xmed:bg-hero--page-detail bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -251,6 +252,18 @@ fabExternalLink: true
         </ul>
     </article>
 </div>
+
+
+<div class="grid auto-cols-fr justify-items-center w-full bg-ams-base">
+    <figure class="w-full max-w-screen-lg overflow-hidden pt-8 pb-16">
+        {{ media_carousel(imageSlides) }}
+        <figcaption class="px-8">
+            Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty.
+        </figcaption>
+    </figure>
+</div>
+
+<!-- TODO: commenting out the video for now, adding in image carousel. v2 refactor will include the video again, and so, leaving here -Alex May 26, 2021
 <div class="grid auto-cols-fr justify-items-center w-full bg-ams-base">
     <article class="w-full max-w-screen-lg overflow-hidden mt-5">
         <section>
@@ -261,3 +274,4 @@ fabExternalLink: true
         </section>
     </article>
 </div>
+-->

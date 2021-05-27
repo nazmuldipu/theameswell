@@ -8,6 +8,10 @@ export const prettyJSONStringify = json => JSON.stringify(json, null, 2);
 
 export const LOAD_TYPE_REGEX = /-([A-Za-z]+)\./;
 
+export const GITIGNORE_EMPTY_DIR = `*
+*/
+!.gitignore`;
+
 /**
  * 
  * @param {Set} a 
