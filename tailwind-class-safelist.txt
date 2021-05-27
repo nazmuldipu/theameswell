@@ -78,3 +78,13 @@ xmed:bg-no-webp__hero--air-quality-xmed
 medium:bg-no-webp__hero--air-quality-xmed
 large:bg-no-webp__hero--air-quality-xmed
 bg-no-webp__hero--air-quality-xmed
+small:bg-no-webp__hero--offers
+xmed:bg-no-webp__hero--offers
+medium:bg-no-webp__hero--offers
+large:bg-no-webp__hero--offers
+bg-no-webp__hero--offers
+small:bg-no-webp__hero--offers-xmed
+xmed:bg-no-webp__hero--offers-xmed
+medium:bg-no-webp__hero--offers-xmed
+large:bg-no-webp__hero--offers-xmed
+bg-no-webp__hero--offers-xmed

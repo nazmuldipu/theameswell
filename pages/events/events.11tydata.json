@@ -1,21 +1,27 @@
 {
     "eventslides": [
         {
-            "image": "images/events-gallery-1",
-            "imgtype": "png",
-            "imgalt": "A speaker giving a speech to an audience seated around tables in the Infinity Ballroom at the Ameswell Hotel",
+            "image": "images/events-gallery-4",
+            "imgtype": "jpg",
+            "imgalt": "Events Image",
             "intrinsicwidth": "1920"
         },
         {
-            "image": "images/events-gallery-2",
-            "imgtype": "png",
-            "imgalt": "The Infinity Ballroom decorated for a social event",
+            "image": "images/events-gallery-5",
+            "imgtype": "jpg",
+            "imgalt": "Events Image",
             "intrinsicwidth": "1920"
         },
         {
-            "image": "images/events-gallery-3",
-            "imgtype": "png",
-            "imgalt": "The grounds of the Ameswell Hotel setup with tables and chairs for the hosting of an event",
+            "image": "images/events-gallery-6",
+            "imgtype": "jpg",
+            "imgalt": "Events Image",
+            "intrinsicwidth": "1920"
+        },
+        {
+            "image": "images/events-gallery-7",
+            "imgtype": "jpg",
+            "imgalt": "Events Image",
             "intrinsicwidth": "1920"
         }
     ]
