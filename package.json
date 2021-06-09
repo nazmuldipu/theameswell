@@ -35,6 +35,7 @@
     "cssnano": "^4.1.10",
     "esbuild": "^0.8.46",
     "html-minifier": "^4.0.0",
+    "http-server": "^0.12.3",
     "imagetracerjs": "^1.2.6",
     "p-all": "^3.0.0",
     "p-map": "^4.0.0",

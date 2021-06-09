@@ -1,4 +1,5 @@
 import PercyScript from '@percy/script';
+import httpServer from 'http-server';
 
 const PORT = 8080;
 const BASE_URL = `http://localhost:${PORT}`;
@@ -9,7 +10,11 @@ let options = {
 
 // A script to navigate our app and take snapshots with Percy.
 PercyScript.run(async (page, percySnapshot) => {
-  console.log(`snapshoot running`);
+    let server = httpServer.createServer({
+        root: './build/'
+    });
+    server.listen(PORT);
+    console.log(`Server started at ${BASE_URL}`);
   // Home Page
   await page.goto(BASE_URL);
   await percySnapshot('Ameswell home page',options);
@@ -31,5 +36,6 @@ PercyScript.run(async (page, percySnapshot) => {
   // Wellness Page
   await page.goto(`${BASE_URL}/wellness.html`);
   await percySnapshot('Weddings Page (wellness.html)',options);
+  server.close();
 
 });
