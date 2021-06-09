@@ -35,7 +35,7 @@ PercyScript.run(async (page, percySnapshot) => {
   await percySnapshot('Weddings Page (weddings.html)',options);
   // Wellness Page
   await page.goto(`${BASE_URL}/wellness.html`);
-  await percySnapshot('Weddings Page (wellness.html)',options);
+  await percySnapshot('Wellness Page (wellness.html)',options);
   server.close();
 
 });
