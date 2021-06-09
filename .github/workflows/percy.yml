@@ -22,7 +22,7 @@ jobs:
       - name: project watch
         run: npm run watch
       - name: Percy Test
-        uses: percy/exec-action@dev
+        uses: percy/exec-action@master
         with:
           command: "node snapshots.js"
         env:
