@@ -17,6 +17,35 @@ export const getJSBuildDeps = metadata =>
         .map(relativePath => join(process.cwd(), relativePath)))
 
 
+// TODO: we will eventually want to include variables like these as env vars
+// through a library like dotenv
+const getSkipperWebsiteAPIBase = () => {
+    switch(process.env.NODE_ENV) {
+        case 'production':
+            return '"https://hotel-site.skipperhospitality.com"';
+
+        case 'staging':
+            return '"https://hotel-site-stage.skipperhospitality.com"';
+
+        default:
+            return '"https://hotel-site-dev.skipperhospitality.com"';
+    }
+};
+
+const getSkipperWebsiteToken = () => {
+    switch(process.env.NODE_ENV) {
+        case 'production':
+            return '"this-is-my-secret-token-ameswell"';
+
+        case 'staging':
+            return '"this-is-my-secret-token-ameswell"';
+
+        default:
+            return '"this-is-my-secret-token-ameswell"';
+    }
+};
+
+
 /**
  * 
  * @param {String[]} inputPaths 
@@ -42,7 +71,11 @@ export const buildJS = async (inputPaths, outDir, outBase, metafilePath) => {
         outbase: outBase,
         target: ['es2017'],
         minify: process.env.NODE_ENV === 'production',
-        metafile: metafilePath
+        metafile: metafilePath,
+        define: {
+            SKIPPER_WEBSITE_API_BASE: getSkipperWebsiteAPIBase(),
+            SKIPPER_WEB_API_TOKEN: getSkipperWebsiteToken()
+        }
     });
 
     const metadata = JSON.parse(readFileSync(metafilePath));

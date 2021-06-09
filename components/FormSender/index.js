@@ -55,10 +55,10 @@ export default class FormSender extends HTMLElement {
                         })
                     } else {
                         if (res.body instanceof ReadableStream) {
-                            // then we have an error object
-                            res.json().then(({ errs }) => {
+                            // then we have an errors object
+                            res.json().then(({ errors }) => {
                                 this.setStatusColor(STATUS_COLOR_ERROR);
-                                this.setStatusCopy( clientErrorMessage(errs) )
+                                this.setStatusCopy( clientErrorMessage(errors) )
                             });
                         } else {
                             throw new Error(`SERVER ERROR ${res.status} -- ${res.statusText}`);

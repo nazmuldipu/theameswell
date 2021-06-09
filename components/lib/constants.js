@@ -1,5 +1,4 @@
-export const CONTACT_URL = 'https://bobf6qa3l0.execute-api.us-east-1.amazonaws.com/test/theameswell/contact/';
-//export const CONTACT_URL = 'http://localhost:3000/theameswell/contact/';
+export const CONTACT_URL = `${SKIPPER_WEBSITE_API_BASE}/contact/ameswell`;
 
 export const STATUS_COLOR_NORMAL = 'text-ams-primary';
 export const STATUS_COLOR_SUCCESS = 'text-ams-green';
