@@ -8,11 +8,11 @@ on:
       - Fix-#381-automation-visual-testing-percy
 jobs:
   build:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout dev branch
-        uses: actions/checkout@dev
-      - uses: actions/setup-node@dev
+      - name: Checkout master branch
+        uses: actions/checkout@master
+      - uses: actions/setup-node@master
         with:
           node-version: '14'
       - name: Install  npm
