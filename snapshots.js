@@ -1,7 +1,7 @@
 import PercyScript from '@percy/script';
 
 const PORT = 8080;
-const BASE_URL = `https://www.theameswellhotel.com/`;
+const BASE_URL = `http://localhost:${PORT}`;
 
 let options = {
     widths: [768, 992, 1200]
