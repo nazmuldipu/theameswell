@@ -5,7 +5,7 @@ on:
       - dev
   push:
     branches:
-      - Fix-#381-automation-visual-testing-percy
+      - dev
 jobs:
   build:
     runs-on: ubuntu-latest
