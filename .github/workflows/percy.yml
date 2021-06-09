@@ -1,0 +1,30 @@
+name: Percy snapshot
+on:
+  pull_request:
+    branches:
+      - dev
+  push:
+    branches:
+      - Fix-#381-automation-visual-testing-percy
+jobs:
+  build:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Checkout dev branch
+        uses: actions/checkout@dev
+      - uses: actions/setup-node@dev
+        with:
+          node-version: '14'
+      - name: Install  npm
+        run: npm install
+      - name: Image resize
+        run: npm run resize-images
+      - name: project watch
+        run: npm run watch
+      - name: Percy Test
+        uses: percy/exec-action@dev
+        with:
+          command: "node snapshots.js"
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        
