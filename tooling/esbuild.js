@@ -16,6 +16,9 @@ export const getJSBuildDeps = metadata =>
         .keys(metadata.inputs)
         .map(relativePath => join(process.cwd(), relativePath)))
 
+
+// TODO: we will eventually want to include variables like these as env vars
+// through a library like dotenv
 const getSkipperWebsiteAPIBase = () => {
     switch(process.env.NODE_ENV) {
         case 'production':
