@@ -20,7 +20,7 @@ jobs:
       - name: Image resize
         run: npm run resize-images
       - name: project watch
-        run: npm run watch
+        run: npm run build
       - name: Percy Test
         uses: percy/exec-action@master
         with:
