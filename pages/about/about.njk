@@ -318,9 +318,17 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="mb-4">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                <img src="images/about-1.jpg" alt="The exterior of the hotel">
-            </figure>
+            <picture class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+                {% set imageUrl = 'images/about-1' %}
+                <source data-src="{{imageUrl}}.webp" type="image/webp" srcset="
+                        {{imageUrl}}.webp 900w,
+                        {{imageUrl}}_600.webp 600w" 
+                    sizes="100vw">
+                <img src="{{imageUrl}}.jpg" loading="lazy" alt="The exterior of the hotel" srcset="
+                        {{imageUrl}}.jpg 900w,
+                        {{imageUrl}}_600.jpg 600w"
+                    sizes="100vw">
+            </picture>
             <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
                 <h2 class="title-display text-3xl">
                     We are sustainable
@@ -338,9 +346,17 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="mb-4 xmed:mt-8">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                <img src="images/about-2.jpg" alt="A dining room table">
-            </figure>
+            <picture class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+                {% set imageUrl = 'images/about-2' %}
+                <source data-src="{{imageUrl}}.webp" type="image/webp" srcset="
+                        {{imageUrl}}.webp 900w,
+                        {{imageUrl}}_600.webp 600w" 
+                    sizes="100vw">
+                <img src="{{imageUrl}}.jpg" loading="lazy" alt="A dining room table" srcset="
+                        {{imageUrl}}.jpg 900w,
+                        {{imageUrl}}_600.jpg 600w"
+                    sizes="100vw">
+            </picture>
             <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
                 <h2 class="title-display text-3xl">
                     We are relaxed luxury
@@ -358,9 +374,17 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="mb-4 xmed:mt-8">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                <img src="images/about-3.jpg" alt="An exercise room">
-            </figure>
+            <picture class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+                {% set imageUrl = 'images/about-3' %}
+                <source data-src="{{imageUrl}}.webp" type="image/webp" srcset="
+                        {{imageUrl}}.webp 900w,
+                        {{imageUrl}}_600.webp 600w" 
+                    sizes="100vw">
+                <img src="{{imageUrl}}.jpg" loading="lazy" alt="An exercise room" srcset="
+                        {{imageUrl}}.jpg 900w,
+                        {{imageUrl}}_600.jpg 600w"
+                    sizes="100vw">
+            </picture>
             <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
                 <h2 class="title-display text-3xl">
                     We are about wellbeing
@@ -378,9 +402,17 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="mb-4 xmed:mt-8">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                <img src="images/about-4.jpg" alt="The exterior">
-            </figure>
+            <picture class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+                {% set imageUrl = 'images/about-4' %}
+                <source data-src="{{imageUrl}}.webp" type="image/webp" srcset="
+                        {{imageUrl}}.webp 900w,
+                        {{imageUrl}}_600.webp 600w" 
+                    sizes="100vw">
+                <img src="{{imageUrl}}.jpg" loading="lazy" alt="The exterior" srcset="
+                        {{imageUrl}}.jpg 900w,
+                        {{imageUrl}}_600.jpg 600w"
+                    sizes="100vw">
+            </picture>
             <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
                 <h2 class="title-display text-3xl">
                     We are rooted in community
@@ -398,9 +430,17 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="mb-4 xmed:mt-8">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                <img src="images/about-5.jpg" alt="The lobby">
-            </figure>
+            <picture class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+                {% set imageUrl = 'images/about-5' %}
+                <source data-src="{{imageUrl}}.webp" type="image/webp" srcset="
+                        {{imageUrl}}.webp 900w,
+                        {{imageUrl}}_600.webp 600w" 
+                    sizes="100vw">
+                <img src="{{imageUrl}}.jpg" loading="lazy" alt="The lobby" srcset="
+                        {{imageUrl}}.jpg 900w,
+                        {{imageUrl}}_600.jpg 600w"
+                    sizes="100vw">
+            </picture>
             <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
                 <h2 class="title-display text-3xl">
                     We are always innovating
@@ -418,9 +458,17 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="mb-4 xmed:mt-8">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                <img src="images/about-6.jpg" alt="The hotel entrance">
-            </figure>
+            <picture class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+                {% set imageUrl = 'images/about-6' %}
+                <source data-src="{{imageUrl}}.webp" type="image/webp" srcset="
+                        {{imageUrl}}.webp 900w,
+                        {{imageUrl}}_600.webp 600w" 
+                    sizes="100vw">
+                <img src="{{imageUrl}}.jpg" loading="lazy" alt="The hotel entrance" srcset="
+                        {{imageUrl}}.jpg 900w,
+                        {{imageUrl}}_600.jpg 600w"
+                    sizes="100vw">
+            </picture>
             <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
                 <h2 class="title-display text-3xl">
                     We are independent
