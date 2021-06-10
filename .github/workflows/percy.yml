@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@dev
-      - uses: actions/setup-node@dev
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install  npm packages
@@ -22,7 +22,7 @@ jobs:
       - name: Project build
         run: npm run build
       - name: Percy Test
-        uses: percy/exec-action@dev
+        uses: percy/exec-action@v0.3.1
         with:
           command: "node snapshots.js"
         env:
