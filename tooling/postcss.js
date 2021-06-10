@@ -21,7 +21,7 @@ const plugins = [
     require('postcss-nesting')
 ];
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
     plugins.push(require('autoprefixer'));
     //plugins.push(require('cssnano')({ preset: 'default' }));
 }
