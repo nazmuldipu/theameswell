@@ -1,4 +1,4 @@
-name: Percy snapshot.
+name: Percy snapshots
 on:
   pull_request:
     branches:
@@ -10,13 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: branch checkout
-        uses: actions/checkout@v2
-        with:
-          repository: Skipper-Hospitality/theameswell
-          ref: dev
       - name: Setup node environment (14.x)
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install  npm packages
@@ -25,7 +21,7 @@ jobs:
         run: npm run resize-images
       - name: Project build
         run: npm run build
-      - name: Percy Test
+      - name: Percy Snapshots
         uses: percy/exec-action@v0.3.1
         with:
           command: "node snapshots.js"
