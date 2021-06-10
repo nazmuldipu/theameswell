@@ -1,4 +1,4 @@
-name: Percy snapshot..
+name: Percy snapshot.
 on:
   pull_request:
     branches:
@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@dev
-      - name: Use Node.js 14.x
       - uses: actions/setup-node@dev
         with:
           node-version: '14'
@@ -20,7 +19,7 @@ jobs:
         run: npm install
       - name: Image resize
         run: npm run resize-images
-      - name: Project build 
+      - name: Project build
         run: npm run build
       - name: Percy Test
         uses: percy/exec-action@dev
