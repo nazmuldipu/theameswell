@@ -70,7 +70,7 @@ export const buildJS = async (inputPaths, outDir, outBase, metafilePath) => {
         outdir: outDir,
         outbase: outBase,
         target: ['es2017'],
-        minify: process.env.NODE_ENV === 'production',
+        minify: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging',
         metafile: metafilePath,
         define: {
             SKIPPER_WEBSITE_API_BASE: getSkipperWebsiteAPIBase(),
