@@ -25,7 +25,7 @@ const getSkipperWebsiteAPIBase = () => {
             return '"https://hotel-site.skipperhospitality.com"';
 
         case 'staging':
-            return '"https://hotel-site-stage.skipperhospitality.com"';
+            return '"https://hotel-site-dev.skipperhospitality.com"';
 
         default:
             return '"https://hotel-site-dev.skipperhospitality.com"';
