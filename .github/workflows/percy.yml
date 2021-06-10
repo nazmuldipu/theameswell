@@ -12,21 +12,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@dev
-
       - name: Use Node.js 14.x
       - uses: actions/setup-node@dev
         with:
           node-version: '14'
-
       - name: Install  npm packages
         run: npm install
-
       - name: Image resize
         run: npm run resize-images
-
       - name: Project build 
         run: npm run build
-
       - name: Percy Test
         uses: percy/exec-action@dev
         with:
