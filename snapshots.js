@@ -24,7 +24,7 @@ PercyScript.run(async (page, percySnapshot) => {
   // snapshots
   for (let index = 0; index < pages.length; index++) {
     await page.goto(`${BASE_URL}/${pages[index].name}`);
-    await percySnapshot(pages[index],options);
+    await percySnapshot(pages[index].name,options);
   }
   server.close()
 });
