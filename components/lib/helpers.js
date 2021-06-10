@@ -42,11 +42,12 @@ export const getBodyFromForm = form => {
 export async function sendContact(form, contactType) {
     const requestBody = getBodyFromForm(form);
 
-    const response = await fetch(`${CONTACT_URL}${contactType}`, {
+    const response = await fetch(`${CONTACT_URL}?request_type=${contactType}`, {
         method: 'POST',
         mode: 'cors',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${SKIPPER_WEB_API_TOKEN}`,
         },
         body: JSON.stringify(requestBody)
     });
