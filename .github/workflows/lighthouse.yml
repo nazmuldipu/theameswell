@@ -20,6 +20,8 @@ jobs:
         run: npm run build
       - name: install lighthouse global
         run: npm install -g @lhci/cli@0.7.x
+      - name: lighthouse run
+        run: lhci autorun
   
   # lighthouseci:
   #   runs-on: ubuntu-latest
