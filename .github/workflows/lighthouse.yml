@@ -18,6 +18,8 @@ jobs:
         run: npm run resize-images
       - name: Project build
         run: npm run build
+      - name: install lighthouse global
+        run: npm install -g @lhci/cli@0.7.x
   
   # lighthouseci:
   #   runs-on: ubuntu-latest
