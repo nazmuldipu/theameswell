@@ -32,7 +32,7 @@ jobs:
       - name: Install lighthouse globaly
         run: npm install -g @lhci/cli@0.7.x
       - name: lighthouse run
-        run: lhci autorun
+        run: lhci autorun && lhci upload
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         
