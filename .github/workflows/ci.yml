@@ -27,10 +27,10 @@ jobs:
           command: "node snapshots.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-      - name: Install lighthouse globaly
-        run: npm install -g @lhci/cli@0.7.x
-      - name: lighthouse run
-        run: lhci autorun
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+      # - name: Install lighthouse globaly
+      #   run: npm install -g @lhci/cli@0.7.x
+      # - name: lighthouse run
+      #   run: lhci autorun
+      #   env:
+      #     LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         
