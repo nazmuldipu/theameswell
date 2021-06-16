@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - dev
+      - Fix-#404-lighthouse-ci-implement
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,4 +28,10 @@ jobs:
           command: "node snapshots.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      - name: install lighthouse global
+        run: npm install -g @lhci/cli@0.7.x
+      - name: lighthouse run
+        run: lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         
