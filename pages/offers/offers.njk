@@ -13,7 +13,7 @@ fabExternalLink: true
 {% from "buttons.njk" import primaryButton %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--offers-xmed xmed:bg-hero--offers bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
-<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 bg-pattern--ams-green">
+<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 bg-pattern--ams-grey">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
@@ -27,9 +27,9 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<section class="grid justify-items-center w-full bg-ams-base pb-8">
+<section class="grid justify-items-center w-full bg-ams-base pb-8 xmed:pt-8">
     {% for item in offers %}
-        <section class="mb-4 xmed:mt-8">
+        <section class="mb-5 xmed:mt-8">
             <figure class="max-w-screen-xl xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
                 <figcaption class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
                     <img src="{{ item.image }}.jpg" alt="{{ item.imgalt }}">
