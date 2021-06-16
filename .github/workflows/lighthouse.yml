@@ -1,4 +1,4 @@
-name: CI
+name: LightHouse CI
 on:
   push:
     branches:
@@ -19,7 +19,7 @@ jobs:
       - name: Project build
         run: npm run build
       - name: run Lighthouse CI
-        run: 
+        run: |
           npm install -g @lhci/cli@0.7.x
           lhci autorun
         env:
