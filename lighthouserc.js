@@ -1,4 +1,4 @@
-module.exports = {
+const lhci = {
     ci: {
       collect: {
         staticDistDir: './build/',
@@ -8,3 +8,4 @@ module.exports = {
       },
     },
   };
+  export default lhci
