@@ -22,16 +22,29 @@ jobs:
         run: npm run resize-images
       - name: Project build
         run: npm run build
+      # - name: Percy Snapshots
+      #   uses: percy/exec-action@v0.3.1
+      #   with:
+      #     command: "node snapshots.js"
+      #   env:
+      #     PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+  percy:
+    needs: build
+    steps:
       - name: Percy Snapshots
         uses: percy/exec-action@v0.3.1
         with:
           command: "node snapshots.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+  lhci:
+    needs: build
+    steps:
       - name: install lighthouse global
         run: npm install -g @lhci/cli@0.7.x
       - name: lighthouse run
         run: lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
         
