@@ -29,6 +29,7 @@ jobs:
           command: "node snapshots.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      if: ${{ github.event_name == 'pull_request' }}
       - name: Install lighthouse globaly
         run: npm install -g @lhci/cli@0.7.x
       - name: lighthouse run
