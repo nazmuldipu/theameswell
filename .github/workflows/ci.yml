@@ -1,4 +1,4 @@
-name: GH action ci/cd (Percy, Lighthouse)
+name: GH action (Percy, Lighthouse)
 on:
   pull_request:
     branches:
