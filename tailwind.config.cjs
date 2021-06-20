@@ -89,6 +89,7 @@ module.exports = {
         'ams-taupe': '#686058',
         'ams-grey': '#c2b8ab',
         'ams-gold': '#857550',
+        'ams-sand': '#DBC8B6',
         'ams-cyan': '#00aeef',
         'ams-green': '#00a651',
         'ams-orange': '#f7941e',

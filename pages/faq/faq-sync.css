@@ -1,3 +1,13 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+
+.accordion-toggle::after {
+	content: '+';
+	@apply font-sans text-ams-primary xmed:font-serif absolute right-2 top-1/2 -translate-y-1/2 xmed:text-2xl transform;
+}
+
+.accordion-toggle.active::after {
+	content: '-';
+	@apply text-ams-sand;
+}

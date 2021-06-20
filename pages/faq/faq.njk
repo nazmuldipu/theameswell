@@ -9,7 +9,7 @@ permalinkBypassOutputDir: true
 fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
-{% from "icons.njk" import svgicon %}
+{% from "back-to-top.njk" import backToTop %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--page-detail-xmed xmed:bg-hero--page-detail bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -20,10 +20,52 @@ fabExternalLink: true
                 <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
                     Question and Answer	
                 </h2>
-                <div class="xmed:text-center">                    
-					We are always happy to answer any questions you may have, but you might find what you are looking for right here in the answers to our most frequently asked questions. You can also call the front desk at 650-880-1000
+                <div class="xmed:text-center text-lg">
+					We are always happy to answer any questions you may have, but you might find what you are looking for right here in the answers to our most frequently asked questions. You can also call the front desk at <a href="tel:650-880-1000" class="xmed:border-b border-ams-primary">650-880-1000</a>
                 </div>
             </div>
         </section>
     </article>
+
+    <article class="w-full grid justify-items-center pt-6 xmed:pt-16">
+        <section class="w-full grid justify-items-center max-w-screen-xl">
+            <div class="w-full pt-6 px-6 xmed:pt-8 xmed:px-8 shadow-md bg-ams-white">
+                {% for faq in faqList %}
+                    <h3 class="title-display text-center text-2xl xmed:text-4xl mb-6 xmed:mb-8">
+                        <a href="#{{ faq.slug }}" class="border-b border-ams-primary">{{ faq.title }}</a>
+                    </h3>
+                {% endfor %}
+            </div>
+        </section>
+    </article>
 </div>
+
+<section class="w-full grid justify-items-center max-w-screen-lg bg-white py-8 px-6 xmed:px-8">
+    {% for faq in faqList %}
+        <article class="w-full pt-8 pb-0 xmed:py-8" id="{{ faq.slug }}">
+            <section class="mb-5 xmed:mt-8">
+                <header>
+                    <h2 class="font-serif text-ams-primary text-xl xmed:text-3xl pb-0 xmed:pb-6 xmed:text-center">
+                        {{ faq.title | safe }}
+                    </h2>
+                </header>
+                {% for list in faq.list %}
+                    <figure class="mx-4 xmed:mx-0 max-w-screen-xl text-left border-b-2 border-ams-sand">
+                        <figcaption class="accordion-toggle cursor-pointer relative py-3 xmed:py-4 pr-8">
+                            <h4 class="xmed:text-lg font-bold tracking-tight text-ams-primary">
+                                {{ list.title | safe }}
+                            </h4>
+                        </figcaption>
+                        <figcaption class="hidden pb-3 xmed:pb-4 tracking-wide">
+                            <p class="pl-3 xmed:pl-8 border-l-4 xmed:border-l-8 border-ams-primary">
+                                {{ list.desc | safe }}
+                            </p>
+                        </figcaption>
+                    </figure>
+                {% endfor %}
+            </section>
+        </article>
+    {% endfor %}
+</section>
+
+{{ backToTop( 'Scroll to top' ) }}
