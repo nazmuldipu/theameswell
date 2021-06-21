@@ -6,7 +6,7 @@
 			"list": [
 				{
 					"title": "How can I get the best room rate?",
-					"desc": "You will always find our best available rates right here on our website. Check out dates and rates <a class='border-b border-ams-primary' href='https://reservations.travelclick.com/111994'>here</a>."
+					"desc": "You will always find our best available rates right here on our website. Check out dates and rates <a href='https://reservations.travelclick.com/111994'>here</a>."
 				},
 				{
 					"title": "What time is check-in and check-out?",
@@ -22,7 +22,7 @@
 				},
 				{
 					"title": "Do you offer room service? What are the hours?",
-					"desc": "You can grab a quick bite or beverage at our café, The Flyby. Pickup is also available for both TheFlyby and Roger during operating hours for each of the dining outlets. Please look <a class='border-b border-ams-primary' href='http://www.theameswellhotel.com/dining'>here</a> for current hours."
+					"desc": "You can grab a quick bite or beverage at our café, The Flyby. Pickup is also available for both TheFlyby and Roger during operating hours for each of the dining outlets. Please look <a href='http://www.theameswellhotel.com/dining'>here</a> for current hours."
 				},
 				{
 					"title": "Do you have a business center?",
@@ -60,11 +60,11 @@
 				},
 				{
 					"title": "How do I get to the The Ameswell Hotel?",
-					"desc": "Please see a map that highlights our location <a class='border-b border-ams-primary' href='https://www.theameswellhotel.com/about.html'>here</a>."
+					"desc": "Please see a map that highlights our location <a href='https://www.theameswellhotel.com/about.html'>here</a>."
 				},
 				{
 					"title": "Do you offer free shuttle service to and from the airport?",
-					"desc": "We do not offer a complimentary shuttle service, but we recommend Protect Ride. You can learn more about their services <a class='border-b border-ams-primary' href='http://www.protectride.com/'>here</a>."
+					"desc": "We do not offer a complimentary shuttle service, but we recommend Protect Ride. You can learn more about their services <a href='http://www.protectride.com/'>here</a>."
 				},
 				{
 					"title": "Do you have onsite parking? Is it included in my room rate? How much is overnight parking?",
@@ -114,7 +114,7 @@
 				},
 				{
 					"title": "Do you have accessible rooms?",
-					"desc": "The Ameswell Hotel is committed to making our property accessible to all guests. Our accessible guest room features, accessible property details and website accessibility information can be found <a class='border-b border-ams-primary' href='http://www.theameswellhotel.com/accessibility'>here</a>."
+					"desc": "The Ameswell Hotel is committed to making our property accessible to all guests. Our accessible guest room features, accessible property details and website accessibility information can be found <a href='http://www.theameswellhotel.com/accessibility'>here</a>."
 				}
 			]
 		},
@@ -124,11 +124,11 @@
 			"list": [
 				{
 					"title": "What are the hours of the café, bar/restaurant and Airstream bar?",
-					"desc": "You can find the most recent hours for each of our dining outlets <a class='border-b border-ams-primary' href='http://www.theameswellhotel.com/dining'>here</a>."
+					"desc": "You can find the most recent hours for each of our dining outlets <a href='http://www.theameswellhotel.com/dining'>here</a>."
 				},
 				{
 					"title": "Do you offer room service? What are the hours?",
-					"desc": "You can grab a quick bite or beverage at our café, The Flyby. Room service is also available via Doordash for both TheFlyby and Roger. Room service is available during operating hours for each of the dining outlets. Please look <a class='border-b border-ams-primary' href='http://www.theameswellhotel.com/dining'>here</a> for recent hours."
+					"desc": "You can grab a quick bite or beverage at our café, The Flyby. Room service is also available via Doordash for both TheFlyby and Roger. Room service is available during operating hours for each of the dining outlets. Please look <a href='http://www.theameswellhotel.com/dining'>here</a> for recent hours."
 				}
 			]
 		},
@@ -170,15 +170,15 @@
 			"list": [
 				{
 					"title": "How do I book a meeting or event at The Ameswell Hotel?",
-					"desc": "You can easily submit an RFP on our website. Simply fill out the details <a class='border-b border-ams-primary' href='http://www.theameswellhotel.com/events'>here</a> and a member of our team will get back to you promptly."
+					"desc": "You can easily submit an RFP on our website. Simply fill out the details <a href='http://www.theameswellhotel.com/events'>here</a> and a member of our team will get back to you promptly."
 				},
 				{
 					"title": "Do you offer group room rates?",
-					"desc": "We would be happy to work with you to customize a group room rate. Rates vary based on the time of year and the day of the week. Please contact our Director of Sales and Marketing, Keith Battaglia to inquire about special rates at <a class='border-b border-ams-primary' href='mailto:keithbattaglia@theameswellhotel.com'>keithbattaglia@theameswellhotel.com</a>."
+					"desc": "We would be happy to work with you to customize a group room rate. Rates vary based on the time of year and the day of the week. Please contact our Director of Sales and Marketing, Keith Battaglia to inquire about special rates at <a href='mailto:keithbattaglia@theameswellhotel.com'>keithbattaglia@theameswellhotel.com</a>."
 				},
 				{
 					"title": "How can I plan my wedding at The Ameswell Hotel?",
-					"desc": "With our Infinity Ballroom and spacious Event Lawn, the sky is literally the limit to what we can create to make your wedding day magical and memorable! Please visit our <a class='border-b border-ams-primary' href='http://www.theameswellhotel.com/weddings'>weddings page</a> to learn more and submit an inquiry form. A member of our team will respond to you promptly to share information about our packages and to schedule a tour."
+					"desc": "With our Infinity Ballroom and spacious Event Lawn, the sky is literally the limit to what we can create to make your wedding day magical and memorable! Please visit our <a href='http://www.theameswellhotel.com/weddings'>weddings page</a> to learn more and submit an inquiry form. A member of our team will respond to you promptly to share information about our packages and to schedule a tour."
 				}
 			]
 		},
@@ -188,19 +188,19 @@
 			"list": [
 				{
 					"title": "I am working on an article/blog post and would like to receive a press kit and materials. Whom should I contact?",
-					"desc": "Thank you for wanting to help spread the word about The Ameswell Hotel! Please reach out to our amazing public relations team at <a class='border-b border-ams-primary' href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>"
+					"desc": "Thank you for wanting to help spread the word about The Ameswell Hotel! Please reach out to our amazing public relations team at <a href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>"
 				},
 				{
 					"title": "I am interested in writing about your hotel and would like to stay over and/or experience the hotel. Whom should I contact?",
-					"desc": "We would be happy to consider arranging a stay at the hotel or meal at one of our restaurants. Please reach out to our public relations team at <a class='border-b border-ams-primary' href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>."
+					"desc": "We would be happy to consider arranging a stay at the hotel or meal at one of our restaurants. Please reach out to our public relations team at <a href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>."
 				},
 				{
 					"title": "I am interested in a photo shoot at your hotel. Whom should I contact?",
-					"desc": "Our property has many beautiful indoor and outdoor venues for photographs! Please inquire about photo shoots at The Ameswell Hotel, by reaching out to our public relations team at <a class='border-b border-ams-primary' href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>."
+					"desc": "Our property has many beautiful indoor and outdoor venues for photographs! Please inquire about photo shoots at The Ameswell Hotel, by reaching out to our public relations team at <a href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>."
 				},
 				{
 					"title": "I am an influencer and would love to collaborate with The Ameswell Hotel! Whom should I speak with about this?",
-					"desc": "Thank you for your interest in collaborating with us! We are always interested in speaking with influencers who align with our values. Please reach out to our social media and public relations team at <a class='border-b border-ams-primary' href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>."
+					"desc": "Thank you for your interest in collaborating with us! We are always interested in speaking with influencers who align with our values. Please reach out to our social media and public relations team at <a href='mailto:ameswell@m18pr.com'>ameswell@m18pr.com</a>."
 				}
 			]
 		}

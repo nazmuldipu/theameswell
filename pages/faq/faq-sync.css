@@ -11,3 +11,7 @@
 	content: '-';
 	@apply text-ams-sand;
 }
+
+.accordion-toggle + figcaption > p a {
+	@apply border-b border-ams-primary;
+}
