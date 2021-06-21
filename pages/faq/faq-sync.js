@@ -1,16 +1,10 @@
 'use strict';
-import { backToTop } from '../../scripts/backtotop.js';
+import { backToTop } from '../../scripts/backtotop';
+import { accordion } from '../../scripts/accordion';
 
 document.addEventListener('DOMContentLoaded', function(){
-	var element = document.querySelectorAll('.accordion-toggle');
-	
-	for (var i = 0; i < element.length; i++) {
-		element[i].addEventListener('click', function() {
-			var panel = this.nextElementSibling;
-			panel.classList.toggle('hidden');
-			this.classList.toggle('active');
-		});
-	}
+	// Initialize Accordoin script
+	accordion( '.accordion-toggle' );
 
 	// Initialize Back To Top
 	backToTop( '.button--backtotop' );
