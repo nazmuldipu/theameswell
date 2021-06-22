@@ -41,32 +41,33 @@ fabExternalLink: true
     </article>
 </div>
 
-<section class="w-full grid justify-items-center max-w-screen-lg bg-white py-8 px-6 xmed:px-8">
-    {% for faq in faqList %}
-        <article class="w-full pt-14 -mt-6 pb-0 xmed:py-8" id="{{ faq.slug }}">
-            <section class="mb-5 xmed:mt-8">
-                <header>
-                    <h2 class="font-serif text-ams-primary text-xl xmed:text-3xl pb-0 xmed:pb-6 xmed:text-center">
-                        {{ faq.title | safe }}
-                    </h2>
-                </header>
-                {% for list in faq.list %}
-                    <figure class="mx-4 xmed:mx-0 max-w-screen-xl text-left border-b-2 border-ams-sand">
-                        <figcaption class="accordion-toggle cursor-pointer relative py-3 xmed:py-4 pr-8">
-                            <h4 class="xmed:text-lg font-bold tracking-tight text-ams-primary">
-                                {{ list.title | safe }}
-                            </h4>
-                        </figcaption>
-                        <figcaption class="hidden pb-3 xmed:pb-4 tracking-wide">
-                            <p class="pl-3 xmed:pl-8 border-l-4 xmed:border-l-8 border-ams-primary">
-                                {{ list.desc | safe }}
-                            </p>
-                        </figcaption>
-                    </figure>
-                {% endfor %}
-            </section>
-        </article>
-    {% endfor %}
-</section>
-
-{{ backToTop( 'Scroll to top' ) }}
+<div class="w-full grid justify-items-center relative">
+    {{ backToTop( 'Scroll to top' ) }}
+    <section class="w-full grid justify-items-center max-w-screen-lg bg-white py-8 px-6 xmed:px-8">
+        {% for faq in faqList %}
+            <article class="w-full pt-14 -mt-6 pb-0 xmed:py-8" id="{{ faq.slug }}">
+                <section class="mb-5 xmed:mt-8">
+                    <header>
+                        <h2 class="font-serif text-ams-primary text-xl xmed:text-3xl pb-0 xmed:pb-6 xmed:text-center">
+                            {{ faq.title | safe }}
+                        </h2>
+                    </header>
+                    {% for list in faq.list %}
+                        <figure class="mx-4 xmed:mx-0 max-w-screen-xl text-left border-b-2 border-ams-sand">
+                            <figcaption class="accordion-toggle cursor-pointer relative py-3 xmed:py-4 pr-8">
+                                <h4 class="xmed:text-lg font-bold tracking-tight text-ams-primary">
+                                    {{ list.title | safe }}
+                                </h4>
+                            </figcaption>
+                            <figcaption class="hidden pb-3 xmed:pb-4 tracking-wide">
+                                <p class="pl-3 xmed:pl-8 border-l-4 xmed:border-l-8 border-ams-primary">
+                                    {{ list.desc | safe }}
+                                </p>
+                            </figcaption>
+                        </figure>
+                    {% endfor %}
+                </section>
+            </article>
+        {% endfor %}
+    </section>
+</div>
