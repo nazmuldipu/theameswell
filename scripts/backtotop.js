@@ -17,16 +17,19 @@ export const backToTop = ( el ) => {
 		} );
 	} );
 
-	const pageHeader = document.querySelector('#pageHeader');
-	// const offsetTop = el.offsetTop;
-	const navHeight = pageHeader.offsetHeight;
 
-	var _offset = 0;
-	var _el = el;
-    while( _el && !isNaN( _el.offsetLeft ) && !isNaN( _el.offsetTop ) ) {
-        _offset += _el.offsetTop - _el.scrollTop;
-        _el = _el.offsetParent;
-    }
+	// Back to top sticky feature
+	var _offset;
+
+	function calculateOffset() {
+		_offset = 0;
+		var _el = el;
+		while( _el && !isNaN( _el.offsetLeft ) && !isNaN( _el.offsetTop ) ) {
+			_offset += _el.offsetTop - _el.scrollTop;
+			_el = _el.offsetParent;
+		}
+	}
+	calculateOffset();
 
 	function stickyBackToTop() {
 		if (window.scrollY > (_offset - el.offsetTop)) {
@@ -37,5 +40,7 @@ export const backToTop = ( el ) => {
 			el.classList.remove('fixed');
 		}
 	}
+
+	window.addEventListener('resize', calculateOffset);
 	window.addEventListener('scroll', stickyBackToTop);
 }
