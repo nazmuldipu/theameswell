@@ -183,6 +183,30 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   @apply opacity-75 scale-75 -translate-y-3 translate-x-1; 
 }
 
+.image-loader {
+    @apply block relative;
+}
+.image-loader:before {
+    width: 46px;
+    height: 46px;
+    content: '';
+    background: url('/images/loading_icon.svg');
+    background-size: 100%;
+    z-index: -1;
+    animation: spin 2s linear infinite;
+    left: calc(50% - 23px);
+    @apply absolute top-6 transform -translate-x-2/4;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% {  transform: rotate(359deg); }
+  }
+
+  .image-loader.image-loader--white:before {
+    background-image: url('/images/white_loading_icon.svg');
+  }
+
 /****  end base styles  ********************************/
 
 
