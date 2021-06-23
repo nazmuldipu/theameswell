@@ -1,4 +1,4 @@
-name: Percy snapshots
+name: GH action (Percy, Lighthouse)
 on:
   pull_request:
     branches:
@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Setup node environment (14.x)
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -27,4 +29,12 @@ jobs:
           command: "node snapshots.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      - name: Install lighthouse globaly
+        if: ${{ github.event_name == 'pull_request' }}
+        run: npm install -g @lhci/cli@0.7.x
+      - name: lighthouse run
+        if: ${{ github.event_name == 'pull_request' }}
+        run: lhci autorun && lhci upload
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         
