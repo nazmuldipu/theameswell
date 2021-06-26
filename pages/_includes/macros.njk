@@ -50,7 +50,7 @@
 </div>
 {% endmacro %}
 
-{% macro scaled_image(imgObj) %}
+{% macro scaled_image(imgObj, lazy=true) %}
 <picture class="{{ imgObj.classes if imgObj.classes else 'w-full' }}">
 {# for each breakpoint #}
   {% for direction in imgObj.artDirection %}
@@ -71,7 +71,8 @@
     srcset="{{ default | imgObjSrcSet }}"
     src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
     class="{{ imgObj.classes if imgObj.classes else 'w-full' }}"
-    sizes="{{ default.sizes if default.sizes else '75vw' }}" 
+    sizes="{{ default.sizes if default.sizes else '75vw' }}"
+    loading="{{ 'lazy' if lazy else 'auto' }}" 
     alt="{{ default.alt }}">
 </picture>
 {% endmacro %}
