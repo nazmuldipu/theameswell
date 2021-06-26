@@ -13,6 +13,7 @@ fabExternalLink: true
 {% from "media-carousel.njk" import media_carousel %}
 {% from "buttons.njk" import primaryButton %}
 {% from "icons.njk" import svgicon %}
+{% from "macros.njk" import scaled_image %}
 
 <div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
     <header class="grid xmed:items-end">
@@ -50,7 +51,7 @@ fabExternalLink: true
     <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
         <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
             <div class="mx-4 xmed:mx-0">
-                {{ lazyvideo([{ src: "videos/homepage-video-main.mp4", type: "video/mp4"}], "images/homepage-video-main-bg.jpg", "lazy") }}
+                {{ scaled_image(entrance_image) }}
             </div>
             <div class="z-0 max-w-screen-xmed pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                 <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
@@ -84,7 +85,7 @@ fabExternalLink: true
         <rooms-gallery>
         <section class="rooms-gallery--wrapper grid justify-items-center max-w-screen-lg grid-areas-slideshow xmed:grid-areas-slideshow-xmed xmed:grid-cols-slideshow xmed:grid-rows-slideshow pt-4 px-4 xmed:pr-0 xmed:pb-4 xmed:pl-0 mb-5 bg-ams-white shadow-md">
             <figure class="justify-items-center xmed:relative xmed:mx-4 grid-in-slide">
-                    {{ lazyvideo([{ src: "videos/homepage-video-3.mp4", type: "video/mp4"}], "images/homepage-video-bg-3.jpg", "lazy") }}
+                    {{ scaled_image(rooms_image) }}
                     <figcaption>
                         <header class="grid grid-cols-sm-main-sm gap-2 justify-items-center text-2xl pt-4 xmed:block">
                             <span class="xmed:absolute xmed:top-1/3 xmed:left-0 xmed:bg-ams-white xmed:px-1">
@@ -230,30 +231,11 @@ fabExternalLink: true
         <a href="dining.html" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase">LEARN MORE</a>
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
             <figure class="grid grid-cols-2 xmed:grid-cols-1 gap-4 items-center mb-6">
-                <picture class="w-full image-loader image-loader--white">
-                    <source srcset="images/homepage-3.webp" type="image/webp">
-                    <img srcset="images/homepage-3.jpg" src="images/homepage-3.jpg" class="w-full" alt="Hotel guests purchasing goods at the Flyby">
-                </picture>
+                {{ scaled_image(roger_image) }}
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="dining.html#the_flyby">THE FLYBY</a>
-                        </h3>
-                    </header>
-                    <p class="xmed:text-center">
-                        All-day coffee and fast casual meals
-                    </p>
-                </figcaption>
-            </figure>
-            <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                <picture class="w-full image-loader image-loader--white">
-                    <source srcset="images/homepage-7.webp" type="image/webp">
-                    <img srcset="images/homepage-7.jpg" src="images/homepage-7.jpg" class="w-full" alt="Hotel guests dining at Roger in at twilight">
-                </picture>
-                <figcaption class="text-ams-white xmed:px-8">
-                    <header class="xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="dining.html#roger">ROGER</a>
+                            <a href="dining.html#the_flyby">ROGER</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
@@ -261,11 +243,21 @@ fabExternalLink: true
                     </p>
                 </figcaption>
             </figure>
+            <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
+                {{ scaled_image(flyby_image) }}
+                <figcaption class="text-ams-white xmed:px-8">
+                    <header class="xmed:text-center">
+                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
+                            <a href="dining.html#roger">THE FLYBY</a>
+                        </h3>
+                    </header>
+                    <p class="xmed:text-center">
+                        All-day coffee and fast casual meals
+                    </p>
+                </figcaption>
+            </figure>
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-end gap-4 items-center mb-6">
-                <picture class="w-full image-loader image-loader--white">
-                    <source srcset="images/homepage-4.webp" type="image/webp">
-                    <img srcset="images/homepage-4.jpg" src="images/homepage-4.jpg" class="w-full" alt="People recreating on the lawn of the Ameswell Hotel in front of the Airstream Bar">
-                </picture>
+                {{ scaled_image(airstream_image) }}
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
@@ -287,7 +279,7 @@ fabExternalLink: true
     <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
         <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
             <div class="mx-4 xmed:mx-0">
-                {{ lazyvideo([{ src: "videos/event-spaces.mp4", type: "video/mp4"}], "images/event-spaces-bg.jpg", "lazy") }}
+                {{ scaled_image(event_spaces_image) }}
             </div>
             <div class="z-0 max-w-screen-xmed pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                 <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
@@ -300,13 +292,6 @@ fabExternalLink: true
                     <a href="events.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
                 </div>
             </div>
-        </section>
-    </article>
-</div>
-<div class="grid auto-cols-fr justify-items-center w-full bg-ams-base">
-    <article class="mt-5 w-full max-w-screen-lg overflow-hidden">
-        <section>
-            {{ media_carousel(groundslides, "bg-ams-white xmed:bg-ams-base", "Located on eleven scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer planners endless opportunities to create memorable meeting experiences.") }}
         </section>
     </article>
 </div>
@@ -325,10 +310,7 @@ fabExternalLink: true
                 </div>
             </div>
             <figure>
-                <picture class="image-loader">
-                    <source srcset="images/homepage-6.webp" type="image/webp">
-                    <img srcset="images/homepage-6.jpg" src="images/homepage-6.jpg" alt="A setup for a wedding banquet on the front lawn of the Ameswell Hotel">
-                </picture>
+                {{ scaled_image(wedding_image) }}
             </figure>
         </section>
     </article>
