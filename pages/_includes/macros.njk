@@ -49,3 +49,30 @@
     </div>
 </div>
 {% endmacro %}
+
+{% macro scaled_image(imgObj, lazy=true) %}
+<picture class="{{ imgObj.classes if imgObj.classes else 'w-full' }}">
+{# for each breakpoint #}
+  {% for direction in imgObj.artDirection %}
+    <source 
+      srcset="{{ direction | imgObjSrcSet('webp') }}"
+      media="{{ direction.media }}" 
+      sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+      type="image/webp">
+    <source 
+      srcset="{{ direction | imgObjSrcSet }}" 
+      media="{{ direction.media }}" 
+      sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+      type="image/{{ direction.type | getImgSourceType }}">
+  {% endfor %}
+  {# we assume the first direction is the default to use #}
+  {% set default = imgObj.artDirection|first %}
+  <img 
+    srcset="{{ default | imgObjSrcSet }}"
+    src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
+    class="{{ imgObj.classes if imgObj.classes else 'w-full' }}"
+    sizes="{{ default.sizes if default.sizes else '75vw' }}"
+    loading="{{ 'lazy' if lazy else 'auto' }}" 
+    alt="{{ default.alt }}">
+</picture>
+{% endmacro %}
