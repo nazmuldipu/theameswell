@@ -257,11 +257,7 @@ fabExternalLink: true
                 </figcaption>
             </figure>
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-end gap-4 items-center mb-6">
-                <picture class="w-full">
-                    <source srcset="images/homepage-6-mobile.webp" type="image/webp" media="(max-width: 899px)">
-                    <source srcset="images/homepage-6-desktop.webp" type="image/webp" media="(min-width: 900px)">
-                    <img srcset="images/homepage-6-desktop.jpg" src="images/homepage-6-desktop.jpg" class="w-full" alt="People recreating on the lawn of the Ameswell Hotel in front of the Airstream Bar">
-                </picture>
+                {{ scaled_image(airstream_image) }}
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
