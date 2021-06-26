@@ -15,10 +15,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         /* TODO: add webp and jpg fallback URLs */
-        'hero--home': "url('/images/hero-home-large_2400.webp')",
-        'no-webp__hero--home': "url('/images/hero-home-large_2400.jpg')",
-        'hero--home-xmed': "url('/images/hero-home_xmed_600.webp')",
-        'no-webp__hero--home-xmed': "url('/images/hero-home_xmed_600.jpg')",
+        'hero--home': "url('/images/homepage-1-desktop_lg.webp')",
+        'no-webp__hero--home': "url('/images/homepage-1-desktop_lg.jpg')",
+        'hero--home-xmed': "url('/images/homepage-1-mobile_2xs.webp')",
+        'no-webp__hero--home-xmed': "url('/images/homepage-1-mobile_2xs.jpg')",
         'hero--page-detail': "url('/images/hero-page-detail.webp')",
         'no-webp__hero--page-detail': "url('/images/hero-page-detail.jpg')",
         'hero--page-detail-xmed': "url('/images/hero-page-detail_xmed.webp')",
