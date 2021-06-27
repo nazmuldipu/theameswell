@@ -290,6 +290,9 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     .page-index .page-header--splayed .page-header__logo{
         display: none;
     }
+    .page-index .page-header--splayed .page-header__weather{
+        display: none;
+    }
 }
 @media all and ( min-width: 900px ) {
     .page-index .page-header--splayed .page-header__nav{
@@ -299,6 +302,9 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 @media all and ( min-width: 900px ) {
     .page-index .page-header--splayed .page-header__toggle-button{
+        display: none;
+    }
+    .page-index .page-header--splayed .page-header__weather{
         display: none;
     }
 }
