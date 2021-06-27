@@ -10,7 +10,7 @@ fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
 {% from "icons.njk" import svgicon %}
-
+{% from "macros.njk" import scaled_image %}
 {% from "media-carousel.njk" import media_carousel %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--about-xmed xmed:bg-hero--about bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
@@ -74,10 +74,7 @@ fabExternalLink: true
         </p>
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:items-start">
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                <picture class="image-loader image-loader--white">
-                    <source srcset="images/about-room.webp" type="image/webp">
-                    <img src="images/about-room.jpg" alt="A bed in a sun filled guest room at the Ameswell Hotel">
-                </picture>
+                {{ scaled_image(rooms_image) }}
                 <figcaption class="text-ams-white xmed:text-center">
                     <header>
                         <h3 class="segment__cta segment__cta--grey relative inline-block mb-4 font-serif-display text-xl text-ams-white">
@@ -91,10 +88,7 @@ fabExternalLink: true
                 </figcaption>
             </figure>
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                <picture class="image-loader image-loader--white">
-                    <source srcset="images/homepage-3.webp" type="image/webp">
-                    <img src="images/homepage-3.jpg" alt="Guests purchasing food at the Flyby, a dining option at the Ameswell Hotel">
-                </picture>
+                {{ scaled_image(dining_image) }}
                 <figcaption class="text-ams-white xmed:text-center">
                     <header>
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
@@ -108,10 +102,7 @@ fabExternalLink: true
                 </figcaption>
             </figure>
             <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                <picture class="image-loader image-loader--white">
-                    <source srcset="images/homepage-4.webp" type="image/webp">
-                    <img src="images/homepage-4.jpg" alt="Guest recreating on the front lawn of the Ameswell Hotel">
-                </picture>
+                {{ scaled_image(wellness_image) }}
                 <figcaption class="text-ams-white xmed:text-center">
                     <header>
                         <h3 class="segment__cta segment__cta--yellow relative inline-block mb-4 font-serif-display text-xl text-ams-white">

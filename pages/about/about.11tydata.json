@@ -1,4 +1,14 @@
 {
+    "preload_images": [
+        {
+            "href": "images/about-hero-desktop_2400.webp",
+            "media": "(min-width:900.1px)"
+        },
+        {
+            "href": "images/about-hero-mobile_2400.webp",
+            "media": "(max-width:900px)"
+        }
+    ],
     "slides": [
         {
             "image": "images/about-gallery-7",
@@ -30,5 +40,71 @@
             "imgalt": "About Image",
             "intrinsicwidth": "1920"
         }
-    ]
+    ],
+    "rooms_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/about-8-desktop_2xs",
+                "alt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                "intrinsicwidth": "600" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "50vw",
+                "type": "jpg",
+                "src": "images/about-8-desktop_2xs",
+                "alt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                "intrinsicwidth": "300"
+            }
+        ]
+    },
+    "dining_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/about-9-desktop_2xs",
+                "alt": "The Airstream bar on the lawn at the Ameswell Hotel",
+                "intrinsicwidth": "600" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "50vw",
+                "type": "jpg",
+                "src": "images/about-9-desktop_2xs",
+                "alt": "The Airstream bar on the lawn at the Ameswell Hotel",
+                "intrinsicwidth": "300"
+            }
+        ]
+    },
+    "wellness_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/about-10-desktop_2xs",
+                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                "intrinsicwidth": "600" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "50vw",
+                "type": "jpg",
+                "src": "images/about-10-desktop_2xs",
+                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                "intrinsicwidth": "300"
+            }
+        ]
+    }
 }
