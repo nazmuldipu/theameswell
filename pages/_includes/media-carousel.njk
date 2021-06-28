@@ -4,23 +4,29 @@
         <div class="swiper-container w-full h-full">
             <div class="swiper-wrapper">
                     {% for slide in slides %}
-                        {% if slide.video %}
-                        <div class="swiper-slide" data-splide-html-video="{{ slide.video }}">
-                        {% else %}
                         <div class="swiper-slide">
-                        {% endif %}
                         <picture>
+                        {% for direction in slide.artDirection %}
                             <source 
-                                data-src="{{ slide.image }}.webp"
-                                data-srcset="{{ slide | slideImgSrcSet('webp') }}"
-                                sizes="{{ slide.sizes if slide.sizes else '75vw' }}"
+                                data-src="{{ direction.image }}.webp"
+                                data-srcset="{{ direction | slideImgSrcSet('webp') }}"
+                                media="{{ direction.media }}"
+                                sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
                                 type="image/webp">
+                            <source 
+                                data-src="{{ direction.image }}.{{ direction.type if direction.type else 'jpg' }}"
+                                data-srcset="{{ direction | slideImgSrcSet('webp') }}"
+                                media="{{ direction.media }}"
+                                sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                type="image/{{ direction.type | getImgSourceType }}">
+                        {% endfor %}
+                        {% set default = slide.artDirection|first %}
                             <img 
-                                data-src="{{ slide.image }}.{{ slide.imgtype if slide.imgtype else 'jpg' }}"
-                                data-srcset="{{ slide | slideImgSrcSet(slide.imgtype) }}"
+                                data-src="{{ default.image }}.{{ default.type if default.type else 'jpg' }}"
+                                data-srcset="{{ default | slideImgSrcSet(default.type) }}"
                                 class="swiper-lazy w-full h-auto"
-                                sizes="{{ slide.sizes if slide.sizes else '75vw' }}" 
-                                alt="{{ slide.imgalt }}">
+                                sizes="{{ default.sizes if default.sizes else '75vw' }}" 
+                                alt="{{ default.imgalt }}">
                             <div class="swiper-lazy-preloader"></div>
                         </picture>
                         </div>
