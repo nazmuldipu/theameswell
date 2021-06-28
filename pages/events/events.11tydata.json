@@ -1,28 +1,84 @@
 {
     "eventslides": [
         {
-            "image": "images/events-gallery-4",
-            "imgtype": "jpg",
-            "imgalt": "Events Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/events-gallery-4",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The exterior of the Ameswell Hotel framing the lawn and Airstream bar",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/events-gallery-4",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The exterior of the Ameswell Hotel framing the lawn and Airstream bar",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/events-gallery-5",
-            "imgtype": "jpg",
-            "imgalt": "Events Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/events-gallery-5",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/events-gallery-5",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/events-gallery-6",
-            "imgtype": "jpg",
-            "imgalt": "Events Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/events-gallery-6",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The exterior of the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/events-gallery-6",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The exterior of the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/events-gallery-7",
-            "imgtype": "jpg",
-            "imgalt": "Events Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/events-gallery-7",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The lit entrance of the Ameswell Hotel bathed in twilight",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/events-gallery-7",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The lit entrance of the Ameswell Hotel bathed in twilight",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         }
     ]
 }
