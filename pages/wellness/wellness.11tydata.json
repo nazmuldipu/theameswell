@@ -1,14 +1,44 @@
 {
     "slides": [
         {
-            "image": "images/hero-wellness",
-            "imgalt": "The outdoor pool at the Ameswell Hotel in the evening",
-            "intrinsicwidth": "2300"
+            "artDirection": [
+                {
+                    "image": "images/hero-wellness",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+                    "intrinsicwidth": "2300"
+                },
+                {
+                    "image": "images/hero-wellness",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+                    "intrinsicwidth": "2300"
+                }
+            ]
         },
         {
-            "image": "images/wellness-juice-beauty",
-            "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-            "intrinsicwidth": "2300"
+            "artDirection": [
+                {
+                    "image": "images/wellness-juice-beauty",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+                    "intrinsicwidth": "2300"
+                },
+                {
+                    "image": "images/wellness-juice-beauty",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+                    "intrinsicwidth": "2300"
+                }
+            ]
         }
     ]
 }
