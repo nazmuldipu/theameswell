@@ -1,7 +1,7 @@
 <header class="{{ "" if header_not_docked else "page-header--docked" }} page-header--splayed page-header w-full fixed z-40 grid justify-items-center text-ams-white bg-ams-primary" id="pageHeader">
     <section class="page-header__section grid grid-cols-2 p-2.5 py-4 xmed:px-4 w-full max-w-screen-lg">
         <a href="index.html" class="page-header__logo relative z-50 justify-self-start">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 530.6 38.1" xml:space="preserve" class="fill-current text-ams-white w-56 xmed:w-80" role="img" aria-labelledby="headerLogo">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 530.6 38.1" xml:space="preserve" class="fill-current text-ams-white w-40 xmed:w-80" role="img" aria-labelledby="headerLogo">
                 <title id="headerLogo">The Ameswell Hotel</title>
                 <path d="M411.5,13.1v9.8h-10.7v-9.8h-5.3v25h5.3v-9.8h10.7v9.8h5.3v-25H411.5z"/>
                 <path d="M430.4,25.6c0,4.4,2.8,8,6.3,8s6.4-3.6,6.4-8s-2.8-8-6.4-8C433.2,17.6,430.4,21.2,430.4,25.6z M448.6,25.6 c0,7.2-5.3,13-11.9,13s-11.9-5.8-11.9-13s5.4-13,11.9-13C443.3,12.6,448.6,18.4,448.6,25.6z"/>
@@ -24,8 +24,8 @@
         <nav class="page-header__nav grid justify-items-end">
             {# weather widget #}
             <div class="grid grid-flow-col auto-cols-max">
-                <weather-widget class="page-header__weather pr-24"></weather-widget>
-                <label for="menu-toggle" class="page-header__toggle-button relative z-50 xmed:top-1 border-t border-ams-white w-6 h-4 block cursor-pointer -indent-xl">Menu</label>
+                <weather-widget class="page-header__weather pr-8 xmed:pr-24 z-50"></weather-widget>
+                <label for="menu-toggle" class="page-header__toggle-button relative z-50 xmed:top-1 border-t border-ams-white w-6 h-full my-auto block cursor-pointer -indent-xl">Menu</label>
             </div>
             <input type="checkbox" id="menu-toggle" class="page-header__toggle hidden">
             <div class="page-header__menu-container absolute z-40 top-0 left-0 xmed:grid xmed:justify-items-center w-full overflow-hidden xmed:overflow-visible bg-ams-primary">
@@ -49,8 +49,8 @@
                         <a href="wellness.html" class="text-ams-white text-2xl font-serif-display">Wellness</a>
                     </li>
                 </ul>
-                <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block"></div>
-                <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block absolute left-0 -bottom-20 z-40"></div>
+                <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block pl-2 xmed:pl-3"></div>
+                <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block absolute left-0 -bottom-20 z-40 "></div>
             </div>
         </nav>
     </section>

@@ -19,6 +19,12 @@ export default class WeatherWidget extends HTMLElement {
             let height = "32px"
             let width = "32px"
 
+            //Make the icon size responsive
+            if(screen.width < 901){
+                height="16px";
+                width="16px";
+            }
+
             if (temp == 804) {
                 icon = "cloudy.svg"
             } else if (temp == 801 || temp == 802 || temp == 803) {
@@ -42,7 +48,7 @@ export default class WeatherWidget extends HTMLElement {
             this.innerHTML = `
             <div style="display:flex">
                 ${icon}
-                <p  style="font-size:20px" >${mainTemp} &#176</p>
+                <p  class="text-xs xmed:text-xl pl-2 xmed:pl-3" >${mainTemp} &#176</p>
             </div>
             `;
         })
