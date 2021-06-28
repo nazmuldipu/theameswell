@@ -1,34 +1,312 @@
 {
+    "preload_images": [
+        {
+            "href": "images/about-hero-desktop_2400.webp",
+            "media": "(min-width:900.1px)"
+        },
+        {
+            "href": "images/about-hero-mobile.webp",
+            "media": "(max-width:900px)"
+        }
+    ],
     "slides": [
         {
-            "image": "images/about-gallery-7",
-            "imgtype": "jpg",
-            "imgalt": "About Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/about-gallery-7",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The front desk at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/about-gallery-7",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The front desk at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/about-gallery-8",
-            "imgtype": "jpg",
-            "imgalt": "About Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/about-gallery-8",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The lawn and louging amenities in front of the Airstream bar",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/about-gallery-8",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The lawn and louging amenities in front of the Airstream bar",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/about-gallery-9",
-            "imgtype": "jpg",
-            "imgalt": "About Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/about-gallery-9",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The exterior of the Ameswell Hotel framing the lawn and Airstream bar",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/about-gallery-9",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The exterior of the Ameswell Hotel framing the lawn and Airstream bar",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/about-gallery-10",
-            "imgtype": "jpg",
-            "imgalt": "About Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/about-gallery-10",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/about-gallery-10",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/about-gallery-11",
-            "imgtype": "jpg",
-            "imgalt": "About Image",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/about-gallery-11",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The Ameswell Hotel's homage to its spiritual roots of the Ames Research Center",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/about-gallery-11",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The Ameswell Hotel's homage to its spiritual roots of the Ames Research Center",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         }
-    ]
+    ],
+    "rooms_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/about-8-desktop_2xs",
+                "alt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                "intrinsicwidth": "600" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "50vw",
+                "type": "jpg",
+                "src": "images/about-8-desktop_2xs",
+                "alt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                "intrinsicwidth": "300"
+            }
+        ]
+    },
+    "dining_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/about-9-desktop_2xs",
+                "alt": "The Airstream bar on the lawn at the Ameswell Hotel",
+                "intrinsicwidth": "600" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "50vw",
+                "type": "jpg",
+                "src": "images/about-9-desktop_2xs",
+                "alt": "The Airstream bar on the lawn at the Ameswell Hotel",
+                "intrinsicwidth": "300"
+            }
+        ]
+    },
+    "wellness_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/about-10-desktop_2xs",
+                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                "intrinsicwidth": "600" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "50vw",
+                "type": "jpg",
+                "src": "images/about-10-desktop_2xs",
+                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                "intrinsicwidth": "300"
+            }
+        ]
+    },
+    "sustainable_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-1",
+                "alt": "The exterior of the Ameswell Hotel",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "90vw",
+                "type": "jpg",
+                "src": "images/about-1",
+                "alt": "The exterior of the Ameswell Hotel",
+                "intrinsicwidth": "1064"
+            }
+        ]
+    },
+    "luxury_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-2",
+                "alt": "A dark wood table in a conference room at the Ameswell Hotel",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "90vw",
+                "type": "jpg",
+                "src": "images/about-2",
+                "alt": "A dark wood table in a conference room at the Ameswell Hotel",
+                "intrinsicwidth": "1064"
+            }
+        ]
+    },
+    "wellbeing_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-3",
+                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "90vw",
+                "type": "jpg",
+                "src": "images/about-3",
+                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                "intrinsicwidth": "1064"
+            }
+        ]
+    },
+    "community_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-4",
+                "alt": "A stylized view of the exterior of Hangar One",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "90vw",
+                "type": "jpg",
+                "src": "images/about-4",
+                "alt": "A stylized view of the exterior of Hangar One",
+                "intrinsicwidth": "1064"
+            }
+        ]
+    },
+    "innovating_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-5",
+                "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "90vw",
+                "type": "jpg",
+                "src": "images/about-5",
+                "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                "intrinsicwidth": "1064"
+            }
+        ]
+    },
+    "independent_image": {
+        "artDirection": [
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-6",
+                "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader image-loader--white",
+                "media": "(max-width:900px)",
+                "sizes": "90vw",
+                "type": "jpg",
+                "src": "images/about-6",
+                "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
+                "intrinsicwidth": "1064"
+            }
+        ]
+    }
 }
