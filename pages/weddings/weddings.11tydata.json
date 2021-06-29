@@ -6,5 +6,41 @@
         {
             "image": "images/homepage-3"
         }
-    ]
+    ],
+    "flyby_image": {
+        "artDirection": [
+            {
+                "classes": "w-full image-loader image-loader--white",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/homepage-3",
+                "alt": "Guests mingling near the Flyby, a casual cafe inside the Ameswell Hotel",
+                "intrinsicwidth": "600" 
+            }
+        ]
+    },
+    "roger_image": {
+        "artDirection": [
+            {
+                "classes": "w-full image-loader image-loader--white",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/homepage-7",
+                "alt": "Guest mingling in Roger, an indoor and outdoor bar and restaurant, in the evening",
+                "intrinsicwidth": "600" 
+            }
+        ]
+    },
+    "airstream_image": {
+        "artDirection": [
+            {
+                "classes": "w-full image-loader image-loader--white",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/homepage-3",
+                "alt": "Guests mingling on the front lawn of the Ameswell Hotel in front of the Airstream Bar",
+                "intrinsicwidth": "600" 
+            }
+        ]
+    }
 }
