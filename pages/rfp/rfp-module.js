@@ -7,10 +7,9 @@ infoBox.style.display = 'none';
 var radios = document.querySelectorAll('input[name="foodBeverage"]');
 function changeHandler(event) {
    if ( this.value === 'yes' ) {
-    infoBox.style.display = 'block';
-} else if ( this.value === 'no' ) {
-       infoBox.style.display = 'none';
-      console.log('value', 'no');
+      infoBox.style.display = 'block';
+   } else if ( this.value === 'no' ) {
+      infoBox.style.display = 'none';
    }  
 }
 
