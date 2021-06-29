@@ -11,6 +11,7 @@ fabExternalLink: true
 ---
 {% from "icons.njk" import svgicon %}
 {% from "buttons.njk" import primaryButton %}
+{% from "macros.njk" import scaled_image %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--offers-xmed xmed:bg-hero--offers bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
 <div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 bg-pattern--ams-grey">
@@ -32,7 +33,7 @@ fabExternalLink: true
         <section class="mb-5 xmed:mt-8">
             <figure class="max-w-screen-xl xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
                 <figcaption class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                    <img src="{{ item.image }}.jpg" alt="{{ item.imgalt }}">
+                    {{ scaled_image(item.image) }}
                 </figcaption>
                 <figcaption class="mt-8 xmed:mt-0 mx-4 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
                     <header>
