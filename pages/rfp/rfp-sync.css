@@ -5,11 +5,3 @@
 .page-fab {
   @apply hidden;
 }
-
-select::-ms-expand {
-  display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
-}
-
-input[type=radio]:checked ~ .foodBeverageYesText {
-    display: none;
-}
