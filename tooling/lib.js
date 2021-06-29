@@ -158,8 +158,9 @@ export const getPageDataMap = (outputFiles, prefix='') => outputFiles.reduce((ma
     return map;
 }, new Map());
 
-export const getPageJSONFilePromises = (dataMap, dirPath) => 
-                                            [...dataMap.entries()].map(([page, assets]) =>
+export const getPageJSONFilePromises = (dataMap, dirPath) => platform() === 'win32'
+                                            ? [] 
+                                            : [...dataMap.entries()].map(([page, assets]) =>
                                                 writeFile(
                                                     join(dirPath, page, `${page}.json`),
                                                     JSON.stringify(assets)
