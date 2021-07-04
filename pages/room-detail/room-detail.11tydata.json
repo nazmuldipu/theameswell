@@ -1,4 +1,14 @@
 {
+    "preload_images": [
+        {
+            "href": "images/rooms-hero-desktop_2400.webp",
+            "media": "(min-width:900.1px)"
+        },
+        {
+            "href": "images/rooms-hero-mobile.webp",
+            "media": "(max-width:900px)"
+        }
+    ],
     "slides": [
         {
             "image": "images/homepage-video-bg-3",
@@ -11,22 +21,64 @@
     ],
     "imageSlides": [
         {
-            "image": "images/room-detail-1",
-            "imgtype": "jpg",
-            "imgalt": "Hotel room with view",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/room-detail-1",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/room-detail-1",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/room-detail-2",
-            "imgtype": "jpg",
-            "imgalt": "Room Detail",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/room-detail-2",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "Blue and white tiled walls accented by dark wood with a sink and bathtub",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/room-detail-2",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "Blue and white tiled walls accented by dark wood with a sink and bathtub",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         },
         {
-            "image": "images/room-detail-3",
-            "imgtype": "jpg",
-            "imgalt": "Room Detail",
-            "intrinsicwidth": "1920"
+            "artDirection": [
+                {
+                    "image": "images/room-detail-3",
+                    "media": "(min-width:900.1px)",
+                    "imgtype": "jpg",
+                    "sizes": "80vw",
+                    "imgalt": "The living area in a suite at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                },
+                {
+                    "image": "images/room-detail-3",
+                    "media": "(max-width:900px)",
+                    "imgtype": "jpg",
+                    "sizes": "100vw",
+                    "imgalt": "The living area in a suite at the Ameswell Hotel",
+                    "intrinsicwidth": "2304"
+                }
+            ]
         }
     ]
 }
