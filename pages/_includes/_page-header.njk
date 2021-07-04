@@ -25,7 +25,12 @@
             {# weather widget #}
             <div class="grid grid-flow-col auto-cols-max">
                 <weather-widget class="page-header__weather pr-8 xmed:pr-24 z-50"></weather-widget>
-                <label for="menu-toggle" class="page-header__toggle-button relative z-50 xmed:top-1 border-t border-ams-white w-6 h-full my-auto block cursor-pointer -indent-xl">Menu</label>
+                <label for="menu-toggle" class="page-header__toggle-button relative z-50 border-ams-white h-6 xmed:h-8 w-6 xmed:w-8 my-auto block cursor-pointer -indent-xl">
+                    <svg class="block h-full w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                {# <label for="menu-toggle" class="page-header__toggle-button relative z-50 xmed:top-1 border-t border-ams-white w-6 my-auto block cursor-pointer -indent-xl">Menu</label> #}
             </div>
             <input type="checkbox" id="menu-toggle" class="page-header__toggle hidden">
             <div class="page-header__menu-container absolute z-40 top-0 left-0 xmed:grid xmed:justify-items-center w-full overflow-hidden xmed:overflow-visible bg-ams-primary">

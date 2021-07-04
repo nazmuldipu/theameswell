@@ -21,8 +21,8 @@ export default class WeatherWidget extends HTMLElement {
 
             //Make the icon size responsive
             if(screen.width < 901){
-                height="16px";
-                width="16px";
+                height="24px";
+                width="24px";
             }
 
             if (temp == 804) {
@@ -48,7 +48,7 @@ export default class WeatherWidget extends HTMLElement {
             this.innerHTML = `
             <div style="display:flex">
                 ${icon}
-                <p  class="text-xs xmed:text-xl pl-2 xmed:pl-3" >${mainTemp} &#176</p>
+                <p  class="text-base xmed:text-2xl pl-2 xmed:pl-3" >${mainTemp} &#176</p>
             </div>
             `;
         })
