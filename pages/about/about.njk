@@ -10,7 +10,7 @@ fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image %}
+{% from "macros.njk" import scaled_image, address_format %}
 {% from "media-carousel.njk" import media_carousel %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--about-xmed xmed:bg-hero--about bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
@@ -48,8 +48,7 @@ fabExternalLink: true
             </p>
             <p class="pt-4">
                 <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-gold underline">
-                    800 Moffett Boulevard<br>
-                    Mountain View, CA 94043
+                    {{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}
                 </a>
             </p>
         </section>
