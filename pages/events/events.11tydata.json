@@ -7,7 +7,7 @@
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
-                    "imgalt": "The exterior of the Ameswell Hotel framing the lawn and Airstream bar",
+                    "imgalt": "The Airstream Bar and lounge area",
                     "intrinsicwidth": "2304"
                 },
                 {
@@ -15,7 +15,7 @@
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
-                    "imgalt": "The exterior of the Ameswell Hotel framing the lawn and Airstream bar",
+                    "imgalt": "The Airstream Bar and lounge area",
                     "intrinsicwidth": "2304"
                 }
             ]
@@ -27,7 +27,7 @@
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
-                    "imgalt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                    "imgalt": "Lounge area",
                     "intrinsicwidth": "2304"
                 },
                 {
@@ -35,7 +35,7 @@
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
-                    "imgalt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                    "imgalt": "Lounge area",
                     "intrinsicwidth": "2304"
                 }
             ]
@@ -47,7 +47,7 @@
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
-                    "imgalt": "The exterior of the Ameswell Hotel",
+                    "imgalt": "The Ameswell exterior with pool and Airstream Bar",
                     "intrinsicwidth": "2304"
                 },
                 {
@@ -55,7 +55,7 @@
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
-                    "imgalt": "The exterior of the Ameswell Hotel",
+                    "imgalt": "The Ameswell exterior with pool and Airstream Bar",
                     "intrinsicwidth": "2304"
                 }
             ]
@@ -67,7 +67,7 @@
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
-                    "imgalt": "The lit entrance of the Ameswell Hotel bathed in twilight",
+                    "imgalt": "The Ameswell hotel exterior",
                     "intrinsicwidth": "2304"
                 },
                 {
@@ -75,7 +75,7 @@
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
-                    "imgalt": "The lit entrance of the Ameswell Hotel bathed in twilight",
+                    "imgalt": "The Ameswell hotel exterior",
                     "intrinsicwidth": "2304"
                 }
             ]
