@@ -14,6 +14,7 @@
     "entrance_image": {
         "artDirection": [
             {
+                "classes": "image-loader",
                 "media": "(min-width:900.1px)",
                 "sizes": "80vw",
                 "type": "jpg",
@@ -22,6 +23,7 @@
                 "intrinsicwidth": "2496" 
             },
             {
+                "classes": "image-loader",
                 "media": "(max-width:900px)",
                 "sizes": "90vw",
                 "type": "jpg",
@@ -34,6 +36,7 @@
     "rooms_image": {
         "artDirection": [
             {
+                "classes": "image-loader",
                 "media": "(min-width:900.1px)",
                 "sizes": "50vw",
                 "type": "jpg",
@@ -42,6 +45,7 @@
                 "intrinsicwidth": "1450" 
             },
             {
+                "classes": "image-loader",
                 "media": "(max-width:900px)",
                 "sizes": "85vw",
                 "type": "jpg",
@@ -54,6 +58,7 @@
     "roger_image": {
         "artDirection": [
             {
+                "classes": "image-loader image-loader--white",
                 "media": "(min-width:900.1px)",
                 "sizes": "25vw",
                 "type": "jpg",
@@ -62,6 +67,7 @@
                 "intrinsicwidth": "600" 
             },
             {
+                "classes": "image-loader image-loader--white",
                 "media": "(max-width:900px)",
                 "sizes": "70vw",
                 "type": "jpg",
@@ -74,6 +80,7 @@
     "flyby_image": {
         "artDirection": [
             {
+                "classes": "image-loader image-loader--white",
                 "media": "(min-width:900.1px)",
                 "sizes": "25vw",
                 "type": "jpg",
@@ -82,6 +89,7 @@
                 "intrinsicwidth": "600" 
             },
             {
+                "classes": "image-loader image-loader--white",
                 "media": "(max-width:900px)",
                 "sizes": "70vw",
                 "type": "jpg",
@@ -94,6 +102,7 @@
     "airstream_image": {
         "artDirection": [
             {
+                "classes": "image-loader image-loader--white",
                 "media": "(min-width:900.1px)",
                 "sizes": "25vw",
                 "type": "jpg",
@@ -102,6 +111,7 @@
                 "intrinsicwidth": "600" 
             },
             {
+                "classes": "image-loader image-loader--white",
                 "media": "(max-width:900px)",
                 "sizes": "70vw",
                 "type": "jpg",
@@ -114,6 +124,7 @@
     "event_spaces_image": {
         "artDirection": [
             {
+                "classes": "image-loader",
                 "media": "(min-width:900.1px)",
                 "sizes": "85vw",
                 "type": "jpg",
@@ -122,6 +133,7 @@
                 "intrinsicwidth": "2496" 
             },
             {
+                "classes": "image-loader",
                 "media": "(max-width:900px)",
                 "sizes": "100vw",
                 "type": "jpg",
@@ -134,6 +146,7 @@
     "wedding_image": {
         "artDirection": [
             {
+                "classes": "image-loader",
                 "media": "(min-width:900.1px)",
                 "sizes": "40vw",
                 "type": "jpg",
@@ -142,6 +155,7 @@
                 "intrinsicwidth": "1064" 
             },
             {
+                "classes": "image-loader",
                 "media": "(max-width:900px)",
                 "sizes": "100vw",
                 "type": "jpg",

@@ -9,6 +9,15 @@ permalinkBypassOutputDir: true
 ---
 {% from "buttons.njk" import primaryButton %}
 
+{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="") %}
+    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
+        {{label}}<br>
+        <input type="{{type}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
+        class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
+        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }}/>
+    </label>
+{% endmacro %}
+
 <div id="pageHero" class="bg-ams-primary bg-hero--events-xmed xmed:bg-hero--events bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
@@ -32,62 +41,71 @@ permalinkBypassOutputDir: true
                 </h2>
                 <form-sender data-type="rfp">
                     <form>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            FIRST NAME *<br>
-                            <input required="required" aria-required="true" name="firstName" type="text" placeholder="Al" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            LAST NAME *<br>
-                            <input required="required" aria-required="true" name="lastName" type="text" placeholder="Shepard" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            PHONE NUMBER *<br>
-                            <input required="required" aria-required="true" name="phone" type="text" placeholder="718-555-1212" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            EMAIL ADDRESS *<br>
-                            <input required="required" aria-required="true" name="email" type="text" placeholder="ashepard@example.com" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            EVENT NAME *<br>
-                            <input required="required" aria-required="true" name="eventName" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
+                        {{form_input("firstName","FIRST NAME *", "text", "Al")}}
+                        {{form_input("lastName","LAST NAME *", "text", "Shepard")}}
+                        {{form_input("company","Company/Organization", "text", "Company/Organization name", false)}}
+                        {{form_input("phone","PHONE NUMBER *", "tel", "718-555-1212")}}
+                        {{form_input("email","EMAIL ADDRESS *", "email", "ashepard@example.com")}}
+                        {{form_input("eventName","EVENT NAME *", "text", "")}}
+                        
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
                             EVENT TYPE *<br>
                             <select required="required" aria-required="true" name="eventType" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
                                 <option value="" disabled selected hidden></option>
-                                <option value="wedding">wedding</option>
-                                <option value="event">event</option>
-                                <option value="meeting">meeting</option>
-                                <option value="other">other</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="event">Event</option>
+                                <option value="meeting">Meeting</option>
+                                <option value="other">Other</option>
                             </select>
                         </label>
-                        <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            START DATE<br>
-                            <input name="startDate" type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            END DATE<br>
-                            <input name="endDate" type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                            GUEST ROOMS NEEDED?<br>
-                            <div class="space-x-2 items-center"><input required="required" aria-required="true" type="radio" value="yes" checked name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                            <div class="space-x-2 items-center"><input required="required" aria-required="true" type="radio" value="no" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            IF SO, HOW MANY?<br>
-                            <input name="guestRoomCount" type="number" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
+
+                        {{form_input("startDate","START DATE *", "date", "MM/DD/YYY", true, "datepicker relative")}}
+                        {{form_input("endDate","END DATE", "date", "MM/DD/YYY", false, "datepicker relative")}}
+                        {{form_input("startTime","Event Start Time: ", "time", "MM/DD/YYY", false)}}
+                        {{form_input("endTime","Event End Time:", "time", "MM/DD/YYY", false)}}
+                        {{form_input("guestRoomCount","How many guest rooms? ", "number", "", false, "", 0)}}
+                       
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
                             DO YOU REQUIRE A/V?<br>
-                            <div class="space-x-2 items-center"><input required="required" aria-required="true" type="radio" value="yes" name="audioVisual" checked class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Yes</span></div>
-                            <div class="space-x-2 items-center"><input required="required" aria-required="true" type="radio" value="no" name="audioVisual" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                            <div class="space-x-2 items-center">
+                                <input required="required" aria-required="true" type="radio" value="yes" name="audioVisual" id="audioVisualYes" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold" checked>
+                                <label for="audioVisualYes">Yes</label>
+                            </div>
+                            <div class="space-x-2 items-center">
+                                <input required="required" aria-required="true" type="radio" value="no" name="audioVisual" id="audioVisualNo" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
+                                <label for="audioVisualNo">No</label>
+                            </div>
                         </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            OTHER INFORMATION<br>
-                            <input name="additionalInfo" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
+
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2 uppercase">
+                            Do you require food &amp; beverage?<br>
+                            <div class="space-x-2 items-center">
+                                <input required="required" aria-required="true" type="radio" value="yes" name="foodBeverage" id="foodBeverageYes" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
+                                <label for="foodBeverageYes">Yes</label>
+                            </div>
+                            <div class="space-x-2 items-center">
+                                <input required="required" aria-required="true" type="radio" value="no" name="foodBeverage" id="abc" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold" checked>
+                                <label for="abc" >No</label>
+                            </div>
                         </label>
+
+                        <label id="foodBeverageYesText" class="foodBeverageYesText block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
+                            What food & beverage? <br>
+                            <select required="required" aria-required="true" name="foodBeverageItems" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
+                                <option value="" disabled selected hidden></option>
+                                <option value="breakfast">Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                                <option value="breaks">Breaks</option>
+                                <option value="reception">Reception</option>
+                            </select>
+                        </label>
+
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
+                            Additional Details <br>
+                            <textarea name="additionalDetails" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary min-h-l bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50"></textarea>
+                        </label>
+                        
                         {{ primaryButton("#", 'Submit','submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
                         <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
                     </form>
