@@ -58,7 +58,11 @@ module.exports = {
         'hero--offers': "url('/images/offers-1-desktop.webp')",
         'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",
         'hero--offers-xmed': "url('/images/offers-1-desktop_1200.webp')",
-        'no-webp__hero--offers-xmed': "url('/images/offers-1-desktop_1200.jpg')"
+        'no-webp__hero--offers-xmed': "url('/images/offers-1-desktop_1200.jpg')",
+        'hero--happenings': "url('/images/happenings-1-desktop.webp')",
+        'no-webp__hero--happenings': "url('/images/happenings-1-desktop.jpg')",
+        'hero--happenings-xmed': "url('/images/happenings-1-mobile.webp')",
+        'no-webp__hero--happenings-xmed': "url('/images/happenings-1-mobile.jpg')",
       },
       backgroundPosition: {
         'center-right': 'center right'
