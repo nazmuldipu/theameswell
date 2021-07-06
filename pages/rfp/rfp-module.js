@@ -1,5 +1,6 @@
 'use strict';
 import '../../components/FormSender/index.js';
+import '../../components/WeatherWidget/index.js';
 
 var infoBox = document.getElementById('foodBeverageYesText');
 infoBox.style.display = 'none';

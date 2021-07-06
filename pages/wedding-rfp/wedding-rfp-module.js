@@ -1,5 +1,6 @@
 'use strict';
 import '../../components/FormSender/index.js';
+import '../../components/WeatherWidget/index.js';
 
 function ceremonyPlaceChangeHandler(event) {
     if(event.target.value === 'offsite'){
