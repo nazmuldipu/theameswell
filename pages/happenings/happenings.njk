@@ -9,3 +9,40 @@ permalinkBypassOutputDir: true
 fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
+{% from "macros.njk" import scaled_image %}
+{% from "buttons.njk" import primaryButton %}
+<div id="pageHero" class="min-h-screen bg-hero--happenings-xmed xmed:bg-hero--happenings bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
+<div class="grid bg-pattern--ams-grey xmed:justify-items-center w-full py-14 xmed:pt-24 xmed:pb-28">
+    <header class="bg-ams-white mb-8 shadow-md">
+        <h2 class="title-display text-3xl text-center px-16 font-serif font-medium py-4">
+            Our Happenings
+        </h2>
+    </header>
+    {% set items = [0, 1, 2] %}
+    <article class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-10">
+        {% for item in items %}
+            <section class="bg-ams-white mb-8 shadow-md">
+                <figure>
+                    {{ scaled_image(happenings_image) }}
+                    <figcaption>
+                        <header class="px-6 py-4">
+                            <span class="text-lg font-sans">
+                           July 3, 2021
+                        </span>
+                            <h2 class="title-display text-xl xmed:text-2xl text-left font-serif font-medium">
+                           LIVE MUSIC WITH FREDDY CLARKE AND WOBBLY WORLD
+                        </h2>
+                        </header>
+                    </figcaption>
+                </figure>
+                <div class="xmed:hidden mb-5 grid grid-cols-2 px-6 gap-x-3 text-center">
+                    {{ primaryButton("#", 'Reserve Here') }}
+                    {{ primaryButton("#", 'More Info') }}
+                </div>
+            </section>
+        {% endfor %}
+    </article>
+    <div class="text-center">
+        {{ primaryButton("#", 'View all') }}
+    </div>
+</div>
