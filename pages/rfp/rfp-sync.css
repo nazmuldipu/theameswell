@@ -3,5 +3,5 @@
 /****  end imports  ********************************/
 
 .page-fab {
-    @apply hidden;
+  @apply hidden;
 }
