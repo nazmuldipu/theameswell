@@ -10,7 +10,7 @@ fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image %}
+{% from "macros.njk" import scaled_image, address_format %}
 {% from "media-carousel.njk" import media_carousel %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--about-xmed xmed:bg-hero--about bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
@@ -19,7 +19,7 @@ fabExternalLink: true
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center xmed:max-w-xl m-auto">
                     A hotel for the innovator and adventurer in everyone
                 </h2>
                 <div class="xmed:text-center">
@@ -48,8 +48,7 @@ fabExternalLink: true
             </p>
             <p class="pt-4">
                 <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-gold underline">
-                    800 Moffett Boulevard<br>
-                    Mountain View, CA 94043
+                    {{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}
                 </a>
             </p>
         </section>
@@ -408,7 +407,7 @@ fabExternalLink: true
                     We stand out from the crowd, just like the people who stay with us
                 </h3>
                 <p>
-                    We are made for adventurers and self-starters; those who blaze their own trails. As an independent brand, we’re accountable to one opinion - yours.
+                    We are made for adventurers and self-starters; those who blaze their own trails. As an independent brand, we’re accountable to one opinion - yours. We look forward to welcoming you soon and hearing your voice about how we can make ourselves better.
                 </p>
             </div>
         </section>
