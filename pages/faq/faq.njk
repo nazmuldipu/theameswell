@@ -53,15 +53,19 @@ fabExternalLink: true
                         </h2>
                     </header>
                     {% for list in faq.list %}
-                        <figure class="mx-4 xmed:mx-0 max-w-screen-xl text-left border-b-2 border-ams-sand">
-                            <figcaption class="accordion-toggle cursor-pointer relative py-3 xmed:py-4 pr-8">
-                                <h4 class="xmed:text-lg font-bold tracking-tight text-ams-primary">
-                                    {{ list.title | safe }}
-                                </h4>
-                            </figcaption>
-                            <figcaption class="hidden pb-3 xmed:pb-4 tracking-wide">
-                                <p class="pl-3 xmed:pl-8 border-l-4 xmed:border-l-8 border-ams-primary">
-                                    {{ list.desc | safe }}
+                        <figure class="mx-4 xmed:mx-0 py-3 xmed:py-4 max-w-screen-xl text-left border-b-2 border-ams-sand">
+                            <input
+                                class="toggleable__control absolute hidden border-0 h-px -m-px overflow-hidden p-0 w-px"
+                                id="{{ list.question }}"
+                                type="checkbox"
+                            />
+                            <label class="toggleable__label xmed:text-lg font-bold tracking-tight text-ams-primary cursor-pointer block relative pr-8"
+                                for="{{ list.question }}">
+                                {{ list.question | safe }}
+                            </label>
+                            <figcaption class="toggleable__content max-h-0 overflow-hidden tracking-wide relative">
+                                <p class="pl-3 xmed:pl-8 border-l-4 xmed:border-l-8 border-ams-primary mt-3 xmed:mt-4">
+                                    {{ list.answer | safe }}
                                 </p>
                             </figcaption>
                         </figure>
