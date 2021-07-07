@@ -1,0 +1,45 @@
+/****  start imports  ********************************/
+@import "../../styles/global.css";
+/****  end imports  ********************************/
+
+@layer base {
+	.toggleable__content {
+		transition: max-height 0.8s cubic-bezier(0, 1, 0, 1);
+	}
+
+	.toggleable__label::after {
+		content: '+';
+		@apply text-ams-primary;
+		@apply font-sans;
+		@apply xmed:font-serif;
+		@apply xmed:text-2xl;
+		@apply absolute;
+		@apply right-2;
+		@apply top-1/2;
+		@apply transform -translate-y-1/2;
+	}
+	
+	.toggleable__label.active::after {
+		content: '-';
+		@apply text-ams-sand;
+	}
+	
+	.toggleable__label + figcaption > p a {
+		@apply border-b;
+		@apply border-ams-primary;
+	}
+
+	.toggleable__content::-webkit-scrollbar {
+		display: none;
+	}
+
+	.toggleable__control:checked ~ .toggleable__content {
+	  transition-timing-function: ease-in-out;
+	  @apply max-h-96;
+	  @apply overflow-y-auto;
+	}
+	
+	.toggleable__control:checked ~ .toggleable__label {
+	  @apply font-semibold;
+	}
+}
