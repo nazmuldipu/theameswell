@@ -2,7 +2,7 @@
     <figure class="{{ background_color if background_color }}">
     <media-carousel>
         <div class="swiper-container w-full h-full">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper z-10">
                     {% for slide in slides %}
                         <div class="swiper-slide">
                         <picture>
@@ -32,7 +32,7 @@
                         </div>
                     {% endfor %}
             </div>
-            <nav class="flex flex-row items-center relative z-10 m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
+            <nav class="flex flex-row items-center relative z-20 m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
                 <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                     previous
                 </button>

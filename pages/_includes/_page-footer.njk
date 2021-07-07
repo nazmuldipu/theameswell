@@ -1,4 +1,4 @@
-{% from "macros.njk" import fab %}
+{% from "macros.njk" import fab, address_format %}
 {% from "skipper-footer.njk" import skipper_footer %}
 
 <footer class="grid justify-items-center bg-ams-primary xmed:bg-ams-primary w-full px-4">
@@ -53,6 +53,9 @@
                 <li class="py-2">
                     <a href="mailto:ameswell@m18pr.com" target="_blank" class="text-ams-white">Press</a>
                 </li>
+                <li class="py-2">
+                    <a href="faq.html" class="text-ams-white">FAQ</a>
+                </li>
             </ul>
         </nav>
         <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-contact">
@@ -62,8 +65,7 @@
             <address class="page-footer__menu xmed:grid xmed:pt-4 xmed:pb-8 not-italic">
                 <p class="py-2">
                     <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-white">
-                        800 Moffett Boulevard<br>
-                        Mountain View, CA 94043
+                        {{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}
                     </a>
                 </p>
                 <p class="py-2">
