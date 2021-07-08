@@ -12,13 +12,13 @@ fabExternalLink: true
 {% from "macros.njk" import scaled_image %}
 {% from "buttons.njk" import primaryButton %}
 <div id="pageHero" class="min-h-screen bg-hero--happenings-xmed xmed:bg-hero--happenings bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
-<div class="xmed:bg-ams-base w-full text-ams-primary">
-    <div class="px-10 max-w-screen-lg m-auto">
-        <div class="flex items-center justify-center mt-10 mb-7 text-center font-sans">
+<section class="xmed:bg-ams-base w-full text-ams-primary">
+    <section class="px-10 max-w-screen-lg m-auto">
+        <header class="flex items-center justify-center mt-10 mb-7 text-center font-sans">
             <img alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
             <h1 class="font-bold px-4 text-4xl uppercase">July 2021</h1>
             <img alt="next icon" src="/images/next_icon.svg" class="next"></img>
-        </div>
+        </header>
         <div class="font-sans text-xs grid grid-cols-7 gap-x-2 xmed:gap-x-6 text-center">
             <div class="bg-ams-primary text-ams-base">Sun</div>
             <div class="bg-ams-primary text-ams-base">Mon</div>
@@ -34,11 +34,11 @@ fabExternalLink: true
                 <div class="py-4 xmed:py-8">{{item}}</div>
             {% endfor %}
         </div>
-    </div>
-</div>
+    </section>
+</section>
 <hr class="xmed:hidden border-solid border-4 w-11/12 border-ams-primary">
 
-<div class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
+<section class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
     <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
         <h2 class="title-display text-2xl text-center px-16 font-serif font-medium py-4">
             Our Happenings
@@ -71,4 +71,4 @@ fabExternalLink: true
     <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center">
         {{ primaryButton("#", 'View all') }}
     </div>
-</div>
+</section>
