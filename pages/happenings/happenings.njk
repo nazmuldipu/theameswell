@@ -12,14 +12,14 @@ fabExternalLink: true
 {% from "macros.njk" import scaled_image %}
 {% from "buttons.njk" import primaryButton %}
 <div id="pageHero" class="min-h-screen bg-hero--happenings-xmed xmed:bg-hero--happenings bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
-<div class="bg-ams-base w-full text-ams-primary">
+<div class="xmed:bg-ams-base w-full text-ams-primary">
     <div class="calendar px-10">
         <div class="month flex items-center justify-center mt-10 mb-7 text-center font-sans">
             <img alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
-            <h1 class="date font-bold px-4 text-4xl uppercase">June 2021</h1>
+            <h1 class="font-bold px-4 text-4xl uppercase">July 2021</h1>
             <img alt="next icon" src="/images/next_icon.svg" class="next"></img>
         </div>
-        <div class="weekdays font-sans text-xs grid grid-cols-7 gap-x-6 text-center">
+        <div class="weekdays font-sans text-xs grid grid-cols-7 gap-x-2 xmed:gap-x-6 text-center">
             <div class="bg-ams-primary text-ams-base">Sun</div>
             <div class="bg-ams-primary text-ams-base">Mon</div>
             <div class="bg-ams-primary text-ams-base">Tue</div>
@@ -28,25 +28,26 @@ fabExternalLink: true
             <div class="bg-ams-primary text-ams-base">Fri</div>
             <div class="bg-ams-primary text-ams-base">Sat</div>
         </div>
-        {% set items=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]%}
-        <div class="days grid grid-cols-7 gap-x-6 mb-8 text-center">
+        {% set items=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]%}
+        <div class="days grid grid-cols-7 gap-x-2 xmed:gap-x-6 mb-8 text-2xl xmed:text-6xl text-center">
             {% for item in items %}
-                <div class="py-4">{{item}}</div>
+                <div class="py-4 xmed:py-8">{{item}}</div>
             {% endfor %}
         </div>
     </div>
 </div>
+<hr class="xmed:hidden border-solid border-4 w-11/12 border-ams-primary">
 
-<div class="grid bg-pattern--ams-grey xmed:justify-items-center w-full py-14 xmed:pt-24 xmed:pb-28">
-    <header class="bg-ams-white shadow-sm w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
-        <h2 class="title-display text-3xl text-center px-16 font-serif font-medium py-4">
+<div class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
+    <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
+        <h2 class="title-display text-2xl text-center px-16 font-serif font-medium py-4">
             Our Happenings
         </h2>
     </header>
     {% set items = [0, 1, 2] %}
     <article class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-10">
         {% for item in items %}
-            <section class="bg-ams-white mb-8 shadow-md">
+            <section class="bg-ams-white mb-8 xmed:shadow-md">
                 <figure>
                     {{ scaled_image(happenings_image) }}
                     <figcaption>
@@ -67,7 +68,7 @@ fabExternalLink: true
             </section>
         {% endfor %}
     </article>
-    <div class="text-center">
+    <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center">
         {{ primaryButton("#", 'View all') }}
     </div>
 </div>
