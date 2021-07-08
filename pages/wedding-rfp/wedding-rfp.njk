@@ -8,6 +8,14 @@ permalink: "build/wedding-rfp.html"
 permalinkBypassOutputDir: true
 ---
 {% from "buttons.njk" import primaryButton %}
+{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="") %}
+    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
+        {{label}}<br>
+        <input type="{{type}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
+        class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
+        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }}/>
+    </label>
+{% endmacro %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--weddings-xmed xmed:bg-hero--weddings bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -32,64 +40,63 @@ permalinkBypassOutputDir: true
                         <h3 class="title xmed:text-xl py-4 xmed:py-8">
                             What are your names?
                         </h3>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            YOUR NAME *<br>
-                            <input required="required" aria-required="true" name="name" type="text" placeholder="Al Shepard" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base  placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            FIANCÉ NAME<br>
-                            <input name="fianceName" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
+
+                        {{form_input("name","YOUR NAME *", "text", "First and Last")}}
+                        {{form_input("fianceName","FIANCÉ NAME", "text", "First and Last", false)}}
+
                         <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
                             Where would you like to get married?
                         </h3>
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                            <div class="space-x-2 items-center"><input name="desiredLocation" value="great-lawn" type="checkbox" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Great Lawn</span></div>
-                            <div class="space-x-2 items-center"><input name="desiredLocation" value="infinity-ballroom" type="checkbox" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Infinity Ballroom</span></div>
-                            <div class="space-x-2 items-center"><input name="desiredLocation" value="not-sure" type="checkbox" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>Not Sure</span></div>
+                            <div class="space-x-2 items-center">
+                                <input type="radio" name="desiredLocation" id="greatLawn" value="great-lawn" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
+                                <label for="greatLawn">Great Lawn</label>
+                            </div>
+                            <div class="space-x-2 items-center">
+                                <input type="radio" name="desiredLocation" id="infinityBallroom" value="infinity-ballroom" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
+                                <label for="infinityBallroom">Infinity Ballroom</label>
+                            </div>
+                            <div class="space-x-2 items-center">
+                                <input type="radio" name="desiredLocation" id="notSure" value="not-sure" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
+                                <label for="notSure">Not Sure</label>
+                            </div>
                         </label>
+
                         <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
                             What is your wedding date?
                         </h3>
-                        <label class="datepicker relative block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            DESIRED DATE<br>
-                            <input name="desiredDate" type="date" placeholder="MM/DD/YYY" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
+                        {{form_input("desiredDate","DESIRED DATE", "date", "MM/DD/YYY", false, "datepicker relative")}}
+                        {{form_input("startTime","Event Start Time: ", "time", "MM/DD/YYY", false)}}
+                        {{form_input("endTime","Event End Time:", "time", "MM/DD/YYY", false)}}
+
                         <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
                             Please tell us more about your special day.
                         </h3>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            HOW MANY GUESTS? *<br>
-                            <input required="required" aria-required="true" name="guestCount" type="number" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            EVENT NEEDS<br>
-                            <input name="eventNeeds" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
+                        {{form_input("guestCount","HOW MANY GUESTS? *", "number")}}
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                            DO YOUR GUESTS NEED ROOMS?<br>
-                            <div class="space-x-2 items-center"><input value="yes" type="radio" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold" checked><span>Yes</span></div>
-                            <div class="space-x-2 items-center"><input value="no" type="radio" name="guestRooms" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold"><span>No</span></div>
+                            WHERE IS YOUR CEREMONY?<br>
+                            <select aria-required="true" name="ceremonyPlace" id="ceremonyPlace" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
+                                <option value="" disabled selected hidden></option>
+                                <option value="onsite">On Site</option>
+                                <option value="offsite">Off Site</option>
+                                <option value="other">Other</option>
+                            </select>
                         </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            WHAT IS YOUR BUDGET?<br>
-                            <input name="budget" type="text" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            WHAT ELSE?<br>
+                        {{form_input("ceremonyLocation","WHERE IS YOUR CEREMONY LOCATION?", "text", "", false, "ceremonyLocation")}}
+                        {{form_input("guestRoomCount","How many guest rooms? ", "number", "", true, "", 0)}}
+                        {{form_input("budget","WHAT IS YOUR BUDGET?", "number", "", false)}}
+                        {{form_input("additionalEvents","Will you be holding any additional events?", "text", "Rehearsal Dinner, Post Wedding Brunch", false)}}
+
+                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
+                            Additional Information<br>
                             <textarea name="additionalInfo" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary min-h-l bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50"></textarea>
                         </label>
                         <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
                             How can we reach you?
                         </h3>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            PHONE NUMBER *<br>
-                            <input required="required" aria-required="true" name="phone" type="text" placeholder="718-555-1212" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            EMAIL ADDRESS *<br>
-                            <input required="required" aria-required="true" name="email" type="text" placeholder="ashepard@example.com" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50">
-                        </label>
+                        {{form_input("phone","PHONE NUMBER *", "tel", "718-555-1212")}}
+                        {{form_input("email","EMAIL ADDRESS *", "email", "ashepard@example.com")}}
+
                         {{ primaryButton("#", 'Submit', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
                         <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
                     </form>

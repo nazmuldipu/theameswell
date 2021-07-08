@@ -53,3 +53,14 @@ export async function sendContact(form, contactType) {
     });
     return response;
 }
+
+export async function getWeatherData(id = '94043') {
+    const response = await fetch(`https://hotel-site-dev.skipperhospitality.com/weather/${id}`, {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+    return response;
+}
