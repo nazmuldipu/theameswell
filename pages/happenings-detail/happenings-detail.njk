@@ -1,0 +1,82 @@
+---
+layout: base.njk
+pagename: happenings-detail
+meta_title: The Ameswell Hotel
+meta_description: "The Ameswell Hotel offers uncommon luxury in Silicon Valley. Nestled on 11 acres in sunny Mountain View, we bring together technology and innovation, natural beauty and an opportunity to play unlike any other hotel in the Bay Area."
+canonical_href: https://www.theameswellhotel.com
+permalink: "build/happenings-detail.html"
+permalinkBypassOutputDir: true
+fabUrl: https://reservations.travelclick.com/111994
+fabExternalLink: true
+---
+{% from "macros.njk" import scaled_image %}
+{% from "buttons.njk" import primaryButton %}
+
+<section id="pageHero" class="bg-ams-base w-full min-h-screen grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
+    <section class="xmed:grid grid-cols-3 mt-24 gap-12 px-10 xmed:px-24">
+        <section>
+            <figcaption class="pb-8">
+                <img class="inline-block" alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
+                <span>Back to the event</span>
+            </figcaption>
+            <figure class="order-2">
+                {{ scaled_image(happenings_image) }}
+            </figure>
+        </section>
+        <section class="col-span-2 mt-16">
+            <article>
+                <h1 class="order-1">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
+                <p class="pt-8 pb-2">July 4, 2021 </p>
+                <p class="pb-3">6PM-9PM</p>
+                <hr class="border-solid border-4 w-11/12 xmed:w-1/2 border-ams-gold">
+                <p class="pt-3">
+                    Join us for dinner and live music on the patio at Roger with the Vinyl Kings, featuring lead singer and guitarist, Randy Cordeiro (AKA, Surreal Neil) of Super Diamond,
+                </p>
+                <p class="py-4">
+                    Noam Eisen of Cosmo Alley Cats and Vince Littleton of Super Diamond!Enjoy an evening with friends over craft cocktails and delicious California cuisine, while listening to favorites from these wildly popular musicians.
+                </p>
+                <p>
+                    Reservations are recommended and seating is limited.
+                </p>
+            </article>
+            <div class="pt-8 pb-8 xmed:pb-0 text-center xmed:text-left text-lg">
+                {{ primaryButton("#", 'Reserve Here') }}
+            </div>
+        </section>
+    </section>
+</section>
+
+<div class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
+    <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
+        <h2 class="title-display text-2xl text-center px-16 font-serif font-medium py-4">
+            Our Happenings
+        </h2>
+    </header>
+    {% set items = [0, 1, 2] %}
+    <article class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-10">
+        {% for item in items %}
+            <section class="bg-ams-white mb-8 xmed:shadow-md">
+                <figure>
+                    {{ scaled_image(happenings_image) }}
+                    <figcaption>
+                        <header class="px-6 py-4">
+                            <span class="text-lg font-sans">
+                           July 3, 2021
+                        </span>
+                            <h2 class="title-display text-xl xmed:text-2xl text-left font-serif font-medium">
+                           LIVE MUSIC WITH FREDDY CLARKE AND WOBBLY WORLD
+                        </h2>
+                        </header>
+                    </figcaption>
+                </figure>
+                <div class="xmed:hidden mb-5 grid grid-cols-2 px-6 gap-x-3 text-center">
+                    {{ primaryButton("#", 'Reserve Here') }}
+                    {{ primaryButton("#", 'More Info') }}
+                </div>
+            </section>
+        {% endfor %}
+    </article>
+    <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center">
+        {{ primaryButton("#", 'View all') }}
+    </div>
+</div>
