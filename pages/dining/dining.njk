@@ -19,12 +19,24 @@ fabExternalLink: true
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-8 bg-ams-white">
                 <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    Destination dining 
+                    Destination Dining 
                 </h2>
                 <div class="xmed:text-center">
                     Roger, the Flyby, and the Airstream provide options for every meal and in between craving, and every dietary desire—you can eat and drink with us all day, every day, and still want more. Enjoy on your own, or with friends and colleagues.
                 </div>
                 <ul class="grid grid-cols-3 gap-y-8 justify-items-center pt-8 xmed:mx-16">
+                    {{ svgicon(
+                        [
+                            {
+                                d: "M27.3769 16.6263L23.8166 22.5826C23.6507 22.8594 23.7413 23.2181 24.0189 23.3839C24.1124 23.4402 24.2154 23.4665 24.3177 23.4665C24.5163 23.4665 24.7106 23.3657 24.8202 23.1823L28.7377 16.6263H32.2228L23.7428 26.6718C22.3191 24.8894 18.4169 20.0062 15.6893 16.6263H27.3769ZM31.7626 9.28728C31.8159 9.27779 31.8642 9.25587 31.9197 9.25587C32.32 9.25587 32.6494 9.51957 32.7699 9.8797C32.7999 9.97028 32.8269 10.0623 32.8269 10.1624C32.8269 10.6072 32.5004 10.9608 32.0775 11.0382C32.0241 11.0477 31.9759 11.0704 31.9197 11.0704C31.5201 11.0704 31.1907 10.8059 31.0701 10.4465C31.0402 10.356 31.0132 10.2632 31.0132 10.1624C31.0132 9.71826 31.3404 9.36471 31.7626 9.28728ZM35.9957 13.9689C36.2039 13.722 36.1732 13.3538 35.9263 13.1456C35.6787 12.9367 35.3105 12.9681 35.1031 13.215L33.2097 15.4576H29.4361L31.404 12.1661C31.5698 12.2084 31.7407 12.2384 31.9197 12.2384C33.0643 12.2384 33.9957 11.307 33.9957 10.1624C33.9957 9.62038 33.7816 9.1295 33.4398 8.75915L34.5596 6.88549C34.7254 6.60791 34.6348 6.24925 34.358 6.08343C34.0804 5.91689 33.7217 6.00747 33.5567 6.28578L32.4361 8.16017C32.2703 8.11707 32.0994 8.08712 31.9197 8.08712C30.775 8.08712 29.8444 9.01774 29.8444 10.1624C29.8444 10.7059 30.0584 11.196 30.401 11.5664L28.0752 15.4576H14.7448C13.7244 14.199 12.9997 13.3173 12.8617 13.1792C12.6345 12.9513 12.2671 12.9528 12.0392 13.1778C11.8098 13.4042 11.8091 13.7746 12.034 14.0039C12.4343 14.413 18.7507 22.2919 23.0444 27.6711V40.7012H18.6653C18.3081 40.7012 18.0166 40.9941 18.0166 41.3506C18.0166 41.7071 18.3081 42 18.6653 42H28.7239C29.0811 42 29.3725 41.7071 29.3725 41.3506C29.3725 40.9941 29.0811 40.7012 28.7239 40.7012H24.3425V27.7733L35.9957 13.9689Z",
+                                fill: "#00a651",
+                                fillRule: "evenodd",
+                                clipRule: "evenodd"
+                            }
+                        ],
+                        'Drink up',
+                        'grid justify-items-center content-start'
+                    ) }}                    
                     {{ svgicon(
                         [
                             {
@@ -45,18 +57,6 @@ fabExternalLink: true
                         'Take out',
                         'grid justify-items-center content-start'
                     ) }}
-                    {{ svgicon(
-                        [
-                            {
-                                d: "M27.3769 16.6263L23.8166 22.5826C23.6507 22.8594 23.7413 23.2181 24.0189 23.3839C24.1124 23.4402 24.2154 23.4665 24.3177 23.4665C24.5163 23.4665 24.7106 23.3657 24.8202 23.1823L28.7377 16.6263H32.2228L23.7428 26.6718C22.3191 24.8894 18.4169 20.0062 15.6893 16.6263H27.3769ZM31.7626 9.28728C31.8159 9.27779 31.8642 9.25587 31.9197 9.25587C32.32 9.25587 32.6494 9.51957 32.7699 9.8797C32.7999 9.97028 32.8269 10.0623 32.8269 10.1624C32.8269 10.6072 32.5004 10.9608 32.0775 11.0382C32.0241 11.0477 31.9759 11.0704 31.9197 11.0704C31.5201 11.0704 31.1907 10.8059 31.0701 10.4465C31.0402 10.356 31.0132 10.2632 31.0132 10.1624C31.0132 9.71826 31.3404 9.36471 31.7626 9.28728ZM35.9957 13.9689C36.2039 13.722 36.1732 13.3538 35.9263 13.1456C35.6787 12.9367 35.3105 12.9681 35.1031 13.215L33.2097 15.4576H29.4361L31.404 12.1661C31.5698 12.2084 31.7407 12.2384 31.9197 12.2384C33.0643 12.2384 33.9957 11.307 33.9957 10.1624C33.9957 9.62038 33.7816 9.1295 33.4398 8.75915L34.5596 6.88549C34.7254 6.60791 34.6348 6.24925 34.358 6.08343C34.0804 5.91689 33.7217 6.00747 33.5567 6.28578L32.4361 8.16017C32.2703 8.11707 32.0994 8.08712 31.9197 8.08712C30.775 8.08712 29.8444 9.01774 29.8444 10.1624C29.8444 10.7059 30.0584 11.196 30.401 11.5664L28.0752 15.4576H14.7448C13.7244 14.199 12.9997 13.3173 12.8617 13.1792C12.6345 12.9513 12.2671 12.9528 12.0392 13.1778C11.8098 13.4042 11.8091 13.7746 12.034 14.0039C12.4343 14.413 18.7507 22.2919 23.0444 27.6711V40.7012H18.6653C18.3081 40.7012 18.0166 40.9941 18.0166 41.3506C18.0166 41.7071 18.3081 42 18.6653 42H28.7239C29.0811 42 29.3725 41.7071 29.3725 41.3506C29.3725 40.9941 29.0811 40.7012 28.7239 40.7012H24.3425V27.7733L35.9957 13.9689Z",
-                                fill: "#00a651",
-                                fillRule: "evenodd",
-                                clipRule: "evenodd"
-                            }
-                        ],
-                        'Drink up',
-                        'grid justify-items-center content-start'
-                    ) }}
                 </ul>
             </div>
         </section>
@@ -65,7 +65,7 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base" id="roger">
     <article class="mb-4 xmed:mt-8">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+            <figure class="xmed:order-2 grid items-center justify-items-center pt-4 xmed:pt-0">
                 {{ scaled_image(roger_image) }}
             </figure>
             <div class="mt-8 mx-4 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
@@ -76,8 +76,16 @@ fabExternalLink: true
                     BAR &amp; RESTAURANT
                 </h3>
                 <p>
-                    Indoor/outdoor bar and restaurant offering cocktails on tap and apps by the piece—redefining dinner and drinks. Join us for year-around open air dining and seasonal menus featuring what you know and love about California cuisine, with some Ameswell innovation.
+                    At Roger, we're taking an adventurous and innovative approach to California cuisine. We've redefined dining to make it all about you. Experience our playful and sustainable California cuisine on-demand - how you want it, when you want it.
                 </p>
+                <br>
+                <p>Enjoy our finely crafted menu indoors or out, alone or with friends, have a quick bite or shut down the bar; there's no wrong way to Roger.</p>
+                <br>
+                <p>Start your adventure here:</p>
+                <br>
+                <div class="xmed:text-left text-center">
+                    <a class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button focus:outline-none" href="https://www.opentable.com/restref/client/?restref=1123459&lang=en-US&ot_source=Restaurant%20website&corrid=31c0fe57-c6b6-4b3c-88b9-3651f6459b60" target="_blank">Book a Table</a>
+                </div>
             </div>
         </section>
     </article>
@@ -85,7 +93,7 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base" id="the_flyby">
     <article class="mb-4">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+            <figure class="xmed:order-2 items-center grid justify-items-center pt-4 xmed:pt-0">
                 {{ scaled_image(flyby_image) }}
             </figure>
             <div class="mt-8 mx-4 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
@@ -96,7 +104,7 @@ fabExternalLink: true
                     QUICK &amp; CASUAL CAFÉ
                 </h3>
                 <p>
-                    Flyby offers everything from coffee to made-to-order and ready-to-go meals—available all day to enjoy on premise or off-site.
+                    Flyby is Roger's out-of-the-box little brother. With a coffee bar, made-to-order breakfast and lunch, and a quirky list of homegrown snacks and beverages, the options are endless. Grab a bit for the patio or settle in at a table to finish those slides before your evening adventures. Go ahead, order a local brew with that breakfast sammy - no judgement here.
                 </p>
             </div>
         </section>
@@ -105,7 +113,7 @@ fabExternalLink: true
 <div class="grid justify-items-center w-full bg-ams-base" id="airstream_bar">
     <article class="mb-8">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+            <figure class="xmed:order-2 grid items-center justify-items-center pt-4 xmed:pt-0">
                 {{ scaled_image(airstream_image) }}
             </figure>
             <div class="mt-8 mx-4 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
@@ -116,7 +124,7 @@ fabExternalLink: true
                     OUTDOOR BAR &amp; SNACKS
                 </h3>
                 <p>
-                    The Airstream serves up exactly what you want day or night outdoors by our pool, lawn, or firepits.
+                    Whether you want a signature cocktail on tap or a cold PBR, the Airstream bar is your spot. Order a snack poolside, in our beer garden, or while you crush your friends in cornhole on our lawn. Our bar bites - bo bells and whistles, just comfort food - are perfect for sharing around our outdoor fire pits. Cheers.
                 </p>
             </div>
         </section>
