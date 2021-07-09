@@ -20,12 +20,12 @@ export default class WeatherWidget extends HTMLElement {
                 
                 //Make the icon size responsive
                 if (screen.width < 900) {
-                    edge = "24px";
+                    edge = "16px";
                 }
 
                 let icon = svgicon(edge, color, wid);
                 this.innerHTML = `
-                    <div style="display:flex">
+                    <div class="relative -top-1 flex items-center">
                         ${icon}
                         <p  class="text-base xmed:text-2xl pl-2 xmed:pl-3" >${temp} &#176</p>
                     </div> `;
