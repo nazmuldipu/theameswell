@@ -9,11 +9,12 @@ permalinkBypassOutputDir: true
 fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
+{% from "macros.njk" import address_format %}
 {% from "buttons.njk" import primaryButton %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--page-detail-xmed xmed:bg-hero--page-detail bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
-<div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
+<div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-40 xmed:pb-16 xmed:px-8 xmed:-mt-16">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:border-2 xmed:shadow-md">
         <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-8 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
             <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
@@ -23,8 +24,7 @@ fabExternalLink: true
                     </h2>
                     <p class="pb-4">
                         <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-cyan underline">
-                            800 Moffett Boulevard<br>
-                            Mountain View, CA 94043
+                            {{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}
                         </a>
                     </p>
                     <p class="pb-4">
