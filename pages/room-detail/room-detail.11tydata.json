@@ -27,7 +27,7 @@
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
-                    "imgalt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                    "imgalt": "Hotel room with view",
                     "intrinsicwidth": "2304"
                 },
                 {
@@ -35,7 +35,7 @@
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
-                    "imgalt": "A bed in a sun filled guest room at the Ameswell Hotel",
+                    "imgalt": "Hotel room with view",
                     "intrinsicwidth": "2304"
                 }
             ]
@@ -47,7 +47,7 @@
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
-                    "imgalt": "Blue and white tiled walls accented by dark wood with a sink and bathtub",
+                    "imgalt": "Wellness room with mirror fitness",
                     "intrinsicwidth": "2304"
                 },
                 {
@@ -55,7 +55,7 @@
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
-                    "imgalt": "Blue and white tiled walls accented by dark wood with a sink and bathtub",
+                    "imgalt": "Wellness room with mirror fitness",
                     "intrinsicwidth": "2304"
                 }
             ]
@@ -67,7 +67,7 @@
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
-                    "imgalt": "The living area in a suite at the Ameswell Hotel",
+                    "imgalt": "Suite living room",
                     "intrinsicwidth": "2304"
                 },
                 {
@@ -75,7 +75,7 @@
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
-                    "imgalt": "The living area in a suite at the Ameswell Hotel",
+                    "imgalt": "Suite living room",
                     "intrinsicwidth": "2304"
                 }
             ]
