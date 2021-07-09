@@ -241,6 +241,19 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 .page-header__toggle:checked ~ .page-header__toggle-button {
     border-top: 0;
 }
+.page-header__toggle-button:before,
+.page-header__toggle-button:after {
+    border-top: solid 1px theme(colors.ams-white);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6.5px;
+    width: 100%;
+    @apply transition-transform duration-300 ease-linear;
+}
+.page-header__toggle-button:after {
+    top: 14.5px;
+}
 .page-header__toggle:checked ~ .page-header__toggle-button:before,
 .page-header__toggle:checked ~ .page-header__toggle-button:after {
     left: 0;
