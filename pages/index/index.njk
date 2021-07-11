@@ -13,6 +13,21 @@ fabExternalLink: true
 {% from "buttons.njk" import primaryButton %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
+{% macro offers(displayOffers='xmed:hidden') %}
+    <section class="{{displayOffers}} max-w-screen-lg my-8 xmed:my-0 shadow-md">
+        <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-8 bg-ams-white">
+            <h2 class="title-display text-2xl font-serif font-medium py-4">
+                Offers
+            </h2>
+            <div>
+                Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
+            </div>
+            <div class="pt-7 pb-2 text-center">
+                <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
+            </div>
+        </div>
+    </section>
+{% endmacro %}
 
 <div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
     <header class="grid xmed:items-end">
@@ -69,7 +84,7 @@ fabExternalLink: true
 <div class="bg-pattern--ams-grey w-full grid justify-items-center pb-28 relative z-10">
     <article class="grid justify-items-center items-start w-full max-w-screen-lg py-8 px-4 xmed:mt-5 xmed:grid-cols-40-60 xmed:gap-10">
         <section>
-            <section class="grid justify-items-center max-w-screen-lg mb-8 shadow-md">
+            <section class="max-w-screen-lg mb-8 shadow-md">
                 <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-8 bg-ams-white">
                     <h2 class="title-display text-2xl font-serif font-medium py-4">
                         More than enough room
@@ -82,19 +97,7 @@ fabExternalLink: true
                     </div>
                 </div>
             </section>
-            <section class="grid justify-items-center max-w-screen-lg mb-8 xmed:mb-0 shadow-md">
-                <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-8 bg-ams-white">
-                    <h2 class="title-display text-2xl font-serif font-medium py-4">
-                        Offers
-                    </h2>
-                    <div>
-                        Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
-                    </div>
-                    <div class="pt-7 pb-2 text-center">
-                        <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
-                    </div>
-                </div>
-            </section>
+            {{offers('hidden xmed:block')}}
         </section>
         <rooms-gallery class="h-full bg-ams-white shadow-md">
         <section class="rooms-gallery--wrapper grid justify-items-center max-w-screen-lg grid-areas-slideshow xmed:grid-areas-slideshow-xmed xmed:grid-cols-slideshow xmed:grid-rows-slideshow pt-4 px-4 xmed:pr-0 xmed:pb-4 xmed:pl-0 xmed:pt-16 mb-5">
@@ -232,6 +235,7 @@ fabExternalLink: true
                 </div>
             </section>
         </rooms-gallery>
+        {{offers()}}
     </article>
 </div>
 <div class="bg-ams-primary w-full grid justify-items-center pt-24 pr-4 pl-4 -mt-24 relative z-0">
