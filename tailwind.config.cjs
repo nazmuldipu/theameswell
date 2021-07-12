@@ -137,6 +137,9 @@ module.exports = {
       inset: {
        '-0.5': '-0.125rem',
       },
+      transitionProperty: {
+        'height': 'height'
+      },
       textIndent: (theme, { negative }) => ({
         ...negative({
           'xl': '9999px'
