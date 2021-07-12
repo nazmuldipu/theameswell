@@ -27,6 +27,12 @@ module.exports = {
         'no-webp__hero--dining-xmed': "url('/images/hero-dining_xmed.jpg')",
         'hero--dining': "url('/images/hero-dining.webp')",
         'no-webp__hero--dining': "url('/images/hero-dining.jpg')",
+
+        'hero--location': "url('/images/location-bg.jpg')",
+        'no-webp__hero--location': "url('/images/location-bg.jpg')",
+        'hero--location-xmed': "url('/images/location-bg.jpg')",
+        'no-webp__hero--location-xmed': "url('/images/location-bg.jpg')", 
+
         'hero--about': "url('/images/about-hero-desktop.webp')",
         'no-webp__hero--about': "url('/images/about-hero-desktop.jpg')",
         'hero--about-xmed': "url('/images/about-hero-mobile.webp')",

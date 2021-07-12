@@ -1,0 +1,30 @@
+/****  start imports  ********************************/
+@import "../../styles/global.css";
+/****  end imports  ********************************/
+
+.xmed\:grid-cols-50-50 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.cat-name {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.w-100 {
+    width: 100px;
+}
+
+.h-100 {
+    height: 800px;
+}
+
+.map {
+    height: 800px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5rem;
+}
