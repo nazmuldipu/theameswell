@@ -14,40 +14,42 @@ fabExternalLink: true
 
 <div id="pageHero" class="bg-ams-primary w-full pt-12 xmed:pt-16">
 </div>
-<section class="xmed:grid grid-cols-2 max-w-screen-lg mt-24 gap-x-8">
-    <section class="xmed:max-w-md">
-        <figcaption class="pb-8 xmed:pb-8">
-            <img class="inline-block pl-6 xmed:pl-0" alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
-            <span class="text-lg">Back to the event</span>
-        </figcaption>
-        <header class="xmed:hidden pb-4 pl-6 xmed:pl-0 block">
-            <h1 class="font-medium font-serif text-ams-primary text-2xl">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
-        </header>
-        <figure class="order-2">
-            {{ scaled_image(happenings_image) }}
-        </figure>
-    </section>
-    <section class="mt-6 xmed:mt-16 pl-6 xmed:pl-0">
-        <article>
-            <header class="hidden xmed:block">
+<section class="bg-ams-base w-full">
+    <section class="xmed:grid grid-cols-2 max-w-screen-lg m-auto mt-24 gap-x-8">
+        <section class="xmed:max-w-md">
+            <figcaption class="pb-8 xmed:pb-8">
+                <img class="inline-block pl-6 xmed:pl-0" alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
+                <span class="text-lg">Back to the event</span>
+            </figcaption>
+            <header class="xmed:hidden pb-4 pl-6 xmed:pl-0 block">
                 <h1 class="font-medium font-serif text-ams-primary text-2xl">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
             </header>
-            <p class="pt-4 pb-2 text-lg">July 4, 2021 </p>
-            <p class="pb-3 text-lg">6PM-9PM</p>
-            <hr class="border-solid border-4 w-11/12 xmed:w-1/2 border-ams-gold">
-            <p class="pt-3 text-lg">
-                    Join us for dinner and live music on the patio at Roger with the Vinyl Kings, featuring lead singer and guitarist, Randy Cordeiro (AKA, Surreal Neil) of Super Diamond,
-                </p>
-            <p class="py-3 text-lg">
-                    Noam Eisen of Cosmo Alley Cats and Vince Littleton of Super Diamond!Enjoy an evening with friends over craft cocktails and delicious California cuisine, while listening to favorites from these wildly popular musicians.
-                </p>
-            <p class="text-lg">
-                    Reservations are recommended and seating is limited.
-                </p>
-        </article>
-        <div class="pt-8 pb-8 xmed:pb-8 text-center xmed:text-left text-lg">
-            {{ primaryButton("#", 'Reserve Here') }}
-        </div>
+            <figure class="order-2">
+                {{ scaled_image(happenings_image) }}
+            </figure>
+        </section>
+        <section class="mt-6 xmed:mt-16 pl-6 xmed:pl-0">
+            <article>
+                <header class="hidden xmed:block">
+                    <h1 class="font-medium font-serif text-ams-primary text-2xl">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
+                </header>
+                <p class="pt-4 pb-2 text-lg">July 4, 2021 </p>
+                <p class="pb-3 text-lg">6PM-9PM</p>
+                <hr class="border-solid border-4 w-11/12 xmed:w-1/2 border-ams-gold">
+                <p class="pt-3 text-lg">
+                        Join us for dinner and live music on the patio at Roger with the Vinyl Kings, featuring lead singer and guitarist, Randy Cordeiro (AKA, Surreal Neil) of Super Diamond,
+                    </p>
+                <p class="py-3 text-lg">
+                        Noam Eisen of Cosmo Alley Cats and Vince Littleton of Super Diamond!Enjoy an evening with friends over craft cocktails and delicious California cuisine, while listening to favorites from these wildly popular musicians.
+                    </p>
+                <p class="text-lg">
+                        Reservations are recommended and seating is limited.
+                    </p>
+            </article>
+            <div class="pt-8 pb-8 xmed:pb-8 text-center xmed:text-left text-lg">
+                {{ primaryButton("#", 'Reserve Here') }}
+            </div>
+        </section>
     </section>
 </section>
 
