@@ -28,9 +28,9 @@ module.exports = {
         'hero--dining': "url('/images/hero-dining.webp')",
         'no-webp__hero--dining': "url('/images/hero-dining.jpg')",
 
-        'hero--location': "url('/images/location-bg.jpg')",
+        'hero--location': "url('/images/location-bg.webp')",
         'no-webp__hero--location': "url('/images/location-bg.jpg')",
-        'hero--location-xmed': "url('/images/location-bg.jpg')",
+        'hero--location-xmed': "url('/images/location-hero-mobile.webp')",
         'no-webp__hero--location-xmed': "url('/images/location-bg.jpg')", 
 
         'hero--about': "url('/images/about-hero-desktop.webp')",
