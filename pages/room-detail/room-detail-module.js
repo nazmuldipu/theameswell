@@ -9,7 +9,6 @@ items.forEach((item) => {
   const content = item.querySelector(".accordion-content");
   const parentItem = item.parentElement;
   const cmp = parentItem.querySelector(".summury");
-  console.log(cmp);
   btns.forEach((btn) => {
     const icon = btn.querySelector(".arrow");
     icon.style.transform = "rotate(135deg)";
@@ -38,6 +37,12 @@ items.forEach((item) => {
         }
         icon.style.marginTop = "10px";
         icon.style.transform = "rotate(-45deg)";
+
+        const carNavs = content.querySelectorAll(".car-nav");
+        // console.log(carNav);
+        carNavs.forEach((carNav) => {
+          carNav.style.top = (carNav.offsetWidth / 3) + 'px'
+        })
       }
     });
   });

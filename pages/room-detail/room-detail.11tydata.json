@@ -1692,19 +1692,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/deluxe_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Deluxe King",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/deluxe_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Deluxe King",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1712,19 +1712,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/deluxe_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Deluxe King",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/deluxe_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Deluxe King",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1732,19 +1732,79 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/deluxe_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Deluxe King",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/deluxe_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1769,19 +1829,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/premium_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Premium King",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/premium_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Premium King",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1789,19 +1849,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/premium_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Premium Kings",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/premium_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Premium King",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1809,19 +1869,79 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/premium_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Premium King",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/premium_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1846,19 +1966,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/junior_suite_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Junior Suite",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/junior_suite_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Junior Suite",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1866,19 +1986,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/junior_suite_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Junior Suite",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/junior_suite_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Junior Suite",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1886,19 +2006,79 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/junior_suite_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Junior Suite",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/junior_suite_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1923,19 +2103,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/premium_two_queens_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Premium Two Queens",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-1",
+                  "image": "images/premium_two_queens_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Hotel room with view",
+                  "imgalt": "Premium Two Queens",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1943,19 +2123,19 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/premium_two_queens_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Premium Two Queens",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-2",
+                  "image": "images/premium_two_queens_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Wellness room with mirror fitness",
+                  "imgalt": "Premium Two Queens",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -1963,19 +2143,79 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/premium_two_queens_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Premium Two Queens",
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-3",
+                  "image": "images/premium_two_queens_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Suite living room",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
                   "intrinsicwidth": "2304"
                 }
               ]
