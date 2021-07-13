@@ -120,6 +120,7 @@ module.exports = {
         'auto-600': 'auto 600px',
         'slideshow': '55% 45%',
         'sm-auto': 'auto 1fr',
+        'auto-sm': '1fr auto',
         'footer': 'repeat(3, 1fr)'
       },
       gridTemplateAreas: {
@@ -136,6 +137,9 @@ module.exports = {
       },
       rotate: { 
         '-135': '-135deg',
+      },
+      inset: {
+       '-0.5': '-0.125rem',
       },
       textIndent: (theme, { negative }) => ({
         ...negative({

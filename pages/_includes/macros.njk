@@ -76,3 +76,9 @@
     alt="{{ default.alt }}">
 </picture>
 {% endmacro %}
+
+{# Standard Address format to use globally #}
+{% macro address_format( streetAddress, city, state, zip ) %}
+{{streetAddress}}<br>
+{{city}}, {{state}} {{zip}}
+{% endmacro %}

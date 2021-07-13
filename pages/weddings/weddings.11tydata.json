@@ -6,5 +6,41 @@
         {
             "image": "images/homepage-3"
         }
-    ]
+    ],
+    "flyby_image": {
+        "artDirection": [
+            {
+                "classes": "w-full image-loader image-loader--white",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/homepage-3",
+                "alt": "Public space",
+                "intrinsicwidth": "600" 
+            }
+        ]
+    },
+    "roger_image": {
+        "artDirection": [
+            {
+                "classes": "w-full image-loader image-loader--white",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/homepage-7",
+                "alt": "The Roger Restaurant",
+                "intrinsicwidth": "600" 
+            }
+        ]
+    },
+    "airstream_image": {
+        "artDirection": [
+            {
+                "classes": "w-full image-loader image-loader--white",
+                "sizes": "25vw",
+                "type": "jpg",
+                "src": "images/homepage-4",
+                "alt": "The Airstream Bar",
+                "intrinsicwidth": "600" 
+            }
+        ]
+    }
 }

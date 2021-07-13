@@ -375,11 +375,11 @@ fabExternalLink: true
             <form-sender data-type="alist">
                 <form class="pt-4">
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
                         <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
                     </div>
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
                         <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
                     </div>
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">

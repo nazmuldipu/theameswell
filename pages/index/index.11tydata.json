@@ -19,7 +19,7 @@
                 "sizes": "80vw",
                 "type": "jpg",
                 "src": "images/homepage-2-desktop",
-                "alt": "The entrance at the Ameswell Hotel",
+                "alt": "The Ameswell hotel exterior",
                 "intrinsicwidth": "2496" 
             },
             {
@@ -28,7 +28,7 @@
                 "sizes": "90vw",
                 "type": "jpg",
                 "src": "images/homepage-2-mobile",
-                "alt": "The entrance at the Ameswell Hotel",
+                "alt": "The Ameswell hotel exterior",
                 "intrinsicwidth": "654"
             }
         ]
@@ -41,7 +41,7 @@
                 "sizes": "50vw",
                 "type": "jpg",
                 "src": "images/homepage-3-desktop_xs",
-                "alt": "A sunlit room at the Ameswell Hotel",
+                "alt": "Hotel room with view",
                 "intrinsicwidth": "1450" 
             },
             {
@@ -50,7 +50,7 @@
                 "sizes": "85vw",
                 "type": "jpg",
                 "src": "images/homepage-3-mobile_2xs",
-                "alt": "A sunlit room at the Ameswell Hotel",
+                "alt": "Hotel room with view",
                 "intrinsicwidth": "612"
             }
         ]
@@ -63,7 +63,7 @@
                 "sizes": "25vw",
                 "type": "jpg",
                 "src": "images/homepage-4-desktop",
-                "alt": "The indoor and outdoor Roger bar and restaurant",
+                "alt": "The Roger Restaurant",
                 "intrinsicwidth": "600" 
             },
             {
@@ -72,7 +72,7 @@
                 "sizes": "70vw",
                 "type": "jpg",
                 "src": "images/homepage-4-mobile",
-                "alt": "The indoor and outdoor Roger bar and restaurant",
+                "alt": "The Roger Restaurant",
                 "intrinsicwidth": "480"
             }
         ]
@@ -85,7 +85,7 @@
                 "sizes": "25vw",
                 "type": "jpg",
                 "src": "images/homepage-5-desktop",
-                "alt": "The fast casual Flyby cafe",
+                "alt": "Public area",
                 "intrinsicwidth": "600" 
             },
             {
@@ -94,7 +94,7 @@
                 "sizes": "70vw",
                 "type": "jpg",
                 "src": "images/homepage-5-mobile",
-                "alt": "The fast casual Flyby cafe",
+                "alt": "Public area",
                 "intrinsicwidth": "480"
             }
         ]
@@ -107,7 +107,7 @@
                 "sizes": "25vw",
                 "type": "jpg",
                 "src": "images/homepage-6-desktop",
-                "alt": "The outdoor Airstream Bar",
+                "alt": "The Airstream Bar",
                 "intrinsicwidth": "600" 
             },
             {
@@ -116,7 +116,7 @@
                 "sizes": "70vw",
                 "type": "jpg",
                 "src": "images/homepage-6-mobile",
-                "alt": "The outdoor Airstream Bar",
+                "alt": "The Airstream Bar",
                 "intrinsicwidth": "480"
             }
         ]
@@ -129,7 +129,7 @@
                 "sizes": "85vw",
                 "type": "jpg",
                 "src": "images/homepage-7-desktop",
-                "alt": "An aerial view of the Ameswell Hotel, its pool, and its grounds",
+                "alt": "The Ameswell exterior with pool and Airstream Bar",
                 "intrinsicwidth": "2496" 
             },
             {
@@ -138,7 +138,7 @@
                 "sizes": "100vw",
                 "type": "jpg",
                 "src": "images/homepage-7-mobile",
-                "alt": "An aerial view of the Ameswell Hotel, its pool, and its grounds",
+                "alt": "The Ameswell exterior with pool and Airstream Bar",
                 "intrinsicwidth": "750"
             }
         ]
@@ -151,7 +151,7 @@
                 "sizes": "40vw",
                 "type": "jpg",
                 "src": "images/homepage-8-desktop",
-                "alt": "A setup for a wedding banquet on the front lawn of the Ameswell Hotel",
+                "alt": "Outdoor event venue",
                 "intrinsicwidth": "1064" 
             },
             {
@@ -160,7 +160,7 @@
                 "sizes": "100vw",
                 "type": "jpg",
                 "src": "images/homepage-8-mobile",
-                "alt": "A setup for a wedding banquet on the front lawn of the Ameswell Hotel",
+                "alt": "Outdoor event venue",
                 "intrinsicwidth": "750"
             }
         ]
