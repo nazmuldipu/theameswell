@@ -325,7 +325,7 @@ fabExternalLink: true
             </div>
 
             <!-- Toggle content -->
-            <div class="accordion-content w-full max-h-0 overflow-hidden transition justify-items-center z-0">
+            <div class="accordion-content w-full overflow-hidden transition justify-items-center z-0">
                 {% for type in room.types %}
                     <article class="mx-6 xmed:mx-9">
                         <div class="grid grid-cols-1 xmed:grid-cols-2 gap-2 mt-20 mb-16">
@@ -342,7 +342,7 @@ fabExternalLink: true
                                 {% endfor %}
 
                                 <!-- svg icons -->
-                                <div class="w-full grid justify-items-center">
+                                <div class="w-full grid justify-items-center" >
                                     <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
                                         {{ svgicon(
                                         [
@@ -452,6 +452,7 @@ fabExternalLink: true
 
                                 <!-- mobile slider -->
                                 <div class="block xmed:hidden mx-7">{{ media_carousel(type.imageSlides) }}</div>
+
                                 <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
                                     Details
                                 </h2>
