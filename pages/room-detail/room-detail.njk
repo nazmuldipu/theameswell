@@ -13,6 +13,9 @@ fabExternalLink: true
 {% from "videos.njk" import lazyvideo %}
 {% from "icons.njk" import svgicon %}
 {% from "media-carousel.njk" import media_carousel %}
+{% from "component_carousel.njk" import component_carousel %}
+{% from "macros.njk" import scaled_image %}
+{% from "buttons.njk" import primaryButton %}
 
 {% macro textCard(title, text, pClass, childClass)%}
 <section class="w-full grid {{pClass}}">
@@ -481,16 +484,89 @@ fabExternalLink: true
     {% endfor %}
 </div>
 
-<div class="w-full grid justify-items-center bg-ams-base pb-12">
+<div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
+    <section class="w-full grid xmed:hidden my-8 xmed:my-12 ">
+        <div class="mx-6 xmed:mx-96 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
+            <h2 class="font-serif text-3xl xmed:text-5xl text-center">
+                Room Amenities
+            </h2>
+        </div>
+    </section>
+
     {% for feature in features %}
-        <div class="w-full grid mt-14">
-            <section class="mx-24 shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-2">
-                <div class="p-8">
-                    <h2 class="font-serif text-2xl xmed:text-4xl pt-8">{{feature.title}}</h2>
-                    <div class="pt-6 pb-8 text-lg max-w-6xl"> {{feature.text}} </div>
+        <div class="w-full grid xmed:mt-14 {{feature.classes}}" >
+            <section class="xmed:mx-24 shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2">
+                <div class="px-6 mt-6 block xmed:hidden">
+                    <figure>
+                        {{ scaled_image(feature.img) }}
+                    </figure>
                 </div>
-                <div class="p-8">images</div>
+                <div class="p-6">
+                    <h2 class="font-serif text-2xl xmed:text-4xl xmed:pt-8">{{feature.title}}</h2>
+                    <div class="pt-6 pb-8 text-base xmed:text-lg max-w-6xl"> {{feature.text}} </div>
+                </div>
+                <div class="p-8 hidden xmed:block">
+                    <figure>
+                        {{ scaled_image(feature.img) }}
+                    </figure>
+                </div>
             </section>
         </div>
     {% endfor %}
+</div>
+
+<div class="w-full grid justify-items-center bg-pattern--ams-grey py-6 xmed:py-20">
+   <section class="w-full grid">
+        <div class="mx-6 xmed:mx-24 py-4 xmed:py-9 px-4 shadow-sm xmed:shadow-md bg-ams-white grid">
+            <h2 class="title-display text-2xl xmed:text-4xl pb-4 xmed:text-center"> Offers </h2>
+            <div class="xmed:text-center text-lg max-w-6xl mx-auto"> Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel. </div>
+            <div class="xmed:hidden pt-4 pb-4">
+                <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="w-full grid mt-6">
+        <div class="mx-6 xmed:mx-24 py-4 xmed:py-9 xmed:px-4 shadow-sm xmed:shadow-md bg-ams-white grid">
+            <figure class="w-full max-w-screen-xl overflow-hidden">
+                {{ component_carousel(offers) }}
+            </figure>
+        </div>
+    </section>
+</div>
+
+<div class="grid justify-items-center bg-ams-primary w-full p-8">
+    <article class="max-w-screen-lg p-4 bg-ams-white w-full">
+        <section class="xmed:grid xmed:grid-cols-2 xmed:gap-4">
+            <header>
+                <h2 class="title-display text-2xl pt-4 pb-4">
+                    Join Our A-List
+                </h2>
+                <p>
+                    You will be the first to hear about events and promotions.
+                </p>
+            </header>
+            <form-sender data-type="alist">
+                <form class="pt-4">
+                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
+                    </div>
+                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
+                    </div>
+                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
+                        <input required="required" type="text" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">EMAIL *</label>
+                    </div>
+                    {{ primaryButton("#", 'Join the A-List', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                    <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
+                </form>
+            </form-sender>
+        </section>
+    </article>
+</div>
+<div class="bg-ams-primary w-full">
+    <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
 </div>

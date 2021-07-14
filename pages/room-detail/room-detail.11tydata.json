@@ -2918,26 +2918,303 @@
   ],
   "features":[
     {
+      "title":"High-speed wifi & Workstation",
+      "text":"Blazing fast internet. How fast? We will tell you sometime soon! ",
+      "classes":"block xmed:hidden",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    },
+    {
+      "title":"100% Organic Bath Amenities",
+      "text":"Juice Beauty and The Ameswell Hotel have collaborated to bring guests a truly Farm-to-Beauty experience. On its Sonoma County organic farm, Juice Beauty grows the antioxidant rich ingredients that go into all of our bath amenities. Plus, our dispensing program eliminates an estimated 350,000 plastic bottles per year, furthering our joint commitment to sustainability",
+      "classes":"block xmed:hidden",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/arbor_suit_05",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/arbor_suit_05",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    },
+    {
       "title":"Rest",
       "text":"Our blackout curtains and high-grade STC rating (Sound Transmission Classification) create a quiet, calming environment in every guest room Curl up in 100% cotton Rivolta Italian linens atop plush Sealy mattresses for a luxurious sleep experience. And rest easy knowing that our medical-grade air filtration system ensures you never share air with another guest room.",
-      "img":"arbor_suit_02.jpg"
-    },{
+      "img":{
+          "artDirection": [
+              {
+                  "classes": "image-loader",
+                  "media": "(min-width:900.1px)",
+                  "sizes": "40vw",
+                  "type": "jpg",
+                  "src": "images/arbor_suit_02",
+                  "alt": "Outdoor event venue",
+                  "intrinsicwidth": "1064" 
+              },
+              {
+                  "classes": "image-loader",
+                  "media": "(max-width:900px)",
+                  "sizes": "100vw",
+                  "type": "jpg",
+                  "src": "images/arbor_suit_02",
+                  "alt": "Outdoor event venue",
+                  "intrinsicwidth": "750"
+              }
+          ]
+      }
+    },
+    {
       "title":"Refresh",
       "text":"Enjoy an entirely organic shower experience with bath amenities by Juice Beauty. The products are as good for your body as they are for the planet and will leave you feeling refreshed with their invigorating green apple scent. Step out of the shower and into one of our amazingly soft Ameswell robes.",
-      "img":"corner_one_bedroom_suite_04.jpg"
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/corner_one_bedroom_suite_04",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/corner_one_bedroom_suite_04",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
     },{
       "title":"Refuel",
       "text":"Turn on the electric kettle and start your day with a smooth cup of coffee by local Santa Cruz roaster, Steeped. In-room bottled water is provided along with filtered water stations throughout the property to help you stay well-hydrated during your stay. Easy online ordering is available from our bar and restaurants to cure any craving from morning to night.",
-      "img":"wellness_king_01.jpg"
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/wellness_king_01",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/wellness_king_01",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
     },{
       "title":"Retreat",
       "text":"Featuring floor-to-ceiling windows, each guest room offers a retreat where you can get work done or watch your favorite show on a 65” Samsung Smart TV. A dedicated workspace, ultra-fast complimentary WiFi and abundance of charging ports keep you connected; a sitting area provides space to kick back with a book when you want to unplug.",
-      "img":"room-detail-3.jpg"
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
     },
     {
       "title":"Restore",
       "text":"At The Ameswell Hotel, we are committed to doing our part to protect and restore the environment. You will see evidence of this throughout your guest room - from the organic bath amenities to our commitment to zero single-use plastic. We have given special attention to each sustainability detail so that you can feel good about making a green travel decision.",
-      "img":"about-5.jpg"
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-5",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/about-5",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
     }
-  ]
+  ],
+  "offers": [
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-1",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-1",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Fresh Start",
+        "p1": "Start your day off right with a daily $20 credit at The Flyby café. Serving delicious and healthy breakfasts featuring made-to-order meals, grab and go options and artisan coffee."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-2",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-2",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Puppy Love",
+        "p1": "Treat your four-legged friend to an unforgettable stay at our pet-friendly property!  With a discounted pet fee of $50 (reg. $75), collapsible dog bowl, pet toy, and organic dog treat."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-3",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Work from Ameswell",
+        "p1": "Work from one of our spacious, light-filled guest rooms or many public spaces. Get inspired in the Ames Library or lounging by the pool. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, one coffee, tea, or G.0.A.T. Fuel Energy Drink."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-2",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-2",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Wellness King",
+        "p1": "Make the most of our wellness offerings when you book a room in our Wellness Wing. Each room offers over 4,000 classes on the Mirror – from yoga, meditation, ballet and boxing. This offer includes the Mirror Fitness app, adjustable weights, resistance bands and yoga mat by Team Fitnesse, choice of G.O.A.T. Fuel All Natural Energy Drink by Jerry Rice, and easy access to fitness center, outdoor pool and spa treatment rooms."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-3",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Date Night",
+        "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
+    }
+]
 }

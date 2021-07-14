@@ -1,0 +1,60 @@
+{% macro component_carousel(content) %}
+    <figure class="{{ background_color if background_color }}">
+    <media-carousel>
+        <div class="swiper-container w-full h-full">
+            
+                <nav class="com-car-nav flex flex-row justify-between relative z-20 -mt-10 top-72 xmed:top-32 px-4">
+                    <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                        previous
+                    </button>
+                    <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                        next
+                    </button>
+                </nav>
+            
+             <div class="swiper-wrapper z-10">
+                    {% for slide in content %}
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-1 xmed:grid-cols-2 xmed:mx-14 ">
+                                <picture>
+                                {% for direction in slide.artDirection %}
+                                    <source 
+                                        data-src="{{ direction.image }}.webp"
+                                        data-srcset="{{ direction | slideImgSrcSet('webp') }}"
+                                        media="{{ direction.media }}"
+                                        sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                        type="image/webp">
+                                    <source 
+                                        data-src="{{ direction.image }}.{{ direction.type if direction.type else 'jpg' }}"
+                                        data-srcset="{{ direction | slideImgSrcSet('webp') }}"
+                                        media="{{ direction.media }}"
+                                        sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                        type="image/{{ direction.type | getImgSourceType }}">
+                                {% endfor %}
+                                {% set default = slide.artDirection|first %}
+                                    <img 
+                                        data-src="{{ default.image }}.{{ default.type if default.type else 'jpg' }}"
+                                        data-srcset="{{ default | slideImgSrcSet(default.type) }}"
+                                        class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
+                                        sizes="{{ default.sizes if default.sizes else '75vw' }}" 
+                                        alt="{{ default.imgalt }}">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </picture>
+                                <div class="m-8">
+                                    <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 text-center">
+                                        {{slide.title}}
+                                    </h2>
+                                    <div class="xmed:text-center text-base xmed:text-lg mt-4 h-48 overflow-hidden"> {{slide.p1}} </div>
+                                    <div class="pt-4 pb-4 text-center">
+                                        <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">VIEW OFFERS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+            </div> 
+            
+        </div>
+    </media-carousel>
+    </figure>
+{% endmacro %}

@@ -44,7 +44,7 @@ items.forEach((item) => {
         const carNavs = content.querySelectorAll(".car-nav");
         carNavs.forEach((carNav) => {
           carNav.style.top = (carNav.offsetWidth / 3) + 'px'
-        })
+        });       
       }
     });
   });
