@@ -13,6 +13,21 @@ fabExternalLink: true
 {% from "buttons.njk" import primaryButton %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
+{% macro offers(displayOffers='xmed:hidden') %}
+    <section class="{{displayOffers}} max-w-screen-lg my-8 xmed:my-0 shadow-md">
+        <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-8 bg-ams-white">
+            <h2 class="title-display text-2xl font-serif font-medium py-4">
+                Offers
+            </h2>
+            <div>
+                Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
+            </div>
+            <div class="pt-7 pb-2 xmed:text-center">
+                <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
+            </div>
+        </div>
+    </section>
+{% endmacro %}
 
 <div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
     <header class="grid xmed:items-end">
@@ -66,23 +81,26 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<div class="bg-pattern--ams-grey w-full grid justify-items-center pb-28 relative z-10">
+<div class="bg-pattern--ams-grey w-full grid justify-items-center xmed:pb-32 relative z-10">
     <article class="grid justify-items-center items-start w-full max-w-screen-lg py-8 px-4 xmed:mt-5 xmed:grid-cols-40-60 xmed:gap-10">
-        <section class="grid justify-items-center max-w-screen-lg mb-8 shadow-md">
-            <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-8 bg-ams-white">
-                <h2 class="title-display text-2xl py-4">
-                    More than enough room
-                </h2>
-                <div>
-                    Sitting area and workspace for your waking hours, organic bath products, <a href="air-quality.html" class="font-bold underline">medical-grade air filtration</a>, and superior acoustics for self-care, and luxurious sleep.
+        <section>
+            <section class="max-w-screen-lg mb-8 shadow-md">
+                <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-8 bg-ams-white">
+                    <h2 class="title-display text-2xl font-serif font-medium py-4">
+                        More than enough room
+                    </h2>
+                    <div>
+                        Sitting area and workspace for your waking hours, organic bath products, <a href="air-quality.html" class="font-bold underline">medical-grade air filtration</a>, and superior acoustics for self-care, and luxurious sleep.
+                    </div>
+                    <div class="pt-7 pb-2 xmed:text-center">
+                        <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL ROOMS</a>
+                    </div>
                 </div>
-                <div class="pt-7 pb-2">
-                    <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL ROOMS</a>
-                </div>
-            </div>
+            </section>
+            {{offers('hidden xmed:block')}}
         </section>
-        <rooms-gallery>
-        <section class="rooms-gallery--wrapper grid justify-items-center max-w-screen-lg grid-areas-slideshow xmed:grid-areas-slideshow-xmed xmed:grid-cols-slideshow xmed:grid-rows-slideshow pt-4 px-4 xmed:pr-0 xmed:pb-4 xmed:pl-0 mb-5 bg-ams-white shadow-md">
+        <rooms-gallery class="h-full bg-ams-white shadow-md">
+        <section class="rooms-gallery--wrapper grid justify-items-center max-w-screen-lg grid-areas-slideshow xmed:grid-areas-slideshow-xmed xmed:grid-cols-slideshow xmed:grid-rows-slideshow pt-4 px-4 xmed:pr-0 xmed:pb-4 xmed:pl-0 xmed:pt-16 mb-5">
             <figure class="justify-items-center xmed:relative xmed:mx-4 grid-in-slide">
                     {{ scaled_image(rooms_image) }}
                     <figcaption>
@@ -217,9 +235,10 @@ fabExternalLink: true
                 </div>
             </section>
         </rooms-gallery>
+        {{offers()}}
     </article>
 </div>
-<div class="bg-ams-primary w-full grid justify-items-center pt-24 pr-4 pl-4 -mt-24 relative z-0">
+<div class="bg-ams-primary w-full grid justify-items-center pt-8 xmed:pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
         <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white">
             Bar. Restaurant. Cafe.
@@ -328,11 +347,11 @@ fabExternalLink: true
             <form-sender data-type="alist">
                 <form class="pt-4">
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
                         <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
                     </div>
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
                         <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
                     </div>
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
