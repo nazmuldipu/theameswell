@@ -137,6 +137,11 @@ module.exports = {
       },
       inset: {
        '-0.5': '-0.125rem',
+       '81': '22.75rem',
+       '9999': '50%'
+      },
+      transitionProperty: {
+        'height': 'height'
       },
       textIndent: (theme, { negative }) => ({
         ...negative({
