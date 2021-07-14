@@ -480,3 +480,17 @@ fabExternalLink: true
     </div>
     {% endfor %}
 </div>
+
+<div class="w-full grid justify-items-center bg-ams-base pb-12">
+    {% for feature in features %}
+        <div class="w-full grid mt-14">
+            <section class="mx-24 shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-2">
+                <div class="p-8">
+                    <h2 class="font-serif text-2xl xmed:text-4xl pt-8">{{feature.title}}</h2>
+                    <div class="pt-6 pb-8 text-lg max-w-6xl"> {{feature.text}} </div>
+                </div>
+                <div class="p-8">images</div>
+            </section>
+        </div>
+    {% endfor %}
+</div>

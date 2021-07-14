@@ -2915,5 +2915,29 @@
         }
       ]
     }
+  ],
+  "features":[
+    {
+      "title":"Rest",
+      "text":"Our blackout curtains and high-grade STC rating (Sound Transmission Classification) create a quiet, calming environment in every guest room Curl up in 100% cotton Rivolta Italian linens atop plush Sealy mattresses for a luxurious sleep experience. And rest easy knowing that our medical-grade air filtration system ensures you never share air with another guest room.",
+      "img":"arbor_suit_02.jpg"
+    },{
+      "title":"Refresh",
+      "text":"Enjoy an entirely organic shower experience with bath amenities by Juice Beauty. The products are as good for your body as they are for the planet and will leave you feeling refreshed with their invigorating green apple scent. Step out of the shower and into one of our amazingly soft Ameswell robes.",
+      "img":"corner_one_bedroom_suite_04.jpg"
+    },{
+      "title":"Refuel",
+      "text":"Turn on the electric kettle and start your day with a smooth cup of coffee by local Santa Cruz roaster, Steeped. In-room bottled water is provided along with filtered water stations throughout the property to help you stay well-hydrated during your stay. Easy online ordering is available from our bar and restaurants to cure any craving from morning to night.",
+      "img":"wellness_king_01.jpg"
+    },{
+      "title":"Retreat",
+      "text":"Featuring floor-to-ceiling windows, each guest room offers a retreat where you can get work done or watch your favorite show on a 65” Samsung Smart TV. A dedicated workspace, ultra-fast complimentary WiFi and abundance of charging ports keep you connected; a sitting area provides space to kick back with a book when you want to unplug.",
+      "img":"room-detail-3.jpg"
+    },
+    {
+      "title":"Restore",
+      "text":"At The Ameswell Hotel, we are committed to doing our part to protect and restore the environment. You will see evidence of this throughout your guest room - from the organic bath amenities to our commitment to zero single-use plastic. We have given special attention to each sustainability detail so that you can feel good about making a green travel decision.",
+      "img":"about-5.jpg"
+    }
   ]
 }
