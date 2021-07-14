@@ -1,9 +1,9 @@
 {% macro component_carousel(content) %}
     <figure class="{{ background_color if background_color }}">
     <media-carousel>
-        <div class="swiper-container w-full h-full">
+        <div class="swiper-container w-full h-full relative">
             
-                <nav class="com-car-nav flex flex-row justify-between relative z-20 -mt-10 top-72 xmed:top-32 px-4">
+                <nav class="com-car-nav">
                     <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                         previous
                     </button>
