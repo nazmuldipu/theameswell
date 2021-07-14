@@ -37,15 +37,15 @@ fabExternalLink: true
                 </figcaption>
                 <figcaption class="mt-8 xmed:mt-0 mx-4 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
                     <header>
-                        <h2 class="title-display text-3xl pb-6">
+                        <h2 class="title-display text-4xl pb-6">
                             {{ item.title | safe }}
                         </h2>
                     </header>
-                    <p class="mb-4 xmed:mb-12">
+                    <p class="mb-4 text-lg font-sans xmed:mb-12">
                         {{ item.p1 }}
                     </p>
                     <p class="inline-block border-b border-ams-gold mx-4">
-                        {{ primaryButton(item.link, 'Book Now', 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-xl') }}
+                        {{ primaryButton(item.link, 'Book Now', 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-lg font-medium') }}
                     </p>
                 </figcaption>
             </figure>
