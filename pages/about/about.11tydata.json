@@ -177,136 +177,168 @@
             }
         ]
     },
-    "sustainable_image": {
-        "artDirection": [
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(min-width:900.1px)",
-                "sizes": "40vw",
-                "type": "jpg",
-                "src": "images/about-1",
-                "alt": "The exterior of the Ameswell Hotel",
-                "intrinsicwidth": "1064" 
-            },
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(max-width:900px)",
-                "sizes": "90vw",
-                "type": "jpg",
-                "src": "images/about-1",
-                "alt": "The exterior of the Ameswell Hotel",
-                "intrinsicwidth": "1064"
+    "about_items":[
+        {
+            "h2":" We are sustainable",
+            "h3":"We are the greenest hotel in Silicon Valley",
+            "p":"From the solar panels powering our LED bulbs to our connection to the local bike and hiking trail. We have eliminated 96% of single-use plastic on premises – and won’t stop until we’re at 100%. Enjoy organic bath products and locally sourced food knowing we’re on the same page: sustainability first.",
+            "image": {
+                "artDirection": [
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(min-width:900.1px)",
+                        "sizes": "40vw",
+                        "type": "jpg",
+                        "src": "images/about-1",
+                        "alt": "The exterior of the Ameswell Hotel",
+                        "intrinsicwidth": "1064" 
+                    },
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(max-width:900px)",
+                        "sizes": "90vw",
+                        "type": "jpg",
+                        "src": "images/about-1",
+                        "alt": "The exterior of the Ameswell Hotel",
+                        "intrinsicwidth": "1064"
+                    }
+                ]
             }
-        ]
-    },
-    "luxury_image": {
-        "artDirection": [
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(min-width:900.1px)",
-                "sizes": "40vw",
-                "type": "jpg",
-                "src": "images/about-2",
-                "alt": "A dark wood table in a conference room at the Ameswell Hotel",
-                "intrinsicwidth": "1064" 
-            },
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(max-width:900px)",
-                "sizes": "90vw",
-                "type": "jpg",
-                "src": "images/about-2",
-                "alt": "A dark wood table in a conference room at the Ameswell Hotel",
-                "intrinsicwidth": "1064"
+        },
+        {
+            "h2":"We are relaxed luxury",
+            "h3":"We offer a new kind of approachable sophistication",
+            "p":"Beautifully designed, yet unfussy; high-tech and still high-touch. We have just what you need (and nothing you don’t) – excess has been edited out.",
+            "image": {
+                "artDirection": [
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(min-width:900.1px)",
+                        "sizes": "40vw",
+                        "type": "jpg",
+                        "src": "images/about-2",
+                        "alt": "A dark wood table in a conference room at the Ameswell Hotel",
+                        "intrinsicwidth": "1064" 
+                    },
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(max-width:900px)",
+                        "sizes": "90vw",
+                        "type": "jpg",
+                        "src": "images/about-2",
+                        "alt": "A dark wood table in a conference room at the Ameswell Hotel",
+                        "intrinsicwidth": "1064"
+                    }
+                ]
             }
-        ]
-    },
-    "wellbeing_image": {
-        "artDirection": [
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(min-width:900.1px)",
-                "sizes": "40vw",
-                "type": "jpg",
-                "src": "images/about-3",
-                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
-                "intrinsicwidth": "1064" 
-            },
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(max-width:900px)",
-                "sizes": "90vw",
-                "type": "jpg",
-                "src": "images/about-3",
-                "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
-                "intrinsicwidth": "1064"
+        },
+        {
+            "h2":"We are about wellbeing",
+            "h3":"At Ameswell, health means mind, body, and soul",
+            "p":"From our medical-grade air filtration to contactless ordering systems, safety is paramount. Enjoy a meditation session or workout on The Mirror. Stretch out at the pool or in our fitness center. Hop on a bike trail – real or via Peloton. The Ameswell will keep you grounded so you’re ready for liftoff.",
+            "image": {
+                "artDirection": [
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(min-width:900.1px)",
+                        "sizes": "40vw",
+                        "type": "jpg",
+                        "src": "images/about-3",
+                        "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                        "intrinsicwidth": "1064" 
+                    },
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(max-width:900px)",
+                        "sizes": "90vw",
+                        "type": "jpg",
+                        "src": "images/about-3",
+                        "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
+                        "intrinsicwidth": "1064"
+                    }
+                ]
             }
-        ]
-    },
-    "community_image": {
-        "artDirection": [
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(min-width:900.1px)",
-                "sizes": "40vw",
-                "type": "jpg",
-                "src": "images/about-4",
-                "alt": "A stylized view of the exterior of Hangar One",
-                "intrinsicwidth": "1064" 
-            },
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(max-width:900px)",
-                "sizes": "90vw",
-                "type": "jpg",
-                "src": "images/about-4",
-                "alt": "A stylized view of the exterior of Hangar One",
-                "intrinsicwidth": "1064"
+        },
+        {
+            "h2":"We are rooted in community",
+            "h3":"The Ameswell is a home base for all walks of life",
+            "p":"Whether you’re from across the planet, across the country or across the street. We’re a place to solidify connections and build something stronger and more fun, together.",
+            "image": {
+                "artDirection": [
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(min-width:900.1px)",
+                        "sizes": "40vw",
+                        "type": "jpg",
+                        "src": "images/about-4",
+                        "alt": "A stylized view of the exterior of Hangar One",
+                        "intrinsicwidth": "1064" 
+                    },
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(max-width:900px)",
+                        "sizes": "90vw",
+                        "type": "jpg",
+                        "src": "images/about-4",
+                        "alt": "A stylized view of the exterior of Hangar One",
+                        "intrinsicwidth": "1064"
+                    }
+                ]
             }
-        ]
-    },
-    "innovating_image": {
-        "artDirection": [
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(min-width:900.1px)",
-                "sizes": "40vw",
-                "type": "jpg",
-                "src": "images/about-5",
-                "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
-                "intrinsicwidth": "1064" 
-            },
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(max-width:900px)",
-                "sizes": "90vw",
-                "type": "jpg",
-                "src": "images/about-5",
-                "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
-                "intrinsicwidth": "1064"
+        },
+        {
+            "h2":" We are always innovating",
+            "h3":"The Ameswell mirrors the innovation that happens daily here in Silicon Valley",
+            "p":"We’re never satisfied with the status quo. We are inspired by our neighbors at NASA’s Ames Research Center, who pioneered jet propulsion – our goal is to keep experimenting and push the frontiers of amazing hospitality.",
+            "image": {
+                "artDirection": [
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(min-width:900.1px)",
+                        "sizes": "40vw",
+                        "type": "jpg",
+                        "src": "images/about-5",
+                        "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                        "intrinsicwidth": "1064" 
+                    },
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(max-width:900px)",
+                        "sizes": "90vw",
+                        "type": "jpg",
+                        "src": "images/about-5",
+                        "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
+                        "intrinsicwidth": "1064"
+                    }
+                ]
             }
-        ]
-    },
-    "independent_image": {
-        "artDirection": [
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(min-width:900.1px)",
-                "sizes": "40vw",
-                "type": "jpg",
-                "src": "images/about-6",
-                "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
-                "intrinsicwidth": "1064" 
-            },
-            {
-                "classes": "image-loader image-loader--white",
-                "media": "(max-width:900px)",
-                "sizes": "90vw",
-                "type": "jpg",
-                "src": "images/about-6",
-                "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
-                "intrinsicwidth": "1064"
+        },
+        {
+            "h2":"We are independent",
+            "h3":"We stand out from the crowd, just like the people who stay with us",
+            "p":"We are made for adventurers and self-starters; those who blaze their own trails. As an independent brand, we’re accountable to one opinion - yours. We look forward to welcoming you soon and hearing your voice about how we can make ourselves better.",
+            "image": {
+                "artDirection": [
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(min-width:900.1px)",
+                        "sizes": "40vw",
+                        "type": "jpg",
+                        "src": "images/about-6",
+                        "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
+                        "intrinsicwidth": "1064" 
+                    },
+                    {
+                        "classes": "image-loader image-loader--white",
+                        "media": "(max-width:900px)",
+                        "sizes": "90vw",
+                        "type": "jpg",
+                        "src": "images/about-6",
+                        "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
+                        "intrinsicwidth": "1064"
+                    }
+                ]
             }
-        ]
-    }
+        }
+    ]
 }
