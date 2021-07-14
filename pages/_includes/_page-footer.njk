@@ -1,10 +1,10 @@
 {% from "macros.njk" import fab, address_format %}
 {% from "skipper-footer.njk" import skipper_footer %}
 
-<footer class="grid justify-items-center bg-ams-primary xmed:bg-ams-primary w-full px-4">
-    <div class="xmed:grid xmed:grid-areas-footer xmed:grid-cols-footer xmed:grid-rows-footer xmed:items-stretch xmed:gap-x-8 px-4 xmed:px-0 pb-32 xmed:pb-16 max-w-screen-lg">
-        <a href="index.html" class="grid justify-items-center xmed:justify-items-start py-10 xmed:pt-14 xmed:px-4 grid-in-logo">
-            <svg aria-labelledby="footerLogo" role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 589.6 160.6" xml:space="preserve" class="fill-current text-ams-white w-3/5 max-w-xs min-w-2xs">
+<footer class="grid xmed:justify-items-center bg-ams-primary xmed:bg-ams-primary w-full px-4">
+    <div class="xmed:grid xmed:grid-areas-footer xmed:grid-cols-footer xmed:grid-rows-footer xmed:items-stretch xmed:gap-x-8 px-4 xmed:px-0 pb-8 xmed:pb-16 max-w-screen-lg">
+        <a href="index.html" class="grid justify-items-start pt-8 xmed:pt-14 xmed:px-4 grid-in-logo">
+            <svg aria-labelledby="footerLogo" role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 589.6 160.6" xml:space="preserve" class="fill-current text-ams-white w-3/5 max-w-xs min-w-2xs hidden xmed:block">
                 <title id="footerLogo">The Ameswell Hotel</title>
                 <path d="M165.1,113.5h241.3l-1.9-5.9H167L165.1,113.5z"/>
                 <path d="M234.2,135.1v9.8h-10.6v-9.8h-5.3v25h5.3v-9.8h10.6v9.8h5.4v-25H234.2z"/>
@@ -24,14 +24,30 @@
                 <path d="M564.2,21.2v39.9h25.4v-8.5h-17V21.2H564.2z"/>
                 <path d="M192.3,36.3l6.3-20c1.1-3,2.7-7.5,10.2-7.5c0.1,0,2.7,0,4.3,0.6c4,1.3,5.2,4.7,5.9,6.8l6.3,20h-33V36.3z M243.2,61.1l-15.3-47.9c0-0.1-4.2-13.2-19-13.2c-14.8,0-19,13-19,13.2l-15.3,47.9h9.7l4.8-15h39.7l4.8,15H243.2z"/>
             </svg>
+            <svg class="xmed:hidden" width="205" height="15" viewBox="0 0 205 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M158.837 5.19238V8.96161H154.713V5.19238H152.671V14.8078H154.713V11.0385H158.837V14.8078H160.879V5.19238H158.837Z" fill="white"/>
+                <path d="M166.119 10C166.119 11.6923 167.198 13.0769 168.547 13.0769C169.896 13.0769 171.013 11.6923 171.013 10C171.013 8.30769 169.934 6.92308 168.547 6.92308C167.198 6.92308 166.119 8.30769 166.119 10ZM173.132 10C173.132 12.7692 171.09 15 168.547 15C166.004 15 163.961 12.7692 163.961 10C163.961 7.23077 166.042 5 168.547 5C171.09 5 173.132 7.23077 173.132 10Z" fill="white"/>
+                <path d="M175.098 5.19238V7.23084H178.566V14.8078H180.647V7.23084H184.115V5.19238H175.098Z" fill="white"/>
+                <path d="M187.66 5.19238V14.8078H193.825V12.7693H189.741V11.0385H193.825V8.96161H189.741V7.23084H193.825V5.19238H187.66Z" fill="white"/>
+                <path d="M198.604 5.19238V14.8078H204.73V12.7693H200.646V5.19238H198.604Z" fill="white"/>
+                <path d="M0.269775 5.19238V7.23084H3.77634V14.8078H5.81865V7.23084H9.28669V5.19238H0.269775Z" fill="white"/>
+                <path d="M18.9972 5.19238V8.96161H14.9127V5.19238H12.8704V14.8078H14.9127V11.0001H18.9972V14.8078H21.0395V5.19238H18.9972Z" fill="white"/>
+                <path d="M25.8176 5.19238V14.8078H31.983V12.7693H27.8599V11.0001H31.983V8.96161H27.8599V7.23084H31.983V5.19238H25.8176Z" fill="white"/>
+                <path d="M71.9428 5.19238L67.8967 9.23084L63.8507 5.19238H62.7717V14.8078H64.814V9.077L67.8967 12.1155L70.9794 9.077V14.8078H73.0217V5.19238H71.9428Z" fill="white"/>
+                <path d="M77.7998 5.19238V14.8078H83.9267V12.7693H79.8421V11.0001H83.9267V8.96161H79.8421V7.23084H83.9267V5.19238H77.7998Z" fill="white"/>
+                <path d="M91.9417 14.9998C90.593 14.9998 89.1673 14.6536 87.9342 13.8459L88.2424 12.1536C89.5526 12.769 90.7857 13.1152 91.7876 13.1152C92.6353 13.1152 93.5986 12.8844 93.5986 12.0767C93.5986 10.5382 87.78 11.1152 87.78 7.84593C87.78 6.26901 89.437 4.92285 91.5178 4.92285C92.9436 4.92285 94.3308 5.34594 95.6795 6.19209L94.9473 7.73055C93.984 7.23055 92.7894 6.84593 91.8261 6.84593C90.6701 6.84593 90.1306 7.23055 90.1306 7.76901C90.1306 9.19209 95.9492 8.84593 95.9492 11.8459C95.9492 13.8844 94.0225 14.9998 91.9417 14.9998Z" fill="white"/>
+                <path d="M110.669 5.19238L108.01 11.0001L105.352 5.19238H103.155L104.504 8.00007L103.117 11.0001L100.419 5.19238H98.2229L102.885 15.0001H103.309L105.544 10.2693L107.818 15.0001H108.203L112.866 5.19238H110.669Z" fill="white"/>
+                <path d="M115.948 5.19238V14.8078H122.075V12.7693H117.991V11.0001H122.075V8.96161H117.991V7.23084H122.075V5.19238H115.948Z" fill="white"/>
+                <path d="M126.854 5.19238V14.8078H132.98V12.7693H128.896V5.19238H126.854Z" fill="white"/>
+                <path d="M136.179 5.19238V14.8078H142.306V12.7693H138.221V5.19238H136.179Z" fill="white"/>
+                <path d="M46.626 8.84612L48.1289 4.03843C48.3986 3.30766 48.7839 2.23073 50.595 2.23073C50.6336 2.23073 51.2501 2.23074 51.6354 2.38458C52.5988 2.69228 52.8685 3.49996 53.0612 4.03843L54.564 8.84612H46.626ZM58.8413 14.8077L55.142 3.30766C55.142 3.2692 54.1402 0.153809 50.5565 0.153809C46.9729 0.153809 45.971 3.30766 45.971 3.30766L42.2717 14.8077H44.6223L45.7783 11.1923H55.3347L56.4907 14.8077H58.8413Z" fill="white"/>
+            </svg>            
         </a>
         <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-hotel">
-            <input type="checkbox" id="page-footer__nav--1" class="page-footer__toggle hidden">
-            <label for="page-footer__nav--1" class="page-footer__toggle-button block border-b font-bold xmed:border-0">
+            <label class="page-footer__toggle-button hidden xmed:block font-bold">
                 Hotel
-                <span class="page-footer__toggle-button--arrow relative -top-1 inline-block w-2 h-2 border-r-2 border-b-2 transform rotate-45 ml-2 xmed:hidden"></span>
             </label>
-            <ul class="xmed:grid xmed:grid-cols-40-60 xmed:gap-x-6 xmed:pt-4 page-footer__menu hidden">
+            <ul class="grid grid-cols-footer-mobile xmed:grid-cols-40-60 gap-x-6 xmed:gap-x-10 xmed:pt-4">
                 <li class="py-2">
                     <a href="accessibility.html" class="text-ams-white">Accessibility</a>
                 </li>
@@ -47,19 +63,22 @@
                 <li class="py-2">
                     <a rel="noreferrer" target="_blank" href="https://ameswellhotel.pinpointhq.com" class="text-ams-white">Careers</a>
                 </li>
-                <li class="py-2">
+                <li class="py-2 xmed:w-52">
                     <a href="https://www.storeyhospitality.com/" rel="no-referrer" class="text-ams-white">Storey Hotel Mgmt.</a>
+                </li>
+                <li class="py-2">
+                    <a href="mailto:ameswell@m18pr.com" target="_blank" class="text-ams-white">Press</a>
                 </li>
                 <li class="py-2">
                     <a href="offers.html" class="text-ams-white">Offers</a>
                 </li>
                 <li class="py-2">
-                    <a href="mailto:ameswell@m18pr.com" target="_blank" class="text-ams-white">Press</a>
+                    <a href="location.html" class="text-ams-white">Location</a>
                 </li>
             </ul>
         </nav>
-        <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-contact">
-            <div class="page-footer__toggle-button block border-b font-bold xmed:border-0">
+        <nav class="pt-8 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-contact">
+            <div class="page-footer__toggle-button block font-bold">
                 Contacts
             </div>
             <address class="page-footer__menu xmed:grid xmed:pt-4 xmed:pb-8 not-italic">
@@ -69,10 +88,10 @@
                     </a>
                 </p>
                 <p class="py-2">
-                    <a href="tel:1-650-880-1000" class="text-ams-white">650-880-1000</a>
+                    <a href="mailto:info@theameswellhotel.com" rel="noreferrer" target="_blank" class="text-ams-white">info@theameswellhotel.com</a>
                 </p>
                 <p class="py-2">
-                    <a href="mailto:info@theameswellhotel.com" rel="noreferrer" target="_blank" class="text-ams-white">info@theameswellhotel.com</a>
+                    <a href="tel:1-650-880-1000" class="text-ams-white">650-880-1000</a>
                 </p>
                 <div class="flex space-x-4 -ml-2">
                     <a href="https://www.instagram.com/theameswellhotel/" target="_blank"><img alt="The Ameswell Hotel Instagram" class="p-2" src="/images/insta_icon.svg"></a>
