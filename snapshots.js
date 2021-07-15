@@ -7,7 +7,7 @@ const PORT = 8080
 const BASE_URL = `http://localhost:${PORT}`
 
 let options = {
-    widths: [768, 900, 1024, 1280]
+    widths: [360, 600, 1024, 1280]
 }
 
 // A script to navigate our app and take snapshots with Percy.

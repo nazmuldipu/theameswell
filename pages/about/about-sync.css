@@ -1,3 +1,8 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+@layer base{
+    .skip-ink{
+        text-decoration-skip-ink: none;
+    }
+}
