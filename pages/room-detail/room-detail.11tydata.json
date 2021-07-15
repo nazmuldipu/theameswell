@@ -1,84 +1,3220 @@
 {
-    "preload_images": [
+  "preload_images": [
+    {
+      "href": "images/rooms-hero-desktop_2400.webp",
+      "media": "(min-width:900.1px)"
+    },
+    {
+      "href": "images/rooms-hero-mobile.webp",
+      "media": "(max-width:900px)"
+    }
+  ],
+  "slides": [
+    {
+      "image": "images/homepage-video-bg-3",
+      "caption": "Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty."
+    },
+    {
+      "image": "images/homepage-3",
+      "caption": "Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty."
+    }
+  ],
+  "imageSlides": [
+    {
+      "artDirection": [
         {
-            "href": "images/rooms-hero-desktop_2400.webp",
-            "media": "(min-width:900.1px)"
+          "image": "images/room-detail-1",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
         },
         {
-            "href": "images/rooms-hero-mobile.webp",
-            "media": "(max-width:900px)"
+          "image": "images/room-detail-1",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
         }
-    ],
-    "slides": [
+      ]
+    },
+    {
+      "artDirection": [
         {
-            "image": "images/homepage-video-bg-3",
-            "caption": "Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty."
+          "image": "images/room-detail-2",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Wellness room with mirror fitness",
+          "intrinsicwidth": "2304"
         },
         {
-            "image": "images/homepage-3",
-            "caption": "Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty."
+          "image": "images/room-detail-2",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Wellness room with mirror fitness",
+          "intrinsicwidth": "2304"
         }
-    ],
-    "imageSlides": [
+      ]
+    },
+    {
+      "artDirection": [
         {
-            "artDirection": [
+          "image": "images/room-detail-3",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Suite living room",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Suite living room",
+          "intrinsicwidth": "2304"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "name": "Superior Rooms",
+      "description": "Immerse yourself in the design details of our Superior Rooms. Floor-to-ceiling windows let in the natural light so you can comfortably work; blackout curtains and plush mattresses create the perfect environment for you to rest and reset.",
+      "types": [
+        {
+          "name": "Superior King",
+          "description": [
+            "After a relaxing day of lounging by the pool, retreat to your comfortably appointed Superior King room and grab a complimentary cold bottle of water from your mini fridge. Drift off as you ponder the California-inspired naturescapes featured on your accent wall."
+          ],
+          "icons": { "sqft": "310", "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "Start at 310 square feet",
+            "Southeastern view or view of Ameswell lawn",
+            "Available as Hearing-Impaired Accessible Room"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
                 {
-                    "image": "images/room-detail-1",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "A bed in a sun filled guest room at the Ameswell Hotel",
-                    "intrinsicwidth": "2304"
+                  "image": "images/superior_king_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/room-detail-1",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "A bed in a sun filled guest room at the Ameswell Hotel",
-                    "intrinsicwidth": "2304"
+                  "image": "images/superior_king_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
                 }
-            ]
-        },
-        {
-            "artDirection": [
+              ]
+            },
+            {
+              "artDirection": [
                 {
-                    "image": "images/room-detail-2",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "Blue and white tiled walls accented by dark wood with a sink and bathtub",
-                    "intrinsicwidth": "2304"
+                  "image": "images/superior_king_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/room-detail-2",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "Blue and white tiled walls accented by dark wood with a sink and bathtub",
-                    "intrinsicwidth": "2304"
+                  "image": "images/superior_king_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
                 }
-            ]
-        },
-        {
-            "artDirection": [
+              ]
+            },
+            {
+              "artDirection": [
                 {
-                    "image": "images/room-detail-3",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "The living area in a suite at the Ameswell Hotel",
-                    "intrinsicwidth": "2304"
+                  "image": "images/superior_king_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/room-detail-3",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The living area in a suite at the Ameswell Hotel",
-                    "intrinsicwidth": "2304"
+                  "image": "images/superior_king_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
                 }
-            ]
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Superior Two Queens",
+          "description": [
+            "Grab a friend and explore all that the Ameswell has to offer – from fabulous food adventures to outdoor adventures. Wrap up the day in soft cotton robes sharing stories and laughs from your own comfy Queen beds."
+          ],
+          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5",
+            "395 square feet",
+            "Southeastern view or views of Ameswell lawn",
+            "Available as Hearing-Impaired Accessible Room",
+            "Option of adjoining to Premium King, based on availability"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_two_queens_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_two_queens_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_two_queens_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_two_queens_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_two_queens_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_two_queens_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_two_queens_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_two_queens_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/superior_two_queens_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/superior_two_queens_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Superior Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "name": "Deluxe Rooms",
+      "description": "Deluxe Rooms offer a place to kick back and relax or kick up the work pace. Lounge on the chaise or let your next great idea take flight at a desk inspired by the wing of an airplane.",
+      "types": [
+        {
+          "name": "Deluxe King",
+          "description": [
+            "Complimentary ultra-highspeed internet lets you work or catch up on emails quickly so you can stash your laptop in your safe and head over to Roger for a well-deserved cocktail and dinner. End the evening with a peaceful sleep on a plush Sealy mattress outfitted with luxurious Italian linens."
+          ],
+          "icons": { "sqft": "335", "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "Start at 335 square feet",
+            "Views of Ameswell lawn, NASA Ames or Southeastern view",
+            "Available as Hearing-Impaired Accessible Room",
+            "Available as Mobile-Impaired King Accessible Room"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Deluxe Two Queens",
+          "description": [
+            "Be alone together when you share one of our Deluxe Rooms with Two Queen beds. Enjoy plenty of space to stretch out in your own bed and binge your favorite Netflix series together on a 65” Samsung Smart TV."
+          ],
+          "icons": { "sqft": "395", "beds": "2 Qeens", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5",
+            "Start at 395 square feet",
+            "View of NASA Ames or Southeastern view",
+            "Available as Mobility-Impaired Accessible Room",
+            "Option of adjoining to Premium King, based on availability"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_two_queens_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_two_queens_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_two_queens_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_two_queens_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_two_queens_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_two_queens_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_two_queens_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_two_queens_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_two_queens_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_two_queens_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_two_queens_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_two_queens_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wellness Rooms",
+      "description": "Maintain your routine or start a new one in our signature Ameswell Wellness King Rooms. Choose from over 4,000 classes on Lululemon’s Mirror fitness app, maximize your workout with accessories from Fitnesse, and fuel your day with Jerry Rice’s all-natural energy drink, G.0.A.T. Fuel.",
+      "types": [
+        {
+          "name": "Wellness King",
+          "description": [
+            "Show yourself some self-love in a signature Ameswell King Wellness Room. Everything you need to stay fit is right at your fingertips, from the Mirror fitness app to easy access to the pool, spa treatment rooms and 1,600 square foot fitness center."
+          ],
+          "icons": { "sqft": "317", "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "317 square feet",
+            "Views of pool or trees",
+            "Lululemon’s Mirror Fitness App",
+            "Adjustable weights, resistance bands and training mat",
+            "Jerry Rice’s all-natural energy drink, G.O.A.T. Fuel",
+            "Easy access to pool, spa and fitness center",
+            "Available as Hearing-Impaired Accessible Room"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_07",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_07",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/wellness_king_08",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/wellness_king_08",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Premium Rooms",
+      "description": "Spread out in our spacious Premium Rooms with room to move and views that soothe. These bright, airy rooms offer an abundance of natural light, while filtering out noise so you can fully recharge.",
+      "types": [
+        {
+          "name": "Premium King",
+          "description": [
+            "Leave the world behind and soak up the views, not the noise, in a Premium King guest room. Close the blackout drapes at the end of the day and rest easy knowing that the air at Ameswell is filtered to medical-grade levels and guest rooms never share air."
+          ],
+          "icons": { "sqft": "375", "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "Start at 375 square feet",
+            "View of NASA Ames, Ameswell lawn or Southeastern view",
+            "Available as Hearing-Impaired Accessible Room",
+            "Available as Mobile-Impaired King Accessible Room",
+            "Option of adjoining to Two Queen room, based on availability"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Kings",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Premium Two Queens",
+          "description": [
+            "Bring the whole crew to explore the abundance of activities nearby and on-site at Ameswell. After a fun day of exploring, spread out in a Premium Room with two Queen beds for a movie night on your 65” Samsung Smart TV."
+          ],
+          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5",
+            "395 – 415 square feet",
+            "View of NASA Ames or Ameswell lawn",
+            "Available as Hearing-Impaired Accessible Room",
+            "Available as Mobile-Impaired King Accessible Room",
+            "Option of adjoining to Premium King, based on availability"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Accessible Rooms",
+      "description": "The Ameswell Hotel was designed to be a welcoming place for all our guests. Easily select from one of our many accessible guest rooms to find the one that best suits your needs.",
+      "types": [
+        {
+          "name": "King Accessible w/Roll in Shower",
+          "description": [
+            "Our Accessible King Rooms are 440 square feet and feature a plush Sealy King bed with Rivolta Italian linens, an abundance of USB and USB-C charging ports, and 100% Organic bath amenities by Juice Beauty.",
+            "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the bed. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
+            "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped.  "
+          ],
+          "icons": { "sqft": "440", "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "440 square feet",
+            "View of NASA Ames",
+            "King bed",
+            "Roll-in shower with foldable seat"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/king_accessible_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/king_accessible_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/king_accessible_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/king_accessible_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/king_accessible_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/king_accessible_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/king_accessible_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/king_accessible_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/king_accessible_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/king_accessible_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/king_accessible_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/king_accessible_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/king_accessible_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/king_accessible_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "King Accessible w/Roll in Shower",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Two Queens Accessible",
+          "description": [
+            "Our Accessible Two Queen rooms offer an extra bed for a guest or caregiver. At a spacious 475 square feet, these rooms feature two plush Sealy Queen mattresses with Rivolta Italian bed linens, an abundance of USB and USB-C charging ports, and 100% Organic bath amenities by Juice Beauty.",
+            "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the beds. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
+            "This room features a bathtub with safety grab bars mounted on the wall. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
+          ],
+          "icons": { "sqft": "475", "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5",
+            "475 square feet",
+            "View of NASA Ames",
+            "Two Queen beds",
+            "Bathtub with safety grab bars"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Two Queens Accessible w/Roll in Shower",
+          "description": [
+            "Our Accessible Two Queen rooms offer an extra bed for a guest or caregiver. At a spacious 475 square feet, these rooms feature two plush Sealy Queen mattresses with Rivolta Italian bed linens, an abundance of USB and USB-C charging ports, and 100% Organic bath amenities by Juice Beauty.",
+            "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the beds. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
+            "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
+          ],
+          "icons": { "sqft": "475", "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5",
+            "475 square feet",
+            "View of NASA Ames",
+            "Two Queen beds",
+            "Roll-in shower with foldable seat"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/two_queens_accessible_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/two_queens_accessible_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Two Queens Accessible",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Superior King Hearing-Impaired Accessible",
+          "description": [
+            "Featuring visual doorbells, these comfortably appointed rooms are designed to make our hearing-impaired guests as comfortable as possible. Curl up in a robe or luxurious Italian bed linens to fully rest and reset."
+          ],
+          "icons": { "sqft": 310, "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "Start at 310 square feet",
+            "Views of Ameswell lawn or Moffett Boulevard",
+            "King bed",
+            "Shower",
+            "Visual doorbell"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-1",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Hotel room with view",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-1",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Hotel room with view",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-2",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness room with mirror fitness",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-2",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness room with mirror fitness",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-3",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Suite living room",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-3",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Suite living room",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Superior Two Queens Hearing-Impaired Accessible",
+          "description": [
+            "You and your guest can rest easy with the addition of a visual doorbell in the Superior Two Queens Hearing-Impaired Accessible room. An abundance of charging ports and ultra-highspeed internet service keeps you connected; plush mattresses and exquisite linens help you rest."
+          ],
+          "icons": { "sqft": 310, "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 5",
+            "Start at 375 square feet",
+            "Views of Ameswell lawn or Moffett Boulevard",
+            "Two Queen bed",
+            "Shower",
+            "Visual doorbell"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-1",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Hotel room with view",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-1",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Hotel room with view",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-2",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Wellness room with mirror fitness",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-2",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness room with mirror fitness",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-3",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Suite living room",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-3",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Suite living room",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Deluxe King Hearing-Impaired Accessible",
+          "description": [
+            "Our Deluxe King rooms feature a plush Sealy King mattress with Rivolta Italian bed linens, organic bath amenities, soft Ameswell robes, and a visual doorbell for our hearing-impaired guests. "
+          ],
+          "icons": { "sqft": 335, "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "Start at 335 square feet",
+            "Views of NASA Ames",
+            "King bed",
+            "Shower",
+            "Visual doorbell"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/deluxe_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/deluxe_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Deluxe King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Premium King Hearing-Impaired Accessible",
+          "description": [
+            "Our Spacious Premium King guestrooms provide an abundance of USB and USB-C charging ports and a visual doorbell for our hearing-impaired guests. Floor-to-ceiling windows let in the natural light, while blackout curtains help provide a restful sleep."
+          ],
+          "icons": { "sqft": 375, "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "Start at 375 square feet",
+            "Views of Ameswell lawn",
+            "King bed",
+            "Shower",
+            "Visual doorbell"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Kings",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_king_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_king_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium King",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Junior Suite Mobility-Impaired Accessible",
+          "description": [
+            "Starting at 525 square feet, Junior Suites feature an en suite sitting area with multiple floor-to-ceiling windows for entertaining guests and a King bed with exquisite Italian linens when you are ready to call it a day.",
+            "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the bed. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
+            "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
+          ],
+          "icons": { "sqft": 525, "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 5",
+            "525-610 square feet",
+            "Event lawn",
+            "Roll-in shower with foldable seat"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Premium Two Queen Hearing-Impaired Accessible",
+          "description": [
+            "Our Spacious Premium Two Queen beds guestrooms provide two plush Sealy Queen mattresses with luxurious Italian bed linens and a visual doorbell. Floor-to-ceiling windows let in the natural light, while blackout curtains help provide a restful sleep."
+          ],
+          "icons": { "sqft": 395, "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5",
+            "395 – 415 square feet",
+            "Views of NASA Ames or Ameswell lawn",
+            "Two Queen beds",
+            "Shower",
+            "Visual doorbell"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/premium_two_queens_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/premium_two_queens_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Premium Two Queens",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Suites",
+      "description": "Experience the Suite Life with plenty of room to entertain or just to enjoy some extra quiet space for yourself. Go ahead. You deserve it.",
+      "types": [
+        {
+          "name": "Junior Suite",
+          "description": [
+            "Starting at 525 square feet, Junior Suites feature an en suite sitting area with multiple floor-to-ceiling windows for entertaining guests and a King bed with exquisite Italian linens when you are ready to call it a day."
+          ],
+          "icons": { "sqft": "525-610", "beds": "1 King", "capacity": "3" },
+          "details": [
+            "Sleeps up to 3",
+            "525 – 610 square feet",
+            "Views of Pool or Event Lawn",
+            "Shower",
+            "Mobility Accessible Room Available"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/junior_suite_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/junior_suite_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Junior Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Corner One-Bedroom Suite",
+          "description": [
+            "Enjoy views for days in one of our Corner One-Bedroom Suites. At 790 square feet, these suites offer a private King bedroom and separate living space featuring pull-out sofas and powder rooms."
+          ],
+          "icons": { "sqft": "790", "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 3",
+            "790 square feet",
+            "Views of Ameswell lawn",
+            "1.5 baths",
+            "Bathtub and Shower",
+            "Separate living room with pullout sofa"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/corner_one_bedroom_suite_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/corner_one_bedroom_suite_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/corner_one_bedroom_suite_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/corner_one_bedroom_suite_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/corner_one_bedroom_suite_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/corner_one_bedroom_suite_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/corner_one_bedroom_suite_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/corner_one_bedroom_suite_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/corner_one_bedroom_suite_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/corner_one_bedroom_suite_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/corner_one_bedroom_suite_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/corner_one_bedroom_suite_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/corner_one_bedroom_suite_07",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/corner_one_bedroom_suite_07",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Corner One-Bedroom Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Arbor Suite",
+          "description": [
+            "Immerse yourself in luxury. With wraparound windows in the living space, every detail of this suite is designed for a truly modern luxury experience. Sink into the blue velvet couch, soak in the tub or soak in the views. This is life at its best."
+          ],
+          "icons": { "sqft": "779", "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5 people",
+            "779 square feet",
+            "Wrap around windows with views of Ameswell lawnn",
+            "1 baths",
+            "Separate bathtub and shower",
+            "Separate living room with pullout sofa"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/arbor_suit_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/arbor_suit_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/arbor_suit_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/arbor_suit_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness room with mirror fitness",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/arbor_suit_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Suite living room",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/arbor_suit_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/arbor_suit_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/arbor_suit_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/arbor_suit_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/arbor_suit_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness room with mirror fitness",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/arbor_suit_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Suite living room",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/arbor_suit_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Arbor Suit",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ameswell Suite",
+          "description": [
+            "Three is never a crowd in the Ameswell Suite. At 955 square feet, this is our most spacious guest room. With a private King bedroom, pull-out sofa and two full baths, there is plenty of room for family or friends to join in the fun."
+          ],
+          "icons": { "sqft": "955", "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5 people",
+            "955 square feet",
+            "View of swimming pool",
+            "2 full baths",
+            "2 showers and 1 separate bathtub",
+            "Separate living room with pullout sofa",
+            "Hearing-Impaired Accessible Suite",
+            "Adjoining Deluxe King room on request, based on availability"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-1",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-1",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-2",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-2",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/room-detail-3",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/room-detail-3",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Executive Suite",
+          "description": [
+            "Good sleep is sacred, and this is your chance to indulge. Book an Executive Suite and keep work and entertaining in your spacious living area with a half bath, then leave the world behind with a relaxing soak in your tub and deep sleep in a separate, quiet King bedroom."
+          ],
+          "icons": { "sqft": "690", "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5 people",
+            "1 King Bed",
+            "1 Luxury linen",
+            "1 Sofa Bed",
+            "690 ft2 / 64 m2"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_07",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_07",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_08",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_08",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "features":[
+    {
+      "title":"High-speed wifi & Workstation",
+      "text":"Blazing fast internet. How fast? We will tell you sometime soon! ",
+      "classes":"block xmed:hidden",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    },
+    {
+      "title":"100% Organic Bath Amenities",
+      "text":"Juice Beauty and The Ameswell Hotel have collaborated to bring guests a truly Farm-to-Beauty experience. On its Sonoma County organic farm, Juice Beauty grows the antioxidant rich ingredients that go into all of our bath amenities. Plus, our dispensing program eliminates an estimated 350,000 plastic bottles per year, furthering our joint commitment to sustainability",
+      "classes":"block xmed:hidden",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/arbor_suit_05",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/arbor_suit_05",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    },
+    {
+      "title":"Rest",
+      "text":"Our blackout curtains and high-grade STC rating (Sound Transmission Classification) create a quiet, calming environment in every guest room Curl up in 100% cotton Rivolta Italian linens atop plush Sealy mattresses for a luxurious sleep experience. And rest easy knowing that our medical-grade air filtration system ensures you never share air with another guest room.",
+      "img":{
+          "artDirection": [
+              {
+                  "classes": "image-loader",
+                  "media": "(min-width:900.1px)",
+                  "sizes": "40vw",
+                  "type": "jpg",
+                  "src": "images/arbor_suit_02",
+                  "alt": "Outdoor event venue",
+                  "intrinsicwidth": "1064" 
+              },
+              {
+                  "classes": "image-loader",
+                  "media": "(max-width:900px)",
+                  "sizes": "100vw",
+                  "type": "jpg",
+                  "src": "images/arbor_suit_02",
+                  "alt": "Outdoor event venue",
+                  "intrinsicwidth": "750"
+              }
+          ]
+      }
+    },
+    {
+      "title":"Refresh",
+      "text":"Enjoy an entirely organic shower experience with bath amenities by Juice Beauty. The products are as good for your body as they are for the planet and will leave you feeling refreshed with their invigorating green apple scent. Step out of the shower and into one of our amazingly soft Ameswell robes.",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/corner_one_bedroom_suite_04",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/corner_one_bedroom_suite_04",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    },{
+      "title":"Refuel",
+      "text":"Turn on the electric kettle and start your day with a smooth cup of coffee by local Santa Cruz roaster, Steeped. In-room bottled water is provided along with filtered water stations throughout the property to help you stay well-hydrated during your stay. Easy online ordering is available from our bar and restaurants to cure any craving from morning to night.",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/wellness_king_01",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/wellness_king_01",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    },{
+      "title":"Retreat",
+      "text":"Featuring floor-to-ceiling windows, each guest room offers a retreat where you can get work done or watch your favorite show on a 65” Samsung Smart TV. A dedicated workspace, ultra-fast complimentary WiFi and abundance of charging ports keep you connected; a sitting area provides space to kick back with a book when you want to unplug.",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/room-detail-3",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    },
+    {
+      "title":"Restore",
+      "text":"At The Ameswell Hotel, we are committed to doing our part to protect and restore the environment. You will see evidence of this throughout your guest room - from the organic bath amenities to our commitment to zero single-use plastic. We have given special attention to each sustainability detail so that you can feel good about making a green travel decision.",
+      "img":{
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "40vw",
+                "type": "jpg",
+                "src": "images/about-5",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "1064" 
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/about-5",
+                "alt": "Outdoor event venue",
+                "intrinsicwidth": "750"
+            }
+        ]
+      }
+    }
+  ],
+  "offers": [
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-1",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-1",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Fresh Start",
+        "p1": "Start your day off right with a daily $20 credit at The Flyby café. Serving delicious and healthy breakfasts featuring made-to-order meals, grab and go options and artisan coffee."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-2",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-2",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Puppy Love",
+        "p1": "Treat your four-legged friend to an unforgettable stay at our pet-friendly property!  With a discounted pet fee of $50 (reg. $75), collapsible dog bowl, pet toy, and organic dog treat."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-3",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Work from Ameswell",
+        "p1": "Work from one of our spacious, light-filled guest rooms or many public spaces. Get inspired in the Ames Library or lounging by the pool. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, one coffee, tea, or G.0.A.T. Fuel Energy Drink."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-2",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-2",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Wellness King",
+        "p1": "Make the most of our wellness offerings when you book a room in our Wellness Wing. Each room offers over 4,000 classes on the Mirror – from yoga, meditation, ballet and boxing. This offer includes the Mirror Fitness app, adjustable weights, resistance bands and yoga mat by Team Fitnesse, choice of G.O.A.T. Fuel All Natural Energy Drink by Jerry Rice, and easy access to fitness center, outdoor pool and spa treatment rooms."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/room-detail-3",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/room-detail-3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Date Night",
+        "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
+    }
+]
 }

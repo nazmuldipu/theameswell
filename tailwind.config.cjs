@@ -23,6 +23,10 @@ module.exports = {
         'no-webp__hero--page-detail': "url('/images/rooms-hero-desktop.jpg')",
         'hero--page-detail-xmed': "url('/images/rooms-hero-mobile.webp')",
         'no-webp__hero--page-detail-xmed': "url('/images/rooms-hero-mobile.jpg')",
+        'hero--page-faq': "url('/images/hero-faq.webp')",
+        'no-webp__hero--page-faq': "url('/images/hero-faq.jpg')",
+        'hero--page-faq-xmed': "url('/images/hero-faq_xmed.webp')",
+        'no-webp__hero--page-faq-xmed': "url('/images/hero-faq_xmed.jpg')",
         'hero--dining-xmed': "url('/images/hero-dining_xmed.webp')",
         'no-webp__hero--dining-xmed': "url('/images/hero-dining_xmed.jpg')",
         'hero--dining': "url('/images/hero-dining.webp')",
@@ -89,6 +93,7 @@ module.exports = {
         'ams-taupe': '#686058',
         'ams-grey': '#c2b8ab',
         'ams-gold': '#857550',
+        'ams-sand': '#DBC8B6',
         'ams-cyan': '#00aeef',
         'ams-green': '#00a651',
         'ams-orange': '#f7941e',
@@ -117,7 +122,8 @@ module.exports = {
         'slideshow': '55% 45%',
         'sm-auto': 'auto 1fr',
         'auto-sm': '1fr auto',
-        'footer': 'repeat(3, 1fr)'
+        'footer': 'repeat(3, 1fr)',
+        'footer-mobile': 'max-content max-content'
       },
       gridTemplateAreas: {
         'slideshow': ['slide', 'details', 'amenities', 'cta'],
@@ -136,6 +142,11 @@ module.exports = {
       },
       inset: {
        '-0.5': '-0.125rem',
+       '81': '22.75rem',
+       '9999': '50%'
+      },
+      transitionProperty: {
+        'height': 'height'
       },
       textIndent: (theme, { negative }) => ({
         ...negative({
