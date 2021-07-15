@@ -75,6 +75,9 @@ module.exports = {
         'medium': '1024px',
         'large': '1280px'
       },
+      height: {
+        '800': '50rem'
+      },
       minWidth: {
        '2xs': '14rem'
       },
@@ -116,6 +119,7 @@ module.exports = {
         'footer': 'repeat(3, auto)'
       },
       gridTemplateColumns: {
+        '50-50': '1fr 1fr',
         'sm-main-sm': '20% auto 20%',
         '40-60': '2fr 3fr',
         '60-40': '3fr 2fr',
@@ -134,6 +138,9 @@ module.exports = {
         '0': '0ms',
         '250': '250ms'
       },
+      backgroundColor: {
+        'button': '#857550'
+      },
       transitionDelay: {
         '0': '0ms',
       },
@@ -142,6 +149,10 @@ module.exports = {
       },
       inset: {
        '-0.5': '-0.125rem',
+       'right-2': '0.75rem',
+       'top-2': '0.75rem',
+       'left-3': '0.75rem',
+       'right-3': '0.75rem',
       },
       textIndent: (theme, { negative }) => ({
         ...negative({

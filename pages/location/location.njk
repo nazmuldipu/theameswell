@@ -27,525 +27,31 @@ permalinkBypassOutputDir: true
     </article>
 </div>
 <div class="grid xmed:justify-items-center w-full bg-ams-base pt-8 pb-8">
-    <article class="p-0 xmed:mt-4 mb-4 p-4">
+    <article class="p-0 xmed:mt-4 mb-4">
         <section class="max-w-screen-xl hidden xmed:grid xmed:grid-cols-50-50 gap-4 xmed:p-4">
-            <ul>
-                {# Category - Shop #}
-
-                <li class="mb-6">
+            <div>
+            
+                {% for item in shop %}
+                <div class="mb-6">
                     <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Shop</div>
-                            <img src="images/downtown-mountain-view.jpg" class="w-full mb-4" alt="Downtown Mountain View">   
+                    <div class="relative">
+                            <div class="absolute bg-ams-white text-xs w-24 p-2 top-2 right-2 text-center">{{ item.category_name }}</div>
+                            <img src="{{ item.image }}" class="w-full mb-4" alt="{{ item.imgalt }}">   
                     </div>
                     <div class="xmed:px-4">
                             <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Downtown Mountain View</div>
-                                <div class="justify-items-end text-ams-gold">2.4 mi</div>
+                                <div class="title justify-items-start">{{ item.card_title }}</div>
+                                <div class="justify-items-end text-ams-gold">{{ item.distance }}</div>
                             </div>    
-                            <p>Walking distance from The Ameswell Hotel, Downtown Mountain View is filled with local boutiques, salons and restaurants featuring international cuisines that celebrate this diverse community.</p>          
+                            <p>{{ item.card_body }}</p>          
                     </div>               
                     </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Shop</div>
-                            <img src="images/standford-shopping-center.jpg" class="w-full mb-4" alt="Stanford Shopping Center">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Stanford Shopping Center</div>
-                                <div class="justify-items-end text-ams-gold">7.6 mi</div>
-                            </div>    
-                            <p>You will find everything you need at Northern California’s best open-air, upscale shopping mall. Explore high-end boutiques and department stores like Neiman Marcus, Nordstrom and Bloomingdales.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Shop</div>
-                            <img src="images/santana-row.jpg" class="w-full mb-4" alt="Santana Row">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Santana Row</div>
-                                <div class="justify-items-end text-ams-gold">11.2 mi</div>
-                            </div>    
-                            <p>Explore over 50 retails stores from brands you know to local designers you need to know, and over 30 restaurants and bars at this bustling San Jose shopping district.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Shop</div>
-                            <img src="images/sf-premium-outlets.jpg" class="w-full mb-4" alt="San Francisco Premium Outlets">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">San Francisco Premium Outlets</div>
-                                <div class="justify-items-end text-ams-gold">34.7 mi</div>
-                            </div>    
-                            <p>The San Francisco Premium Outlets are actually located in Livermore, just a 35-minute drive from The Ameswell Hotel, and feature popular designers at discounted prices.</p>          
-                    </div>               
-                    </div>
-                </li>
-
-                {# Category - Explore #}
-
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/ames-research-center.jpg" class="w-full mb-4" alt="Nasa Ames Visitor's Center">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">NASA Ames Visitor's Center</div>
-                                <div class="justify-items-end text-ams-gold">0.6 mi</div>
-                            </div>    
-                            <p>The Ameswell Hotel takes inspiration from the innovative spirit of Ames Research Center. Their visitor’s center features out-of-this-world exhibits and unique NASA-inspired gifts sure to delight.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/moffett-field-historical-society-museum.jpg" class="w-full mb-4" alt="Moffett Field Historical Society Museum">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Moffett Field Historical Society Museum</div>
-                                <div class="justify-items-end text-ams-gold">1.2 mi</div>
-                            </div>    
-                            <p>Just across the highway from The Ameswell Hotel, this museum run by NASA Ames Research Center celebrates the deep history of the San Francisco Bay Area and its important role in aviation and national defense.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/computer-history-museum.jpg" class="w-full mb-4" alt="Computer History Museum">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Computer History Museum</div>
-                                <div class="justify-items-end text-ams-gold">1.6 mi</div>
-                            </div>    
-                            <p>Located in Mountain View, the Computer History Museum features stories and artifacts from the information age and explores the impact of computers on society.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/intel-museum.jpg" class="w-full mb-4" alt="Intel Museum">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Intel Museum</div>
-                                <div class="justify-items-end text-ams-gold">6.8 mi</div>
-                            </div>    
-                            <p>The San Francisco Premium Outlets are actually located in Livermore, just a 35-minute drive from The Ameswell Hotel, and feature popular designers at discounted prices.</p>          
-                    </div>               
-                    </div>
-                </li> 
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/winchester-mystery-mansion.jpg" class="w-full mb-4" alt="Winchester Mystery Mansion">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Winchester Mystery Mansion</div>
-                                <div class="justify-items-end text-ams-gold">11.3 mi</div>
-                            </div>    
-                            <p>Visit this beautiful and bizarre historic mansion, once home to Sarah Winchester, heiress to the Winchester Fire Arms fortune.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/museums-at-stanford-univeristy.jpg" class="w-full mb-4" alt="Museums at Stanford Univeristy">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Museums at Stanford Univeristy</div>
-                                <div class="justify-items-end text-ams-gold">7.6 mi</div>
-                            </div>    
-                            <p>Make a day of exploring the renowned art collections at Stanford University: Cantor Center for Visual Arts, Anderson Collection and Rodin Sculpture Garden</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/filoli-house-and-botanical-gardens.jpg" class="w-full mb-4" alt="Filoli House and Botanical Gardens">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Filoli House and Botanical Gardens</div>
-                                <div class="justify-items-end text-ams-gold">18.6 mi</div>
-                            </div>    
-                            <p>Step back in time with a visit to this exquisite Georgian revival mansion and its botanical gardens.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Explore</div>
-                            <img src="images/rosicrucian-egyptian-museum.jpg" class="w-full mb-4" alt="Rosicrucian Egyptian Museum">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Rosicrucian Egyptian Museum </div>
-                                <div class="justify-items-end text-ams-gold">11.8 mi</div>
-                            </div>    
-                            <p>Walk like an Egyptian! The Rosicrucian Egyptian Museum in San Jose is home to the largest collection of Egyptian artifacts on exhibit in western North America.</p>          
-                    </div>               
-                    </div>
-                </li>                 
-
-                {# Category - Sip #}
-
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Sip</div>
-                            <img src="images/silicon-valley-wine-trail.jpg" class="w-full mb-4" alt="Silicon Valley Wine Trail">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Silicon Valley Wine Trail</div>
-                                <div class="justify-items-end text-ams-gold">11.4 mi</div>
-                            </div>    
-                            <p>Mountain View is situated close to the renowned wineries of Saratoga, Cupertino and Los Gatos: Mountain Winery, Ridge Vineyards, Coorper-Garrod Vineyards, MJA Vineyards, Cinnabar, Vldovich Vineyards and Testarossa Winery.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Sip</div>
-                            <img src="images/mid-peninsula-wine-trail.jpg" class="w-full mb-4" alt="Mid-Peninsula Wine Trail">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Mid-Peninsula Wine Trail</div>
-                                <div class="justify-items-end text-ams-gold">12.9 mi</div>
-                            </div>    
-                            <p>Visit the small, family-owned wineries of the Mid-Peninsula Wine Trail in nearby San Carlos: Cuvee Wine Cellars, Domenico Winery, Flying Suitcase Wines, Old County Cellars, Russian Ridge Winery, and Zoetic Wines.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Sip</div>
-                            <img src="images/santa-cruz-wine-region.jpg" class="w-full mb-4" alt="Santa Cruz Wine Region">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Santa Cruz Wine Region</div>
-                                <div class="justify-items-end text-ams-gold">38.2 mi</div>
-                            </div>    
-                            <p>It is not officially a trail, but you will find these scenic wineries and more in the Santa Cruz region: Bargetto Winery, Hunter Hill Vineyard and Winery, Soquel Vineyards, Burrell School Vineyard, and Loma Prieta Winery.</p>          
-                    </div>               
-                    </div>
-                </li>
-
-                {# Category - Play #}
-
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/play-a-round-of-golf-or-two.jpg" class="w-full mb-4" alt="Play a Round of Golf (or Two)">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Play a Round of Golf (or Two)</div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>Two fabulous public golf courses with astounding views are within ten minutes of the The Ameswell Hotel.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/take-in-a-concert.jpg" class="w-full mb-4" alt="Take in a Concert">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Take in a Concert</div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>You can experience shows with leading artists at nearby Shoreline Amphitheater, Levi’s Stadium, the SAP Center, Mountain Winery, and Frost Amphitheater at Stanford University.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/ride-a-rollercoaster.jpg" class="w-full mb-4" alt="Ride a Rollercoaster">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Ride a Rollercoaster</div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>Great America Amusement Park and the historic Santa Cruz Beach Boardwalk offer an abundance of fun rides from merry-go-rounds to high-flying rollercoasters.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/come-sail-away.jpg" class="w-full mb-4" alt="Come Sail Away">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Come Sail Away</div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>Spend the weekend learning to sail the Bay at Shoreline Park. You can also rent a kayak or fly a kite.</p>          
-                    </div>               
-                    </div>
-                </li> 
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/take-a-hike.jpg" class="w-full mb-4" alt="Take a Hike">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Take a Hike</div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>The Ameswell Hotel offers direct access to the Steven’s Creek Trail for hiking or biking across the Peninsula.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/sun-and-surf.jpg" class="w-full mb-4" alt="Sun and Surf">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Sun and Surf</div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>The pristine beaches of Santa Cruz, Capitola and Half Moon Bay are less than an hour away. Catch a wave or a California tan.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/entertain-the-kids.jpg" class="w-full mb-4" alt="Entertain the Kids">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Entertain the Kids</div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>The Palo Alto Junior Museum and Children’s Discovery Museum offer hours of interactive fun for children.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Play</div>
-                            <img src="images/laugh-until-you-cry.jpg" class="w-full mb-4" alt="Laugh Until You Cry">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Laugh Until You Cry </div>
-                                {# <div class="justify-items-end text-ams-gold">0 mi</div> #}
-                            </div>    
-                            <p>From Broadway shows to stand up comedy acts, enjoy live performances at TheatreWorks, Rooster T. Feathers, the San Jose Improv, and the San Jose Center for the Performing Arts.</p>          
-                    </div>               
-                    </div>
-                </li>                 
-
-                {# Category - Learn #}
-
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Learn</div>
-                            <img src="images/stanford-university.jpg" class="w-full mb-4" alt="Stanford University">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Stanford University</div>
-                                <div class="justify-items-end text-ams-gold">6.1 mi</div>
-                            </div>    
-                            <p>One of the world's leading teaching and research institutions, is dedicated to finding solutions to big challenges.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Learn</div>
-                            <img src="images/santa-clara-university.jpg" class="w-full mb-4" alt="Santa Clara University">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Santa Clara University</div>
-                                <div class="justify-items-end text-ams-gold">9.5 mi</div>
-                            </div>    
-                            <p>Established in 1851, a private Jesuit university in Santa Clara, California, in Silicon Valley. </p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Learn</div>
-                            <img src="images/carnegie-mellon-silicon-valley-campus.jpg" class="w-full mb-4" alt="Carnegie Mellon Silicon Valley Campus">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Carnegie Mellon Silicon Valley Campus</div>
-                                <div class="justify-items-end text-ams-gold">0.8 mi</div>
-                            </div>    
-                            <p>Great America Amusement Park and the historic Santa Cruz Beach Boardwalk offer an abundance of fun rides from merry-go-rounds to high-flying rollercoasters.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Learn</div>
-                            <img src="images/draper-university-of-heroes.jpg" class="w-full mb-4" alt="Draper University of Heroes">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Draper University of Heroes</div>
-                                <div class="justify-items-end text-ams-gold">19.3 mi</div>
-                            </div>    
-                            <p>Established in 2012. Draper University is the leading program in Silicon Valley for building founders.</p>          
-                    </div>               
-                    </div>
-                </li> 
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Learn</div>
-                            <img src="images/san-jose-state-university.jpg" class="w-full mb-4" alt="San Jose State University">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">San Jose State University</div>
-                                <div class="justify-items-end text-ams-gold">13.7 mi</div>
-                            </div>    
-                            <p>The oldest public university on the West Coast and the founding campus of the California State University system </p>          
-                    </div>               
-                    </div>
-                </li>      
-
-                {# Category - Cheer #}
-
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Cheer</div>
-                            <img src="images/go-niners.jpg" class="w-full mb-4" alt="Go Niners">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Go Niners</div>
-                                <div class="justify-items-end text-ams-gold">6.4 mi</div>
-                            </div>    
-                            <p>Take in a San Francisco 49ers NFL football game at nearby Levi’s Stadium.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Cheer</div>
-                            <img src="images/gameday-at-the-tank.jpg" class="w-full mb-4" alt="Gameday at the Tank">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Gameday at the Tank</div>
-                                <div class="justify-items-end text-ams-gold">11.6 mi</div>
-                            </div>    
-                            <p>Enjoy a San Jose Sharks NHL hockey game at the SAP Center.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Cheer</div>
-                            <img src="images/a-quake-you-can-enjoy.jpg" class="w-full mb-4" alt="A Quake You Can Enjoy">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">A Quake You Can Enjoy</div>
-                                <div class="justify-items-end text-ams-gold">9.5 mi</div>
-                            </div>    
-                            <p>Watch the San Jose Earthquakes MLS soccer team play at PayPal Park.</p>          
-                    </div>               
-                    </div>
-                </li>
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Cheer</div>
-                            <img src="images/san-jose-giants.jpg" class="w-full mb-4" alt="San Jose Giants">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">San Jose Giants</div>
-                                <div class="justify-items-end text-ams-gold">14.1 mi</div>
-                            </div>    
-                            <p>Come out and support the Minor League Giants at Excite Park, a stadium that has been welcoming fans for over 75 years.</p>          
-                    </div>               
-                    </div>
-                </li> 
-                <li class="mb-6">
-                    <div class="grid xmed:grid-cols-40-60">
-                    <div class="cat-image relative">
-                            <div class="absolute bg-ams-white text-xs w-100 cat-name text-center">Cheer</div>
-                            <img src="images/tree-or-cardinal.jpg" class="w-full mb-4" alt="Tree or Cardinal">   
-                    </div>
-                    <div class="xmed:px-4">
-                            <div class="flex xmed:justify-between xmed:mb-0">
-                                <div class="title justify-items-start">Tree or Cardinal?</div>
-                                <div class="justify-items-end text-ams-gold">7.0 mi</div>
-                            </div>    
-                            <p>You choose the cheer as you root for Stanford University’s many amazing athletic teams, from football to the National Champions women’s basketball team.</p>          
-                    </div>               
-                    </div>
-                </li>     
+                </div>
+                {% endfor %}
                                                      
-            </ul>
-            <div class="map">
-                <iframe class="w-full h-100 border-0" 
+            </div>
+            <div class="sticky top-20 h-800">
+                <iframe class="w-full h-full border-0" 
                     frameborder="0"
                     allowfullscreen="" 
                     aria-hidden="false" 
@@ -557,35 +63,35 @@ permalinkBypassOutputDir: true
         <section class="xmed:hidden">
             <div class="relative">
                 <div class="absolute w-full bottom-0">
-                    <div class="bg-ams-white p-4 mobile-style">
-                        <ul>
-                            {# Category - Shop #}
-
-                            <li class="mb-6">
-                                <div class="grid xmed:grid-cols-40-60">
-                                <div class="cat-image relative">
-                                        <div class="absolute bg-ams-white text-xs w-100 cat-name-mobile text-center">Shop</div>
-                                        <img src="images/downtown-mountain-view.jpg" class="w-full" alt="Downtown Mountain View">   
+                    <div class="bg-ams-white p-4 mx-6">
+                        <div>
+                            {% for item in shop %}
+                                <div class="mb-6">
+                                    <div class="grid xmed:grid-cols-40-60">
+                                    <div class="cat-image relative">
+                                            <div class="absolute bg-ams-white text-xs w-24 left-2 bottom-2 p-2 text-center">{{ item.category_name }}</div>
+                                            <img src="{{ item.image }}" class="w-full" alt="{{ item.imgalt }}">   
+                                    </div>
+                                    <div class="pt-4 px-2">
+                                        <div class="flex justify-between">
+                                            <div class="title justify-items-start">{{ item.card_title }}</div>
+                                            <div class="justify-items-end text-ams-gold">{{ item.distance }}</div>
+                                        </div>                                     
+                                            <p class="mb-4 text-sm leading-snug">{{ item.card_body }}</p>          
+                                    </div>               
+                                    </div>
                                 </div>
-                                <div class="pt-4 px-2">
-                                        <div class="flex card-title">
-                                            <div class="title justify-items-start">Downtown Mountain View</div>
-                                            <div class="justify-items-end text-ams-gold">2.4 mi</div>
-                                        </div>    
-                                        <p class="mb-4 text-sm m-line">Walking distance from The Ameswell Hotel, Downtown Mountain View is filled with local boutiques, salons and restaurants featuring international cuisines that celebrate this diverse community.</p>          
-                                </div>               
-                                </div>
-                            </li>
-                        </ul>
+                            {% endfor %}    
+                        </div>
 
                         <div>
-                            <div class="flex left-btn">
+                            <div class="flex absolute bg-button w-9 h-9 left-3 bottom-3 justify-center items-center">
                                 <button class="w-4 h-4 transform rotate-45 border-b-2 border-l-2 focus:outline-none -indent-xl overflow-hidden" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-6fdf19d53630b5ef">
                                     previous
                                 </button>
                             </div>    
 
-                            <div class="flex right-btn">
+                            <div class="flex absolute bg-button w-9 h-9 right-3 bottom-3 justify-center items-center">
                                 <button class="w-4 h-4 transform rotate-45 border-t-2 border-r-2 focus:outline-none -indent-xl overflow-hidden" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-6fdf19d53630b5ef">
                                     next
                                 </button>
