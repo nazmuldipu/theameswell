@@ -325,8 +325,9 @@ fabExternalLink: true
                     <article class="mx-6 xmed:mx-9">
                         <div class="grid grid-cols-1 xmed:grid-cols-2 gap-2 mt-20 mb-16">
                             <!-- sliding images -->
-                            <div class="hidden xmed:block">{{ media_carousel(type.imageSlides, '', '', true) }}</div>
-
+                            <div class="rooms-carousel hidden xmed:block xmed:h-carousel-lg xmed:overflow-hidden">
+                                {{ media_carousel(type.imageSlides, '', '', true) }}
+                            </div>
                             <!-- room types content -->
                             <div class="shadow-sm xmed:shadow-md bg-ams-white">
                                 <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
@@ -446,8 +447,9 @@ fabExternalLink: true
                                 </div>
 
                                 <!-- mobile slider -->
-                                <div class="block xmed:hidden mx-7">{{ media_carousel(type.imageSlides) }}</div>
-
+                                <div class="rooms-carousel block xmed:hidden mx-7">
+                                    {{ media_carousel(type.imageSlides) }}
+                                </div>
                                 <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
                                     Details
                                 </h2>
