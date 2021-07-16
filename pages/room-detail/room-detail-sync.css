@@ -1,3 +1,21 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+
+@layer base {
+    .rooms-carousel {
+        @apply hidden xmed:block;
+        @apply h-56 xmed:h-carousel-lg;
+        @apply overflow-hidden;
+    }
+    .rooms-carousel figure {
+        @apply h-52 xmed:h-carousel-lg;
+        @apply text-center;
+    }
+    .rooms-carousel img{
+        @apply w-auto;
+        @apply h-full;
+        @apply max-h-full;
+        @apply mx-auto;
+    }
+}
