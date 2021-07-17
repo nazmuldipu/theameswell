@@ -6,11 +6,14 @@ meta_description: The Ameswell Hotel was designed with wellness at its core, wit
 canonical_href: https://www.theameswellhotel.com/wellness.html
 permalink: "build/wellness.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
+fabUrl: https://app.squarespacescheduling.com/schedule.php?owner=23496406
 fabExternalLink: true
+fabCopy:
+    - Book
+    - Spa
 ---
 {% from "icons.njk" import svgicon %}
-
+{% from "buttons.njk" import primaryButton %}
 {% from "media-carousel.njk" import media_carousel %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--wellness-xmed xmed:bg-hero--wellness bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
@@ -24,6 +27,9 @@ fabExternalLink: true
                 </h2>
                 <div class="xmed:text-center">
                     Whether you are here for work travel or weekend getaways, we are committed to your health and well-being, first and foremost. Starting with the design of the hotel itself—sustainable, with <a class="font-bold underline" href="air-quality.html">medical-grade filtered air</a> throughout the guest rooms and public spaces, water filtration, superior acoustics, and human-centered private and public spaces. Continuing through your full experience both indoors and outdoors—reading in the library, relaxing at the spa, picnicking on the lawn, biking the Stevens Creek Trail.
+                </div>
+                <div class="text-center">
+                    {{ primaryButton("https://app.squarespacescheduling.com/schedule.php?owner=23496406", 'View & Book Treatments', 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
                 </div>
             </div>
         </section>

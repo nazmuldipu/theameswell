@@ -1,6 +1,6 @@
-{% macro primaryButton(src='#', copy='', className='inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', type='a') %}
+{% macro primaryButton(src='#', copy='', className='inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', type='a', external=false) %}
     {% if type === 'a' %}
-    <a  href="{{ src }}" class="{{ className }} button--primary button">
+    <a  href="{{ src }}" {{ 'target="_blank"' if external }} class="{{ className }} button--primary button">
         {{ copy }}
     </a>
     {% else %}
