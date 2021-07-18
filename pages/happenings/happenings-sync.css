@@ -1,3 +1,18 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+@layer base{
+    .tooltip{
+        @apply relative;
+        @apply inline-block;
+    }
+    .tooltip .tooltipText {
+        @apply hidden;
+        /* Position the tooltip */
+        @apply absolute;
+        z-index: 1;
+      }
+      .tooltip:hover .tooltipText {
+        @apply xmed:block;
+      }
+}
