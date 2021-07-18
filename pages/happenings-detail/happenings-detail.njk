@@ -15,25 +15,25 @@ fabExternalLink: true
 <div id="pageHero" class="bg-ams-primary w-full pt-12 xmed:pt-16">
 </div>
 <section class="bg-ams-base w-full">
-    <section class="xmed:grid grid-cols-2 max-w-screen-lg m-auto mt-24 gap-x-8">
+    <section class="xmed:grid grid-cols-2 max-w-screen-lg m-auto mt-7 xmed:mt-16 mb-12 xmed:mb-40 gap-x-8">
         <section class="xmed:max-w-md">
-            <figcaption class="pb-8 xmed:pb-8">
+            <figcaption class="pb-1 xmed:pb-8">
                 <img class="inline-block pl-6 xmed:pl-0" alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
                 <span class="text-lg">Back to the event</span>
             </figcaption>
-            <header class="xmed:hidden pb-4 pl-6 xmed:pl-0 block">
+            <header class="xmed:hidden pb-4 px-6 xmed:px-0 block">
                 <h1 class="font-medium font-serif text-ams-primary text-2xl">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
             </header>
             <figure class="order-2">
                 {{ scaled_image(happenings_image) }}
             </figure>
         </section>
-        <section class="mt-6 xmed:mt-16 pl-6 xmed:pl-0">
+        <section class="mt-4 xmed:mt-16 px-6 xmed:px-0">
             <article>
                 <header class="hidden xmed:block">
                     <h1 class="font-medium font-serif text-ams-primary text-2xl">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
                 </header>
-                <p class="pt-4 pb-2 text-lg">July 4, 2021 </p>
+                <p class="xmed:pt-4 pb-2 text-lg">July 4, 2021 </p>
                 <p class="pb-3 text-lg">6PM-9PM</p>
                 <hr class="border-solid border-4 w-11/12 xmed:w-1/2 border-ams-gold">
                 <p class="pt-3 text-lg">
@@ -46,7 +46,7 @@ fabExternalLink: true
                         Reservations are recommended and seating is limited.
                     </p>
             </article>
-            <div class="pt-8 pb-8 xmed:pb-8 text-center xmed:text-left text-lg">
+            <div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
                 {{ primaryButton("#", 'Reserve Here') }}
             </div>
         </section>
@@ -60,7 +60,7 @@ fabExternalLink: true
         </h2>
     </header>
     {% set items = [0, 1, 2] %}
-    <article class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-10">
+    <article class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-16">
         {% for item in items %}
             <section class="bg-ams-white mb-8 xmed:shadow-md">
                 <figure>
@@ -76,9 +76,11 @@ fabExternalLink: true
                         </header>
                     </figcaption>
                 </figure>
-                <div class="xmed:hidden mb-5 grid grid-cols-2 px-6 gap-x-3 text-center">
+                <div class="xmed:hidden mb-5 grid grid-cols-2 px-6 gap-x-3 font-serif text-center">
                     {{ primaryButton("#", 'Reserve Here') }}
-                    {{ primaryButton("#", 'More Info') }}
+                    <div class="inline-block py-2 px-8 border-4 font-medium text-ams-gold border-ams-gold">
+                        More Info
+                    </div>
                 </div>
             </section>
         {% endfor %}
