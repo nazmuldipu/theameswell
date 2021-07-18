@@ -1,0 +1,57 @@
+---
+layout: base.njk
+pagename: art compendium
+meta_title: The Ameswell Hotel | art compendium
+meta_description: "The Ameswell Hotel offers three unique offers outlets: Roger, an indoor/outdoor bar and restaurant, The Flyby, an all-day café, and the Airstream for snacks and craft cocktails relaxing by the pool or fire pits."
+canonical_href: https://www.theameswellhotel.com/art-compendium.html
+permalink: "build/art-compendium.html"
+permalinkBypassOutputDir: true
+fabUrl: https://reservations.travelclick.com/111994
+fabExternalLink: true
+---
+{% from "icons.njk" import svgicon %}
+{% from "buttons.njk" import primaryButton %}
+{% from "macros.njk" import scaled_image %}
+
+<div id="pageHero" class="bg-ams-primary bg-hero--art-xmed xmed:bg-hero--art bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
+<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 bg-pattern--ams-grey">
+    <article class="w-full grid justify-items-center pt-4">
+        <section class="w-full grid justify-items-center max-w-screen-lg">
+            <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
+                    Ameswell Art Compendium
+                </h2>
+                <div class="xmed:text-center text-lg leading-6 tracking-wide">
+                    Built in one of the most geographically lush and technologically innovative regions in the country, the Ameswell Hotel is situated on the crossroads of major north/south and east/west corridors. Guided by this theme of intersection, the art collection expresses the junction of real and conceptual.    
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
+
+<section class="grid justify-items-center w-full pb-8 xmed:pt-8">    
+{% for item in art %}
+        <section class="{{item.bgImage}}">
+            <figure class="max-w-screen-xl xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 xmed:p-8 xmed:shadow-md">
+                <figcaption class="grid justify-items-center pt-4 xmed:pt-0">
+                    {{ scaled_image(item.image) }}
+                </figcaption>
+                <figcaption class="mt-8 xmed:mt-0 mx-4 p-4 xmed:p-0 shadow-md xmed:shadow-none">
+                    <header>
+                        <h2 class="title-display text-3xl pb-6">
+                            {{ item.location | safe }}
+                        </h2>
+                    </header>
+                    <p class="mb-4 xmed:mb-12">
+                        {{ item.p1 }}
+                    </p>
+                    <p class="mb-4 xmed:mb-12">
+                        {{ item.p2 }}
+                    </p>
+                </figcaption>
+            </figure>
+        </section>   
+ {% endfor %}        
+</section>
+
+

@@ -1,0 +1,55 @@
+{
+    "art": [
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/art-0",
+                        "alt": "The main entrance of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-1",
+            "location": "Ala Ebtekar<br/> Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p1": "Meeuws draws inspiration from Dutch 17th Century masters who delicately painted beautifully arranged flowers in bloom. What was so fascinating about these paintings was their subjects inconsistency with the seasons - flowers that are unable to bloom at the same time as one another, “a botanical impossibility” speaks Sooke (Telegraph, 2016). The artists had in fact constructed the paintings from years of individual studies, in order to create the most extravagant, elegant assortment. Meeuws’ work mimics this layering technique in a contemporary fashion by capturing each flower on his camera then digitally arranging them, refining every detail until perfection is reached.",
+            "p2":"location>"            
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/art-1",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-2",
+            "location": "testing1",
+            "p1": "testing1testing1testing1",
+            "p2":"location>"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/art-2",
+                        "alt": "The outdoor pool in the evening at the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-3",
+            "location": "testing1",
+            "p1": "testing1testing1testing1",
+            "p2":"location>"
+        }
+    ]
+}
