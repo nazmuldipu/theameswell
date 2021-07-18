@@ -62,7 +62,11 @@ module.exports = {
         'hero--offers': "url('/images/offers-1-desktop.webp')",
         'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",
         'hero--offers-xmed': "url('/images/offers-1-desktop_1200.webp')",
-        'no-webp__hero--offers-xmed': "url('/images/offers-1-desktop_1200.jpg')"
+        'no-webp__hero--offers-xmed': "url('/images/offers-1-desktop_1200.jpg')",
+        'hero--art': "url('/images/art-desktop.webp')",
+        'no-webp__hero--art': "url('/images/art-desktop.jpg')",
+        'hero--art-xmed': "url('/images/art-mobile.webp')",
+        'no-webp__hero--art-xmed': "url('/images/art-mobile.jpg')"
       },
       backgroundPosition: {
         'center-right': 'center right'
@@ -102,7 +106,20 @@ module.exports = {
         'ams-yellow': '#f6e948',
         'ams-white': '#fff',
         'ams-base': '#f6f4f2',
-        'ams-label': '#f4f4f4'
+        'ams-label': '#f4f4f4',
+        'ams-main-1':'#4F2A30',
+        'ams-main-2':'#01499B',
+        'ams-main-2':'#313C2B',
+        'ams-main-3':'#311686',
+        'ams-main-4':'#65ACC8',
+        'ams-main-5':'#435F8D',
+        'ams-main-6':'#010203',
+        'ams-main-7':'#6095B4',
+        'ams-main-8':'#701C13',
+        'ams-main-9':'#3C291B',
+        'ams-main-10':'#4E579C',
+        'ams-main-11':'#85434B',
+        'ams-main-12':'#E2DFD3'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
