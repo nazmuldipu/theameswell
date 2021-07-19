@@ -120,7 +120,8 @@ module.exports = {
         'ams-main-10':'#4E579C',
         'ams-main-11':'#85434B',
         'ams-main-12':'#E2DFD3',
-        'ams-main-13':'#313C2B'
+        'ams-main-13':'#313C2B',
+        'ams-main-14':'#FED9DA'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
