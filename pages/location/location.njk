@@ -7,6 +7,7 @@ canonical_href: https://www.theameswellhotel.com/location.html
 permalink: "build/location.html"
 permalinkBypassOutputDir: true
 ---
+{% from "location-carousel.njk" import location_carousel %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--location-xmed xmed:bg-hero--location bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -26,12 +27,17 @@ permalinkBypassOutputDir: true
         </section>
     </article>
 </div>
-<div class="grid xmed:justify-items-center w-full bg-ams-base pt-8 pb-8">
+
+    
+{{location_carousel(categories)}}
+
+    
+{# <div class="grid xmed:justify-items-center w-full bg-ams-base pt-8 pb-8">
+   
     <article class="p-0 xmed:mt-4 mb-4">
         <section class="max-w-screen-xl hidden xmed:grid xmed:grid-cols-50-50 gap-4 xmed:p-4">
             <div>
-            
-                {% for item in shop %}
+               {% for item in categories[0].locations %}
                 <div class="mb-6">
                     <div class="grid xmed:grid-cols-40-60">
                     <div class="relative">
@@ -109,4 +115,4 @@ permalinkBypassOutputDir: true
             </div>          
         </section>
     </article>
-</div>
+</div> #}

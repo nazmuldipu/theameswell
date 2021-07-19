@@ -76,7 +76,8 @@ module.exports = {
         'large': '1280px'
       },
       height: {
-        '800': '50rem'
+        '800': '50rem',
+        '184':'46rem'
       },
       minWidth: {
        '2xs': '14rem'
@@ -112,6 +113,9 @@ module.exports = {
         sans: ['Mark Pro', 'sans-serif'],
         serif: ['Eksell Display Small', 'serif'],
         'serif-display': ['Eksell Display Large', 'serif']
+      },
+      fontSize:{
+        '2.5xl': ['28px', '34px'],
       },
       gridTemplateRows: {
         'hero-home': '400px auto',
@@ -153,6 +157,7 @@ module.exports = {
        'top-2': '0.75rem',
        'left-3': '0.75rem',
        'right-3': '0.75rem',
+       '-125':"-500px"
       },
       textIndent: (theme, { negative }) => ({
         ...negative({

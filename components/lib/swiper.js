@@ -21,7 +21,21 @@ const defaultConfig = {
     }
 };
 
+const anotherConfig = {
+    loop: true,
+    preloadImages: false,
+    lazy: {
+        loadPrevNext: true,
+
+    },
+    navigation: {
+        nextEl: '.carousel-next',
+        prevEl: '.carousel-prev',
+    }
+};
+
 export {
     Swiper,
-    defaultConfig
+    defaultConfig,
+    anotherConfig
 };
