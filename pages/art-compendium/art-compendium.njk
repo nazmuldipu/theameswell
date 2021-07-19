@@ -14,7 +14,7 @@ fabExternalLink: true
 {% from "macros.njk" import scaled_image %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--art-xmed xmed:bg-hero--art bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
-<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 bg-pattern--ams-grey">
+<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-12 px-8 pb-16 bg-pattern--ams-grey">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
@@ -28,11 +28,21 @@ fabExternalLink: true
         </section>
     </article>
 </div>
+<section class="w-full grid justify-items-center xmed:pb-8 bg-ams-base">
+    <div class="pb-4 px-4 shadow-md xmed:mt-10 xmed:p-10 max-w-screen-lg bg-ams-white">
+        <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+            Explore The Art
+        </h2>
+        <div class="xmed:text-center">
+            Whether complex renderings of astral images from the Hubble telescope, unlikely settings of Earthly flora and fauna, manipulated bright lights that slice through somber landscapes, or playfully animated reinterpretations of ancient hieroglyphics, each piece in this eclectic collection both reflects and reimagines the natural historic beauty and flourishing creative genius of the Northern California silicon valley. 
+        </div>
+    </div>
+</section>
 
-<section class="grid justify-items-center w-full xmed:pt-8">    
-{% for item in art %}
+<section class="grid justify-items-center w-full">
+    {% for item in art %}
         <section class="{{item.bgImage}} w-full">
-            <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 shadow-md medium:shadow-none">
+            <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:py-12 xmed:gap-28 shadow-md medium:shadow-none">
                 <figcaption class="grid justify-items-center pt-4 xmed:pt-0">
                     {{ scaled_image(item.image) }}
                 </figcaption>
@@ -50,8 +60,6 @@ fabExternalLink: true
                     </p>
                 </figcaption>
             </figure>
-        </section>   
- {% endfor %}        
+        </section>
+    {% endfor %}
 </section>
-
-
