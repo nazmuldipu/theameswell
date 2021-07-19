@@ -28,7 +28,7 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<section class="w-full grid justify-items-center xmed:pb-8 bg-ams-base">
+<section class="w-full grid justify-items-center p-8 xmed:p-0 xmed:pb-16 bg-ams-base">
     <div class="pb-4 px-4 shadow-md xmed:mt-10 xmed:p-10 max-w-screen-lg bg-ams-white">
         <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
             Explore The Art
@@ -42,7 +42,7 @@ fabExternalLink: true
 <section class="grid justify-items-center w-full">
     {% for item in art %}
         <section class="{{item.bgImage}} w-full">
-            <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:py-12 xmed:gap-28 shadow-md medium:shadow-none">
+            <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 xmed:py-12 xmed:gap-12 shadow-md medium:shadow-none">
                 <figcaption class="grid justify-items-center pt-4 xmed:pt-0">
                     {{ scaled_image(item.image) }}
                 </figcaption>
