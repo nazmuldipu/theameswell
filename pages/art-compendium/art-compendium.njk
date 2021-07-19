@@ -29,24 +29,24 @@ fabExternalLink: true
     </article>
 </div>
 
-<section class="grid justify-items-center w-full pb-8 xmed:pt-8">    
+<section class="grid justify-items-center w-full xmed:pt-8">    
 {% for item in art %}
-        <section class="{{item.bgImage}}">
-            <figure class="max-w-screen-xl xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 xmed:p-8 xmed:shadow-md">
+        <section class="{{item.bgImage}} w-full">
+            <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 shadow-md medium:shadow-none">
                 <figcaption class="grid justify-items-center pt-4 xmed:pt-0">
                     {{ scaled_image(item.image) }}
                 </figcaption>
-                <figcaption class="mt-8 xmed:mt-0 mx-4 p-4 xmed:p-0 shadow-md xmed:shadow-none">
+                <figcaption class="mt-8 xmed:mt-0 mx-4 p-4 xmed:p-0 text-lg {{'text-ams-base' if item.bgImage!== 'bg-ams-white'}}">
                     <header>
-                        <h2 class="title-display text-3xl pb-6">
-                            {{ item.location | safe }}
+                        <h2 class="pb-6 font-bold">
+                            {{ item.p1 | safe }}
                         </h2>
                     </header>
                     <p class="mb-4 xmed:mb-12">
-                        {{ item.p1 }}
+                        {{ item.p2 }}
                     </p>
                     <p class="mb-4 xmed:mb-12">
-                        {{ item.p2 }}
+                        {{ item.location }}
                     </p>
                 </figcaption>
             </figure>

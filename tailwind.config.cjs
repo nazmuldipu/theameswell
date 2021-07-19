@@ -7,6 +7,7 @@ module.exports = {
   purge: {
     content: [
       './pages/**/*.njk',
+      './pages/**/*.json',
       './tailwind-class-safelist.txt' 
     ]
   },
@@ -109,7 +110,6 @@ module.exports = {
         'ams-label': '#f4f4f4',
         'ams-main-1':'#4F2A30',
         'ams-main-2':'#01499B',
-        'ams-main-2':'#313C2B',
         'ams-main-3':'#311686',
         'ams-main-4':'#65ACC8',
         'ams-main-5':'#435F8D',
@@ -119,7 +119,8 @@ module.exports = {
         'ams-main-9':'#3C291B',
         'ams-main-10':'#4E579C',
         'ams-main-11':'#85434B',
-        'ams-main-12':'#E2DFD3'
+        'ams-main-12':'#E2DFD3',
+        'ams-main-13':'#313C2B'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
