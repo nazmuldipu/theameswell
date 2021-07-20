@@ -2364,6 +2364,182 @@
             }
           ]
         },
+                {
+          "name": "Executive Suite",
+          "description": [
+            "Good sleep is sacred, and this is your chance to indulge. Book an Executive Suite and keep work and entertaining in your spacious living area with a half bath, then leave the world behind with a relaxing soak in your tub and deep sleep in a separate, quiet King bedroom."
+          ],
+          "icons": { "sqft": "690", "beds": "1 King", "capacity": "5" },
+          "details": [
+            "Sleeps up to 5 people",
+            "1 King Bed",
+            "1 Luxury linen",
+            "1 Sofa Bed",
+            "690 ft2 / 64 m2"
+          ],
+          "imageSlides": [
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_01",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_01",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_02",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_02",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_03",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_06",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_07",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_07",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "image": "images/executive_suite_08",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "image": "images/executive_suite_08",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Ameswell Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "Corner One-Bedroom Suite",
           "description": [
@@ -2543,7 +2719,7 @@
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 },
                 {
@@ -2551,7 +2727,7 @@
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -2563,7 +2739,7 @@
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 },
                 {
@@ -2591,7 +2767,7 @@
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -2603,7 +2779,7 @@
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 },
                 {
@@ -2611,7 +2787,7 @@
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -2623,7 +2799,7 @@
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 },
                 {
@@ -2651,7 +2827,7 @@
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
-                  "imgalt": "Arbor Suit",
+                  "imgalt": "Arbor Suite",
                   "intrinsicwidth": "2304"
                 }
               ]
@@ -2727,182 +2903,6 @@
                 },
                 {
                   "image": "images/room-detail-3",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Executive Suite",
-          "description": [
-            "Good sleep is sacred, and this is your chance to indulge. Book an Executive Suite and keep work and entertaining in your spacious living area with a half bath, then leave the world behind with a relaxing soak in your tub and deep sleep in a separate, quiet King bedroom."
-          ],
-          "icons": { "sqft": "690", "beds": "1 King", "capacity": "5" },
-          "details": [
-            "Sleeps up to 5 people",
-            "1 King Bed",
-            "1 Luxury linen",
-            "1 Sofa Bed",
-            "690 ft2 / 64 m2"
-          ],
-          "imageSlides": [
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_01",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_01",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_02",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_02",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_03",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_03",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_04",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_04",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_05",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_05",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_06",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_06",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_07",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_07",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/executive_suite_08",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/executive_suite_08",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
