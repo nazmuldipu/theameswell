@@ -85,7 +85,8 @@ module.exports = {
          'fab-width-sm': '116px',
          'fab-height-sm': '108px',
          'fab-width-lg': '176px',
-         'fab-height-lg': '163px'
+         'fab-height-lg': '163px',
+         'carousel-lg': '26.5rem'
        },
       colors: {
         'rose': colors.rose,

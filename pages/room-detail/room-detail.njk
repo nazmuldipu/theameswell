@@ -290,9 +290,9 @@ fabExternalLink: true
     <figure class="hidden xmed:block w-full max-w-screen-xl overflow-hidden">
         {{ media_carousel(imageSlides) }}
     </figure>
-    {{textCard('','Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy
-    mattresses and 100% organic bath amenities by Juice Beauty.', 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
-
+    <div class="w-full grid justify-items-center max-w-screen-2xl">
+        {{textCard('','Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty.', 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
+    </div>
     <figure class=" xmed:hidden w-full max-w-screen-xl overflow-hidden">
         {{ special_carousel(imageSlides) }}
     </figure>
@@ -300,8 +300,8 @@ fabExternalLink: true
 </div>
 
 <div class="w-full grid justify-items-center bg-pattern--ams-grey pb-32">
-    <section class="w-full grid my-8 xmed:my-12 ">
-        <div class="mx-6 xmed:mx-96 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
+    <section class="w-full grid my-8 xmed:my-12 justify-items-center max-w-screen-md">
+        <div class="w-full mx-6 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
             <h2 class="font-serif text-3xl xmed:text-5xl text-center">
                 Rooms
             </h2>
@@ -310,7 +310,7 @@ fabExternalLink: true
 
     <!-- Room list -->
     {% for room in rooms %}
-    <div class="room-list border-t border-ams-primary xmed:border-0">
+    <div class="room-list w-full max-w-screen-2xl border-t border-ams-primary xmed:border-0">
         {{textCard(room.name, room.description, 'text-center z-10', 'summury pb-20')}}
 
         <div class="accordion-item grid justify-items-center w-full -mt-16 xmed:-mt-20 xmed:pt-16 pb-6">
@@ -325,8 +325,9 @@ fabExternalLink: true
                     <article class="mx-6 xmed:mx-9">
                         <div class="grid grid-cols-1 xmed:grid-cols-2 gap-2 mt-20 mb-16">
                             <!-- sliding images -->
-                            <div class="hidden xmed:block">{{ media_carousel(type.imageSlides, '', '', true) }}</div>
-
+                            <div class="rooms-carousel hidden xmed:block xmed:h-carousel-lg xmed:overflow-hidden">
+                                {{ media_carousel(type.imageSlides, '', '', true) }}
+                            </div>
                             <!-- room types content -->
                             <div class="shadow-sm xmed:shadow-md bg-ams-white">
                                 <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
@@ -446,8 +447,9 @@ fabExternalLink: true
                                 </div>
 
                                 <!-- mobile slider -->
-                                <div class="block xmed:hidden mx-7">{{ media_carousel(type.imageSlides) }}</div>
-
+                                <div class="rooms-carousel block xmed:hidden mx-7">
+                                    {{ media_carousel(type.imageSlides) }}
+                                </div>
                                 <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
                                     Details
                                 </h2>
@@ -484,10 +486,9 @@ fabExternalLink: true
             </h2>
         </div>
     </section>
-
     {% for feature in features %}
-        <div class="w-full grid xmed:mt-14 {{feature.classes}}" >
-            <section class="xmed:mx-24 shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2">
+        <div class="w-full grid justify-items-center max-w-screen-xl xmed:mt-14 {{feature.classes}}" >
+            <section class="shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2">
                 <div class="px-6 mt-6 block xmed:hidden">
                     <figure>
                         {{ scaled_image(feature.img) }}
@@ -508,8 +509,8 @@ fabExternalLink: true
 </div>
 
 <div class="w-full grid justify-items-center bg-pattern--ams-grey py-6 xmed:py-20">
-   <section class="w-full grid">
-        <div class="mx-6 xmed:mx-24 py-4 xmed:py-9 px-4 shadow-sm xmed:shadow-md bg-ams-white grid">
+   <section class="w-full grid justify-items-center max-w-screen-xl xmed:px-16">
+        <div class="w-full mx-6 xmed:mx-0 py-4 xmed:py-9 px-4 shadow-sm xmed:shadow-md bg-ams-white grid">
             <h2 class="title-display text-2xl xmed:text-4xl pb-4 xmed:text-center"> Offers </h2>
             <div class="xmed:text-center text-lg max-w-6xl mx-auto"> Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel. </div>
             <div class="xmed:hidden pt-4 pb-4">
@@ -518,8 +519,8 @@ fabExternalLink: true
         </div>
     </section>
     
-    <section class="w-full grid mt-6">
-        <div class="mx-6 xmed:mx-24 py-4 xmed:py-9 xmed:px-4 shadow-sm xmed:shadow-md bg-ams-white grid">
+    <section class="w-full grid mt-6 justify-items-center max-w-screen-xl xmed:px-16">
+        <div class="w-full grid mx-6 py-4 xmed:py-9 xmed:px-4 shadow-sm xmed:shadow-md bg-ams-white">
             <figure class="w-full overflow-hidden">
                 {{ component_carousel(offers) }}
             </figure>
@@ -528,7 +529,7 @@ fabExternalLink: true
 </div>
 
 <div class="grid justify-items-center bg-ams-primary w-full p-8">
-    <article class="max-w-screen-lg p-4 bg-ams-white w-full">
+    <article class="max-w-screen-xl p-4 bg-ams-white w-full">
         <section class="xmed:grid xmed:grid-cols-2 xmed:gap-4">
             <header>
                 <h2 class="title-display text-2xl pt-4 pb-4">
