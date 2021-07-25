@@ -64,6 +64,7 @@
   "amenities": [
     {
       "title": "Pool",
+      "slug": "pool",
       "time": "Daily: 7:00 A.M. – 10:00 P.M.",
       "access": "Access: Room key",
       "note": "A chairlift is available for individuals needing assistance.",
@@ -120,6 +121,7 @@
     },
     {
       "title": "Spa",
+      "slug": "spa",
       "time": "Daily: 7:00 A.M. – 9:00 P.M., Closed on holidays",
       "access": "Access: Room key",
       "note": "Accessible spa treatment room is available.",
@@ -135,7 +137,13 @@
         { "label": "View Services", "link": "/" },
         {
           "label": "View & Book Treatments",
-          "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406"
+          "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406",
+          "classes": "hidden xmed:block"
+        },
+        {
+          "label": "Make Appointment",
+          "link": "/",
+          "classes": " xmed:hidden"
         },
         { "label": "Spa Policies", "link": "/" }
       ],
@@ -184,6 +192,7 @@
     },
     {
       "title": "Fitness Center",
+      "slug": "fitness_center",
       "time": "Daily: 24 Hours",
       "access": "Access: Room key",
       "texts": [
@@ -277,6 +286,7 @@
     },
     {
       "title": "Mirror By Lululemon",
+      "slug": "mirror_by_lululemon",
       "texts": [
         "One Mirror. Endless Workouts. Now you can try the workout everyone has been raving about.",
         "From yoga to boxing, meditation to strength training, the Mirror from Lululemon offers daily live streamed classes and a library of over 4,000 classes you can choose from to keep up your daily practice or pick up a new one."
@@ -284,7 +294,11 @@
       "more_texts": [
         "Their premium quality training mat, dumbbells and resistance bands provide limitless options for your workout. This space efficient system replaces 19 pairs of dumbbells from 2.5 – 46 lbs."
       ],
-      "buttons": [{ "label": "Wellness Room", "link": "/wellness.html" }],
+      "buttons": [
+        { "label": "Wellness Room", "link": "/wellness.html" },
+        { "label": "Instruction", "link": "/", "classes": " xmed:hidden" },
+        { "label": "Spa", "link": "/", "classes": " xmed:hidden" }
+      ],
       "slides": [
         {
           "artDirection": [
@@ -330,6 +344,7 @@
     },
     {
       "title": "Fitnesse",
+      "slug": "fitnesse",
       "texts": [
         "Everything you need to train like an athlete without ever leaving your room.",
         "The Ameswell Hotel has partnered with local Bay Area company, Fitnesse, to provide all the equipment you need to train effectively in the comfort of your Wellness King Room."
@@ -339,7 +354,14 @@
         "We offer a variety of traditional and unique massage and facial services, as well as appointments with nutritionists who can help you with a dietary plan that is just right for you.",
         "Lululemon’s Mirror is also available in each treatment room, along with adjustable weights, resistance bands and yoga mats by Fitnesse. Reserve the room before your treatment to grab a virtual or live-streamed workout class or stay after your service for a meditation session."
       ],
-      "buttons": [{ "label": "Wellness Room", "link": "/wellness.html" }],
+      "buttons": [
+        { "label": "Wellness Room", "link": "/wellness.html" },
+        {
+          "label": "Instructions",
+          "link": "/wellness.html",
+          "classes": "xmed:hidden"
+        }
+      ],
       "slides": [
         {
           "artDirection": [
