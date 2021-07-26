@@ -54,10 +54,10 @@ fabExternalLink: true
     {% for item in art %}
         <section class="{{item.bgImage}} w-full">
             <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 xmed:py-12 xmed:gap-12 shadow-md medium:shadow-none">
-                <figcaption class="grid justify-items-center pt-4 xmed:pt-0">
+                <figcaption class="grid justify-items-center pt-4 xmed:pt-0 px-8 xmed:px-0">
                     {{ scaled_image(item.image) }}
                 </figcaption>
-                <figcaption class="mt-8 xmed:mt-0 mx-4 p-4 xmed:p-0 text-lg 
+                <figcaption class="mt-8 xmed:mt-0 xmed:mx-4 p-4 xmed:p-0 text-lg 
                 {% if item.bgImage == 'bg-ams-white' %}
                         text-ams-primary
                     {% elseif item.bgImage == 'bg-ams-main-12' %}
@@ -72,13 +72,25 @@ fabExternalLink: true
                             {{ item.p1 | safe }}
                         </h2>
                     </header>
-                    <p class="mb-4 xmed:mb-12">
+                    <p class="mb-4 xmed:mb-12 hidden xmed:block">
                         {{ item.p2 }}
                     </p>
-                    <p class="mb-4 xmed:mb-12">
+                    <p class="mb-4 xmed:mb-12 xmed:hidden">
                         {{ item.location }}
                     </p>
                 </figcaption>
+                <div class="pb-4 xmed:hidden text-center">
+                    <a href="#" class=" segment__cta  relative font-serif font-semibold text-xs uppercase
+                    {% if item.bgImage == 'bg-ams-white' %}
+                        text-ams-gold segment__cta--gold
+                    {% elseif item.bgImage == 'bg-ams-main-12' %}
+                        text-ams-gold segment__cta--gold
+                    {% elseif item.bgImage == 'bg-ams-main-14' %}
+                        text-ams-gold segment__cta--gold 
+                    {% else %} text-ams-white segment__cta--white
+                    {% endif %}                                        
+                    ">READ MORE</a>
+                </div>
             </figure>
         </section>
     {% endfor %}
