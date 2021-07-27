@@ -82,3 +82,16 @@
 {{streetAddress}}<br>
 {{city}}, {{state}} {{zip}}
 {% endmacro %}
+
+{# Back To Top Macro #}
+{% macro backToTop(
+	copy="Scroll to top",
+	className='absolute z-10 top-14 right-2 xmed:top-24 xmed:right-10 z-100 inline-grid grid-flow-col items-center h-10 px-2 bg-ams-gold text-ams-white font-sans text-sm xmed:text-lg tracking-wide'
+) %}
+    <a href="#" class="{{ className }} button--backtotop button--primary button">
+		<svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 xmed:w-auto">
+			<path d="M23 12L12 2L1 12" stroke="white" stroke-width="2"/>
+		</svg>
+		<span class="pl-2">{{ copy | safe }}</span>
+    </a>
+{% endmacro %}

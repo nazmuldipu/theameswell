@@ -45,6 +45,18 @@ const getSkipperWebsiteToken = () => {
     }
 };
 
+/**
+ * Google Maps API Token goes here
+ * @returns API_KEY
+ */
+ const getGoogleMapsApiToken = () => {
+    switch(process.env.NODE_ENV) {
+        case 'production':
+            return '"AIzaSyAqBsnxV5uQbDoZYikoRuMOd3eKcZ7E568"';
+        default:
+            return '"AIzaSyAghG_1W2IXIpylPJN6mdQKLcqicijD2vY"';
+    }
+};
 
 /**
  * 
@@ -70,9 +82,10 @@ export const buildJS = async (inputPaths, outDir, outBase, metafilePath) => {
         outdir: outDir,
         outbase: outBase,
         target: ['es2017'],
-        minify: process.env.NODE_ENV === 'production',
+        minify: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging',
         metafile: metafilePath,
         define: {
+            GOOGLE_MAPS_API_KEY: getGoogleMapsApiToken(),
             SKIPPER_WEBSITE_API_BASE: getSkipperWebsiteAPIBase(),
             SKIPPER_WEB_API_TOKEN: getSkipperWebsiteToken()
         }

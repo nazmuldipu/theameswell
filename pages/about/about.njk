@@ -15,7 +15,7 @@ fabExternalLink: true
 
 <div id="pageHero" class="bg-ams-primary bg-hero--about-xmed xmed:bg-hero--about bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
-<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 xmed:pb-36 bg-pattern--ams-magenta">
+<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 xmed:pb-44 bg-pattern--ams-cyan">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
@@ -43,23 +43,22 @@ fabExternalLink: true
             <p>
                 We are all about location – walking distance from downtown Mountain View, moments from Google, Apple and Facebook headquarters, as well as offices for Microsoft, Intuit and LinkedIn, close to Shoreline Amphitheatre, Levi’s Stadium, Stanford University and Stanford Shopping Center, and the nearby beach towns of Santa Cruz and Half Moon Bay.
             </p>
-            <p>
+            <p class="pt-4">
                 The Ameswell Hotel is the perfect business and social hub in Silicon Valley.
             </p>
             <p class="pt-4">
-                <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-gold underline">
-                    {{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}
+                <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-cyan font-bold underline xmed:no-underline skip-ink">
+                    800 Moffett Boulevard., Mountain View, CA 94043
                 </a>
             </p>
+            <div class="pt-4 pb-4 xmed:pb-0">
+                {# TODO: uncomment and link to the location page when it goes live --Alex July 15, 2021
+                    <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
+                #}
+            </div>
         </section>
         <section class="xmed:bg-ams-white xmed:grid xmed:content-center xmed:justify-items-center xmed:pr-8">
-                <iframe class="w-full h-72 border-0" 
-                frameborder="0"
-                allowfullscreen="" 
-                aria-hidden="false" 
-                tabindex="0" 
-                src="https://maps.google.com/maps?hl=en&amp;q=The%20Ameswell%20Hotel,%20Mountain%20View,%20CA%2094043+(The%20Ameswell%20Hotel)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                </iframe>
+            <div id="map" class="block w-full h-72 p-0 relative"></div>
         </section>
     </article>
 </div>
@@ -117,7 +116,7 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<div class="w-full grid justify-items-center pt-8 xmed:pt-16 px-8 pb-16 bg-pattern--ams-magenta">
+<div class="w-full grid justify-items-center pt-8 xmed:pt-16 px-8 pb-16 bg-pattern--ams-cyan">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
@@ -305,112 +304,25 @@ fabExternalLink: true
         Who are we?
     </h2>
 </header>
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="mb-4">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            {{ scaled_image(sustainable_image) }}
-            <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    We are sustainable
-                </h2>
-                <h3 class="title-display text-lg pb-8 pt-0 xmed:pb-4">
-                    We are the greenest hotel in Silicon Valley
-                </h3>
-                <p>
-                    From the solar panels powering our LED bulbs to our connection to the local bike and hiking trail. We have eliminated 96% of single-use plastic on premises – and won’t stop until we’re at 100%. Enjoy organic bath products and locally sourced food knowing we’re on the same page: sustainability first.
-                </p>
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="mb-4 xmed:mt-8">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            {{ scaled_image(luxury_image) }}
-            <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    We are relaxed luxury
-                </h2>
-                <h3 class="title-display text-lg pb-8 pt-0 xmed:pb-4">
-                    We offer a new kind of approachable sophistication 
-                </h3>
-                <p>
-                    Beautifully designed, yet unfussy; high-tech and still high-touch. We have just what you need (and nothing you don’t) – excess has been edited out.
-                </p>
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="mb-4 xmed:mt-8">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            {{ scaled_image(wellbeing_image) }}
-            <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    We are about wellbeing
-                </h2>
-                <h3 class="title-display text-lg pb-8 pt-0 xmed:pb-4">
-                    At Ameswell, health means mind, body, and soul
-                </h3>
-                <p>
-                    From our medical-grade air filtration to contactless ordering systems, safety is paramount. Enjoy a meditation session or workout on The Mirror. Stretch out at the pool or in our fitness center. Hop on a bike trail – real or via Peloton. The Ameswell will keep you grounded so you’re ready for liftoff. 
-                </p>
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="mb-4 xmed:mt-8">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            {{ scaled_image(community_image) }}
-            <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    We are rooted in community
-                </h2>
-                <h3 class="title-display text-lg pb-8 pt-0 xmed:pb-4">
-                    The Ameswell is a home base for all walks of life
-                </h3>
-                <p>
-                    Whether you’re from across the planet, across the country or across the street. We’re a place to solidify connections and build something stronger and more fun, together.
-                </p>
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="mb-4 xmed:mt-8">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            {{ scaled_image(innovating_image) }}
-            <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    We are always innovating
-                </h2>
-                <h3 class="title-display text-lg pb-8 pt-0 xmed:pb-4">
-                    The Ameswell mirrors the innovation that happens daily here in Silicon Valley
-                </h3>
-                <p>
-                    We’re never satisfied with the status quo. We are inspired by our neighbors at NASA’s Ames Research Center, who pioneered jet propulsion – our goal is to keep experimenting and push the frontiers of amazing hospitality.
-                </p>
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="mb-4 xmed:mt-8">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
-            {{ scaled_image(independent_image) }}
-            <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    We are independent
-                </h2>
-                <h3 class="title-display text-lg pb-8 pt-0 xmed:pb-4">
-                    We stand out from the crowd, just like the people who stay with us
-                </h3>
-                <p>
-                    We are made for adventurers and self-starters; those who blaze their own trails. As an independent brand, we’re accountable to one opinion - yours. We look forward to welcoming you soon and hearing your voice about how we can make ourselves better.
-                </p>
-            </div>
-        </section>
-    </article>
-</div>
+{% for item in about_items %}
+    <div class="grid justify-items-center w-full bg-ams-base">
+        <article class="mb-4 xmed:mb-12">
+            <section class="max-w-screen-lg xmed:grid xmed:grid-cols-2 gap-8 p-4 bg-ams-white xmed:shadow-md">
+                {{ scaled_image(item.image) }}
+                <div class="mx-4 p-4 mt-8 xmed:mt-0 xmed:order-first">
+                    <h2 class="title-display text-3xl">
+                        {{item.h2}}
+                    </h2>
+                    <h3 class="title-display text-lg pb-8 pt-0 xmed:pb-4">
+                        {{item.h3}}
+                    </h3>
+                    <p>
+                        {{item.p}}
+                    </p>
+                </div>
+            </section>
+        </article>
+    </div>
+{% endfor %}
+
 

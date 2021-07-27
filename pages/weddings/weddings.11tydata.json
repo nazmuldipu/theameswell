@@ -13,7 +13,7 @@
                 "classes": "w-full image-loader image-loader--white",
                 "sizes": "25vw",
                 "type": "jpg",
-                "src": "images/homepage-3",
+                "src": "images/homepage-5-desktop",
                 "alt": "Public space",
                 "intrinsicwidth": "600" 
             }
@@ -25,7 +25,7 @@
                 "classes": "w-full image-loader image-loader--white",
                 "sizes": "25vw",
                 "type": "jpg",
-                "src": "images/homepage-7",
+                "src": "images/homepage-4-desktop",
                 "alt": "The Roger Restaurant",
                 "intrinsicwidth": "600" 
             }
@@ -37,7 +37,7 @@
                 "classes": "w-full image-loader image-loader--white",
                 "sizes": "25vw",
                 "type": "jpg",
-                "src": "images/homepage-4",
+                "src": "images/homepage-6-desktop",
                 "alt": "The Airstream Bar",
                 "intrinsicwidth": "600" 
             }
