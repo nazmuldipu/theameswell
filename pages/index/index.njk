@@ -11,6 +11,7 @@ fabExternalLink: true
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "buttons.njk" import primaryButton %}
+{% from "component_carousel.njk" import rooms_carousel %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
 
@@ -63,160 +64,57 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<div class="bg-pattern--ams-grey w-full grid justify-items-center pb-28 relative z-10">
-    <article class="grid justify-items-center items-start w-full max-w-screen-lg py-8 px-4 xmed:mt-5 xmed:grid-cols-40-60 xmed:gap-10">
+<div class="bg-pattern--ams-grey w-full grid justify-items-center xmed:pb-28 relative z-10">
+    <article class="grid justify-items-center items-start w-full max-w-7xl pt-9 p-14 xmed:pb-8 px-4 xmed:mt-5 xmed:grid-cols-35-65 xmed:gap-8">
         <section class="grid justify-items-center max-w-screen-lg mb-8 shadow-md">
-            <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-8 bg-ams-white">
-                <h2 class="title-display text-2xl py-4">
+            <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
+                <h2 class="title-display text-3xl pb-4">
                     More than enough room
                 </h2>
-                <div>
-                    Sitting area and workspace for your waking hours, organic bath products, <a href="air-quality.html" class="font-bold underline">medical-grade air filtration</a>, and superior acoustics for self-care, and luxurious sleep.
-                </div>
-                <div class="pt-7 pb-2">
+                <p class="text-ams-primary text-lg">
+                    Each of our 255 guest rooms is defined by comfort and space, privacy and respite. Sitting area and workspace for your waking hours, organic bath products for self-care, and luxurious sleep.
+                </p>
+                <div class="pt-7 pb-2 text-center">
                     <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL ROOMS</a>
                 </div>
             </div>
+
+            <div class="hidden xmed:block max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white mt-8">
+                <h2 class="title-display text-3xl pb-4">
+                    Offers
+                </h2>
+                <p class="text-ams-primary text-lg">
+                    Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
+                </p>
+                <div class="pt-7 pb-2 text-center">
+                    <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
+                </div>
+            </div>
         </section>
-        <rooms-gallery>
-        <section class="rooms-gallery--wrapper grid justify-items-center max-w-screen-lg grid-areas-slideshow xmed:grid-areas-slideshow-xmed xmed:grid-cols-slideshow xmed:grid-rows-slideshow pt-4 px-4 xmed:pr-0 xmed:pb-4 xmed:pl-0 mb-5 bg-ams-white shadow-md">
-            <figure class="justify-items-center xmed:relative xmed:mx-4 grid-in-slide">
-                    {{ scaled_image(rooms_image) }}
-                    <figcaption>
-                        <header class="grid grid-cols-sm-main-sm gap-2 justify-items-center text-2xl pt-4 xmed:block">
-                            <span class="xmed:absolute xmed:top-1/3 xmed:left-0 xmed:bg-ams-white xmed:px-1">
-                                <button class="rooms-gallery--prev inline-block w-3 h-3 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden align-middle mb-1.5">
-                                    previous
-                                </button>
-                            </span>
-                            <h2 class="rooms-gallery--title title-display text-2xl text-center xmed:text-left">
-                                Premium King
-                            </h2>
-                            <span class="xmed:absolute xmed:top-1/3 xmed:right-0 xmed:bg-ams-white xmed:px-1">
-                                <button class="rooms-gallery--next inline-block w-3 h-3 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden align-middle mb-1.5">
-                                    next
-                                </button>
-                            </span>
-                        </header>
-                    </figcaption>
+        <section class="w-full grid justify-items-center">
+            <div class="w-full grid p-4 xmed:pb-10 shadow-md bg-ams-white">
+                <figure class="w-full overflow-hidden">
+                    {{ rooms_carousel(rooms) }}
                 </figure>
-                <div class="pb-4 xmed:pt-4 xmed:text-center grid-in-details">
-                    <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW DETAILS</a>
+            </div>
+        </section>
+        <section class="grid justify-items-center max-w-screen-lg xmed:hidden">
+            
+            <div class=" max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white shadow-md mt-8">
+                <h2 class="title-display text-3xl pb-4">
+                    Offers
+                </h2>
+                <p class="text-ams-primary text-lg">
+                    Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
+                </p>
+                <div class="pt-7 pb-2 text-center">
+                    <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
                 </div>
-                <ul class="grid grid-cols-3 content-center grid-in-amenities xmed:pl-4">
-                    {{ svgicon(
-                        [
-                            {
-                                d: "M21.2302 6L21.2292 28.6488L42 28.65V36.7277L21.2292 36.7272L21.2302 42H13.1363L13.1352 36.7272L6 36.7277V28.65L13.1352 28.6488L13.1363 6H21.2302ZM19.856 7.34914H14.5104L14.5104 9.6156L16.0865 9.61629V10.4743L14.5104 10.4736V13.098L17.5251 13.0989V13.9569L14.5104 13.956V16.5804L16.0865 16.5814V17.4386L14.5104 17.4384V20.064L16.0865 20.0649V20.922L14.5104 20.9208V23.5464L17.5251 23.5474V24.4046L14.5104 24.4044V27.03H16.0865V27.8871L14.5104 27.8868V28.6488L14.5242 28.65L14.5236 30.5124L16.0865 30.5126V31.3697L14.5236 31.3692V33.996H17.5251V34.8531L14.5236 34.8528L14.5242 36.7277L14.5104 36.7272V37.4772L16.0865 37.4777V38.3349L14.5104 38.334L14.5104 40.65H19.856V7.34914ZM40.6258 30.0206H21.2302V35.3554L23.2164 35.3544L23.2176 32.3469H24.0764L24.0756 35.3544H26.7072L26.708 33.7834H27.5668L27.5664 35.3544H30.1956L30.1967 33.7834H31.0564L31.056 35.3544H33.6852L33.6862 32.3469H34.5451L34.5444 35.3544H37.1748L37.1758 33.7834H38.0346L38.034 35.3544L40.6258 35.3554V30.0206ZM13.1352 30.0204L7.37418 30.0206V35.3554L9.918 35.3544L9.91812 33.7834H10.777L10.776 35.3544H13.1352V30.0204Z",
-                                fill: "#213e4c",
-                                fillRule: "evenodd",
-                                clipRule: "evenodd"
-                            }
-                        ],
-                        '550 ft<sup>2</sup>',
-                        'rooms-gallery--icon-sqft grid justify-items-center content-start text-center'
-                    ) }}
-                    {{ svgicon(
-                        [
-                            {
-                                d: "M39.9574 20.514V38.0163H28.2224V20.514",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M39.9575 20.514H8.04297V38.0163",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M28.2222 29.2654H39.9572",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M34.0896 32.4846H32.6372",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M35.542 32.4846H34.0896",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M34.0896 23.7327H32.6372",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M35.542 23.7327H34.0896",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M6 20.514H8.04266",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M39.9573 20.514H41.9999",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M28.2225 24.4196H8.04297",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M31.8907 20.5142V11.1056L26.7595 10.1992",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            },
-                            {
-                                d: "M26.7599 10.1991C26.7599 10.1991 23.6054 9.0392 21.7529 12.1018L27.7718 15.481C29.3967 12.291 26.7599 10.1991 26.7599 10.1991Z",
-                                fillRule: "evenodd",
-                                clipRule: "evenodd",
-                                stroke: "#213e4c",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            }
-                        ],
-                        'Workspace',
-                        'rooms-gallery--icon-workspace grid justify-items-center content-start text-center'
-                    ) }}
-                    {{ svgicon(
-                        [
-                            {
-                                d: "M40.9188 31.0826H7.0812V25.4466C7.0812 24.8958 7.51841 24.4503 8.05902 24.4503H39.9417C40.4816 24.4503 40.9188 24.8958 40.9188 25.4466V31.0826ZM10.1174 16.1649C10.1174 14.7603 11.2357 13.6222 12.6143 13.6222H35.3871C36.765 13.6222 37.8826 14.7603 37.8826 16.1649V23.3487H35.085V19.9475C35.085 18.7894 34.1626 17.8503 33.026 17.8503H27.1206C25.9827 17.8503 25.0616 18.7888 25.0616 19.9475V23.3487H22.9391V19.9475C22.9391 18.7894 22.0173 17.8503 20.8807 17.8503H14.9747C13.8367 17.8503 12.9156 18.7888 12.9156 19.9475V23.3487H10.1174V16.1649ZM34.0038 23.3487H26.1421V19.9475C26.1421 19.3974 26.58 18.9512 27.1206 18.9512H33.026C33.5659 18.9512 34.0038 19.3974 34.0038 19.9475V23.3487ZM21.8579 23.3487H13.9968V19.9475C13.9968 19.3974 14.4341 18.9512 14.9747 18.9512H20.8807C21.4207 18.9512 21.8579 19.3974 21.8579 19.9475V23.3487ZM39.9417 23.3487H38.9638V16.1649C38.9638 14.1524 37.3623 12.5206 35.3871 12.5206H12.6143C10.6384 12.5206 9.03683 14.1524 9.03683 16.1649V23.3487H8.05902C6.92173 23.3487 6 24.2871 6 25.4466V31.6334C6 31.9378 6.24192 32.1842 6.5406 32.1842H7.51841V35.4794H8.59962V32.1842H39.4011V35.4794H40.4823V32.1842H41.4594C41.7581 32.1842 42 31.9378 42 31.6334V25.4466C42 24.2871 41.0783 23.3487 39.9417 23.3487Z",
-                                fill: "#213e4c",
-                                fillRule: "evenodd",
-                                clipRule: "evenodd"
-                            }
-                        ],
-                        'Sleeps 2',
-                        'rooms-gallery--icon-sleeps grid justify-items-center content-start text-center'
-                    ) }}
-                </ul>
-                <div class="mt-9 xmed:mt-0 mb-9 xmed:mb-0 grid-in-cta">
-                    {{ primaryButton("room-detail.html", 'Book Now') }}
-                </div>
-            </section>
-        </rooms-gallery>
+            </div>
+        </section>
     </article>
 </div>
-<div class="bg-ams-primary w-full grid justify-items-center pt-24 pr-4 pl-4 -mt-24 relative z-0">
+<div class="bg-ams-primary w-full grid justify-items-center pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
         <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white">
             Bar. Restaurant. Cafe.
@@ -268,8 +166,6 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-
-
 
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
@@ -325,15 +221,15 @@ fabExternalLink: true
             <form-sender data-type="alist">
                 <form class="pt-4">
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
                         <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
                     </div>
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
                         <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
                     </div>
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input required="required" type="text" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <input required="required" type="text" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
                         <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">EMAIL *</label>
                     </div>
                     {{ primaryButton("#", 'Join the A-List', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}

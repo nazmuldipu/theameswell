@@ -112,6 +112,17 @@
         @apply px-4;
         @apply w-full;
     }
+    .room-car-nav {
+        @apply flex;
+        @apply flex-row;
+        @apply justify-between;
+        @apply absolute;
+        @apply z-20;
+        @apply -mt-10;
+        @apply top-96;
+        @apply xmed:top-1/2;
+        @apply w-full;
+    }
 }
 
 x-cloak {
