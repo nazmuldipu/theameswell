@@ -59,6 +59,66 @@
           "intrinsicwidth": "2300"
         }
       ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellness_4",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellness_4",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellness_5",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellness_5",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellness_6",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellness_6",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
     }
   ],
   "amenities": [
