@@ -134,7 +134,7 @@
         "We also have live classes streaming on two Lululemon Mirrors – from yoga and ballet to Zumba and boxing. In-person yoga and other classes are often offered on the Ameswell lawn. Please check with the front desk for a schedule."
       ],
       "buttons": [
-        { "label": "View Services", "link": "/" },
+        { "label": "View Services", "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406" },
         {
           "label": "View & Book Treatments",
           "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406",
@@ -142,10 +142,10 @@
         },
         {
           "label": "Make Appointment",
-          "link": "/",
+          "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406",
           "classes": " xmed:hidden"
         },
-        { "label": "Spa Policies", "link": "/" }
+        { "label": "Spa Policies", "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406" }
       ],
       "slides": [
         {
@@ -295,9 +295,7 @@
         "Their premium quality training mat, dumbbells and resistance bands provide limitless options for your workout. This space efficient system replaces 19 pairs of dumbbells from 2.5 – 46 lbs."
       ],
       "buttons": [
-        { "label": "Wellness Room", "link": "/wellness.html" },
-        { "label": "Instruction", "link": "/", "classes": " xmed:hidden" },
-        { "label": "Spa", "link": "/", "classes": " xmed:hidden" }
+        { "label": "Wellness Room", "link": "https://reservations.theameswellhotel.com/" }
       ],
       "slides": [
         {
@@ -355,12 +353,7 @@
         "Lululemon’s Mirror is also available in each treatment room, along with adjustable weights, resistance bands and yoga mats by Fitnesse. Reserve the room before your treatment to grab a virtual or live-streamed workout class or stay after your service for a meditation session."
       ],
       "buttons": [
-        { "label": "Wellness Room", "link": "/wellness.html" },
-        {
-          "label": "Instructions",
-          "link": "/wellness.html",
-          "classes": "xmed:hidden"
-        }
+        { "label": "Wellness Room", "link": "https://reservations.theameswellhotel.com/" }
       ],
       "slides": [
         {
