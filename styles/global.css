@@ -121,7 +121,6 @@
         @apply -mt-10;
         @apply top-96;
         @apply xmed:top-1/2;
-        @apply px-2;
         @apply w-full;
     }
 }

@@ -68,7 +68,7 @@ fabExternalLink: true
     <article class="grid justify-items-center items-start w-full max-w-7xl pt-9 p-14 xmed:pb-8 px-4 xmed:mt-5 xmed:grid-cols-35-65 xmed:gap-8">
         <section class="grid justify-items-center max-w-screen-lg mb-8 shadow-md">
             <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-3xl py-4">
+                <h2 class="title-display text-3xl pb-4">
                     More than enough room
                 </h2>
                 <p class="text-ams-primary text-lg">
@@ -79,8 +79,8 @@ fabExternalLink: true
                 </div>
             </div>
 
-            <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white mt-8">
-                <h2 class="title-display text-3xl py-4">
+            <div class="hidden xmed:block max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white mt-8">
+                <h2 class="title-display text-3xl pb-4">
                     Offers
                 </h2>
                 <p class="text-ams-primary text-lg">
@@ -92,10 +92,24 @@ fabExternalLink: true
             </div>
         </section>
         <section class="w-full grid justify-items-center">
-            <div class="w-full grid p-4 pb-10 shadow-sm xmed:shadow-md bg-ams-white">
+            <div class="w-full grid p-4 xmed:pb-10 shadow-md bg-ams-white">
                 <figure class="w-full overflow-hidden">
                     {{ rooms_carousel(rooms) }}
                 </figure>
+            </div>
+        </section>
+        <section class="grid justify-items-center max-w-screen-lg xmed:hidden">
+            
+            <div class=" max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white shadow-md mt-8">
+                <h2 class="title-display text-3xl pb-4">
+                    Offers
+                </h2>
+                <p class="text-ams-primary text-lg">
+                    Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
+                </p>
+                <div class="pt-7 pb-2 text-center">
+                    <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
+                </div>
             </div>
         </section>
     </article>
