@@ -10,7 +10,7 @@
                                 <article class="p-0 xmed:mt-4">
                                     <section class="max-w-screen-xl grid xmed:grid-cols-50-50 gap-4 xmed:p-4">
                                         <div>
-                                            <div class="xmed:pt-8 px-6 xmed:p-10 h-40 xmed:bg-ams-white xmed:shadow-md">
+                                            <div class="xmed:pt-8 px-6 xmed:p-10 xmed:bg-ams-white xmed:shadow-md">
                                                 <div class="text-center xmed:text-left category-header header-{{loop.index}}">
                                                     <h2 class="text-2xl xmed:text-2.5xl font-medium font-serif">{{slide.title}}</h2>
                                                     <p class="py-3">{{slide.body}}</p>
@@ -25,15 +25,15 @@
                                                     next
                                                 </button>
                                             </nav>
-                                            <div class="hidden xmed:block">
+                                            <div class="hidden xmed:block mb-10 mt-10">
                                                 {% for item in slide.locations %}
                                                     <div class="mb-6">
                                                         <div class="grid xmed:grid-cols-40-60">
-                                                            <div class="cat-image relative">
-                                                                <div class="absolute bg-ams-white text-xs w-24 left-2 bottom-2 p-2 text-center">{{ item.category_name }}</div>
+                                                            <div class="relative">
+                                                                <div class="absolute bg-ams-white text-xs w-24 right-2 top-2 p-2 text-center">{{ item.category_name }}</div>
                                                                 <img src="{{ item.image }}" class="w-full" alt="{{ item.imgalt }}">
                                                             </div>
-                                                            <div class="pt-4 px-2">
+                                                            <div class="pt-4 px-4">
                                                                 <div class="flex justify-between">
                                                                     <div class="title justify-items-start">{{ item.card_title }}</div>
                                                                     <div class="justify-items-end text-ams-gold">{{ item.distance }}</div>
