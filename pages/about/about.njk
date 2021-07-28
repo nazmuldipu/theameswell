@@ -12,7 +12,7 @@ fabExternalLink: true
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image, address_format %}
 {% from "media-carousel.njk" import media_carousel %}
-{% from "svgicon.njk" import svg_caption_icon %}
+{% from "svgicon.njk" import svg_icon %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--about-xmed xmed:bg-hero--about bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
@@ -141,12 +141,12 @@ fabExternalLink: true
                 Our sustainability program includes:
             </h2>
             <div class="xmed:grid xmed:grid-cols-3 xmed:gap-4">
-                {{svg_caption_icon("containers", 'Biodegradable or reusable containers at all restaurants', fill="#ec008c")}}
-                {{svg_caption_icon("recycling", 'In-room recycling options', fill="#ec008c")}}
-                {{svg_caption_icon("bath", '100% organic bath amenities by Juice Beauty', fill="#ec008c")}}
-                {{svg_caption_icon("car", 'Electric car charging stations', fill="#ec008c")}}
-                {{svg_caption_icon("farmers", 'Partnerships with farmers/ranchers', fill="#ec008c")}}
-                {{svg_caption_icon("plastic", 'Almost no single-use plastic', fill="#ec008c")}}
+                {{svg_icon("containers", 'Biodegradable or reusable containers at all restaurants', fill="#ec008c", pclass="grid-cols-sm-auto  xmed:px-8")}}
+                {{svg_icon("recycling", 'In-room recycling options', fill="#ec008c", pclass="grid-cols-sm-auto xmed:px-8")}}
+                {{svg_icon("bath", '100% organic bath amenities by Juice Beauty', fill="#ec008c", pclass="grid-cols-sm-auto xmed:px-8")}}
+                {{svg_icon("car", 'Electric car charging stations', fill="#ec008c", pclass="grid-cols-sm-auto xmed:px-8")}}
+                {{svg_icon("farmers", 'Partnerships with farmers/ranchers', fill="#ec008c", pclass="grid-cols-sm-auto xmed:px-8")}}
+                {{svg_icon("plastic", 'Almost no single-use plastic', fill="#ec008c", pclass="grid-cols-sm-auto xmed:px-8")}}
             </div>            
         </section>
     </article>

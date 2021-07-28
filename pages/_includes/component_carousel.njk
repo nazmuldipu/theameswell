@@ -114,13 +114,11 @@
                                 <div class="grid grid-cols-1 xmed:grid-cols-2 justify-items-center xmed:justify-items-start">
                                     <ul class="grid grid-flow-col auto-cols-max">
                                         <li class="rooms-gallery--icon-sqft grid justify-items-center content-start text-center w-28">
-                                            {{svg_icon("size",width="48", height="48", sclass="icon inline-block")}}
-                                            <span>{{slide.icons.sqft}} ft<sup>2</sup>
-                                            </span>
+                                            {{svg_icon("size",width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
+                                            <span>{{slide.icons.sqft}} ft<sup>2</sup> </span>
                                         </li>
                                         <li class="rooms-gallery--icon-sleeps grid justify-items-center content-start text-center w-28">
-                                            {{svg_icon("bed",width="48", height="48", sclass="icon inline-block")}}                                            
-                                            <span>Sleeps {{slide.icons.capacity}}</span>
+                                            {{svg_icon("bed", "Sleeps " + slide.icons.capacity, width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
                                         </li>
                                     </ul>
                                     <div class="mt-10 xmed:mt-0 justify-self-center xmed:justify-self-end">
