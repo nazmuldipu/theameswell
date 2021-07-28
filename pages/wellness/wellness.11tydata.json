@@ -1,44 +1,462 @@
 {
-    "slides": [
+  "slides": [
+    {
+      "artDirection": [
         {
-            "artDirection": [
-                {
-                    "image": "images/hero-wellness",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-                    "intrinsicwidth": "2300"
-                },
-                {
-                    "image": "images/hero-wellness",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-                    "intrinsicwidth": "2300"
-                }
-            ]
+          "image": "images/wellness_1",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
         },
         {
-            "artDirection": [
-                {
-                    "image": "images/wellness-juice-beauty",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-                    "intrinsicwidth": "2300"
-                },
-                {
-                    "image": "images/wellness-juice-beauty",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-                    "intrinsicwidth": "2300"
-                }
-            ]
+          "image": "images/wellness_1",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
         }
-    ]
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellnesss_2",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellnesss_2",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellness_3",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellness_3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellness_4",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellness_4",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellness_5",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellness_5",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/wellness_6",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "image": "images/wellness_6",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    }
+  ],
+  "amenities": [
+    {
+      "title": "Pool",
+      "slug": "pool",
+      "time": "Daily: 7:00 A.M. – 10:00 P.M.",
+      "access": "Access: Room key",
+      "note": "A chairlift is available for individuals needing assistance.",
+      "texts": [
+        "Make the most of Mountain View’s sunny weather at our outdoor saltwater pool. ",
+        "Drink up the sunshine on a poolside chaise or a cocktail from the nearby Airstream in the privacy of one of our outdoor cabanas."
+      ],
+      "more_texts": [
+        "The Ameswell Hotel offers the ultimate outdoor retreat whether you are traveling alone or with friends and family.",
+        "Not staying the night? Book a spa treatment and enjoy complimentary day use of the pool for relaxing before or after your service."
+      ],
+      "slides": [
+        {
+          "artDirection": [
+            {
+              "image": "images/pool-1",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/pool-1",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        },
+        {
+          "artDirection": [
+            {
+              "image": "images/pool-2",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/pool-2",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spa",
+      "slug": "spa",
+      "time": "Daily: 7:00 A.M. – 9:00 P.M., Closed on holidays",
+      "access": "Access: Room key",
+      "note": "Accessible spa treatment room is available.",
+      "texts": [
+        "Experience your spa day, your unique way.",
+        "It’s time to reset and recharge. Indulge in The Ameswell Hotel’s personalized approach to the spa experience in Silicon Valley."
+      ],
+      "more_texts": [
+        "Wellness is in our DNA and it shows. Our state-of-the-art 1,600 square foot fitness center with floor-to-ceiling windows facing the beautiful Ameswell lawn and pool offer a wide range of strength training and cardio equipment, from free weights to Peloton bikes.",
+        "We also have live classes streaming on two Lululemon Mirrors – from yoga and ballet to Zumba and boxing. In-person yoga and other classes are often offered on the Ameswell lawn. Please check with the front desk for a schedule."
+      ],
+      "buttons": [
+        { "label": "View Services", "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406" },
+        {
+          "label": "View & Book Treatments",
+          "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406",
+          "classes": "hidden xmed:block"
+        },
+        {
+          "label": "Make Appointment",
+          "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406",
+          "classes": " xmed:hidden"
+        },
+        { "label": "Spa Policies", "link": "https://app.squarespacescheduling.com/schedule.php?owner=23496406" }
+      ],
+      "slides": [
+        {
+          "artDirection": [
+            {
+              "image": "images/spa-1",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/spa-1",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        },
+        {
+          "artDirection": [
+            {
+              "image": "images/spa-1",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/spa-1",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fitness Center",
+      "slug": "fitness_center",
+      "time": "Daily: 24 Hours",
+      "access": "Access: Room key",
+      "texts": [
+        "Maintain your routine or start a new one during your stay in our expansive fitness center."
+      ],
+      "more_texts": [
+        "Experience the fun of this virtual private trainer in each of our Wellness King  Rooms, our fitness center and our private spa treatment rooms"
+      ],
+      "slides": [
+        {
+          "artDirection": [
+            {
+              "image": "images/fitness center-1",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/fitness center-1",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        },
+        {
+          "artDirection": [
+            {
+              "image": "images/fitness center-2",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/fitness center-2",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        },
+        {
+          "artDirection": [
+            {
+              "image": "images/fitness center-3",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/fitness center-3",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        },
+        {
+          "artDirection": [
+            {
+              "image": "images/fitness center-4",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/fitness center-4",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mirror By Lululemon",
+      "slug": "mirror_by_lululemon",
+      "texts": [
+        "One Mirror. Endless Workouts. Now you can try the workout everyone has been raving about.",
+        "From yoga to boxing, meditation to strength training, the Mirror from Lululemon offers daily live streamed classes and a library of over 4,000 classes you can choose from to keep up your daily practice or pick up a new one."
+      ],
+      "more_texts": [
+        "Their premium quality training mat, dumbbells and resistance bands provide limitless options for your workout. This space efficient system replaces 19 pairs of dumbbells from 2.5 – 46 lbs."
+      ],
+      "buttons": [
+        { "label": "Wellness Room", "link": "https://reservations.theameswellhotel.com/" }
+      ],
+      "slides": [
+        {
+          "artDirection": [
+            {
+              "image": "images/mirror by lululemon-1",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/mirror by lululemon-1",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        },
+        {
+          "artDirection": [
+            {
+              "image": "images/mirror by lululemon-2",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/mirror by lululemon-2",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fitnesse",
+      "slug": "fitnesse",
+      "texts": [
+        "Everything you need to train like an athlete without ever leaving your room.",
+        "The Ameswell Hotel has partnered with local Bay Area company, Fitnesse, to provide all the equipment you need to train effectively in the comfort of your Wellness King Room."
+      ],
+      "more_texts": [
+        "Leave the world behind in one of our spa treatment rooms, which feature full bathrooms with showers, creating a completely private space for you to relax and refresh. Unwind with complimentary water or a warm cup of soothing tea. Slip on a soft robe and get ready to feel renewed.",
+        "We offer a variety of traditional and unique massage and facial services, as well as appointments with nutritionists who can help you with a dietary plan that is just right for you.",
+        "Lululemon’s Mirror is also available in each treatment room, along with adjustable weights, resistance bands and yoga mats by Fitnesse. Reserve the room before your treatment to grab a virtual or live-streamed workout class or stay after your service for a meditation session."
+      ],
+      "buttons": [
+        { "label": "Wellness Room", "link": "https://reservations.theameswellhotel.com/" }
+      ],
+      "slides": [
+        {
+          "artDirection": [
+            {
+              "image": "images/fitness-1",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/fitness-1",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        },
+        {
+          "artDirection": [
+            {
+              "image": "images/fitness-1",
+              "media": "(min-width:900.1px)",
+              "imgtype": "jpg",
+              "sizes": "80vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            },
+            {
+              "image": "images/fitness-1",
+              "media": "(max-width:900px)",
+              "imgtype": "jpg",
+              "sizes": "100vw",
+              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+              "intrinsicwidth": "2300"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

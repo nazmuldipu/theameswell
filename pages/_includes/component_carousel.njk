@@ -1,8 +1,10 @@
+{% from "svgicon.njk" import svg_icon %}
+
 {% macro component_carousel(content) %}
     <figure class="{{ background_color if background_color }}">
-    <media-carousel>
-        <div class="swiper-container w-full h-full relative">
-            
+        <media-carousel>
+            <div class="swiper-container w-full h-full relative">
+
                 <nav class="com-car-nav">
                     <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                         previous
@@ -11,12 +13,77 @@
                         next
                     </button>
                 </nav>
-            
-             <div class="swiper-wrapper z-10">
+
+                <div class="swiper-wrapper z-10">
                     {% for slide in content %}
                         <div class="swiper-slide">
                             <div class="grid grid-cols-1 xmed:grid-cols-2 xmed:mx-14 ">
                                 <picture>
+                                    {% for direction in slide.artDirection %}
+                                        <source 
+                                        data-src="{{ direction.image }}.webp"
+                                        data-srcset="{{ direction | slideImgSrcSet('webp') }}"
+                                        media="{{ direction.media }}"
+                                        sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                        type="image/webp">
+                                        <source 
+                                        data-src="{{ direction.image }}.{{ direction.type if direction.type else 'jpg' }}"
+                                        data-srcset="{{ direction | slideImgSrcSet('webp') }}"
+                                        media="{{ direction.media }}"
+                                        sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                        type="image/{{ direction.type | getImgSourceType }}">
+                                    {% endfor %}
+                                    {% set default = slide.artDirection | first %}
+                                    <img 
+                                        data-src="{{ default.image }}.{{ default.type if default.type else 'jpg' }}"
+                                        data-srcset="{{ default | slideImgSrcSet(default.type) }}"
+                                        class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
+                                        sizes="{{ default.sizes if default.sizes else '75vw' }}" 
+                                        alt="{{ default.imgalt }}">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </picture>
+                                <div class="m-8">
+                                    <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 text-center">
+                                        {{slide.title}}
+                                    </h2>
+                                    <div class="xmed:text-center text-base xmed:text-lg mt-4 h-48 overflow-hidden">
+                                        {{slide.p1}}
+                                    </div>
+                                    <div class="pt-4 pb-4 text-center">
+                                        <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">VIEW OFFERS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </media-carousel>
+    </figure>
+{% endmacro %}
+
+{% macro rooms_carousel(content) %}
+    <media-carousel>
+        <div class="swiper-container w-full h-full relative">
+            <nav class="room-car-nav">
+                <div class="pl-2 pr-2 xmed:pt-3 xmed:pl-4 xmed:bg-ams-white xmed:shadow-md">
+                    <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                            previous
+                    </button>
+                </div>
+                <div class="px-2 xmed:px-3 xmed:pt-3 xmed:pb-1 xmed:bg-ams-white xmed:shadow-md">
+                    <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                        next
+                    </button>
+                </div>
+            </nav>
+
+            <div class="swiper-wrapper z-10">
+                {% for slide in content %}
+                    <div class="swiper-slide">
+                        <div class="grid grid-cols-1 xmed:mx-4 xmed:mt-12">
+                            <picture class="h-72 xmed:h-96">
                                 {% for direction in slide.artDirection %}
                                     <source 
                                         data-src="{{ direction.image }}.webp"
@@ -31,30 +98,41 @@
                                         sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
                                         type="image/{{ direction.type | getImgSourceType }}">
                                 {% endfor %}
-                                {% set default = slide.artDirection|first %}
-                                    <img 
+                                {% set default = slide.artDirection | first %}
+                                <img 
                                         data-src="{{ default.image }}.{{ default.type if default.type else 'jpg' }}"
                                         data-srcset="{{ default | slideImgSrcSet(default.type) }}"
-                                        class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
+                                        class="swiper-lazy w-full h-full object-cover"
                                         sizes="{{ default.sizes if default.sizes else '75vw' }}" 
                                         alt="{{ default.imgalt }}">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </picture>
-                                <div class="m-8">
-                                    <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 text-center">
-                                        {{slide.title}}
-                                    </h2>
-                                    <div class="xmed:text-center text-base xmed:text-lg mt-4 h-48 overflow-hidden"> {{slide.p1}} </div>
-                                    <div class="pt-4 pb-4 text-center">
-                                        <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">VIEW OFFERS</a>
+                                <div class="swiper-lazy-preloader"></div>
+                            </picture>
+                            <div class="xmed:my-8">
+                                <h2 class="w-full px-5 title-display mt-12 xmed:mt-0 text-2xl xmed:text-4xl text-center xmed:text-left">
+                                    {{slide.title}}
+                                </h2>
+                                <div class="grid grid-cols-1 xmed:grid-cols-2 justify-items-center xmed:justify-items-start">
+                                    <ul class="grid grid-flow-col auto-cols-max">
+                                        <li class="rooms-gallery--icon-sqft grid justify-items-center content-start text-center w-28">
+                                            {{svg_icon("size",width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
+                                            <span>{{slide.icons.sqft}} ft<sup>2</sup> </span>
+                                        </li>
+                                        <li class="rooms-gallery--icon-sleeps grid justify-items-center content-start text-center w-28">
+                                            {{svg_icon("bed", "Sleeps " + slide.icons.capacity, width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
+                                        </li>
+                                    </ul>
+                                    <div class="mt-10 xmed:mt-0 justify-self-center xmed:justify-self-end">
+                                        <a href="https://reservations.theameswellhotel.com/111994?_ga=2.47358439.1701343345.1627359188-567585118.1626186950" class="block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button" target="_blank">Book Now </a>
+                                        <a href="room-detail.html" class="segment__cta segment__cta--gold hidden xmed:block mt-6 text-xs text-center text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                    {% endfor %}
-            </div> 
-            
+                    </div>
+                {% endfor %}
+            </div>
+
         </div>
     </media-carousel>
-    </figure>
 {% endmacro %}
