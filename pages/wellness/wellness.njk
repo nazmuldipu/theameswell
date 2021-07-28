@@ -17,36 +17,39 @@ fabCopy:
 {% from "media-carousel.njk" import media_carousel %}
 {% from "svgicon.njk" import svg_icon %}
 
-<div id="pageHero" class="bg-ams-primary bg-hero--wellness-xmed xmed:bg-hero--wellness bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
-</div>
-<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 xmed:pb-36 bg-pattern--ams-orange">
+<div id="pageHero" class="bg-ams-primary bg-hero--wellness xmed:bg-hero--wellness-xmed bg-cover bg-center min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
+<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-16 xmed:pb-36 bg-pattern--ams-grey xmed:bg-pattern--ams-yellow">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                <h2 class="title-display text-3xl xmed:text-5xl pt-6 xmed:pt-0 pb-3 xmed:text-center">
                     Focused on your wellness
                 </h2>
-                <div class="xmed:text-center">
-                    Whether you are here for work travel or weekend getaways, we are committed to your health and well-being, first and foremost. Starting with the design of the hotel itself—sustainable, with <a class="font-bold underline" href="air-quality.html">medical-grade filtered air</a> throughout the guest rooms and public spaces, water filtration, superior acoustics, and human-centered private and public spaces. Continuing through your full experience both indoors and outdoors—reading in the library, relaxing at the spa, picnicking on the lawn, biking the Stevens Creek Trail.
+                <div class="xmed:text-center tracking-tight text-ams-primary">
+                    Whether you’re here for work travel or weekend getaways, we’re committed to your health and well-being, first and foremost. Starting with the design of the hotel itself—sustainable, with  <a class="font-bold underline" href="air-quality.html"> filtered air</a> and water, superior acoustics, and human-centered private and public spaces. Continuing through your full experience both indoors and outdoors—reading in the library, relaxing at the spa, picnicking on the lawn, biking the Stevens Creek Trail.
                 </div>
-                <div class="text-center">
+                <div class="text-center hidden xmed:block">
                     {{ primaryButton("https://app.squarespacescheduling.com/schedule.php?owner=23496406", 'View & Book Treatments', 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
+                </div>
+                <div class="text-center xmed:hidden py-2">
+                    {{ primaryButton("https://app.squarespacescheduling.com/schedule.php?owner=23496406", 'Make Spa Appointment', 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
                 </div>
             </div>
         </section>
     </article>
 </div>
 <div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
-    <article class="w-full max-w-screen-lg overflow-hidden">
+    <article class="hero-swiper w-full max-w-screen-xl overflow-hidden">
         {{ media_carousel(slides, "", "") }}
     </article>
 </div>
 
-<div class="w-full grid justify-items-center pt-8 xmed:pt-6 px-4 pb-14 bg-ams-base">
+<div class="w-full grid justify-items-center pt-8 xmed:pt-6 px-4 xmed:pb-14 bg-ams-base xmed:bg-pattern--ams-grey">
+    <p class="xmed:hidden mb-10 text-center text-ams-primary">Located on eleven scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer planners endless opportunities to create memorable meeting experiences.</p>
     <article class="w-full grid justify-items-center space-y-8 xmed:space-y-24">
         <section class="w-full grid justify-items-center max-w-screen-lg pb-4 px-4 xmed:mt-6 xmed:p-10 bg-ams-white xmed:shadow-md">
-            <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
-                Wellness Features &amp; Amenities
+            <h2 class="px-10 title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 text-center">
+               Resort amenities in an intimate &amp; convenient location
             </h2>
             <ul class="xmed:grid xmed:grid-cols-4 xmed:gap-4">
                 {{svg_icon("sanitization",  'High-Tech Sanitization', fill="#f7941e", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}   
@@ -61,16 +64,75 @@ fabCopy:
         </section>
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
                     Take a Deep Breath...
                 </h2>
-                <div class="xmed:text-center">
+                <div class="text-center">
                     At The Ameswell Hotel, we understand that the quality of air we breathe affects our health, comfort, and well-being.  Our property was designed to provide the best air quality for our guests. Air throughout The Ameswell Hotel is continuously circulated with a Dedicated Outside Air System (DOAS), which runs 24/7, constantly providing fresh, filtered air. 
                 </div>
-                <div class="pt-7 pb-2 xmed:text-center">
+                <div class="pt-7 pb-2 text-center">
                     <a href="air-quality.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
                 </div>
             </div>
         </section>
+        <section class="w-full grid justify-items-center xmed:hidden">
+            <div class="w-full pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
+                    Wellness Amenities
+                </h2>
+                {% for amenity in amenities %}
+                    <a href="#{{amenity.slug}}" class="block text-center underline text-ams-primary mb-5">
+                        {{amenity.title}}
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
     </article>
+</div>
+<div class="w-full grid justify-items-center pt-8 xmed:py-6 bg-ams-base">
+    {% for amenity in amenities %}
+        {% set outer_loop_index = loop.index %}
+        <article id={{amenity.slug}} class="xmed:w-full xmed:max-w-screen-xl mb-8 bg-ams-white shadow-md mx-6 xmed:mx-auto text-ams-primary">
+            <div class="grid grid-cols-1 xmed:grid-cols-2 py-5">
+                <div class="amenity-xs-swiper max-w-screen-xl overflow-hidden xmed:hidden mx-3">
+                    {{ media_carousel(amenity.slides, "", "") }}
+                </div>
+                <div class="px-4 xmed:px-8">
+                    <div class="mr-10 pb-3 border-b border-ams-gold">
+                        <h2 class="text-2xl xmed:text-4xl font-serif">{{amenity.title}}</h2>
+                        <div class="text-sm xmed:text-lg font-bold">{{amenity.time}}</div>
+                        <div class="text-sm xmed:text-lg font-bold">{{amenity.access}}</div>
+                        <div class="text-sm xmed:text-lg font-bold">{{amenity.note}}</div>
+                    </div>
+                    {% for txt in amenity.texts %}
+                        <div class="pt-6">
+                            <span class="text-sm xmed:text-lg">{{txt}}</span>
+                            {% if loop.last %}
+                                <span class="relative">
+                                    <input type="checkbox" id="read_more_{{outer_loop_index}}" class="absolute top-0 left-0 w-full h-full opacity-0">
+
+                                    <label for="read_more_{{outer_loop_index}}" class="segment__cta segment__cta--gold relative text-ams-gold text-xs font-serif-display uppercase cursor-pointer">READ MORE</label>
+
+                                    {% for mtxt in amenity.more_texts %}
+                                        <p class="amenities-more overflow-hidden max-h-0 pt-6">{{mtxt}}</p>
+                                    {% endfor %}
+                                </span>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                    
+                    {% if amenity.buttons | length %}
+                        <div class="w-full py-8 grid xmed:grid-flow-col xmed:auto-cols-max gap-6 justify-items-center">
+                            {% for btn in amenity.buttons %}
+                            <span class="{{btn.classes}}">
+                                {{ primaryButton(btn.link, btn.label) }}
+                                </span>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">{{ media_carousel(amenity.slides, "", "", true) }}</div>
+            </div>
+        </article>
+    {% endfor %}
 </div>
