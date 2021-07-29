@@ -36,9 +36,9 @@ fabExternalLink: true
 <section class="xmed:bg-ams-base w-full text-ams-primary">
     <section class="px-10 max-w-screen-lg m-auto">
         <header class="flex items-center justify-center mt-10 mb-7 text-center font-sans">
-            <img alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
-            <h1 class="font-bold px-4 text-4xl uppercase">July 2021</h1>
-            <img alt="next icon" src="/images/next_icon.svg" class="next"></img>
+            <img alt="previous icon" src="/images/prev_icon.svg" class="nav-prev"></img>
+            <h1 class="month-name font-bold px-4 text-4xl uppercase"></h1>
+            <img alt="next icon" src="/images/next_icon.svg" class="nav-next"></img>
         </header>
         <div class="font-sans text-xs grid grid-cols-7 gap-x-2 xmed:gap-x-6 text-center">
             <div class="bg-ams-primary text-ams-base">Sun</div>
@@ -50,7 +50,7 @@ fabExternalLink: true
             <div class="bg-ams-primary text-ams-base">Sat</div>
         </div>
         {% set items=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]%}
-        <div class="grid grid-cols-7 gap-x-2 xmed:gap-x-6 mb-8 text-2xl xmed:text-6xl text-center">
+        <div class="calendar-body grid grid-cols-7 gap-x-2 xmed:gap-x-6 mb-8 text-center">
             {% for item in items %}
                 <div class="py-4 xmed:py-8 grid-item">
                     <p>{{item}}</p>

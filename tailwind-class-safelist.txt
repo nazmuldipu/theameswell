@@ -88,3 +88,13 @@ xmed:bg-no-webp__hero--offers-xmed
 medium:bg-no-webp__hero--offers-xmed
 large:bg-no-webp__hero--offers-xmed
 bg-no-webp__hero--offers-xmed
+small:bg-no-webp__hero--happenings
+xmed:bg-no-webp__hero--happenings
+medium:bg-no-webp__hero--happenings
+large:bg-no-webp__hero--happenings
+bg-no-webp__hero--happenings
+small:bg-no-webp__hero--happenings-xmed
+xmed:bg-no-webp__hero--happenings-xmed
+medium:bg-no-webp__hero--happenings-xmed
+large:bg-no-webp__hero--happenings-xmed
+bg-no-webp__hero--happenings-xmed
