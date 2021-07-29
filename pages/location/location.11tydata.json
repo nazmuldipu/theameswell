@@ -42,7 +42,9 @@
           "distance": "2.4 mi",
           "image": "images/location-1-shop-desktop.jpg",
           "imgalt": "Downtown Mountain View",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.39133947534689,
+          "long": -122.08231106980809
         },
         {
           "category_name": "Shop",
@@ -51,7 +53,9 @@
           "distance": "7.6 mi",
           "image": "images/location-2-shop-desktop.jpg",
           "imgalt": "Stanford Shopping Centers",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.445674111414505,
+          "long": -122.17109059434087
         },
         {
           "category_name": "Shop",
@@ -60,7 +64,9 @@
           "distance": "11.2 mi",
           "image": "images/location-3-shop-desktop.jpg",
           "imgalt": "Santana Row",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.3252689396081,
+          "long": -121.94803975551781
         },
         {
           "category_name": "Shop",
@@ -69,7 +75,9 @@
           "distance": "34.7 mi",
           "image": "images/location-4-shop-desktop.jpg",
           "imgalt": "San Francisco Premium Outlets",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.70589300962213,
+          "long": -121.84327108780994
         }
       ]
     },
@@ -84,7 +92,9 @@
           "distance": "0.6 mi",
           "image": "images/location-1-explore-desktop.jpg",
           "imgalt": "NASA Ames Visitor's Center",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.409489294299604,
+          "long": -122.0640276864703
         },
         {
           "category_name": "Explore",
@@ -93,7 +103,9 @@
           "distance": "1.2 mi",
           "image": "images/location-2-explore-desktop.jpg",
           "imgalt": "Moffett Field Historical Society Museum",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.41181011976088,
+          "long": -122.05425816209883
         },
         {
           "category_name": "Explore",
@@ -102,7 +114,9 @@
           "distance": "1.6 mi",
           "image": "images/location-3-explore-desktop.jpg",
           "imgalt": "Computer History Museum",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.41548152811577,
+          "long": -122.0775942581461
         },
         {
           "category_name": "Explore",
@@ -111,7 +125,9 @@
           "distance": "6.8 mi",
           "image": "images/location-4-explore-desktop.jpg",
           "imgalt": "Intel Museum",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.39915055738596,
+          "long": -121.96028195132791
         },
         {
           "category_name": "Explore",
@@ -120,7 +136,9 @@
           "distance": "11.3 mi",
           "image": "images/location-5-explore-desktop.jpg",
           "imgalt": "Winchester Mystery Mansion",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.32832630361413,
+          "long": -121.95010988323871
         },
         {
           "category_name": "Explore",
@@ -129,7 +147,9 @@
           "distance": "7.6 mi",
           "image": "images/location-6-explore-desktop.jpg",
           "imgalt": "Museums at Stanford Univeristy",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.43795993640243,
+          "long": -121.17085614771015
         },
         {
           "category_name": "Explore",
@@ -138,7 +158,9 @@
           "distance": "18.6 mi",
           "image": "images/location-7-explore-desktop.jpg",
           "imgalt": "Filoli House and Botanical Gardens",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.49440679425992,
+          "long": -121.31054855300675
         },
         {
           "category_name": "Explore",
@@ -147,7 +169,9 @@
           "distance": "11.8 mi",
           "image": "images/location-8-explore-desktop.jpg",
           "imgalt": "Rosicrucian Egyptian Museum ",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.34423757587398,
+          "long": -121.92264406349226
         }
       ]
     },
@@ -162,7 +186,9 @@
           "distance": "11.4 mi",
           "image": "images/location-1-sip-desktop.jpg",
           "imgalt": "Silicon Valley Wine Trail",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.25989751065749,
+          "long": -121.03525702917787
         },
         {
           "category_name": "Sip",
@@ -171,7 +197,9 @@
           "distance": "12.9 mi",
           "image": "images/location-2-sip-desktop.jpg",
           "imgalt": "Mid-Peninsula Wine Trail",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.499860760382724,
+          "long": -121.2433598134488
         },
         {
           "category_name": "Sip",
@@ -180,7 +208,9 @@
           "distance": "38.2 mi",
           "image": "images/location-3-sip-desktop.jpg",
           "imgalt": "Santa Cruz Wine Region",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.98238406437158,
+          "long": -121.04627085755607
         }
       ]
     },
@@ -273,7 +303,9 @@
           "distance": "6.1 mi",
           "image": "images/location-1-learn-desktop.jpg",
           "imgalt": "Stanford University",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.438007406975785,
+          "long": -121.17027258525717
         },
         {
           "category_name": "Learn",
@@ -282,7 +314,9 @@
           "distance": "9.5",
           "image": "images/location-2-learn-desktop.jpg",
           "imgalt": "Santa Clara University",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.35897507433019,
+          "long": -121.93843690984082
         },
         {
           "category_name": "Learn",
@@ -291,7 +325,9 @@
           "distance": "0.8 mi",
           "image": "images/location-3-learn-desktop.jpg",
           "imgalt": "Carnegie Mellon Silicon Valley Campus",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.4111571018933,
+          "long": -121.05946375963883
         },
         {
           "category_name": "Learn",
@@ -300,7 +336,9 @@
           "distance": "19.3 mi",
           "image": "images/location-4-learn-desktop.jpg",
           "imgalt": "Draper University of Heroes",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.582853754773375,
+          "long": -121.32325244861624
         },
         {
           "category_name": "Learn",
@@ -309,7 +347,9 @@
           "distance": "13.7 mi",
           "image": "images/location-5-learn-desktop.jpg",
           "imgalt": "San Jose State University",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.35413095354061,
+          "long": -121.8789626015297
         }
       ]
     },
@@ -324,7 +364,9 @@
           "distance": "6.4 mi",
           "image": "images/location-1-cheer-desktop.jpg",
           "imgalt": "Go Niners",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.413372276562676,
+          "long": -121.96942878640128
         },
         {
           "category_name": "Cheer",
@@ -333,7 +375,9 @@
           "distance": "11.6",
           "image": "images/location-2-cheer-desktop.jpg",
           "imgalt": "Gameday at the Tank",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.354163795992065,
+          "long": -121.89691371349252
         },
         {
           "category_name": "Cheer",
@@ -342,7 +386,9 @@
           "distance": "9.5 mi",
           "image": "images/location-3-cheer-desktop.jpg",
           "imgalt": "A Quake You Can Enjoy",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.363370539954786,
+          "long": -121.92175456531119
         },
         {
           "category_name": "Cheer",
@@ -351,7 +397,9 @@
           "distance": "14.1 mi",
           "image": "images/location-4-cheer-desktop.jpg",
           "imgalt": "San Jose Giants",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.33775310156487,
+          "long": -121.8597368266541
         },
         {
           "category_name": "Cheer",
@@ -360,7 +408,9 @@
           "distance": "7.0 mi",
           "image": "images/location-5-cheer-desktop.jpg",
           "imgalt": "Tree or Cardinal",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "lat": 37.439808459419154,
+          "long": -121.1608057626896
         }
       ]
     }
