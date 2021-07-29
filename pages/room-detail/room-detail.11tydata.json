@@ -3104,7 +3104,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-1",
+          "image": "images/offer-detail-1",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3112,7 +3112,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-1",
+          "image": "images/offer-detail-1",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -3127,7 +3127,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-2",
+          "image": "images/offer-detail-2",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3135,7 +3135,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-2",
+          "image": "images/offer-detail-2",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -3150,7 +3150,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-3",
+          "image": "images/offer-detail-3",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3158,7 +3158,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-3",
+          "image": "images/offer-detail-3",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -3173,7 +3173,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-2",
+          "image": "images/offer-detail-4",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3181,7 +3181,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-2",
+          "image": "images/offer-detail-4",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -3196,7 +3196,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-3",
+          "image": "images/offer-detail-5",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3204,7 +3204,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-3",
+          "image": "images/offer-detail-5",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
