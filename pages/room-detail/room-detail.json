@@ -1,1 +1,1 @@
-{"module_js":"room-detail/room-detail-module.js","sync_js":"room-detail/room-detail-sync.js","sync_css":"room-detail/room-detail-sync.css"}
+{"defer_js":"room-detail/room-detail-defer.js","module_js":"room-detail/room-detail-module.js","sync_css":"room-detail/room-detail-sync.css","sync_js":"room-detail/room-detail-sync.js"}

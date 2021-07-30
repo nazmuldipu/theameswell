@@ -18,6 +18,16 @@ xmed:bg-no-webp__hero--page-detail-xmed
 medium:bg-no-webp__hero--page-detail-xmed
 large:bg-no-webp__hero--page-detail-xmed
 bg-no-webp__hero--page-detail-xmed
+small:bg-no-webp__hero--page-faq
+xmed:bg-no-webp__hero--page-faq
+medium:bg-no-webp__hero--page-faq
+large:bg-no-webp__hero--page-faq
+bg-no-webp__hero--page-faq
+small:bg-no-webp__hero--page-faq-xmed
+xmed:bg-no-webp__hero--page-faq-xmed
+medium:bg-no-webp__hero--page-faq-xmed
+large:bg-no-webp__hero--page-faq-xmed
+bg-no-webp__hero--page-faq-xmed
 small:bg-no-webp__hero--dining-xmed
 xmed:bg-no-webp__hero--dining-xmed
 medium:bg-no-webp__hero--dining-xmed
