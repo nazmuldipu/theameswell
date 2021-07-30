@@ -11,7 +11,14 @@ fabExternalLink: true
 ---
 {% from "macros.njk" import address_format %}
 {% from "buttons.njk" import primaryButton %}
-
+{% macro form_input(label, name, type="text", placeholder="", onkeypress='', pattern='', maxlength='', required = true) %}
+    <label class="form-label">
+        {{label}}<br>
+        <input {% if onkeypress !== "" %} onkeypress="{{onkeypress}}" {% endif %} type="{{type}}" name="{{name}}" placeholder="{{ placeholder }}"
+        {% if pattern !== "" %} pattern="{{pattern}}" {% endif %} {% if maxlength !== "" %} maxlength="{{maxlength}}" {% endif %}
+        class="form-input__style" aria-required="true" {{ 'required' if (required == true) }}/>
+    </label>
+{% endmacro %}
 <div id="pageHero" class="bg-ams-primary bg-hero--page-detail-xmed xmed:bg-hero--page-detail bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-40 xmed:pb-16 xmed:px-8 xmed:-mt-16">
@@ -47,22 +54,10 @@ fabExternalLink: true
                 </h2>
                 <form-sender data-type="contact">
                     <form>
-                        <label class="form-label">
-                            FIRST NAME *<br>
-                            <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" aria-required="true" name="firstName" type="text" placeholder="Al" class="form-input__style">
-                        </label>
-                        <label class="form-label">
-                            LAST NAME *<br>
-                            <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" aria-required="true" name="lastName" type="text" placeholder="Shepard" class="form-input__style">
-                        </label>
-                        <label class="form-label">
-                            PHONE NUMBER *<br>
-                            <input required="required" aria-required="true" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="718-555-1212" class="form-input__style">
-                        </label>
-                        <label class="form-label">
-                            EMAIL ADDRESS *<br>
-                            <input type="email" required="required" aria-required="true" name="email" placeholder="ashepard@example.com" class="form-input__style">
-                        </label>
+                        {{form_input("FIRST NAME *","firstName", "text", "Al", "return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)")}}
+                        {{form_input("LAST NAME *","lastName", "text", "Shepard", "return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)")}}                        
+                        {{form_input("PHONE NUMBER *","phone", "tel", "718-555-1212", "", "[0-9]{3}-[0-9]{3}-[0-9]{4}", "12")}}
+                        {{form_input("EMAIL ADDRESS *","email", "email", "ashepard@example.com")}}
                         <label name="message" class="form-label">
                             MESSAGE<br>
                             <textarea required="required" minlength="10" name="message" class="form-input__style min-h-l"></textarea>
