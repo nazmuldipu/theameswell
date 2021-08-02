@@ -7,6 +7,7 @@ module.exports = {
   purge: {
     content: [
       './pages/**/*.njk',
+      './pages/**/*.js',
       './tailwind-class-safelist.txt' 
     ]
   },
