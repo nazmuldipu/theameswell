@@ -1,0 +1,79 @@
+{
+    "press": [
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-1",
+                        "alt": "luxury travel",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "#",
+            "title": "“Inspired by the backdrop of California’s wilderness and Silicon Valley’s legacy of unconventional thinking, this 255-room hotel brings together innovation, art, wellness, sustainability, and natural beauty...”"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-2",
+                        "alt": "modern luxury",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "#",
+            "title": "Best New Chef + Best Resort for the Innovator and Adventurer"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-3",
+                        "alt": "san francisco business times",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "#",
+            "title": "“...a refreshing break from the nice-but-none-too-exciting standard of loyalty points-driven corporate hotels.”"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-4",
+                        "alt": "hospitality design",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "#",
+            "title": ""
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-5",
+                        "alt": "elle",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "#",
+            "title": "“Beyond the reclaimed wood and industrial public spaces you can enjoy firepits and hiking trails. And if you need a little pick-me-up, the gym features energy drinks created by Pro Football Hall of Famer Jerry Rice.”"
+        }
+    ]
+}
