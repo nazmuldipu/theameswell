@@ -17,21 +17,21 @@ fabExternalLink: true
 <div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-10 xmed:pb-16 bg-pattern--ams-grey">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
-            <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                <h2 class="title-display font-serif-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
+            <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white text-ams-primary">
+                <h2 class="title-display font-serif-display font-medium xmed:font-normal text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
                     In the Press
                 </h2>
-                <div class="xmed:text-center font-sans text-lg leading-6 tracking-wide">
+                <div class="xmed:text-center font-medium xmed:font-normal font-sans text-base xmed:text-lg leading-6 tracking-wide">
                     Praising our eye-catching art collection, award-winning dining, or new-age wellness and sustainability initiatives, read these features about how we are changing modern hospitality.    
                 </div>
             </div>
         </section>
     </article>
 </div>
-<section class="xmed:grid grid-cols-3 gap-6 justify-items-center w-full bg-ams-base px-9 pb-8 pt-8 xmed:pt-12">
+<section class="xmed:grid grid-cols-3 gap-6 justify-items-center w-full bg-ams-base px-6 xmed:px-9 pb-8 pt-8 xmed:pt-12">
     {% for item in press %}
         <section class="my-6 xmed:my-0 bg-ams-white shadow-md">
-            <figure class="grid max-w-screen-xl items-center xmed:px-3">
+            <figure class="grid items-center xmed:px-3">
                 <figcaption class="grid w-full justify-items-center xmed:pt-8 ">
                     {{ scaled_image(item.image) }}
                 </figcaption>
@@ -42,7 +42,7 @@ fabExternalLink: true
                         </svg>
                     </div>
                     <header>
-                        <h2 class="title-display text-lg font-sans px-4 xmed:px-6 pb-4">
+                        <h2 class="title-display text-ams-primary text-base xmed:text-lg font-sans px-4 xmed:px-6 pb-4">
                             {{ item.title | safe }}
                         </h2>
                     </header>
