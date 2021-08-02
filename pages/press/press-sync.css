@@ -1,3 +1,30 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+@layer base{
+    .form-label{
+        @apply block;
+        @apply mb-4;
+        @apply p-2;
+        @apply bg-ams-label;
+        @apply shadow-md;
+        @apply text-ams-primary;
+        @apply  text-xs;
+    }
+    .form-input__style{
+        @apply block;
+        @apply w-full;
+        @apply p-0;
+        @apply border-0;
+        @apply focus:ring-transparent;
+        @apply focus:border-ams-primary;
+        @apply focus:border-opacity-30;
+        @apply focus:border-b-2;
+        @apply border-ams-primary;
+        @apply bg-ams-label;
+        @apply text-base;
+        @apply focus:outline-none;
+        @apply placeholder-ams-primary;
+        @apply placeholder-opacity-50;
+    }
+}

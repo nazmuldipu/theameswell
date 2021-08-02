@@ -61,3 +61,43 @@ fabExternalLink: true
         </section>
     {% endfor %}
 </section>
+<div class="grid justify-items-center bg-ams-taupe w-full p-8">
+    <article class="max-w-screen-xl p-8 bg-ams-white w-full">
+        <section class="xmed:grid xmed:grid-cols-2 xmed:gap-x-10">
+            <figure class="grid">               
+                <figcaption class="order-2 xmed:order-1">
+                    <h2 class="title-display text-ams-primary font-serif text-2xl xmed:text-4xl pt-4 pb-4">
+                        Press Inquiries and Influencers
+                    </h2>
+                    <p class="text-ams-primary font-sans text-lg">
+                        Send us a message about press opportunities and social media coverage.
+                    </p>
+                </figcaption>
+                <figcaption class="order-1 xmed:order-2">
+                    {{ scaled_image(subfooter.image) }}
+                </figcaption>
+            </figure>
+            <form-sender data-type="alist">
+                <form class="pt-4 xmed:pt-24">
+                   <label class="form-label">
+                        NAME *<br>
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" aria-required="true" name="Name" type="text" placeholder="John" class="form-input__style">
+                    </label>
+                    <label class="form-label">
+                        EMAIL ADDRESS *<br>
+                        <input type="email" required="required" aria-required="true" name="email" placeholder="glenn@example.com" class="form-input__style">
+                    </label>
+                    <label name="message" class="form-label">
+                        MESSAGE<br>
+                        <textarea required="required" minlength="10" name="message" class=" min-h-l form-input__style"></textarea>
+                    </label>
+                    {{ primaryButton("#", 'Submit', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                    <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
+                </form>
+            </form-sender>
+        </section>
+    </article>
+</div>
+<div class="bg-ams-taupe w-full">
+    <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block"></div>
+</div>

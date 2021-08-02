@@ -75,5 +75,18 @@
             "link": "#",
             "title": "“Beyond the reclaimed wood and industrial public spaces you can enjoy firepits and hiking trails. And if you need a little pick-me-up, the gym features energy drinks created by Pro Football Hall of Famer Jerry Rice.”"
         }
-    ]
+    ],
+    "subfooter":{
+        "image": {
+            "artDirection": [
+                {
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/press-6",
+                    "alt": "elle",
+                    "intrinsicwidth": "532" 
+                }
+            ]
+        }
+    }
 }
