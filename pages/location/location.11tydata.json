@@ -43,8 +43,13 @@
           "image": "images/location-1-shop-desktop.jpg",
           "imgalt": "Downtown Mountain View",
           "media": "(min-width:900.1px)",
-          "lat": 37.39133947534689,
-          "long": -122.08231106980809
+          "positions": [
+            {
+              "title": "Downtown Mountain View",
+              "lat": 37.39133947534689,
+              "long": -122.08231106980809
+            }
+          ]
         },
         {
           "category_name": "Shop",
@@ -54,8 +59,13 @@
           "image": "images/location-2-shop-desktop.jpg",
           "imgalt": "Stanford Shopping Centers",
           "media": "(min-width:900.1px)",
-          "lat": 37.445674111414505,
-          "long": -122.17109059434087
+          "positions": [
+            {
+              "title": "Stanford Shopping Centers",
+              "lat": 37.445674111414505,
+              "long": -122.17109059434087
+            }
+          ]
         },
         {
           "category_name": "Shop",
@@ -65,8 +75,13 @@
           "image": "images/location-3-shop-desktop.jpg",
           "imgalt": "Santana Row",
           "media": "(min-width:900.1px)",
-          "lat": 37.3252689396081,
-          "long": -121.94803975551781
+          "positions": [
+            {
+              "title": "Santana Row",
+              "lat": 37.3252689396081,
+              "long": -121.94803975551781
+            }
+          ]
         },
         {
           "category_name": "Shop",
@@ -76,8 +91,13 @@
           "image": "images/location-4-shop-desktop.jpg",
           "imgalt": "San Francisco Premium Outlets",
           "media": "(min-width:900.1px)",
-          "lat": 37.70589300962213,
-          "long": -121.84327108780994
+          "positions": [
+            {
+              "title": "San Francisco Premium Outlets",
+              "lat": 37.70589300962213,
+              "long": -121.84327108780994
+            }
+          ]
         }
       ]
     },
@@ -93,8 +113,13 @@
           "image": "images/location-1-explore-desktop.jpg",
           "imgalt": "NASA Ames Visitor's Center",
           "media": "(min-width:900.1px)",
-          "lat": 37.409489294299604,
-          "long": -122.0640276864703
+          "positions": [
+            {
+              "title": "NASA Ames Visitor's Center",
+              "lat": 37.409489294299604,
+              "long": -122.0640276864703
+            }
+          ]
         },
         {
           "category_name": "Explore",
@@ -104,8 +129,13 @@
           "image": "images/location-2-explore-desktop.jpg",
           "imgalt": "Moffett Field Historical Society Museum",
           "media": "(min-width:900.1px)",
-          "lat": 37.41181011976088,
-          "long": -122.05425816209883
+          "positions": [
+            {
+              "title": "Moffett Field Historical Society Museum",
+              "lat": 37.41181011976088,
+              "long": -122.05425816209883
+            }
+          ]
         },
         {
           "category_name": "Explore",
@@ -115,8 +145,13 @@
           "image": "images/location-3-explore-desktop.jpg",
           "imgalt": "Computer History Museum",
           "media": "(min-width:900.1px)",
-          "lat": 37.41548152811577,
-          "long": -122.0775942581461
+          "positions": [
+            {
+              "title": "Computer History Museum",
+              "lat": 37.41548152811577,
+              "long": -122.0775942581461
+            }
+          ]
         },
         {
           "category_name": "Explore",
@@ -126,8 +161,13 @@
           "image": "images/location-4-explore-desktop.jpg",
           "imgalt": "Intel Museum",
           "media": "(min-width:900.1px)",
-          "lat": 37.39915055738596,
-          "long": -121.96028195132791
+          "positions": [
+            {
+              "title": "Intel Museum",
+              "lat": 37.39915055738596,
+              "long": -121.96028195132791
+            }
+          ]
         },
         {
           "category_name": "Explore",
@@ -137,8 +177,13 @@
           "image": "images/location-5-explore-desktop.jpg",
           "imgalt": "Winchester Mystery Mansion",
           "media": "(min-width:900.1px)",
-          "lat": 37.32832630361413,
-          "long": -121.95010988323871
+          "positions": [
+            {
+              "title": "Winchester Mystery Mansion",
+              "lat": 37.32832630361413,
+              "long": -121.95010988323871
+            }
+          ]
         },
         {
           "category_name": "Explore",
@@ -148,8 +193,13 @@
           "image": "images/location-6-explore-desktop.jpg",
           "imgalt": "Museums at Stanford Univeristy",
           "media": "(min-width:900.1px)",
-          "lat": 37.43795993640243,
-          "long": -121.17085614771015
+          "positions": [
+            {
+              "title": "Museums at Stanford Univeristy",
+              "lat": 37.43795993640243,
+              "long": -121.17085614771015
+            }
+          ]
         },
         {
           "category_name": "Explore",
@@ -159,8 +209,13 @@
           "image": "images/location-7-explore-desktop.jpg",
           "imgalt": "Filoli House and Botanical Gardens",
           "media": "(min-width:900.1px)",
-          "lat": 37.49440679425992,
-          "long": -121.31054855300675
+          "positions": [
+            {
+              "title": "Filoli House and Botanical Gardens",
+              "lat": 37.49440679425992,
+              "long": -121.31054855300675
+            }
+          ]
         },
         {
           "category_name": "Explore",
@@ -170,8 +225,13 @@
           "image": "images/location-8-explore-desktop.jpg",
           "imgalt": "Rosicrucian Egyptian Museum ",
           "media": "(min-width:900.1px)",
-          "lat": 37.34423757587398,
-          "long": -121.92264406349226
+          "positions": [
+            {
+              "title": "Rosicrucian Egyptian Museum",
+              "lat": 37.34423757587398,
+              "long": -121.92264406349226
+            }
+          ]
         }
       ]
     },
@@ -187,8 +247,13 @@
           "image": "images/location-1-sip-desktop.jpg",
           "imgalt": "Silicon Valley Wine Trail",
           "media": "(min-width:900.1px)",
-          "lat": 37.25989751065749,
-          "long": -121.03525702917787
+          "positions": [
+            {
+              "title": "Silicon Valley Wine Trail",
+              "lat": 37.25989751065749,
+              "long": -121.03525702917787
+            }
+          ]
         },
         {
           "category_name": "Sip",
@@ -198,8 +263,13 @@
           "image": "images/location-2-sip-desktop.jpg",
           "imgalt": "Mid-Peninsula Wine Trail",
           "media": "(min-width:900.1px)",
-          "lat": 37.499860760382724,
-          "long": -121.2433598134488
+          "positions": [
+            {
+              "title": "Mid-Peninsula Wine Trail",
+              "lat": 37.499860760382724,
+              "long": -121.2433598134488
+            }
+          ]
         },
         {
           "category_name": "Sip",
@@ -209,8 +279,13 @@
           "image": "images/location-3-sip-desktop.jpg",
           "imgalt": "Santa Cruz Wine Region",
           "media": "(min-width:900.1px)",
-          "lat": 37.98238406437158,
-          "long": -121.04627085755607
+          "positions": [
+            {
+              "title": "Santa Cruz Wine Region",
+              "lat": 37.98238406437158,
+              "long": -121.04627085755607
+            }
+          ]
         }
       ]
     },
@@ -219,13 +294,25 @@
       "body": "From outdoor adventures to live performances, you will find a wide variety of reasons to stay and to play longer in Mountain View.",
       "locations": [
         {
-          "category_name": "Learn",
+          "category_name": "Play",
           "card_title": "Play a Round of Golf (or Two)",
           "card_body": "Two fabulous public golf courses with astounding views are within ten minutes of the The Ameswell Hotel.",
           "distance": "",
           "image": "images/location-1-play-desktop.jpg",
           "imgalt": "Play a Round of Golf (or Two)",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "Shoreline Golf Links",
+              "lat": 37.43284492088787,
+              "long": -122.08569022098557
+            },
+            {
+              "title": "The Golf Club at Moffet Field",
+              "lat": 37.421635810647736,
+              "long": -122.04061327635074
+            }
+          ]
         },
         {
           "category_name": "Play",
@@ -234,7 +321,34 @@
           "distance": "",
           "image": "images/location-2-play-desktop.jpg",
           "imgalt": "Take in a Concert",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "Shoreline Ampitheater",
+              "lat": 37.429778672230434,
+              "long": -122.08088370277945
+            },
+            {
+              "title": "Levi's Stadium",
+              "lat": 37.412181478796896,
+              "long": -121.96918045929876
+            },
+            {
+              "title": "SAP Center",
+              "lat": 37.351939815232626,
+              "long": -121.90375903035583
+            },
+            {
+              "title": "Mountain Winery",
+              "lat": 37.266613624927004,
+              "long": -122.06417087535662
+            },
+            {
+              "title": "Frost Amphitheater",
+              "lat": 37.44073297505016,
+              "long": -121.16563403422606
+            }
+          ]
         },
         {
           "category_name": "Play",
@@ -243,7 +357,19 @@
           "distance": "",
           "image": "images/location-3-play-desktop.jpg",
           "imgalt": "Ride a Rollercoaster",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "Great America",
+              "lat": 37.40967605303016,
+              "long": -121.9727373425219
+            },
+            {
+              "title": "Santa Cruz Boardwalk",
+              "lat": 36.987507823016976,
+              "long": -122.01358243387097
+            }
+          ]
         },
         {
           "category_name": "Play",
@@ -252,7 +378,14 @@
           "distance": "",
           "image": "images/location-4-play-desktop.jpg",
           "imgalt": "Come Sail Away",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "Come Sail Away",
+              "lat": 37.435707386937665,
+              "long": -122.08328696185711
+            }
+          ]
         },
         {
           "category_name": "Play",
@@ -261,7 +394,14 @@
           "distance": "",
           "image": "images/location-5-play-desktop.jpg",
           "imgalt": "Take a Hike",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "Take a Hike",
+              "lat": 37.40195177507397,
+              "long": -122.06934870889931
+            }
+          ]
         },
         {
           "category_name": "Play",
@@ -270,7 +410,24 @@
           "distance": "",
           "image": "images/location-6-play-desktop.jpg",
           "imgalt": "Sun and Surf",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "Santa Cruz Beach",
+              "lat": 36.9831199400019,
+              "long": -122.02044888852366
+            },
+            {
+              "title": "Capitola",
+              "lat": 36.99089668180232,
+              "long": -121.94903775777227
+            },
+            {
+              "title": "Half Moon Bay",
+              "lat": 37.50710653117868,
+              "long": -122.41772487488747
+            }
+          ]
         },
         {
           "category_name": "Play",
@@ -279,7 +436,19 @@
           "distance": "",
           "image": "images/location-7-play-desktop.jpg",
           "imgalt": "Entertain the Kids",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "Palo Alto Junior Museum",
+              "lat": 37.44788199162902,
+              "long": -122.14422421964252
+            },
+            {
+              "title": "Childeren's Discovery Museum",
+              "lat": 37.355220957387814,
+              "long": -121.89967267998959
+            }
+          ]
         },
         {
           "category_name": "Play",
@@ -288,7 +457,29 @@
           "distance": "",
           "image": "images/location-8-play-desktop.jpg",
           "imgalt": "Laugh Until You Cry",
-          "media": "(min-width:900.1px)"
+          "media": "(min-width:900.1px)",
+          "positions": [
+            {
+              "title": "TheatreWorks",
+              "lat": 37.392426677743316,
+              "long": -122.0830064689256
+            },
+            {
+              "title": "Rooster T. Feathers",
+              "lat": 37.37142489986436,
+              "long": -122.03305269129154
+            },
+            {
+              "title": "San Jose Improv",
+              "lat": 37.36043985548244,
+              "long": -121.88241429338643
+            },
+            {
+              "title": "San Jose Center for the Performing Arts",
+              "lat": 37.34596390940815,
+              "long": -121.88685101690821
+            }
+          ]
         }
       ]
     },
@@ -304,8 +495,13 @@
           "image": "images/location-1-learn-desktop.jpg",
           "imgalt": "Stanford University",
           "media": "(min-width:900.1px)",
-          "lat": 37.438007406975785,
-          "long": -121.17027258525717
+          "positions": [
+            {
+              "title": "Stanford University",
+              "lat": 37.438007406975785,
+              "long": -121.17027258525717
+            }
+          ]
         },
         {
           "category_name": "Learn",
@@ -315,8 +511,13 @@
           "image": "images/location-2-learn-desktop.jpg",
           "imgalt": "Santa Clara University",
           "media": "(min-width:900.1px)",
-          "lat": 37.35897507433019,
-          "long": -121.93843690984082
+          "positions": [
+            {
+              "title": "Santa Clara University",
+              "lat": 37.35897507433019,
+              "long": -121.93843690984082
+            }
+          ]
         },
         {
           "category_name": "Learn",
@@ -326,8 +527,13 @@
           "image": "images/location-3-learn-desktop.jpg",
           "imgalt": "Carnegie Mellon Silicon Valley Campus",
           "media": "(min-width:900.1px)",
-          "lat": 37.4111571018933,
-          "long": -121.05946375963883
+          "positions": [
+            {
+              "title": "Carnegie Mellon Silicon Valley Campus",
+              "lat": 37.4111571018933,
+              "long": -121.05946375963883
+            }
+          ]
         },
         {
           "category_name": "Learn",
@@ -337,8 +543,13 @@
           "image": "images/location-4-learn-desktop.jpg",
           "imgalt": "Draper University of Heroes",
           "media": "(min-width:900.1px)",
-          "lat": 37.582853754773375,
-          "long": -121.32325244861624
+          "positions": [
+            {
+              "title": "Draper University of Heroes",
+              "lat": 37.582853754773375,
+              "long": -121.32325244861624
+            }
+          ]
         },
         {
           "category_name": "Learn",
@@ -348,8 +559,13 @@
           "image": "images/location-5-learn-desktop.jpg",
           "imgalt": "San Jose State University",
           "media": "(min-width:900.1px)",
-          "lat": 37.35413095354061,
-          "long": -121.8789626015297
+          "positions": [
+            {
+              "title": "San Jose State University",
+              "lat": 37.35413095354061,
+              "long": -121.8789626015297
+            }
+          ]
         }
       ]
     },
@@ -365,8 +581,13 @@
           "image": "images/location-1-cheer-desktop.jpg",
           "imgalt": "Go Niners",
           "media": "(min-width:900.1px)",
-          "lat": 37.413372276562676,
-          "long": -121.96942878640128
+          "positions": [
+            {
+              "title": "Go Niners",
+              "lat": 37.413372276562676,
+              "long": -121.96942878640128
+            }
+          ]
         },
         {
           "category_name": "Cheer",
@@ -376,8 +597,13 @@
           "image": "images/location-2-cheer-desktop.jpg",
           "imgalt": "Gameday at the Tank",
           "media": "(min-width:900.1px)",
-          "lat": 37.354163795992065,
-          "long": -121.89691371349252
+          "positions": [
+            {
+              "title": "Gameday at the Tank",
+              "lat": 37.354163795992065,
+              "long": -121.89691371349252
+            }
+          ]
         },
         {
           "category_name": "Cheer",
@@ -387,8 +613,13 @@
           "image": "images/location-3-cheer-desktop.jpg",
           "imgalt": "A Quake You Can Enjoy",
           "media": "(min-width:900.1px)",
-          "lat": 37.363370539954786,
-          "long": -121.92175456531119
+          "positions": [
+            {
+              "title": "A Quake You Can Enjoy",
+              "lat": 37.363370539954786,
+              "long": -121.92175456531119
+            }
+          ]
         },
         {
           "category_name": "Cheer",
@@ -398,8 +629,13 @@
           "image": "images/location-4-cheer-desktop.jpg",
           "imgalt": "San Jose Giants",
           "media": "(min-width:900.1px)",
-          "lat": 37.33775310156487,
-          "long": -121.8597368266541
+          "positions": [
+            {
+              "title": "San Jose Giants",
+              "lat": 37.33775310156487,
+              "long": -121.8597368266541
+            }
+          ]
         },
         {
           "category_name": "Cheer",
@@ -409,8 +645,13 @@
           "image": "images/location-5-cheer-desktop.jpg",
           "imgalt": "Tree or Cardinal",
           "media": "(min-width:900.1px)",
-          "lat": 37.439808459419154,
-          "long": -121.1608057626896
+          "positions": [
+            {
+              "title": "Tree or Cardinal",
+              "lat": 37.439808459419154,
+              "long": -121.1608057626896
+            }
+          ]
         }
       ]
     }

@@ -78,7 +78,6 @@ const removeMarkers = () => {
 };
 
 const categories = data.categories;
-const desktop_component = document.querySelector("#desktop_component");
 const cat_map_ele = document.querySelector("#cat_map");
 const sub_cat_map_ele = document.querySelector("#sub_cat_map");
 const next_cat = document.querySelector("#next_cat");
@@ -157,22 +156,17 @@ const loadMap = (category, small) => {
   let locations = [];
   if (!small) {
     category.locations.forEach((item) => {
-      if (item.lat) {
-        const locObj = {
-          title: item.card_title,
-          lat: item.lat,
-          long: item.long,
-        };
-        locations.push(locObj);
+      if (item.positions.length) {
+        item.positions.forEach(locObj =>{
+          locations.push(locObj);
+        })
       }
     });
   } else {
-    if (category.lat) {
-      locations.push({
-        title: category.title,
-        lat: category.lat,
-        long: category.long,
-      });
+    if (category.positions.length) {
+      category.positions.forEach(locObj=>{
+        locations.push(locObj);
+      })
     }
   }
 
