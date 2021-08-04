@@ -110,7 +110,11 @@ fabExternalLink: true
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="dining.html#roger">ROGER</a>
+                            <a href="
+                            {% if (meta.env === 'production') %} https://rogerbarandrestaurant.com/ 
+                            {% else %} https://roger-staging.skipperhospitality.com/
+                            {% endif %}" target="_blank">
+                            ROGER</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
@@ -123,7 +127,11 @@ fabExternalLink: true
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="dining.html#the_flyby">THE FLYBY</a>
+                            <a href="
+                            {% if (meta.env === 'production') %} https://rogerbarandrestaurant.com/flyby-menu 
+                            {% else %} https://roger-staging.skipperhospitality.com/flyby-menu
+                            {% endif %}" target="_blank">
+                            THE FLYBY</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
