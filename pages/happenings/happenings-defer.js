@@ -91,7 +91,7 @@ const renderDay = (opts, eventList) => {
   let eventHtml = "";
   if (eventList.length > 0) {
     eventList.forEach((et) => {
-      eventHtml += `<div class="c-event hidden xmed:block text-xs truncate uppercase" id="${et.id}">${et.title}</div> 
+      eventHtml += `<div class="c-event hidden xmed:block text-xs truncate uppercase cursor-pointer" id="${et.id}">${et.title}</div> 
                     <span class="d-event xmed:hidden text-ams-magenta inline-block">
                         <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="2.5" cy="2.5" r="2.5" fill="#EC008C"/>
@@ -578,6 +578,95 @@ const events = [
     descriptions: [
       "International Trade Exhibition Covering Food & Beverage Industry",
       "OTHAIFEX-Anuga Asia is an international trade fair with 11 trade shows under 1 roof. The recent rebranding of the trade event further cements THAIFEX Anuga Asia as a gateway of choice for international companies looking to enter Asia, one of the largest economic zones in the world, and will serve as an international platform for rapidly-expanding Asian businesses. It is a trade event to interact, exchange ideas and shape the future of the F&B industry. With an increased scale and elevated quality, THAIFEX-Anuga Asia 2020 promises a holistic programme to better equip the F&B industry with tools to stay ahead of the curve and solve pressing issues faced.",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 20,
+    date: { day: 6, month: 8, year: 2021 },
+    time: "10:00 AM - 6:00 PM",
+    title: "Hunter Hotel Investment Conference",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "IThe Hunter Hotel Investment Conference has been recognized as a top hotel convention for over 30 years. Each year, more than 1,700 industry pros flock to the event for expert panels, respected speakers, and unique networking opportunities. Plus, don’t miss Finance Friday — an entire day dedicated to hotel financing and raising equity.",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 21,
+    date: { day: 6, month: 8, year: 2021 },
+    time: "10:10 AM - 6:30 PM",
+    title: "International Hotel Technology Forum",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "IHTF will take place virtually in 2021, tackling the most pressing issues for the industry as it reacts to the global pandemic. The forum will bring together hoteliers, management companies, OTAs, and solution providers to discuss the learnings and challenges of 2020, as well as how technology is helping transform the hotel industry. Registrants receive access to a handful of assets and sessions, including thought-leadership presentations, live Q&As with industry experts, one-on-on group video chats, interactive polls, and downloadable resources.",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 22,
+    date: { day: 7, month: 8, year: 2021 },
+    time: "10:10 AM - 6:30 PM",
+    title: "The Boutique Hotel Investment Conference",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "This conference is designed to foster discussion between boutique hoteliers, investors, and other industry stakeholders. The primary focus is on learning the tools of the trade, hearing successful strategies, and getting an overview of what the market looks like, alongside the ability to network with potential clients, investors and collaborators. Industry professionals who purchase a ticket will receive access to the event app, the virtual “speed dating” platform, seven-day access to all content, and much more.",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 23,
+    date: { day: 7, month: 8, year: 2021 },
+    time: "10:10 AM - 6:30 PM",
+    title: "Hotel Data Conference: Global Edition",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "The Hotel Data Conference focuses on the tools and strategies that hoteliers can use to take advantage of data, effectively putting numbers behind their hotel’s actions. This year, the event has expanded from the U.S. to the rest of the world and will be held virtually “with 12 straight hours of live, data-driven presentations and panels, kicking off in the Asia Pacific region and then ‘following the sun’ with stops in the Middle East, Europe and Central/South America before closing in North America.” ",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 24,
+    date: { day: 12, month: 8, year: 2021 },
+    time: "10:10 AM - 6:30 PM",
+    title: "Future Guest Experience",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "At the Future Guest Experience convention, pros gather to discuss the changing hospitality industry and the evolving expectations of guests. Attendees will get actionable insights and tactics to use at their hotels, restaurants, casinos, and more.",
+      "“Join us for two days of action-packed stories, conversations and connections with the top minds in hospitality,” reads the conference’s website. “You’ll hear and meet C-suite, VPs, operations, technology, design and innovation spanning every hospitality category, with an emphasis on the trailblazers, visionaries and trendsetters that are changing the world with immersive experiences.”",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 25,
+    date: { day: 15, month: 8, year: 2021 },
+    time: "10:10 AM - 6:30 PM",
+    title: "HT-NEXT",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "In 2021, HT-NEXT presents HOTEL NEXT — a simulated hotel experience built for the “new normal, complete with operational areas like a lobby, guest room, back office, plus an exhibit hall, auditorium, and more.” The conference focuses on important industry topics such as touchless experiences, safety and cleanliness, data analytics, and more. You don’t want to miss out on this one.",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 26,
+    date: { day: 17, month: 8, year: 2021 },
+    time: "10:10 AM - 6:30 PM",
+    title: "The Lodging Conference",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "The Lodging Conference has been extremely popular for 25 years, and with good reason. It’s where some of the industry’s most influential leaders join to strategize about development, finance, franchising, management, construction, design, and operations. The event prides itself on being “more than just a conference,” but rather “a think tank where everybody in attendance has the opportunity to join in the conversation, discuss issues, and solve problems.”",
+      "Reservations are recommended and seating is limited.",
+    ],
+  },
+  {
+    id: 26,
+    date: { day: 27, month: 8, year: 2021 },
+    time: "10:10 AM - 6:30 PM",
+    title: "The Lodging Conference",
+    url: "https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/01/social-wedding-travel-770x462.jpg",
+    descriptions: [
+      "The Lodging Conference has been extremely popular for 25 years, and with good reason. It’s where some of the industry’s most influential leaders join to strategize about development, finance, franchising, management, construction, design, and operations. The event prides itself on being “more than just a conference,” but rather “a think tank where everybody in attendance has the opportunity to join in the conversation, discuss issues, and solve problems.”",
       "Reservations are recommended and seating is limited.",
     ],
   },
