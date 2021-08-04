@@ -28,6 +28,13 @@ export default class MediaCarousel extends ProgressiveElement {
                         this.getElementsByClassName('swiper-container')?.[0],
                         mod.defaultConfig
                     );
+                    this.swiperInstance.on('realIndexChange', function (e) {
+                        this.el.dispatchEvent(new CustomEvent("slide_changed",{
+                            detail: {
+                                realIndex: e.realIndex
+                            }
+                          }));
+                    });
                 }
             });
         }

@@ -150,6 +150,9 @@ const renderSubCategory = (category) => {
             </media-carousel>`;
 
   document.querySelector("#subCategory").innerHTML = html;
+  document.querySelector('.swiper-container').addEventListener('slide_changed', e => {
+    loadMap(getCategory(index).locations[e.detail.realIndex], true);
+  });
 };
 
 const loadMap = (category, small) => {
@@ -219,18 +222,6 @@ prev_cat.addEventListener("click", function (e) {
   index--;
   index = index < 0 ? categories.length : index;
   updateUI(index);
-});
-
-mob_next.addEventListener("click", function (e) {
-  subIndex++;
-  subIndex = subIndex >= subCatLength ? 0 : subIndex;
-  loadMap(getCategory(index).locations[subIndex], true);
-});
-
-mob_prev.addEventListener("click", function (e) {
-  subIndex--;
-  subIndex = subIndex < 0 ? subCatLength - 1 : subIndex;
-  loadMap(getCategory(index).locations[subIndex], true);
 });
 
 updateUI(0);

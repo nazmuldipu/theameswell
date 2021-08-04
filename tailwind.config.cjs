@@ -82,7 +82,7 @@ module.exports = {
       },
       height: {
         '800': '50rem',
-        '184':'46rem'
+        '184':'46rem',
         '136':'34rem'
       },
       minWidth: {
