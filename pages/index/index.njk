@@ -11,7 +11,7 @@ fabExternalLink: true
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "buttons.njk" import primaryButton %}
-{% from "component_carousel.njk" import rooms_carousel %}
+{% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
@@ -47,7 +47,7 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<div class="bg-pattern--ams-grey w-full grid justify-items-center xmed:pb-28 relative z-10">
+<div class="bg-pattern--ams-grey w-full grid justify-items-center relative z-10">
     <article class="grid justify-items-center items-start w-full max-w-7xl pt-9 p-14 xmed:pb-8 px-4 xmed:mt-5 xmed:grid-cols-35-65 xmed:gap-8">
         <section class="grid justify-items-center max-w-screen-lg mb-8 shadow-md">
             <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
@@ -61,18 +61,6 @@ fabExternalLink: true
                     <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL ROOMS</a>
                 </div>
             </div>
-
-            <div class="hidden xmed:block max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white mt-8">
-                <h2 class="title-display text-3xl pb-4">
-                    Offers
-                </h2>
-                <p class="text-ams-primary text-lg">
-                    Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
-                </p>
-                <div class="pt-7 pb-2 text-center">
-                    <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
-                </div>
-            </div>
         </section>
         <section class="w-full grid justify-items-center">
             <div class="w-full grid p-4 xmed:pb-10 shadow-md bg-ams-white">
@@ -81,9 +69,12 @@ fabExternalLink: true
                 </figure>
             </div>
         </section>
-        <section class="grid justify-items-center max-w-screen-lg xmed:hidden">
-            
-            <div class=" max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white shadow-md mt-8">
+    </article>
+</div>
+<div class="bg-pattern--ams-grey w-full grid justify-items-center xmed:pb-28 relative z-10">
+    <article class="grid justify-items-center items-start w-full max-w-7xl pb-4 xmed:pb-8 px-4 xmed:grid-cols-35-65 xmed:gap-8">
+        <section class="grid justify-items-center max-w-screen-lg">
+            <div class="max-w-screen-xmed xmed:shadow-md p-10 bg-ams-white">
                 <h2 class="title-display text-3xl pb-4">
                     Offers
                 </h2>
@@ -91,8 +82,15 @@ fabExternalLink: true
                     Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
                 </p>
                 <div class="pt-7 pb-2 text-center">
-                    <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
+                  <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
                 </div>
+            </div>
+        </section>
+        <section class="w-full grid justify-items-center">
+            <div class="w-full grid px-4 pb-4 xmed:p-4 xmed:pb-10 xmed:shadow-md bg-ams-white">
+                <figure class="w-full overflow-hidden">
+                    {{ homepage_offers_carousel(offers) }}
+                </figure>
             </div>
         </section>
     </article>
@@ -112,7 +110,7 @@ fabExternalLink: true
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="dining.html#the_flyby">ROGER</a>
+                            <a href="dining.html#roger">ROGER</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
@@ -125,7 +123,7 @@ fabExternalLink: true
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="dining.html#roger">THE FLYBY</a>
+                            <a href="dining.html#the_flyby">THE FLYBY</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">

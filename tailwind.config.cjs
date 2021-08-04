@@ -132,7 +132,8 @@ module.exports = {
         'sm-auto': 'auto 1fr',
         'auto-sm': '1fr auto',
         'footer': 'repeat(3, 1fr)',
-        'footer-mobile': 'max-content max-content'
+        'footer-mobile': 'max-content max-content',
+        'auto-max': 'auto max-content',
       },
       gridTemplateAreas: {
         'slideshow': ['slide', 'details', 'amenities', 'cta'],
