@@ -53,35 +53,17 @@ permalinkBypassOutputDir: true
             <div class="relative">
                 <div class="absolute w-full bottom-8 z-10">
                     <div class="bg-ams-white mx-6">
-                        <div id="subCategory" class="overflow-hidden">
-                            {# {% for item in shop %} #}
-                                <div id="sub" class="mb-6">
-                                    <div class="grid xmed:grid-cols-40-60">
-                                        <div class="cat-image relative">
-                                            <div class="absolute bg-ams-white text-xs w-24 left-2 bottom-2 p-2 text-center">{{ item.category_name }}</div>
-                                            <img src="{{ item.image }}" class="w-full" alt="{{ item.imgalt }}">
-                                        </div>
-                                        <div class="pt-4 px-2">
-                                            <div class="flex justify-between">
-                                                <div class="title justify-items-start">{{ item.card_title }}</div>
-                                                <div class="justify-items-end text-ams-gold">{{ item.distance }}</div>
-                                            </div>
-                                            <p class="mb-4 text-sm leading-snug">{{ item.card_body }}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            {# {% endfor %} #}
-                        </div>
+                        <div id="subCategory" class="overflow-hidden"> </div>
 
                         <div>
                             <div class="z-10 flex absolute bg-button w-9 h-9 left-3 bottom-3 justify-center items-center">
-                                <button id="mob_prev" class="carousel-button-prev w-4 h-4 transform rotate-45 border-b-2 border-l-2 focus:outline-none -indent-xl overflow-hidden" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-6fdf19d53630b5ef">
+                                <button id="mob_prev" class="carousel-button-prev w-4 h-4 transform rotate-45 border-b-2 border-l-2 ml-2 focus:outline-none -indent-xl overflow-hidden" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-6fdf19d53630b5ef">
                                     previous
                                 </button>
                             </div>
 
                             <div class="z-10 flex absolute bg-button w-9 h-9 right-3 bottom-3 justify-center items-center">
-                                <button id="mob_next" class="carousel-button-next w-4 h-4 transform rotate-45 border-t-2 border-r-2 focus:outline-none -indent-xl overflow-hidden" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-6fdf19d53630b5ef">
+                                <button id="mob_next" class="carousel-button-next w-4 h-4 transform rotate-45 border-t-2 border-r-2 mr-2 focus:outline-none -indent-xl overflow-hidden" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-6fdf19d53630b5ef">
                                     next
                                 </button>
                             </div>
@@ -89,13 +71,7 @@ permalinkBypassOutputDir: true
                     </div>
                 </div>
                  <div id="sub_cat_map" class="w-full h-184 border-0 xmed:hidden" >
-                {# <iframe  class="w-full h-full"
-                    frameborder="0"
-                    allowfullscreen="" 
-                    aria-hidden="false" 
-                    tabindex="0" 
-                    src="https://maps.google.com/maps?hl=en&amp;q=The%20Ameswell%20Hotel,%20Mountain%20View,%20CA%2094043+(The%20Ameswell%20Hotel)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                    </div> #}
+                </div>
             </div>
         </section>
     </article>
