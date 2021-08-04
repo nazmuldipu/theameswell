@@ -484,7 +484,7 @@
           "description": [
             "Be alone together when you share one of our Deluxe Rooms with Two Queen beds. Enjoy plenty of space to stretch out in your own bed and binge your favorite Netflix series together on a 65” Samsung Smart TV."
           ],
-          "icons": { "sqft": "395", "beds": "2 Qeens", "capacity": "5" },
+          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "Start at 395 square feet",
@@ -1251,7 +1251,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the beds. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a bathtub with safety grab bars mounted on the wall. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
           ],
-          "icons": { "sqft": "475", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "475", "beds": "2 Queens", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "475 square feet",
@@ -1602,7 +1602,7 @@
           "description": [
             "You and your guest can rest easy with the addition of a visual doorbell in the Superior Two Queens Hearing-Impaired Accessible room. An abundance of charging ports and ultra-highspeed internet service keeps you connected; plush mattresses and exquisite linens help you rest."
           ],
-          "icons": { "sqft": 310, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 310, "beds": "2 Queens", "capacity": "3" },
           "details": [
             "Sleeps up to 5",
             "Start at 375 square feet",
@@ -2090,7 +2090,7 @@
           "description": [
             "Our Spacious Premium Two Queen beds guestrooms provide two plush Sealy Queen mattresses with luxurious Italian bed linens and a visual doorbell. Floor-to-ceiling windows let in the natural light, while blackout curtains help provide a restful sleep."
           ],
-          "icons": { "sqft": 395, "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": 395, "beds": "2 Queens", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "395 – 415 square feet",
