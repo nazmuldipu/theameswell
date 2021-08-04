@@ -23,6 +23,10 @@ module.exports = {
         'no-webp__hero--page-detail': "url('/images/rooms-hero-desktop.jpg')",
         'hero--page-detail-xmed': "url('/images/rooms-hero-mobile.webp')",
         'no-webp__hero--page-detail-xmed': "url('/images/rooms-hero-mobile.jpg')",
+        'hero--page-faq': "url('/images/hero-faq.webp')",
+        'no-webp__hero--page-faq': "url('/images/hero-faq.jpg')",
+        'hero--page-faq-xmed': "url('/images/hero-faq_xmed.webp')",
+        'no-webp__hero--page-faq-xmed': "url('/images/hero-faq_xmed.jpg')",
         'hero--dining-xmed': "url('/images/hero-dining_xmed.webp')",
         'no-webp__hero--dining-xmed': "url('/images/hero-dining_xmed.jpg')",
         'hero--dining': "url('/images/hero-dining.webp')",
@@ -57,8 +61,8 @@ module.exports = {
         'pattern--ams-magenta': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%'><defs><pattern id='ameswellPattern' x='0' y='0' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23ec008c;'/></pattern><rect id='block' x='-100%' y='0' width='200%' height='214%' transform='scale(0.5)' fill='url(%23ameswellPattern)' /></defs><use xlink:href='%23block' x='50%' y='0'/></svg>\")",
         'hero--offers': "url('/images/offers-1-desktop.webp')",
         'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",
-        'hero--offers-xmed': "url('/images/offers-1-desktop_1200.webp')",
-        'no-webp__hero--offers-xmed': "url('/images/offers-1-desktop_1200.jpg')"
+        'hero--offers-xmed': "url('/images/offers-1_xmed.webp')",
+        'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')"
       },
       backgroundPosition: {
         'center-right': 'center right'
@@ -68,6 +72,9 @@ module.exports = {
         'xmed': '900px',
         'medium': '1024px',
         'large': '1280px'
+      },
+      height: {
+        '136':'34rem'
       },
       minWidth: {
        '2xs': '14rem'
@@ -81,7 +88,8 @@ module.exports = {
          'fab-width-sm': '116px',
          'fab-height-sm': '108px',
          'fab-width-lg': '176px',
-         'fab-height-lg': '163px'
+         'fab-height-lg': '163px',
+         'carousel-lg': '26.5rem'
        },
       colors: {
         'rose': colors.rose,
@@ -89,6 +97,7 @@ module.exports = {
         'ams-taupe': '#686058',
         'ams-grey': '#c2b8ab',
         'ams-gold': '#857550',
+        'ams-sand': '#DBC8B6',
         'ams-cyan': '#00aeef',
         'ams-green': '#00a651',
         'ams-orange': '#f7941e',
@@ -113,11 +122,14 @@ module.exports = {
         'sm-main-sm': '20% auto 20%',
         '40-60': '2fr 3fr',
         '60-40': '3fr 2fr',
+        '35-65':'35% 65%',
         'auto-600': 'auto 600px',
         'slideshow': '55% 45%',
         'sm-auto': 'auto 1fr',
         'auto-sm': '1fr auto',
-        'footer': 'repeat(3, 1fr)'
+        'footer': 'repeat(3, 1fr)',
+        'footer-mobile': 'max-content max-content',
+        'auto-max': 'auto max-content',
       },
       gridTemplateAreas: {
         'slideshow': ['slide', 'details', 'amenities', 'cta'],
@@ -136,6 +148,11 @@ module.exports = {
       },
       inset: {
        '-0.5': '-0.125rem',
+       '81': '22.75rem',
+       '9999': '50%'
+      },
+      transitionProperty: {
+        'height': 'height'
       },
       textIndent: (theme, { negative }) => ({
         ...negative({
