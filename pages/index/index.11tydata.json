@@ -514,5 +514,99 @@
         "intrinsicwidth": "750"
       }
     ]
-  }
+  },
+  "offers": [
+    {
+      "artDirection": [
+        {
+          "image": "images/offer-detail-1",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/offer-detail-1",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Fresh Start",
+        "p1": "Start your day off right with a daily $20 credit at The Flyby café. Serving delicious and healthy breakfasts featuring made-to-order meals, grab and go options and artisan coffee."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/offer-detail-2",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/offer-detail-2",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Puppy Love",
+        "p1": "Treat your four-legged friend to an unforgettable stay at our pet-friendly property!  With a discounted pet fee of $50 (reg. $75), collapsible dog bowl, pet toy, and organic dog treat."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/offer-detail-4",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/offer-detail-4",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Wellness King",
+        "p1": "Make the most of our wellness offerings when you book a room in our Wellness Wing. Each room offers over 4,000 classes on the Mirror – from yoga, meditation, ballet and boxing. This offer includes the Mirror Fitness app, adjustable weights, resistance bands and yoga mat by Team Fitnesse, choice of G.O.A.T. Fuel All Natural Energy Drink by Jerry Rice, and easy access to fitness center, outdoor pool and spa treatment rooms."
+    },
+    {
+      "artDirection": [
+        {
+          "image": "images/offer-detail-5",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "image": "images/offer-detail-5",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Date Night",
+        "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
+    }
+]
 }
