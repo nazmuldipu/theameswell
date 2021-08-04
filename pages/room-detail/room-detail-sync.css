@@ -13,9 +13,15 @@
         @apply text-center;
     }
     .rooms-carousel img{
-        @apply w-auto;
         @apply h-full;
-        @apply max-h-full;
-        @apply mx-auto;
+        @apply object-cover;
+    }
+
+    .rooms-carousel .swiper-container{
+        @apply pb-11;
+    }
+
+    .rooms-carousel .swiper-container nav{
+        @apply top-2;
     }
 }
