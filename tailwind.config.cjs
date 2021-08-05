@@ -79,7 +79,8 @@ module.exports = {
         'large': '1280px'
       },
       height: {
-        '136':'34rem'
+        '136':'34rem',
+        '170':'42.5rem'
       },
       minWidth: {
        '2xs': '14rem'
