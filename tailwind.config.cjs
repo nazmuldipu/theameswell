@@ -154,6 +154,9 @@ module.exports = {
       transitionProperty: {
         'height': 'height'
       },
+      margin: {
+        '0.8': '.2rem',
+      },
       textIndent: (theme, { negative }) => ({
         ...negative({
           'xl': '9999px'
