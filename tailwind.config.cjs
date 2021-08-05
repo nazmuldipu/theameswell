@@ -124,7 +124,8 @@ module.exports = {
         'ams-main-11':'#85434B',
         'ams-main-12':'#E2DFD3',
         'ams-main-13':'#313C2B',
-        'ams-main-14':'#FED9DA'
+        'ams-main-14':'#FED9DA',
+        'ams-black':'#000000'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
