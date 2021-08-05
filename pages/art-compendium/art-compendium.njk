@@ -54,8 +54,17 @@ fabExternalLink: true
     {% for item in art %}
         <section class="{{item.bgImage}} w-full">
             <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 xmed:py-12 xmed:gap-12 shadow-md medium:shadow-none">
-                <figcaption class="grid justify-items-center pt-4 xmed:pt-0 px-8 xmed:px-0">
-                    {{ scaled_image(item.image) }}
+            
+                <figcaption class="pt-4 xmed:pt-0 px-8 xmed:px-0">
+                    {% if item.images %}
+                        <div class="flex flex-col xmed:flex-row">
+                        {% for image in item.images %}
+                            {{ scaled_image(image) }}
+                        {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ scaled_image(item.image) }}
+                    {% endif %}
                 </figcaption>
                 <figcaption class="mt-8 xmed:mt-0 xmed:mx-4 p-4 xmed:p-0 text-lg 
                 {% if item.bgImage == 'bg-ams-white' %}
