@@ -65,7 +65,8 @@ module.exports = {
         'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')"
       },
       backgroundPosition: {
-        'center-right': 'center right'
+        'center-right': 'center right',
+        'inherit': 'inherit',
       },
       screens: {
         'small': '640px',
