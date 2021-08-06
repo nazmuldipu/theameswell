@@ -20,9 +20,9 @@ input[type="checkbox"]:checked ~ label ~ p {
   max-height: 300px;
 }
 
-input[type="checkbox"]:checked ~ label {
+/* input[type="checkbox"]:checked ~ label {
   display: none;
-}
+} */
 
 .amenities-more {
   transition: max-height 0.7s ease;
