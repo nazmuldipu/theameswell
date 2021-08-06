@@ -12,7 +12,7 @@ permalinkBypassOutputDir: true
 {% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="") %}
     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
         {{label}}<br>
-        <input type="{{type}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
+        <input type="{{type}}" id="{{name}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
         class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
         placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }}/>
     </label>
@@ -90,7 +90,7 @@ permalinkBypassOutputDir: true
                         </label>
 
                         <label id="foodBeverageYesText" class="foodBeverageYesText block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                            What food & beverage? <br>
+                            What food &amp; beverage? <br>
                             <select required="required" aria-required="true" name="foodBeverageItems" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
                                 <option value="" disabled selected hidden></option>
                                 <option value="breakfast">Breakfast</option>
