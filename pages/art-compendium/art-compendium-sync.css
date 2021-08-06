@@ -3,9 +3,9 @@
 /****  end imports  ********************************/
 @layer base {
     .moreText{
-        display: none;
+        @apply hidden xmed:inline;
     }
     .moreText.active{
-        display: inline;
+        @apply inline;
     } 
 }
