@@ -8,4 +8,10 @@
     .moreText.active{
         @apply inline;
     } 
+    .toggle-arrow{
+        @apply inline xmed:hidden;
+    }
+    .toggle-arrow.active{
+        transform: rotateZ(180deg);        
+    }
 }

@@ -86,7 +86,7 @@ fabExternalLink: true
                     <p class="mb-4 moreText xmed:mb-12">
                         {{ item.p2 }}
                     </p>
-                    <div class="pb-4 xmed:hidden text-center">
+                    <div class="flex justify-center pb-4 xmed:hidden text-center">
                         <button class="read-more__btn segment__cta  relative font-serif font-semibold text-xs uppercase
                         {% if item.bgImage == 'bg-ams-white' %}
                             text-ams-gold segment__cta--gold
@@ -96,8 +96,14 @@ fabExternalLink: true
                             text-ams-gold segment__cta--gold 
                         {% else %} text-ams-white segment__cta--white
                         {% endif %} ">
-                            READ MORE
+                            MORE
                         </button>
+                        <!--arrow down-->
+                        <div class="toggle-arrow p-1 xmed:hidden">
+                            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 1L4.5 5L8.5 1" stroke="white" stroke-linecap="round"/>
+                            </svg>
+                        </div>
                     </div>
                 </figcaption>
             </figure>
