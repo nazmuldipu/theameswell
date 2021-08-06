@@ -1,3 +1,11 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+@layer base {
+    .moreText{
+        display: none;
+    }
+    .moreText.active{
+        display: inline;
+    } 
+}

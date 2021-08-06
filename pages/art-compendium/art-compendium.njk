@@ -54,13 +54,12 @@ fabExternalLink: true
     {% for item in art %}
         <section class="{{item.bgImage}} w-full">
             <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 xmed:py-12 xmed:gap-12 shadow-md medium:shadow-none">
-            
                 <figcaption class="pt-4 xmed:pt-0 px-8 xmed:px-0">
                     {% if item.images %}
                         <div class="flex flex-col xmed:flex-row">
-                        {% for image in item.images %}
-                            {{ scaled_image(image) }}
-                        {% endfor %}
+                            {% for image in item.images %}
+                                {{ scaled_image(image) }}
+                            {% endfor %}
                         </div>
                     {% else %}
                         {{ scaled_image(item.image) }}
@@ -81,25 +80,26 @@ fabExternalLink: true
                             {{ item.p1 | safe }}
                         </h2>
                     </header>
-                    <p class="mb-4 xmed:mb-12 hidden xmed:block">
-                        {{ item.p2 }}
-                    </p>
                     <p class="mb-4 xmed:mb-12">
                         {{ item.location }}
                     </p>
+                    <p class="mb-4 moreText xmed:mb-12">
+                        {{ item.p2 }}
+                    </p>
+                    <div class="pb-4 xmed:hidden text-center">
+                        <button class="read-more__btn segment__cta  relative font-serif font-semibold text-xs uppercase
+                        {% if item.bgImage == 'bg-ams-white' %}
+                            text-ams-gold segment__cta--gold
+                        {% elseif item.bgImage == 'bg-ams-main-12' %}
+                            text-ams-gold segment__cta--gold
+                        {% elseif item.bgImage == 'bg-ams-main-14' %}
+                            text-ams-gold segment__cta--gold 
+                        {% else %} text-ams-white segment__cta--white
+                        {% endif %} ">
+                            READ MORE
+                        </button>
+                    </div>
                 </figcaption>
-                <div class="pb-4 xmed:hidden text-center">
-                    <a href="#" class=" segment__cta  relative font-serif font-semibold text-xs uppercase
-                    {% if item.bgImage == 'bg-ams-white' %}
-                        text-ams-gold segment__cta--gold
-                    {% elseif item.bgImage == 'bg-ams-main-12' %}
-                        text-ams-gold segment__cta--gold
-                    {% elseif item.bgImage == 'bg-ams-main-14' %}
-                        text-ams-gold segment__cta--gold 
-                    {% else %} text-ams-white segment__cta--white
-                    {% endif %}                                        
-                    ">READ MORE</a>
-                </div>
             </figure>
         </section>
     {% endfor %}
