@@ -52,32 +52,28 @@ const render_right = (event) => {
   }
   return html;
 };
-const renderEventCard = (event, small) => {
-  return `<a class="block bg-ams-white xmed:shadow-2xl mb-4 border-b xmed: border-0 ${
-    small ? "w-full" : "w-96 h-96"
-  }" href="/happenings-detail.html?id=${event.id}">
+const renderOurHappeningsCard = (event) => {
+  return `<section class="bg-ams-white xmed:shadow-2xl pb-5 w-ful">
+            <a class="block" href="/happenings-detail.html?id=${event.id}">
               <figure>
-              <img class="w-full" alt="Event" src="${event.url}"
-           width=150" height="70">
-                  <figcaption>
-                      <header class="px-6 py-4 text-left bg-ams-white">
-                          <h3 class="text-lg font-sans">
-                          ${months[event.date.month]}, ${event.date.day}, ${
-    event.date.year
-  }
-                          </h3>
-                          <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
-                            ${event.title}
-                          </h2>
-                      </header>
-                  </figcaption>
-              </figure>
-              ${
-                small
-                  ? ""
-                  : `<div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium"> <a  href="happenings-detail.html?id=${event.id}" class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button"> View More </a></div>`
-              }
-            </a>`;
+                <img class="w-full" alt="Event" src="${event.url}" width=150" height="70" />
+                <figcaption>
+                  <header class="px-6 py-4 text-left bg-ams-white">
+                    <h3 class="text-lg font-sans">
+                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                    </h3>
+                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
+                      ${event.title}
+                    </h2>
+                  </header>
+                </figcaption>
+              </figure>              
+            </a>
+            <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
+              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display">Reserve Here</a>
+              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display">More Info</a>
+            </div>
+          </section>`;
 };
 const showAlsoLike = (event) => {
   let evHtml = "";
@@ -91,7 +87,7 @@ const showAlsoLike = (event) => {
       events[i].date.day
     );
     if (evDate.getTime() >= eDate.getTime()) {
-      evHtml += renderEventCard(events[i], true);
+      evHtml += renderOurHappeningsCard(events[i]);
       count++;
     }
     if (!viewAll && count >= 3) {

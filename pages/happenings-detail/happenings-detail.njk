@@ -55,14 +55,14 @@ fabExternalLink: true
     </section>
 </section>
 
-<section class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
+<section class="grid bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
     <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
-        <h2 class="title-display text-2xl text-center px-16 font-serif font-medium py-4">
+        <h2 class="title-display text-2xl xmed:text-3xl text-center px-4 xmed:px-16 font-serif font-medium py-4">
             YOU MIGHT ALSO LIKE
         </h2>
     </header>
     {% set items = [0, 1, 2] %}
-    <article id="also_like" class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-16">
+    <article id="also_like" class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 gap-6 xmed:gap-16">
         {# {% for item in items %}
             <section class="bg-ams-white mb-8 xmed:shadow-md">
                 <figure>
@@ -87,8 +87,7 @@ fabExternalLink: true
             </section>
         {% endfor %} #}
     </article>
-    <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center">
-        {# {{ primaryButton("#", 'View all') }} #}
+    <div class="pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
         {{ primaryButton("javascript:void(0)", 'View all', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
     </div>
 </section>

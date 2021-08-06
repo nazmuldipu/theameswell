@@ -145,8 +145,8 @@ const renderBody = (year, month) => {
   bodyEle.innerHTML = dayHtml;
 };
 
-const renderEventCard = (event, small) => {
-  return `<section class="bg-ams-white xmed:shadow-2xl mb-4 border-b xmed: border-0 ${small ? "w-full" : "w-96 h-96"}" href="/happenings-detail.html?id=${event.id}">
+const renderEventCard = (event) => {
+  return `<section class="bg-ams-white xmed:shadow-2xl mb-4 border-b xmed: border-0 w-96 h-96">
             <figure>
             <img class="w-full" alt="Event" src="${event.url}"
          width=150" height="70">
@@ -161,7 +161,31 @@ const renderEventCard = (event, small) => {
                     </header>
                 </figcaption>
             </figure>
-            ${ small ? "" : `<div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium"> <a  href="happenings-detail.html?id=${event.id}" class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button"> View More </a></div>` }
+            <div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium"> <a  href="happenings-detail.html?id=${event.id}" class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button"> View More </a></div>
+          </section>`;
+};
+
+const renderOurHappeningsCard = (event) => {
+  return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-ful">
+            <a class="block" href="/happenings-detail.html?id=${event.id}">
+              <figure>
+                <img class="w-full" alt="Event" src="${event.url}" width=150" height="70" />
+                <figcaption>
+                  <header class="px-6 py-4 text-left bg-ams-white">
+                    <h3 class="text-lg font-sans">
+                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                    </h3>
+                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
+                      ${event.title}
+                    </h2>
+                  </header>
+                </figcaption>
+              </figure>              
+            </a>
+            <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
+              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display">Reserve Here</a>
+              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display">More Info</a>
+            </div>
           </section>`;
 };
 
@@ -170,7 +194,10 @@ var Happenings = function (options) {
   const calendar = document.querySelector("#happening_calendar");
   const our_happenings = document.querySelector("#our_happenings");
   const btn_view_all = document.querySelector(".btn_view_all");
-
+  const our_happenings_title = document.querySelector('#our_happenings_title');
+  const screen_width = window.innerWidth || document.documentElement.clientWidth || 
+  document.body.clientWidth;
+  
   //set tool tip element
   const toolTipEle = document.createElement("div");
   toolTipEle.className = "tooltipText hidden";
@@ -180,7 +207,7 @@ var Happenings = function (options) {
 
   self.gotoDate(new Date());
 
-  self._changeMonth = function (e) {
+  self._onClick = function (e) {
     e = e || window.event;
     var target = e.target || e.srcElement,
       pEl = target;
@@ -188,6 +215,7 @@ var Happenings = function (options) {
     if (!target) {
       return;
     }
+    
     if (hasClass(target, "nav-next")) {
       self.nextMonth();
       self.showOurHappenings(our_happenings)
@@ -195,8 +223,16 @@ var Happenings = function (options) {
       self.prevMonth();
       self.showOurHappenings(our_happenings)
     }
-  };
 
+    // set mobile view events
+    if(screen_width < 900){
+      if(hasClass(target, "calendar_date")){
+        const day = Number(target.innerHTML);
+        our_happenings_title.innerHTML = "Happeings for <br/>" + months[self.calendar.month] + ' ' + day;
+        self.showOurHappenings(our_happenings, day);
+      }
+    }
+  };
   self._mouseover = function (e) {
     e = e || window.event;
     var target = e.target || e.srcElement,
@@ -216,7 +252,7 @@ var Happenings = function (options) {
           day,
           events
         )[0];
-        const eventEle = renderEventCard(event, false);
+        const eventEle = renderEventCard(event);
         toolTipEle.innerHTML = eventEle;
         removeClass(toolTipEle, "hidden");
         self.adjustPosition(parentEle, toolTipEle);
@@ -239,7 +275,7 @@ var Happenings = function (options) {
         events
       );
       const event = eventList.find((ev) => ev.id == id);
-      const eventEle = renderEventCard(event, false);
+      const eventEle = renderEventCard(event);
       toolTipEle.innerHTML = eventEle;
       removeClass(toolTipEle, "hidden");
       self.adjustPosition(parentEle, toolTipEle);
@@ -248,12 +284,16 @@ var Happenings = function (options) {
   self._view_all = function (e) {
     self.viewAll = true;
     self.showOurHappenings(our_happenings);
+    addClass(btn_view_all, "hidden");
   };
-  addEvent(btn_view_all, "click", self._view_all);
-  addEvent(calendar, "click", self._changeMonth);
-  addEvent(calendar, "mouseover", self._mouseover);
 
+  addEvent(btn_view_all, "click", self._view_all);
+  addEvent(calendar, "click", self._onClick);
   self.showOurHappenings(our_happenings);
+  if(screen_width >= 900 ){    
+    addEvent(calendar, "mouseover", self._mouseover);
+  }
+
 };
 
 Happenings.prototype = {
@@ -322,29 +362,41 @@ Happenings.prototype = {
     toolTipEle.style.left = left + "px";
     toolTipEle.style.top = top + "px";
   },
-  showOurHappenings: function (el) {
+  showOurHappenings: function (el, day) {
     let evHtml = "";
     let count = 0;
     const days = getDaysInMonth(this.calendar.year, this.calendar.month);
-    for (let i = days; i > 0; i--) {
-      const evs = getDayEvents(
+    if(day && day > 0){
+      const evs =  getDayEvents(
         this.calendar.year,
         this.calendar.month,
-        i,
+        day,
         events
       );
       for (let j = 0; j < evs.length; j++) {
-        evHtml += renderEventCard(evs[j], true);
-        count++;
+        evHtml += renderOurHappeningsCard(evs[j]);                
+      }
+    }
+    else{
+      for (let i = days; i > 0; i--) {
+        const evs = getDayEvents(
+          this.calendar.year,
+          this.calendar.month,
+          i,
+          events
+        );
+        for (let j = 0; j < evs.length; j++) {
+          evHtml += renderOurHappeningsCard(evs[j]);
+          count++;
+          if (!this.viewAll && count >= 3) {
+            break;
+          }
+        }
         if (!this.viewAll && count >= 3) {
           break;
         }
       }
-      if (!this.viewAll && count >= 3) {
-        break;
-      }
-    }
-
+    } 
     el.innerHTML = evHtml;
   },
 };
