@@ -37,7 +37,7 @@ const addMarkers = (locations) => {
     strokeColor: "#ea4335",
     scale: 2,
   };
-  var infowindow = new InfoWindow();
+  const infowindow = new InfoWindow();
   bounds = new google.maps.LatLngBounds();
   locations.forEach((item) => {
     let marker = new google.maps.Marker({
@@ -78,15 +78,12 @@ const removeMarkers = () => {
 };
 
 const categories = data.categories;
-const cat_map_ele = document.querySelector("#cat_map");
-const sub_cat_map_ele = document.querySelector("#sub_cat_map");
-const next_cat = document.querySelector("#next_cat");
-const prev_cat = document.querySelector("#prev_cat");
-const mob_prev = document.querySelector("#mob_prev");
-const mob_next = document.querySelector("#mob_next");
+const categoryMapElement = document.querySelector("#categoryMap");
+const subCategoryMapElement = document.querySelector("#subCategoryMap");
+const nextCategory = document.querySelector("#nextCategory");
+const previousCategory = document.querySelector("#previousCategory");
 let index = 0;
 let subIndex = 0;
-let subCatLength;
 let mapLoaded = 0;
 const renderTitleBox = (category) => {
   const titleText = `<div class="text-center xmed:text-left category-header">
@@ -96,7 +93,7 @@ const renderTitleBox = (category) => {
                     <p class="py-3">${category.body}</p>
                 </div>`;
   document.querySelector("#titleBox").innerHTML = titleText;
-  document.querySelector("#nav_title").innerHTML = category.title;
+  document.querySelector("#navTitle").innerHTML = category.title;
 };
 
 const renderSubCategories = (category) => {
@@ -105,15 +102,15 @@ const renderSubCategories = (category) => {
     html += `<div class="mb-10 ">
         <div class="grid xmed:grid-cols-40-60">
             <div class="relative">
-                <div class="absolute bg-ams-white text-xs w-24 p-2 top-2 right-2 text-center">${item.category_name}</div>
+                <div class="absolute bg-ams-white text-xs w-24 p-2 top-2 right-2 text-center">${item.categoryName}</div>
                 <img src="${item.image}" class="w-full mb-4" alt="${item.imgalt}">
             </div>
             <div class="xmed:px-4">
                 <div class="flex xmed:justify-between xmed:mb-0">
-                    <div class="title justify-items-start">${item.card_title}</div>
+                    <div class="title justify-items-start">${item.cardTitle}</div>
                     <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
                 </div>
-                <p>${item.card_body}</p>
+                <p>${item.cardBody}</p>
             </div>
         </div>
     </div>`;
@@ -122,35 +119,36 @@ const renderSubCategories = (category) => {
 };
 
 const renderSubCategory = (category) => {
-  subCatLength = category.locations.length;
   let html = `<media-carousel>
               <div class="swiper-container w-full h-full">
                 <div class="swiper-wrapper">`;
+
   category.locations.forEach((item) => {
     html += `<div class="swiper-slide bg-ams-white" >
                               <div id="sub" class="mb-6">
                                 <div class="grid xmed:grid-cols-40-60">
                                     <div class="cat-image relative">
-                                        <div class="absolute bg-ams-white text-xs w-24 left-6 bottom-6 p-2 text-center">${item.category_name}</div>
+                                        <div class="absolute bg-ams-white text-xs w-24 left-6 bottom-6 p-2 text-center">${item.categoryName}</div>
                                         <img src="${item.image}" class="w-full p-4" alt="${item.imgalt}">
                                     </div>
                                     <div class="px-4">
                                         <div class="flex justify-between">
-                                          <div class="title justify-items-start">${item.card_title}</div>
+                                          <div class="title justify-items-start">${item.cardTitle}</div>
                                           <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
                                         </div>
-                                        <p class="mb-4 text-sm leading-snug">${item.card_body}</p>
+                                        <p class="mb-4 text-sm leading-snug">${item.cardBody}</p>
                                     </div>
                                 </div>
                               </div>
                             </div>`;
   });
+  
   html += `</div>
               </div>
             </media-carousel>`;
 
   document.querySelector("#subCategory").innerHTML = html;
-  document.querySelector('.swiper-container').addEventListener('slide_changed', e => {
+  document.querySelector('.swiper-container').addEventListener('slideChanged', e => {
     loadMap(getCategory(index).locations[e.detail.realIndex], true);
   });
 };
@@ -174,7 +172,7 @@ const loadMap = (category, small) => {
   }
 
   if (locations.length && !mapLoaded) {
-    initMap(locations, small ? sub_cat_map_ele : cat_map_ele);
+    initMap(locations, small ? subCategoryMapElement : categoryMapElement);
     mapLoaded = 1;
   } else if (locations.length) {
     removeMarkers();
@@ -206,19 +204,19 @@ const updateUI = (index) => {
     renderSubCategories(category);
     loadMap(category, false);
   } else {
-    cat_map_ele.style.display = "none";
+    categoryMapElement.style.display = "none";
     renderSubCategory(category);
     loadMap(category.locations[subIndex], true);
   }
 };
 
-next_cat.addEventListener("click", function (e) {
+nextCategory.addEventListener("click", function (e) {
   index++;
   index = index > categories.length ? 0 : index;
   updateUI(index);
 });
 
-prev_cat.addEventListener("click", function (e) {
+previousCategory.addEventListener("click", function (e) {
   index--;
   index = index < 0 ? categories.length : index;
   updateUI(index);
