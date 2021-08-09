@@ -30,13 +30,15 @@
     } 
 %}
 
-{% macro svg_icon(name, caption, width="48", height="48", pclass="", sclass="", fill, stroke) %}
+{% macro svg_icon(name, caption, width="48", height="48", pclass="", sclass="", fill, stroke, href="") %}
     <div class="grid xmed:grid-cols-1 items-center xmed:justify-items-center content-start mb-2 xmed:text-center {{pclass}}">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 {{width}} {{height}}" width="{{width}}" height="{{height}}" class="{{sclass}}">
             <path {%if fill %} fill="{{fill}}" {% endif %} {%if stroke %} stroke="{{stroke}}" {% endif %} d="{{icons[name]}}"/>
         </svg>
         {%if caption %}
-        <span>{{caption}}</span>
+        <a {% if href %} href="{{href}}" {% endif %}>
+            <span>{{caption}}</span>
+        </a>
         {% endif %}
     </div>    
 {% endmacro %}
