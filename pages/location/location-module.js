@@ -136,7 +136,7 @@ const renderSubCategory = (category) => {
                                           <div class="title justify-items-start">${item.cardTitle}</div>
                                           <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
                                         </div>
-                                        <p class="mb-4 text-sm leading-snug">${item.cardBody}</p>
+                                        <p class="mb-8 xmed:mb-4 text-sm leading-snug">${item.cardBody}</p>
                                     </div>
                                 </div>
                               </div>
