@@ -14,7 +14,7 @@ fabExternalLink: true
 {% from "macros.njk" import scaled_image %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--press-xmed xmed:bg-hero--press bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
-<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-10 xmed:pb-16 bg-pattern--ams-grey">
+<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-4 xmed:pt-16 px-4 pb-12 small:pb-10 xmed:pb-16 bg-pattern--ams-gold">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white text-ams-primary">
@@ -28,43 +28,45 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<section class="xmed:grid grid-cols-3 gap-6 justify-items-center w-full bg-ams-base px-6 xmed:px-9 pb-8 pt-8 xmed:pt-12">
-    {% for item in press %}
-        <section class="my-6 xmed:my-0 bg-ams-white shadow-md">
-            <figure class="grid items-center xmed:px-3">
-                <figcaption class="grid w-full justify-items-center xmed:pt-8 ">
-                    {{ scaled_image(item.image) }}
-                </figcaption>
-                <figcaption class="mt-4 text-center">
-                    <div class="inline-block pb-4 text-center">
-                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.553 9.572C5.129 6.436 6.729 3.556 9.225 1.06L9.097 0.995998C6.857 2.084 4.937 3.94 3.273 6.564C1.609 9.124 0.777 11.62 0.777 13.988C0.777 17.38 2.889 19.684 5.897 19.684C8.777 19.684 11.081 17.38 11.081 14.564C11.081 12.836 10.441 11.492 9.097 10.468C7.753 9.444 6.281 9.124 4.553 9.572ZM16.713 9.572C17.289 6.436 18.889 3.556 21.385 1.06L21.257 0.995998C19.017 2.084 17.097 3.94 15.433 6.564C13.769 9.124 12.937 11.62 12.937 13.988C12.937 17.38 15.049 19.684 18.057 19.684C20.937 19.684 23.241 17.38 23.241 14.564C23.241 12.836 22.601 11.492 21.257 10.468C19.913 9.444 18.441 9.124 16.713 9.572Z" fill="#C2B8AB"/>
-                        </svg>
-                    </div>
-                    <header>
-                        <h2 class="title-display text-ams-primary text-base xmed:text-lg font-sans px-4 xmed:px-6 pb-4">
-                            {{ item.title | safe }}
-                        </h2>
-                    </header>
-                    <div class="inline-block pb-4 text-center">
-                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.553 9.572C5.129 6.436 6.729 3.556 9.225 1.06L9.097 0.995998C6.857 2.084 4.937 3.94 3.273 6.564C1.609 9.124 0.777 11.62 0.777 13.988C0.777 17.38 2.889 19.684 5.897 19.684C8.777 19.684 11.081 17.38 11.081 14.564C11.081 12.836 10.441 11.492 9.097 10.468C7.753 9.444 6.281 9.124 4.553 9.572ZM16.713 9.572C17.289 6.436 18.889 3.556 21.385 1.06L21.257 0.995998C19.017 2.084 17.097 3.94 15.433 6.564C13.769 9.124 12.937 11.62 12.937 13.988C12.937 17.38 15.049 19.684 18.057 19.684C20.937 19.684 23.241 17.38 23.241 14.564C23.241 12.836 22.601 11.492 21.257 10.468C19.913 9.444 18.441 9.124 16.713 9.572Z" fill="#C2B8AB"/>
-                        </svg>
-                    </div>
-                </figcaption>
-            </figure>
-            <div  class="text-center pb-4 xmed:pb-9">
-                <p class="inline-block border-b border-ams-gold mx-4">
-                    {{ primaryButton(item.link, 'Read More', 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-xl', 'a', true) }}
-                </p>
-            </div>
-        </section>
-    {% endfor %}
+<section class="w-full bg-ams-base px-4 xmed:px-10 xmed:pb-8 pt-8 xmed:pt-12">
+    <section class="grid xmed:grid-cols-3 gap-6 justify-items-center w-full max-w-screen-2xl mx-auto">
+        {% for item in press %}
+            <section class="my-6 w-full xmed:my-0 bg-ams-white shadow-md">
+                <figure class="grid items-center xmed:px-3">
+                    <figcaption class="grid w-full justify-items-center xmed:pt-8 ">
+                        {{ scaled_image(item.image) }}
+                    </figcaption>
+                    <figcaption class="mt-4 text-center">
+                        <div class="inline-block pb-4 text-center">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.553 9.572C5.129 6.436 6.729 3.556 9.225 1.06L9.097 0.995998C6.857 2.084 4.937 3.94 3.273 6.564C1.609 9.124 0.777 11.62 0.777 13.988C0.777 17.38 2.889 19.684 5.897 19.684C8.777 19.684 11.081 17.38 11.081 14.564C11.081 12.836 10.441 11.492 9.097 10.468C7.753 9.444 6.281 9.124 4.553 9.572ZM16.713 9.572C17.289 6.436 18.889 3.556 21.385 1.06L21.257 0.995998C19.017 2.084 17.097 3.94 15.433 6.564C13.769 9.124 12.937 11.62 12.937 13.988C12.937 17.38 15.049 19.684 18.057 19.684C20.937 19.684 23.241 17.38 23.241 14.564C23.241 12.836 22.601 11.492 21.257 10.468C19.913 9.444 18.441 9.124 16.713 9.572Z" fill="#C2B8AB"/>
+                            </svg>
+                        </div>
+                        <header>
+                            <h2 class="title-display text-ams-primary text-base xmed:text-lg font-sans px-4 xmed:px-6 pb-4">
+                                {{ item.title | safe }}
+                            </h2>
+                        </header>
+                        <div class="inline-block pb-4 text-center">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.553 9.572C5.129 6.436 6.729 3.556 9.225 1.06L9.097 0.995998C6.857 2.084 4.937 3.94 3.273 6.564C1.609 9.124 0.777 11.62 0.777 13.988C0.777 17.38 2.889 19.684 5.897 19.684C8.777 19.684 11.081 17.38 11.081 14.564C11.081 12.836 10.441 11.492 9.097 10.468C7.753 9.444 6.281 9.124 4.553 9.572ZM16.713 9.572C17.289 6.436 18.889 3.556 21.385 1.06L21.257 0.995998C19.017 2.084 17.097 3.94 15.433 6.564C13.769 9.124 12.937 11.62 12.937 13.988C12.937 17.38 15.049 19.684 18.057 19.684C20.937 19.684 23.241 17.38 23.241 14.564C23.241 12.836 22.601 11.492 21.257 10.468C19.913 9.444 18.441 9.124 16.713 9.572Z" fill="#C2B8AB"/>
+                            </svg>
+                        </div>
+                    </figcaption>
+                </figure>
+                <div  class="text-center pb-4 xmed:pb-9">
+                    <p class="inline-block border-b border-ams-gold mx-4">
+                        {{ primaryButton(item.link, 'Read More', 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-xl', 'a', true) }}
+                    </p>
+                </div>
+            </section>
+        {% endfor %}
+    </section>
 </section>
-<div class="grid justify-items-center bg-ams-taupe w-full p-8">
+<div class="grid justify-items-center bg-ams-taupe w-full px-4 xmed:px-20 pt-4 xmed:pt-16 pb-4 xmed:pb-8">
     <article class="max-w-screen-xl p-8 bg-ams-white w-full">
         <section class="xmed:grid xmed:grid-cols-2 xmed:gap-x-10">
-            <figure class="grid">               
+            <figure class="grid">
                 <figcaption class="order-2 xmed:order-1">
                     <h2 class="title-display text-ams-primary font-serif text-2xl xmed:text-4xl pt-4 pb-4">
                         Press Inquiries and Influencers
@@ -77,19 +79,19 @@ fabExternalLink: true
                     {{ scaled_image(subfooter.image) }}
                 </figcaption>
             </figure>
-            <form-sender data-type="alist">
+            <form-sender data-type="contact">
                 <form class="pt-4 xmed:pt-24">
-                   <label class="form-label">
+                    <label class="form-label">
                         NAME *<br>
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" aria-required="true" name="Name" type="text" placeholder="John" class="form-input__style">
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" aria-required="true" id="firstName" name="firstName" type="text" placeholder="John" class="form-input__style">
                     </label>
                     <label class="form-label">
                         EMAIL ADDRESS *<br>
-                        <input type="email" required="required" aria-required="true" name="email" placeholder="glenn@example.com" class="form-input__style">
+                        <input type="email" id="email" required="required" aria-required="true" name="email" placeholder="glenn@example.com" class="form-input__style">
                     </label>
                     <label name="message" class="form-label">
-                        MESSAGE<br>
-                        <textarea required="required" minlength="10" name="message" class=" min-h-l form-input__style"></textarea>
+                        Message<br>
+                        <textarea required="required" minlength="10" name="message" placeholder="Type Message..." class=" min-h-l form-input__style"></textarea>
                     </label>
                     {{ primaryButton("#", 'Submit', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
                     <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
