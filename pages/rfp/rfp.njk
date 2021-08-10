@@ -9,12 +9,12 @@ permalinkBypassOutputDir: true
 ---
 {% from "buttons.njk" import primaryButton %}
 
-{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="") %}
+{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="", readonly=false) %}
     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
         {{label}}<br>
         <input type="{{type}}" id="{{name}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
         class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
-        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }}/>
+        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }} {{ 'readonly' if (readonly == true) }} />
     </label>
 {% endmacro %}
 
@@ -59,8 +59,8 @@ permalinkBypassOutputDir: true
                             </select>
                         </label>
 
-                        {{form_input("startDate","START DATE *", "date", "MM/DD/YYY", true, "datepicker relative")}}
-                        {{form_input("endDate","END DATE", "date", "MM/DD/YYY", false, "datepicker relative")}}
+                        {{form_input("startDate","START DATE *", "text", "YYYY-MM-DD", true, "datepicker relative", readonly=true)}}
+                        {{form_input("endDate","END DATE", "text", "YYYY-MM-DD", false, "datepicker relative", readonly=true)}}
                         {{form_input("startTime","Event Start Time: ", "time", "MM/DD/YYY", false)}}
                         {{form_input("endTime","Event End Time:", "time", "MM/DD/YYY", false)}}
                         {{form_input("guestRoomCount","How many guest rooms? ", "number", "", false, "", 0)}}
