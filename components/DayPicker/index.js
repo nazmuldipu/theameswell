@@ -2,7 +2,7 @@
 
 const hasEventListeners = !!window.addEventListener;
 const sto = window.setTimeout;
-const priceList = [38, 27, 23, 24, 40, 28, 36, 41, 28, 22, 30, 45, 41, 35, 42, 28, 20, 22, 42, 29, 35, 39, 32, 21, 45, 43, 50, 24, 35, 25, 36];
+const priceList = [38, 27, 23, 24, 40, 28, 36, 41, 28, 22, 30, 45, 41, 35, 42, 28, 20, 22, 42, 29, 35, 39, 32, 21, 45, 43, 50, 24, 35, 25, 36, 33];
 const defaults = {
   // bind the picker to a form field
   field: null,
