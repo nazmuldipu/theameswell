@@ -16,10 +16,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         /* TODO: add webp and jpg fallback URLs */
-        'hero--home': "url('/images/homepage-1-desktop_lg.webp')",
-        'no-webp__hero--home': "url('/images/homepage-1-desktop_lg.jpg')",
-        'hero--home-xmed': "url('/images/homepage-1-mobile_2xs.webp')",
-        'no-webp__hero--home-xmed': "url('/images/homepage-1-mobile_2xs.jpg')",
+        'hero--home': "url('/images/hero-home.webp')",
+        'no-webp__hero--home': "url('/images/hero-home.jpg')",
+        'hero--home-xmed': "url('/images/hero-home_xmed.webp')",
+        'no-webp__hero--home-xmed': "url('/images/hero-home_xmed.jpg')",
         'hero--page-detail': "url('/images/rooms-hero-desktop.webp')",
         'no-webp__hero--page-detail': "url('/images/rooms-hero-desktop.jpg')",
         'hero--page-detail-xmed': "url('/images/rooms-hero-mobile.webp')",
@@ -72,7 +72,8 @@ module.exports = {
         'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')"
       },
       backgroundPosition: {
-        'center-right': 'center right'
+        'center-right': 'center right',
+        'inherit': 'inherit',
       },
       screens: {
         'small': '640px',
@@ -174,6 +175,9 @@ module.exports = {
       },
       transitionProperty: {
         'height': 'height'
+      },
+      margin: {
+        '0.8': '.2rem',
       },
       textIndent: (theme, { negative }) => ({
         ...negative({
