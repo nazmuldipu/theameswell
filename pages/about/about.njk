@@ -53,9 +53,8 @@ fabExternalLink: true
                 </a>
             </p>
             <div class="pt-4 pb-4 xmed:pb-0">
-                {# TODO: uncomment and link to the location page when it goes live --Alex July 15, 2021
-                    <a href="#" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
-                #}
+                {# TODO: uncomment and link to the location page when it goes live --Alex July 15, 2021 #}
+                <a href="location.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
             </div>
         </section>
         <section class="xmed:bg-ams-white xmed:grid xmed:content-center xmed:justify-items-center xmed:pr-8">
@@ -151,11 +150,15 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<header class="w-full grid justify-items-center px-8 bg-ams-base">
-    <h2 class="title-display text-2xl xmed:text-5xl my-4 py-8 xmed:text-center">
-        Who are we?
-    </h2>
-</header>
+<div class="w-full grid justify-items-center bg-ams-base">
+    <div class="w-full grid my-8 xmed:my-12 justify-items-center max-w-screen-md">
+        <div class="w-full mx-6 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
+            <h2 class="title-display text-3xl xmed:text-5xl text-center">
+                Who are we?
+            </h2>
+        </div>
+    </div>
+</div>        
 {% for item in about_items %}
     <div class="grid justify-items-center w-full bg-ams-base">
         <article class="mb-4 xmed:mb-12">

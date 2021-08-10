@@ -25,7 +25,7 @@ export default class WeatherWidget extends HTMLElement {
 
                 let icon = svgicon(edge, color, wid);
                 this.innerHTML = `
-                    <div class="relative -top-1 flex items-center">
+                    <div class="relative -top-1 -mt-0.5 xmed:mt-0 flex items-center">
                         ${icon}
                         <p  class="text-base xmed:text-2xl pl-2 xmed:pl-3" >${temp} &#176</p>
                     </div> `;
