@@ -3150,29 +3150,6 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-3",
-          "media": "(min-width:900.1px)",
-          "imgtype": "jpg",
-          "sizes": "80vw",
-          "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
-        },
-        {
-          "image": "images/offer-detail-3",
-          "media": "(max-width:900px)",
-          "imgtype": "jpg",
-          "sizes": "100vw",
-          "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
-        }
-      ],
-        "link": "https://reservations.travelclick.com/111994",
-        "title": "Work from Ameswell",
-        "p1": "Work from one of our spacious, light-filled guest rooms or many public spaces. Get inspired in the Ames Library or lounging by the pool. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, one coffee, tea, or G.0.A.T. Fuel Energy Drink."
-    },
-    {
-      "artDirection": [
-        {
           "image": "images/offer-detail-4",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
