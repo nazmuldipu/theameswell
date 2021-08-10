@@ -124,7 +124,7 @@ canonical_href: https://www.theameswellhotel.com
             /* webp hero images */
             Modernizr.on('webp', webp => {
                 if(!webp) {
-                    pageHero.className = pageHero.className.replaceAll('hero--', 'no-webp__hero--');
+                    pageHero.className = pageHero.className.replace(/hero--/g, 'no-webp__hero--');
                 }
             })
         </script>
