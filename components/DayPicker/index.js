@@ -2,6 +2,7 @@
 
 const hasEventListeners = !!window.addEventListener;
 const sto = window.setTimeout;
+const priceList = [38, 27, 23, 24, 40, 28, 36, 41, 28, 22, 30, 45, 41, 35, 42, 28, 20, 22, 42, 29, 35, 39, 32, 21, 45, 43, 50, 24, 35, 25, 36];
 const defaults = {
   // bind the picker to a form field
   field: null,
@@ -15,6 +16,8 @@ const defaults = {
 
   // automatically fit in the viewport even if it means repositioning from the position option
   reposition: true,
+
+  showPrice: false,
 
   // the default output format for `.toString()` and `field` value
   format: "YYYY-MM-DD",
@@ -222,6 +225,9 @@ const renderDay = function (opts) {
   if (opts.isDisabled) {
     arr.push("is-disabled");
   }
+
+  let innerEle = opts.showPrice ? `<div class="day-box"><div class="day-date">${opts.day}</div><div class="day-price">$${opts.price}</div></div>`:`${opts.day}`;
+  
   return (
     '<td data-day="' +
     opts.day +
@@ -237,9 +243,9 @@ const renderDay = function (opts) {
     opts.month +
     '" data-daypicker-day="' +
     opts.day +
-    '"><div class="day-box"><div class="day-date">' +
-    opts.day +
-    '</div><div class="day-price">$20</div></div></button>' +
+    '">' +
+    innerEle +
+    '</button>' +
     "</td>"
   );
 };
@@ -315,7 +321,7 @@ var DayPicker = function (options) {
       }, 100);
     }
   }
-  
+
   self._onMouseDown = function (e) {
     if (!self._view) {
       return;
@@ -325,6 +331,7 @@ var DayPicker = function (options) {
     if (!target) {
       return;
     }
+
     if (hasClass(target, "daypicker-button") && !hasClass(target, "is-empty")) {
       setDateAndClose(target);
     }else if(hasClass(target, 'day-box')) {
@@ -333,8 +340,7 @@ var DayPicker = function (options) {
     }else if(hasClass(target, 'day-date') || hasClass(target, 'day-price')) {
       const el = target.parentNode.parentNode;
       setDateAndClose(el);
-    }
-    else if (hasClass(target, "daypicker-prev")) {
+    } else if (hasClass(target, "daypicker-prev")) {
       self.prevMonth();
     } else if (hasClass(target, "daypicker-next")) {
       self.nextMonth();
@@ -767,10 +773,12 @@ DayPicker.prototype = {
         day: dayNumber,
         month: monthNumber,
         year: yearNumber,
-        isSelected: isSelected,
-        isToday: isToday,
-        isEmpty: isEmpty,
+        isSelected,
+        isToday,
+        isEmpty,
         isDisabled,
+        showPrice:opts.showPrice,
+        price:priceList[dayNumber],
         showDaysInNextAndPreviousMonths: opts.showDaysInNextAndPreviousMonths,
       };
 
