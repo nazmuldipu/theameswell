@@ -19,7 +19,7 @@ fabCopy:
 
 <div id="pageHero" class="bg-ams-primary bg-hero--weddings-xmed xmed:bg-hero--weddings bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
-<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 xmed:pb-36 bg-pattern--ams-gold">
+<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-8 pb-16 xmed:pb-30 bg-pattern--ams-gold">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
@@ -75,7 +75,11 @@ fabCopy:
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            THE FLYBY
+                            <a href="
+                            {% if (meta.env === 'production') %} https://rogerbarandrestaurant.com/flyby-menu 
+                            {% else %} https://roger-staging.skipperhospitality.com/flyby-menu
+                            {% endif %}" target="_blank">
+                            THE FLYBY</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
@@ -88,7 +92,11 @@ fabCopy:
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            ROGER
+                            <a href="
+                            {% if (meta.env === 'production') %} https://rogerbarandrestaurant.com/ 
+                            {% else %} https://roger-staging.skipperhospitality.com/
+                            {% endif %}" target="_blank">
+                            ROGER</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
@@ -101,7 +109,7 @@ fabCopy:
                 <figcaption class="text-ams-white xmed:px-8">
                     <header class="xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            AIRSTREAM BAR
+                            <a href="dining.html#airstream_bar">AIRSTREAM BAR</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
