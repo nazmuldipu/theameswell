@@ -16,11 +16,12 @@
   @apply object-cover;
 }
 
-input[type="checkbox"]:checked ~ label ~ p {
+.read-more:checked ~ label ~ p {
   max-height: 300px;
+  display: block;
 }
 
-input[type="checkbox"]:checked ~ label {
+.read-more:checked ~ label {
   display: none;
 }
 

@@ -7,6 +7,7 @@ module.exports = {
   purge: {
     content: [
       './pages/**/*.njk',
+      './pages/**/*.js',
       './tailwind-class-safelist.txt' 
     ]
   },
@@ -31,6 +32,12 @@ module.exports = {
         'no-webp__hero--dining-xmed': "url('/images/hero-dining_xmed.jpg')",
         'hero--dining': "url('/images/hero-dining.webp')",
         'no-webp__hero--dining': "url('/images/hero-dining.jpg')",
+
+        'hero--location': "url('/images/location-bg.webp')",
+        'no-webp__hero--location': "url('/images/location-bg.jpg')",
+        'hero--location-xmed': "url('/images/location-hero-mobile.webp')",
+        'no-webp__hero--location-xmed': "url('/images/location-bg.jpg')", 
+
         'hero--about': "url('/images/about-hero-desktop.webp')",
         'no-webp__hero--about': "url('/images/about-hero-desktop.jpg')",
         'hero--about-xmed': "url('/images/about-hero-mobile.webp')",
@@ -74,6 +81,8 @@ module.exports = {
         'large': '1280px'
       },
       height: {
+        '800': '50rem',
+        '184':'46rem',
         '136':'34rem'
       },
       minWidth: {
@@ -114,12 +123,16 @@ module.exports = {
         serif: ['Eksell Display Small', 'serif'],
         'serif-display': ['Eksell Display Large', 'serif']
       },
+      fontSize:{
+        '2.5xl': ['28px', '34px'],
+      },
       gridTemplateRows: {
         'hero-home': '400px auto',
         'slideshow': 'repeat(3, auto)',
         'footer': 'repeat(3, auto)'
       },
       gridTemplateColumns: {
+        '50-50': '1fr 1fr',
         'sm-main-sm': '20% auto 20%',
         '40-60': '2fr 3fr',
         '60-40': '3fr 2fr',
@@ -141,6 +154,9 @@ module.exports = {
         '0': '0ms',
         '250': '250ms'
       },
+      backgroundColor: {
+        'button': '#857550'
+      },
       transitionDelay: {
         '0': '0ms',
       },
@@ -149,6 +165,11 @@ module.exports = {
       },
       inset: {
        '-0.5': '-0.125rem',
+       'right-2': '0.75rem',
+       'top-2': '0.75rem',
+       'left-3': '0.75rem',
+       'right-3': '0.75rem',
+       '-125':"-500px",
        '81': '22.75rem',
        '9999': '50%'
       },
