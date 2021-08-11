@@ -31,8 +31,8 @@ fabExternalLink: true
 <section class="w-full bg-ams-base px-4 xmed:px-12 pb-6 xmed:pb-8 pt-14 xmed:pt-12">
     <section class="grid xmed:grid-cols-3 gap-6 justify-items-center w-full max-w-screen-xl mx-auto">
         {% for item in press %}
-            <section class="w-full xmed:my-0 bg-ams-white shadow-md">
-                <figure class="grid items-center xmed:px-3">
+            <section class="w-full relative xmed:my-0 pb-16 bg-ams-white shadow-md">
+                <figure class="grid  items-center xmed:px-3">
                     <figcaption class="grid w-full justify-items-center xmed:pt-8 ">
                         {{ scaled_image(item.image) }}
                     </figcaption>
@@ -54,7 +54,7 @@ fabExternalLink: true
                         </div>
                     </figcaption>
                 </figure>
-                <div  class="text-center pb-4 xmed:pb-9">
+                <div class="text-center absolute left-0 right-0 bottom-0 pb-4 xmed:pb-8">
                     <p class="inline-block border-b border-ams-gold mx-4">
                         {{ primaryButton(item.link, 'Read More', 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-xl', 'a', true) }}
                     </p>
@@ -83,11 +83,11 @@ fabExternalLink: true
                 <form class="pt-4 xmed:pt-24">
                     <label class="form-label">
                         NAME *<br>
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" aria-required="true" id="firstName" name="firstName" type="text" placeholder="John" class="form-input__style">
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required" aria-required="true" name="name" type="text" placeholder="John" class="form-input__style">
                     </label>
                     <label class="form-label">
                         EMAIL ADDRESS *<br>
-                        <input type="email" id="email" required="required" aria-required="true" name="email" placeholder="glenn@example.com" class="form-input__style">
+                        <input type="email" required="required" aria-required="true" name="email" placeholder="glenn@example.com" class="form-input__style">
                     </label>
                     <label name="message" class="form-label">
                         Message<br>
