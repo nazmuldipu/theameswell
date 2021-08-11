@@ -7,13 +7,14 @@
                         "type": "png",
                         "sizes": "50vw",
                         "src": "images/press-1",
-                        "alt": "luxury travel",
+                        "alt": "Silicon Valley Magazine",
                         "intrinsicwidth": "424" 
                     }
                 ]
             },
-            "link": "#",
-            "title": "“Inspired by the backdrop of California’s wilderness and Silicon Valley’s legacy of unconventional thinking, this 255-room hotel brings together innovation, art, wellness, sustainability, and natural beauty...”"
+            "link": "http://digital.modernluxury.com/publication/?m=39687&i=712979&p=100&ver=html5",
+            "title": "Silicon Valley Magazine names The Ameswell Hotel “Best Hotel for Innovation and Adventure” in the 2021 Best of the Bay issue. Christian McCallion named “Best New Chef”.",
+            "p":"Silicon Valley Magazine"
         },
         {
             "image": {
@@ -22,13 +23,14 @@
                         "type": "png",
                         "sizes": "50vw",
                         "src": "images/press-2",
-                        "alt": "modern luxury",
+                        "alt": "Elle Decor",
                         "intrinsicwidth": "424" 
                     }
                 ]
             },
-            "link": "#",
-            "title": "Best New Chef + Best Resort for the Innovator and Adventurer"
+            "link": "https://www.elledecor.com/life-culture/travel/g36492996/best-american-hotels-2021/",
+            "title": "The Ameswell Hotel selected as one of the “11 chicest hotels in the U.S. by Elle Decor Magazine.”",
+            "p":"Elle Decor"
         },
         {
             "image": {
@@ -37,13 +39,14 @@
                         "type": "png",
                         "sizes": "50vw",
                         "src": "images/press-3",
-                        "alt": "san francisco business times",
+                        "alt": "We Heart",
                         "intrinsicwidth": "424" 
                     }
                 ]
             },
-            "link": "#",
-            "title": "“...a refreshing break from the nice-but-none-too-exciting standard of loyalty points-driven corporate hotels.”"
+            "link": "https://www.we-heart.com/2021/08/06/the-ameswell-hotel-silicon-valley-mountain-view/",
+            "title": "“Silicon Valley's Ameswell Hotel is a modern hotel for a very modern Bay Area...”",
+            "p":"We Heart"
         },
         {
             "image": {
@@ -52,13 +55,14 @@
                         "type": "png",
                         "sizes": "50vw",
                         "src": "images/press-4",
-                        "alt": "hospitality design",
+                        "alt": "Luxury Travel Magazine",
                         "intrinsicwidth": "424" 
                     }
                 ]
             },
-            "link": "#",
-            "title": ""
+            "link": "https://www.luxurytravelmagazine.com/news-articles/the-ameswell-silicon-valleys-new-design-independent-hotel",
+            "title": "With some of the same key players behind the nearby critically acclaimed Rosewood Sand Hill in Menlo Park, The Ameswell is bringing modern luxury to Mountain View.",
+            "p":"Luxury Travel Magazine"
         },
         {
             "image": {
@@ -67,13 +71,78 @@
                         "type": "png",
                         "sizes": "50vw",
                         "src": "images/press-5",
+                        "alt": "Superfuture",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "https://superfuture.com/2021/08/new-hotels/mountain-view-the-ameswell-hotel-opening/",
+            "title": "“The Ameswell Hotel takes cues from NASA's nearby Ames Research Center, celebrating the spirit of its namesake through the history and future of innovation...”",
+            "p":"Superfuture"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-6",
+                        "alt": "Eater SF",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "https://sf.eater.com/2021/8/5/22610023/robot-waiters-roger-restaurant-ameswell-hotel-mountain-view",
+            "title": "The Ameswell Hotel is “the first hotel in the United States to use Servi, a self-driving robot server...”",
+            "p":"Eater SF"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-7",
+                        "alt": "Mountain View Voice",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "https://www.mv-voice.com/news/2021/07/22/new-ameswell-hotel-opens-in-mountain-view-following-covid-delays-paying-homage-to-citys-history",
+            "title": "The Ameswell strikes a careful balancing, “appealing to a modern luxury style that attracts business travelers and staycationers alike.”",
+            "p":"Mountain View Voice"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-8",
+                        "alt": "Silicon Valley Business Journal",
+                        "intrinsicwidth": "424" 
+                    }
+                ]
+            },
+            "link": "https://www.bizjournals.com/sanjose/news/2021/07/08/hotel-mountain-view-independent-art-aviation.html",
+            "title": "The Ameswell is “a refreshing break from the nice-but-none-too-exciting standard of loyalty points-driven corporate hotels.”",
+            "p":"Silicon Valley Business Journal"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "png",
+                        "sizes": "50vw",
+                        "src": "images/press-9",
                         "alt": "elle",
                         "intrinsicwidth": "424" 
                     }
                 ]
             },
-            "link": "#",
-            "title": "“Beyond the reclaimed wood and industrial public spaces you can enjoy firepits and hiking trails. And if you need a little pick-me-up, the gym features energy drinks created by Pro Football Hall of Famer Jerry Rice.”"
+            "link": "https://thesixfifty.com/robot-staffed-restaurants-nasa-ames-history-peak-inside-mountain-views-new-ameswell-hotel-88d716ddfa19",
+            "title": "Modern-day amenities catering to millennials - like heated saltwater swimming pools, games of cornhole and restaurants staffed by robots - sit alongside centuries ol aeronautics equipment...",
+            "p":"The Six Fifty"
         }
     ],
     "subfooter":{
@@ -82,7 +151,7 @@
                 {
                     "type": "png",
                     "sizes": "50vw",
-                    "src": "images/press-6",
+                    "src": "images/press-10",
                     "alt": "elle",
                     "intrinsicwidth": "532" 
                 }
