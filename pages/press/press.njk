@@ -31,7 +31,7 @@ fabExternalLink: true
 <section class="w-full bg-ams-base px-4 xmed:px-12 pb-6 xmed:pb-8 pt-14 xmed:pt-12">
     <section class="grid xmed:grid-cols-3 gap-6 justify-items-center w-full max-w-screen-xl mx-auto">
         {% for item in press %}
-            <section class="w-full relative xmed:my-0 pb-24 bg-ams-white shadow-md">
+            <section class="w-full relative xmed:my-0 pb-28 bg-ams-white shadow-md">
                 <figure class="grid items-center">
                     <figcaption class="grid w-full justify-items-center">
                         {{ scaled_image(item.image) }}
@@ -41,12 +41,10 @@ fabExternalLink: true
                             <path d="M4.553 9.572C5.129 6.436 6.729 3.556 9.225 1.06L9.097 0.995998C6.857 2.084 4.937 3.94 3.273 6.564C1.609 9.124 0.777 11.62 0.777 13.988C0.777 17.38 2.889 19.684 5.897 19.684C8.777 19.684 11.081 17.38 11.081 14.564C11.081 12.836 10.441 11.492 9.097 10.468C7.753 9.444 6.281 9.124 4.553 9.572ZM16.713 9.572C17.289 6.436 18.889 3.556 21.385 1.06L21.257 0.995998C19.017 2.084 17.097 3.94 15.433 6.564C13.769 9.124 12.937 11.62 12.937 13.988C12.937 17.38 15.049 19.684 18.057 19.684C20.937 19.684 23.241 17.38 23.241 14.564C23.241 12.836 22.601 11.492 21.257 10.468C19.913 9.444 18.441 9.124 16.713 9.572Z" fill="#C2B8AB"/>
                         </svg>
                     </div>
-                    <figcaption class="grid justify-items-center mt-4 text-center">
-
-                        <p class="title-display text-ams-primary text-base xmed:text-lg font-sans px-4 xmed:px-6 pb-4">
+                    <figcaption class="flex justify-center px-4 text-center">
+                        <p class="title-display text-ams-primary text-base xmed:text-lg font-sans pb-4">
                             {{ item.title | safe }}
                         </p>
-
                     </figcaption>
                     <div class="grid justify-center py-4 text-center">
                         <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
