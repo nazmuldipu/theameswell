@@ -31,7 +31,7 @@
 %}
 
 {% macro svg_icon(name, caption, width="48", height="48", pclass="", sclass="", fill, stroke, href="") %}
-    <div class="grid xmed:grid-cols-1 justify-items-center xmed:justify-items-center content-start mb-2 xmed:text-center {{pclass}}">
+    <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center {{pclass}}">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 {{width}} {{height}}" width="{{width}}" height="{{height}}" class="{{sclass}}">
             <path {%if fill %} fill="{{fill}}" {% endif %} {%if stroke %} stroke="{{stroke}}" {% endif %} d="{{icons[name]}}"/>
         </svg>
