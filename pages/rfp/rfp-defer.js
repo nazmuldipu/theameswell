@@ -10,7 +10,7 @@ var startDate = new DayPicker({
     field: document.getElementById("startDate"),
     minDate,
     maxDate,
-    showPrice:true,
+    showPrice:false,
     format: "yyyy-MM-dd",
 });
 
@@ -18,6 +18,6 @@ var endDate = new DayPicker({
     field: document.getElementById("endDate"),
     minDate,
     maxDate,
-    showPrice:true,
+    showPrice:false,
     format: "yyyy-MM-dd",
 });
