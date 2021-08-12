@@ -19,30 +19,30 @@
             <div class="swiper-wrapper z-10">
                     {% for slide in slides %}
                         <div class="swiper-slide">
-                        <picture>
-                        {% for direction in slide.artDirection %}
-                            <source 
-                                data-src="{{ direction.image }}.webp"
-                                data-srcset="{{ direction | slideImgSrcSet('webp') }}"
-                                media="{{ direction.media }}"
-                                sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                type="image/webp">
-                            <source 
-                                data-src="{{ direction.image }}.{{ direction.type if direction.type else 'jpg' }}"
-                                data-srcset="{{ direction | slideImgSrcSet('webp') }}"
-                                media="{{ direction.media }}"
-                                sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                type="image/{{ direction.type | getImgSourceType }}">
-                        {% endfor %}
-                        {% set default = slide.artDirection|first %}
-                            <img 
-                                data-src="{{ default.image }}.{{ default.type if default.type else 'jpg' }}"
-                                data-srcset="{{ default | slideImgSrcSet(default.type) }}"
-                                class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
-                                sizes="{{ default.sizes if default.sizes else '75vw' }}" 
-                                alt="{{ default.imgalt }}">
-                            <div class="swiper-lazy-preloader"></div>
-                        </picture>
+                            <picture>
+                            {% for direction in slide.artDirection %}
+                                <source 
+                                    data-src="{{ direction.src }}.webp"
+                                    data-srcset="{{ direction | imgObjSrcSet('webp') }}"
+                                    media="{{ direction.media }}"
+                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                    type="image/webp">
+                                <source 
+                                    data-src="{{ direction.src }}.{{ direction.type if direction.type else 'jpg' }}"
+                                    data-srcset="{{ direction | imgObjSrcSet }}" 
+                                    media="{{ direction.media }}"
+                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                    type="image/{{ direction.type | getImgSourceType }}">
+                            {% endfor %}
+                            {% set default = slide.artDirection|first %}
+                                <img 
+                                    data-srcset="{{ default | imgObjSrcSet }}"
+                                    data-src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
+                                    class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
+                                    sizes="{{ default.sizes if default.sizes else '75vw' }}" 
+                                    alt="{{ default.imgalt }}">
+                                <div class="swiper-lazy-preloader"></div>
+                            </picture>
                         </div>
                     {% endfor %}
             </div>
@@ -78,30 +78,30 @@
             <div class="swiper-wrapper z-10">
                     {% for slide in slides %}
                         <div class="swiper-slide">
-                        <picture>
-                        {% for direction in slide.artDirection %}
-                            <source 
-                                data-src="{{ direction.image }}.webp"
-                                data-srcset="{{ direction | slideImgSrcSet('webp') }}"
-                                media="{{ direction.media }}"
-                                sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                type="image/webp">
-                            <source 
-                                data-src="{{ direction.image }}.{{ direction.type if direction.type else 'jpg' }}"
-                                data-srcset="{{ direction | slideImgSrcSet('webp') }}"
-                                media="{{ direction.media }}"
-                                sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                type="image/{{ direction.type | getImgSourceType }}">
-                        {% endfor %}
-                        {% set default = slide.artDirection|first %}
-                            <img 
-                                data-src="{{ default.image }}.{{ default.type if default.type else 'jpg' }}"
-                                data-srcset="{{ default | slideImgSrcSet(default.type) }}"
-                                class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
-                                sizes="{{ default.sizes if default.sizes else '75vw' }}" 
-                                alt="{{ default.imgalt }}">
-                            <div class="swiper-lazy-preloader"></div>
-                        </picture>
+                            <picture>
+                            {% for direction in slide.artDirection %}
+                                <source 
+                                    data-src="{{ direction.src }}.webp"
+                                    data-srcset="{{ direction | imgObjSrcSet('webp') }}"
+                                    media="{{ direction.media }}"
+                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                    type="image/webp">
+                                <source 
+                                    data-src="{{ direction.src }}.{{ direction.type if direction.type else 'jpg' }}"
+                                    data-srcset="{{ direction | imgObjSrcSet }}" 
+                                    media="{{ direction.media }}"
+                                    sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
+                                    type="image/{{ direction.type | getImgSourceType }}">
+                            {% endfor %}
+                            {% set default = slide.artDirection|first %}
+                                <img 
+                                    data-srcset="{{ default | imgObjSrcSet }}"
+                                    data-src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
+                                    class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
+                                    sizes="{{ default.sizes if default.sizes else '75vw' }}" 
+                                    alt="{{ default.imgalt }}">
+                                <div class="swiper-lazy-preloader"></div>
+                            </picture>
                         </div>
                     {% endfor %}
             </div>
