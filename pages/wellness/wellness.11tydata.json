@@ -227,26 +227,6 @@
               "intrinsicwidth": "2300"
             }
           ]
-        },
-        {
-          "artDirection": [
-            {
-              "image": "images/spa-1",
-              "media": "(min-width:900.1px)",
-              "imgtype": "jpg",
-              "sizes": "80vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            },
-            {
-              "image": "images/spa-1",
-              "media": "(max-width:900px)",
-              "imgtype": "jpg",
-              "sizes": "100vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            }
-          ]
         }
       ]
     },
@@ -416,26 +396,6 @@
         { "label": "Wellness Room", "link": "https://reservations.theameswellhotel.com/" }
       ],
       "slides": [
-        {
-          "artDirection": [
-            {
-              "image": "images/fitness-1",
-              "media": "(min-width:900.1px)",
-              "imgtype": "jpg",
-              "sizes": "80vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            },
-            {
-              "image": "images/fitness-1",
-              "media": "(max-width:900px)",
-              "imgtype": "jpg",
-              "sizes": "100vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            }
-          ]
-        },
         {
           "artDirection": [
             {
