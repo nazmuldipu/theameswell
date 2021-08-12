@@ -1,0 +1,7 @@
+/****  start imports  ********************************/
+@import "../../styles/global.css";
+/****  end imports  ********************************/
+
+#categoryMap{
+    position: sticky !important;
+}

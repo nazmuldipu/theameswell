@@ -13,7 +13,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/about-gallery-7",
+                    "src": "images/about-gallery-7",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -21,7 +21,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/about-gallery-7",
+                    "src": "images/about-gallery-7",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
@@ -33,7 +33,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/about-gallery-8",
+                    "src": "images/about-gallery-8",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -41,7 +41,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/about-gallery-8",
+                    "src": "images/about-gallery-8",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
@@ -53,7 +53,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/about-gallery-9",
+                    "src": "images/about-gallery-9",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -61,7 +61,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/about-gallery-9",
+                    "src": "images/about-gallery-9",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
@@ -73,7 +73,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/about-gallery-10",
+                    "src": "images/about-gallery-10",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -81,7 +81,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/about-gallery-10",
+                    "src": "images/about-gallery-10",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
@@ -93,7 +93,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/about-gallery-11",
+                    "src": "images/about-gallery-11",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -101,7 +101,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/about-gallery-11",
+                    "src": "images/about-gallery-11",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",

@@ -38,6 +38,16 @@ xmed:bg-no-webp__hero--dining
 medium:bg-no-webp__hero--dining
 large:bg-no-webp__hero--dining
 bg-no-webp__hero--dining
+small:bg-no-webp__hero--location
+xmed:bg-no-webp__hero--location
+medium:bg-no-webp__hero--location
+large:bg-no-webp__hero--location
+bg-no-webp__hero--location
+small:bg-no-webp__hero--location-xmed
+xmed:bg-no-webp__hero--location-xmed
+medium:bg-no-webp__hero--location-xmed
+large:bg-no-webp__hero--location-xmed
+bg-no-webp__hero--location-xmed
 small:bg-no-webp__hero--about
 xmed:bg-no-webp__hero--about
 medium:bg-no-webp__hero--about
