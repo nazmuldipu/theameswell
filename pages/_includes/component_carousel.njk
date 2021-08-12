@@ -2,23 +2,24 @@
 {% macro scaled_image(artDirection) %}
     {% for direction in artDirection %}
         <source 
-            srcset="{{ direction | imgObjSrcSet('webp') }}"
+            data-src="{{ direction.src }}.webp"
+            data-srcset="{{ direction | imgObjSrcSet('webp') }}"
             media="{{ direction.media }}"
             sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
             type="image/webp">
         <source 
-            srcset="{{ direction | imgObjSrcSet }}" 
+            data-src="{{ direction.src }}.{{ direction.type if direction.type else 'jpg' }}"
+            data-srcset="{{ direction | imgObjSrcSet }}" 
             media="{{ direction.media }}"
             sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
             type="image/{{ direction.type | getImgSourceType }}">
         {% endfor %}
         {% set default = artDirection | first %}
         <img 
-            srcset="{{ default | imgObjSrcSet }}"
-            src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
+            data-srcset="{{ default | imgObjSrcSet }}"
+            data-src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
             class="swiper-lazy w-full h-full object-cover"
             sizes="{{ default.sizes if default.sizes else '75vw' }}" 
-            loading="auto"
             alt="{{ default.imgalt }}">
 {% endmacro %}
 {% macro component_carousel(content) %}
