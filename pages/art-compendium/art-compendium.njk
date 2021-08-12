@@ -21,7 +21,7 @@ fabExternalLink: true
                 <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 text-center">
                     Ameswell Art Compendium
                 </h2>
-                <div class="text-center text-lg leading-6 tracking-wide">
+                <div class="text-center text-base xmed:text-lg leading-6 tracking-wide">
                     Built in one of the most geographically lush and technologically innovative regions in the country, the Ameswell Hotel is situated on the crossroads of major north/south and east/west corridors. Guided by this theme of intersection, the art collection expresses the junction of real and conceptual.    
                 </div>
             </div>
@@ -30,10 +30,10 @@ fabExternalLink: true
 </div>
 <section class="w-full grid justify-items-center p-8 xmed:p-0 xmed:pb-16 bg-ams-base">
     <div class="pb-4 px-4 shadow-md xmed:mt-10 xmed:p-10 max-w-screen-lg bg-ams-white">
-        <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
+        <h2 class="title-display text-xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
             Explore The Art
         </h2>
-        <div class="text-center">
+        <div class="text-center text-base xmed:text-lg">
             Whether complex renderings of astral images from the Hubble telescope, unlikely settings of Earthly flora and fauna, manipulated bright lights that slice through somber landscapes, or playfully animated reinterpretations of ancient hieroglyphics, each piece in this eclectic collection both reflects and reimagines the natural historic beauty and flourishing creative genius of the Northern California silicon valley. 
         </div>
     </div>
@@ -54,7 +54,7 @@ fabExternalLink: true
                         {{ scaled_image(item.image) }}
                     {% endif %}
                 </figcaption>
-                <figcaption class="mt-8 xmed:mt-0 xmed:mx-4 p-4 xmed:p-0 text-lg 
+                <figcaption class="mt-8 xmed:mt-0 xmed:mx-4 p-4 xmed:p-0 
                 {% if item.bgImage == 'bg-ams-white' %}
                         text-ams-primary
                     {% elseif item.bgImage == 'bg-ams-main-12' %}
@@ -65,14 +65,14 @@ fabExternalLink: true
                 {% endif %}
                 ">
                     <header>
-                        <h2 class="pb-6 font-bold">
+                        <h2 class="pb-6 text-sm xmed:text-lg font-bold">
                             {{ item.p1 | safe }}
                         </h2>
                     </header>
-                    <p class="mb-4 xmed:mb-12">
+                    <p class="mb-4 xmed:hidden xmed:mb-12">
                         {{ item.location }}
                     </p>
-                    <p class="mb-4 moreText xmed:mb-12">
+                    <p class="mb-4 moreText text-base xmed:text-lg xmed:mb-12">
                         {{ item.p2 }}
                     </p>
                     <div class="flex justify-center pb-4 xmed:hidden text-center">
