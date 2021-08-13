@@ -6,12 +6,12 @@
   @apply object-cover;
 }
 
-.amenity-xs-swiper .swiper-slide img {
+.amenity-xs-swiper img {
   @apply h-44;
   @apply object-cover;
 }
 
-.amenity-swiper .swiper-slide img {
+.amenity-swiper img {
   @apply h-80;
   @apply object-cover;
 }
