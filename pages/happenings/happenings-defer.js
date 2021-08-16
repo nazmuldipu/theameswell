@@ -102,10 +102,10 @@ const renderDay = (opts, eventList) => {
     });
   }
   return `<div class="py-4 xmed:py-8 grid-item">
-            <div class="calendar_date font-bold text-2xl xmed:text-6xl ${
+            <div class="calendar-date font-bold text-2xl xmed:text-6xl cursor-pointer ${
               opts.isToday
                 ? "text-ams-white bg-ams-pink"
-                : opts.isWeekend
+                : eventList.length > 0
                 ? "text-ams-pink"
                 : "text-ams-primary"
             } pb-3">${opts.day}</div>
@@ -153,7 +153,7 @@ const renderEventCard = (event) => {
                 <figcaption>
                     <header class="px-6 py-4 text-left bg-ams-white">
                         <h3 class="text-lg font-sans">
-                        ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                        ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
                         </h3>
                         <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
                           ${event.title}
@@ -226,10 +226,20 @@ var Happenings = function (options) {
 
     // set mobile view events
     if(screen_width < 900){
-      if(hasClass(target, "calendar_date")){
+      if(hasClass(target, "calendar-date")){
         const day = Number(target.innerHTML);
-        our_happenings_title.innerHTML = "Happeings for <br/>" + months[self.calendar.month] + ' ' + day;
-        self.showOurHappenings(our_happenings, day);
+        const evList =  getDayEvents(
+          self.calendar.year,
+          self.calendar.month,
+          day,
+          events
+        );
+        if(evList.length){
+          our_happenings_title.innerHTML = "Happeings for <br/>" + months[self.calendar.month] + ' ' + day;
+          our_happenings_title.scrollIntoView()
+          self.showOurHappenings(our_happenings, evList);
+        }
+
       }
     }
   };
@@ -241,7 +251,7 @@ var Happenings = function (options) {
     if (!target) {
       return;
     }
-    if (hasClass(target, "calendar_date")) {
+    if (hasClass(target, "calendar-date")) {
       const parentEle = target.parentElement;
       const evnCount = parentEle.querySelectorAll(".c-event").length;
       if (evnCount === 1) {
@@ -267,7 +277,7 @@ var Happenings = function (options) {
       } else {
         id = target.id;
       }
-      const day = Number(parentEle.querySelector(".calendar_date").innerHTML);
+      const day = Number(parentEle.querySelector(".calendar-date").innerHTML);
       const eventList = getDayEvents(
         self.calendar.year,
         self.calendar.month,
@@ -362,22 +372,16 @@ Happenings.prototype = {
     toolTipEle.style.left = left + "px";
     toolTipEle.style.top = top + "px";
   },
-  showOurHappenings: function (el, day) {
+  showOurHappenings: function (el, evs) {
     let evHtml = "";
     let count = 0;
-    const days = getDaysInMonth(this.calendar.year, this.calendar.month);
-    if(day && day > 0){
-      const evs =  getDayEvents(
-        this.calendar.year,
-        this.calendar.month,
-        day,
-        events
-      );
+    if(evs && evs.length > 0){
       for (let j = 0; j < evs.length; j++) {
         evHtml += renderOurHappeningsCard(evs[j]);                
       }
     }
     else{
+      const days = getDaysInMonth(this.calendar.year, this.calendar.month);
       for (let i = days; i > 0; i--) {
         const evs = getDayEvents(
           this.calendar.year,
