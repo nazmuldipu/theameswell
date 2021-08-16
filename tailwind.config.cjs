@@ -179,6 +179,7 @@ module.exports = {
       },
       margin: {
         '0.8': '.2rem',
+        '0.05': '-0.05rem'
       },
       textIndent: (theme, { negative }) => ({
         ...negative({
