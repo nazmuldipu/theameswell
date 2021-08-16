@@ -4,7 +4,6 @@ import "../../components/MediaCarousel/index.js";
 import * as data from "./location.11tydata.json";
 
 const ameswellLocation = data.ameswell;
-console.log(ameswellLocation);
 /** Creation of script tag */
 const script = document.createElement("script");
 const src =
