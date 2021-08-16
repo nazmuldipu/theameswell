@@ -30,6 +30,11 @@
     }
   ],
 
+  "ameswell":{
+    "title": "Ameswell",
+    "lat": 37.40739352704049,
+    "long": -122.06800030833442
+  },
   "categories": [
     {
       "title": "Shop",
