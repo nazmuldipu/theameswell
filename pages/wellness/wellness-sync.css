@@ -18,7 +18,6 @@
 
 .read-more:checked ~ label ~ p {
   max-height: 300px;
-  display: block;
 }
 
 .read-more:checked ~ label {
