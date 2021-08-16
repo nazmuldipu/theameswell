@@ -94,6 +94,9 @@ module.exports = {
       minWidth: {
        '2xs': '14rem'
       },
+      maxWidth: {
+        "ameswel":"1440px"
+      },
       minHeight: {
        'l': '8rem'
       },

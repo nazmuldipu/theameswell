@@ -34,7 +34,7 @@ fabExternalLink: true
 <div id="pageHero" class="min-h-screen bg-hero--happenings-xmed xmed:bg-hero--happenings bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
 <!-- calendar start-->
 <section class="xmed:bg-ams-base w-full text-ams-primary">
-    <section id="happening_calendar" class="px-10 max-w-screen-lg m-auto relative">
+    <section id="happening_calendar" class="px-2 xmed:px-10 max-w-ameswel m-auto relative">
         <header class="flex items-center justify-center mt-10 mb-7 text-center font-sans">
             <img alt="previous icon" src="/images/prev_icon.svg" class="nav-prev cursor-pointer"></img>
             <h1 class="month-name font-bold px-4 text-4xl uppercase"></h1>
@@ -62,16 +62,16 @@ fabExternalLink: true
             Our Happenings
         </h2>
     </header>
-    <article id="our_happenings" class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-16">
+    <article id="our_happenings" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24">
         
     </article>
     <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
         {{ primaryButton("javascript:void(0)", 'View all', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
     </div>
 </section>
-<div class="grid justify-items-center bg-ams-primary w-full p-8">
-    <article class="max-w-screen-lg p-4 bg-ams-white w-full">
-        <section class="xmed:grid xmed:grid-cols-2 xmed:gap-4">
+<div class="hidden xmed:grid justify-items-center bg-ams-primary w-full p-8">
+    <article class="max-w-ameswel w-full px-24">
+        <section class="xmed:grid p-8 bg-ams-white xmed:grid-cols-2 xmed:gap-4">
             <header>
                 <h2 class="title-display text-2xl pt-4 pb-4">
                     Join Our A-List
@@ -81,7 +81,7 @@ fabExternalLink: true
                 </p>
             </header>
             <form-sender data-type="alist">
-                <form class="pt-4">
+                <form class="pt-4 pr-16">
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
                         <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
                         <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>

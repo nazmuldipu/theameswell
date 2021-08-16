@@ -102,13 +102,13 @@ const renderDay = (opts, eventList) => {
     });
   }
   return `<div class="py-4 xmed:py-8 grid-item">
-            <div class="calendar-date font-bold text-2xl xmed:text-6xl cursor-pointer ${
+            <div class="calendar-date font-bold text-2xl xmed:text-6xl cursor-pointer w-9 xmed:w-36 mx-auto   ${
               opts.isToday
                 ? "text-ams-white bg-ams-pink"
                 : eventList.length > 0
                 ? "text-ams-pink"
                 : "text-ams-primary"
-            } pb-3">${opts.day}</div>
+            } pb-1">${opts.day}</div>
             ${eventHtml}
           </div>`;
 };
@@ -148,7 +148,7 @@ const renderBody = (year, month) => {
 const renderEventCard = (event) => {
   return `<section class="bg-ams-white xmed:shadow-2xl mb-4 border-b xmed: border-0 w-96 h-96">
             <figure>
-            <img class="w-full" alt="Event" src="${event.url}"
+            <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width=150" height="70" />
          width=150" height="70">
                 <figcaption>
                     <header class="px-6 py-4 text-left bg-ams-white">
@@ -169,7 +169,7 @@ const renderOurHappeningsCard = (event) => {
   return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-ful">
             <a class="block" href="/happenings-detail.html?id=${event.id}">
               <figure>
-                <img class="w-full" alt="Event" src="${event.url}" width=150" height="70" />
+                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width=150" height="70" />
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
