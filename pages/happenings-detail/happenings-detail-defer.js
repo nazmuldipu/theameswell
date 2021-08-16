@@ -28,7 +28,7 @@ const render_left = (event) => {
                     <h1 class="font-medium font-serif text-ams-primary text-2xl uppercase">${event.title}</h1>
             </header>
             <figure class="order-2">
-                <img src="${event.url}" class="w-full" loading="lazy" alt="${event.title}">
+                <img src="${event.image}.jpg" class="w-full" loading="lazy" alt="${event.title}">
             </figure>`;
 };
 
@@ -50,13 +50,16 @@ const render_right = (event) => {
         <p class="pt-3 text-lg"> ${event.descriptions[i]} </p>
         `;
   }
+  html += `<div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
+    <a class="w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Reserve Here</a>
+  </div>`;
   return html;
 };
 const renderOurHappeningsCard = (event) => {
-  return `<section class="bg-ams-white xmed:shadow-2xl pb-5 w-ful">
-            <a class="block" href="/happenings-detail.html?id=${event.id}">
+  return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-ful">
+            <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
-                <img class="w-full" alt="Event" src="${event.url}" width=150" height="70" />
+                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
@@ -69,12 +72,27 @@ const renderOurHappeningsCard = (event) => {
                 </figcaption>
               </figure>              
             </a>
+            <span class="xmed:hidden">
+              <figure>
+                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
+                <figcaption>
+                  <header class="px-6 py-4 text-left bg-ams-white">
+                    <h3 class="text-lg font-sans">
+                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                    </h3>
+                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
+                      ${event.title}
+                    </h2>
+                  </header>
+                </figcaption>
+              </figure>              
+            </span>
             <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
-              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display">Reserve Here</a>
-              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display">More Info</a>
+              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Reserve Here</a>
+              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">More Info</a>
             </div>
           </section>`;
-};
+}
 const showAlsoLike = (event) => {
   let evHtml = "";
   let count = 0;

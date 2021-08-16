@@ -148,8 +148,7 @@ const renderBody = (year, month) => {
 const renderEventCard = (event) => {
   return `<section class="bg-ams-white xmed:shadow-2xl mb-4 border-b xmed: border-0 w-96 h-96">
             <figure>
-            <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width=150" height="70" />
-         width=150" height="70">
+            <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
                 <figcaption>
                     <header class="px-6 py-4 text-left bg-ams-white">
                         <h3 class="text-lg font-sans">
@@ -167,9 +166,9 @@ const renderEventCard = (event) => {
 
 const renderOurHappeningsCard = (event) => {
   return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-ful">
-            <a class="block" href="/happenings-detail.html?id=${event.id}">
+            <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
-                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width=150" height="70" />
+                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
@@ -182,13 +181,27 @@ const renderOurHappeningsCard = (event) => {
                 </figcaption>
               </figure>              
             </a>
+            <span class="xmed:hidden">
+              <figure>
+                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
+                <figcaption>
+                  <header class="px-6 py-4 text-left bg-ams-white">
+                    <h3 class="text-lg font-sans">
+                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                    </h3>
+                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
+                      ${event.title}
+                    </h2>
+                  </header>
+                </figcaption>
+              </figure>              
+            </span>
             <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
-              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display">Reserve Here</a>
-              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display">More Info</a>
+              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Reserve Here</a>
+              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">More Info</a>
             </div>
           </section>`;
-};
-
+}
 var Happenings = function (options) {
   var self = this;
   const calendar = document.querySelector("#happening_calendar");
