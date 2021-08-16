@@ -1,0 +1,404 @@
+{
+    "gallery_images":[
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-1",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-1",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-2",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-2",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-3",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-3",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-4",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-4",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-5",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-5",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-6",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-6",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-7",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-7",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-8",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-8",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-9",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-9",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-10",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-10",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-11",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-11",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-12",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-12",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-13",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-13",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-14",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-14",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-15",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-15",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-16",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-16",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-17",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-17",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-18",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-18",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-19",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-19",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        },
+        {
+            "artDirection": [
+                {
+                    "media": "(min-width:900.1px)",
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/gallery-desktop-20",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "2520" 
+                },
+                {
+                    "media": "(max-width:900px)",
+                    "type": "png",
+                    "sizes": "100vw",
+                    "src": "images/gallery-mobile-20",
+                    "alt": "ameswell gallery",
+                    "intrinsicwidth": "1280" 
+                }
+            ]
+        }
+    ]
+}
