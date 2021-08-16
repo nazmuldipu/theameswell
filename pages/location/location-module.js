@@ -87,7 +87,7 @@ let subIndex = 0;
 let mapLoaded = 0;
 const renderTitleBox = (category) => {
   const titleText = `<div class="text-center xmed:text-left category-header">
-                    <h2 class="text-2xl xmed:text-2.5xl font-medium font-serif">${
+                    <h2 class="text-2xl xmed:text-2.5xl font-medium font-serif text-ams-primary">${
                       index === categories.length ? "Live" : category.title
                     } like a local</h2>
                     <p class="py-3">${category.body}</p>
@@ -125,22 +125,22 @@ const renderSubCategory = (category) => {
 
   category.locations.forEach((item) => {
     html += `<div class="swiper-slide bg-ams-white" >
-                              <div id="sub" class="mb-6">
-                                <div class="grid xmed:grid-cols-40-60">
-                                    <div class="cat-image relative">
-                                        <div class="absolute bg-ams-white text-xs w-24 left-6 bottom-6 p-2 text-center">${item.categoryName}</div>
-                                        <img src="${item.image}" class="w-full p-4" alt="${item.imgalt}">
-                                    </div>
-                                    <div class="px-4">
-                                        <div class="flex justify-between">
-                                          <div class="title justify-items-start">${item.cardTitle}</div>
-                                          <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
-                                        </div>
-                                        <p class="mb-8 xmed:mb-4 text-sm leading-snug">${item.cardBody}</p>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>`;
+              <div id="sub" class="mb-6">
+                <div class="grid xmed:grid-cols-40-60">
+                    <div class="cat-image relative">
+                        <div class="absolute bg-ams-white text-xs w-24 left-6 bottom-6 p-2 text-center">${item.categoryName}</div>
+                        <img src="${item.image}" class="w-full p-4 max-h-80 object-cover object-center" alt="${item.imgalt}">
+                    </div>
+                    <div class="px-4">
+                        <div class="flex justify-between">
+                          <div class="title justify-items-start">${item.cardTitle}</div>
+                          <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
+                        </div>
+                        <p class="mb-8 xmed:mb-4 text-sm leading-snug">${item.cardBody}</p>
+                    </div>
+                </div>
+              </div>
+            </div>`;
   });
   
   html += `</div>
