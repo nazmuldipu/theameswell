@@ -3,6 +3,8 @@ import "../../components/WeatherWidget/index.js";
 import "../../components/MediaCarousel/index.js";
 import * as data from "./location.11tydata.json";
 
+const ameswellLocation = data.ameswell;
+console.log(ameswellLocation);
 /** Creation of script tag */
 const script = document.createElement("script");
 const src =
@@ -20,23 +22,13 @@ function initMap(locations, element) {
       zoom: 11,
       center: { lat: locations[0].lat, lng: locations[0].long },
     });
-
     addMarkers(locations);
   }, 1000);
 }
 
+
 const addMarkers = (locations) => {
   const { InfoWindow } = google.maps;
-
-  const icon = {
-    path: "M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z",
-    anchor: new google.maps.Point(12, 17),
-    fillOpacity: 1,
-    strokeWeight: 2,
-    fillColor: "#ea4335",
-    strokeColor: "#ea4335",
-    scale: 2,
-  };
   const infowindow = new InfoWindow();
   bounds = new google.maps.LatLngBounds();
   locations.forEach((item) => {
@@ -61,6 +53,17 @@ const addMarkers = (locations) => {
       })(marker)
     );
   });
+
+  //Add ameswell logo
+  let marker = new google.maps.Marker({
+    position: { lat: ameswellLocation.lat, lng: ameswellLocation.long },
+    title: ameswellLocation.title,
+    icon : new google.maps.MarkerImage('images/logo.svg',
+    null, null, null, new google.maps.Size(160,20)),
+    map,
+  });
+  markers.push(marker);
+  bounds.extend(marker.position);
 
   if (locations.length > 1) map.fitBounds(bounds);
   else if ((locations.length = 1)) {
@@ -87,9 +90,8 @@ let subIndex = 0;
 let mapLoaded = 0;
 const renderTitleBox = (category) => {
   const titleText = `<div class="text-center xmed:text-left category-header">
-                    <h2 class="text-2xl xmed:text-2.5xl font-medium font-serif text-ams-primary">${
-                      index === categories.length ? "Live" : category.title
-                    } like a local</h2>
+                    <h2 class="text-2xl xmed:text-2.5xl font-medium font-serif text-ams-primary">${index === categories.length ? "Live" : category.title
+    } like a local</h2>
                     <p class="py-3">${category.body}</p>
                 </div>`;
   document.querySelector("#titleBox").innerHTML = titleText;
@@ -142,7 +144,7 @@ const renderSubCategory = (category) => {
               </div>
             </div>`;
   });
-  
+
   html += `</div>
               </div>
             </media-carousel>`;
@@ -158,14 +160,14 @@ const loadMap = (category, small) => {
   if (!small) {
     category.locations.forEach((item) => {
       if (item.positions.length) {
-        item.positions.forEach(locObj =>{
+        item.positions.forEach(locObj => {
           locations.push(locObj);
         })
       }
     });
   } else {
     if (category.positions.length) {
-      category.positions.forEach(locObj=>{
+      category.positions.forEach(locObj => {
         locations.push(locObj);
       })
     }
@@ -177,7 +179,7 @@ const loadMap = (category, small) => {
   } else if (locations.length) {
     removeMarkers();
     addMarkers(locations);
-  }else{
+  } else {
     removeMarkers();
   }
 };
