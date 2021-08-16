@@ -106,7 +106,7 @@ fabCopy:
                     </div>
                     {% for txt in amenity.texts %}
                         <div class="pt-6">
-                            <span class="xmed:text-lg">{{txt}}</span>
+                            <span class="text-sm xmed:text-lg">{{txt}}</span>
                             {% if loop.last %}
                                 <span class="relative">
                                     <input type="checkbox" id="read_more_{{outer_loop_index}}" class="read-more absolute top-0 left-0 w-full h-full opacity-0">
@@ -114,7 +114,7 @@ fabCopy:
                                     <label for="read_more_{{outer_loop_index}}" class="segment__cta segment__cta--gold relative text-ams-gold text-xs font-serif-display uppercase cursor-pointer">READ MORE</label>
 
                                     {% for mtxt in amenity.more_texts %}
-                                        <p class="amenities-more text-lg hidden max-h-0 pt-6">{{mtxt}}</p>
+                                        <p class="amenities-more overflow-hidden max-h-0 pt-6">{{mtxt}}</p>
                                     {% endfor %}
                                 </span>
                             {% endif %}

@@ -12,11 +12,12 @@ fabExternalLink: true
 {% from "videos.njk" import lazyvideo %}
 {% from "buttons.njk" import primaryButton %}
 {% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
+{% from "media-carousel.njk" import media_carousel %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
 
-<div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-center xmed:bg-inherit w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
+<div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-center large:bg-inherit w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
     <header class="grid xmed:items-end">
         <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center">
             UNCOMMON LUXURY IN<br class="xmed:hidden">
@@ -47,53 +48,51 @@ fabExternalLink: true
         </section>
     </article>
 </div>
-<div class="bg-pattern--ams-grey w-full grid justify-items-center relative z-10">
-    <article class="grid justify-items-center items-start w-full max-w-7xl pt-9 p-14 xmed:pb-8 px-4 xmed:mt-5 xmed:grid-cols-35-65 xmed:gap-8">
-        <section class="grid justify-items-center max-w-screen-lg mb-8 shadow-md">
-            <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-3xl pb-4">
-                    More than enough room
-                </h2>
-                <p class="text-ams-primary text-lg">
-                    Each of our 255 guest rooms is defined by comfort and space, privacy and respite. Sitting area and workspace for your waking hours, organic bath products for self-care, and luxurious sleep.
-                </p>
-                <div class="pt-7 pb-2 xmed:text-center">
-                    <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW DETAILS</a>
+<div class=" w-full bg-pattern--ams-grey xmed:pb-24 z-10">
+    <div class="grid justify-items-center w-full">
+        <div class="grid xmed:grid-cols-35-65 xmed:gap-8 max-w-7xl pt-9 p-14 xmed:pb-8 px-4 xmed:mt-5 ">
+            <section class="grid justify-items-center mb-8">
+                <div>
+                <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-3xl pb-4">
+                        More than enough room
+                    </h2>
+                    <p class="text-ams-primary text-lg">
+                        Each of our 255 guest rooms is defined by comfort and space, privacy and respite. Sitting area and workspace for your waking hours, organic bath products for self-care, and luxurious sleep.
+                    </p>
+                    <div class="pt-7 pb-2 xmed:text-center">
+                        <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW DETAILS</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="w-full grid justify-items-center">
-            <div class="w-full grid p-4 xmed:pb-10 shadow-md bg-ams-white">
-                <figure class="w-full overflow-hidden">
-                    {{ rooms_carousel(rooms) }}
-                </figure>
-            </div>
-        </section>
-    </article>
-</div>
-<div class="bg-pattern--ams-grey w-full grid justify-items-center xmed:pb-28 relative z-10">
-    <article class="grid justify-items-center items-start w-full max-w-7xl pb-4 xmed:pb-8 px-4 xmed:grid-cols-35-65 xmed:gap-8">
-        <section class="grid justify-items-center max-w-screen-lg">
-            <div class="max-w-screen-xmed xmed:shadow-md p-10 bg-ams-white">
-                <h2 class="title-display text-3xl pb-4">
-                    Offers
-                </h2>
-                <p class="text-ams-primary text-lg">
-                    Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
-                </p>
-                <div class="pt-7 pb-2 text-center">
-                  <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
                 </div>
-            </div>
-        </section>
-        <section class="w-full grid justify-items-center">
-            <div class="w-full grid px-4 pb-4 xmed:p-4 xmed:pb-10 xmed:shadow-md bg-ams-white">
-                <figure class="w-full overflow-hidden">
-                    {{ homepage_offers_carousel(offers) }}
-                </figure>
-            </div>
-        </section>
-    </article>
+            </section>
+            <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white p-4">
+                {{ rooms_carousel(rooms) }}
+            </figure>
+        </div>
+    </div>
+    <div class="grid justify-items-center w-full">
+        <div class="grid xmed:grid-cols-35-65 xmed:gap-8 max-w-7xl pt-9 p-14 xmed:pb-12 px-4 xmed:mt-5 ">
+            <section class="grid justify-items-center mb-8">
+                <div>
+                <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-3xl pb-4">
+                        Offers
+                    </h2>
+                    <p class="text-ams-primary text-lg">
+                        Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
+                    </p>
+                    <div class="pt-7 pb-2 text-center">
+                    <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
+                    </div>
+                </div>
+                </div>
+            </section>
+            <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white p-4">
+                {{ homepage_offers_carousel(offers) }}
+            </figure>
+        </div>
+    </div>
 </div>
 <div class="bg-ams-primary w-full grid justify-items-center pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
