@@ -18,6 +18,7 @@
 
 .read-more:checked ~ label ~ p {
   max-height: 300px;
+  @apply pt-6;
 }
 
 .read-more:checked ~ label {
