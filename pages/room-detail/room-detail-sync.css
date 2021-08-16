@@ -26,6 +26,6 @@
     }
 
     .com-car-nav {
-        @apply px-0;
+        @apply px-8;
     }
 }
