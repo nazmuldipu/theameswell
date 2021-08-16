@@ -15,6 +15,7 @@ fabCopy:
 {% from "icons.njk" import svgicon %}
 {% from "buttons.njk" import primaryButton %}
 {% from "media-carousel.njk" import media_carousel %}
+{% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--wellness xmed:bg-hero--wellness-xmed bg-cover bg-center min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
@@ -96,7 +97,13 @@ fabCopy:
         <article id={{amenity.slug}} class="xmed:w-full xmed:max-w-screen-xl mb-8 bg-ams-white shadow-md mx-6 xmed:mx-auto text-ams-primary">
             <div class="grid grid-cols-1 xmed:grid-cols-2 py-5">
                 <div class="amenity-xs-swiper max-w-screen-xl overflow-hidden xmed:hidden mx-3">
-                    {{ media_carousel(amenity.slides, "", "") }}
+                    {% if amenity.slides.length > 1 %}
+                        {{ media_carousel(amenity.slides, "", "") }}
+                    {% else %}
+                        <div class="mb-5">
+                            {{ scaled_image(amenity.slides[0]) }}
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="px-4 xmed:px-8">
                     <div class="mr-10 pb-3 border-b border-ams-gold">
@@ -132,7 +139,15 @@ fabCopy:
                         </div>
                     {% endif %}
                 </div>
-                <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">{{ media_carousel(amenity.slides, "", "", true) }}</div>
+                <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">
+                    {% if amenity.slides.length > 1 %}
+                        {{ media_carousel(amenity.slides, "", "", true) }}
+                    {% else %}
+                        <div class="px-5">
+                            {{ scaled_image(amenity.slides[0]) }}
+                        </div>
+                    {% endif %}
+                </div>
             </div>
         </article>
     {% endfor %}
