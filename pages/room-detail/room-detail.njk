@@ -82,7 +82,6 @@ fabExternalLink: true
     <figure class=" xmed:hidden w-full max-w-screen-xl overflow-hidden">
         {{ special_carousel(imageSlides) }}
     </figure>
-
 </div>
 
 <div class="w-full grid justify-items-center bg-pattern--ams-grey pb-8">
@@ -127,7 +126,7 @@ fabExternalLink: true
                                 <div class="w-full grid justify-items-center" >
                                     <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
                                         {{svg_icon("size",  type.icons.sqft + ' sqft', width="48", height="48", fill="#ec008c", sclass="w-20 xmed:w-28 icon inline-block")}}
-                                        {{svg_icon("bed",  type.icons.beds + ' Bed', width="48", height="48", fill="#ec008c", sclass=" w-20 xmed:w-28 icon inline-block")}}
+                                        {{svg_icon("bed",  type.icons.beds , width="48", height="48", fill="#ec008c", sclass=" w-20 xmed:w-28 icon inline-block")}}
                                         {{svg_icon("group",  'Sleeps ' + type.icons.capacity , width="48", height="48", fill="#ec008c", sclass="w-20 xmed:w-28 icon inline-block")}}
                                     </div>
                                 </div>
@@ -164,7 +163,8 @@ fabExternalLink: true
     {% endfor %}
 </div>
 <!--offers desktop design-->
-<div class="w-full hidden xmed:grid justify-items-center bg-ams-base py-6 xmed:px-12 xmed:pt-20 pb-12">    
+
+<div class="grid auto-cols-fr justify-items-center w-full hidden xmed:block bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
     <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
         <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
             <figcaption class="mx-20 px-2 mb-8">
@@ -175,12 +175,13 @@ fabExternalLink: true
                 </div>
                 <hr class="border-solid border-2 border-ams-gold">
             </figcaption>
-            <figure class="w-full px-8 text-ams-primary overflow-hidden">
+            <figure class="w-full max-w-screen-xl overflow-hidden">
                 {{ component_carousel(offers) }}
-            </figure>
+            </figure>    
         </div>
     </section>
 </div>
+
 <!--offers desktop design end-->
 <div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
     <div class="w-full grid justify-items-center bg-ams-base">
