@@ -15,6 +15,7 @@ fabCopy:
 {% from "icons.njk" import svgicon %}
 {% from "buttons.njk" import primaryButton %}
 {% from "media-carousel.njk" import media_carousel %}
+{% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--wellness xmed:bg-hero--wellness-xmed bg-cover bg-center min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
@@ -28,12 +29,13 @@ fabCopy:
                 <div class="xmed:text-center tracking-tight text-ams-primary">
                     Whether you’re here for work travel or weekend getaways, we’re committed to your health and well-being, first and foremost. Starting with the design of the hotel itself—sustainable, with  <a class="font-bold underline" href="air-quality.html"> filtered air</a> and water, superior acoustics, and human-centered private and public spaces. Continuing through your full experience both indoors and outdoors—reading in the library, relaxing at the spa, picnicking on the lawn, biking the Stevens Creek Trail.
                 </div>
-                <div class="text-center hidden xmed:block">
+                <div class="text-center">
                     {{ primaryButton("https://app.squarespacescheduling.com/schedule.php?owner=23496406", 'View & Book Treatments', 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
                 </div>
-                <div class="text-center xmed:hidden py-2">
+                {# TODO: If this button needed, please remove the comment #}
+                {# <div class="text-center xmed:hidden py-2">
                     {{ primaryButton("https://app.squarespacescheduling.com/schedule.php?owner=23496406", 'Make Spa Appointment', 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
-                </div>
+                </div> #}
             </div>
         </section>
     </article>
@@ -95,7 +97,13 @@ fabCopy:
         <article id={{amenity.slug}} class="xmed:w-full xmed:max-w-screen-xl mb-8 bg-ams-white shadow-md mx-6 xmed:mx-auto text-ams-primary">
             <div class="grid grid-cols-1 xmed:grid-cols-2 py-5">
                 <div class="amenity-xs-swiper max-w-screen-xl overflow-hidden xmed:hidden mx-3">
-                    {{ media_carousel(amenity.slides, "", "") }}
+                    {% if amenity.slides.length > 1 %}
+                        {{ media_carousel(amenity.slides, "", "") }}
+                    {% else %}
+                        <div class="mb-5">
+                            {{ scaled_image(amenity.slides[0]) }}
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="px-4 xmed:px-8">
                     <div class="mr-10 pb-3 border-b border-ams-gold">
@@ -106,7 +114,7 @@ fabCopy:
                     </div>
                     {% for txt in amenity.texts %}
                         <div class="pt-6">
-                            <span class="xmed:text-lg">{{txt}}</span>
+                            <span class="text-sm xmed:text-lg">{{txt}}</span>
                             {% if loop.last %}
                                 <span class="relative">
                                     <input type="checkbox" id="read_more_{{outer_loop_index}}" class="read-more absolute top-0 left-0 w-full h-full opacity-0">
@@ -114,7 +122,7 @@ fabCopy:
                                     <label for="read_more_{{outer_loop_index}}" class="segment__cta segment__cta--gold relative text-ams-gold text-xs font-serif-display uppercase cursor-pointer">READ MORE</label>
 
                                     {% for mtxt in amenity.more_texts %}
-                                        <p class="amenities-more text-lg hidden max-h-0 pt-6">{{mtxt}}</p>
+                                        <p class="amenities-more overflow-hidden max-h-0">{{mtxt}}</p>
                                     {% endfor %}
                                 </span>
                             {% endif %}
@@ -131,7 +139,15 @@ fabCopy:
                         </div>
                     {% endif %}
                 </div>
-                <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">{{ media_carousel(amenity.slides, "", "", true) }}</div>
+                <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">
+                    {% if amenity.slides.length > 1 %}
+                        {{ media_carousel(amenity.slides, "", "", true) }}
+                    {% else %}
+                        <div class="px-5">
+                            {{ scaled_image(amenity.slides[0]) }}
+                        </div>
+                    {% endif %}
+                </div>
             </div>
         </article>
     {% endfor %}

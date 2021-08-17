@@ -72,8 +72,12 @@ module.exports = {
         'hero--offers-xmed': "url('/images/offers-1_xmed.webp')",
         'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')",
         'hero--offers': "url('/images/offers-1-desktop.webp')",
-        'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')"    
-},
+        'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",  
+        'hero--press': "url('/images/press-hero-desktop.webp')",
+        'no-webp__hero--press': "url('/images/press-hero-desktop.jpg')",
+        'hero--press-xmed': "url('/images/press-hero_xmed.webp')",
+        'no-webp__hero--press-xmed': "url('/images/press-hero_xmed.jpg')"
+      },
       backgroundPosition: {
         'center-right': 'center right',
         'inherit': 'inherit',
@@ -198,6 +202,7 @@ module.exports = {
       },
       margin: {
         '0.8': '.2rem',
+        '0.05': '-0.05rem'
       },
       textIndent: (theme, { negative }) => ({
         ...negative({

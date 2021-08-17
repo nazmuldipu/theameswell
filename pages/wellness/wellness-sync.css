@@ -6,19 +6,19 @@
   @apply object-cover;
 }
 
-.amenity-xs-swiper .swiper-slide img {
+.amenity-xs-swiper img {
   @apply h-44;
   @apply object-cover;
 }
 
-.amenity-swiper .swiper-slide img {
+.amenity-swiper img {
   @apply h-80;
   @apply object-cover;
 }
 
 .read-more:checked ~ label ~ p {
   max-height: 300px;
-  display: block;
+  @apply pt-6;
 }
 
 .read-more:checked ~ label {

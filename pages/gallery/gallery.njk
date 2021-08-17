@@ -1,0 +1,24 @@
+---
+layout: base.njk
+pagename: gallery
+meta_title: "theameswellhotel | Gallery"
+meta_description: "Gallery"
+permalink: "build/gallery.html"
+permalinkBypassOutputDir: true
+fabUrl: https://reservations.travelclick.com/111994
+fabExternalLink: true
+---
+{% from "macros.njk" import scaled_image %}
+<div id="pageHero" class="bg-ams-taupe w-full justify-items-center pt-20 overflow-hidden">
+</div>
+<section class="segment-outer bg-ams-taupe pb-2 px-7 xmed:px-14">
+    <article class="segment-inner">
+        <figure class="gallery-image__column">
+            {% for image in gallery_images %}
+               <div class="pb-6 xmed:pb-8">
+                    {{ scaled_image(image) }}
+               </div>
+            {% endfor %}            
+        </figure>
+    </article>
+</section>

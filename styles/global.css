@@ -378,9 +378,26 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 
 /****  end page-index ********************************/
+.segment-outer {
+    @apply w-full;
+    @apply text-center;
+}
+.segment-inner {
+    @apply max-w-screen-xl;
+    @apply overflow-hidden;
+    @apply mx-auto;
+    @apply text-left;
+}
 
-
-
+.gallery-image__column {
+    column-count: 2;
+    column-gap: 1.5rem;
+}
+@media only screen and (max-width: 900px) {
+    .gallery-image__column {
+        column-count: 1;
+    }
+}
 
 
 
