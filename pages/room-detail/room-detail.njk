@@ -85,13 +85,13 @@ fabExternalLink: true
 </div>
 
 <div class="w-full grid justify-items-center bg-pattern--ams-grey pb-8">
-    <section class="w-full grid my-8 xmed:my-12 justify-items-center max-w-screen-md">
+    <section class="w-full px-8 grid mx-8 my-8 xmed:my-12 justify-items-center max-w-screen-md">
         <div class="w-full mx-6 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
-            <h2 class="title-display text-3xl xmed:text-5xl text-center">
+            <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
                 Rooms
             </h2>
         </div>
-    </section>
+    </section>  
 
     <!-- Room list -->
     {% for room in rooms %}
@@ -126,7 +126,7 @@ fabExternalLink: true
                                 <div class="w-full grid justify-items-center" >
                                     <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
                                         {{svg_icon("size",  type.icons.sqft + ' sqft', width="48", height="48", fill="#ec008c", sclass="w-20 xmed:w-28 icon inline-block")}}
-                                        {{svg_icon("bed",  type.icons.beds + ' Bed', width="48", height="48", fill="#ec008c", sclass=" w-20 xmed:w-28 icon inline-block")}}
+                                        {{svg_icon("bed",  type.icons.beds, width="48", height="48", fill="#ec008c", sclass=" w-20 xmed:w-28 icon inline-block")}}
                                         {{svg_icon("group",  'Sleeps ' + type.icons.capacity , width="48", height="48", fill="#ec008c", sclass="w-20 xmed:w-28 icon inline-block")}}
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@ fabExternalLink: true
 </div>
 <!--offers desktop design-->
 
-<div class="grid auto-cols-fr justify-items-center w-full hidden xmed:block bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
+<div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
     <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
         <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
             <figcaption class="mx-20 px-2 mb-8">
@@ -173,7 +173,7 @@ fabExternalLink: true
                 <div class="text-center pt-4 pb-4">
                     <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW All OFFERS</a>
                 </div>
-                <hr class="border-solid border-2 border-ams-gold">
+                <hr class="border-solid border border-ams-gold xmed:mx-3">
             </figcaption>
             <figure class="w-full max-w-screen-xl overflow-hidden">
                 {{ component_carousel(offers) }}
@@ -185,10 +185,10 @@ fabExternalLink: true
 <!--offers desktop design end-->
 <div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
     <div class="w-full grid justify-items-center bg-ams-base">
-        <div class="w-full grid justify-items-center max-w-screen-md">
+        <div class="w-full px-8 grid justify-items-center max-w-screen-md">
             <div class="w-full mx-6 my-8 py-6 px-4 xmed:p-8 xmed:my-0 shadow-sm xmed:shadow-md bg-ams-white">
-                <h2 class="title-display pb-0 text-3xl xmed:text-5xl text-center">
-                    Rooms Amenities
+                <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
+                    Room Amenities
                 </h2>
             </div>
         </div>

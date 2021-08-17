@@ -383,6 +383,29 @@
       ]
     }
   ],
+  
+  "happenings_image": {
+    "artDirection": [
+      {
+        "classes": "image-loader image-loader--white",
+        "media": "(min-width:900.1px)",
+        "sizes": "45vw",
+        "type": "jpg",
+        "src": "images/happenings-desktop",
+        "alt": "happenings",
+        "intrinsicwidth": "376"
+      },
+      {
+        "classes": "image-loader image-loader--white",
+        "media": "(max-width:900px)",
+        "sizes": "70vw",
+        "type": "jpg",
+        "src": "images/happenings-mobile",
+        "alt": "happenings",
+        "intrinsicwidth": "375"
+      }
+    ]
+  },
   "rooms_image": {
     "artDirection": [
       {
