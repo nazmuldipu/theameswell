@@ -24,4 +24,8 @@
     .rooms-carousel .swiper-container nav{
         @apply top-2;
     }
+
+    .com-car-nav {
+        @apply px-8;
+    }
 }
