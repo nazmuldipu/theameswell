@@ -1,0 +1,21 @@
+/****  start imports  ********************************/
+@import "../../styles/global.css";
+/****  end imports  ********************************/
+@layer base {
+    .moreText{
+        @apply hidden xmed:inline;
+    }
+    .moreText.active{
+        @apply inline;
+    } 
+    .toggle-arrow{
+        @apply inline xmed:hidden;
+    }
+    .toggle-arrow.active{
+        transform: rotateZ(180deg);        
+    }
+}
+
+#artComponent{
+    transition: background-color 0.5s ease;    
+}

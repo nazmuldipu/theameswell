@@ -153,6 +153,12 @@ input[type="date"]
 .segment__cta--green:after{
     border-color: theme(colors.ams-green);
 }
+.segment__cta--white:after{
+    border-color: theme(colors.ams-white);
+}
+.segment__cta--primary:after{
+    border-color: theme(colors.ams-primary);
+}
 @media all and ( max-width: 899px ) {
     .segment__cta--green:after{
         border-top-width: 2px;
