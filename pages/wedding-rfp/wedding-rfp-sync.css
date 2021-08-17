@@ -1,6 +1,7 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+@import "../../components/DayPicker/daypicker.css";
 
 .page-fab {
     @apply hidden;

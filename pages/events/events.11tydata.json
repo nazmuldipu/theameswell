@@ -3,7 +3,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/events-gallery-4",
+                    "src": "images/events-gallery-4",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -11,7 +11,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/events-gallery-4",
+                    "src": "images/events-gallery-4",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
@@ -23,7 +23,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/events-gallery-5",
+                    "src": "images/events-gallery-5",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -31,7 +31,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/events-gallery-5",
+                    "src": "images/events-gallery-5",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
@@ -43,7 +43,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/events-gallery-6",
+                    "src": "images/events-gallery-6",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -51,7 +51,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/events-gallery-6",
+                    "src": "images/events-gallery-6",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
@@ -63,7 +63,7 @@
         {
             "artDirection": [
                 {
-                    "image": "images/events-gallery-7",
+                    "src": "images/events-gallery-7",
                     "media": "(min-width:900.1px)",
                     "imgtype": "jpg",
                     "sizes": "80vw",
@@ -71,7 +71,7 @@
                     "intrinsicwidth": "2304"
                 },
                 {
-                    "image": "images/events-gallery-7",
+                    "src": "images/events-gallery-7",
                     "media": "(max-width:900px)",
                     "imgtype": "jpg",
                     "sizes": "100vw",
