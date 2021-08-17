@@ -1,0 +1,36 @@
+/****  start imports  ********************************/
+@import "../../styles/global.css";
+/****  end imports  ********************************/
+@layer base {
+  .tooltip {
+    @apply relative;
+    @apply inline-block;
+  }
+  .tooltip .tooltipText {
+    @apply hidden;
+    /* Position the tooltip */
+    @apply absolute;
+    z-index: 1;
+  }
+  .tooltip:hover .tooltipText {
+    @apply xmed:block;
+  }
+  .grid-item:nth-child(7n-3) .tooltip:hover .tooltipText,
+  .grid-item:nth-child(7n-2) .tooltip:hover .tooltipText,
+  .grid-item:nth-child(7n-2) .tooltip:hover .tooltipText,
+  .grid-item:nth-child(7n-1) .tooltip:hover .tooltipText,
+  .grid-item:nth-child(7n-0) .tooltip:hover .tooltipText {
+    @apply medium:-top-20;
+    @apply medium:right-20;
+  }
+  .grid-item:nth-child(7n-4) .tooltip:hover .tooltipText,
+  .grid-item:nth-child(7n-5) .tooltip:hover .tooltipText,
+  .grid-item:nth-child(7n-6) .tooltip:hover .tooltipText {
+    @apply medium:-top-20;
+    @apply medium:left-20;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

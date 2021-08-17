@@ -64,7 +64,15 @@ module.exports = {
         'pattern--ams-gold': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%'><defs><pattern id='ameswellPattern' x='0' y='0' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23857550;'/></pattern><rect id='block' x='-100%' y='0' width='200%' height='214%' transform='scale(0.5)' fill='url(%23ameswellPattern)' /></defs><use xlink:href='%23block' x='50%' y='0'/></svg>\")",
         'pattern--ams-yellow': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%'><defs><pattern id='ameswellPattern' x='0' y='0' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23f6e948;'/></pattern><rect id='block' x='-100%' y='0' width='200%' height='214%' transform='scale(0.5)' fill='url(%23ameswellPattern)' /></defs><use xlink:href='%23block' x='50%' y='0'/></svg>\")",
         'pattern--ams-orange': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%'><defs><pattern id='ameswellPattern' x='0' y='0' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23f7941e;'/></pattern><rect id='block' x='-100%' y='0' width='200%' height='214%' transform='scale(0.5)' fill='url(%23ameswellPattern)' /></defs><use xlink:href='%23block' x='50%' y='0'/></svg>\")",
-        'pattern--ams-magenta': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%'><defs><pattern id='ameswellPattern' x='0' y='0' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23ec008c;'/></pattern><rect id='block' x='-100%' y='0' width='200%' height='214%' transform='scale(0.5)' fill='url(%23ameswellPattern)' /></defs><use xlink:href='%23block' x='50%' y='0'/></svg>\")",                
+        'pattern--ams-magenta': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%'><defs><pattern id='ameswellPattern' x='0' y='0' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23ec008c;'/></pattern><rect id='block' x='-100%' y='0' width='200%' height='214%' transform='scale(0.5)' fill='url(%23ameswellPattern)' /></defs><use xlink:href='%23block' x='50%' y='0'/></svg>\")",
+        'hero--offers': "url('/images/offers-1-desktop.webp')",
+        'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",
+        'hero--offers-xmed': "url('/images/offers-1-desktop_1200.webp')",
+        'no-webp__hero--offers-xmed': "url('/images/offers-1-desktop_1200.jpg')",
+        'hero--happenings': "url('/images/happenings-1-desktop.webp')",
+        'no-webp__hero--happenings': "url('/images/happenings-1-desktop.jpg')",
+        'hero--happenings-xmed': "url('/images/happenings-1-mobile.webp')",
+        'no-webp__hero--happenings-xmed': "url('/images/happenings-1-mobile.jpg')",
         'hero--art': "url('/images/art-desktop.webp')",
         'no-webp__hero--art': "url('/images/art-desktop.jpg')",
         'hero--art-xmed': "url('/images/art-mobile.webp')",
@@ -97,6 +105,9 @@ module.exports = {
       minWidth: {
        '2xs': '14rem'
       },
+      maxWidth: {
+        "ameswel":"1440px"
+      },
       minHeight: {
        'l': '8rem'
       },
@@ -125,6 +136,7 @@ module.exports = {
         'ams-white': '#fff',
         'ams-base': '#f6f4f2',
         'ams-label': '#f4f4f4',
+        'ams-pink':'#D73288',
         'ams-main-1':'#4F2A30',
         'ams-main-2':'#01499B',
         'ams-main-3':'#311686',
