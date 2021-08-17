@@ -234,6 +234,28 @@ fabExternalLink: true
         </section>
     </article>
 </div>
+<!--press widget-->
+<section class="bg-ams-base w-full py-8 xmed:px-8">
+    <section class="bg-ams-taupe  max-w-screen-xl mx-auto w-full p-8">
+        <article class="bg-ams-white overflow-hidden mx-4">
+            <media-carousel data-type="default">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {% for item in press__widget %}
+                            <div class="swiper-slide">
+                                <div class="text-center px-10">
+                                    <span class="text-2xl">{{ item.heading }}</span>
+                                    <br>
+                                    <span class="text-sm">{{ item.quote }}</span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </media-carousel>
+        </article>
+    </section>
+</section>        
 <div class="grid justify-items-center bg-ams-primary w-full p-8">
     <article class="max-w-screen-lg p-4 bg-ams-white w-full">
         <section class="xmed:grid xmed:grid-cols-2 xmed:gap-4">
