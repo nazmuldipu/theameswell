@@ -30,6 +30,11 @@
     }
   ],
 
+  "ameswell":{
+    "title": "Ameswell",
+    "lat": 37.40739352704049,
+    "long": -122.06800030833442
+  },
   "categories": [
     {
       "title": "Shop",
@@ -46,8 +51,8 @@
           "positions": [
             {
               "title": "Downtown Mountain View",
-              "lat": 37.39133947534689,
-              "long": -122.08231106980809
+              "lat": 37.38917905642986, 
+              "long": -122.08181038551427
             }
           ]
         },
@@ -62,8 +67,8 @@
           "positions": [
             {
               "title": "Stanford Shopping Centers",
-              "lat": 37.445674111414505,
-              "long": -122.17109059434087
+              "lat": 37.4431558184401,
+              "long": -122.17152815656296
             }
           ]
         },
@@ -78,8 +83,8 @@
           "positions": [
             {
               "title": "Santana Row",
-              "lat": 37.3252689396081,
-              "long": -121.94803975551781
+              "lat": 37.319892385936186, 
+              "long": -121.9483436719989
             }
           ]
         },
@@ -94,8 +99,8 @@
           "positions": [
             {
               "title": "San Francisco Premium Outlets",
-              "lat": 37.70589300962213,
-              "long": -121.84327108780994
+              "lat": 37.69872753543806, 
+              "long": -121.84404813909099
             }
           ]
         }
@@ -116,8 +121,8 @@
           "positions": [
             {
               "title": "NASA Ames Visitor's Center",
-              "lat": 37.409489294299604,
-              "long": -122.0640276864703
+              "lat": 37.40938844555649, 
+              "long": -122.06403083975844
             }
           ]
         },
@@ -132,8 +137,8 @@
           "positions": [
             {
               "title": "Moffett Field Historical Society Museum",
-              "lat": 37.41181011976088,
-              "long": -122.05425816209883
+              "lat": 37.41120611920342, 
+              "long": -122.05432176189179
             }
           ]
         },
@@ -148,8 +153,8 @@
           "positions": [
             {
               "title": "Computer History Museum",
-              "lat": 37.41548152811577,
-              "long": -122.0775942581461
+              "lat": 37.41427544501654, 
+              "long": -122.07740967296793
             }
           ]
         },
@@ -164,8 +169,8 @@
           "positions": [
             {
               "title": "Intel Museum",
-              "lat": 37.39915055738596,
-              "long": -121.96028195132791
+              "lat": 37.38785258181395,
+              "long": -121.96350216936658
             }
           ]
         },
@@ -180,8 +185,8 @@
           "positions": [
             {
               "title": "Winchester Mystery Mansion",
-              "lat": 37.32832630361413,
-              "long": -121.95010988323871
+              "lat": 37.31833391295111,
+              "long": -121.95104843186795
             }
           ]
         },
@@ -196,8 +201,8 @@
           "positions": [
             {
               "title": "Museums at Stanford Univeristy",
-              "lat": 37.43795993640243,
-              "long": -121.17085614771015
+              "lat": 37.432968614326576,
+              "long": -122.17083566251478
             }
           ]
         },
@@ -212,8 +217,8 @@
           "positions": [
             {
               "title": "Filoli House and Botanical Gardens",
-              "lat": 37.49440679425992,
-              "long": -121.31054855300675
+              "lat": 37.47047231854944,
+              "long": -122.31067579930377
             }
           ]
         },
@@ -228,8 +233,8 @@
           "positions": [
             {
               "title": "Rosicrucian Egyptian Museum",
-              "lat": 37.34423757587398,
-              "long": -121.92264406349226
+              "lat": 37.33348813398216,
+              "long": -121.9228838340946
             }
           ]
         }
@@ -247,11 +252,41 @@
           "image": "images/location-1-sip-desktop.jpg",
           "imgalt": "Silicon Valley Wine Trail",
           "media": "(min-width:900.1px)",
-          "positions": [
+          "positions":[
             {
-              "title": "Silicon Valley Wine Trail",
-              "lat": 37.25989751065749,
-              "long": -121.03525702917787
+              "title": "Mountain Winery",
+              "lat": 37.260155483975566,
+              "long": -122.06469998784969
+            },
+            {
+              "title": "Ridge Vineyards",
+              "lat": 37.299760459660696,
+              "long": -122.1158174013676
+            },
+            {
+              "title": "Cooper-Garrod Vineyards",
+              "lat": 37.27648572433247,
+              "long": -122.05967533083547
+            },
+            {
+              "title": "MJA Vineyards",
+              "lat": 36.95894832188061,
+              "long": -122.04703543369357
+            },
+            {
+              "title": "Cinnabar",
+              "lat": 37.25570322832658,
+              "long": -122.03626229473974
+            },
+            {
+              "title": "Vldovich Vineyards",
+              "lat": 37.30681308336009,
+              "long": -122.1254238447422
+            },
+            {
+              "title": "Testarossa Winery",
+              "lat": 37.213478895224554,
+              "long": -121.9815443695665
             }
           ]
         },
@@ -265,9 +300,34 @@
           "media": "(min-width:900.1px)",
           "positions": [
             {
-              "title": "Mid-Peninsula Wine Trail",
-              "lat": 37.499860760382724,
-              "long": -121.2433598134488
+              "title": "Cuvee Wine Cellers",
+              "lat": 37.49807367732843,
+              "long": -122.24536651960278
+            },
+            {
+              "title": "Domenico Winery",
+              "lat": 37.498972274374765,
+              "long": -122.24194417946191
+            },
+            {
+              "title": "Flying Suitcase Wines",
+              "lat": 37.498870424209706,
+              "long": -122.24439615916258
+            },
+            {
+              "title": "Old County Cellars",
+              "lat": 37.513617738797066,
+              "long": -122.26616805182991
+            },
+            {
+              "title": "Russian Ridge Winery",
+              "lat": 37.498914387788865,
+              "long": -122.24433883389051
+            },
+            {
+              "title": "Zoetic Wines",
+              "lat": 37.49807367732843,
+              "long": -122.24536651960278
             }
           ]
         },
@@ -281,9 +341,29 @@
           "media": "(min-width:900.1px)",
           "positions": [
             {
-              "title": "Santa Cruz Wine Region",
-              "lat": 37.98238406437158,
-              "long": -121.04627085755607
+              "title": "Bargetto Winery",
+              "lat": 36.995306521666286,
+              "long": -121.95437474412056
+            },
+            {
+              "title": "Hunter Hill Vineyard and Winery",
+              "lat": 37.022667164238854,
+              "long": -121.93441472114264
+            },
+            {
+              "title": "Soquel Vineyards",
+              "lat": 37.02951513173412,
+              "long": -121.93386555173424
+            },
+            {
+              "title": "Burrell School Vineyard",
+              "lat": 37.12132199370499,
+              "long": -121.93257490378947
+            },
+            {
+              "title": "Loma Prieta Winery",
+              "lat": 37.10612053951063,
+              "long": -121.88046704777503
             }
           ]
         }
@@ -304,13 +384,13 @@
           "positions": [
             {
               "title": "Shoreline Golf Links",
-              "lat": 37.43284492088787,
-              "long": -122.08569022098557
+              "lat": 37.430509114623796,
+              "long": -122.08547464119955
             },
             {
               "title": "The Golf Club at Moffet Field",
-              "lat": 37.421635810647736,
-              "long": -122.04061327635074
+              "lat": 37.419816046595535,
+              "long": -122.04016114105846
             }
           ]
         },
@@ -325,49 +405,49 @@
           "positions": [
             {
               "title": "Shoreline Ampitheater",
-              "lat": 37.429778672230434,
-              "long": -122.08088370277945
+              "lat": 37.426835585381056,
+              "long": -122.08070260560928
             },
             {
               "title": "Levi's Stadium",
-              "lat": 37.412181478796896,
-              "long": -121.96918045929876
+              "lat": 37.40317453823692,
+              "long": -121.9697143574586
             },
             {
               "title": "SAP Center",
-              "lat": 37.351939815232626,
-              "long": -121.90375903035583
+              "lat": 37.33275263394298,
+              "long": -121.90124468269161
             },
             {
               "title": "Mountain Winery",
-              "lat": 37.266613624927004,
-              "long": -122.06417087535662
+              "lat": 37.260155483975566,
+              "long": -122.06469998784969
             },
             {
               "title": "Frost Amphitheater",
-              "lat": 37.44073297505016,
-              "long": -121.16563403422606
+              "lat": 37.43072408451354,
+              "long": -122.16602577356491
             }
           ]
         },
         {
           "categoryName": "Play",
           "cardTitle": "Ride a Rollercoaster",
-          "cardBody": "Great America Amusement Park and the historic Santa Cruz Beach Boardwalk offer an abundance of fun rides from merry-go-rounds to high-flying rollercoasters.",
+          "cardBody": "California's Great America Amusement Park and the historic Santa Cruz Beach Boardwalk offer an abundance of fun rides from merry-go-rounds to high-flying rollercoasters.",
           "distance": "",
           "image": "images/location-3-play-desktop.jpg",
           "imgalt": "Ride a Rollercoaster",
           "media": "(min-width:900.1px)",
           "positions": [
             {
-              "title": "Great America",
+              "title": "California's Great America",
               "lat": 37.40967605303016,
               "long": -121.9727373425219
             },
             {
               "title": "Santa Cruz Boardwalk",
-              "lat": 36.987507823016976,
-              "long": -122.01358243387097
+              "lat": 36.9643120013729,
+              "long": -122.01868411167025
             }
           ]
         },
@@ -382,8 +462,8 @@
           "positions": [
             {
               "title": "Come Sail Away",
-              "lat": 37.435707386937665,
-              "long": -122.08328696185711
+              "lat": 37.43283078540356,
+              "long": -122.0915552439747
             }
           ]
         },
@@ -398,8 +478,8 @@
           "positions": [
             {
               "title": "Take a Hike",
-              "lat": 37.40195177507397,
-              "long": -122.06934870889931
+              "lat": 37.40162099741493,
+              "long": -122.06931582401526
             }
           ]
         },
@@ -414,18 +494,18 @@
           "positions": [
             {
               "title": "Santa Cruz Beach",
-              "lat": 36.9831199400019,
-              "long": -122.02044888852366
+              "lat": 36.96368261243819,
+              "long": -122.01836089047498
             },
             {
               "title": "Capitola",
-              "lat": 36.99089668180232,
-              "long": -121.94903775777227
+              "lat": 36.971619745666594,
+              "long": -121.95162592440964
             },
             {
               "title": "Half Moon Bay",
-              "lat": 37.50710653117868,
-              "long": -122.41772487488747
+              "lat": 37.50198298633526,
+              "long": -122.47432078218824
             }
           ]
         },
@@ -440,13 +520,13 @@
           "positions": [
             {
               "title": "Palo Alto Junior Museum",
-              "lat": 37.44788199162902,
-              "long": -122.14422421964252
+              "lat": 37.44358524595137,
+              "long": -122.14437759989882
             },
             {
               "title": "Childeren's Discovery Museum",
-              "lat": 37.355220957387814,
-              "long": -121.89967267998959
+              "lat": 37.326992550768296,
+              "long": -121.89208160759307
             }
           ]
         },
@@ -461,23 +541,23 @@
           "positions": [
             {
               "title": "TheatreWorks",
-              "lat": 37.392426677743316,
-              "long": -122.0830064689256
+              "lat": 37.39004737931883,
+              "long": -122.08203077339701
             },
             {
               "title": "Rooster T. Feathers",
-              "lat": 37.37142489986436,
-              "long": -122.03305269129154
+              "lat": 37.368790806444416,
+              "long": -122.03358629098213
             },
             {
               "title": "San Jose Improv",
-              "lat": 37.36043985548244,
-              "long": -121.88241429338643
+              "lat": 37.3355692279629,
+              "long": -121.88850611550909
             },
             {
               "title": "San Jose Center for the Performing Arts",
-              "lat": 37.34596390940815,
-              "long": -121.88685101690821
+              "lat": 37.32995354461046,
+              "long": -121.8923858673369
             }
           ]
         }
@@ -498,8 +578,8 @@
           "positions": [
             {
               "title": "Stanford University",
-              "lat": 37.438007406975785,
-              "long": -121.17027258525717
+              "lat": 37.427475901347854,
+              "long": -122.16971910747213
             }
           ]
         },
@@ -507,22 +587,22 @@
           "categoryName": "Learn",
           "cardTitle": "Santa Clara University",
           "cardBody": "Established in 1851, a private Jesuit university in Santa Clara, California, in Silicon Valley. ",
-          "distance": "9.5",
+          "distance": "9.5 mi",
           "image": "images/location-2-learn-desktop.jpg",
           "imgalt": "Santa Clara University",
           "media": "(min-width:900.1px)",
           "positions": [
             {
               "title": "Santa Clara University",
-              "lat": 37.35897507433019,
-              "long": -121.93843690984082
+              "lat": 37.3496430618679,
+              "long": -121.93898723440664
             }
           ]
         },
         {
           "categoryName": "Learn",
           "cardTitle": "Carnegie Mellon Silicon Valley Campus",
-          "cardBody": "Established in 2012. Draper University is the leading program in Silicon Valley for building founders.",
+          "cardBody": "Established in 2002 at the NASA Ames Research Center in Moffett Field, CM is dedicated to educating its students to become leaders in global technology innovation and management.",
           "distance": "0.8 mi",
           "image": "images/location-3-learn-desktop.jpg",
           "imgalt": "Carnegie Mellon Silicon Valley Campus",
@@ -530,15 +610,15 @@
           "positions": [
             {
               "title": "Carnegie Mellon Silicon Valley Campus",
-              "lat": 37.4111571018933,
-              "long": -121.05946375963883
+              "lat": 37.410436727447596,
+              "long": -122.05976663206418
             }
           ]
         },
         {
           "categoryName": "Learn",
           "cardTitle": "Draper University of Heroes",
-          "cardBody": "Spend the weekend learning to sail the Bay at Shoreline Park. You can also rent a kayak or fly a kite.",
+          "cardBody": "Established in 2012. Draper University is the leading program in Silicon Valley for building founders.",
           "distance": "19.3 mi",
           "image": "images/location-4-learn-desktop.jpg",
           "imgalt": "Draper University of Heroes",
@@ -546,8 +626,8 @@
           "positions": [
             {
               "title": "Draper University of Heroes",
-              "lat": 37.582853754773375,
-              "long": -121.32325244861624
+              "lat": 37.56345562017321,
+              "long": -122.32495034154182
             }
           ]
         },
@@ -562,8 +642,8 @@
           "positions": [
             {
               "title": "San Jose State University",
-              "lat": 37.35413095354061,
-              "long": -121.8789626015297
+              "lat": 37.335189035772565,
+              "long": -121.8810723229714
             }
           ]
         }
@@ -584,8 +664,8 @@
           "positions": [
             {
               "title": "Go Niners",
-              "lat": 37.413372276562676,
-              "long": -121.96942878640128
+              "lat": 37.40317453823692,
+              "long": -121.9697143574586
             }
           ]
         },
@@ -593,15 +673,15 @@
           "categoryName": "Cheer",
           "cardTitle": "Gameday at the Tank",
           "cardBody": "Enjoy a San Jose Sharks NHL hockey game at the SAP Center.",
-          "distance": "11.6",
+          "distance": "11.6 mi",
           "image": "images/location-2-cheer-desktop.jpg",
           "imgalt": "Gameday at the Tank",
           "media": "(min-width:900.1px)",
           "positions": [
             {
               "title": "Gameday at the Tank",
-              "lat": 37.354163795992065,
-              "long": -121.89691371349252
+              "lat": 37.33275263394298,
+              "long": -121.90124468269161
             }
           ]
         },
@@ -616,8 +696,8 @@
           "positions": [
             {
               "title": "A Quake You Can Enjoy",
-              "lat": 37.363370539954786,
-              "long": -121.92175456531119
+              "lat": 37.35113807311537,
+              "long": -121.9246528370714
             }
           ]
         },
@@ -632,8 +712,8 @@
           "positions": [
             {
               "title": "San Jose Giants",
-              "lat": 37.33775310156487,
-              "long": -121.8597368266541
+              "lat": 37.32043530033272,
+              "long": -121.86236434108204
             }
           ]
         },
@@ -648,8 +728,8 @@
           "positions": [
             {
               "title": "Tree or Cardinal",
-              "lat": 37.439808459419154,
-              "long": -121.1608057626896
+              "lat": 37.43451777316095,
+              "long": -122.16112259820623
             }
           ]
         }

@@ -35,7 +35,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-2",
+          "src": "images/room-detail-2",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -43,7 +43,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-2",
+          "src": "images/room-detail-2",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -55,7 +55,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-3",
+          "src": "images/room-detail-3",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -63,7 +63,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-3",
+          "src": "images/room-detail-3",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -79,7 +79,7 @@
       "icons": { "sqft": "375", "capacity": "2" },
       "artDirection": [
         {
-          "image": "images/premium_king_01",
+          "src": "images/premium_king_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -87,7 +87,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/premium_king_01",
+          "src": "images/premium_king_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -101,7 +101,7 @@
       "icons": { "sqft": "440", "capacity": "2" },
       "artDirection": [
         {
-          "image": "images/premium_king_02",
+          "src": "images/premium_king_02",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -109,7 +109,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/premium_king_02",
+          "src": "images/premium_king_02",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -123,7 +123,7 @@
       "icons": { "sqft": "395", "capacity": "4" },
       "artDirection": [
         {
-          "image": "images/premium_two_queens_01",
+          "src": "images/premium_two_queens_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -131,7 +131,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/premium_two_queens_01",
+          "src": "images/premium_two_queens_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -145,7 +145,7 @@
       "icons": { "sqft": "485", "capacity": "4" },
       "artDirection": [
         {
-          "image": "images/premium_two_queens_02",
+          "src": "images/premium_two_queens_02",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -153,7 +153,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/premium_two_queens_02",
+          "src": "images/premium_two_queens_02",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -167,7 +167,7 @@
       "icons": { "sqft": "550", "capacity": "3" },
       "artDirection": [
         {
-          "image": "images/junior_suite_01",
+          "src": "images/junior_suite_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -175,7 +175,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/junior_suite_01",
+          "src": "images/junior_suite_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -189,7 +189,7 @@
       "icons": { "sqft": "690", "capacity": "3" },
       "artDirection": [
         {
-          "image": "images/executive_suite_01",
+          "src": "images/executive_suite_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -197,7 +197,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/executive_suite_01",
+          "src": "images/executive_suite_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -211,7 +211,7 @@
       "icons": { "sqft": "790", "capacity": "2" },
       "artDirection": [
         {
-          "image": "images/corner_one_bedroom_suite_01",
+          "src": "images/corner_one_bedroom_suite_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -219,7 +219,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/corner_one_bedroom_suite_01",
+          "src": "images/corner_one_bedroom_suite_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -233,7 +233,7 @@
       "icons": { "sqft": "779", "capacity": "4" },
       "artDirection": [
         {
-          "image": "images/arbor_suit_01",
+          "src": "images/arbor_suit_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -241,7 +241,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/arbor_suit_01",
+          "src": "images/arbor_suit_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -255,7 +255,7 @@
       "icons": { "sqft": "955", "capacity": "4" },
       "artDirection": [
         {
-          "image": "images/arbor_suit_01",
+          "src": "images/arbor_suit_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -263,7 +263,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/arbor_suit_01",
+          "src": "images/arbor_suit_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -277,7 +277,7 @@
       "icons": { "sqft": "310", "capacity": "2" },
       "artDirection": [
         {
-          "image": "images/superior_king_01",
+          "src": "images/superior_king_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -285,7 +285,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/superior_king_01",
+          "src": "images/superior_king_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -299,7 +299,7 @@
       "icons": { "sqft": "395", "capacity": "4" },
       "artDirection": [
         {
-          "image": "images/superior_two_queens_01",
+          "src": "images/superior_two_queens_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -307,7 +307,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/superior_two_queens_01",
+          "src": "images/superior_two_queens_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -321,7 +321,7 @@
       "icons": { "sqft": "335", "capacity": "2" },
       "artDirection": [
         {
-          "image": "images/deluxe_king_01",
+          "src": "images/deluxe_king_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -329,7 +329,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/deluxe_king_01",
+          "src": "images/deluxe_king_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -343,7 +343,7 @@
       "icons": { "sqft": "395", "capacity": "4" },
       "artDirection": [
         {
-          "image": "images/deluxe_two_queens_01",
+          "src": "images/deluxe_two_queens_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -351,7 +351,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/deluxe_two_queens_01",
+          "src": "images/deluxe_two_queens_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -365,7 +365,7 @@
       "icons": { "sqft": "317", "capacity": "2" },
       "artDirection": [
         {
-          "image": "images/wellness_king_01",
+          "src": "images/wellness_king_01",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -373,7 +373,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/wellness_king_01",
+          "src": "images/wellness_king_01",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -542,7 +542,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-1",
+          "src": "images/offer-detail-1",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -550,7 +550,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-1",
+          "src": "images/offer-detail-1",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -565,7 +565,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-2",
+          "src": "images/offer-detail-2",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -573,7 +573,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-2",
+          "src": "images/offer-detail-2",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -588,7 +588,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-4",
+          "src": "images/offer-detail-4",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -596,7 +596,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-4",
+          "src": "images/offer-detail-4",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -611,7 +611,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-5",
+          "src": "images/offer-detail-5",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -619,7 +619,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-5",
+          "src": "images/offer-detail-5",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",

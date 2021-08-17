@@ -7,6 +7,7 @@ module.exports = {
   purge: {
     content: [
       './pages/**/*.njk',
+      './pages/**/*.json',
       './pages/**/*.js',
       './tailwind-class-safelist.txt' 
     ]
@@ -16,10 +17,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         /* TODO: add webp and jpg fallback URLs */
-        'hero--home': "url('/images/homepage-1-desktop_lg.webp')",
-        'no-webp__hero--home': "url('/images/homepage-1-desktop_lg.jpg')",
-        'hero--home-xmed': "url('/images/homepage-1-mobile_2xs.webp')",
-        'no-webp__hero--home-xmed': "url('/images/homepage-1-mobile_2xs.jpg')",
+        'hero--home': "url('/images/hero-home.webp')",
+        'no-webp__hero--home': "url('/images/hero-home.jpg')",
+        'hero--home-xmed': "url('/images/hero-home_xmed.webp')",
+        'no-webp__hero--home-xmed': "url('/images/hero-home_xmed.jpg')",
         'hero--page-detail': "url('/images/rooms-hero-desktop.webp')",
         'no-webp__hero--page-detail': "url('/images/rooms-hero-desktop.jpg')",
         'hero--page-detail-xmed': "url('/images/rooms-hero-mobile.webp')",
@@ -32,12 +33,10 @@ module.exports = {
         'no-webp__hero--dining-xmed': "url('/images/hero-dining_xmed.jpg')",
         'hero--dining': "url('/images/hero-dining.webp')",
         'no-webp__hero--dining': "url('/images/hero-dining.jpg')",
-
         'hero--location': "url('/images/location-bg.webp')",
         'no-webp__hero--location': "url('/images/location-bg.jpg')",
         'hero--location-xmed': "url('/images/location-hero-mobile.webp')",
         'no-webp__hero--location-xmed': "url('/images/location-bg.jpg')", 
-
         'hero--about': "url('/images/about-hero-desktop.webp')",
         'no-webp__hero--about': "url('/images/about-hero-desktop.jpg')",
         'hero--about-xmed': "url('/images/about-hero-mobile.webp')",
@@ -74,11 +73,22 @@ module.exports = {
         'no-webp__hero--happenings': "url('/images/happenings-1-desktop.jpg')",
         'hero--happenings-xmed': "url('/images/happenings-1-mobile.webp')",
         'no-webp__hero--happenings-xmed': "url('/images/happenings-1-mobile.jpg')",
+        'hero--art': "url('/images/art-desktop.webp')",
+        'no-webp__hero--art': "url('/images/art-desktop.jpg')",
+        'hero--art-xmed': "url('/images/art-mobile.webp')",
+        'no-webp__hero--art-xmed': "url('/images/art-mobile.jpg')",
         'hero--offers-xmed': "url('/images/offers-1_xmed.webp')",
-        'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')"
+        'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')",
+        'hero--offers': "url('/images/offers-1-desktop.webp')",
+        'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",  
+        'hero--press': "url('/images/press-hero-desktop.webp')",
+        'no-webp__hero--press': "url('/images/press-hero-desktop.jpg')",
+        'hero--press-xmed': "url('/images/press-hero_xmed.webp')",
+        'no-webp__hero--press-xmed': "url('/images/press-hero_xmed.jpg')"
       },
       backgroundPosition: {
-        'center-right': 'center right'
+        'center-right': 'center right',
+        'inherit': 'inherit',
       },
       screens: {
         'small': '640px',
@@ -87,6 +97,7 @@ module.exports = {
         'large': '1280px'
       },
       height: {
+        '170':'42.5rem',
         '800': '50rem',
         '184':'46rem',
         '136':'34rem'
@@ -107,7 +118,8 @@ module.exports = {
          'fab-height-sm': '108px',
          'fab-width-lg': '176px',
          'fab-height-lg': '163px',
-         'carousel-lg': '26.5rem'
+         'carousel-lg': '26.5rem',
+         '30':'7.5rem'
        },
       colors: {
         'rose': colors.rose,
@@ -124,7 +136,22 @@ module.exports = {
         'ams-white': '#fff',
         'ams-base': '#f6f4f2',
         'ams-label': '#f4f4f4',
-        'ams-pink':'#D73288'
+        'ams-pink':'#D73288',
+        'ams-main-1':'#4F2A30',
+        'ams-main-2':'#01499B',
+        'ams-main-3':'#311686',
+        'ams-main-4':'#65ACC8',
+        'ams-main-5':'#435F8D',
+        'ams-main-6':'#010203',
+        'ams-main-7':'#6095B4',
+        'ams-main-8':'#701C13',
+        'ams-main-9':'#3C291B',
+        'ams-main-10':'#4E579C',
+        'ams-main-11':'#85434B',
+        'ams-main-12':'#E2DFD3',
+        'ams-main-13':'#313C2B',
+        'ams-main-14':'#FED9DA',
+        'ams-black':'#000000'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
@@ -184,6 +211,10 @@ module.exports = {
       },
       transitionProperty: {
         'height': 'height'
+      },
+      margin: {
+        '0.8': '.2rem',
+        '0.05': '-0.05rem'
       },
       textIndent: (theme, { negative }) => ({
         ...negative({
