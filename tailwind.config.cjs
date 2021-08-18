@@ -84,7 +84,8 @@ module.exports = {
        '2xs': '14rem'
       },
       minHeight: {
-       'l': '8rem'
+       'l': '8rem',
+       '2':'14rem'
       },
       spacing: {
           'fab-container-sm': '8.5rem',
