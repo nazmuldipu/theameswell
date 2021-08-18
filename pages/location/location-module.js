@@ -47,6 +47,13 @@ const addMarkers = (locations) => {
           infowindow.setContent(
             `<h3 class="text-sm py-1 px-4 m-0">${item.title}</h3>`
           );
+          const cardEle = document.getElementById(item.id);
+          if(cardEle){
+            removeAllWhiteBackground();
+            cardEle.classList.add('bg-ams-white')
+            cardEle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          // window.scrollBy(0, -80);
           infowindow.open(map, marker);
         };
       })(marker)
@@ -57,8 +64,8 @@ const addMarkers = (locations) => {
   let marker = new google.maps.Marker({
     position: { lat: ameswellLocation.lat, lng: ameswellLocation.long },
     title: ameswellLocation.title,
-    icon : new google.maps.MarkerImage('images/logo.svg',
-    null, null, null, new google.maps.Size(160,20)),
+    icon: new google.maps.MarkerImage('images/logo.svg',
+      null, null, null, new google.maps.Size(160, 20)),
     map,
   });
   markers.push(marker);
@@ -84,7 +91,7 @@ const categoryMapElement = document.querySelector("#categoryMap");
 const subCategoryMapElement = document.querySelector("#subCategoryMap");
 const nextCategory = document.querySelector("#nextCategory");
 const previousCategory = document.querySelector("#previousCategory");
-let index = 0;
+let index = categories.length;
 let subIndex = 0;
 let mapLoaded = 0;
 const renderTitleBox = (category) => {
@@ -97,18 +104,25 @@ const renderTitleBox = (category) => {
   document.querySelector("#navTitle").innerHTML = category.title;
 };
 
+const removeAllWhiteBackground = () =>{
+  const ele = document.querySelectorAll('.sub_cat');
+  ele.forEach(item =>{
+    item.classList.remove('bg-ams-white')
+  })
+}
+
 const renderSubCategories = (category) => {
   let html = "";
   category.locations.forEach((item) => {
     html += `<div class="mb-10 ">
-        <div class="grid xmed:grid-cols-40-60">
+        <div id="${item.cardTitle}" class="sub_cat grid xmed:grid-cols-40-60">
             <div class="relative">
                 <div class="absolute bg-ams-white text-xs w-24 p-2 top-2 right-2 text-center">${item.categoryName}</div>
-                <img src="${item.image}" class="w-full mb-4" alt="${item.imgalt}">
+                <img src="${item.image}" class="w-full" alt="${item.imgalt}">
             </div>
             <div class="xmed:px-4">
                 <div class="flex xmed:justify-between xmed:mb-0">
-                    <div class="title justify-items-start">${item.cardTitle}</div>
+                    <div class="title justify-items-start"><a class="cursor-pointer" href="${item.url}  "target="_blank">${item.cardTitle}</a></div>
                     <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
                 </div>
                 <p>${item.cardBody}</p>
@@ -160,7 +174,7 @@ const loadMap = (category, small) => {
     category.locations.forEach((item) => {
       if (item.positions.length) {
         item.positions.forEach(locObj => {
-          locations.push(locObj);
+          locations.push({ ...locObj, "id": item.cardTitle });
         })
       }
     });
@@ -223,4 +237,4 @@ previousCategory.addEventListener("click", function (e) {
   updateUI(index);
 });
 
-updateUI(0);
+updateUI(index);
