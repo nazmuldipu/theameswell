@@ -39,11 +39,11 @@ const render_right = (event) => {
           event.title
         }</h1>
     </header>
-    <p class="xmed:pt-4 pb-2 text-lg">${months[event.date.month]}, ${
+    <p class="xmed:pt-4 pb-2 text-lg">${months[event.date.month - 1]}, ${
     event.date.day
   }, ${event.date.year}</p>
     <p class="pb-3 text-lg">${event.time}</p>
-    <hr class="border-solid border-2 w-11/12 xmed:w-1/2 border-ams-gold">`;
+    <hr class="border-solid border-3 w-11/12 xmed:w-1/2 border-ams-gold">`;
 
   for (let i = 0; i < event.descriptions.length; i++) {
     html += `
@@ -63,7 +63,7 @@ const renderOurHappeningsCard = (event) => {
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
-                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                      ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
                     </h3>
                     <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
                       ${event.title}
@@ -78,7 +78,7 @@ const renderOurHappeningsCard = (event) => {
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
-                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                      ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
                     </h3>
                     <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
                       ${event.title}
