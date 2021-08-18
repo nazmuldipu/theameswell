@@ -34,7 +34,7 @@ fabExternalLink: true
             Explore The Art
         </h2>
         <div class="text-center text-base xmed:text-lg">
-            Whether complex renderings of astral images from the Hubble telescope, unlikely settings of Earthly flora and fauna, manipulated bright lights that slice through somber landscapes, or playfully animated reinterpretations of ancient hieroglyphics, each piece in this eclectic collection both reflects and reimagines the natural historic beauty and flourishing creative genius of the Northern California silicon valley. 
+            Whether complex renderings of astral images from the Hubble telescope, unlikely settings of Earthly flora and fauna, manipulated bright lights that slice through somber landscapes, or playfully animated reinterpretations of ancient hieroglyphics, each piece in this eclectic collection both reflects and reimagines the natural historic beauty and flourishing creative genius of Northern California’s Silicon Valley. 
         </div>
     </div>
 </section>
@@ -65,7 +65,7 @@ fabExternalLink: true
                 {% endif %}
                 ">
                     <header>
-                        <h2 class="pb-6 text-sm xmed:text-lg font-bold">
+                        <h2 class="pb-2 xmed:pb-6 text-sm xmed:text-lg font-bold">
                             {{ item.p1 | safe }}
                         </h2>
                     </header>
@@ -76,7 +76,7 @@ fabExternalLink: true
                         {{ item.p2 }}
                     </p>
                     <div class="flex justify-center pb-4 xmed:hidden text-center">
-                        <button class="read-more__btn segment__cta  relative font-serif font-semibold text-xs uppercase
+                        <div class="read-more__btn segment__cta remove-outline relative font-serif font-semibold text-xs uppercase
                         {% if item.bgImage == 'bg-ams-white' %}
                             text-ams-primary segment__cta--primary
                         {% elseif item.bgImage == 'bg-ams-main-12' %}
@@ -84,9 +84,9 @@ fabExternalLink: true
                         {% elseif item.bgImage == 'bg-ams-main-14' %}
                             text-ams-primary segment__cta--primary    
                         {% else %} text-ams-white segment__cta--white
-                        {% endif %} ">
+                        {% endif %}">
                             MORE
-                        </button>
+                        </div>
                         <!--arrow down-->
                         <div class="toggle-arrow p-1 xmed:hidden">
                             <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
