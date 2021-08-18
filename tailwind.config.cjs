@@ -7,6 +7,7 @@ module.exports = {
   purge: {
     content: [
       './pages/**/*.njk',
+      './pages/**/*.json',
       './pages/**/*.js',
       './tailwind-class-safelist.txt' 
     ]
@@ -32,12 +33,10 @@ module.exports = {
         'no-webp__hero--dining-xmed': "url('/images/hero-dining_xmed.jpg')",
         'hero--dining': "url('/images/hero-dining.webp')",
         'no-webp__hero--dining': "url('/images/hero-dining.jpg')",
-
         'hero--location': "url('/images/location-bg.webp')",
         'no-webp__hero--location': "url('/images/location-bg.jpg')",
         'hero--location-xmed': "url('/images/location-hero-mobile.webp')",
         'no-webp__hero--location-xmed': "url('/images/location-bg.jpg')", 
-
         'hero--about': "url('/images/about-hero-desktop.webp')",
         'no-webp__hero--about': "url('/images/about-hero-desktop.jpg')",
         'hero--about-xmed': "url('/images/about-hero-mobile.webp')",
@@ -68,8 +67,24 @@ module.exports = {
         'pattern--ams-magenta': "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%' height='100%'><defs><pattern id='ameswellPattern' x='0' y='0' width='160' height='160' patternUnits='userSpaceOnUse'><path d='M1,1,80.5,80.5M1,1H40.75M1,1V80.5M1,1,80.5,160M160,1H120.25M160,1,1,160M160,1V80.5M160,1,80.5,160m79.5,0L80.5,80.5M160,160,80.5,1M160,160V80.5m0,79.5H120.25M1,160V80.5M1,160,80.5,1M1,160H40.75M80.5,80.5,120.25,1M80.5,80.5,40.75,1M80.5,80.5,120.25,160M80.5,80.5,40.75,160M120.25,1H80.5m39.75,0L160,80.5M40.75,1,1,80.5M40.75,1H80.5M1,80.5,40.75,160M160,80.5,120.25,160M80.5,160h39.75M80.5,160H40.75' style='stroke:%23ec008c;'/></pattern><rect id='block' x='-100%' y='0' width='200%' height='214%' transform='scale(0.5)' fill='url(%23ameswellPattern)' /></defs><use xlink:href='%23block' x='50%' y='0'/></svg>\")",
         'hero--offers': "url('/images/offers-1-desktop.webp')",
         'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",
+        'hero--offers-xmed': "url('/images/offers-1-desktop_1200.webp')",
+        'no-webp__hero--offers-xmed': "url('/images/offers-1-desktop_1200.jpg')",
+        'hero--happenings': "url('/images/happenings-1-desktop.webp')",
+        'no-webp__hero--happenings': "url('/images/happenings-1-desktop.jpg')",
+        'hero--happenings-xmed': "url('/images/happenings-1-mobile.webp')",
+        'no-webp__hero--happenings-xmed': "url('/images/happenings-1-mobile.jpg')",
+        'hero--art': "url('/images/art-desktop.webp')",
+        'no-webp__hero--art': "url('/images/art-desktop.jpg')",
+        'hero--art-xmed': "url('/images/art-mobile.webp')",
+        'no-webp__hero--art-xmed': "url('/images/art-mobile.jpg')",
         'hero--offers-xmed': "url('/images/offers-1_xmed.webp')",
-        'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')"
+        'no-webp__hero--offers-xmed': "url('/images/offers-1_xmed.jpg')",
+        'hero--offers': "url('/images/offers-1-desktop.webp')",
+        'no-webp__hero--offers': "url('/images/offers-1-desktop.jpg')",  
+        'hero--press': "url('/images/press-hero-desktop.webp')",
+        'no-webp__hero--press': "url('/images/press-hero-desktop.jpg')",
+        'hero--press-xmed': "url('/images/press-hero_xmed.webp')",
+        'no-webp__hero--press-xmed': "url('/images/press-hero_xmed.jpg')"
       },
       backgroundPosition: {
         'center-right': 'center right',
@@ -82,6 +97,7 @@ module.exports = {
         'large': '1280px'
       },
       height: {
+        '170':'42.5rem',
         '800': '50rem',
         '184':'46rem',
         '136':'34rem'
@@ -89,8 +105,15 @@ module.exports = {
       minWidth: {
        '2xs': '14rem'
       },
+      maxWidth: {
+        "ameswel":"1440px"
+      },
       minHeight: {
-       'l': '8rem'
+       'l': '8rem',
+       '2':'14rem'
+      },
+      borderWidth: {
+        '3': '3px'
       },
       spacing: {
           'fab-container-sm': '8.5rem',
@@ -116,7 +139,23 @@ module.exports = {
         'ams-yellow': '#f6e948',
         'ams-white': '#fff',
         'ams-base': '#f6f4f2',
-        'ams-label': '#f4f4f4'
+        'ams-label': '#f4f4f4',
+        'ams-pink':'#D73288',
+        'ams-main-1':'#4F2A30',
+        'ams-main-2':'#01499B',
+        'ams-main-3':'#311686',
+        'ams-main-4':'#65ACC8',
+        'ams-main-5':'#435F8D',
+        'ams-main-6':'#010203',
+        'ams-main-7':'#6095B4',
+        'ams-main-8':'#701C13',
+        'ams-main-9':'#3C291B',
+        'ams-main-10':'#4E579C',
+        'ams-main-11':'#85434B',
+        'ams-main-12':'#E2DFD3',
+        'ams-main-13':'#313C2B',
+        'ams-main-14':'#FED9DA',
+        'ams-black':'#000000'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
@@ -172,13 +211,15 @@ module.exports = {
        'right-3': '0.75rem',
        '-125':"-500px",
        '81': '22.75rem',
-       '9999': '50%'
+       '9999': '50%',
+       '17': '17.75rem'
       },
       transitionProperty: {
         'height': 'height'
       },
       margin: {
         '0.8': '.2rem',
+        '-0.313': '-0.313rem'
       },
       textIndent: (theme, { negative }) => ({
         ...negative({

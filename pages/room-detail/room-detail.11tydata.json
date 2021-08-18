@@ -91,7 +91,7 @@
           "description": [
             "After a relaxing day of lounging by the pool, retreat to your comfortably appointed Superior King room and grab a complimentary cold bottle of water from your mini fridge. Drift off as you ponder the California-inspired naturescapes featured on your accent wall."
           ],
-          "icons": { "sqft": "310", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "310", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 310 square feet",
@@ -226,7 +226,7 @@
           "description": [
             "Grab a friend and explore all that the Ameswell has to offer – from fabulous food adventures to outdoor adventures. Wrap up the day in soft cotton robes sharing stories and laughs from your own comfy Queen beds."
           ],
-          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
+          "icons": { "sqft": "395", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "395 square feet",
@@ -348,7 +348,7 @@
           "description": [
             "Complimentary ultra-highspeed internet lets you work or catch up on emails quickly so you can stash your laptop in your safe and head over to Roger for a well-deserved cocktail and dinner. End the evening with a peaceful sleep on a plush Sealy mattress outfitted with luxurious Italian linens."
           ],
-          "icons": { "sqft": "335", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "335", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 335 square feet",
@@ -484,7 +484,7 @@
           "description": [
             "Be alone together when you share one of our Deluxe Rooms with Two Queen beds. Enjoy plenty of space to stretch out in your own bed and binge your favorite Netflix series together on a 65” Samsung Smart TV."
           ],
-          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
+          "icons": { "sqft": "395", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "Start at 395 square feet",
@@ -626,7 +626,7 @@
           "description": [
             "Show yourself some self-love in a signature Ameswell King Wellness Room. Everything you need to stay fit is right at your fingertips, from the Mirror fitness app to easy access to the pool, spa treatment rooms and 1,600 square foot fitness center."
           ],
-          "icons": { "sqft": "317", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "317", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "317 square feet",
@@ -811,7 +811,7 @@
           "description": [
             "Leave the world behind and soak up the views, not the noise, in a Premium King guest room. Close the blackout drapes at the end of the day and rest easy knowing that the air at Ameswell is filtered to medical-grade levels and guest rooms never share air."
           ],
-          "icons": { "sqft": "375", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "375", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 375 square feet",
@@ -948,7 +948,7 @@
           "description": [
             "Bring the whole crew to explore the abundance of activities nearby and on-site at Ameswell. After a fun day of exploring, spread out in a Premium Room with two Queen beds for a movie night on your 65” Samsung Smart TV."
           ],
-          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
+          "icons": { "sqft": "395", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "395 – 415 square feet",
@@ -1093,7 +1093,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the bed. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped.  "
           ],
-          "icons": { "sqft": "440", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "440", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "440 square feet",
@@ -1251,7 +1251,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the beds. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a bathtub with safety grab bars mounted on the wall. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
           ],
-          "icons": { "sqft": "475", "beds": "2 Queens", "capacity": "5" },
+          "icons": { "sqft": "475", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "475 square feet",
@@ -1389,7 +1389,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the beds. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
           ],
-          "icons": { "sqft": "475", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "475", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "475 square feet",
@@ -1525,7 +1525,7 @@
           "description": [
             "Featuring visual doorbells, these comfortably appointed rooms are designed to make our hearing-impaired guests as comfortable as possible. Curl up in a robe or luxurious Italian bed linens to fully rest and reset."
           ],
-          "icons": { "sqft": 310, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 310, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 310 square feet",
@@ -1602,12 +1602,12 @@
           "description": [
             "You and your guest can rest easy with the addition of a visual doorbell in the Superior Two Queens Hearing-Impaired Accessible room. An abundance of charging ports and ultra-highspeed internet service keeps you connected; plush mattresses and exquisite linens help you rest."
           ],
-          "icons": { "sqft": 310, "beds": "2 Queens", "capacity": "3" },
+          "icons": { "sqft": 310, "beds": "2 Queen Beds", "capacity": "3" },
           "details": [
             "Sleeps up to 5",
             "Start at 375 square feet",
             "Views of Ameswell lawn or Moffett Boulevard",
-            "Two Queen bed",
+            "Two Queen beds",
             "Shower",
             "Visual doorbell"
           ],
@@ -1679,7 +1679,7 @@
           "description": [
             "Our Deluxe King rooms feature a plush Sealy King mattress with Rivolta Italian bed linens, organic bath amenities, soft Ameswell robes, and a visual doorbell for our hearing-impaired guests. "
           ],
-          "icons": { "sqft": 335, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 335, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 335 square feet",
@@ -1816,7 +1816,7 @@
           "description": [
             "Our Spacious Premium King guestrooms provide an abundance of USB and USB-C charging ports and a visual doorbell for our hearing-impaired guests. Floor-to-ceiling windows let in the natural light, while blackout curtains help provide a restful sleep."
           ],
-          "icons": { "sqft": 375, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 375, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 375 square feet",
@@ -1955,7 +1955,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the bed. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
           ],
-          "icons": { "sqft": 525, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 525, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 5",
             "525-610 square feet",
@@ -2090,7 +2090,7 @@
           "description": [
             "Our Spacious Premium Two Queen beds guestrooms provide two plush Sealy Queen mattresses with luxurious Italian bed linens and a visual doorbell. Floor-to-ceiling windows let in the natural light, while blackout curtains help provide a restful sleep."
           ],
-          "icons": { "sqft": 395, "beds": "2 Queens", "capacity": "5" },
+          "icons": { "sqft": 395, "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "395 – 415 square feet",
@@ -2233,7 +2233,7 @@
           "description": [
             "Starting at 525 square feet, Junior Suites feature an en suite sitting area with multiple floor-to-ceiling windows for entertaining guests and a King bed with exquisite Italian linens when you are ready to call it a day."
           ],
-          "icons": { "sqft": "525-610", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "525-610", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "525 – 610 square feet",
@@ -2369,7 +2369,7 @@
           "description": [
             "Good sleep is sacred, and this is your chance to indulge. Book an Executive Suite and keep work and entertaining in your spacious living area with a half bath, then leave the world behind with a relaxing soak in your tub and deep sleep in a separate, quiet King bedroom."
           ],
-          "icons": { "sqft": "690", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "690", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 5 people",
             "1 King Bed",
@@ -2545,7 +2545,7 @@
           "description": [
             "Enjoy views for days in one of our Corner One-Bedroom Suites. At 790 square feet, these suites offer a private King bedroom and separate living space featuring pull-out sofas and powder rooms."
           ],
-          "icons": { "sqft": "790", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "790", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 3",
             "790 square feet",
@@ -2702,7 +2702,7 @@
           "description": [
             "Immerse yourself in luxury. With wraparound windows in the living space, every detail of this suite is designed for a truly modern luxury experience. Sink into the blue velvet couch, soak in the tub or soak in the views. This is life at its best."
           ],
-          "icons": { "sqft": "779", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "779", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 5 people",
             "779 square feet",
@@ -2839,7 +2839,7 @@
           "description": [
             "Three is never a crowd in the Ameswell Suite. At 955 square feet, this is our most spacious guest room. With a private King bedroom, pull-out sofa and two full baths, there is plenty of room for family or friends to join in the fun."
           ],
-          "icons": { "sqft": "955", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "955", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 5 people",
             "955 square feet",

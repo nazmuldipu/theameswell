@@ -3,6 +3,7 @@ import "../../components/WeatherWidget/index.js";
 import "../../components/MediaCarousel/index.js";
 import * as data from "./location.11tydata.json";
 
+const ameswellLocation = data.ameswell;
 /** Creation of script tag */
 const script = document.createElement("script");
 const src =
@@ -20,23 +21,13 @@ function initMap(locations, element) {
       zoom: 11,
       center: { lat: locations[0].lat, lng: locations[0].long },
     });
-
     addMarkers(locations);
   }, 1000);
 }
 
+
 const addMarkers = (locations) => {
   const { InfoWindow } = google.maps;
-
-  const icon = {
-    path: "M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z",
-    anchor: new google.maps.Point(12, 17),
-    fillOpacity: 1,
-    strokeWeight: 2,
-    fillColor: "#ea4335",
-    strokeColor: "#ea4335",
-    scale: 2,
-  };
   const infowindow = new InfoWindow();
   bounds = new google.maps.LatLngBounds();
   locations.forEach((item) => {
@@ -56,11 +47,29 @@ const addMarkers = (locations) => {
           infowindow.setContent(
             `<h3 class="text-sm py-1 px-4 m-0">${item.title}</h3>`
           );
+          const cardEle = document.getElementById(item.id);
+          if(cardEle){
+            removeAllWhiteBackground();
+            cardEle.classList.add('bg-ams-white')
+            cardEle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          // window.scrollBy(0, -80);
           infowindow.open(map, marker);
         };
       })(marker)
     );
   });
+
+  //Add ameswell logo
+  let marker = new google.maps.Marker({
+    position: { lat: ameswellLocation.lat, lng: ameswellLocation.long },
+    title: ameswellLocation.title,
+    icon : new google.maps.MarkerImage('images/ameswell_A_mark.png',
+    null, null, null, new google.maps.Size(25,25)),
+    map,
+  });
+  markers.push(marker);
+  bounds.extend(marker.position);
 
   if (locations.length > 1) map.fitBounds(bounds);
   else if ((locations.length = 1)) {
@@ -82,32 +91,38 @@ const categoryMapElement = document.querySelector("#categoryMap");
 const subCategoryMapElement = document.querySelector("#subCategoryMap");
 const nextCategory = document.querySelector("#nextCategory");
 const previousCategory = document.querySelector("#previousCategory");
-let index = 0;
+let index = categories.length;
 let subIndex = 0;
 let mapLoaded = 0;
 const renderTitleBox = (category) => {
   const titleText = `<div class="text-center xmed:text-left category-header">
-                    <h2 class="text-2xl xmed:text-2.5xl font-medium font-serif text-ams-primary">${
-                      index === categories.length ? "Live" : category.title
-                    } like a local</h2>
+                    <h2 class="text-2xl xmed:text-2.5xl font-medium font-serif text-ams-primary">${index === categories.length ? "Live" : category.title
+    } like a local</h2>
                     <p class="py-3">${category.body}</p>
                 </div>`;
   document.querySelector("#titleBox").innerHTML = titleText;
   document.querySelector("#navTitle").innerHTML = category.title;
 };
 
+const removeAllWhiteBackground = () =>{
+  const ele = document.querySelectorAll('.sub_cat');
+  ele.forEach(item =>{
+    item.classList.remove('bg-ams-white')
+  })
+}
+
 const renderSubCategories = (category) => {
   let html = "";
   category.locations.forEach((item) => {
     html += `<div class="mb-10 ">
-        <div class="grid xmed:grid-cols-40-60">
+        <div id="${item.cardTitle}" class="sub_cat grid xmed:grid-cols-40-60">
             <div class="relative">
                 <div class="absolute bg-ams-white text-xs w-24 p-2 top-2 right-2 text-center">${item.categoryName}</div>
-                <img src="${item.image}" class="w-full mb-4" alt="${item.imgalt}">
+                <img src="${item.image}" class="w-full" alt="${item.imgalt}">
             </div>
             <div class="xmed:px-4">
                 <div class="flex xmed:justify-between xmed:mb-0">
-                    <div class="title justify-items-start">${item.cardTitle}</div>
+                    <div class="title justify-items-start"><a class="cursor-pointer" href="${item.url}  "target="_blank">${item.cardTitle}</a></div>
                     <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
                 </div>
                 <p>${item.cardBody}</p>
@@ -142,7 +157,7 @@ const renderSubCategory = (category) => {
               </div>
             </div>`;
   });
-  
+
   html += `</div>
               </div>
             </media-carousel>`;
@@ -158,14 +173,14 @@ const loadMap = (category, small) => {
   if (!small) {
     category.locations.forEach((item) => {
       if (item.positions.length) {
-        item.positions.forEach(locObj =>{
-          locations.push(locObj);
+        item.positions.forEach(locObj => {
+          locations.push({ ...locObj, "id": item.cardTitle });
         })
       }
     });
   } else {
     if (category.positions.length) {
-      category.positions.forEach(locObj=>{
+      category.positions.forEach(locObj => {
         locations.push(locObj);
       })
     }
@@ -177,7 +192,7 @@ const loadMap = (category, small) => {
   } else if (locations.length) {
     removeMarkers();
     addMarkers(locations);
-  }else{
+  } else {
     removeMarkers();
   }
 };
@@ -222,4 +237,4 @@ previousCategory.addEventListener("click", function (e) {
   updateUI(index);
 });
 
-updateUI(0);
+updateUI(index);

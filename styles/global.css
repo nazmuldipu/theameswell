@@ -107,7 +107,7 @@
         @apply absolute;
         @apply z-20;
         @apply -mt-10;
-        @apply top-81;
+        @apply bottom-17;
         @apply xmed:top-1/2;
         @apply px-4;
         @apply w-full;
@@ -152,6 +152,12 @@ input[type="date"]
 }
 .segment__cta--green:after{
     border-color: theme(colors.ams-green);
+}
+.segment__cta--white:after{
+    border-color: theme(colors.ams-white);
+}
+.segment__cta--primary:after{
+    border-color: theme(colors.ams-primary);
 }
 @media all and ( max-width: 899px ) {
     .segment__cta--green:after{
@@ -372,9 +378,26 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 
 /****  end page-index ********************************/
+.segment-outer {
+    @apply w-full;
+    @apply text-center;
+}
+.segment-inner {
+    @apply max-w-screen-xl;
+    @apply overflow-hidden;
+    @apply mx-auto;
+    @apply text-left;
+}
 
-
-
+.gallery-image__column {
+    column-count: 2;
+    column-gap: 1.5rem;
+}
+@media only screen and (max-width: 900px) {
+    .gallery-image__column {
+        column-count: 1;
+    }
+}
 
 
 
