@@ -50,7 +50,7 @@
     },
     {
       "id": 3,
-      "date": { "day": 16, "month": 8, "year": 2021 },
+      "date": { "day": 18, "month": 8, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
       "image":"images/happenings_evants-Wine_Wednesdays",
@@ -61,6 +61,17 @@
     },
     {
       "id": 4,
+      "date": { "day": 26, "month": 8, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image":"images/happenings_evants-Jimmy_Ashley",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {
+      "id": 5,
       "date": { "day": 2, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -69,10 +80,9 @@
       "descriptions": [
         "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
-    }
-    ,
+    },
     {
-      "id": 4,
+      "id": 6,
       "date": { "day": 9, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -83,7 +93,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 7,
       "date": { "day": 23, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -94,7 +104,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 8,
       "date": { "day": 30, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
