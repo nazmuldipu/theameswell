@@ -27,4 +27,8 @@
         @apply placeholder-ams-primary;
         @apply placeholder-opacity-50;
     }
+    .article-center{
+       @apply min-h-l xmed:min-h-2;
+       @apply items-center;
+    }
 }

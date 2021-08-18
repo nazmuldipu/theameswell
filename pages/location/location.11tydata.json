@@ -48,6 +48,7 @@
           "image": "images/location-1-shop-desktop.jpg",
           "imgalt": "Downtown Mountain View",
           "media": "(min-width:900.1px)",
+          "url":"https://www.mountainview.gov/depts/comdev/economicdev/downtowndev/default.asp",
           "positions": [
             {
               "title": "Downtown Mountain View",
@@ -64,6 +65,7 @@
           "image": "images/location-2-shop-desktop.jpg",
           "imgalt": "Stanford Shopping Centers",
           "media": "(min-width:900.1px)",
+          "url":"https://www.simon.com/mall/stanford-shopping-center",
           "positions": [
             {
               "title": "Stanford Shopping Centers",
@@ -80,6 +82,7 @@
           "image": "images/location-3-shop-desktop.jpg",
           "imgalt": "Santana Row",
           "media": "(min-width:900.1px)",
+          "url":"http://www.santanarow.com/",
           "positions": [
             {
               "title": "Santana Row",
@@ -96,6 +99,7 @@
           "image": "images/location-4-shop-desktop.jpg",
           "imgalt": "San Francisco Premium Outlets",
           "media": "(min-width:900.1px)",
+          "url":"https://www.premiumoutlets.com/outlet/san-francisco",
           "positions": [
             {
               "title": "San Francisco Premium Outlets",
@@ -118,6 +122,7 @@
           "image": "images/location-1-explore-desktop.jpg",
           "imgalt": "NASA Ames Visitor's Center",
           "media": "(min-width:900.1px)",
+          "url":"https://www.nasa.gov/ames/visit",
           "positions": [
             {
               "title": "NASA Ames Visitor's Center",
@@ -134,6 +139,7 @@
           "image": "images/location-2-explore-desktop.jpg",
           "imgalt": "Moffett Field Historical Society Museum",
           "media": "(min-width:900.1px)",
+          "url":"https://www.moffettfieldmuseum.org/",
           "positions": [
             {
               "title": "Moffett Field Historical Society Museum",
@@ -150,6 +156,7 @@
           "image": "images/location-3-explore-desktop.jpg",
           "imgalt": "Computer History Museum",
           "media": "(min-width:900.1px)",
+          "url":"https://computerhistory.org/",
           "positions": [
             {
               "title": "Computer History Museum",
@@ -166,6 +173,7 @@
           "image": "images/location-4-explore-desktop.jpg",
           "imgalt": "Intel Museum",
           "media": "(min-width:900.1px)",
+          "url":"https://www.intel.com/content/www/us/en/company-overview/intel-museum.html",
           "positions": [
             {
               "title": "Intel Museum",
@@ -182,6 +190,7 @@
           "image": "images/location-5-explore-desktop.jpg",
           "imgalt": "Winchester Mystery Mansion",
           "media": "(min-width:900.1px)",
+          "url":"https://www.winchestermysteryhouse.com/",
           "positions": [
             {
               "title": "Winchester Mystery Mansion",
@@ -198,6 +207,7 @@
           "image": "images/location-6-explore-desktop.jpg",
           "imgalt": "Museums at Stanford Univeristy",
           "media": "(min-width:900.1px)",
+          "url":"https://museum.stanford.edu/",
           "positions": [
             {
               "title": "Museums at Stanford Univeristy",
@@ -214,6 +224,7 @@
           "image": "images/location-7-explore-desktop.jpg",
           "imgalt": "Filoli House and Botanical Gardens",
           "media": "(min-width:900.1px)",
+          "url":"https://filoli.org/",
           "positions": [
             {
               "title": "Filoli House and Botanical Gardens",
@@ -230,6 +241,7 @@
           "image": "images/location-8-explore-desktop.jpg",
           "imgalt": "Rosicrucian Egyptian Museum ",
           "media": "(min-width:900.1px)",
+          "url":"https://egyptianmuseum.org/",
           "positions": [
             {
               "title": "Rosicrucian Egyptian Museum",
@@ -252,6 +264,7 @@
           "image": "images/location-1-sip-desktop.jpg",
           "imgalt": "Silicon Valley Wine Trail",
           "media": "(min-width:900.1px)",
+          "url":"http://siliconvalleywinetrail.com/",
           "positions":[
             {
               "title": "Mountain Winery",
@@ -298,6 +311,7 @@
           "image": "images/location-2-sip-desktop.jpg",
           "imgalt": "Mid-Peninsula Wine Trail",
           "media": "(min-width:900.1px)",
+          "url":"http://siliconvalleywinetrail.com/",
           "positions": [
             {
               "title": "Cuvee Wine Cellers",
@@ -339,6 +353,7 @@
           "image": "images/location-3-sip-desktop.jpg",
           "imgalt": "Santa Cruz Wine Region",
           "media": "(min-width:900.1px)",
+          "url":"http://siliconvalleywinetrail.com/",
           "positions": [
             {
               "title": "Bargetto Winery",
@@ -381,6 +396,7 @@
           "image": "images/location-1-play-desktop.jpg",
           "imgalt": "Play a Round of Golf (or Two)",
           "media": "(min-width:900.1px)",
+          "url":"https://www.moffettgolf.com/",
           "positions": [
             {
               "title": "Shoreline Golf Links",
@@ -402,6 +418,7 @@
           "image": "images/location-2-play-desktop.jpg",
           "imgalt": "Take in a Concert",
           "media": "(min-width:900.1px)",
+          "url":"https://www.livenation.com/venue/KovZpZA6ta1A/shoreline-amphitheatre-events",
           "positions": [
             {
               "title": "Shoreline Ampitheater",
@@ -438,6 +455,7 @@
           "image": "images/location-3-play-desktop.jpg",
           "imgalt": "Ride a Rollercoaster",
           "media": "(min-width:900.1px)",
+          "url":"https://www.cagreatamerica.com/",
           "positions": [
             {
               "title": "California's Great America",
@@ -459,6 +477,7 @@
           "image": "images/location-4-play-desktop.jpg",
           "imgalt": "Come Sail Away",
           "media": "(min-width:900.1px)",
+          "url":"https://shorelinelake.com/",
           "positions": [
             {
               "title": "Come Sail Away",
@@ -475,6 +494,7 @@
           "image": "images/location-5-play-desktop.jpg",
           "imgalt": "Take a Hike",
           "media": "(min-width:900.1px)",
+          "url":"https://www.stevenscreektrail.org/",
           "positions": [
             {
               "title": "Take a Hike",
@@ -491,6 +511,7 @@
           "image": "images/location-6-play-desktop.jpg",
           "imgalt": "Sun and Surf",
           "media": "(min-width:900.1px)",
+          "url":"https://www.californiabeaches.com/central/santa-cruz-county/santa-cruz/",
           "positions": [
             {
               "title": "Santa Cruz Beach",
@@ -517,6 +538,7 @@
           "image": "images/location-7-play-desktop.jpg",
           "imgalt": "Entertain the Kids",
           "media": "(min-width:900.1px)",
+          "url":"https://www.cdm.org/",
           "positions": [
             {
               "title": "Palo Alto Junior Museum",
@@ -538,6 +560,7 @@
           "image": "images/location-8-play-desktop.jpg",
           "imgalt": "Laugh Until You Cry",
           "media": "(min-width:900.1px)",
+          "url":"https://sanjosetheaters.org/theaters/center-for-performing-arts/",
           "positions": [
             {
               "title": "TheatreWorks",
@@ -575,6 +598,7 @@
           "image": "images/location-1-learn-desktop.jpg",
           "imgalt": "Stanford University",
           "media": "(min-width:900.1px)",
+          "url":"https://www.stanford.edu/",
           "positions": [
             {
               "title": "Stanford University",
@@ -591,6 +615,7 @@
           "image": "images/location-2-learn-desktop.jpg",
           "imgalt": "Santa Clara University",
           "media": "(min-width:900.1px)",
+          "url":"https://www.scu.edu/",
           "positions": [
             {
               "title": "Santa Clara University",
@@ -602,11 +627,12 @@
         {
           "categoryName": "Learn",
           "cardTitle": "Carnegie Mellon Silicon Valley Campus",
-          "cardBody": "Established in 2002 at the NASA Ames Research Center in Moffett Field, CM is dedicated to educating its students to become leaders in global technology innovation and management.",
+          "cardBody": "Established in 2002, at the NASA Ames Research Center in Moffett Field, CM is dedicated to educating its students to become leaders in global technology innovation and management.",
           "distance": "0.8 mi",
           "image": "images/location-3-learn-desktop.jpg",
           "imgalt": "Carnegie Mellon Silicon Valley Campus",
           "media": "(min-width:900.1px)",
+          "url":"https://sv.cmu.edu/",
           "positions": [
             {
               "title": "Carnegie Mellon Silicon Valley Campus",
@@ -618,11 +644,12 @@
         {
           "categoryName": "Learn",
           "cardTitle": "Draper University of Heroes",
-          "cardBody": "Established in 2012. Draper University is the leading program in Silicon Valley for building founders.",
+          "cardBody": "Established in 2012, Draper University is the leading program in Silicon Valley for building founders.",
           "distance": "19.3 mi",
           "image": "images/location-4-learn-desktop.jpg",
           "imgalt": "Draper University of Heroes",
           "media": "(min-width:900.1px)",
+          "url":"https://www.draperuniversity.com/",
           "positions": [
             {
               "title": "Draper University of Heroes",
@@ -639,6 +666,7 @@
           "image": "images/location-5-learn-desktop.jpg",
           "imgalt": "San Jose State University",
           "media": "(min-width:900.1px)",
+          "url":"https://www.sjsu.edu/",
           "positions": [
             {
               "title": "San Jose State University",
@@ -661,6 +689,7 @@
           "image": "images/location-1-cheer-desktop.jpg",
           "imgalt": "Go Niners",
           "media": "(min-width:900.1px)",
+          "url":"https://www.49ers.com/",
           "positions": [
             {
               "title": "Go Niners",
@@ -677,6 +706,7 @@
           "image": "images/location-2-cheer-desktop.jpg",
           "imgalt": "Gameday at the Tank",
           "media": "(min-width:900.1px)",
+          "url":"https://www.nhl.com/sharks",
           "positions": [
             {
               "title": "Gameday at the Tank",
@@ -693,6 +723,7 @@
           "image": "images/location-3-cheer-desktop.jpg",
           "imgalt": "A Quake You Can Enjoy",
           "media": "(min-width:900.1px)",
+          "url":"https://www.sjearthquakes.com/",
           "positions": [
             {
               "title": "A Quake You Can Enjoy",
@@ -709,6 +740,7 @@
           "image": "images/location-4-cheer-desktop.jpg",
           "imgalt": "San Jose Giants",
           "media": "(min-width:900.1px)",
+          "url":"https://www.milb.com/san-jose",
           "positions": [
             {
               "title": "San Jose Giants",
@@ -725,6 +757,7 @@
           "image": "images/location-5-cheer-desktop.jpg",
           "imgalt": "Tree or Cardinal",
           "media": "(min-width:900.1px)",
+          "url":"https://gostanford.com/",
           "positions": [
             {
               "title": "Tree or Cardinal",

@@ -172,7 +172,7 @@ const renderOurHappeningsCard = (event) => {
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
-                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                      ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
                     </h3>
                     <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
                       ${event.title}
@@ -187,7 +187,7 @@ const renderOurHappeningsCard = (event) => {
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
-                      ${months[event.date.month]}, ${event.date.day}, ${event.date.year}
+                      ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
                     </h3>
                     <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
                       ${event.title}
@@ -417,6 +417,5 @@ Happenings.prototype = {
     el.innerHTML = evHtml;
   },
 };
-
 
 new Happenings();

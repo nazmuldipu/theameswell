@@ -109,7 +109,11 @@ module.exports = {
         "ameswel":"1440px"
       },
       minHeight: {
-       'l': '8rem'
+       'l': '8rem',
+       '2':'14rem'
+      },
+      borderWidth: {
+        '3': '3px'
       },
       spacing: {
           'fab-container-sm': '8.5rem',
@@ -207,7 +211,8 @@ module.exports = {
        'right-3': '0.75rem',
        '-125':"-500px",
        '81': '22.75rem',
-       '9999': '50%'
+       '9999': '50%',
+       '17': '17.75rem'
       },
       transitionProperty: {
         'height': 'height'
