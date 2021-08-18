@@ -47,19 +47,6 @@
       ]
     },
     {
-      "id": 1,
-      "date": { "day": 22, "month": 8, "year": 2021 },
-      "time": "10:30 - 11:30 am",
-      "title": "YOGA ON THE LAWN",
-      "image":"images/happenings_evants-Yoga_Class",
-      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
-      "descriptions": [
-        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
-        "Join us after class for Sunday Brunch at Roger!"
-      ]
-    },
-    {
       "id": 4,
       "date": { "day": 26, "month": 8, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
@@ -101,6 +88,19 @@
       "url": "https://rogerbarandrestaurant.com/reservations",
       "descriptions": [
         "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {
+      "id": 1,
+      "date": { "day": 22, "month": 8, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image":"images/happenings_evants-Yoga_Class",
+      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
       ]
     },
     {
