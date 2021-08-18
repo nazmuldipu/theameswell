@@ -57,8 +57,8 @@ const addMarkers = (locations) => {
   let marker = new google.maps.Marker({
     position: { lat: ameswellLocation.lat, lng: ameswellLocation.long },
     title: ameswellLocation.title,
-    icon : new google.maps.MarkerImage('images/logo.svg',
-    null, null, null, new google.maps.Size(160,20)),
+    icon : new google.maps.MarkerImage('images/ameswell_A_mark.png',
+    null, null, null, new google.maps.Size(25,25)),
     map,
   });
   markers.push(marker);
