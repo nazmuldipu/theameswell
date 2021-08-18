@@ -109,7 +109,8 @@ module.exports = {
         "ameswel":"1440px"
       },
       minHeight: {
-       'l': '8rem'
+       'l': '8rem',
+       '2':'14rem'
       },
       borderWidth: {
         '3': '3px'
