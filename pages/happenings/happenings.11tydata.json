@@ -1,0 +1,118 @@
+{
+  "happenings_image": {
+    "artDirection": [
+      {
+        "classes": "image-loader image-loader--white",
+        "media": "(min-width:900.1px)",
+        "sizes": "45vw",
+        "type": "jpg",
+        "src": "images/happenings-desktop",
+        "alt": "happenings",
+        "intrinsicwidth": "376"
+      },
+      {
+        "classes": "image-loader image-loader--white",
+        "media": "(max-width:900px)",
+        "sizes": "70vw",
+        "type": "jpg",
+        "src": "images/happenings-mobile",
+        "alt": "happenings",
+        "intrinsicwidth": "375"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": 3,
+      "date": { "day": 18, "month": 8, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image":"images/happenings_evants-Wine_Wednesdays",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },
+    {
+      "id": 2,
+      "date": { "day": 21, "month": 8, "year": 2021 },
+      "time": "7:00",
+      "title": "DIERKS BENTLEY: BEERS ON ME TOUR",
+      "image":"images/happenings_evants-DIERKS_BENTLEY",
+      "url": "https://www.livenation.com/venue/KovZpZA6ta1A/shoreline-amphitheatre-events",
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Get tickets to the Beers on Me Tour 2021 with Dierks Bentley, Riley Green and Parker McCollum. ",
+        "Make a night of it with an overnight stay at The Ameswell Hotel and dinner and drinks before the show (and more drinks after) at Roger Bar and Restaurant.",
+        "You can detox the next day with our complimentary yoga class…"
+      ]
+    },
+    {
+      "id": 1,
+      "date": { "day": 22, "month": 8, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image":"images/happenings_evants-Yoga_Class",
+      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
+      ]
+    },
+    {
+      "id": 4,
+      "date": { "day": 26, "month": 8, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image":"images/happenings_evants-Jimmy_Ashley",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {
+      "id": 5,
+      "date": { "day": 2, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image":"images/happenings_evants-Jimmy_Ashley",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {
+      "id": 6,
+      "date": { "day": 9, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image":"images/happenings_evants-Jimmy_Ashley",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {
+      "id": 7,
+      "date": { "day": 23, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image":"images/happenings_evants-Jimmy_Ashley",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {
+      "id": 8,
+      "date": { "day": 30, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image":"images/happenings_evants-Jimmy_Ashley",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    }
+  ]
+}

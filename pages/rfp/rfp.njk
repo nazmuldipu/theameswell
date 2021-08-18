@@ -9,19 +9,19 @@ permalinkBypassOutputDir: true
 ---
 {% from "buttons.njk" import primaryButton %}
 
-{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="") %}
+{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="", readonly=false) %}
     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
         {{label}}<br>
-        <input type="{{type}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
+        <input type="{{type}}" id="{{name}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
         class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
-        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }}/>
+        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }} {{ 'readonly' if (readonly == true) }} />
     </label>
 {% endmacro %}
 
 <div id="pageHero" class="bg-ams-primary bg-hero--events-xmed xmed:bg-hero--events bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
 </div>
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
-    <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:border-2 xmed:shadow-md">
+    <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:shadow-md">
         <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-8 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
             <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
                 <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
@@ -29,7 +29,7 @@ permalinkBypassOutputDir: true
                         Start Planning Your Event
                     </h2>
                     <p>
-                        Please let us know details of your event and a member of our team will reach out to you shortly to discuss! If you need anything in the meantime, please contact our team at <a href="tel:1-650-880-1000" class="text-ams-cyan underline">650-880-1000</a> or <a href="mailto:keithbattaglia@theameswellhotel.com" target="_blank" class="text-ams-cyan underline">keithbattaglia@theameswellhotel.com</a>
+                        Please let us know details of your event and a member of our team will reach out to you shortly to discuss! If you need anything in the meantime, please contact our team at <a href="tel:1-650-880-1000" class="text-ams-cyan underline">650-880-1000</a> or <a href="mailto:keithbattaglia@theameswellhotel.com" target="_blank" class="text-ams-cyan underline break-all">keithbattaglia@theameswellhotel.com</a>
                     </p>
                 </section>
             </article>
@@ -59,10 +59,10 @@ permalinkBypassOutputDir: true
                             </select>
                         </label>
 
-                        {{form_input("startDate","START DATE *", "date", "MM/DD/YYY", true, "datepicker relative")}}
-                        {{form_input("endDate","END DATE", "date", "MM/DD/YYY", false, "datepicker relative")}}
-                        {{form_input("startTime","Event Start Time: ", "time", "MM/DD/YYY", false)}}
-                        {{form_input("endTime","Event End Time:", "time", "MM/DD/YYY", false)}}
+                        {{form_input("startDate","START DATE *", "text", "YYYY-MM-DD", true, "datepicker relative", readonly=true)}}
+                        {{form_input("endDate","END DATE", "text", "YYYY-MM-DD", false, "datepicker relative", readonly=true)}}
+                        {{form_input("startTime","Event Start Time: ", "time", "Start Time", false)}}
+                        {{form_input("endTime","Event End Time:", "time", "End Time", false)}}
                         {{form_input("guestRoomCount","How many guest rooms? ", "number", "", false, "", 0)}}
                        
                         <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
@@ -90,7 +90,7 @@ permalinkBypassOutputDir: true
                         </label>
 
                         <label id="foodBeverageYesText" class="foodBeverageYesText block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                            What food & beverage? <br>
+                            What food &amp; beverage? <br>
                             <select required="required" aria-required="true" name="foodBeverageItems" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
                                 <option value="" disabled selected hidden></option>
                                 <option value="breakfast">Breakfast</option>

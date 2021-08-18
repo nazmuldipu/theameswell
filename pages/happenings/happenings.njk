@@ -1,0 +1,107 @@
+---
+layout: base.njk
+pagename: happenings
+meta_title: The Ameswell Hotel
+meta_description: "The Ameswell Hotel offers uncommon luxury in Silicon Valley. Nestled on 11 acres in sunny Mountain View, we bring together technology and innovation, natural beauty and an opportunity to play unlike any other hotel in the Bay Area."
+canonical_href: https://www.theameswellhotel.com
+permalink: "build/happenings.html"
+permalinkBypassOutputDir: true
+fabUrl: https://reservations.travelclick.com/111994
+fabExternalLink: true
+fabCopy:
+    - 
+    - Reserve
+---
+{% from "macros.njk" import scaled_image %}
+{% from "buttons.njk" import primaryButton %}
+{% macro eventCard() %}
+<section class="bg-ams-white xmed:shadow-2xl h-96 w-96">
+    <figure>
+        {{ scaled_image(happenings_image) }}
+        <figcaption>
+            <header class="px-6 py-4 text-left bg-ams-white">
+                <h3 class="text-lg font-sans">
+                        July 3, 2021
+                    </h3>
+                <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
+                        LIVE MUSIC WITH FREDDY CLARKE AND WOBBLY WORLD
+                    </h2>
+            </header>
+        </figcaption>
+    </figure>
+    <div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium">
+        {{ primaryButton("#", 'View More') }}        
+    </div>
+</section>
+{% endmacro %}
+<div id="pageHero" class="min-h-screen bg-hero--happenings-xmed xmed:bg-hero--happenings bg-cover bg-bottom w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
+<!-- calendar start-->
+<section class="xmed:bg-ams-base w-full text-ams-primary">
+    <section id="happening_calendar" class="px-2 xmed:px-10 max-w-ameswel m-auto relative">
+        <header class="flex items-center justify-center mt-10 mb-7 text-center font-sans">
+            <img alt="previous icon" src="/images/prev_icon.svg" class="nav-prev cursor-pointer"></img>
+            <h1 class="month-name font-bold px-4 text-4xl uppercase"></h1>
+            <img alt="next icon" src="/images/next_icon.svg" class="nav-next cursor-pointer"></img>
+        </header>
+        <div class="font-sans text-xs grid grid-cols-7 gap-x-2 xmed:gap-x-6 text-center">
+            <div class="bg-ams-primary text-ams-base">Sun</div>
+            <div class="bg-ams-primary text-ams-base">Mon</div>
+            <div class="bg-ams-primary text-ams-base">Tue</div>
+            <div class="bg-ams-primary text-ams-base">Wed</div>
+            <div class="bg-ams-primary text-ams-base">Thu</div>
+            <div class="bg-ams-primary text-ams-base">Fri</div>
+            <div class="bg-ams-primary text-ams-base">Sat</div>
+        </div>
+        <div class="calendar-body grid grid-cols-7 gap-x-1 mb-8 text-center">        
+        </div>
+    </section>
+</section>
+<!-- calendar end-->
+<hr class="xmed:hidden border-solid border-4 w-11/12 border-ams-primary">
+<!--event List-->
+<section class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-20">
+    <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
+        <h2 id="our_happenings_title" class="title-display text-2xl text-center px-16 font-serif font-medium py-4 uppercase">
+            Our Happenings
+        </h2>
+    </header>
+    <article id="our_happenings" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24">
+        
+    </article>
+    <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
+        {{ primaryButton("javascript:void(0)", 'View all', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
+    </div>
+</section>
+<div class="hidden xmed:grid justify-items-center bg-ams-primary w-full p-8">
+    <article class="max-w-ameswel w-full px-24">
+        <section class="xmed:grid p-8 bg-ams-white xmed:grid-cols-2 xmed:gap-4">
+            <header>
+                <h2 class="title-display text-2xl pb-4">
+                    Join Our A-List
+                </h2>
+                <p>
+                    You will be the first to hear about events and promotions.
+                </p>
+            </header>
+            <form-sender data-type="alist">
+                <form class="pr-16">
+                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
+                    </div>
+                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
+                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
+                    </div>
+                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
+                        <input required="required" type="text" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">EMAIL ADDRESS *</label>
+                    </div>
+                    {{ primaryButton("#", 'Join the A-List', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                    <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
+                </form>
+            </form-sender>
+        </section>
+    </article>
+</div>
+

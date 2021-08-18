@@ -3,7 +3,7 @@
     {
       "artDirection": [
         {
-          "image": "images/wellness_1",
+          "src": "images/wellness_1",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -11,67 +11,7 @@
           "intrinsicwidth": "2300"
         },
         {
-          "image": "images/wellness_1",
-          "media": "(max-width:900px)",
-          "imgtype": "jpg",
-          "sizes": "100vw",
-          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-          "intrinsicwidth": "2300"
-        }
-      ]
-    },
-    {
-      "artDirection": [
-        {
-          "image": "images/wellness_2",
-          "media": "(min-width:900.1px)",
-          "imgtype": "jpg",
-          "sizes": "80vw",
-          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
-        },
-        {
-          "image": "images/wellness_2",
-          "media": "(max-width:900px)",
-          "imgtype": "jpg",
-          "sizes": "100vw",
-          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
-        }
-      ]
-    },
-    {
-      "artDirection": [
-        {
-          "image": "images/wellness_3",
-          "media": "(min-width:900.1px)",
-          "imgtype": "jpg",
-          "sizes": "80vw",
-          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
-        },
-        {
-          "image": "images/wellness_3",
-          "media": "(max-width:900px)",
-          "imgtype": "jpg",
-          "sizes": "100vw",
-          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
-        }
-      ]
-    },
-    {
-      "artDirection": [
-        {
-          "image": "images/wellness_4",
-          "media": "(min-width:900.1px)",
-          "imgtype": "jpg",
-          "sizes": "80vw",
-          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-          "intrinsicwidth": "2300"
-        },
-        {
-          "image": "images/wellness_4",
+          "src": "images/wellness_1",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -83,7 +23,7 @@
     {
       "artDirection": [
         {
-          "image": "images/wellness_5",
+          "src": "images/wellness_2",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -91,7 +31,7 @@
           "intrinsicwidth": "2300"
         },
         {
-          "image": "images/wellness_5",
+          "src": "images/wellness_2",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -103,7 +43,7 @@
     {
       "artDirection": [
         {
-          "image": "images/wellness_6",
+          "src": "images/wellness_3",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -111,7 +51,67 @@
           "intrinsicwidth": "2300"
         },
         {
-          "image": "images/wellness_6",
+          "src": "images/wellness_3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "src": "images/wellness_4",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "src": "images/wellness_4",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The pool at the Ameswell Hotel lit in the evening",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "src": "images/wellness_5",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "src": "images/wellness_5",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        }
+      ]
+    },
+    {
+      "artDirection": [
+        {
+          "src": "images/wellness_6",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
+          "intrinsicwidth": "2300"
+        },
+        {
+          "src": "images/wellness_6",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -140,7 +140,7 @@
         {
           "artDirection": [
             {
-              "image": "images/pool-1",
+              "src": "images/pool-1",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -148,7 +148,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/pool-1",
+              "src": "images/pool-1",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -160,7 +160,7 @@
         {
           "artDirection": [
             {
-              "image": "images/pool-2",
+              "src": "images/pool-2",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -168,7 +168,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/pool-2",
+              "src": "images/pool-2",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -211,7 +211,7 @@
         {
           "artDirection": [
             {
-              "image": "images/spa-1",
+              "src": "images/spa-1",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -219,27 +219,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/spa-1",
-              "media": "(max-width:900px)",
-              "imgtype": "jpg",
-              "sizes": "100vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            }
-          ]
-        },
-        {
-          "artDirection": [
-            {
-              "image": "images/spa-1",
-              "media": "(min-width:900.1px)",
-              "imgtype": "jpg",
-              "sizes": "80vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            },
-            {
-              "image": "images/spa-1",
+              "src": "images/spa-1",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -265,7 +245,7 @@
         {
           "artDirection": [
             {
-              "image": "images/fitness center-1",
+              "src": "images/fitness center-1",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -273,7 +253,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/fitness center-1",
+              "src": "images/fitness center-1",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -285,7 +265,7 @@
         {
           "artDirection": [
             {
-              "image": "images/fitness center-2",
+              "src": "images/fitness center-2",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -293,7 +273,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/fitness center-2",
+              "src": "images/fitness center-2",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -305,7 +285,7 @@
         {
           "artDirection": [
             {
-              "image": "images/fitness center-3",
+              "src": "images/fitness center-3",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -313,7 +293,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/fitness center-3",
+              "src": "images/fitness center-3",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -325,7 +305,7 @@
         {
           "artDirection": [
             {
-              "image": "images/fitness center-4",
+              "src": "images/fitness center-4",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -333,7 +313,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/fitness center-4",
+              "src": "images/fitness center-4",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -361,7 +341,7 @@
         {
           "artDirection": [
             {
-              "image": "images/mirror by lululemon-1",
+              "src": "images/mirror by lululemon-1",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -369,7 +349,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/mirror by lululemon-1",
+              "src": "images/mirror by lululemon-1",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -381,7 +361,7 @@
         {
           "artDirection": [
             {
-              "image": "images/mirror by lululemon-2",
+              "src": "images/mirror by lululemon-2",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -389,7 +369,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/mirror by lululemon-2",
+              "src": "images/mirror by lululemon-2",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",
@@ -419,7 +399,7 @@
         {
           "artDirection": [
             {
-              "image": "images/fitness-1",
+              "src": "images/fitness-1",
               "media": "(min-width:900.1px)",
               "imgtype": "jpg",
               "sizes": "80vw",
@@ -427,27 +407,7 @@
               "intrinsicwidth": "2300"
             },
             {
-              "image": "images/fitness-1",
-              "media": "(max-width:900px)",
-              "imgtype": "jpg",
-              "sizes": "100vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            }
-          ]
-        },
-        {
-          "artDirection": [
-            {
-              "image": "images/fitness-1",
-              "media": "(min-width:900.1px)",
-              "imgtype": "jpg",
-              "sizes": "80vw",
-              "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
-            },
-            {
-              "image": "images/fitness-1",
+              "src": "images/fitness-1",
               "media": "(max-width:900px)",
               "imgtype": "jpg",
               "sizes": "100vw",

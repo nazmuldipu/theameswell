@@ -11,11 +11,11 @@
   ],
   "slides": [
     {
-      "image": "images/homepage-video-bg-3",
+      "src": "images/homepage-video-bg-3",
       "caption": "Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty."
     },
     {
-      "image": "images/homepage-3",
+      "src": "images/homepage-3",
       "caption": "Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty."
     }
   ],
@@ -23,7 +23,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-1",
+          "src": "images/room-detail-1",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -31,7 +31,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-1",
+          "src": "images/room-detail-1",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -43,7 +43,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-2",
+          "src": "images/room-detail-2",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -51,7 +51,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-2",
+          "src": "images/room-detail-2",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -63,7 +63,7 @@
     {
       "artDirection": [
         {
-          "image": "images/room-detail-3",
+          "src": "images/room-detail-3",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -71,7 +71,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/room-detail-3",
+          "src": "images/room-detail-3",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -91,7 +91,7 @@
           "description": [
             "After a relaxing day of lounging by the pool, retreat to your comfortably appointed Superior King room and grab a complimentary cold bottle of water from your mini fridge. Drift off as you ponder the California-inspired naturescapes featured on your accent wall."
           ],
-          "icons": { "sqft": "310", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "310", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 310 square feet",
@@ -102,7 +102,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_king_01",
+                  "src": "images/superior_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -110,7 +110,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_king_01",
+                  "src": "images/superior_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -122,7 +122,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_king_02",
+                  "src": "images/superior_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -130,7 +130,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_king_02",
+                  "src": "images/superior_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -142,7 +142,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_king_03",
+                  "src": "images/superior_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -150,7 +150,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_king_03",
+                  "src": "images/superior_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -162,7 +162,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_king_04",
+                  "src": "images/superior_king_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -170,7 +170,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_king_04",
+                  "src": "images/superior_king_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -182,7 +182,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_king_05",
+                  "src": "images/superior_king_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -190,7 +190,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_king_05",
+                  "src": "images/superior_king_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -202,7 +202,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_king_06",
+                  "src": "images/superior_king_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -210,7 +210,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_king_06",
+                  "src": "images/superior_king_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -226,7 +226,7 @@
           "description": [
             "Grab a friend and explore all that the Ameswell has to offer – from fabulous food adventures to outdoor adventures. Wrap up the day in soft cotton robes sharing stories and laughs from your own comfy Queen beds."
           ],
-          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
+          "icons": { "sqft": "395", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "395 square feet",
@@ -238,7 +238,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_two_queens_01",
+                  "src": "images/superior_two_queens_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -246,7 +246,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_two_queens_01",
+                  "src": "images/superior_two_queens_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -258,7 +258,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_two_queens_02",
+                  "src": "images/superior_two_queens_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -266,7 +266,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_two_queens_02",
+                  "src": "images/superior_two_queens_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -278,7 +278,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_two_queens_03",
+                  "src": "images/superior_two_queens_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -286,7 +286,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_two_queens_03",
+                  "src": "images/superior_two_queens_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -298,7 +298,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_two_queens_04",
+                  "src": "images/superior_two_queens_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -306,7 +306,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_two_queens_04",
+                  "src": "images/superior_two_queens_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -318,7 +318,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/superior_two_queens_05",
+                  "src": "images/superior_two_queens_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -326,7 +326,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/superior_two_queens_05",
+                  "src": "images/superior_two_queens_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -348,7 +348,7 @@
           "description": [
             "Complimentary ultra-highspeed internet lets you work or catch up on emails quickly so you can stash your laptop in your safe and head over to Roger for a well-deserved cocktail and dinner. End the evening with a peaceful sleep on a plush Sealy mattress outfitted with luxurious Italian linens."
           ],
-          "icons": { "sqft": "335", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "335", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 335 square feet",
@@ -360,7 +360,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_01",
+                  "src": "images/deluxe_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -368,7 +368,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_01",
+                  "src": "images/deluxe_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -380,7 +380,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_02",
+                  "src": "images/deluxe_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -388,7 +388,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_02",
+                  "src": "images/deluxe_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -400,7 +400,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_03",
+                  "src": "images/deluxe_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -408,7 +408,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_03",
+                  "src": "images/deluxe_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -420,7 +420,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_04",
+                  "src": "images/deluxe_king_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -428,7 +428,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_04",
+                  "src": "images/deluxe_king_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -440,7 +440,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_05",
+                  "src": "images/deluxe_king_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -448,7 +448,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_05",
+                  "src": "images/deluxe_king_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -460,7 +460,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_06",
+                  "src": "images/deluxe_king_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -468,7 +468,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_06",
+                  "src": "images/deluxe_king_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -484,7 +484,7 @@
           "description": [
             "Be alone together when you share one of our Deluxe Rooms with Two Queen beds. Enjoy plenty of space to stretch out in your own bed and binge your favorite Netflix series together on a 65” Samsung Smart TV."
           ],
-          "icons": { "sqft": "395", "beds": "2 Qeens", "capacity": "5" },
+          "icons": { "sqft": "395", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "Start at 395 square feet",
@@ -496,7 +496,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_two_queens_01",
+                  "src": "images/deluxe_two_queens_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -504,7 +504,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_two_queens_01",
+                  "src": "images/deluxe_two_queens_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -516,7 +516,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_two_queens_02",
+                  "src": "images/deluxe_two_queens_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -524,7 +524,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_two_queens_02",
+                  "src": "images/deluxe_two_queens_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -536,7 +536,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_two_queens_03",
+                  "src": "images/deluxe_two_queens_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -544,7 +544,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_two_queens_03",
+                  "src": "images/deluxe_two_queens_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -556,7 +556,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_two_queens_04",
+                  "src": "images/deluxe_two_queens_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -564,7 +564,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_two_queens_04",
+                  "src": "images/deluxe_two_queens_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -576,7 +576,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_two_queens_05",
+                  "src": "images/deluxe_two_queens_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -584,7 +584,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_two_queens_05",
+                  "src": "images/deluxe_two_queens_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -596,7 +596,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_two_queens_06",
+                  "src": "images/deluxe_two_queens_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -604,7 +604,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_two_queens_06",
+                  "src": "images/deluxe_two_queens_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -626,7 +626,7 @@
           "description": [
             "Show yourself some self-love in a signature Ameswell King Wellness Room. Everything you need to stay fit is right at your fingertips, from the Mirror fitness app to easy access to the pool, spa treatment rooms and 1,600 square foot fitness center."
           ],
-          "icons": { "sqft": "317", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "317", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "317 square feet",
@@ -641,7 +641,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_01",
+                  "src": "images/wellness_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -649,7 +649,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_01",
+                  "src": "images/wellness_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -661,7 +661,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_02",
+                  "src": "images/wellness_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -669,7 +669,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_02",
+                  "src": "images/wellness_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -681,7 +681,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_03",
+                  "src": "images/wellness_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -689,7 +689,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_03",
+                  "src": "images/wellness_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -701,7 +701,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_04",
+                  "src": "images/wellness_king_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -709,7 +709,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_04",
+                  "src": "images/wellness_king_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -721,7 +721,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_05",
+                  "src": "images/wellness_king_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -729,7 +729,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_05",
+                  "src": "images/wellness_king_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -741,7 +741,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_06",
+                  "src": "images/wellness_king_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -749,7 +749,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_06",
+                  "src": "images/wellness_king_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -761,7 +761,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_07",
+                  "src": "images/wellness_king_07",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -769,7 +769,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_07",
+                  "src": "images/wellness_king_07",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -781,7 +781,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/wellness_king_08",
+                  "src": "images/wellness_king_08",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -789,7 +789,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/wellness_king_08",
+                  "src": "images/wellness_king_08",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -811,7 +811,7 @@
           "description": [
             "Leave the world behind and soak up the views, not the noise, in a Premium King guest room. Close the blackout drapes at the end of the day and rest easy knowing that the air at Ameswell is filtered to medical-grade levels and guest rooms never share air."
           ],
-          "icons": { "sqft": "375", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "375", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 375 square feet",
@@ -824,7 +824,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_01",
+                  "src": "images/premium_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -832,7 +832,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_01",
+                  "src": "images/premium_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -844,7 +844,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_02",
+                  "src": "images/premium_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -852,7 +852,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_02",
+                  "src": "images/premium_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -864,7 +864,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_03",
+                  "src": "images/premium_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -872,7 +872,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_03",
+                  "src": "images/premium_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -884,7 +884,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_04",
+                  "src": "images/premium_king_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -892,7 +892,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_04",
+                  "src": "images/premium_king_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -904,7 +904,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_05",
+                  "src": "images/premium_king_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -912,7 +912,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_05",
+                  "src": "images/premium_king_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -924,7 +924,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_06",
+                  "src": "images/premium_king_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -932,7 +932,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_06",
+                  "src": "images/premium_king_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -948,7 +948,7 @@
           "description": [
             "Bring the whole crew to explore the abundance of activities nearby and on-site at Ameswell. After a fun day of exploring, spread out in a Premium Room with two Queen beds for a movie night on your 65” Samsung Smart TV."
           ],
-          "icons": { "sqft": "395", "beds": "2 Queens", "capacity": "5" },
+          "icons": { "sqft": "395", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "395 – 415 square feet",
@@ -961,7 +961,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_01",
+                  "src": "images/premium_two_queens_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -969,7 +969,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_01",
+                  "src": "images/premium_two_queens_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -981,7 +981,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_02",
+                  "src": "images/premium_two_queens_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -989,7 +989,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_02",
+                  "src": "images/premium_two_queens_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1001,7 +1001,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_03",
+                  "src": "images/premium_two_queens_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1009,7 +1009,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_03",
+                  "src": "images/premium_two_queens_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1021,7 +1021,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_04",
+                  "src": "images/premium_two_queens_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1029,7 +1029,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_04",
+                  "src": "images/premium_two_queens_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1041,7 +1041,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_05",
+                  "src": "images/premium_two_queens_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1049,7 +1049,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_05",
+                  "src": "images/premium_two_queens_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1061,7 +1061,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_06",
+                  "src": "images/premium_two_queens_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1069,7 +1069,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_06",
+                  "src": "images/premium_two_queens_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1093,7 +1093,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the bed. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped.  "
           ],
-          "icons": { "sqft": "440", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "440", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "440 square feet",
@@ -1105,7 +1105,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/king_accessible_01",
+                  "src": "images/king_accessible_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1113,7 +1113,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/king_accessible_01",
+                  "src": "images/king_accessible_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1125,7 +1125,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/king_accessible_02",
+                  "src": "images/king_accessible_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1133,7 +1133,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/king_accessible_02",
+                  "src": "images/king_accessible_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1145,7 +1145,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/king_accessible_03",
+                  "src": "images/king_accessible_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1153,7 +1153,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/king_accessible_03",
+                  "src": "images/king_accessible_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1165,7 +1165,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/king_accessible_04",
+                  "src": "images/king_accessible_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1173,7 +1173,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/king_accessible_04",
+                  "src": "images/king_accessible_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1185,7 +1185,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/king_accessible_04",
+                  "src": "images/king_accessible_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1193,7 +1193,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/king_accessible_04",
+                  "src": "images/king_accessible_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1205,7 +1205,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/king_accessible_05",
+                  "src": "images/king_accessible_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1213,7 +1213,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/king_accessible_05",
+                  "src": "images/king_accessible_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1225,7 +1225,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/king_accessible_06",
+                  "src": "images/king_accessible_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1233,7 +1233,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/king_accessible_06",
+                  "src": "images/king_accessible_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1251,7 +1251,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the beds. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a bathtub with safety grab bars mounted on the wall. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
           ],
-          "icons": { "sqft": "475", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "475", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "475 square feet",
@@ -1263,7 +1263,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_01",
+                  "src": "images/two_queens_accessible_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1271,7 +1271,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_01",
+                  "src": "images/two_queens_accessible_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1283,7 +1283,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_02",
+                  "src": "images/two_queens_accessible_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1291,7 +1291,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_02",
+                  "src": "images/two_queens_accessible_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1303,7 +1303,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_03",
+                  "src": "images/two_queens_accessible_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1311,7 +1311,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_03",
+                  "src": "images/two_queens_accessible_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1323,7 +1323,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_04",
+                  "src": "images/two_queens_accessible_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1331,7 +1331,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_04",
+                  "src": "images/two_queens_accessible_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1343,7 +1343,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_05",
+                  "src": "images/two_queens_accessible_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1351,7 +1351,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_05",
+                  "src": "images/two_queens_accessible_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1363,7 +1363,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_06",
+                  "src": "images/two_queens_accessible_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1371,7 +1371,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_06",
+                  "src": "images/two_queens_accessible_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1389,7 +1389,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the beds. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
           ],
-          "icons": { "sqft": "475", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "475", "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "475 square feet",
@@ -1401,7 +1401,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_01",
+                  "src": "images/two_queens_accessible_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1409,7 +1409,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_01",
+                  "src": "images/two_queens_accessible_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1421,7 +1421,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_02",
+                  "src": "images/two_queens_accessible_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1429,7 +1429,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_02",
+                  "src": "images/two_queens_accessible_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1441,7 +1441,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_03",
+                  "src": "images/two_queens_accessible_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1449,7 +1449,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_03",
+                  "src": "images/two_queens_accessible_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1461,7 +1461,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_04",
+                  "src": "images/two_queens_accessible_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1469,7 +1469,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_04",
+                  "src": "images/two_queens_accessible_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1481,7 +1481,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_05",
+                  "src": "images/two_queens_accessible_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1489,7 +1489,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_05",
+                  "src": "images/two_queens_accessible_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1501,7 +1501,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/two_queens_accessible_06",
+                  "src": "images/two_queens_accessible_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1509,7 +1509,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/two_queens_accessible_06",
+                  "src": "images/two_queens_accessible_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1525,7 +1525,7 @@
           "description": [
             "Featuring visual doorbells, these comfortably appointed rooms are designed to make our hearing-impaired guests as comfortable as possible. Curl up in a robe or luxurious Italian bed linens to fully rest and reset."
           ],
-          "icons": { "sqft": 310, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 310, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 310 square feet",
@@ -1538,7 +1538,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-1",
+                  "src": "images/room-detail-1",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1546,7 +1546,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-1",
+                  "src": "images/room-detail-1",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1558,7 +1558,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-2",
+                  "src": "images/room-detail-2",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1566,7 +1566,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-2",
+                  "src": "images/room-detail-2",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1578,7 +1578,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-3",
+                  "src": "images/room-detail-3",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1586,7 +1586,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-3",
+                  "src": "images/room-detail-3",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1602,12 +1602,12 @@
           "description": [
             "You and your guest can rest easy with the addition of a visual doorbell in the Superior Two Queens Hearing-Impaired Accessible room. An abundance of charging ports and ultra-highspeed internet service keeps you connected; plush mattresses and exquisite linens help you rest."
           ],
-          "icons": { "sqft": 310, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 310, "beds": "2 Queen Beds", "capacity": "3" },
           "details": [
             "Sleeps up to 5",
             "Start at 375 square feet",
             "Views of Ameswell lawn or Moffett Boulevard",
-            "Two Queen bed",
+            "Two Queen beds",
             "Shower",
             "Visual doorbell"
           ],
@@ -1615,7 +1615,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-1",
+                  "src": "images/room-detail-1",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1623,7 +1623,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-1",
+                  "src": "images/room-detail-1",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1635,7 +1635,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-2",
+                  "src": "images/room-detail-2",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1643,7 +1643,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-2",
+                  "src": "images/room-detail-2",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1655,7 +1655,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-3",
+                  "src": "images/room-detail-3",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1663,7 +1663,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-3",
+                  "src": "images/room-detail-3",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1679,7 +1679,7 @@
           "description": [
             "Our Deluxe King rooms feature a plush Sealy King mattress with Rivolta Italian bed linens, organic bath amenities, soft Ameswell robes, and a visual doorbell for our hearing-impaired guests. "
           ],
-          "icons": { "sqft": 335, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 335, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 335 square feet",
@@ -1692,7 +1692,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_01",
+                  "src": "images/deluxe_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1700,7 +1700,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_01",
+                  "src": "images/deluxe_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1712,7 +1712,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_02",
+                  "src": "images/deluxe_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1720,7 +1720,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_02",
+                  "src": "images/deluxe_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1732,7 +1732,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_03",
+                  "src": "images/deluxe_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1740,7 +1740,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_03",
+                  "src": "images/deluxe_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1752,7 +1752,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_04",
+                  "src": "images/deluxe_king_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1760,7 +1760,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_04",
+                  "src": "images/deluxe_king_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1772,7 +1772,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_05",
+                  "src": "images/deluxe_king_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1780,7 +1780,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_05",
+                  "src": "images/deluxe_king_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1792,7 +1792,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/deluxe_king_06",
+                  "src": "images/deluxe_king_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1800,7 +1800,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/deluxe_king_06",
+                  "src": "images/deluxe_king_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1816,7 +1816,7 @@
           "description": [
             "Our Spacious Premium King guestrooms provide an abundance of USB and USB-C charging ports and a visual doorbell for our hearing-impaired guests. Floor-to-ceiling windows let in the natural light, while blackout curtains help provide a restful sleep."
           ],
-          "icons": { "sqft": 375, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 375, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "Start at 375 square feet",
@@ -1829,7 +1829,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_01",
+                  "src": "images/premium_king_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1837,7 +1837,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_01",
+                  "src": "images/premium_king_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1849,7 +1849,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_02",
+                  "src": "images/premium_king_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1857,7 +1857,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_02",
+                  "src": "images/premium_king_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1869,7 +1869,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_03",
+                  "src": "images/premium_king_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1877,7 +1877,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_03",
+                  "src": "images/premium_king_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1889,7 +1889,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_04",
+                  "src": "images/premium_king_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1897,7 +1897,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_04",
+                  "src": "images/premium_king_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1909,7 +1909,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_05",
+                  "src": "images/premium_king_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1917,7 +1917,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_05",
+                  "src": "images/premium_king_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1929,7 +1929,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_king_06",
+                  "src": "images/premium_king_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1937,7 +1937,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_king_06",
+                  "src": "images/premium_king_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1955,7 +1955,7 @@
             "The entrance doorways to the guest room and bathroom provide at least 35″ of clear width. There is at least 30″ of clearance on each side of the bed. The desk provides knee and toe clearance that is at least 28″ high, 36″ wide and 20″ deep. All wall-mounted accessories and equipment are within 46″ of the floor.",
             "This room features a wheelchair accessible shower with foldable seat and detachable handheld showerhead. The toilet seat is 18″ above the floor and has grab bars on the adjacent wall. The sink provides knee clearance of at least 29″ high and 31″ wide and all the under-sink plumbing is wrapped."
           ],
-          "icons": { "sqft": 525, "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": 525, "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 5",
             "525-610 square feet",
@@ -1966,7 +1966,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_01",
+                  "src": "images/junior_suite_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1974,7 +1974,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_01",
+                  "src": "images/junior_suite_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -1986,7 +1986,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_02",
+                  "src": "images/junior_suite_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -1994,7 +1994,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_02",
+                  "src": "images/junior_suite_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2006,7 +2006,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_03",
+                  "src": "images/junior_suite_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2014,7 +2014,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_03",
+                  "src": "images/junior_suite_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2026,7 +2026,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_04",
+                  "src": "images/junior_suite_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2034,7 +2034,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_04",
+                  "src": "images/junior_suite_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2046,7 +2046,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_05",
+                  "src": "images/junior_suite_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2054,7 +2054,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_05",
+                  "src": "images/junior_suite_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2066,7 +2066,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_06",
+                  "src": "images/junior_suite_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2074,7 +2074,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_06",
+                  "src": "images/junior_suite_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2090,7 +2090,7 @@
           "description": [
             "Our Spacious Premium Two Queen beds guestrooms provide two plush Sealy Queen mattresses with luxurious Italian bed linens and a visual doorbell. Floor-to-ceiling windows let in the natural light, while blackout curtains help provide a restful sleep."
           ],
-          "icons": { "sqft": 395, "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": 395, "beds": "2 Queen Beds", "capacity": "5" },
           "details": [
             "Sleeps up to 5",
             "395 – 415 square feet",
@@ -2103,7 +2103,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_01",
+                  "src": "images/premium_two_queens_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2111,7 +2111,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_01",
+                  "src": "images/premium_two_queens_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2123,7 +2123,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_02",
+                  "src": "images/premium_two_queens_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2131,7 +2131,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_02",
+                  "src": "images/premium_two_queens_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2143,7 +2143,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_03",
+                  "src": "images/premium_two_queens_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2151,7 +2151,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_03",
+                  "src": "images/premium_two_queens_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2163,7 +2163,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_04",
+                  "src": "images/premium_two_queens_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2171,7 +2171,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_04",
+                  "src": "images/premium_two_queens_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2183,7 +2183,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_05",
+                  "src": "images/premium_two_queens_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2191,7 +2191,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_05",
+                  "src": "images/premium_two_queens_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2203,7 +2203,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/premium_two_queens_06",
+                  "src": "images/premium_two_queens_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2211,7 +2211,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/premium_two_queens_06",
+                  "src": "images/premium_two_queens_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2233,7 +2233,7 @@
           "description": [
             "Starting at 525 square feet, Junior Suites feature an en suite sitting area with multiple floor-to-ceiling windows for entertaining guests and a King bed with exquisite Italian linens when you are ready to call it a day."
           ],
-          "icons": { "sqft": "525-610", "beds": "1 King", "capacity": "3" },
+          "icons": { "sqft": "525-610", "beds": "1 King Bed", "capacity": "3" },
           "details": [
             "Sleeps up to 3",
             "525 – 610 square feet",
@@ -2245,7 +2245,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_01",
+                  "src": "images/junior_suite_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2253,7 +2253,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_01",
+                  "src": "images/junior_suite_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2265,7 +2265,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_02",
+                  "src": "images/junior_suite_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2273,7 +2273,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_02",
+                  "src": "images/junior_suite_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2285,7 +2285,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_03",
+                  "src": "images/junior_suite_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2293,7 +2293,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_03",
+                  "src": "images/junior_suite_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2305,7 +2305,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_04",
+                  "src": "images/junior_suite_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2313,7 +2313,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_04",
+                  "src": "images/junior_suite_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2325,7 +2325,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_05",
+                  "src": "images/junior_suite_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2333,7 +2333,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_05",
+                  "src": "images/junior_suite_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2345,7 +2345,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/junior_suite_06",
+                  "src": "images/junior_suite_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2353,7 +2353,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/junior_suite_06",
+                  "src": "images/junior_suite_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2369,7 +2369,7 @@
           "description": [
             "Good sleep is sacred, and this is your chance to indulge. Book an Executive Suite and keep work and entertaining in your spacious living area with a half bath, then leave the world behind with a relaxing soak in your tub and deep sleep in a separate, quiet King bedroom."
           ],
-          "icons": { "sqft": "690", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "690", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 5 people",
             "1 King Bed",
@@ -2381,7 +2381,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_01",
+                  "src": "images/executive_suite_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2389,7 +2389,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_01",
+                  "src": "images/executive_suite_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2401,7 +2401,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_02",
+                  "src": "images/executive_suite_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2409,7 +2409,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_02",
+                  "src": "images/executive_suite_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2421,7 +2421,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_03",
+                  "src": "images/executive_suite_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2429,7 +2429,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_03",
+                  "src": "images/executive_suite_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2441,7 +2441,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_04",
+                  "src": "images/executive_suite_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2449,7 +2449,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_04",
+                  "src": "images/executive_suite_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2461,7 +2461,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_05",
+                  "src": "images/executive_suite_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2469,7 +2469,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_05",
+                  "src": "images/executive_suite_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2481,7 +2481,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_06",
+                  "src": "images/executive_suite_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2489,7 +2489,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_06",
+                  "src": "images/executive_suite_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2501,7 +2501,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_07",
+                  "src": "images/executive_suite_07",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2509,7 +2509,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_07",
+                  "src": "images/executive_suite_07",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2521,7 +2521,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/executive_suite_08",
+                  "src": "images/executive_suite_08",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2529,7 +2529,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/executive_suite_08",
+                  "src": "images/executive_suite_08",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2545,7 +2545,7 @@
           "description": [
             "Enjoy views for days in one of our Corner One-Bedroom Suites. At 790 square feet, these suites offer a private King bedroom and separate living space featuring pull-out sofas and powder rooms."
           ],
-          "icons": { "sqft": "790", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "790", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 3",
             "790 square feet",
@@ -2558,7 +2558,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/corner_one_bedroom_suite_01",
+                  "src": "images/corner_one_bedroom_suite_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2566,7 +2566,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/corner_one_bedroom_suite_01",
+                  "src": "images/corner_one_bedroom_suite_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2578,7 +2578,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/corner_one_bedroom_suite_02",
+                  "src": "images/corner_one_bedroom_suite_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2586,7 +2586,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/corner_one_bedroom_suite_02",
+                  "src": "images/corner_one_bedroom_suite_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2598,7 +2598,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/corner_one_bedroom_suite_03",
+                  "src": "images/corner_one_bedroom_suite_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2606,7 +2606,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/corner_one_bedroom_suite_03",
+                  "src": "images/corner_one_bedroom_suite_03",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2618,7 +2618,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/corner_one_bedroom_suite_04",
+                  "src": "images/corner_one_bedroom_suite_04",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2626,7 +2626,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/corner_one_bedroom_suite_04",
+                  "src": "images/corner_one_bedroom_suite_04",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2638,7 +2638,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/corner_one_bedroom_suite_05",
+                  "src": "images/corner_one_bedroom_suite_05",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2646,7 +2646,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/corner_one_bedroom_suite_05",
+                  "src": "images/corner_one_bedroom_suite_05",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2658,7 +2658,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/corner_one_bedroom_suite_06",
+                  "src": "images/corner_one_bedroom_suite_06",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2666,7 +2666,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/corner_one_bedroom_suite_06",
+                  "src": "images/corner_one_bedroom_suite_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2678,7 +2678,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/corner_one_bedroom_suite_07",
+                  "src": "images/corner_one_bedroom_suite_07",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2686,7 +2686,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/corner_one_bedroom_suite_07",
+                  "src": "images/corner_one_bedroom_suite_07",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2702,7 +2702,7 @@
           "description": [
             "Immerse yourself in luxury. With wraparound windows in the living space, every detail of this suite is designed for a truly modern luxury experience. Sink into the blue velvet couch, soak in the tub or soak in the views. This is life at its best."
           ],
-          "icons": { "sqft": "779", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "779", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 5 people",
             "779 square feet",
@@ -2715,7 +2715,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/arbor_suit_01",
+                  "src": "images/arbor_suit_01",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2723,7 +2723,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/arbor_suit_01",
+                  "src": "images/arbor_suit_01",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2735,7 +2735,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/arbor_suit_02",
+                  "src": "images/arbor_suit_02",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2743,67 +2743,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/arbor_suit_02",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Wellness room with mirror fitness",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/arbor_suit_03",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Suite living room",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/arbor_suit_03",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/arbor_suit_04",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/arbor_suit_04",
-                  "media": "(max-width:900px)",
-                  "imgtype": "jpg",
-                  "sizes": "100vw",
-                  "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
-                }
-              ]
-            },
-            {
-              "artDirection": [
-                {
-                  "image": "images/arbor_suit_05",
-                  "media": "(min-width:900.1px)",
-                  "imgtype": "jpg",
-                  "sizes": "80vw",
-                  "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
-                },
-                {
-                  "image": "images/arbor_suit_05",
+                  "src": "images/arbor_suit_02",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2815,7 +2755,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/arbor_suit_06",
+                  "src": "images/arbor_suit_03",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2823,7 +2763,67 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/arbor_suit_06",
+                  "src": "images/arbor_suit_03",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Arbor Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "src": "images/arbor_suit_04",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Arbor Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "src": "images/arbor_suit_04",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Arbor Suite",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "src": "images/arbor_suit_05",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Arbor Suite",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "src": "images/arbor_suit_05",
+                  "media": "(max-width:900px)",
+                  "imgtype": "jpg",
+                  "sizes": "100vw",
+                  "imgalt": "Wellness room with mirror fitness",
+                  "intrinsicwidth": "2304"
+                }
+              ]
+            },
+            {
+              "artDirection": [
+                {
+                  "src": "images/arbor_suit_06",
+                  "media": "(min-width:900.1px)",
+                  "imgtype": "jpg",
+                  "sizes": "80vw",
+                  "imgalt": "Suite living room",
+                  "intrinsicwidth": "2304"
+                },
+                {
+                  "src": "images/arbor_suit_06",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2839,7 +2839,7 @@
           "description": [
             "Three is never a crowd in the Ameswell Suite. At 955 square feet, this is our most spacious guest room. With a private King bedroom, pull-out sofa and two full baths, there is plenty of room for family or friends to join in the fun."
           ],
-          "icons": { "sqft": "955", "beds": "1 King", "capacity": "5" },
+          "icons": { "sqft": "955", "beds": "1 King Bed", "capacity": "5" },
           "details": [
             "Sleeps up to 5 people",
             "955 square feet",
@@ -2854,7 +2854,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-1",
+                  "src": "images/room-detail-1",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2862,7 +2862,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-1",
+                  "src": "images/room-detail-1",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2874,7 +2874,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-2",
+                  "src": "images/room-detail-2",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2882,7 +2882,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-2",
+                  "src": "images/room-detail-2",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -2894,7 +2894,7 @@
             {
               "artDirection": [
                 {
-                  "image": "images/room-detail-3",
+                  "src": "images/room-detail-3",
                   "media": "(min-width:900.1px)",
                   "imgtype": "jpg",
                   "sizes": "80vw",
@@ -2902,7 +2902,7 @@
                   "intrinsicwidth": "2304"
                 },
                 {
-                  "image": "images/room-detail-3",
+                  "src": "images/room-detail-3",
                   "media": "(max-width:900px)",
                   "imgtype": "jpg",
                   "sizes": "100vw",
@@ -3104,7 +3104,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-1",
+          "src": "images/offer-detail-1",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3112,7 +3112,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-1",
+          "src": "images/offer-detail-1",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -3127,7 +3127,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-2",
+          "src": "images/offer-detail-2",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3135,7 +3135,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-2",
+          "src": "images/offer-detail-2",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -3150,7 +3150,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-4",
+          "src": "images/offer-detail-3",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3158,7 +3158,30 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-4",
+          "src": "images/offer-detail-3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Work from Ameswell",
+        "p1": "Work from one of our spacious, light-filled guest rooms or many public spaces. Get inspired in the Ames Library or lounging by the pool. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, one coffee, tea, or G.0.A.T. Fuel Energy Drink."
+    },
+    {
+      "artDirection": [
+        {
+          "src": "images/offer-detail-4",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "src": "images/offer-detail-4",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
@@ -3173,7 +3196,7 @@
     {
       "artDirection": [
         {
-          "image": "images/offer-detail-5",
+          "src": "images/offer-detail-5",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
@@ -3181,7 +3204,7 @@
           "intrinsicwidth": "2304"
         },
         {
-          "image": "images/offer-detail-5",
+          "src": "images/offer-detail-5",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",

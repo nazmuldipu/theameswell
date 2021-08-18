@@ -1,0 +1,519 @@
+{
+    "art": [
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-0",
+                        "alt": "The main entrance of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-0",
+                        "alt": "The main entrance of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-1",
+            "p1": "Ala Ebtekar<br/> Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Meeuws draws inspiration from Dutch 17th Century masters who delicately painted beautifully arranged flowers in bloom. What was so fascinating about these paintings was their subjects inconsistency with the seasons - flowers that are unable to bloom at the same time as one another, “a botanical impossibility” speaks Sooke (Telegraph, 2016). The artists had in fact constructed the paintings from years of individual studies, in order to create the most extravagant, elegant assortment. Meeuws’ work mimics this layering technique in a contemporary fashion by capturing each flower on his camera then digitally arranging them, refining every detail until perfection is reached.",
+            "location":"Location"            
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-1",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-1",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-2",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "images": [
+                {
+                    "classes":"w-full object-cover object-center",
+                    "artDirection": [
+                        {
+                            "media": "(min-width:900.1px)",
+                            "type": "png",
+                            "sizes": "35vw",
+                            "src": "images/art-2-1",
+                            "alt": "The outdoor pool in the evening at the Ameswell Hotel",
+                            "intrinsicwidth": "356" 
+                        },
+                        {
+                            "media": "(max-width:900px)",
+                            "type": "png",
+                            "sizes": "100vw",
+                            "src": "images/art-2-1",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "356" 
+                        }
+                    ]
+                },
+                {
+                    "classes":"w-full object-cover object-center",
+                    "artDirection": [
+                        {
+                            "media": "(min-width:900.1px)",
+                            "type": "png",
+                            "sizes": "35vw",
+                            "src": "images/art-2-2",
+                            "alt": "The outdoor pool in the evening at the Ameswell Hotel",
+                            "intrinsicwidth": "676" 
+                        },
+                        {
+                            "media": "(max-width:900px)",
+                            "type": "png",
+                            "sizes": "100vw",
+                            "src": "images/art-2-2",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "309" 
+                        }
+                    ]
+                }
+            ],
+            "bgImage":"bg-ams-main-13",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-3",
+                        "alt": "The outdoor pool in the evening at the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-3",
+                        "alt": "The outdoor pool in the evening at the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-3",
+            "p1": "Garry Fabian Miller<br/>Devon, England, United Kingdom<br/>The West Flushed, Drove Down Its Shutter, 2020<br/>Oil, water, light, Lambda C-print from Dye Destruction Print",
+            "p2": "Inspired by the ephemeral elements of nature, Garry Fabian Miller’s camera-less creations expand the possibilities of photography. Working with diaphanous objects, liquids, and light-sensitive paper, Miller creates immersive, transcendent compositions that map the direction of light, appear to glow and palpitate in place, and ultimately captivate with their luminescence and rich chromatic values.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-4",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-4",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-4",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/> Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-5",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-5",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-5",
+            "p1": "Barry Underwood<br/>Cleveland, Ohio, USA<br/>Archival pigment print",
+            "p2": "Influenced by historical methods of staged photography and constructed set design, Barry Underwood seeks to transform ordinary, everyday vistas into unique, and often surreal, experiences. Both Underwood’s installation process and his documentation, employing long exposure times to harness the area’s ambient light, rely as much on the artist’s ability to harmoniously collaborate with nature as disrupt it.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-6",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-6",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-black",
+            "p1": "Chul Hyun Ahn<br/>Baltimore, Maryland, USA<br/>Three Circles, 2018<br/>Plywood, fiberglass, changing LED lights, mirrors",
+            "p2": "Chul Hyun Ahn’s mesmerizing sculptures use mirrors and colored LED light to manipulate perspective and invokea sensation of infinite distance. His blend of sophisticated technology and fundamental construction creates visual portals that extend into uncharted space. Through the exploration of materiality, the subconscious, and human perception, Ahn creates pieces that are experiential, spiritual, and unforgettable.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-7",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-7",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-7",
+            "p1": "Cheryl Medow<br/>Santa Barbara, California, USA<br/>Saddle-billed Storks and Elephants, 2019<br/>Archival pigment print",
+            "p2": "Santa Barbara photographic artist Cheryl Medow focuses her lens on the avian world to heighten awareness of the importance of these sublime creatures. She constructs multi-layered images from photographs taken on her travels around the world. These images, real and imagined, highlight the timeless beauty and grandeur of the avian world. Medow hopes that by embracing her hyper-real bird images, her audience will also create more space for birds living on our planet and be mindful of the fragility and beauty of life itself.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-8",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-8",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-8",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-9",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-9",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-14",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "classes":"h-170 w-full",
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-10",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-10",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-9",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "images":[
+                {
+                    "classes":"w-full object-cover object-center",
+                    "artDirection": [
+                        {
+                            "media": "(min-width:900.1px)",
+                            "type": "png",
+                            "sizes": "35vw",
+                            "src": "images/art-11-1",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "309" 
+                        },
+                        {
+                            "media": "(max-width:900px)",
+                            "type": "png",
+                            "sizes": "100vw",
+                            "src": "images/art-11-1",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "309" 
+                        }
+                        
+                    ]
+                },
+                {
+                    "classes":"w-full object-cover object-center",
+                    "artDirection": [
+                        {
+                            "media": "(min-width:900.1px)",
+                            "type": "png",
+                            "sizes": "35vw",
+                            "src": "images/art-11-2",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "309" 
+                        },
+                        {
+                            "media": "(max-width:900px)",
+                            "type": "png",
+                            "sizes": "100vw",
+                            "src": "images/art-11-2",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "309" 
+                        }
+                    ]
+                },
+                {
+                    "classes":"w-full object-cover object-center",
+                    "artDirection": [
+                        {
+                            "media": "(min-width:900.1px)",
+                            "type": "png",
+                            "sizes": "35vw",
+                            "src": "images/art-11-3",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "309" 
+                        },
+                        {
+                            "media": "(max-width:900px)",
+                            "type": "png",
+                            "sizes": "100vw",
+                            "src": "images/art-11-3",
+                            "alt": "The lobby interior of the Ameswell Hotel",
+                            "intrinsicwidth": "309" 
+                        }
+                    ]
+                }
+            ],
+            "bgImage":"bg-ams-black",
+            "p1": "Fabian Oefner<br/>Danberry, Connecticut, USA<br/>Corona No.5, No. 08, No. 04, 2020<br/>Photograph, Inkjet print on paper",
+            "p2": "Inspired by science, Fabian Oefner’s highly methodical work explores fictional moments and spaces that look and feel absolutely real. His Corona Series is named for the fiery ring of plasma visible around the edges of a solar eclipse; an image Oefner achieved when he allowed rings of petrol evaporate on a glass plate, and photographed the unexpectedly beautiful results.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-12",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-12",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-10",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Influenced by historical methods of staged photography and constructed set design, Barry Underwood seeks to transform ordinary, everyday vistas into unique, and often surreal, experiences. Both Underwood’s installation process and his documentation, employing long exposure times to harness the area’s ambient light, rely as much on the artist’s ability to harmoniously collaborate with nature as disrupt it.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "classes":"h-170 w-full",
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-13",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-13",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-white",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "classes":"h-170 w-full",
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-14",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-14",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-white",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)", 
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-15",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900.1px)", 
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-15",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-11",
+            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
+            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-16",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-16",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-12",
+            "p1": "James Ulmer<br/>Brooklyn, New York, USA<br/>Untitled Figure Studies I & II, Commissions<br/>Flashe on canvas",
+            "p2": "Bold colors, simple shapes and minimal details comprise James Ulmer’s uncomplicated paintings, which look vaguely like playful Egyptian hieroglyphics. His characters, often captured in side profile, have intriguing blank expressions that express both naivety and charm. The result is a simple visual language that can be both interpreted and decoded by the viewer, like primitive cave paintings or modern street signs.",
+            "location":"Location"
+        }
+    ]
+}

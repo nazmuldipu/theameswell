@@ -1,0 +1,772 @@
+{
+  "all_categories": [
+    {
+      "header_title": "Live like a local",
+      "header_body": "Plan your visit with the help of our guide to the best local experiences and find out what it is like to live like a Silicon Valley native."
+    },
+    {
+      "header_title": "Shop",
+      "header_body": "Silicon Valley offers some of the best retail therapy in California."
+    },
+    {
+      "header_title": "Explore",
+      "header_body": "Explore the wide array of local museums that celebrate some of the greatest achievements in space exploration, technology, architecture and art from Mountain View and around the world."
+    },
+    {
+      "header_title": "Sip",
+      "header_body": "Explore the wide array of local museums that celebrate some of the greatest achievements in space exploration, technology, architecture and art from Mountain View and around the world."
+    },
+    {
+      "header_title": "Play",
+      "header_body": "From outdoor adventures to live performances, you will find a wide variety of reasons to stay and to play longer in Mountain View."
+    },
+    {
+      "header_title": "Learn",
+      "header_body": "Whether you are touring or teaching, The Ameswell Hotel is located close to several top-notch institutions."
+    },
+    {
+      "header_title": "Cheer",
+      "header_body": "No matter what season it is or sport you love, you will find world-class teams to support and games to enjoy."
+    }
+  ],
+
+  "ameswell":{
+    "title": "Ameswell",
+    "lat": 37.40739352704049,
+    "long": -122.06800030833442
+  },
+  "categories": [
+    {
+      "title": "Shop",
+      "body": "Silicon Valley offers some of the best retail therapy in California.",
+      "locations": [
+        {
+          "categoryName": "Shop",
+          "cardTitle": "Downtown Mountain View",
+          "cardBody": "Walking distance from The Ameswell Hotel, Downtown Mountain View is filled with local boutiques, salons and restaurants featuring international cuisines that celebrate this diverse community.",
+          "distance": "2.4 mi",
+          "image": "images/location-1-shop-desktop.jpg",
+          "imgalt": "Downtown Mountain View",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.mountainview.gov/depts/comdev/economicdev/downtowndev/default.asp",
+          "positions": [
+            {
+              "title": "Downtown Mountain View",
+              "lat": 37.38917905642986, 
+              "long": -122.08181038551427
+            }
+          ]
+        },
+        {
+          "categoryName": "Shop",
+          "cardTitle": "Stanford Shopping Center",
+          "cardBody": "You will find everything you need at Northern California’s best open-air, upscale shopping mall. Explore high-end boutiques and department stores like Neiman Marcus, Nordstrom and Bloomingdales.",
+          "distance": "7.6 mi",
+          "image": "images/location-2-shop-desktop.jpg",
+          "imgalt": "Stanford Shopping Centers",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.simon.com/mall/stanford-shopping-center",
+          "positions": [
+            {
+              "title": "Stanford Shopping Centers",
+              "lat": 37.4431558184401,
+              "long": -122.17152815656296
+            }
+          ]
+        },
+        {
+          "categoryName": "Shop",
+          "cardTitle": "Santana Row",
+          "cardBody": "Explore over 50 retails stores from brands you know to local designers you need to know, and over 30 restaurants and bars at this bustling San Jose shopping district.",
+          "distance": "11.2 mi",
+          "image": "images/location-3-shop-desktop.jpg",
+          "imgalt": "Santana Row",
+          "media": "(min-width:900.1px)",
+          "url":"http://www.santanarow.com/",
+          "positions": [
+            {
+              "title": "Santana Row",
+              "lat": 37.319892385936186, 
+              "long": -121.9483436719989
+            }
+          ]
+        },
+        {
+          "categoryName": "Shop",
+          "cardTitle": "San Francisco Premium Outlets",
+          "cardBody": "The San Francisco Premium Outlets are actually located in Livermore, just a 35-minute drive from The Ameswell Hotel, and feature popular designers at discounted prices.",
+          "distance": "34.7 mi",
+          "image": "images/location-4-shop-desktop.jpg",
+          "imgalt": "San Francisco Premium Outlets",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.premiumoutlets.com/outlet/san-francisco",
+          "positions": [
+            {
+              "title": "San Francisco Premium Outlets",
+              "lat": 37.69872753543806, 
+              "long": -121.84404813909099
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Explore",
+      "body": "Explore the wide array of local museums that celebrate some of the greatest achievements in space exploration, technology, architecture and art from Mountain View and around the world.",
+      "locations": [
+        {
+          "categoryName": "Explore",
+          "cardTitle": "NASA Ames Visitor's Center",
+          "cardBody": "The Ameswell Hotel takes inspiration from the innovative spirit of Ames Research Center. Their visitor’s center features out-of-this-world exhibits and unique NASA-inspired gifts sure to delight.",
+          "distance": "0.6 mi",
+          "image": "images/location-1-explore-desktop.jpg",
+          "imgalt": "NASA Ames Visitor's Center",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.nasa.gov/ames/visit",
+          "positions": [
+            {
+              "title": "NASA Ames Visitor's Center",
+              "lat": 37.40938844555649, 
+              "long": -122.06403083975844
+            }
+          ]
+        },
+        {
+          "categoryName": "Explore",
+          "cardTitle": "Moffett Field Historical Society Museum",
+          "cardBody": "Just across the highway from The Ameswell Hotel, this museum run by NASA Ames Research Center celebrates the deep history of the San Francisco Bay Area and its important role in aviation and national defense.",
+          "distance": "1.2 mi",
+          "image": "images/location-2-explore-desktop.jpg",
+          "imgalt": "Moffett Field Historical Society Museum",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.moffettfieldmuseum.org/",
+          "positions": [
+            {
+              "title": "Moffett Field Historical Society Museum",
+              "lat": 37.41120611920342, 
+              "long": -122.05432176189179
+            }
+          ]
+        },
+        {
+          "categoryName": "Explore",
+          "cardTitle": "Computer History Museum",
+          "cardBody": "Located in Mountain View, the Computer History Museum features stories and artifacts from the information age and explores the impact of computers on society.",
+          "distance": "1.6 mi",
+          "image": "images/location-3-explore-desktop.jpg",
+          "imgalt": "Computer History Museum",
+          "media": "(min-width:900.1px)",
+          "url":"https://computerhistory.org/",
+          "positions": [
+            {
+              "title": "Computer History Museum",
+              "lat": 37.41427544501654, 
+              "long": -122.07740967296793
+            }
+          ]
+        },
+        {
+          "categoryName": "Explore",
+          "cardTitle": "Intel Museum",
+          "cardBody": "This museum at Intel’s headquarters shares the company’s history of innovation and the evolution of the semiconductor industry.",
+          "distance": "6.8 mi",
+          "image": "images/location-4-explore-desktop.jpg",
+          "imgalt": "Intel Museum",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.intel.com/content/www/us/en/company-overview/intel-museum.html",
+          "positions": [
+            {
+              "title": "Intel Museum",
+              "lat": 37.38785258181395,
+              "long": -121.96350216936658
+            }
+          ]
+        },
+        {
+          "categoryName": "Explore",
+          "cardTitle": "Winchester Mystery Mansion",
+          "cardBody": "Visit this beautiful and bizarre historic mansion, once home to Sarah Winchester, heiress to the Winchester Fire Arms fortune.",
+          "distance": "11.3 mi",
+          "image": "images/location-5-explore-desktop.jpg",
+          "imgalt": "Winchester Mystery Mansion",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.winchestermysteryhouse.com/",
+          "positions": [
+            {
+              "title": "Winchester Mystery Mansion",
+              "lat": 37.31833391295111,
+              "long": -121.95104843186795
+            }
+          ]
+        },
+        {
+          "categoryName": "Explore",
+          "cardTitle": "Museums at Stanford Univeristy",
+          "cardBody": "Make a day of exploring the renowned art collections at Stanford University: Cantor Center for Visual Arts, Anderson Collection and Rodin Sculpture Garden",
+          "distance": "7.6 mi",
+          "image": "images/location-6-explore-desktop.jpg",
+          "imgalt": "Museums at Stanford Univeristy",
+          "media": "(min-width:900.1px)",
+          "url":"https://museum.stanford.edu/",
+          "positions": [
+            {
+              "title": "Museums at Stanford Univeristy",
+              "lat": 37.432968614326576,
+              "long": -122.17083566251478
+            }
+          ]
+        },
+        {
+          "categoryName": "Explore",
+          "cardTitle": "Filoli House and Botanical Gardens",
+          "cardBody": "Step back in time with a visit to this exquisite Georgian revival mansion and its botanical gardens.",
+          "distance": "18.6 mi",
+          "image": "images/location-7-explore-desktop.jpg",
+          "imgalt": "Filoli House and Botanical Gardens",
+          "media": "(min-width:900.1px)",
+          "url":"https://filoli.org/",
+          "positions": [
+            {
+              "title": "Filoli House and Botanical Gardens",
+              "lat": 37.47047231854944,
+              "long": -122.31067579930377
+            }
+          ]
+        },
+        {
+          "categoryName": "Explore",
+          "cardTitle": "Rosicrucian Egyptian Museum ",
+          "cardBody": "Walk like an Egyptian! The Rosicrucian Egyptian Museum in San Jose is home to the largest collection of Egyptian artifacts on exhibit in western North America.",
+          "distance": "11.8 mi",
+          "image": "images/location-8-explore-desktop.jpg",
+          "imgalt": "Rosicrucian Egyptian Museum ",
+          "media": "(min-width:900.1px)",
+          "url":"https://egyptianmuseum.org/",
+          "positions": [
+            {
+              "title": "Rosicrucian Egyptian Museum",
+              "lat": 37.33348813398216,
+              "long": -121.9228838340946
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sip",
+      "body": "Drink up! Silicon Valley is home to some of the best wineries in Northern California.",
+      "locations": [
+        {
+          "categoryName": "Sip",
+          "cardTitle": "Silicon Valley Wine Trail",
+          "cardBody": "Mountain View is situated close to the renowned wineries of Saratoga, Cupertino and Los Gatos: Mountain Winery, Ridge Vineyards, Coorper-Garrod Vineyards, MJA Vineyards, Cinnabar, Vldovich Vineyards and Testarossa Winery.",
+          "distance": "11.4 mi",
+          "image": "images/location-1-sip-desktop.jpg",
+          "imgalt": "Silicon Valley Wine Trail",
+          "media": "(min-width:900.1px)",
+          "url":"http://siliconvalleywinetrail.com/",
+          "positions":[
+            {
+              "title": "Mountain Winery",
+              "lat": 37.260155483975566,
+              "long": -122.06469998784969
+            },
+            {
+              "title": "Ridge Vineyards",
+              "lat": 37.299760459660696,
+              "long": -122.1158174013676
+            },
+            {
+              "title": "Cooper-Garrod Vineyards",
+              "lat": 37.27648572433247,
+              "long": -122.05967533083547
+            },
+            {
+              "title": "MJA Vineyards",
+              "lat": 36.95894832188061,
+              "long": -122.04703543369357
+            },
+            {
+              "title": "Cinnabar",
+              "lat": 37.25570322832658,
+              "long": -122.03626229473974
+            },
+            {
+              "title": "Vldovich Vineyards",
+              "lat": 37.30681308336009,
+              "long": -122.1254238447422
+            },
+            {
+              "title": "Testarossa Winery",
+              "lat": 37.213478895224554,
+              "long": -121.9815443695665
+            }
+          ]
+        },
+        {
+          "categoryName": "Sip",
+          "cardTitle": "Mid-Peninsula Wine Trail",
+          "cardBody": "Visit the small, family-owned wineries of the Mid-Peninsula Wine Trail in nearby San Carlos: Cuvee Wine Cellars, Domenico Winery, Flying Suitcase Wines, Old County Cellars, Russian Ridge Winery, and Zoetic Wines.",
+          "distance": "12.9 mi",
+          "image": "images/location-2-sip-desktop.jpg",
+          "imgalt": "Mid-Peninsula Wine Trail",
+          "media": "(min-width:900.1px)",
+          "url":"http://siliconvalleywinetrail.com/",
+          "positions": [
+            {
+              "title": "Cuvee Wine Cellers",
+              "lat": 37.49807367732843,
+              "long": -122.24536651960278
+            },
+            {
+              "title": "Domenico Winery",
+              "lat": 37.498972274374765,
+              "long": -122.24194417946191
+            },
+            {
+              "title": "Flying Suitcase Wines",
+              "lat": 37.498870424209706,
+              "long": -122.24439615916258
+            },
+            {
+              "title": "Old County Cellars",
+              "lat": 37.513617738797066,
+              "long": -122.26616805182991
+            },
+            {
+              "title": "Russian Ridge Winery",
+              "lat": 37.498914387788865,
+              "long": -122.24433883389051
+            },
+            {
+              "title": "Zoetic Wines",
+              "lat": 37.49807367732843,
+              "long": -122.24536651960278
+            }
+          ]
+        },
+        {
+          "categoryName": "Sip",
+          "cardTitle": "Santa Cruz Wine Region",
+          "cardBody": "It is not officially a trail, but you will find these scenic wineries and more in the Santa Cruz region: Bargetto Winery, Hunter Hill Vineyard and Winery, Soquel Vineyards, Burrell School Vineyard, and Loma Prieta Winery.",
+          "distance": "38.2 mi",
+          "image": "images/location-3-sip-desktop.jpg",
+          "imgalt": "Santa Cruz Wine Region",
+          "media": "(min-width:900.1px)",
+          "url":"http://siliconvalleywinetrail.com/",
+          "positions": [
+            {
+              "title": "Bargetto Winery",
+              "lat": 36.995306521666286,
+              "long": -121.95437474412056
+            },
+            {
+              "title": "Hunter Hill Vineyard and Winery",
+              "lat": 37.022667164238854,
+              "long": -121.93441472114264
+            },
+            {
+              "title": "Soquel Vineyards",
+              "lat": 37.02951513173412,
+              "long": -121.93386555173424
+            },
+            {
+              "title": "Burrell School Vineyard",
+              "lat": 37.12132199370499,
+              "long": -121.93257490378947
+            },
+            {
+              "title": "Loma Prieta Winery",
+              "lat": 37.10612053951063,
+              "long": -121.88046704777503
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Play",
+      "body": "From outdoor adventures to live performances, you will find a wide variety of reasons to stay and to play longer in Mountain View.",
+      "locations": [
+        {
+          "categoryName": "Play",
+          "cardTitle": "Play a Round of Golf (or Two)",
+          "cardBody": "Two fabulous public golf courses with astounding views are within ten minutes of the The Ameswell Hotel.",
+          "distance": "",
+          "image": "images/location-1-play-desktop.jpg",
+          "imgalt": "Play a Round of Golf (or Two)",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.moffettgolf.com/",
+          "positions": [
+            {
+              "title": "Shoreline Golf Links",
+              "lat": 37.430509114623796,
+              "long": -122.08547464119955
+            },
+            {
+              "title": "The Golf Club at Moffet Field",
+              "lat": 37.419816046595535,
+              "long": -122.04016114105846
+            }
+          ]
+        },
+        {
+          "categoryName": "Play",
+          "cardTitle": "Take in a Concert",
+          "cardBody": "You can experience shows with leading artists at nearby Shoreline Amphitheater, Levi’s Stadium, the SAP Center, Mountain Winery, and Frost Amphitheater at Stanford University.",
+          "distance": "",
+          "image": "images/location-2-play-desktop.jpg",
+          "imgalt": "Take in a Concert",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.livenation.com/venue/KovZpZA6ta1A/shoreline-amphitheatre-events",
+          "positions": [
+            {
+              "title": "Shoreline Ampitheater",
+              "lat": 37.426835585381056,
+              "long": -122.08070260560928
+            },
+            {
+              "title": "Levi's Stadium",
+              "lat": 37.40317453823692,
+              "long": -121.9697143574586
+            },
+            {
+              "title": "SAP Center",
+              "lat": 37.33275263394298,
+              "long": -121.90124468269161
+            },
+            {
+              "title": "Mountain Winery",
+              "lat": 37.260155483975566,
+              "long": -122.06469998784969
+            },
+            {
+              "title": "Frost Amphitheater",
+              "lat": 37.43072408451354,
+              "long": -122.16602577356491
+            }
+          ]
+        },
+        {
+          "categoryName": "Play",
+          "cardTitle": "Ride a Rollercoaster",
+          "cardBody": "California's Great America Amusement Park and the historic Santa Cruz Beach Boardwalk offer an abundance of fun rides from merry-go-rounds to high-flying rollercoasters.",
+          "distance": "",
+          "image": "images/location-3-play-desktop.jpg",
+          "imgalt": "Ride a Rollercoaster",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.cagreatamerica.com/",
+          "positions": [
+            {
+              "title": "California's Great America",
+              "lat": 37.40967605303016,
+              "long": -121.9727373425219
+            },
+            {
+              "title": "Santa Cruz Boardwalk",
+              "lat": 36.9643120013729,
+              "long": -122.01868411167025
+            }
+          ]
+        },
+        {
+          "categoryName": "Play",
+          "cardTitle": "Come Sail Away",
+          "cardBody": "Spend the weekend learning to sail the Bay at Shoreline Park. You can also rent a kayak or fly a kite.",
+          "distance": "",
+          "image": "images/location-4-play-desktop.jpg",
+          "imgalt": "Come Sail Away",
+          "media": "(min-width:900.1px)",
+          "url":"https://shorelinelake.com/",
+          "positions": [
+            {
+              "title": "Come Sail Away",
+              "lat": 37.43283078540356,
+              "long": -122.0915552439747
+            }
+          ]
+        },
+        {
+          "categoryName": "Play",
+          "cardTitle": "Take a Hike",
+          "cardBody": "The Ameswell Hotel offers direct access to the Steven’s Creek Trail for hiking or biking across the Peninsula.",
+          "distance": "",
+          "image": "images/location-5-play-desktop.jpg",
+          "imgalt": "Take a Hike",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.stevenscreektrail.org/",
+          "positions": [
+            {
+              "title": "Take a Hike",
+              "lat": 37.40162099741493,
+              "long": -122.06931582401526
+            }
+          ]
+        },
+        {
+          "categoryName": "Play",
+          "cardTitle": "Sun and Surf",
+          "cardBody": "The pristine beaches of Santa Cruz, Capitola and Half Moon Bay are less than an hour away. Catch a wave or a California tan.",
+          "distance": "",
+          "image": "images/location-6-play-desktop.jpg",
+          "imgalt": "Sun and Surf",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.californiabeaches.com/central/santa-cruz-county/santa-cruz/",
+          "positions": [
+            {
+              "title": "Santa Cruz Beach",
+              "lat": 36.96368261243819,
+              "long": -122.01836089047498
+            },
+            {
+              "title": "Capitola",
+              "lat": 36.971619745666594,
+              "long": -121.95162592440964
+            },
+            {
+              "title": "Half Moon Bay",
+              "lat": 37.50198298633526,
+              "long": -122.47432078218824
+            }
+          ]
+        },
+        {
+          "categoryName": "Play",
+          "cardTitle": "Entertain the Kids",
+          "cardBody": "The Palo Alto Junior Museum and Children’s Discovery Museum offer hours of interactive fun for children.",
+          "distance": "",
+          "image": "images/location-7-play-desktop.jpg",
+          "imgalt": "Entertain the Kids",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.cdm.org/",
+          "positions": [
+            {
+              "title": "Palo Alto Junior Museum",
+              "lat": 37.44358524595137,
+              "long": -122.14437759989882
+            },
+            {
+              "title": "Childeren's Discovery Museum",
+              "lat": 37.326992550768296,
+              "long": -121.89208160759307
+            }
+          ]
+        },
+        {
+          "categoryName": "Play",
+          "cardTitle": "Laugh Until You Cry",
+          "cardBody": "From Broadway shows to stand up comedy acts, enjoy live performances at TheatreWorks, Rooster T. Feathers, the San Jose Improv, and the San Jose Center for the Performing Arts.",
+          "distance": "",
+          "image": "images/location-8-play-desktop.jpg",
+          "imgalt": "Laugh Until You Cry",
+          "media": "(min-width:900.1px)",
+          "url":"https://sanjosetheaters.org/theaters/center-for-performing-arts/",
+          "positions": [
+            {
+              "title": "TheatreWorks",
+              "lat": 37.39004737931883,
+              "long": -122.08203077339701
+            },
+            {
+              "title": "Rooster T. Feathers",
+              "lat": 37.368790806444416,
+              "long": -122.03358629098213
+            },
+            {
+              "title": "San Jose Improv",
+              "lat": 37.3355692279629,
+              "long": -121.88850611550909
+            },
+            {
+              "title": "San Jose Center for the Performing Arts",
+              "lat": 37.32995354461046,
+              "long": -121.8923858673369
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Learn",
+      "body": "Whether you are touring or teaching, The Ameswell Hotel is located close to several top-notch institutions.",
+      "locations": [
+        {
+          "categoryName": "Learn",
+          "cardTitle": "Stanford University",
+          "cardBody": "One of the world's leading teaching and research institutions, is dedicated to finding solutions to big challenges",
+          "distance": "6.1 mi",
+          "image": "images/location-1-learn-desktop.jpg",
+          "imgalt": "Stanford University",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.stanford.edu/",
+          "positions": [
+            {
+              "title": "Stanford University",
+              "lat": 37.427475901347854,
+              "long": -122.16971910747213
+            }
+          ]
+        },
+        {
+          "categoryName": "Learn",
+          "cardTitle": "Santa Clara University",
+          "cardBody": "Established in 1851, a private Jesuit university in Santa Clara, California, in Silicon Valley. ",
+          "distance": "9.5 mi",
+          "image": "images/location-2-learn-desktop.jpg",
+          "imgalt": "Santa Clara University",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.scu.edu/",
+          "positions": [
+            {
+              "title": "Santa Clara University",
+              "lat": 37.3496430618679,
+              "long": -121.93898723440664
+            }
+          ]
+        },
+        {
+          "categoryName": "Learn",
+          "cardTitle": "Carnegie Mellon Silicon Valley Campus",
+          "cardBody": "Established in 2002, at the NASA Ames Research Center in Moffett Field, CM is dedicated to educating its students to become leaders in global technology innovation and management.",
+          "distance": "0.8 mi",
+          "image": "images/location-3-learn-desktop.jpg",
+          "imgalt": "Carnegie Mellon Silicon Valley Campus",
+          "media": "(min-width:900.1px)",
+          "url":"https://sv.cmu.edu/",
+          "positions": [
+            {
+              "title": "Carnegie Mellon Silicon Valley Campus",
+              "lat": 37.410436727447596,
+              "long": -122.05976663206418
+            }
+          ]
+        },
+        {
+          "categoryName": "Learn",
+          "cardTitle": "Draper University of Heroes",
+          "cardBody": "Established in 2012, Draper University is the leading program in Silicon Valley for building founders.",
+          "distance": "19.3 mi",
+          "image": "images/location-4-learn-desktop.jpg",
+          "imgalt": "Draper University of Heroes",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.draperuniversity.com/",
+          "positions": [
+            {
+              "title": "Draper University of Heroes",
+              "lat": 37.56345562017321,
+              "long": -122.32495034154182
+            }
+          ]
+        },
+        {
+          "categoryName": "Learn",
+          "cardTitle": "San Jose State University",
+          "cardBody": "The oldest public university on the West Coast and the founding campus of the California State University system ",
+          "distance": "13.7 mi",
+          "image": "images/location-5-learn-desktop.jpg",
+          "imgalt": "San Jose State University",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.sjsu.edu/",
+          "positions": [
+            {
+              "title": "San Jose State University",
+              "lat": 37.335189035772565,
+              "long": -121.8810723229714
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cheer",
+      "body": "No matter what season it is or sport you love, you will find world-class teams to support and games to enjoy.",
+      "locations": [
+        {
+          "categoryName": "Cheer",
+          "cardTitle": "Go Niners",
+          "cardBody": "Take in a San Francisco 49ers NFL football game at nearby Levi’s Stadium.",
+          "distance": "6.4 mi",
+          "image": "images/location-1-cheer-desktop.jpg",
+          "imgalt": "Go Niners",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.49ers.com/",
+          "positions": [
+            {
+              "title": "Go Niners",
+              "lat": 37.40317453823692,
+              "long": -121.9697143574586
+            }
+          ]
+        },
+        {
+          "categoryName": "Cheer",
+          "cardTitle": "Gameday at the Tank",
+          "cardBody": "Enjoy a San Jose Sharks NHL hockey game at the SAP Center.",
+          "distance": "11.6 mi",
+          "image": "images/location-2-cheer-desktop.jpg",
+          "imgalt": "Gameday at the Tank",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.nhl.com/sharks",
+          "positions": [
+            {
+              "title": "Gameday at the Tank",
+              "lat": 37.33275263394298,
+              "long": -121.90124468269161
+            }
+          ]
+        },
+        {
+          "categoryName": "Cheer",
+          "cardTitle": "A Quake You Can Enjoy",
+          "cardBody": "Watch the San Jose Earthquakes MLS soccer team play at PayPal Park.",
+          "distance": "9.5 mi",
+          "image": "images/location-3-cheer-desktop.jpg",
+          "imgalt": "A Quake You Can Enjoy",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.sjearthquakes.com/",
+          "positions": [
+            {
+              "title": "A Quake You Can Enjoy",
+              "lat": 37.35113807311537,
+              "long": -121.9246528370714
+            }
+          ]
+        },
+        {
+          "categoryName": "Cheer",
+          "cardTitle": "San Jose Giants",
+          "cardBody": "Come out and support the Minor League Giants at Excite Park, a stadium that has been welcoming fans for over 75 years.",
+          "distance": "14.1 mi",
+          "image": "images/location-4-cheer-desktop.jpg",
+          "imgalt": "San Jose Giants",
+          "media": "(min-width:900.1px)",
+          "url":"https://www.milb.com/san-jose",
+          "positions": [
+            {
+              "title": "San Jose Giants",
+              "lat": 37.32043530033272,
+              "long": -121.86236434108204
+            }
+          ]
+        },
+        {
+          "categoryName": "Cheer",
+          "cardTitle": "Tree or Cardinal?",
+          "cardBody": "You choose the cheer as you root for Stanford University’s many amazing athletic teams, from football to the National Champions women’s basketball team.",
+          "distance": "7.0 mi",
+          "image": "images/location-5-cheer-desktop.jpg",
+          "imgalt": "Tree or Cardinal",
+          "media": "(min-width:900.1px)",
+          "url":"https://gostanford.com/",
+          "positions": [
+            {
+              "title": "Tree or Cardinal",
+              "lat": 37.43451777316095,
+              "long": -122.16112259820623
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
