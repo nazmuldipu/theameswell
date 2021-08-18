@@ -43,7 +43,7 @@ const render_right = (event) => {
     event.date.day
   }, ${event.date.year}</p>
     <p class="pb-3 text-lg">${event.time}</p>
-    <hr class="border-solid border-2 w-11/12 xmed:w-1/2 border-ams-gold">`;
+    <hr class="border-solid border-3 w-11/12 xmed:w-1/2 border-ams-gold">`;
 
   for (let i = 0; i < event.descriptions.length; i++) {
     html += `

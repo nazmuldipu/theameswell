@@ -111,6 +111,9 @@ module.exports = {
       minHeight: {
        'l': '8rem'
       },
+      borderWidth: {
+        '3': '3px'
+      },
       spacing: {
           'fab-container-sm': '8.5rem',
          'fab-container-lg': '12.2rem',
