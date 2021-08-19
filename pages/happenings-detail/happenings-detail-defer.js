@@ -129,5 +129,6 @@ if (events.length && !isNaN(temp_id) && temp_id > 0) {
   const btn_view_all = document.querySelector(".btn_view_all");
   btn_view_all.addEventListener('click', function(){
     viewAllEle(event);
+    btn_view_all.style.visibility='hidden';
   });
 }
