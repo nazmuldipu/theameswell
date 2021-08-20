@@ -655,12 +655,13 @@
         "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
     }
 ],
-"homepage_art_image": {
+"homepage_art_image": [
+ {
   "artDirection": [
     {
       "classes": "image-loader",
       "media": "(min-width:900.1px)",
-      "sizes": "85vw",
+      "sizes": "100vw",
       "type": "jpg",
       "src": "images/homepage-art-desktop",
       "alt": "Huntington Beach",
@@ -671,10 +672,33 @@
       "media": "(max-width:900px)",
       "sizes": "100vw",
       "type": "jpg",
-      "src": "images/homepage-art-mobile",
+      "src": "images/homepage-art-desktop",
       "alt": "Huntington Beach",
-      "intrinsicwidth": "320"
+      "intrinsicwidth": "1248"
     }
   ]
-}
+ },
+ {
+  "artDirection": [
+    {
+      "classes": "image-loader",
+      "media": "(min-width:900.1px)",
+      "sizes": "100vw",
+      "type": "jpg",
+      "src": "images/homepage-art-desktop",
+      "alt": "Huntington Beach",
+      "intrinsicwidth": "1248"
+    },
+    {
+      "classes": "image-loader",
+      "media": "(max-width:900px)",
+      "sizes": "100vw",
+      "type": "jpg",
+      "src": "images/homepage-art-desktop",
+      "alt": "Huntington Beach",
+      "intrinsicwidth": "1248"
+    }
+  ]
+ }
+]
 }
