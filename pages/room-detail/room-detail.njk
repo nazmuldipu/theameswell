@@ -236,18 +236,23 @@ fabExternalLink: true
 </div>
 
 <div class="grid justify-items-center bg-ams-primary w-full p-8">
-    <article class="max-w-screen-xl p-4 bg-ams-white w-full">
-        <section class="xmed:grid xmed:grid-cols-2 xmed:gap-4">
-            <header>
-                <h2 class="title-display text-2xl pt-4 pb-4">
-                    Join Our A-List
-                </h2>
-                <p>
-                    You will be the first to hear about events and promotions.
-                </p>
-            </header>
+    <article class="max-w-screen-xl p-8 bg-ams-white w-full">
+        <section class="xmed:grid xmed:grid-cols-2 xmed:gap-8">
+            <figure class="grid">
+                <figcaption class="order-2 xmed:order-1">
+                    <h2 class="title-display pt-4 text-ams-primary font-serif text-2xl xmed:text-4xl pb-4 xmed:pt-0">
+                        Join The A-List
+                    </h2>
+                    <p class="text-ams-primary pb-4 font-sans text-md">
+                        You'll be the first to hear about events and promotions.
+                    </p>
+                </figcaption>
+                <figcaption class="order-1 xmed:order-2">
+                    {{ scaled_image(subfooter.image) }}
+                </figcaption>
+            </figure>
             <form-sender data-type="alist">
-                <form class="pt-4">
+                <form class="pt-4 xmed:pt-16">
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
                         <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
                         <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
@@ -257,10 +262,12 @@ fabExternalLink: true
                         <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
                     </div>
                     <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input required="required" type="text" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
-                        <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">EMAIL *</label>
+                        <input type="text" required="required" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label" />
+                        <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">EMAIL ADDRESS *</label>
                     </div>
-                    {{ primaryButton("#", 'Join the A-List', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                    <div class="text-center xmed:text-left">
+                        {{ primaryButton("#", 'Join the A-List', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                    </div>    
                     <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
                 </form>
             </form-sender>
