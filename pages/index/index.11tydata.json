@@ -383,6 +383,29 @@
       ]
     }
   ],
+  
+  "happenings_image": {
+    "artDirection": [
+      {
+        "classes": "image-loader image-loader--white",
+        "media": "(min-width:900.1px)",
+        "sizes": "45vw",
+        "type": "jpg",
+        "src": "images/happenings-desktop",
+        "alt": "happenings",
+        "intrinsicwidth": "376"
+      },
+      {
+        "classes": "image-loader image-loader--white",
+        "media": "(max-width:900px)",
+        "sizes": "70vw",
+        "type": "jpg",
+        "src": "images/happenings-mobile",
+        "alt": "happenings",
+        "intrinsicwidth": "375"
+      }
+    ]
+  },
   "rooms_image": {
     "artDirection": [
       {
@@ -562,6 +585,29 @@
         "title": "Puppy Love",
         "p1": "Treat your four-legged friend to an unforgettable stay at our pet-friendly property!  With a discounted pet fee of $50 (reg. $75), collapsible dog bowl, pet toy, and organic dog treat."
     },
+    {
+      "artDirection": [
+        {
+          "src": "images/offer-detail-3",
+          "media": "(min-width:900.1px)",
+          "imgtype": "jpg",
+          "sizes": "80vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        },
+        {
+          "src": "images/offer-detail-3",
+          "media": "(max-width:900px)",
+          "imgtype": "jpg",
+          "sizes": "100vw",
+          "imgalt": "Hotel room with view",
+          "intrinsicwidth": "2304"
+        }
+      ],
+        "link": "https://reservations.travelclick.com/111994",
+        "title": "Work from Ameswell",
+        "p1": "Work from one of our spacious, light-filled guest rooms or many public spaces. Get inspired in the Ames Library or lounging by the pool. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, one coffee, tea, or G.0.A.T. Fuel Energy Drink."
+    },    
     {
       "artDirection": [
         {

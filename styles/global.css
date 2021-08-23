@@ -107,7 +107,7 @@
         @apply absolute;
         @apply z-20;
         @apply -mt-10;
-        @apply top-81;
+        @apply bottom-17;
         @apply xmed:top-1/2;
         @apply px-4;
         @apply w-full;

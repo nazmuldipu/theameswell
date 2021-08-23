@@ -1,0 +1,90 @@
+---
+layout: base.njk
+pagename: happenings-detail
+meta_title: Mountain View Events | Silicon Valley Hotels | Ameswell
+meta_description: "Join us at The Ameswell Hotel and Roger Bar and Restaurant in Mountain View for fun live events. Guests can enjoy live music, fitness classes, expert speakers series and more. Check our event calendar for details."
+canonical_href: https://www.theameswellhotel.com
+permalink: "build/happenings-detail.html"
+permalinkBypassOutputDir: true
+fabUrl: https://reservations.travelclick.com/111994
+fabExternalLink: true
+---
+{% from "macros.njk" import scaled_image %}
+{% from "buttons.njk" import primaryButton %}
+
+<div id="pageHero" class="bg-ams-primary w-full pt-12 xmed:pt-16">
+</div>
+<section class="bg-ams-base w-full">
+    <section class="grid grid-cols-1 xmed:grid-cols-3 max-w-ameswel  m-auto mt-7 xmed:mt-16 mb-12 xmed:mb-40 gap-x-8">
+        <section class="xmed:max-w-md">
+            <a class="block pb-1 xmed:pb-8" href="/happenings.html">
+                <img class="inline-block pl-6 xmed:pl-0" alt="previous icon" src="/images/prev_icon.svg" class="prev"></img>
+                <span class="text-lg">back to the happenings</span>
+            </a>
+            <div id="details_left">
+                {# <header class="xmed:hidden pb-4 px-6 xmed:px-0 block">
+                    <h1 class="font-medium font-serif text-ams-primary text-2xl">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
+                </header>
+                <figure class="order-2">
+                    {{ scaled_image(happenings_image) }}
+                </figure> #}
+            </div>
+        </section>
+        <section class="mt-4 xmed:col-span-2 xmed:mt-16 px-6 xmed:px-0">
+            <article id="details_right">
+                {# <header class="hidden xmed:block">
+                    <h1 class="font-medium font-serif text-ams-primary text-2xl">CELEBRATE JULY 4th WITH THE VINYL KINGS</h1>
+                </header>
+                <p class="xmed:pt-4 pb-2 text-lg">July 4, 2021 </p>
+                <p class="pb-3 text-lg">6PM-9PM</p>
+                <hr class="border-solid border-4 w-11/12 xmed:w-1/2 border-ams-gold">
+                <p class="pt-3 text-lg">
+                        Join us for dinner and live music on the patio at Roger with the Vinyl Kings, featuring lead singer and guitarist, Randy Cordeiro (AKA, Surreal Neil) of Super Diamond,
+                    </p>
+                <p class="py-3 text-lg">
+                        Noam Eisen of Cosmo Alley Cats and Vince Littleton of Super Diamond!Enjoy an evening with friends over craft cocktails and delicious California cuisine, while listening to favorites from these wildly popular musicians.
+                    </p>
+                <p class="text-lg">
+                        Reservations are recommended and seating is limited.
+                    </p> #}
+            </article>            
+        </section>
+    </section>
+</section>
+
+<section class="grid bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
+    <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
+        <h2 class="title-display text-2xl xmed:text-3xl text-center px-4 xmed:px-16 font-serif font-medium py-4">
+            YOU MIGHT ALSO LIKE
+        </h2>
+    </header>
+    {% set items = [0, 1, 2] %}
+    <article id="also_like" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 gap-6 xmed:gap-16">
+        {# {% for item in items %}
+            <section class="bg-ams-white mb-8 xmed:shadow-md">
+                <figure>
+                    {{ scaled_image(happenings_image) }}
+                    <figcaption>
+                        <header class="px-6 py-4">
+                            <span class="text-lg font-sans">
+                           July 3, 2021
+                        </span>
+                            <h2 class="title-display text-xl xmed:text-2xl text-left font-serif font-medium">
+                           LIVE MUSIC WITH FREDDY CLARKE AND WOBBLY WORLD
+                        </h2>
+                        </header>
+                    </figcaption>
+                </figure>
+                <div class="xmed:hidden mb-5 grid grid-cols-2 px-6 gap-x-3 font-serif text-center">
+                    {{ primaryButton("#", 'Reserve Here') }}
+                    <div class="inline-block py-2 px-8 border-4 font-medium text-ams-gold border-ams-gold">
+                        More Info
+                    </div>
+                </div>
+            </section>
+        {% endfor %} #}
+    </article>
+    <div class="pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
+        {{ primaryButton("javascript:void(0)", 'View all', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
+    </div>
+</section>

@@ -13,9 +13,10 @@ fabExternalLink: true
 </div>
 <section class="segment-outer bg-ams-taupe pb-2 px-7 xmed:px-14">
     <article class="segment-inner">
-        <figure class="gallery-image__column">
+        <figure class="gallery gallery-image__column">
             {% for image in gallery_images %}
-               <div class="pb-6 xmed:pb-8">
+                {% set defaultHref = image.artDirection|first %}
+               <div href="{{defaultHref.src}}.jpg" class="cursor-pointer pb-6 xmed:pb-8" >
                     {{ scaled_image(image) }}
                </div>
             {% endfor %}            

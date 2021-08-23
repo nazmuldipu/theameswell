@@ -1,8 +1,8 @@
 ---
 layout: base.njk
 pagename: press
-meta_title: The Ameswell Hotel | press
-meta_description: "The Ameswell Hotel offers three unique offers outlets: Roger, an indoor/outdoor bar and restaurant, The Flyby, an all-day café, and the Airstream for snacks and craft cocktails relaxing by the pool or fire pits."
+meta_title: The Ameswell Hotel | News & Press | Mountain View
+meta_description: "Check out the latest news and press coverage about The Ameswell Hotel and Roger Bar and Restaurant in Silicon Valley from local, national and international media outlets. Contact our public relations team for information."
 canonical_href: https://www.theameswellhotel.com/offers.html
 permalink: "build/press.html"
 permalinkBypassOutputDir: true
@@ -13,8 +13,8 @@ fabExternalLink: true
 {% from "buttons.njk" import primaryButton %}
 {% from "macros.njk" import scaled_image %}
 
-<div id="pageHero" class="bg-ams-primary bg-hero--press-xmed xmed:bg-hero--press bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
-<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-4 xmed:pt-16 px-4 pb-12 small:pb-10 xmed:pb-16 bg-pattern--ams-gold">
+<div id="pageHero" class="bg-ams-primary bg-hero--press-xmed xmed:bg-hero--press bg-cover bg-center min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
+<div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-4 xmed:pt-16 px-4 pb-12 small:pb-10 xmed:pb-16 bg-pattern--ams-gold xmed:bg-pattern--ams-grey">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white text-ams-primary">
@@ -41,7 +41,7 @@ fabExternalLink: true
                             <path d="M4.553 9.572C5.129 6.436 6.729 3.556 9.225 1.06L9.097 0.995998C6.857 2.084 4.937 3.94 3.273 6.564C1.609 9.124 0.777 11.62 0.777 13.988C0.777 17.38 2.889 19.684 5.897 19.684C8.777 19.684 11.081 17.38 11.081 14.564C11.081 12.836 10.441 11.492 9.097 10.468C7.753 9.444 6.281 9.124 4.553 9.572ZM16.713 9.572C17.289 6.436 18.889 3.556 21.385 1.06L21.257 0.995998C19.017 2.084 17.097 3.94 15.433 6.564C13.769 9.124 12.937 11.62 12.937 13.988C12.937 17.38 15.049 19.684 18.057 19.684C20.937 19.684 23.241 17.38 23.241 14.564C23.241 12.836 22.601 11.492 21.257 10.468C19.913 9.444 18.441 9.124 16.713 9.572Z" fill="#C2B8AB"/>
                         </svg>
                     </div>
-                    <figcaption class="flex justify-center px-4 text-center">
+                    <figcaption class="flex justify-center px-4 text-center article-center">
                         <p class="text-ams-primary text-base xmed:text-lg font-sans">
                             {{ item.title | safe }}
                         </p>
@@ -54,11 +54,11 @@ fabExternalLink: true
                 </figure>
 
                 <div class="text-center absolute left-0 right-0 bottom-0 pb-4 xmed:pb-8">
-                    <div class="py-4 text-center font-sans text-base xmed:text-lg text-ams-gold">
+                    <div class="py-4 text-center font-sans font-bold text-base xmed:text-lg text-ams-gold">
                         <p>{{item.p}}</p>
                     </div>
                     <p class="inline-block border-b border-ams-gold mx-4">
-                        {{ primaryButton(item.link, 'Read More', 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-xl', 'a', true) }}
+                        {{ primaryButton(item.link, 'Read More', 'inline-block pb-1 -mx-4 text-ams-gold font-serif font-medium uppercase tracking-wide button--primary button text-xl', 'a', true) }}
                     </p>
                 </div>
             </section>
@@ -74,7 +74,7 @@ fabExternalLink: true
                         Press Inquiries and Influencers
                     </h2>
                     <p class="text-ams-primary font-sans text-lg">
-                        Send us a message about press opportunities and social media coverage.
+                        Contact our public relations team at <a href="mailto:ameswell@m18pr.com" target="_blank" class="text-ams-cyan underline">ameswell@m18pr.com</a> or fill out the form about press opportunities and social media coverage.
                     </p>
                 </figcaption>
                 <figcaption class="order-1 xmed:order-2">
@@ -92,10 +92,12 @@ fabExternalLink: true
                         <input type="email" required="required" aria-required="true" name="email" placeholder="glenn@example.com" class="form-input__style">
                     </label>
                     <label name="message" class="form-label">
-                        Message<br>
+                        MESSAGE<br>
                         <textarea required="required" minlength="10" name="message" placeholder="Type Message..." class=" min-h-l form-input__style"></textarea>
                     </label>
-                    {{ primaryButton("#", 'Submit', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                    <div class="text-center xmed:text-left">
+                        {{ primaryButton("#", 'Send', 'submit__button inline-block py-2 px-8 xmed:px-16 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                    </div>
                     <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
                 </form>
             </form-sender>
