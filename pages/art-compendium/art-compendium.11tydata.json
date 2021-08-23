@@ -611,33 +611,6 @@
             "p1": "Lisa Kowalski<br/>Los Altos, California, USA<br/>Color Shape Studies I-III<br/>Acrylic on linen",
             "p2": "Influenced by color theory, Kowalski’s work explores the visual communication between color, pattern and shape. Sophisticated and refined, these repetitive shapes engage the viewer with their graphic appeal.",
             "location":"Location"
-        },
-        {
-            "image": {
-                "classes":"h-170 w-full",
-                "artDirection": [
-                    {
-                        "media": "(min-width:900.1px)",
-                        "type": "png",
-                        "sizes": "35vw",
-                        "src": "images/art-13",
-                        "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
-                    },
-                    {
-                        "media": "(max-width:900px)",
-                        "type": "png",
-                        "sizes": "100vw",
-                        "src": "images/art-13",
-                        "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
-                    }
-                ]
-            },
-            "bgImage":"bg-ams-white",
-            "p1": "Ala Ebtekar<br/>Palo Alto, California, USA<br/>Azimuth Series, 2020<br/>Cyanotypes on canvas treated and exposed to direct UV-sunlight with negatives from NASA / Hubble telescope image archives.",
-            "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately, opposing world-views synthesize.",
-            "location":"Location"
-        }  
+        }
     ]
 }
