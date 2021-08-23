@@ -14,7 +14,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-1",
+                    "src": "images/gallery-desktop-1",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -34,7 +34,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-2",
+                    "src": "images/gallery-desktop-2",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -54,7 +54,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-3",
+                    "src": "images/gallery-desktop-3",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -74,7 +74,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-4",
+                    "src": "images/gallery-desktop-4",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -94,7 +94,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-5",
+                    "src": "images/gallery-desktop-5",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -114,7 +114,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-6",
+                    "src": "images/gallery-desktop-6",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -134,7 +134,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-7",
+                    "src": "images/gallery-desktop-7",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -154,7 +154,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-8",
+                    "src": "images/gallery-desktop-8",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -174,7 +174,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-9",
+                    "src": "images/gallery-desktop-9",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -194,7 +194,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-10",
+                    "src": "images/gallery-desktop-10",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -214,7 +214,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-11",
+                    "src": "images/gallery-desktop-11",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -234,7 +234,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-12",
+                    "src": "images/gallery-desktop-12",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -254,7 +254,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-13",
+                    "src": "images/gallery-desktop-13",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -274,7 +274,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-14",
+                    "src": "images/gallery-desktop-14",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -294,7 +294,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-15",
+                    "src": "images/gallery-desktop-15",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -314,7 +314,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-16",
+                    "src": "images/gallery-desktop-16",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -334,7 +334,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-17",
+                    "src": "images/gallery-desktop-17",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -354,7 +354,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-18",
+                    "src": "images/gallery-desktop-18",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -374,7 +374,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-19",
+                    "src": "images/gallery-desktop-19",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
@@ -394,7 +394,7 @@
                     "media": "(max-width:900px)",
                     "type": "png",
                     "sizes": "100vw",
-                    "src": "images/gallery-mobile-20",
+                    "src": "images/gallery-desktop-20",
                     "alt": "ameswell gallery",
                     "intrinsicwidth": "1280" 
                 }
