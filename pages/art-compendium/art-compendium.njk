@@ -41,7 +41,7 @@ fabExternalLink: true
 
 <section id="artComponent" class="grid justify-items-center w-full">
     {% for item in art %}
-        <section class="panel w-full"  data-color="{{item.bgImage}}">
+        <section class="panel w-full" data-color="{{item.bgImage}}">
             <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 xmed:py-12 xmed:gap-12">
                 <figcaption class="pt-4 xmed:pt-0 px-8 xmed:px-0">
                     {% if item.images %}
@@ -60,7 +60,9 @@ fabExternalLink: true
                     {% elseif item.bgImage == 'bg-ams-main-12' %}
                         text-ams-primary
                     {% elseif item.bgImage == 'bg-ams-main-14' %}
-                        text-ams-primary 
+                        text-ams-primary
+                    {% elseif item.bgImage == 'bg-ams-main-16' %}
+                        text-ams-primary     
                     {% else %} text-ams-white
                 {% endif %}
                 ">
