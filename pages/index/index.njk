@@ -30,11 +30,11 @@ fabExternalLink: true
 </div>
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
-        <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
+        <section class="grid justify-items-center max-w-screen-xl xmed:px-4">
             <div class="mx-4 xmed:mx-0">
                 {{ scaled_image(entrance_image) }}
             </div>
-            <div class="z-0 max-w-screen-xmed pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+            <div class="z-0 max-w-screen-lg mx-3 pb-4 px-8 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                 <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
                     We believe in a foundation of exceptional experiences, thoughtful amenities, and effortless quality.
                 </h2>
@@ -50,8 +50,8 @@ fabExternalLink: true
 </div>
 <div class=" w-full bg-pattern--ams-grey xmed:pb-24 z-10">
     <div class="grid justify-items-center w-full">
-        <div class="grid xmed:grid-cols-35-65 xmed:gap-8 max-w-7xl pt-9 p-14 xmed:pb-8 px-4 xmed:mt-5 ">
-            <section class="grid justify-items-center mb-8">
+        <div class="grid xmed:grid-cols-35-65 xmed:gap-8 max-w-7xl p-4 xmed:pb-8 xmed:mt-5 ">
+            <section class="grid justify-items-center mb-9">
                 <div>
                 <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
                     <h2 class="title-display text-3xl pb-4">
@@ -72,8 +72,8 @@ fabExternalLink: true
         </div>
     </div>
     <div class="grid justify-items-center w-full">
-        <div class="grid xmed:grid-cols-35-65 xmed:gap-8 max-w-7xl pt-9 p-14 xmed:pb-12 px-4 xmed:mt-5 ">
-            <section class="grid justify-items-center mb-8">
+        <div class="grid xmed:grid-cols-35-65 xmed:gap-8 max-w-7xl py-5 px-4 xmed:pb-12 xmed:mt-2">
+            <section class="grid justify-items-center">
                 <div>
                 <div class="max-w-screen-xmed xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
                     <h2 class="title-display text-3xl pb-4">
@@ -94,7 +94,7 @@ fabExternalLink: true
         </div>
     </div>
 </div>
-<div class="bg-ams-primary w-full grid justify-items-center pt-0 xmed:pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
+<div class="bg-ams-primary w-full grid justify-items-center pt-0 xmed:pt-24 pr-4 pl-4 xmed:-mt-20 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
         <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white">
             Bar. Restaurant. Cafe.
@@ -102,13 +102,15 @@ fabExternalLink: true
         <p class="pb-6 text-ams-white">
             Options for every meal and in between craving, and every dietary desire—you can eat and drink with us all day, every day.
         </p>
-        <a href="dining.html" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase">LEARN MORE</a>
+        <a href="dining.html" class="hidden xmed:inline segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase">LEARN MORE</a>
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
-            <figure class="grid grid-cols-2 xmed:grid-cols-1 gap-4 items-center mb-6">
-                {{ scaled_image(roger_image) }}
+            <figure class="grid grid-cols-1 gap-4 items-center mb-6">
+                <div class="hidden xmed:block">
+                    {{ scaled_image(roger_image) }}
+                </div>
                 <figcaption class="text-ams-white xmed:px-8">
-                    <header class="xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
+                    <header class="text-center">
+                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 xmed:text-left text-xl text-ams-white">
                            <a href="dining.html#roger">ROGER</a>
                         </h3>
                     </header>
@@ -116,25 +118,35 @@ fabExternalLink: true
                         Indoor/outdoor bar and restaurant
                     </p>
                 </figcaption>
+                <div class="xmed:hidden">
+                    {{ scaled_image(roger_image) }}
+                </div>
             </figure>
-            <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                {{ scaled_image(flyby_image) }}
+            <figure class="grid grid-cols-1 gap-4 items-center mb-6">
+                <div class="hidden xmed:block">
+                    {{ scaled_image(flyby_image) }}
+                </div>
                 <figcaption class="text-ams-white xmed:px-8">
-                    <header class="xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                           <a href="dining.html#the_flyby">THE FLYBY</a>
+                    <header class="text-center">
+                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-xl text-ams-white">
+                           <a href="dining.html#the_flyby">FLYBY</a>
                         </h3>
                     </header>
                     <p class="xmed:text-center">
                         All-day coffee and fast casual meals
                     </p>
                 </figcaption>
+                <div class="xmed:hidden">
+                    {{ scaled_image(flyby_image) }}
+                </div>
             </figure>
-            <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-end gap-4 items-center mb-6">
-                {{ scaled_image(airstream_image) }}
+            <figure class="grid grid-cols-1 gap-4 items-center mb-6">
+                <div class="hidden xmed:block">
+                    {{ scaled_image(airstream_image) }}
+                </div>
                 <figcaption class="text-ams-white xmed:px-8">
-                    <header class="xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
+                    <header class="text-center">
+                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-xl text-ams-white">
                             <a href="dining.html#airstream_bar">AIRSTREAM BAR</a>
                         </h3>
                     </header>
@@ -142,18 +154,21 @@ fabExternalLink: true
                         Outdoor bar for the pool, lawn and events
                     </p>
                 </figcaption>
+                <div class="xmed:hidden">
+                    {{ scaled_image(airstream_image) }}
+                </div>
             </figure>
         </section>
     </article>
 </div>
 
 <div class="grid justify-items-center w-full bg-ams-base">
-    <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
+    <article class="mt-12 xmed:mt-4 xmed:mb-10 pt-4 xmed:px-4 ">
         <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
-            <div class="mx-4 xmed:mx-0">
+            <div class="hidden xmed:block mx-4 xmed:mx-0 bg-ams-white xmed:bg-ams-base">
                 {{ scaled_image(event_spaces_image) }}
             </div>
-            <div class="z-0 max-w-screen-xmed pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+            <div class="xmed:-mt-10 pb-4 px-4 xmed:p-10 z-0 max-w-screen-xmed xmed:shadow-md bg-ams-white ">
                 <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
                     Not your typical meeting
                 </h2>
@@ -164,12 +179,18 @@ fabExternalLink: true
                     <a href="events.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
                 </div>
             </div>
+            <div class="xmed:hidden bg-ams-white xmed:bg-ams-base">
+                {{ scaled_image(event_spaces_image) }}
+            </div>
         </section>
     </article>
 </div>
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="py-4 xmed:px-4 my-4">
         <section class="max-w-screen-lg xmed:grid xmed:grid-cols-auto-600 gap-4 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
+            <figure class="xmed:hidden m-4">
+                {{ scaled_image(wedding_image) }}
+            </figure>
             <div class="mx-4 xmed:mx-0 mb-8 xmed:mb-0 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
                 <h2 class="title-display text-2xl pt-4 pb-4">
                     Our Mountain View Wedding Venue
@@ -181,13 +202,13 @@ fabExternalLink: true
                     <a href="weddings.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
                 </div>
             </div>
-            <figure>
+            <figure class="hidden xmed:block">
                 {{ scaled_image(wedding_image) }}
             </figure>
         </section>
     </article>
 </div>
-<div class="grid bg-pattern--ams-grey xmed:justify-items-center w-full py-14 xmed:pt-24 xmed:pb-28">
+<div class="grid bg-pattern--ams-grey xmed:justify-items-center w-full py-9 xmed:pt-24 xmed:pb-28">
     <article id="happenings" class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-10">
         <section class="mb-8 shadow-md px-4 xmed:px-0">
             <div class="shadow-md p-4 xmed:p-8 bg-ams-white">

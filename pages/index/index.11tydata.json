@@ -14,7 +14,7 @@
       {
         "classes": "image-loader",
         "media": "(min-width:900.1px)",
-        "sizes": "80vw",
+        "sizes": "100vw",
         "type": "jpg",
         "src": "images/homepage-2-desktop",
         "alt": "The Ameswell hotel exterior",
@@ -23,7 +23,7 @@
       {
         "classes": "image-loader",
         "media": "(max-width:900px)",
-        "sizes": "90vw",
+        "sizes": "100vw",
         "type": "jpg",
         "src": "images/homepage-2-mobile",
         "alt": "The Ameswell hotel exterior",
