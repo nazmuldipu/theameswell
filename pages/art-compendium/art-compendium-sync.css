@@ -14,6 +14,9 @@
     .toggle-arrow.active{
         transform: rotateZ(180deg);        
     }
+    .remove-outline{
+        outline:none;
+    }
 }
 
 #artComponent{
