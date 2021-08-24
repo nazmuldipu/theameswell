@@ -1,3 +1,4 @@
+{% from "svgicon.njk" import svg_icon %}
 {% macro media_carousel(slides, background_color, caption, splitNav = false) %}
     <figure class="{{ background_color if background_color }}">
     <media-carousel>
@@ -127,4 +128,46 @@
     </media-carousel>
     </figure>
     
+{% endmacro %}
+
+{% macro press_carousel(slides, background_color) %}
+    <figure class="{{ background_color if background_color }} overflow-hidden pb-4 xmed:pb-6">
+    <media-carousel>
+        <div class="swiper-container w-full h-full" style="overflow: visible !important;">
+            <div class="swiper-wrapper z-10">
+                    {% for slide in slides %}
+                        <div class="swiper-slide">
+                            <figcaption >
+                                <header class="p-4">
+                                    <h2 class="title-display pb-0 text-left xmed:text-center text-xl xmed:text-2xl my-4">{{slide.heading}}</h2>
+                                    <div class="my-4 flex space-x-2 justify-start xmed:justify-center">
+                                        {% set x = [1,2,3,4,5] %}
+                                        {% for item in x %}
+                                            {{svg_icon(name="rating", width="24", height="23", fill="#354656")}}
+                                        {% endfor %}
+                                    </div>
+                                    <p class="max-w-3xl mx-auto my-4 text-left xmed:text-center break-words font-sans text-lg text-ams-primary">{{slide.quote}}</p>
+                                    <p class="text-left xmed:text-center my-4 font-sans font-bold text-base xmed:text-lg text-ams-primary">{{slide.p}}</p>
+                                    <div class="text-left xmed:text-center">
+                                        <a class="my-4 inline-block border-b border-ams-gold text-ams-gold font-serif font-medium text-lg text-center" href="{{slide.link}}">{{slide.textLink}}</a>
+                                    <div>
+                                </header>
+                            </figcaption>
+                        </div>
+                    {% endfor %}
+            </div>            
+            <nav class="flex flex-row items-center relative z-20 m-auto w-max -top-4 py-2 px-4 bg-ams-white shadow-md">
+                <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                    previous
+                </button>
+                <span class="px-4 whitespace-nowrap text-ams-gold">
+                    <span class="carousel-pagination"></span>
+                </span>
+                <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
+                    next
+                </button>
+            </nav>
+        </div>
+    </media-carousel>
+    </figure>    
 {% endmacro %}

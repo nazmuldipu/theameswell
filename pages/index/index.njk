@@ -12,7 +12,7 @@ fabExternalLink: true
 {% from "videos.njk" import lazyvideo %}
 {% from "buttons.njk" import primaryButton %}
 {% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
-{% from "media-carousel.njk" import media_carousel %}
+{% from "media-carousel.njk" import media_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
@@ -205,6 +205,14 @@ fabExternalLink: true
         
     </article>
 </div>
+<!--press widget-->
+<div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
+    <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
+        <section>
+            {{  press_carousel(press__widget, "bg-ams-white") }}
+        </section>
+    </article>
+</div>       
 <div class="grid justify-items-center bg-ams-primary w-full p-8">
     <article class="max-w-screen-lg p-4 bg-ams-white w-full">
         <section class="xmed:grid xmed:grid-cols-2 xmed:gap-4">
