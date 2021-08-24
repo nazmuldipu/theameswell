@@ -47,17 +47,6 @@
       ]
     },
     {
-      "id": 3,
-      "date": { "day": 25, "month": 8, "year": 2021 },
-      "time": "4PM - 12AM",
-      "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
-      "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
-      ]
-    },
-    {
       "id": 4,
       "date": { "day": 1, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
@@ -168,6 +157,17 @@
         "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
       ]
     },
+    {
+      "id": 3,
+      "date": { "day": 25, "month": 8, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image":"images/happenings_evants-Wine_Wednesdays",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },    
     {
       "id": 14,
       "date": { "day": 26, "month": 8, "year": 2021 },
