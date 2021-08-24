@@ -165,7 +165,7 @@ const renderEventCard = (event) => {
 };
 
 const renderOurHappeningsCard = (event) => {
-  return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-ful">
+  return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
             <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
                 <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
@@ -248,7 +248,7 @@ var Happenings = function (options) {
           events
         );
         if(evList.length){
-          our_happenings_title.innerHTML = "Happeings for <br/>" + months[self.calendar.month] + ' ' + day;
+          our_happenings_title.innerHTML = "Happenings for <br/>" + months[self.calendar.month] + ' ' + day;
           our_happenings_title.scrollIntoView()
           self.showOurHappenings(our_happenings, evList);
         }
@@ -388,6 +388,7 @@ Happenings.prototype = {
   showOurHappenings: function (el, evs) {
     let evHtml = "";
     let count = 0;
+    let curEvents = [];
     if(evs && evs.length > 0){
       for (let j = 0; j < evs.length; j++) {
         evHtml += renderOurHappeningsCard(evs[j]);                
@@ -402,18 +403,15 @@ Happenings.prototype = {
           i,
           events
         );
-        for (let j = 0; j < evs.length; j++) {
-          evHtml += renderOurHappeningsCard(evs[j]);
-          count++;
-          if (!this.viewAll && count >= 3) {
-            break;
-          }
-        }
-        if (!this.viewAll && count >= 3) {
-          break;
-        }
+        curEvents.push(...evs);
+        if(!this.viewAll && curEvents.length >= 3) break;
       }
+      curEvents.reverse();
+      curEvents.forEach(ev =>{
+        evHtml += renderOurHappeningsCard(ev);
+      })
     } 
+    
     el.innerHTML = evHtml;
   },
 };

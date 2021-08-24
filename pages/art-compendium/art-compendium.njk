@@ -1,8 +1,8 @@
 ---
 layout: base.njk
 pagename: art compendium
-meta_title: The Ameswell Hotel | art compendium
-meta_description: "The Ameswell Hotel offers three unique offers outlets: Roger, an indoor/outdoor bar and restaurant, The Flyby, an all-day café, and the Airstream for snacks and craft cocktails relaxing by the pool or fire pits."
+meta_title: The Ameswell Hotel | Art Tour | Bay Area Hotels
+meta_description: "The Ameswell Hotel brings a world-class art program to Silicon Valley. Take a tour on property or online to learn more about our featured art and the artists behind these incredible works of art."
 canonical_href: https://www.theameswellhotel.com/art-compendium.html
 permalink: "build/art-compendium.html"
 permalinkBypassOutputDir: true
@@ -34,18 +34,18 @@ fabExternalLink: true
             Explore The Art
         </h2>
         <div class="text-center text-base xmed:text-lg">
-            Whether complex renderings of astral images from the Hubble telescope, unlikely settings of Earthly flora and fauna, manipulated bright lights that slice through somber landscapes, or playfully animated reinterpretations of ancient hieroglyphics, each piece in this eclectic collection both reflects and reimagines the natural historic beauty and flourishing creative genius of the Northern California silicon valley. 
+            Whether complex renderings of astral images from the Hubble telescope, unlikely settings of Earthly flora and fauna, manipulated bright lights that slice through somber landscapes, or playfully animated reinterpretations of ancient hieroglyphics, each piece in this eclectic collection both reflects and reimagines the natural historic beauty and flourishing creative genius of Northern California’s Silicon Valley. 
         </div>
     </div>
 </section>
 
 <section id="artComponent" class="grid justify-items-center w-full">
     {% for item in art %}
-        <section class="panel w-full"  data-color="{{item.bgImage}}">
+        <section class="panel w-full" data-color="{{item.bgImage}}">
             <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 xmed:py-12 xmed:gap-12">
-                <figcaption class="pt-4 xmed:pt-0 px-8 xmed:px-0">
+                <figcaption class="pt-4 xmed:pt-0 px-4 xmed:px-0">
                     {% if item.images %}
-                        <div class="flex flex-col xmed:flex-row">
+                        <div class="flex flex-col xmed:space-x-1 space-y-1 xmed:space-y-0 xmed:flex-row">
                             {% for image in item.images %}
                                 {{ scaled_image(image) }}
                             {% endfor %}
@@ -60,12 +60,14 @@ fabExternalLink: true
                     {% elseif item.bgImage == 'bg-ams-main-12' %}
                         text-ams-primary
                     {% elseif item.bgImage == 'bg-ams-main-14' %}
-                        text-ams-primary 
+                        text-ams-primary
+                    {% elseif item.bgImage == 'bg-ams-main-16' %}
+                        text-ams-primary     
                     {% else %} text-ams-white
                 {% endif %}
                 ">
                     <header>
-                        <h2 class="pb-6 text-sm xmed:text-lg font-bold">
+                        <h2 class="pb-2 xmed:pb-6 text-sm xmed:text-lg font-bold">
                             {{ item.p1 | safe }}
                         </h2>
                     </header>
@@ -76,7 +78,7 @@ fabExternalLink: true
                         {{ item.p2 }}
                     </p>
                     <div class="flex justify-center pb-4 xmed:hidden text-center">
-                        <button class="read-more__btn segment__cta  relative font-serif font-semibold text-xs uppercase
+                        <div class="read-more__btn segment__cta remove-outline relative font-serif font-semibold text-xs uppercase
                         {% if item.bgImage == 'bg-ams-white' %}
                             text-ams-primary segment__cta--primary
                         {% elseif item.bgImage == 'bg-ams-main-12' %}
@@ -84,9 +86,9 @@ fabExternalLink: true
                         {% elseif item.bgImage == 'bg-ams-main-14' %}
                             text-ams-primary segment__cta--primary    
                         {% else %} text-ams-white segment__cta--white
-                        {% endif %} ">
+                        {% endif %}">
                             MORE
-                        </button>
+                        </div>
                         <!--arrow down-->
                         <div class="toggle-arrow p-1 xmed:hidden">
                             <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">

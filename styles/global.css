@@ -120,7 +120,7 @@
         @apply z-20;
         @apply -mt-10;
         @apply top-96;
-        @apply xmed:top-1/2;
+        @apply xmed:top-64;
         @apply w-full;
     }
 }
