@@ -23,9 +23,10 @@ const createMenuItem = (event) =>{
                 <span class="text-lg font-sans">
                     ${dateString}
                 </span>
+                <a href="/happenings-detail.html?id=${event.id}">
                 <h2 class="title-display text-xl xmed:text-2xl text-left font-serif font-medium">
                    ${event.title}
-                </h2>
+                </h2></a>
             </header>
         </figcaption>
     </figure>
@@ -34,7 +35,12 @@ const createMenuItem = (event) =>{
 }
 
 const happeningsEle = document.querySelector('#happenings');
-const last2Events = happenigsData.events.slice(-2);
+const last2Events = [];
+happenigsData.events.forEach(element => {
+    if (element.id=== 4) {
+        last2Events.push(element);
+    }
+});
 happeningsEle.appendChild(createMenuItem(last2Events[0]));
 happeningsEle.appendChild(createMenuItem(last2Events[1]));
 

@@ -388,6 +388,7 @@ Happenings.prototype = {
   showOurHappenings: function (el, evs) {
     let evHtml = "";
     let count = 0;
+    let curEvents = [];
     if(evs && evs.length > 0){
       for (let j = 0; j < evs.length; j++) {
         evHtml += renderOurHappeningsCard(evs[j]);                
@@ -402,18 +403,15 @@ Happenings.prototype = {
           i,
           events
         );
-        for (let j = 0; j < evs.length; j++) {
-          evHtml += renderOurHappeningsCard(evs[j]);
-          count++;
-          if (!this.viewAll && count >= 3) {
-            break;
-          }
-        }
-        if (!this.viewAll && count >= 3) {
-          break;
-        }
+        curEvents.push(...evs);
+        if(!this.viewAll && curEvents.length >= 3) break;
       }
+      curEvents.reverse();
+      curEvents.forEach(ev =>{
+        evHtml += renderOurHappeningsCard(ev);
+      })
     } 
+    
     el.innerHTML = evHtml;
   },
 };

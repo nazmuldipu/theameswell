@@ -654,5 +654,81 @@
         "title": "Date Night",
         "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
     }
+],
+"homepage_art_image": [
+ {
+  "artDirection": [
+    {
+      "classes": "image-loader",
+      "media": "(min-width:900.1px)",
+      "sizes": "100vw",
+      "type": "jpg",
+      "src": "images/homepage-art-desktop",
+      "alt": "Huntington Beach",
+      "intrinsicwidth": "1248"
+    },
+    {
+      "classes": "image-loader",
+      "media": "(max-width:900px)",
+      "sizes": "100vw",
+      "type": "jpg",
+      "src": "images/homepage-art-desktop",
+      "alt": "Huntington Beach",
+      "intrinsicwidth": "1248"
+    }
+  ]
+ },
+ {
+  "artDirection": [
+    {
+      "classes": "image-loader",
+      "media": "(min-width:900.1px)",
+      "sizes": "100vw",
+      "type": "jpg",
+      "src": "images/homepage-art-desktop",
+      "alt": "Huntington Beach",
+      "intrinsicwidth": "1248"
+    },
+    {
+      "classes": "image-loader",
+      "media": "(max-width:900px)",
+      "sizes": "100vw",
+      "type": "jpg",
+      "src": "images/homepage-art-desktop",
+      "alt": "Huntington Beach",
+      "intrinsicwidth": "1248"
+    }
+  ]
+ }
+],
+"press__widget":[
+  {
+    "heading":"Outstanding",
+    "quote":"“Gorgeous new property. Wonderful amenities. Delicious restaurant and fun bar. Highly recommended. Close to Levi's stadium, and tech complexes. Plus dog friendly!”",
+    "p":"-Ed",
+    "textLink":"Google",
+    "link":"https://goo.gl/maps/XeT1cLqihi6VtVuq5"
+  },
+  {
+    "heading":"Outstanding",
+    "quote":"“Quietest room I’ve ever slept in.”",
+    "p":"-John M",
+    "textLink":"Tripadvisor",
+    "link":"https://en.tripadvisor.com.hk/ShowUserReviews-g32761-d23469751-r802343708-The_Ameswell_Hotel-Mountain_View_California.html?m=19905"
+  },
+  {
+    "heading":"Outstanding",
+    "quote":"“Having stayed in many hotels over the years, it takes a bit to impress me. My recent stay at the Ameswell did just that.”",
+    "p":"-ROADRIDER125",
+    "textLink":"Tripadvisor",
+    "link":"https://en.tripadvisor.com.hk/ShowUserReviews-g32761-d23469751-r802191985-The_Ameswell_Hotel-Mountain_View_California.html?m=19905"
+  },
+  {
+    "heading":"Outstanding",
+    "quote":"“I absolutely loved the working/communal spaces in the hotel where I worked each day! I would 100% come back to the Ameswell for a business trip and even for leisure as there are so many amenities and activities to enjoy!”",
+    "p":"-Rachel K",
+    "textLink":"Google",
+    "link":"https://goo.gl/maps/nwU3sEoaoCvvD5pv7"
+  }    
 ]
 }
