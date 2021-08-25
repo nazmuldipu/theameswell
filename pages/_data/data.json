@@ -31,10 +31,6 @@
             "href":"contact.html"
         },
         {
-            "text":"Sitemap",
-            "href":"sitemap.xml"
-        },
-        {
             "text":"Careers",
             "href":"https://ameswellhotel.pinpointhq.com",
             "rel":"noreferrer",
@@ -45,7 +41,7 @@
             "href":"https://www.storeyhospitality.com/",
             "rel":"noreferrer",
             "target":"_blank",
-            "pclasses":"xmed:w-52"        
+            "pclasses":"xmed:w-28"        
         },
         {
             "text":"Press",
