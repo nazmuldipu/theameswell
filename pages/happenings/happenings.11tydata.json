@@ -179,5 +179,18 @@
         "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     }
-  ]
+  ],
+    "subfooter_join_the_list":{
+      "image": {
+          "artDirection": [
+              {
+                  "type": "png",
+                  "sizes": "50vw",
+                  "src": "images/subfooter-join-the-a-list",
+                  "alt": "elle",
+                  "intrinsicwidth": "533" 
+              }
+          ]
+      }
+    }   
 }
