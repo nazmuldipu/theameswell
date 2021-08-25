@@ -155,7 +155,10 @@ module.exports = {
         'ams-main-12':'#E2DFD3',
         'ams-main-13':'#313C2B',
         'ams-main-14':'#FED9DA',
-        'ams-black':'#000000'
+        'ams-black':'#000000',
+        'ams-main-15':'#B0A79E',
+        'ams-main-16':'#DFDAD7',
+        'ams-main-17':'#5A4F4D'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {

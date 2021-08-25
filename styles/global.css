@@ -107,7 +107,6 @@
         @apply absolute;
         @apply z-20;
         @apply -mt-10;
-        @apply bottom-17;
         @apply xmed:top-1/2;
         @apply px-4;
         @apply w-full;
@@ -399,8 +398,17 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     }
 }
 
-
-
+/* art homepage carousal nab button position */
+.nav-position__desktop{
+    @apply -bottom-4;
+    @apply left-0;
+    @apply right-0;
+}
+.nav-position__mobile{
+    @apply top-2;
+    @apply left-0;
+    @apply right-0;
+}
 
 
 /** https://tailwindcss.com/docs/functions-and-directives#theme **/

@@ -13,7 +13,7 @@ const createMenuItem = (event) =>{
     const date = new Date(event.date.year, event.date.month - 1, event.date.day);
     const dateString = monthNames[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
     let section = document.createElement('section');
-    section.className = "bg-ams-white mb-8 shadow-md"
+    section.className = "bg-ams-white mb-8 shadow-md mx-4"
     section.innerHTML = `
     
     <figure>
@@ -35,7 +35,12 @@ const createMenuItem = (event) =>{
 }
 
 const happeningsEle = document.querySelector('#happenings');
-const last2Events = happenigsData.events.slice(-2);
+const last2Events = [];
+happenigsData.events.forEach(element => {
+    if (element.id=== 4) {
+        last2Events.push(element);
+    }
+});
 happeningsEle.appendChild(createMenuItem(last2Events[0]));
 happeningsEle.appendChild(createMenuItem(last2Events[1]));
 
