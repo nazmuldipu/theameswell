@@ -178,6 +178,41 @@
       "descriptions": [
         "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
+    },
+    {
+      "id": 15,
+      "date": { "day": 14, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MEGAN CHENOT",
+      "image":"images/happenings_events-megan_chenot",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "World-traveling solo performer Megan Chenot's set list has been called “all spice, no filler” as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+      ]
+    },
+    {
+      "id": 16,
+      "date": { "day": 28, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MEGAN CHENOT",
+      "image":"images/happenings_events-megan_chenot",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "World-traveling solo performer Megan Chenot's set list has been called “all spice, no filler” as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+      ]
     }
-  ]
+  ],
+    "subfooter_join_the_list":{
+      "image": {
+          "artDirection": [
+              {
+                  "type": "png",
+                  "sizes": "50vw",
+                  "src": "images/subfooter-join-the-a-list",
+                  "alt": "elle",
+                  "intrinsicwidth": "533" 
+              }
+          ]
+      }
+    }   
 }
