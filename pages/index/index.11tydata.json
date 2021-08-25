@@ -744,5 +744,12 @@
     "textLink":"Google",
     "link":"https://goo.gl/maps/nwU3sEoaoCvvD5pv7"
   }    
+],
+"press_releases":[
+  {
+    "author":"Luxury Travel Magazine",
+    "description":"Inspired by the backdrop of California’s wilderness and Silicon Valley’s legacy of unconventional thinking, this 255-room hotel brings together innovation, art, wellness, sustainability, and natural beauty...",
+    "link":"https://www.luxurytravelmagazine.com/news-articles/the-ameswell-silicon-valleys-new-design-independent-hotel"
+  }
 ]
 }
