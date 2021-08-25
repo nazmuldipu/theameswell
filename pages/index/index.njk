@@ -216,6 +216,21 @@ fabExternalLink: true
 </div>
 <!--art-widget end-->
 <!--press widget-->
+<section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
+    <div class="max-w-7xl mx-auto px-6">
+        {% for art in press_releases%}
+            <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
+                <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
+                    <p class="xmed:px-8 pb-4 text-lg">“{{art.description}}”</p>
+                    <p class="text-ams-cyan font-semibold underline">-{{art.author}}</p>
+                    <nav class="mt-8">
+                        <a href="{{art.link}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase" target="_blank">READ PRESS</a>
+                    </nav>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</section>
 <div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
     <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
         <section>
