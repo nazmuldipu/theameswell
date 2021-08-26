@@ -47,17 +47,6 @@
       ]
     },
     {
-      "id": 4,
-      "date": { "day": 1, "month": 9, "year": 2021 },
-      "time": "4PM - 12AM",
-      "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
-      "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
-      ]
-    },
-    {
       "id": 5,
       "date": { "day": 2, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
@@ -169,17 +158,6 @@
       ]
     },    
     {
-      "id": 14,
-      "date": { "day": 26, "month": 8, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
-      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
-      "image":"images/happenings_evants-Jimmy_Ashley",
-      "url": "https://rogerbarandrestaurant.com/reservations",
-      "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
-      ]
-    },
-    {
       "id": 15,
       "date": { "day": 14, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
@@ -200,7 +178,29 @@
       "descriptions": [
         "World-traveling solo performer Megan Chenot's set list has been called “all spice, no filler” as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
       ]
-    }
+    },
+    {
+      "id": 14,
+      "date": { "day": 26, "month": 8, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image":"images/happenings_evants-Jimmy_Ashley",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {   
+      "id": 4,
+      "date": { "day": 1, "month": 9, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image":"images/happenings_evants-Wine_Wednesdays",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    }    
   ],
     "subfooter_join_the_list":{
       "image": {
@@ -214,5 +214,5 @@
               }
           ]
       }
-    }   
+    }
 }
