@@ -156,7 +156,40 @@
       "descriptions": [
         "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
-    },    
+    },
+    {
+      "id": 15,
+      "date": { "day": 14, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MEGAN CHENOT",
+      "image":"images/happenings-events-megan-chenot",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+      ]
+    },
+    {
+      "id": 16,
+      "date": { "day": 28, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MEGAN CHENOT",
+      "image":"images/happenings-events-megan-chenot",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+      ]
+    }, 
+    {
+      "id": 17,
+      "date": { "day": 1, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH CARLOS REYES",
+      "image":"images/happenings-events-carlos-reyes",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+      ]
+    },                 
     {
       "id": 14,
       "date": { "day": 26, "month": 8, "year": 2021 },
