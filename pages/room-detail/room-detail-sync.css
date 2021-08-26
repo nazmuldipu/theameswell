@@ -29,3 +29,9 @@
         @apply px-8;
     }
 }
+
+@media all and ( max-width: 899px ) {
+    .com-car-nav {
+        bottom: 17.25rem;
+    }
+}
