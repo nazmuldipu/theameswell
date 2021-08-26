@@ -48,6 +48,8 @@ fabExternalLink: true
         </section>
     </article>
 </div>
+
+<!--Rooms-and-offers-widget-->
 <section class="w-full bg-pattern--ams-grey xmed:pb-24 z-10">
     <section class="max-w-7xl mx-auto px-4">
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:py-8">
@@ -93,6 +95,8 @@ fabExternalLink: true
         </article>
     </section>
 </section>
+<!--Rooms-and-offers-widget end-->
+
 
 <div class="bg-ams-primary w-full grid justify-items-center pt-0 xmed:pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
@@ -228,30 +232,23 @@ fabExternalLink: true
 </div>
 <!--art-widget-->
 <section class="w-full bg-ams-base xmed:pb-16">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-6 py-6 xmed:py-0">
         {{ scaled_image(homepage_art_image) }}
-        <article class="relative bg-ams-white shadow-md mx-30 -mt-16 p-16">
-            <header class="title-display text-2xl xmed:text-4xl text-center">
+        <article class="relative bg-ams-white shadow-md xmed:mx-30 xmed:-mt-16 p-4 xmed:p-16 xmed:text-center ">
+            <header class="title-display text-2xl xmed:text-4xl">
                 Ameswell Art Compendium
             </header>
-            <p class="xmed:text-center font-sans text-base xmed:text-lg py-10">
+            <p class="font-sans text-base xmed:text-lg pb-4 xmed:py-10">
                 We are proud to showcase our extensive art collection throughout our property. Check out the <span class="text-ams-cyan">Ameswell Art Compendium</span> for a virtual tour.
             </p>
-            <nav class="xmed:text-center py-4 xmed:pb-0 ">
+            <nav class="py-4 xmed:pb-0 ">
                 <a href="art-compendium.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">LEARN MORE</a>
             </nav>
         </article>        
     </div>
 </section>
-{# <div class="grid auto-cols-fr justify-items-center w-full bg-ams-base pb-0 xmed:pb-6 pt-6 xmed:pt-0 ">
-    <figure class="hidden xmed:block w-full overflow-hidden">
-        {{ homepage_art_carousel(homepage_art_image,splitNav=true) }}
-    </figure>   
-    <figure class="block xmed:hidden w-full overflow-hidden">
-        {{ homepage_art_carousel(homepage_art_image) }}
-    </figure> 
-</div> #}
 <!--art-widget end-->
+
 <!--press widget-->
 <section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
     <div class="max-w-7xl mx-auto px-6">
