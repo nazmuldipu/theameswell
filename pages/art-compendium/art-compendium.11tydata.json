@@ -2,13 +2,12 @@
     "art": [
         {
             "image": {
-                "classes":"h-170 w-full",
                 "artDirection": [
                     {
                         "media": "(min-width:900.1px)",
                         "type": "png",
                         "sizes": "35vw",
-                        "src": "images/art-14",
+                        "src": "images/art-6",
                         "alt": "The lobby interior of the Ameswell Hotel",
                         "intrinsicwidth": "676" 
                     },
@@ -16,15 +15,15 @@
                         "media": "(max-width:900px)",
                         "type": "png",
                         "sizes": "100vw",
-                        "src": "images/art-14",
+                        "src": "images/art-6",
                         "alt": "The lobby interior of the Ameswell Hotel",
                         "intrinsicwidth": "676" 
                     }
                 ]
             },
-            "bgImage":"bg-ams-white",
-            "p1": "HYBYCOZO<br/>Oakland, California, USA<br/>Commissions<br/>Powdercoated steel",
-            "p2": "The Hyperspace Bypass Construction Zone (HYBYCOZO) was founded by artists Yelena Filipchuk and Serge Beaulieu.  Their commissioned pieces draw inspiration from the Kepler mission of NASA’s Ames Research Center, which employed  the dimming and bending of light to determine the size and location of orbiting planets outside our solar system. With  systematically layered planes of interference patterns, HYBYOZO’s sculptures expand the boundaries of light and shadow,  creating an illusion of movement that both educates and inspires.",
+            "bgImage":"bg-ams-black",
+            "p1": "Chul Hyun Ahn Baltimore, Maryland, USA<br/>Three Circles, 2018<br/>Plywood, fiberglass, changing LED lights, mirrors ",
+            "p2": "Chul Hyun Ahn’s mesmerizing sculptures use mirrors and colored LED light to manipulate perspective and invoke  a sensation of infinite distance. His blend of sophisticated technology and fundamental construction creates visual  portals that extend into uncharted space. Through the exploration of materiality, the subconscious, and human  perception, Ahn creates pieces that are experiential, spiritual, and unforgettable.",
             "location":"Location"
         },
         {
@@ -60,32 +59,6 @@
                         "media": "(min-width:900.1px)",
                         "type": "png",
                         "sizes": "35vw",
-                        "src": "images/art-6",
-                        "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
-                    },
-                    {
-                        "media": "(max-width:900px)",
-                        "type": "png",
-                        "sizes": "100vw",
-                        "src": "images/art-6",
-                        "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
-                    }
-                ]
-            },
-            "bgImage":"bg-ams-black",
-            "p1": "Chul Hyun Ahn Baltimore, Maryland, USA<br/>Three Circles, 2018<br/>Plywood, fiberglass, changing LED lights, mirrors ",
-            "p2": "Chul Hyun Ahn’s mesmerizing sculptures use mirrors and colored LED light to manipulate perspective and invoke  a sensation of infinite distance. His blend of sophisticated technology and fundamental construction creates visual  portals that extend into uncharted space. Through the exploration of materiality, the subconscious, and human  perception, Ahn creates pieces that are experiential, spiritual, and unforgettable.",
-            "location":"Location"
-        },
-        {
-            "image": {
-                "artDirection": [
-                    {
-                        "media": "(min-width:900.1px)",
-                        "type": "png",
-                        "sizes": "35vw",
                         "src": "images/art-9",
                         "alt": "The lobby interior of the Ameswell Hotel",
                         "intrinsicwidth": "676" 
@@ -102,7 +75,7 @@
             },
             "bgImage":"bg-ams-main-14",
             "p1": "Chris Carter & Public Design<br/>San Francisco, California, USA<br/>Moffett Hanger One<br/>Digitally modified photograph printed on glass<br/>Guest Elevator Cabs",
-            "p2": "Hangar One is one of the world’s largest freestanding structures as well as the most recognizable landmarks of California’s Silicon Valley. Public Design worked with artist Chris Carter to create a graphic representation of Hangar One as a tribute to NASA Ames Research Center and inspiration for The Ameswell Hotel namesake.",
+            "p2": "Hangar One at the NASA Ames Research Center, is one of the world’s largest freestanding structures, a local landmark, and an iconic symbol of innovation. Working with original photography by artist Chris Carter, Public created a graphic representation of Hangar One as a tribute to The Ameswell Hotel namesake.",
             "location":"Location"
         },
         {
@@ -414,7 +387,7 @@
                 "artDirection": [
                     {
                         "media": "(min-width:900.1px)",
-                        "type": "png",
+                        "type": "jpg",
                         "sizes": "35vw",
                         "src": "images/art-16",
                         "alt": "The lobby interior of the Ameswell Hotel",
@@ -422,7 +395,7 @@
                     },
                     {
                         "media": "(max-width:900px)",
-                        "type": "png",
+                        "type": "jpg",
                         "sizes": "100vw",
                         "src": "images/art-16",
                         "alt": "The lobby interior of the Ameswell Hotel",
@@ -610,6 +583,33 @@
             "bgImage":"bg-ams-main-15",
             "p1": "Lisa Kowalski<br/>Los Altos, California, USA<br/>Color Shape Studies I-III<br/>Acrylic on linen",
             "p2": "Influenced by color theory, Kowalski’s work explores the visual communication between color, pattern and shape. Sophisticated and refined, these repetitive shapes engage the viewer with their graphic appeal.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "classes":"h-170 w-full",
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-14",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-14",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-white",
+            "p1": "HYBYCOZO<br/>Oakland, California, USA<br/>Commissions<br/>Powdercoated steel",
+            "p2": "The Hyperspace Bypass Construction Zone (HYBYCOZO) was founded by artists Yelena Filipchuk and Serge Beaulieu.  Their commissioned pieces draw inspiration from the Kepler mission of NASA’s Ames Research Center, which employed  the dimming and bending of light to determine the size and location of orbiting planets outside our solar system. With  systematically layered planes of interference patterns, HYBYOZO’s sculptures expand the boundaries of light and shadow,  creating an illusion of movement that both educates and inspires.",
             "location":"Location"
         }
     ]
