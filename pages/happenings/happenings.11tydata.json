@@ -47,7 +47,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 3,
       "date": { "day": 2, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 4,
       "date": { "day": 8, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 5,
       "date": { "day": 9, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 7,
       "date": { "day": 15, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "date": { "day": 22, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 9,
       "date": { "day": 23, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 10,
       "date": { "day": 29, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 11,
       "date": { "day": 30, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -135,7 +135,7 @@
       ]
     },    
     {
-      "id": 13,
+      "id": 12,
       "date": { "day": 22, "month": 8, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 13,
       "date": { "day": 25, "month": 8, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -158,7 +158,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 14,
       "date": { "day": 14, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 15,
       "date": { "day": 28, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
@@ -180,9 +180,9 @@
       ]
     }, 
     {
-      "id": 17,
+      "id": 16,
       "date": { "day": 1, "month": 9, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
+      "time": "6:00 PM - 9:00 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
       "image":"images/happenings-events-carlos-reyes",
       "url": "https://rogerbarandrestaurant.com/reservations",
@@ -191,7 +191,29 @@
       ]
     },                 
     {
-      "id": 14,
+      "id": 17,
+      "date": { "day": 14, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MEGAN CHENOT",
+      "image":"images/happenings_events-megan_chenot",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "World-traveling solo performer Megan Chenot's set list has been called “all spice, no filler” as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+      ]
+    },
+    {
+      "id": 18,
+      "date": { "day": 28, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MEGAN CHENOT",
+      "image":"images/happenings_events-megan_chenot",
+      "url": "https://rogerbarandrestaurant.com/reservations",
+      "descriptions": [
+        "World-traveling solo performer Megan Chenot's set list has been called “all spice, no filler” as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+      ]
+    },
+    {
+      "id": 19,
       "date": { "day": 26, "month": 8, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -201,8 +223,8 @@
         "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     },
-    {
-      "id": 4,
+    {   
+      "id": 20,
       "date": { "day": 1, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -211,6 +233,67 @@
       "descriptions": [
         "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
-    }    
-  ]
+    },
+    {
+      "id": 21,
+      "date": { "day": 5, "month": 9, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image":"images/happenings_evants-Yoga_Class",
+      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
+      ]
+    },    
+    {
+      "id": 22,
+      "date": { "day": 12, "month": 9, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image":"images/happenings_evants-Yoga_Class",
+      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
+      ]
+    },    
+    {
+      "id": 23,
+      "date": { "day": 19, "month": 9, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image":"images/happenings_evants-Yoga_Class",
+      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
+      ]
+    },    
+    {
+      "id": 24,
+      "date": { "day": 26, "month": 9, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image":"images/happenings_evants-Yoga_Class",
+      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
+      ]
+    } 
+  ],
+    "subfooter_join_the_list":{
+      "image": {
+          "artDirection": [
+              {
+                  "type": "png",
+                  "sizes": "50vw",
+                  "src": "images/subfooter-join-the-a-list",
+                  "alt": "elle",
+                  "intrinsicwidth": "533" 
+              }
+          ]
+      }
+    }
 }
