@@ -16,5 +16,48 @@
             "href": "fonts/EksellDisplayWeb-Large.woff2",
             "type": "font/woff2"
         }
+    ],
+    "footer_content":[
+        {
+            "text":"Accessibility",
+            "href":"accessibility.html"
+        },
+        {
+            "text":"Privacy Policy",
+            "href":"privacy.html"
+        },
+        {
+            "text":"Contact Us",
+            "href":"contact.html"
+        },
+        {
+            "text":"Careers",
+            "href":"https://ameswellhotel.pinpointhq.com",
+            "rel":"noreferrer",
+            "target":"_blank"           
+        },
+        {
+            "text":"Storey Hotel Mgmt.",
+            "href":"https://www.storeyhospitality.com/",
+            "rel":"noreferrer",
+            "target":"_blank",
+            "pclasses":"xmed:w-28"        
+        },
+        {
+            "text":"Press",
+            "href":"press.html"
+        },
+        {
+            "text":"Offers",
+            "href":"offers.html"
+        },
+        {
+            "text":"Location",
+            "href":"location.html"
+        },
+        {
+            "text":"FAQ",
+            "href":"faq.html"
+        }
     ]
 }
