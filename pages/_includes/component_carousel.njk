@@ -123,7 +123,9 @@
                                             <span>{{slide.icons.sqft}} ft<sup>2</sup> </span>
                                         </li>
                                         <li class="rooms-gallery--icon-sleeps grid justify-items-center content-start text-center w-28">
-                                            {{svg_icon("bed", "Sleeps " + slide.icons.capacity, width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
+                                            {# {{svg_icon("bed",width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
+                                            <span>Sleeps {{slide.icons.capacity}} </span> #}
+                                            {{svg_icon("bed", "Sleeps " + slide.icons.capacity, width="48", height="48", fill="#ec008c", sclass="icon inline-block mt-2")}}
                                         </li>
                                     </ul>
                                     <div class="mt-10 xmed:mt-0 justify-self-center xmed:justify-self-end">
