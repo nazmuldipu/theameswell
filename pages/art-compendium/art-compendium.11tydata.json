@@ -2,13 +2,12 @@
     "art": [
         {
             "image": {
-                "classes":"h-170 w-full",
                 "artDirection": [
                     {
                         "media": "(min-width:900.1px)",
                         "type": "png",
                         "sizes": "35vw",
-                        "src": "images/art-14",
+                        "src": "images/art-6",
                         "alt": "The lobby interior of the Ameswell Hotel",
                         "intrinsicwidth": "676" 
                     },
@@ -16,15 +15,15 @@
                         "media": "(max-width:900px)",
                         "type": "png",
                         "sizes": "100vw",
-                        "src": "images/art-14",
+                        "src": "images/art-6",
                         "alt": "The lobby interior of the Ameswell Hotel",
                         "intrinsicwidth": "676" 
                     }
                 ]
             },
-            "bgImage":"bg-ams-white",
-            "p1": "HYBYCOZO<br/>Oakland, California, USA<br/>Commissions<br/>Powdercoated steel",
-            "p2": "The Hyperspace Bypass Construction Zone (HYBYCOZO) was founded by artists Yelena Filipchuk and Serge Beaulieu.  Their commissioned pieces draw inspiration from the Kepler mission of NASA’s Ames Research Center, which employed  the dimming and bending of light to determine the size and location of orbiting planets outside our solar system. With  systematically layered planes of interference patterns, HYBYOZO’s sculptures expand the boundaries of light and shadow,  creating an illusion of movement that both educates and inspires.",
+            "bgImage":"bg-ams-black",
+            "p1": "Chul Hyun Ahn Baltimore, Maryland, USA<br/>Three Circles, 2018<br/>Plywood, fiberglass, changing LED lights, mirrors ",
+            "p2": "Chul Hyun Ahn’s mesmerizing sculptures use mirrors and colored LED light to manipulate perspective and invoke  a sensation of infinite distance. His blend of sophisticated technology and fundamental construction creates visual  portals that extend into uncharted space. Through the exploration of materiality, the subconscious, and human  perception, Ahn creates pieces that are experiential, spiritual, and unforgettable.",
             "location":"Location"
         },
         {
@@ -51,32 +50,6 @@
             "bgImage":"bg-ams-main-17",
             "p1": "Yufu Shohaku<br/>Winter Camellia, 2020<br/>Madake bamboo & bamboo branches<br/>14 x 14 x 11.5 inches<br/>On Loan from Tai Modern Gallery, Santa Fe",
             "p2": "Yufu Shohaku is a second-generation bamboo artist from Beppu. He is known for traditional Beppu rough-plaited baskets that blend plant roots and bamboo chunks. His work is in the collection of the Asian Art Museum in San Francisco, Eskenazi Museum of Art at lndiani University, and Beppu City Traditional Bamboo Museum.",
-            "location":"Location"
-        },
-        {
-            "image": {
-                "artDirection": [
-                    {
-                        "media": "(min-width:900.1px)",
-                        "type": "png",
-                        "sizes": "35vw",
-                        "src": "images/art-6",
-                        "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
-                    },
-                    {
-                        "media": "(max-width:900px)",
-                        "type": "png",
-                        "sizes": "100vw",
-                        "src": "images/art-6",
-                        "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
-                    }
-                ]
-            },
-            "bgImage":"bg-ams-black",
-            "p1": "Chul Hyun Ahn Baltimore, Maryland, USA<br/>Three Circles, 2018<br/>Plywood, fiberglass, changing LED lights, mirrors ",
-            "p2": "Chul Hyun Ahn’s mesmerizing sculptures use mirrors and colored LED light to manipulate perspective and invoke  a sensation of infinite distance. His blend of sophisticated technology and fundamental construction creates visual  portals that extend into uncharted space. Through the exploration of materiality, the subconscious, and human  perception, Ahn creates pieces that are experiential, spiritual, and unforgettable.",
             "location":"Location"
         },
         {
@@ -610,6 +583,33 @@
             "bgImage":"bg-ams-main-15",
             "p1": "Lisa Kowalski<br/>Los Altos, California, USA<br/>Color Shape Studies I-III<br/>Acrylic on linen",
             "p2": "Influenced by color theory, Kowalski’s work explores the visual communication between color, pattern and shape. Sophisticated and refined, these repetitive shapes engage the viewer with their graphic appeal.",
+            "location":"Location"
+        },
+        {
+            "image": {
+                "classes":"h-170 w-full",
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)",
+                        "type": "png",
+                        "sizes": "35vw",
+                        "src": "images/art-14",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    },
+                    {
+                        "media": "(max-width:900px)",
+                        "type": "png",
+                        "sizes": "100vw",
+                        "src": "images/art-14",
+                        "alt": "The lobby interior of the Ameswell Hotel",
+                        "intrinsicwidth": "676" 
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-white",
+            "p1": "HYBYCOZO<br/>Oakland, California, USA<br/>Commissions<br/>Powdercoated steel",
+            "p2": "The Hyperspace Bypass Construction Zone (HYBYCOZO) was founded by artists Yelena Filipchuk and Serge Beaulieu.  Their commissioned pieces draw inspiration from the Kepler mission of NASA’s Ames Research Center, which employed  the dimming and bending of light to determine the size and location of orbiting planets outside our solar system. With  systematically layered planes of interference patterns, HYBYOZO’s sculptures expand the boundaries of light and shadow,  creating an illusion of movement that both educates and inspires.",
             "location":"Location"
         }
     ]
