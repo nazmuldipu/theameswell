@@ -60,7 +60,7 @@
       sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
       type="image/webp">
     <source 
-      srcset="{{ direction | imgObjSrcSet }}" 
+      srcset="{{ direction | imgObjSrcSet(direction.type) }}" 
       media="{{ direction.media }}" 
       sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
       type="image/{{ direction.type | getImgSourceType }}">
@@ -68,7 +68,7 @@
   {# we assume the first direction is the default to use #}
   {% set default = imgObj.artDirection|first %}
   <img 
-    srcset="{{ default | imgObjSrcSet }}"
+    srcset="{{ default | imgObjSrcSet(default.type) }}"
     src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
     class="{{ imgObj.classes if imgObj.classes else 'w-full' }}"
     sizes="{{ default.sizes if default.sizes else '75vw' }}"

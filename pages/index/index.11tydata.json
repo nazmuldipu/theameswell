@@ -14,7 +14,7 @@
       {
         "classes": "image-loader",
         "media": "(min-width:900.1px)",
-        "sizes": "80vw",
+        "sizes": "100vw",
         "type": "jpg",
         "src": "images/homepage-2-desktop",
         "alt": "The Ameswell hotel exterior",
@@ -23,7 +23,7 @@
       {
         "classes": "image-loader",
         "media": "(max-width:900px)",
-        "sizes": "90vw",
+        "sizes": "100vw",
         "type": "jpg",
         "src": "images/homepage-2-mobile",
         "alt": "The Ameswell hotel exterior",
@@ -655,6 +655,20 @@
         "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
     }
 ],
+    "subfooter_join_the_list":{
+      "image": {
+          "artDirection": [
+              {
+                  "type": "png",
+                  "sizes": "50vw",
+                  "src": "images/subfooter-join-the-a-list",
+                  "alt": "elle",
+                  "intrinsicwidth": "533" 
+              }
+          ]
+      }
+    },
+
 "homepage_art_image": [
  {
   "artDirection": [
@@ -730,5 +744,12 @@
     "textLink":"Google",
     "link":"https://goo.gl/maps/nwU3sEoaoCvvD5pv7"
   }    
+],
+"press_releases":[
+  {
+    "author":"Luxury Travel Magazine",
+    "description":"Inspired by the backdrop of California’s wilderness and Silicon Valley’s legacy of unconventional thinking, this 255-room hotel brings together innovation, art, wellness, sustainability, and natural beauty...",
+    "link":"https://www.luxurytravelmagazine.com/news-articles/the-ameswell-silicon-valleys-new-design-independent-hotel"
+  }
 ]
 }
