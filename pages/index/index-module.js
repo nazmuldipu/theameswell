@@ -35,5 +35,8 @@ const createMenuItem = (event) =>{
 }
 
 const happeningsEle = document.querySelector('#happenings');
-const event = happenigsData.events.find(e => e.id == 4);
-happeningsEle.appendChild(createMenuItem(event));
+happenigsData.events.forEach(element => {
+    if (element.id === 14 || element.id === 16) {
+        happeningsEle.appendChild(createMenuItem(element));
+    }
+});
