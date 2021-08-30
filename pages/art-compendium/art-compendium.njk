@@ -39,11 +39,11 @@ fabExternalLink: true
     </div>
 </section>
 
-<section id="artComponent" class="grid justify-items-center w-full">
+<section id="artComponent" class="grid justify-items-center w-full py-10">
     {% for item in art %}
         <section id="{{item.slug}}" class="panel w-full" data-color="{{item.bgImage}}">
-            <figure class="max-w-screen-xl m-auto xmed:grid xmed:items-center xmed:grid-cols-2 xmed:py-12 xmed:gap-12">
-                <figcaption class="pt-4 xmed:pt-0 px-4 xmed:px-0">
+            <figure class="max-w-screen-xl mx-auto px-4 py-10 xmed:py-32 xmed:grid xmed:items-center xmed:grid-cols-2 xmed:gap-12">
+                <figcaption class="px-2 xmed:px-0">
                     {% if item.images %}
                         <div class="flex flex-col xmed:space-x-1 space-y-1 xmed:space-y-0 xmed:flex-row">
                             {% for image in item.images %}
@@ -54,7 +54,7 @@ fabExternalLink: true
                         {{ scaled_image(item.image) }}
                     {% endif %}
                 </figcaption>
-                <figcaption class="mt-8 xmed:mt-0 xmed:mx-4 p-4 xmed:p-0 
+                <figcaption class="mt-28 xmed:mt-0 xmed:mx-4 px-6 xmed:p-0 
                 {% if item.bgImage == 'bg-ams-white' %}
                         text-ams-primary
                     {% elseif item.bgImage == 'bg-ams-main-12' %}
@@ -71,9 +71,9 @@ fabExternalLink: true
                             {{ item.p1 | safe }}
                         </h2>
                     </header>
-                    <p class="mb-4 xmed:hidden xmed:mb-12">
+                    {# <p class="mb-4 xmed:hidden xmed:mb-12">
                         {{ item.location }}
-                    </p>
+                    </p> #}
                     <p class="mb-4 moreText text-base xmed:text-lg xmed:mb-12">
                         {{ item.p2 }}
                     </p>
