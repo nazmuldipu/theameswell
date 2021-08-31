@@ -429,6 +429,7 @@
     ]
   },
   "roger_image": {
+    "classes":"w-full order-2 xmed:order-1",
     "artDirection": [
       {
         "classes": "image-loader image-loader--white",
@@ -451,6 +452,7 @@
     ]
   },
   "flyby_image": {
+    "classes":"w-full order-2 xmed:order-1",
     "artDirection": [
       {
         "classes": "image-loader image-loader--white",
@@ -473,6 +475,7 @@
     ]
   },
   "airstream_image": {
+    "classes":"w-full order-2 xmed:order-1",
     "artDirection": [
       {
         "classes": "image-loader image-loader--white",
