@@ -19,7 +19,7 @@ const createMenuItem = (event) =>{
     <figure>
         <img class="w-full h-80 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70">
         <figcaption>
-            <header class="pl-4 xmed:pl-3 py-4">
+            <header class="p-4">
                 <span class="text-lg font-sans">
                     ${dateString}
                 </span>
