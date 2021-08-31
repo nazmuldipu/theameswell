@@ -13,13 +13,13 @@ const createMenuItem = (event) =>{
     const date = new Date(event.date.year, event.date.month - 1, event.date.day);
     const dateString = monthNames[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
     let section = document.createElement('section');
-    section.className = "bg-ams-white mb-8 shadow-md mx-4"
+    section.className = "bg-ams-white mb-8 shadow-md"
     section.innerHTML = `
     
     <figure>
         <img class="w-full h-80 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70">
         <figcaption>
-            <header class="pl-4 xmed:pl-3 py-4">
+            <header class="p-4">
                 <span class="text-lg font-sans">
                     ${dateString}
                 </span>
@@ -40,4 +40,3 @@ happenigsData.events.forEach(element => {
         happeningsEle.appendChild(createMenuItem(element));
     }
 });
-

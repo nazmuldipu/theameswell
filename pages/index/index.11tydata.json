@@ -429,6 +429,7 @@
     ]
   },
   "roger_image": {
+    "classes":"w-full order-2 xmed:order-1",
     "artDirection": [
       {
         "classes": "image-loader image-loader--white",
@@ -451,6 +452,7 @@
     ]
   },
   "flyby_image": {
+    "classes":"w-full order-2 xmed:order-1",
     "artDirection": [
       {
         "classes": "image-loader image-loader--white",
@@ -473,6 +475,7 @@
     ]
   },
   "airstream_image": {
+    "classes":"w-full order-2 xmed:order-1",
     "artDirection": [
       {
         "classes": "image-loader image-loader--white",
@@ -669,8 +672,7 @@
       }
     },
 
-"homepage_art_image": [
- {
+"homepage_art_image": {
   "artDirection": [
     {
       "classes": "image-loader",
@@ -692,29 +694,6 @@
     }
   ]
  },
- {
-  "artDirection": [
-    {
-      "classes": "image-loader",
-      "media": "(min-width:900.1px)",
-      "sizes": "100vw",
-      "type": "jpg",
-      "src": "images/homepage-art-desktop",
-      "alt": "Huntington Beach",
-      "intrinsicwidth": "1248"
-    },
-    {
-      "classes": "image-loader",
-      "media": "(max-width:900px)",
-      "sizes": "100vw",
-      "type": "jpg",
-      "src": "images/homepage-art-desktop",
-      "alt": "Huntington Beach",
-      "intrinsicwidth": "1248"
-    }
-  ]
- }
-],
 "press__widget":[
   {
     "heading":"Outstanding",
