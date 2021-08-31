@@ -34,7 +34,7 @@ fabExternalLink: true
             <div class="mx-4 xmed:mx-0">
                 {{ scaled_image(entrance_image) }}
             </div>
-            <div class="z-0 max-w-screen-lg mx-3 pb-4 px-8 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+            <div class="z-0 max-w-screen-lg mx-3 pb-4 px-1 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                 <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
                     We believe in a foundation of exceptional experiences, thoughtful amenities, and effortless quality.
                 </h2>
@@ -48,6 +48,8 @@ fabExternalLink: true
         </section>
     </article>
 </div>
+
+<!--Rooms-and-offers-widget-->
 <section class="w-full bg-pattern--ams-grey xmed:pb-24 z-10">
     <section class="max-w-7xl mx-auto px-4">
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:py-8">
@@ -56,12 +58,17 @@ fabExternalLink: true
                     <h2 class="title-display text-3xl pb-4">
                         More than enough room
                     </h2>
-                    <p class="text-ams-primary text-lg">
+                    <p class="text-ams-primary text-md">
                         Each of our 255 guest rooms is defined by comfort and space, privacy and respite. Sitting area and workspace for your waking hours, organic bath products for self-care, and luxurious sleep.
                     </p>
-                    <nav class="pt-7 pb-2 xmed:text-center">
+                    <nav class="pt-7 pb-2 hidden xmed:block xmed:text-center">
                         <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL ROOMS</a>
                     </nav>
+                    <nav class="pt-7 pb-2 xmed:hidden xmed:text-center">
+                        <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW DETAILS</a>
+                    </nav> 
+
+                    </nav>                    
                 </div>
             </aside>
             <aside class="xmed:col-span-2">
@@ -77,7 +84,7 @@ fabExternalLink: true
                     <h2 class="title-display text-3xl pb-4">
                         Offers
                     </h2>
-                    <p class="text-ams-primary text-lg">
+                    <p class="text-ams-primary text-md">
                         Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
                     </p>
                     <nav class="pt-7 pb-2 xmed:text-center">
@@ -93,6 +100,8 @@ fabExternalLink: true
         </article>
     </section>
 </section>
+<!--Rooms-and-offers-widget end-->
+
 <div class="bg-ams-primary w-full grid justify-items-center pt-0 xmed:pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
         <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white text-center xmed:text-left">
@@ -149,12 +158,12 @@ fabExternalLink: true
 </div>
 
 <div class="grid justify-items-center w-full bg-ams-base">
-    <article class="mt-12 xmed:mt-4 xmed:mb-10 pt-4 xmed:px-4 ">
+    <article class="xmed:mt-4 xmed:mb-10 xmed:px-4">
         <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
             <div class="hidden xmed:block mx-4 xmed:mx-0 bg-ams-white xmed:bg-ams-base">
                 {{ scaled_image(event_spaces_image) }}
             </div>
-            <div class="xmed:-mt-10 pb-4 px-4 xmed:p-10 z-0 max-w-screen-xmed xmed:shadow-md bg-ams-white ">
+            <div class="xmed:-mt-10 xmed:mx-0 mx-6 mt-12 mb-12 xmed:mb-0 p-6 xmed:p-10 z-0 max-w-screen-xmed xmed:shadow-md bg-ams-white">
                 <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
                     Not your typical meeting
                 </h2>
@@ -195,34 +204,61 @@ fabExternalLink: true
     </article>
 </div>
 <div class="grid bg-pattern--ams-grey xmed:justify-items-center w-full py-9 xmed:pt-24 xmed:pb-28">
-    <article id="happenings" class="grid items-start max-w-screen-lg w-full xmed:grid-cols-3 xmed:gap-10">
+    <article id="happenings" class="grid items-start max-w-screen-xmed w-full xmed:grid-cols-3 xmed:gap-10">
         <section class="mb-8 shadow-md px-4 xmed:px-0">
-            <div class="shadow-md p-4 xmed:p-8 bg-ams-white">
+            <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
                 <h2 class="title-display text-2xl font-serif font-medium py-4">
                     Happenings
                 </h2>
                 <div class="text-base xmed:text-lg font-sans">
                     Ameswell offers special event programming to add something special to your stay.
                 </div>
-                <div class="pt-7 pb-2 text-xs text-center xmed:text-lg font-serif font-medium">
+                <div class="pt-7 pb-2 text-center hidden xmed:block xmed:text-lg font-serif font-medium">
                     <a href="happenings.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL HAPPENINGS</a>
                 </div>
+                <div class="pt-7 pb-2 text-left block xmed:hidden xmed:text-lg font-serif font-medium">
+                    <a href="happenings.html" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">View All Happenings</a>
+                </div>                
             </div>
         </section>
         
     </article>
 </div>
 <!--art-widget-->
-<div class="grid auto-cols-fr justify-items-center w-full bg-ams-base pb-0 xmed:pb-6 pt-6 xmed:pt-0 ">
-    <figure class="hidden xmed:block w-full overflow-hidden">
-        {{ homepage_art_carousel(homepage_art_image,splitNav=true) }}
-    </figure>   
-    <figure class="block xmed:hidden w-full overflow-hidden">
-        {{ homepage_art_carousel(homepage_art_image) }}
-    </figure> 
-</div>
+<section class="w-full bg-ams-base xmed:pb-16">
+    <div class="max-w-7xl mx-auto px-6 py-6 xmed:py-0">
+        {{ scaled_image(homepage_art_image) }}
+        <article class="relative bg-ams-white shadow-md xmed:mx-30 xmed:-mt-16 p-4 xmed:p-16 xmed:text-center ">
+            <header class="title-display text-2xl xmed:text-4xl">
+                Ameswell Art Compendium
+            </header>
+            <p class="font-sans text-base xmed:text-lg pb-4 xmed:py-10">
+                We are proud to showcase our extensive art collection throughout our property. Check out the <a href="art-compendium.html" class="text-ams-cyan">Ameswell Art Compendium</a> for a virtual tour.
+            </p>
+            <nav class="py-4 xmed:pb-0 ">
+                <a href="art-compendium.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">LEARN MORE</a>
+            </nav>
+        </article>        
+    </div>
+</section>
 <!--art-widget end-->
+
 <!--press widget-->
+<section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
+    <div class="max-w-7xl mx-auto px-6">
+        {% for art in press_releases%}
+            <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
+                <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
+                    <p class="xmed:px-8 pb-4 text-lg">“{{art.description}}”</p>
+                    <a href="{{art.link}}" target="_blank"><p class="text-ams-cyan font-semibold underline">-{{art.author}}</p></a>
+                    <nav class="mt-8">
+                        <a href="press.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">READ PRESS</a>
+                    </nav>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</section>
 <div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
     <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
         <section>

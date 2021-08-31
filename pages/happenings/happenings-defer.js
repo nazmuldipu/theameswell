@@ -197,7 +197,7 @@ const renderOurHappeningsCard = (event) => {
               </figure>              
             </span>
             <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
-              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Book Now</a>
+              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Book a Room</a>
               <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">More Info</a>
             </div>
           </section>`;
@@ -387,7 +387,6 @@ Happenings.prototype = {
   },
   showOurHappenings: function (el, evs) {
     let evHtml = "";
-    let count = 0;
     let curEvents = [];
     if(evs && evs.length > 0){
       for (let j = 0; j < evs.length; j++) {
@@ -395,18 +394,17 @@ Happenings.prototype = {
       }
     }
     else{
-      const days = getDaysInMonth(this.calendar.year, this.calendar.month);
-      for (let i = days; i > 0; i--) {
-        const evs = getDayEvents(
-          this.calendar.year,
-          this.calendar.month,
-          i,
-          events
-        );
-        curEvents.push(...evs);
+      const today = new Date();
+      for(let i = 0; i < events.length; i++){
+        const evn = events[i];
+        const evnDate = new Date(evn.date.year, (evn.date.month - 1), evn.date.day);
+        if(evnDate.getTime() >= today.getTime()){
+          console.log(evn.id, evn.title, evn.date);
+          curEvents.push(evn);
+        }        
         if(!this.viewAll && curEvents.length >= 3) break;
       }
-      curEvents.reverse();
+      
       curEvents.forEach(ev =>{
         evHtml += renderOurHappeningsCard(ev);
       })
