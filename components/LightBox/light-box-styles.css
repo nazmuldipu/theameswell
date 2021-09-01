@@ -76,7 +76,6 @@ body.hidden-scroll {
   position: fixed;
   top: 50%;
   margin-top: -22px;
-  margin-right: 7px;
   height: 38px;
   width: 41px;
   line-height: 35px;
@@ -86,6 +85,7 @@ body.hidden-scroll {
   font-family: Arial, Baskerville, monospace;
   color: #857550;
   background-color: #ffff;
+  opacity: 1;
   padding: 0px;
   z-index: 10006;
 }
@@ -93,12 +93,13 @@ body.hidden-scroll {
 /* line 95, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button.sl-next {
   right: 5px;
-  font-size: 2.1rem;
+  padding-bottom: 5px;
 }
 
 /* line 100, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button.sl-prev {
   left: 5px;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 35.5em) {
@@ -139,7 +140,6 @@ body.hidden-scroll {
   -ms-touch-action: none;
   touch-action: none;
   z-index: 10000;
-  border: 4px solid white;
 }
 
 /* line 138, ../sass/simplelightbox.scss */
