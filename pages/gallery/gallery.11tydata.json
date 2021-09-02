@@ -4,19 +4,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-1",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2304" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-1",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2304" 
                 }
             ]
         },
@@ -24,19 +24,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-2",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "1561" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-2",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "1561" 
                 }
             ]
         },
@@ -44,19 +44,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-3",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-3",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -64,19 +64,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-4",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-4",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -84,19 +84,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-5",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-5",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -104,19 +104,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-6",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-6",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -124,19 +124,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-7",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2304" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-7",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2304" 
                 }
             ]
         },
@@ -144,19 +144,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-8",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "6720" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-8",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "6720" 
                 }
             ]
         },
@@ -164,19 +164,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-9",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-9",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -184,19 +184,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-10",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-10",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -204,19 +204,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-11",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-11",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -224,19 +224,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-12",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-12",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -244,19 +244,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-13",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-13",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -264,19 +264,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-14",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2304" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-14",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2304" 
                 }
             ]
         },
@@ -284,19 +284,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-15",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "6330" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-15",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "6330" 
                 }
             ]
         },
@@ -304,19 +304,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-16",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2304" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-16",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2304" 
                 }
             ]
         },
@@ -324,19 +324,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-17",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2304" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-17",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2304" 
                 }
             ]
         },
@@ -344,19 +344,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-18",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2500" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-18",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2500" 
                 }
             ]
         },
@@ -364,19 +364,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-19",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2304" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-19",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2304" 
                 }
             ]
         },
@@ -384,19 +384,19 @@
             "artDirection": [
                 {
                     "media": "(min-width:900.1px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-20",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2520" 
+                    "intrinsicwidth": "2304" 
                 },
                 {
                     "media": "(max-width:900px)",
-                    "type": "png",
+                    "type": "jpg",
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-20",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1280" 
+                    "intrinsicwidth": "2304" 
                 }
             ]
         }
