@@ -14,12 +14,13 @@ const imgOutputDir = join(__dirname, '..', 'images', 'output');
  */
 const getImgSizes = imgName => {
     const sizes = readdirSync(imgOutputDir)
-                    .filter(filename => filename.startsWith(imgName))
+                    .filter(filename => filename.startsWith(imgName + DIMENSION_SEP))
                     .reduce((sizes, filename) => {
-                        // anticipating filenames of form <name>-<size>.<ext>
+                        // anticipating filenames of form <name>_<size>.<ext>
                         const sizeEnd = filename.lastIndexOf('.');
                         const sizeStart = filename.lastIndexOf(DIMENSION_SEP) + 1;
                         const fileSize = filename.substring(sizeStart, sizeEnd);
+                        console.log('end, start, size', sizeEnd, sizeStart, fileSize)
                         // filter out original file
                         !isNaN(fileSize) && sizes.push(fileSize)
                         return sizes;
