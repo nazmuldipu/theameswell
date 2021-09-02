@@ -276,16 +276,28 @@ const renderHead = function (opts) {
   return `<thead><tr class="days-name">${arr.join("")}</tr></thead>`;
 };
 
+const shouldShowPreviousMonthArrow = function (opts, year, month) {
+  if (opts.minYear > year) return false;
+  if (opts.minYear === year && opts.minMonth >= month) return false;
+  return true;
+};
+
+const shouldShowNextMonthArrow = function (opts, year, month) {
+  if (opts.maxYear < year) return false;
+  if (opts.maxYear === year && opts.maxMonth <= month) return false;
+  return true;
+};
+
 const renderTitle = function (instance, year, month, randId) {
   var opts = instance._o;
   let html = `<div id="${randId}" class="daypicker-title" role="heading" aria-live="assertive">`;
 
   // Set month and year label, nav buttons
   html += `<div class="daypicker-label"> ${opts.dpickerConst.months[month]} ${year} </div>`;
-  if (!(opts.minYear > year || opts.minMonth >= month)) {
+  if (shouldShowPreviousMonthArrow(opts, year, month)) {
     html += `<button class="daypicker-prev" type="button">${opts.dpickerConst.previousMonth}</button>`;
   }
-  if (!(opts.maxYear < year || opts.maxMonth <= month)) {
+  if (shouldShowNextMonthArrow(opts, year, month)) {
     html += `<button class="daypicker-next" type="button">${opts.dpickerConst.nextMonth}</button>`;
   }
 
