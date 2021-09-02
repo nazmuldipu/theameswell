@@ -1,13 +1,13 @@
 const readMoreBtn = document.querySelectorAll(".read-more__btn");
-const moreText = document.querySelectorAll(".moreText");
-const toggleArrow=document.querySelectorAll(".toggle-arrow");
 
-for (let i = 0; i < readMoreBtn.length; i++) {
-    readMoreBtn[i].addEventListener("click", (e) => {
-        moreText[i].classList.toggle('active') ? readMoreBtn[i].innerText = "LESS" : readMoreBtn[i].innerText = "MORE";
-        toggleArrow[i].classList.toggle('active');
-    })
-}
+readMoreBtn.forEach(btn =>{
+    btn.addEventListener("click", (e) => {
+        const parentComponent = btn.parentElement.parentElement;
+        parentComponent.querySelector('.moreText').classList.toggle('active')? btn.innerText = "LESS" : btn.innerText = "MORE";
+        parentComponent.querySelector('.toggle-arrow').classList.toggle('active');        
+    });
+});
+
 const trim = (str) => {
     return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, '');
 };
