@@ -520,7 +520,7 @@
                     "artDirection": [
                         {
                             "media": "(min-width:900.1px)",
-                            "type": "png",
+                            "type": "jpg",
                             "sizes": "35vw",
                             "src": "images/art-17-1",
                             "alt": "Lisa Kowalski arts",
@@ -528,7 +528,7 @@
                         },
                         {
                             "media": "(max-width:900px)",
-                            "type": "png",
+                            "type": "jpg",
                             "sizes": "100vw",
                             "src": "images/art-17-1",
                             "alt": "Lisa Kowalski arts",
@@ -542,7 +542,7 @@
                     "artDirection": [
                         {
                             "media": "(min-width:900.1px)",
-                            "type": "png",
+                            "type": "jpg",
                             "sizes": "35vw",
                             "src": "images/art-17-2",
                             "alt": "Lisa Kowalski arts",
@@ -550,7 +550,7 @@
                         },
                         {
                             "media": "(max-width:900px)",
-                            "type": "png",
+                            "type": "jpg",
                             "sizes": "100vw",
                             "src": "images/art-17-2",
                             "alt": "Lisa Kowalski arts",
@@ -563,7 +563,7 @@
                     "artDirection": [
                         {
                             "media": "(min-width:900.1px)",
-                            "type": "png",
+                            "type": "jpg",
                             "sizes": "35vw",
                             "src": "images/art-17-3",
                             "alt": "Lisa Kowalski arts",
@@ -571,7 +571,7 @@
                         },
                         {
                             "media": "(max-width:900px)",
-                            "type": "png",
+                            "type": "jpg",
                             "sizes": "100vw",
                             "src": "images/art-17-3",
                             "alt": "Lisa Kowalski arts",
@@ -591,7 +591,7 @@
                 "artDirection": [
                     {
                         "media": "(min-width:900.1px)",
-                        "type": "png",
+                        "type": "jpg",
                         "sizes": "35vw",
                         "src": "images/art-14",
                         "alt": "The lobby interior of the Ameswell Hotel",
@@ -599,7 +599,7 @@
                     },
                     {
                         "media": "(max-width:900px)",
-                        "type": "png",
+                        "type": "jpg",
                         "sizes": "100vw",
                         "src": "images/art-14",
                         "alt": "The lobby interior of the Ameswell Hotel",
