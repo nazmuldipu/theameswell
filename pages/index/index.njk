@@ -104,25 +104,26 @@ fabExternalLink: true
 
 <div class="bg-ams-primary w-full grid justify-items-center pt-0 xmed:pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
-        <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white text-center xmed:text-left">
+        <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white text-left">
             Bar. Restaurant. Cafe.
         </h2>
-        <p class="pb-6 text-ams-white text-center xmed:text-left">
+        <p class="pb-6 text-ams-white text-left">
             Options for every meal and in between craving, and every dietary desire—you can eat and drink with us all day, every day.
         </p>
-        <div class="text-center xmed:text-left">
-            <a href="dining.html" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase">LEARN MORE</a>
+        <div class="text-left">
+            <a href="dining.html" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase xmed:hidden">LEARN MORE</a>
+            <a href="dining.html" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase hidden xmed:inline-block">VIEW ALL ROOMS</a>
         </div>
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
             <figure class="grid grid-cols-1  gap-4 items-center mb-6">
                 {{ scaled_image(roger_image) }}
                 <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
-                    <header class="text-center">
+                    <header class="text-left xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
                            <a href="dining.html#roger">ROGER</a>
                         </h3>
                     </header>
-                    <p class="text-center">
+                    <p class="text-left xmed:text-center">
                         An indoor/outdoor bar and restaurant
                     </p>
                 </figcaption>
@@ -130,12 +131,12 @@ fabExternalLink: true
             <figure class="grid grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
                 {{ scaled_image(flyby_image) }}
                 <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
-                    <header class="text-center">
+                    <header class="text-left xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
                            <a href="dining.html#the_flyby">THE FLYBY</a>
                         </h3>
                     </header>
-                    <p class="text-center">
+                    <p class="text-left xmed:text-center">
                         All-day coffee and fast casual meals
                     </p>
                 </figcaption>
@@ -143,12 +144,12 @@ fabExternalLink: true
             <figure class="grid grid-cols-1 xmed:justify-items-end gap-4 items-center mb-6">
                 {{ scaled_image(airstream_image) }}
                 <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
-                    <header class="text-center">
+                    <header class="text-left xmed:text-center">
                         <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
                             <a href="dining.html#airstream_bar">AIRSTREAM BAR</a>
                         </h3>
                     </header>
-                    <p class="text-center">
+                    <p class="text-left xmed:text-center">
                         Outdoor bar for the pool, lawn and events
                     </p>
                 </figcaption>
