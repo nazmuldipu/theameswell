@@ -14,7 +14,7 @@ fabExternalLink: true
 {% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
 {% from "media-carousel.njk" import media_carousel, special_carousel, homepage_art_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image %}
+{% from "macros.njk" import scaled_image, offersArticle %}
 {% from "svgicon.njk" import svg_icon %}
 
 <div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-center large:bg-inherit w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
@@ -80,17 +80,7 @@ fabExternalLink: true
 
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
             <aside>
-                <div class="xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
-                    <h2 class="title-display text-3xl pb-4">
-                        Offers
-                    </h2>
-                    <p class="text-ams-primary text-md">
-                        Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
-                    </p>
-                    <nav class="pt-7 pb-2 xmed:text-center">
-                        <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
-                    </nav>
-                </div>
+                {{offersArticle()}}
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white p-4">

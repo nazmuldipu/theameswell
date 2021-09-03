@@ -12,8 +12,8 @@ fabExternalLink: true
 {% from "videos.njk" import lazyvideo %}
 {% from "icons.njk" import svgicon %}
 {% from "media-carousel.njk" import media_carousel, special_carousel %}
-{% from "component_carousel.njk" import component_carousel %}
-{% from "macros.njk" import scaled_image %}
+{% from "component_carousel.njk" import component_carousel, homepage_offers_carousel %}
+{% from "macros.njk" import scaled_image, offersArticle %}
 {% from "buttons.njk" import primaryButton %}
 {% from "svgicon.njk" import svg_icon %}
 
@@ -215,25 +215,20 @@ fabExternalLink: true
     {% endfor %}
 </div>
 
-<div class="w-full grid xmed:hidden justify-items-center bg-pattern--ams-grey py-6 xmed:py-20">
-   <section class="grid justify-items-center max-w-screen-xl xmed:px-16 mx-6 xmed:mx-0">
-        <div class="w-full mx-6 xmed:mx-0 py-4 xmed:py-9 px-4 shadow-sm xmed:shadow-md bg-ams-white grid">
-            <h2 class="title-display text-2xl xmed:text-4xl pb-4 xmed:text-center"> Offers </h2>
-            <div class="xmed:text-center text-lg max-w-6xl mx-auto"> Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel. </div>
-            <div class="xmed:hidden pt-4 pb-4">
-                <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW OFFERS</a>
-            </div>
-        </div>
+<section class="xmed:hidden w-full bg-pattern--ams-grey xmed:pb-24 z-10">
+    <section class="max-w-7xl mx-auto px-4">
+        <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
+            <aside class="mb-12">
+                {{offersArticle()}}
+            </aside>
+            <aside class="xmed:col-span-2">
+                <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white">
+                    {{ homepage_offers_carousel(offers, isRoomDetail = true) }}
+                </figure>
+            </aside>
+        </article>
     </section>
-    
-    <section class="grid mt-6 justify-items-center max-w-screen-xl xmed:px-16 mx-6 xmed:mx-0">
-        <div class="w-full grid mx-6 py-4 xmed:py-9 xmed:px-4 shadow-sm xmed:shadow-md bg-ams-white">
-            <figure class="w-full overflow-hidden">
-                {{ component_carousel(offers) }}
-            </figure>
-        </div>
-    </section>
-</div>
+</section>
 
 <div class="grid justify-items-center bg-ams-primary w-full p-8">
     <article class="max-w-screen-xl p-8 bg-ams-white w-full">
