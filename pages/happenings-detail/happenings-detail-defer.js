@@ -56,10 +56,10 @@ const render_right = (event) => {
     const tableUrl = "https://rogerbarandrestaurant.com/reservations";
     html += `<div class="flex">
     <div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
-    <a class="w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${classUrl}" target="_blank">Book Class</a>
+    <a class="w-32 small:w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${classUrl}" target="_blank">Book Class</a>
   </div>
   <div class="ml-4 pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
-    <a class="w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${tableUrl}" target="_blank">Book Table</a>
+    <a class="w-32 small:w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${tableUrl}" target="_blank">Book Table</a>
   </div>
     </div>
   `;
