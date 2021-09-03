@@ -122,6 +122,14 @@
         @apply xmed:top-64;
         @apply w-full;
     }
+    .segment-outer {
+        @apply w-full;
+    }
+    .segment-inner {
+        @apply max-w-screen-lg;
+        @apply overflow-hidden;
+        @apply mx-auto;
+    }
 }
 
 x-cloak {
@@ -377,16 +385,6 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 
 
 /****  end page-index ********************************/
-.segment-outer {
-    @apply w-full;
-    @apply text-center;
-}
-.segment-inner {
-    @apply max-w-screen-xl;
-    @apply overflow-hidden;
-    @apply mx-auto;
-    @apply text-left;
-}
 
 .gallery-image__column {
     column-count: 2;
