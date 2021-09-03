@@ -50,9 +50,25 @@ const render_right = (event) => {
         <p class="pt-3 text-lg"> ${event.descriptions[i]} </p>
         `;
   }
-  html += `<div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
+  const id = event.id;
+  if (id == 10 || id == 17 || id == 18 || id == 19 || id == 20) {
+    const classUrl = "https://app.squarespacescheduling.com/schedule.php?owner=23496406";
+    const tableUrl = "https://rogerbarandrestaurant.com/reservations";
+    html += `<div class="flex">
+    <div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
+    <a class="w-32 small:w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${classUrl}" target="_blank">Book Class</a>
+  </div>
+  <div class="ml-4 pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
+    <a class="w-32 small:w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${tableUrl}" target="_blank">Book Table</a>
+  </div>
+    </div>
+  `;
+  } else {
+    html += `<div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
     <a class="w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Book a Room</a>
   </div>`;
+  }
+  
   return html;
 };
 const renderOurHappeningsCard = (event) => {
