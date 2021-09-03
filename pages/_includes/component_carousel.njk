@@ -141,7 +141,7 @@
         </div>
     </media-carousel>
 {% endmacro %}
-{% macro homepage_offers_carousel(content) %}
+{% macro homepage_offers_carousel(content, isRoomDetail = false) %}
     <media-carousel>
         <div class="swiper-container w-full h-full relative overflow-hidden">
             <nav class="room-car-nav {{ 'px-8' if isRoomDetail == true }}">
