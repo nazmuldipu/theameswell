@@ -96,12 +96,12 @@ const renderOurHappeningsCard = (event) => {
 const showAlsoLike = (event) => {
   let evHtml = "";
   let count = 0;
-  let eDate = new Date(event.date.year, event.date.month, event.date.day);
+  let eDate = new Date();
     
   for (let i = 0; i < events.length; i++) {
     const evDate = new Date(
       events[i].date.year,
-      events[i].date.month,
+      events[i].date.month - 1,
       events[i].date.day
     );
     if (evDate.getTime() >= eDate.getTime()) {
