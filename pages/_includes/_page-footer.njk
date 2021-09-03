@@ -45,7 +45,7 @@
         </a>
         <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-hotel">
             <ul class="grid grid-cols-footer-mobile xmed:grid-cols-40-60 gap-x-6 xmed:gap-x-10 xmed:pt-4">
-                {% for item in data.footer_content|sort(attribute='text') %}
+                {% for item in data.footer_content %}
                     <li class="py-2 {% if item.pclasses %}  {{item.pclasses}}  {% endif %} ">
                         <a  {% if item.rel %} rel="{{item.rel}}" {% endif %}
                             {% if item.target %}   target="{{item.target}}" {% endif %} 
