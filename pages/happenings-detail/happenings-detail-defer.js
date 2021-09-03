@@ -51,7 +51,7 @@ const render_right = (event) => {
         `;
   }
   html += `<div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
-    <a class="w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Reserve Here</a>
+    <a class="w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Book a Table</a>
   </div>`;
   return html;
 };
