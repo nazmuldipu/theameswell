@@ -5,7 +5,7 @@
 @media all and ( max-width: 899px ) {
     .segment__cta--green:after{
         border-top-width: 2px;
-        left: 30%;
+        left: 0;
         width: 30%;
     }
 }
