@@ -23,12 +23,8 @@
             "href":"accessibility.html"
         },
         {
-            "text":"Privacy Policy",
-            "href":"privacy.html"
-        },
-        {
-            "text":"Contact Us",
-            "href":"contact.html"
+            "text":"Offers",
+            "href":"offers.html"
         },
         {
             "text":"Careers",
@@ -37,27 +33,31 @@
             "target":"_blank"           
         },
         {
-            "text":"Storey Hotel Mgmt.",
-            "href":"https://www.storeyhospitality.com/",
-            "rel":"noreferrer",
-            "target":"_blank",
-            "pclasses":"xmed:w-28"        
-        },
-        {
             "text":"Press",
             "href":"press.html"
         },
         {
-            "text":"Offers",
-            "href":"offers.html"
+            "text":"Contact Us",
+            "href":"contact.html"
         },
         {
-            "text":"Location",
-            "href":"location.html"
+            "text":"Privacy Policy",
+            "href":"privacy.html"
         },
         {
             "text":"FAQ",
             "href":"faq.html"
+        },
+        {
+            "text":"Storey Hotel Mgmt.",
+            "href":"https://www.storeyhospitality.com/",
+            "rel":"noreferrer",
+            "target":"_blank",
+            "pclasses":"xmed:w-40"        
+        },
+        {
+            "text":"Location",
+            "href":"location.html"
         }
     ]
 }
