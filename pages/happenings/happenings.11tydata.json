@@ -27,8 +27,9 @@
       "date": { "day": 18, "month": 8, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
@@ -38,8 +39,9 @@
       "date": { "day": 21, "month": 8, "year": 2021 },
       "time": "7:00",
       "title": "DIERKS BENTLEY: BEERS ON ME TOUR",
-      "image":"images/happenings_evants-DIERKS_BENTLEY",
-      "url": "https://www.livenation.com/venue/KovZpZA6ta1A/shoreline-amphitheatre-events",
+      "image": "images/happenings_evants-DIERKS_BENTLEY",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://www.livenation.com/venue/KovZpZA6ta1A/shoreline-amphitheatre-events"}],
       "descriptions": [
         "Concerts are back at Shoreline Amphitheatre! Get tickets to the Beers on Me Tour 2021 with Dierks Bentley, Riley Green and Parker McCollum. ",
         "Make a night of it with an overnight stay at The Ameswell Hotel and dinner and drinks before the show (and more drinks after) at Roger Bar and Restaurant.",
@@ -48,102 +50,114 @@
     },
     {
       "id": 3,
-      "date": { "day": 2, "month": 9, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
-      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
-      "image":"images/happenings_evants-Jimmy_Ashley",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "date": { "day": 22, "month": 8, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
       ]
     },
     {
       "id": 4,
-      "date": { "day": 8, "month": 9, "year": 2021 },
+      "date": { "day": 25, "month": 8, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
       "id": 5,
-      "date": { "day": 15, "month": 9, "year": 2021 },
-      "time": "4PM - 12AM",
-      "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "date": { "day": 26, "month": 8, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image": "images/happenings_evants-Jimmy_Ashley",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     },
     {
       "id": 6,
-      "date": { "day": 22, "month": 9, "year": 2021 },
-      "time": "4PM - 12AM",
-      "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "date": { "day": 1, "month": 9, "year": 2021 },
+      "time": "6:00 PM - 9:00 PM",
+      "title": "LIVE MUSIC WITH CARLOS REYES",
+      "image": "images/happenings-events-carlos-reyes",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
       ]
     },
     {
       "id": 7,
-      "date": { "day": 23, "month": 9, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
-      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
-      "image":"images/happenings_evants-Jimmy_Ashley",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "date": { "day": 1, "month": 9, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
       "id": 8,
-      "date": { "day": 29, "month": 9, "year": 2021 },
-      "time": "4PM - 12AM",
-      "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "date": { "day": 2, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image": "images/happenings_evants-Jimmy_Ashley",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     },
     {
       "id": 9,
-      "date": { "day": 30, "month": 9, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
-      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
-      "image":"images/happenings_evants-Jimmy_Ashley",
-      "url": "https://rogerbarandrestaurant.com/reservations",
-      "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
-      ]
-    },    
-    {
-      "id": 10,
-      "date": { "day": 22, "month": 8, "year": 2021 },
-      "time": "10:30 - 11:30 am",
+      "date": { "day": 5, "month": 9, "year": 2021 },
+      "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
-      "image":"images/happenings_evants-Yoga_Class",
-      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": true,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
+      ]
+    },
+    {
+      "id": 10,
+      "date": { "day": 8, "month": 9, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": true,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
       "id": 11,
-      "date": { "day": 25, "month": 8, "year": 2021 },
-      "time": "4PM - 12AM",
-      "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "date": { "day": 12, "month": 9, "year": 2021 },
+      "time": "10:30 - 11:30 am",
+      "title": "YOGA ON THE LAWN",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
       ]
     },
     {
@@ -151,117 +165,123 @@
       "date": { "day": 14, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
-      "image":"images/happenings-events-megan-chenot",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "image": "images/happenings-events-megan-chenot",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "Description: World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
       ]
     },
     {
       "id": 13,
-      "date": { "day": 28, "month": 9, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
-      "title": "LIVE MUSIC WITH MEGAN CHENOT",
-      "image":"images/happenings-events-megan-chenot",
-      "url": "https://rogerbarandrestaurant.com/reservations",
-      "descriptions": [
-        "Description: World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
-      ]
-    }, 
-    {
-      "id": 14,
-      "date": { "day": 1, "month": 9, "year": 2021 },
-      "time": "6:00 PM - 9:00 PM",
-      "title": "LIVE MUSIC WITH CARLOS REYES",
-      "image":"images/happenings-events-carlos-reyes",
-      "url": "https://rogerbarandrestaurant.com/reservations",
-      "descriptions": [
-        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
-      ]
-    },                 
-    {
-      "id": 15,
-      "date": { "day": 26, "month": 8, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
-      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
-      "image":"images/happenings_evants-Jimmy_Ashley",
-      "url": "https://rogerbarandrestaurant.com/reservations",
-      "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
-      ]
-    },
-    {   
-      "id": 16,
-      "date": { "day": 1, "month": 9, "year": 2021 },
+      "date": { "day": 15, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
-      "image":"images/happenings_evants-Wine_Wednesdays",
-      "url": "https://rogerbarandrestaurant.com/reservations",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
-      "id": 17,
-      "date": { "day": 5, "month": 9, "year": 2021 },
-      "time": "10:00 - 11:00 am",
-      "title": "YOGA ON THE LAWN",
-      "image":"images/happenings_evants-Yoga_Class",
-      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
-      "descriptions": [
-        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
-        "Join us after class for Sunday Brunch at Roger!"        
-      ]
-    },    
-    {
-      "id": 18,
-      "date": { "day": 12, "month": 9, "year": 2021 },
-      "time": "10:30 - 11:30 am",
-      "title": "YOGA ON THE LAWN",
-      "image":"images/happenings_evants-Yoga_Class",
-      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
-      "descriptions": [
-        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
-      ]
-    },    
-    {
-      "id": 19,
+      "id": 14,
       "date": { "day": 19, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
-      "image":"images/happenings_evants-Yoga_Class",
-      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
       ]
-    },    
+    },
     {
-      "id": 20,
+      "id": 15,
+      "date": { "day": 22, "month": 9, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },
+    {
+      "id": 16,
+      "date": { "day": 23, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "image": "images/happenings_evants-Jimmy_Ashley",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
+    },
+    {
+      "id": 17,
       "date": { "day": 26, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
-      "image":"images/happenings_evants-Yoga_Class",
-      "url": "https://app.squarespacescheduling.com/schedule.php?owner=23496406&appointmentType=25654159",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."        
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
       ]
-    } 
-  ],
-    "subfooter_join_the_list":{
-      "image": {
-          "artDirection": [
-              {
-                  "type": "png",
-                  "sizes": "50vw",
-                  "src": "images/subfooter-join-the-a-list",
-                  "alt": "elle",
-                  "intrinsicwidth": "533" 
-              }
-          ]
-      }
+    },
+    {
+      "id": 18,
+      "date": { "day": 28, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MEGAN CHENOT",
+      "image": "images/happenings-events-megan-chenot",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+      ]
+    },
+    {
+      "id": 19,
+      "date": { "day": 29, "month": 9, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },
+    {
+      "id": 20,
+      "date": { "day": 30, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH JIMMY ASHLEY",
+      "showIndexPage": false,
+      "image": "images/happenings_evants-Jimmy_Ashley",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+      ]
     }
+  ],
+  "subfooter_join_the_list": {
+    "image": {
+      "artDirection": [
+        {
+          "type": "png",
+          "sizes": "50vw",
+          "src": "images/subfooter-join-the-a-list",
+          "alt": "elle",
+          "intrinsicwidth": "533"
+        }
+      ]
+    }
+  }
 }
