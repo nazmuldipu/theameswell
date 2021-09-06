@@ -2,7 +2,10 @@
 @import "../../styles/global.css";
 /****  end imports  ********************************/
 
-h2 {
-    color: greenyellow;
-    font-size: calc(26px + (44 - 26) * ((100vw - 320px) / (1600 - 320))); /* 26px - 44px */;
+@media all and ( max-width: 899px ) {
+    .segment__cta--green:after{
+        border-top-width: 2px;
+        left: 0;
+        width: 30%;
+    }
 }

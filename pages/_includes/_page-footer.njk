@@ -44,40 +44,16 @@
             </svg>            
         </a>
         <nav class="pt-4 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-hotel">
-            <label class="page-footer__toggle-button hidden xmed:block font-bold">
-                Hotel
-            </label>
             <ul class="grid grid-cols-footer-mobile xmed:grid-cols-40-60 gap-x-6 xmed:gap-x-10 xmed:pt-4">
-                <li class="py-2">
-                    <a href="accessibility.html" class="text-ams-white">Accessibility</a>
-                </li>
-                <li class="py-2">
-                    <a href="privacy.html" class="text-ams-white">Privacy Policy</a>
-                </li>
-                <li class="py-2">
-                    <a href="contact.html" class="text-ams-white">Contact Us</a>
-                </li>
-                <li class="py-2">
-                    <a href="sitemap.xml" class="text-ams-white">Sitemap</a>
-                </li>
-                <li class="py-2">
-                    <a rel="noreferrer" target="_blank" href="https://ameswellhotel.pinpointhq.com" class="text-ams-white">Careers</a>
-                </li>
-                <li class="py-2 xmed:w-52">
-                    <a href="https://www.storeyhospitality.com/" rel="no-referrer" class="text-ams-white">Storey Hotel Mgmt.</a>
-                </li>
-                <li class="py-2">
-                    <a href="press.html" class="text-ams-white">Press</a>
-                </li>
-                <li class="py-2">
-                    <a href="offers.html" class="text-ams-white">Offers</a>
-                </li>
-                <li class="py-2">
-                    <a href="location.html" class="text-ams-white">Location</a>
-                </li>
-                <li class="py-2">
-                    <a href="faq.html" class="text-ams-white">FAQ</a>
-                </li>
+                {% for item in data.footer_content %}
+                    <li class="py-2 {% if item.pclasses %}  {{item.pclasses}}  {% endif %} ">
+                        <a  {% if item.rel %} rel="{{item.rel}}" {% endif %}
+                            {% if item.target %}   target="{{item.target}}" {% endif %} 
+                            href="{{item.href}}" class="text-ams-white">
+                            {{item.text}}
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </nav>
         <nav class="pt-8 xmed:pt-10 xmed:pb-4 xmed:px-4 text-ams-white grid-in-contact">
