@@ -71,7 +71,7 @@ const renderOurHappeningsCard = (event) => {
             <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
                 <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
-                <figcaption>classes
+                <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
                       ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
