@@ -33,6 +33,12 @@ const render_left = (event) => {
 };
 
 const render_right = (event) => {
+  let ctaEle = '';
+  event.cta.forEach(element => {
+    ctaEle += `<a class="w-40 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${element.url}" target="_blank">${element.label}</a>
+              `
+  });
+  
   let html = `
     <header class="hidden xmed:block">
         <h1 class="font-medium font-serif text-ams-primary text-2xl uppercase">${
@@ -50,17 +56,22 @@ const render_right = (event) => {
         <p class="pt-3 text-lg"> ${event.descriptions[i]} </p>
         `;
   }
-  html += `<div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg">
-    <a class="w-40 h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Book a Table</a>
-  </div>`;
+  html += `<div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg grid xmed:grid-flow-col gap-3 justify-center xmed:justify-start items-center">${ctaEle}</div>`;
   return html;
 };
+
 const renderOurHappeningsCard = (event) => {
-  return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-ful">
+  let ctaEle = '';
+  event.cta.forEach(element => {
+    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
+              `
+  });
+
+  return `<section class="bg-ams-white xmed:shadow-2xl xmed:mb-10 w-ful">
             <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
                 <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
-                <figcaption>
+                <figcaption>classes
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
                       ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
@@ -87,8 +98,8 @@ const renderOurHappeningsCard = (event) => {
                 </figcaption>
               </figure>              
             </span>
-            <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
-              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Book a Room</a>
+            <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 pb-5">
+              ${ctaEle}
               <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">More Info</a>
             </div>
           </section>`;
