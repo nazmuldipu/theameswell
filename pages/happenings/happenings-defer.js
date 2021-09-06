@@ -165,6 +165,12 @@ const renderEventCard = (event) => {
 };
 
 const renderOurHappeningsCard = (event) => {
+  let ctaEle = '';
+  event.cta.forEach(element => {
+    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
+              `
+  });
+
   return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
             <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
@@ -197,7 +203,7 @@ const renderOurHappeningsCard = (event) => {
               </figure>              
             </span>
             <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
-              <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display" href="${event.url}" target="_blank">Book a Room</a>
+              ${ctaEle}
               <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">More Info</a>
             </div>
           </section>`;
