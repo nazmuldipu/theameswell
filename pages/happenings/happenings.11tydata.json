@@ -138,6 +138,18 @@
     {
       "id": 10,
       "date": { "day": 8, "month": 9, "year": 2021 },
+      "time": "6:00 PM - 9:00 PM",
+      "title": "LIVE MUSIC WITH CARLOS REYES",
+      "image": "images/happenings-events-carlos-reyes",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+      ]
+    },
+    {
+      "id": 11,
+      "date": { "day": 8, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
       "image": "images/happenings_evants-Wine_Wednesdays",
@@ -148,7 +160,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 12,
       "date": { "day": 12, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
@@ -161,7 +173,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 13,
       "date": { "day": 14, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
@@ -173,7 +185,19 @@
       ]
     },
     {
-      "id": 13,
+      "id": 14,
+      "date": { "day": 15, "month": 9, "year": 2021 },
+      "time": "6:00 PM - 9:00 PM",
+      "title": "LIVE MUSIC WITH CARLOS REYES",
+      "image": "images/happenings-events-carlos-reyes",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+      ]
+    },
+    {
+      "id": 15,
       "date": { "day": 15, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -185,7 +209,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 16,
       "date": { "day": 19, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
@@ -198,7 +222,19 @@
       ]
     },
     {
-      "id": 15,
+      "id": 17,
+      "date": { "day": 22, "month": 9, "year": 2021 },
+      "time": "6:00 PM - 9:00 PM",
+      "title": "LIVE MUSIC WITH CARLOS REYES",
+      "image": "images/happenings-events-carlos-reyes",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+      ]
+    },
+    {
+      "id": 18,
       "date": { "day": 22, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -210,7 +246,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": 19,
       "date": { "day": 23, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -222,7 +258,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 20,
       "date": { "day": 26, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
@@ -235,7 +271,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": 21,
       "date": { "day": 28, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
@@ -247,7 +283,19 @@
       ]
     },
     {
-      "id": 19,
+      "id": 22,
+      "date": { "day": 29, "month": 9, "year": 2021 },
+      "time": "6:00 PM - 9:00 PM",
+      "title": "LIVE MUSIC WITH CARLOS REYES",
+      "image": "images/happenings-events-carlos-reyes",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+      ]
+    },
+    {
+      "id": 23,
       "date": { "day": 29, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -259,7 +307,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 24,
       "date": { "day": 30, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
