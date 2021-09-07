@@ -31,7 +31,7 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
@@ -82,7 +82,7 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+        "Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     },
     {
@@ -94,7 +94,7 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+        "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
       ]
     },
     {
@@ -106,7 +106,7 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
@@ -118,7 +118,7 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+        "Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     },
     {
@@ -127,7 +127,7 @@
       "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
       "image": "images/happenings_evants-Yoga_Class",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
@@ -137,6 +137,18 @@
     },
     {
       "id": 10,
+      "date": { "day": 7, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH MICHELLE LAMBERT",
+      "image": "images/happenings-events-michelle-lambert",
+      "showIndexPage": true,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Rising star, Michelle Lambert, brings a world of experience when she steps up to the microphone. Hailing from the Bay Area, Lambert began studying violin at age 2 and has continued making music ever since. A pop, folk and hip-hop artist whose career has taken her across the U.S. and abroad, she is influenced by her studies in Celtic music."
+      ]
+    },    
+    {
+      "id": 11,
       "date": { "day": 8, "month": 9, "year": 2021 },
       "time": "6:00 PM - 9:00 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
@@ -144,23 +156,35 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+        "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
       ]
-    },
+    },   
     {
-      "id": 11,
+      "id": 12,
       "date": { "day": 8, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
       "image": "images/happenings_evants-Wine_Wednesdays",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
-      "id": 12,
+      "id": 13,
+      "date": { "day": 9, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC: SHE IS JULES",
+      "image": "images/happenings-events-she-is-jules",
+      "showIndexPage": true,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "San Francisco Bay-Area-born, songstress and top-liner, She Is Jules--formerly known as \"JULES\", has accumulated over 800K streams on Spotify alone. She is Jules' trenchant lyrics contrasted with her ethereal pop vocals, creates a safe space in her music to be especially vulnerable and much like herself; quirky."
+      ]
+    },      
+    {
+      "id": 14,
       "date": { "day": 12, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
@@ -173,7 +197,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 15,
       "date": { "day": 14, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
@@ -181,11 +205,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+        "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
       ]
     },
     {
-      "id": 14,
+      "id": 16,
       "date": { "day": 15, "month": 9, "year": 2021 },
       "time": "6:00 PM - 9:00 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
@@ -193,11 +217,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+        "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
       ]
     },
     {
-      "id": 15,
+      "id": 17,
       "date": { "day": 15, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -205,11 +229,23 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
-      "id": 16,
+      "id": 18,
+      "date": { "day": 16, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH KINGSBOROUGH",
+      "image": "images/happenings-events-kingsborough",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Join us for an acoustic performance with frontman, Billy Kingsborough, and lead guitarist, Alex Leach, of San Francisco’s Kingsborough.  Influenced by the sounds and songwriting of The Beatles, The Black Keys, and Led Zeppelin, Kingsborough form a bond with fans by unleashing a brand of potent rock n’ roll that No Depression calls “laced with a vintage elegance that appeals to an ever-changing audience.” Produced by Grammy-nominated producer Damien Page Lewis (Rihanna, Katy Perry), Kingsborough’s second album, 1544, turned out the singles \"Low Down\" and \"Subtle Lies."
+      ]
+    },    
+    {
+      "id": 19,
       "date": { "day": 19, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
@@ -222,7 +258,19 @@
       ]
     },
     {
-      "id": 17,
+      "id": 20,
+      "date": { "day": 21, "month": 9, "year": 2021 },
+      "time": "5:30 PM - 8:30 PM",
+      "title": "LIVE MUSIC WITH BRANDON PASION",
+      "image": "images/happenings-events-brandon-pasion",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Brandon Pasion us a SF Bay Area based singer songwriter. His heart-driven lyrics and melodies call back to the timeless storytelling of country music's glory days, supported by clean, powerful vocals that reveal his jazz roots and impeccable artistry."
+      ]
+    },     
+    {
+      "id": 21,
       "date": { "day": 22, "month": 9, "year": 2021 },
       "time": "6:00 PM - 9:00 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
@@ -230,11 +278,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+        "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
       ]
     },
     {
-      "id": 18,
+      "id": 22,
       "date": { "day": 22, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -242,11 +290,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
-      "id": 19,
+      "id": 23,
       "date": { "day": 23, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -254,11 +302,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+        "Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     },
     {
-      "id": 20,
+      "id": 24,
       "date": { "day": 26, "month": 9, "year": 2021 },
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
@@ -271,7 +319,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 25,
       "date": { "day": 28, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
@@ -279,11 +327,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+        "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
       ]
     },
     {
-      "id": 22,
+      "id": 26,
       "date": { "day": 29, "month": 9, "year": 2021 },
       "time": "6:00 PM - 9:00 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
@@ -291,11 +339,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+        "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
       ]
     },
     {
-      "id": 23,
+      "id": 27,
       "date": { "day": 29, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -303,11 +351,11 @@
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
     },
     {
-      "id": 24,
+      "id": 28,
       "date": { "day": 30, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -315,7 +363,7 @@
       "image": "images/happenings_evants-Jimmy_Ashley",
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
-        "Description: Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
+        "Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
     }
   ],
