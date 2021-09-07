@@ -29,7 +29,7 @@ const createMenuItem = (event) => {
         ", " +
         date.getFullYear();
     let section = document.createElement("section");
-    section.className = "bg-ams-white mb-8 shadow-md";
+    section.className = "bg-ams-white mb-8 shadow-md mx-4";
     section.innerHTML = `    
     <figure>
         <img class="w-full h-80 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70">
