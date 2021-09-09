@@ -141,7 +141,7 @@
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MICHELLE LAMBERT",
       "image": "images/happenings-events-michelle-lambert",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "Rising star, Michelle Lambert, brings a world of experience when she steps up to the microphone. Hailing from the Bay Area, Lambert began studying violin at age 2 and has continued making music ever since. A pop, folk and hip-hop artist whose career has taken her across the U.S. and abroad, she is influenced by her studies in Celtic music."
@@ -189,7 +189,7 @@
       "time": "10:30 - 11:30 am",
       "title": "YOGA ON THE LAWN",
       "image": "images/happenings_evants-Yoga_Class",
-      "showIndexPage": false,
+      "showIndexPage": true,
       "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
