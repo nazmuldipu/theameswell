@@ -51,14 +51,15 @@
     {
       "id": 3,
       "date": { "day": 22, "month": 8, "year": 2021 },
-      "time": "10:30 - 11:30 am",
+      "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
       "image": "images/happenings_evants-Yoga_Class",
       "showIndexPage": false,
       "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
       ]
     },
     {
@@ -186,14 +187,15 @@
     {
       "id": 14,
       "date": { "day": 12, "month": 9, "year": 2021 },
-      "time": "10:30 - 11:30 am",
+      "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
       "image": "images/happenings_evants-Yoga_Class",
       "showIndexPage": true,
       "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
       ]
     },
     {
@@ -247,14 +249,15 @@
     {
       "id": 19,
       "date": { "day": 19, "month": 9, "year": 2021 },
-      "time": "10:30 - 11:30 am",
+      "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
       "image": "images/happenings_evants-Yoga_Class",
       "showIndexPage": false,
       "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
       ]
     },
     {
@@ -308,14 +311,15 @@
     {
       "id": 24,
       "date": { "day": 26, "month": 9, "year": 2021 },
-      "time": "10:30 - 11:30 am",
+      "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
       "image": "images/happenings_evants-Yoga_Class",
       "showIndexPage": false,
       "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
-        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited."
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
       ]
     },
     {
