@@ -178,7 +178,7 @@
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC: SHE IS JULES",
       "image": "images/happenings-events-she-is-jules",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "San Francisco Bay-Area-born, songstress and top-liner, She Is Jules--formerly known as \"JULES\", has accumulated over 800K streams on Spotify alone. She is Jules' trenchant lyrics contrasted with her ethereal pop vocals, creates a safe space in her music to be especially vulnerable and much like herself; quirky."
@@ -204,7 +204,7 @@
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
       "image": "images/happenings-events-megan-chenot",
-      "showIndexPage": false,
+      "showIndexPage": true,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
