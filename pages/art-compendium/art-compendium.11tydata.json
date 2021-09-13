@@ -9,7 +9,8 @@
                         "sizes": "35vw",
                         "src": "images/art-6",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "620",
+                        "intrinsicheight": "532"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -17,7 +18,8 @@
                         "sizes": "100vw",
                         "src": "images/art-6",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "620",
+                        "intrinsicheight": "532"
                     }
                 ]
             },
@@ -36,7 +38,8 @@
                         "sizes": "35vw",
                         "src": "images/art-19",
                         "alt": "Winter Camellia",
-                        "intrinsicwidth": "1125" 
+                        "intrinsicwidth": "1125",
+                        "intrinsicheight": "1257"
                     },
                     {
                         "media": "(max-width:900.1px)", 
@@ -44,7 +47,8 @@
                         "sizes": "100vw",
                         "src": "images/art-19",
                         "alt": "Winter Camellia",
-                        "intrinsicwidth": "1125" 
+                        "intrinsicwidth": "1125",
+                        "intrinsicheight": "1257"
                     }
                 ]
             },
@@ -63,7 +67,8 @@
                         "sizes": "35vw",
                         "src": "images/art-9",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676",
+                        "intrinsicheight": "403"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -71,7 +76,8 @@
                         "sizes": "100vw",
                         "src": "images/art-9",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676",
+                        "intrinsicheight": "403" 
                     }
                 ]
             },
@@ -90,7 +96,8 @@
                         "sizes": "35vw",
                         "src": "images/art-18",
                         "alt": "Chris Doyle",
-                        "intrinsicwidth": "2520" 
+                        "intrinsicwidth": "2520",
+                        "intrinsicheight": "2521" 
                     },
                     {
                         "media": "(max-width:900.1px)", 
@@ -98,7 +105,8 @@
                         "sizes": "100vw",
                         "src": "images/art-18",
                         "alt": "Chris Doyle",
-                        "intrinsicwidth": "2520" 
+                        "intrinsicwidth": "2520",
+                        "intrinsicheight": "2521"
                     }
                 ]
             },
@@ -117,7 +125,8 @@
                         "sizes": "35vw",
                         "src": "images/art-1",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676",
+                        "intrinsicheight": "730"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -125,7 +134,8 @@
                         "sizes": "100vw",
                         "src": "images/art-1",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "730"
                     }
                 ]
             },
@@ -144,7 +154,8 @@
                         "sizes": "35vw",
                         "src": "images/art-3",
                         "alt": "The outdoor pool in the evening at the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "488"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -152,7 +163,8 @@
                         "sizes": "100vw",
                         "src": "images/art-3",
                         "alt": "The outdoor pool in the evening at the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676",
+                        "intrinsicheight": "488" 
                     }
                 ]
             },
@@ -173,7 +185,8 @@
                             "sizes": "35vw",
                             "src": "images/art-11-1",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "309" 
+                            "intrinsicwidth": "309",
+                            "intrinsicheight": "333" 
                         },
                         {
                             "media": "(max-width:900px)",
@@ -181,7 +194,8 @@
                             "sizes": "100vw",
                             "src": "images/art-11-1",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "309" 
+                            "intrinsicwidth": "309",
+                            "intrinsicheight": "333" 
                         }
                         
                     ]
@@ -195,7 +209,8 @@
                             "sizes": "35vw",
                             "src": "images/art-11-2",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "309" 
+                            "intrinsicwidth": "309" ,
+                            "intrinsicheight": "333"
                         },
                         {
                             "media": "(max-width:900px)",
@@ -203,7 +218,8 @@
                             "sizes": "100vw",
                             "src": "images/art-11-2",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "309" 
+                            "intrinsicwidth": "309" ,
+                            "intrinsicheight": "333"
                         }
                     ]
                 },
@@ -216,7 +232,8 @@
                             "sizes": "35vw",
                             "src": "images/art-11-3",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "309" 
+                            "intrinsicwidth": "309" ,
+                            "intrinsicheight": "333"
                         },
                         {
                             "media": "(max-width:900px)",
@@ -224,7 +241,8 @@
                             "sizes": "100vw",
                             "src": "images/art-11-3",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "309" 
+                            "intrinsicwidth": "309" ,
+                            "intrinsicheight": "333"
                         }
                     ]
                 }
@@ -244,7 +262,8 @@
                         "sizes": "35vw",
                         "src": "images/art-7",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "831"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -252,7 +271,8 @@
                         "sizes": "100vw",
                         "src": "images/art-7",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "831"
                     }
                 ]
             },
@@ -271,7 +291,8 @@
                         "sizes": "35vw",
                         "src": "images/art-0",
                         "alt": "The main entrance of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "683"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -279,7 +300,8 @@
                         "sizes": "100vw",
                         "src": "images/art-0",
                         "alt": "The main entrance of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "683"
                     }
                 ]
             },
@@ -298,7 +320,8 @@
                         "sizes": "35vw",
                         "src": "images/art-12",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "325"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -306,7 +329,8 @@
                         "sizes": "100vw",
                         "src": "images/art-12",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "325"
                     }
                 ]
             },
@@ -327,7 +351,8 @@
                             "sizes": "35vw",
                             "src": "images/art-2-1",
                             "alt": "The outdoor pool in the evening at the Ameswell Hotel",
-                            "intrinsicwidth": "356" 
+                            "intrinsicwidth": "356" ,
+                            "intrinsicheight": "356"
                         },
                         {
                             "media": "(max-width:900px)",
@@ -335,7 +360,8 @@
                             "sizes": "100vw",
                             "src": "images/art-2-1",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "356" 
+                            "intrinsicwidth": "356" ,
+                            "intrinsicheight": "356"
                         }
                     ]
                 },
@@ -348,7 +374,8 @@
                             "sizes": "35vw",
                             "src": "images/art-2-2",
                             "alt": "The outdoor pool in the evening at the Ameswell Hotel",
-                            "intrinsicwidth": "676" 
+                            "intrinsicwidth": "356" ,
+                            "intrinsicheight": "356"
                         },
                         {
                             "media": "(max-width:900px)",
@@ -356,7 +383,8 @@
                             "sizes": "100vw",
                             "src": "images/art-2-2",
                             "alt": "The lobby interior of the Ameswell Hotel",
-                            "intrinsicwidth": "309" 
+                            "intrinsicwidth": "356",
+                            "intrinsicheight": "356" 
                         }
                     ]
                 }
@@ -376,7 +404,8 @@
                         "sizes": "35vw",
                         "src": "images/art-5",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "550"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -384,7 +413,8 @@
                         "sizes": "100vw",
                         "src": "images/art-5",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "550"
                     }
                 ]
             },
@@ -403,7 +433,8 @@
                         "sizes": "35vw",
                         "src": "images/art-16",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "1069" ,
+                        "intrinsicheight": "586"
                     },
                     {
                         "media": "(max-width:900px)",
@@ -411,7 +442,8 @@
                         "sizes": "100vw",
                         "src": "images/art-16",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "1069" ,
+                        "intrinsicheight": "586"
                     }
                 ]
             },
@@ -430,7 +462,8 @@
                         "sizes": "35vw",
                         "src": "images/art-15",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "318"
                     },
                     {
                         "media": "(max-width:900.1px)", 
@@ -438,7 +471,8 @@
                         "sizes": "100vw",
                         "src": "images/art-15",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "318"
                     }
                 ]
             },
@@ -458,7 +492,8 @@
                         "sizes": "35vw",
                         "src": "images/art-10",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "539",
+                        "intrinsicheight": "729" 
                     },
                     {
                         "media": "(max-width:900px)",
@@ -466,7 +501,8 @@
                         "sizes": "100vw",
                         "src": "images/art-10",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "539",
+                        "intrinsicheight": "729"  
                     }
                 ]
             },
@@ -485,7 +521,8 @@
                         "sizes": "35vw",
                         "src": "images/art-8",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "452" 
                     },
                     {
                         "media": "(max-width:900px)",
@@ -493,7 +530,8 @@
                         "sizes": "100vw",
                         "src": "images/art-8",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676",
+                        "intrinsicheight": "452"  
                     }
                 ]
             },
@@ -512,7 +550,8 @@
                         "sizes": "35vw",
                         "src": "images/art-4",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "573" 
                     },
                     {
                         "media": "(max-width:900px)",
@@ -520,7 +559,8 @@
                         "sizes": "100vw",
                         "src": "images/art-4",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "676" ,
+                        "intrinsicheight": "573" 
                     }
                 ]
             },
@@ -541,7 +581,8 @@
                             "sizes": "35vw",
                             "src": "images/art-17-1",
                             "alt": "Lisa Kowalski arts",
-                            "intrinsicwidth": "214" 
+                            "intrinsicwidth": "2202" ,
+                            "intrinsicheight": "2910" 
                         },
                         {
                             "media": "(max-width:900px)",
@@ -549,7 +590,8 @@
                             "sizes": "100vw",
                             "src": "images/art-17-1",
                             "alt": "Lisa Kowalski arts",
-                            "intrinsicwidth": "214" 
+                            "intrinsicwidth": "2202" ,
+                            "intrinsicheight": "2910" 
                         }
                         
                     ]
@@ -563,7 +605,8 @@
                             "sizes": "35vw",
                             "src": "images/art-17-2",
                             "alt": "Lisa Kowalski arts",
-                            "intrinsicwidth": "214" 
+                            "intrinsicwidth": "2202" ,
+                            "intrinsicheight": "2910"  
                         },
                         {
                             "media": "(max-width:900px)",
@@ -571,7 +614,8 @@
                             "sizes": "100vw",
                             "src": "images/art-17-2",
                             "alt": "Lisa Kowalski arts",
-                            "intrinsicwidth": "214" 
+                            "intrinsicwidth": "2202" ,
+                            "intrinsicheight": "2910"  
                         }
                     ]
                 },
@@ -592,7 +636,8 @@
                             "sizes": "100vw",
                             "src": "images/art-17-3",
                             "alt": "Lisa Kowalski arts",
-                            "intrinsicwidth": "214" 
+                            "intrinsicwidth": "2202" ,
+                            "intrinsicheight": "2910" 
                         }
                     ]
                 }
@@ -613,7 +658,8 @@
                         "sizes": "35vw",
                         "src": "images/art-14",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "475" ,
+                        "intrinsicheight": "694" 
                     },
                     {
                         "media": "(max-width:900px)",
@@ -621,7 +667,8 @@
                         "sizes": "100vw",
                         "src": "images/art-14",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "676" 
+                        "intrinsicwidth": "475" ,
+                        "intrinsicheight": "694" 
                     }
                 ]
             },
