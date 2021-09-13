@@ -18,7 +18,8 @@
         "type": "jpg",
         "src": "images/homepage-2-desktop",
         "alt": "The Ameswell hotel exterior",
-        "intrinsicwidth": "2496"
+        "intrinsicwidth": "2496",
+        "intrinsicheight": "1014"
       },
       {
         "classes": "image-loader",
@@ -27,7 +28,8 @@
         "type": "jpg",
         "src": "images/homepage-2-mobile",
         "alt": "The Ameswell hotel exterior",
-        "intrinsicwidth": "654"
+        "intrinsicwidth": "654",
+        "intrinsicheight": "400"
       }
     ]
   },
@@ -40,7 +42,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Wellness room with mirror fitness",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/room-detail-2",
@@ -48,7 +51,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Wellness room with mirror fitness",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     },
@@ -60,7 +64,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Suite living room",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/room-detail-3",
@@ -68,7 +73,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Suite living room",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     }
@@ -84,7 +90,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         },
         {
           "src": "images/premium_king_01",
@@ -92,7 +99,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         }
       ]
     },
@@ -106,7 +114,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "4480",
+          "intrinsicheight": "5952"
         },
         {
           "src": "images/premium_king_02",
@@ -114,7 +123,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "4480",
+          "intrinsicheight": "5952"
         }
       ]
     },
@@ -128,7 +138,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         },
         {
           "src": "images/premium_two_queens_01",
@@ -136,7 +147,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         }
       ]
     },
@@ -150,7 +162,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "6720",
+          "intrinsicheight": "3780"
         },
         {
           "src": "images/premium_two_queens_02",
@@ -158,7 +171,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "6720",
+          "intrinsicheight": "3780"
         }
       ]
     },
@@ -172,7 +186,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "664",
+          "intrinsicheight": "386"
         },
         {
           "src": "images/junior_suite_01",
@@ -180,7 +195,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "664",
+          "intrinsicheight": "386"
         }
       ]
     },
@@ -194,7 +210,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "6722",
+          "intrinsicheight": "3785"
         },
         {
           "src": "images/executive_suite_01",
@@ -202,7 +219,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "6722",
+          "intrinsicheight": "3785"
         }
       ]
     },
