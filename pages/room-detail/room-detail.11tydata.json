@@ -28,7 +28,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/room-detail-1",
@@ -36,7 +37,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     },
@@ -48,7 +50,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Wellness room with mirror fitness",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/room-detail-2",
@@ -56,7 +59,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Wellness room with mirror fitness",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     },
@@ -68,7 +72,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Suite living room",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/room-detail-3",
@@ -76,7 +81,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Suite living room",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     }
@@ -107,7 +113,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/superior_king_01",
@@ -115,7 +122,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -127,7 +135,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/superior_king_02",
@@ -135,7 +144,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -147,7 +157,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/superior_king_03",
@@ -155,7 +166,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -167,7 +179,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/superior_king_04",
@@ -175,7 +188,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -187,7 +201,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/superior_king_05",
@@ -195,7 +210,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -207,7 +223,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/superior_king_06",
@@ -215,7 +232,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
@@ -243,7 +261,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/superior_two_queens_01",
@@ -251,7 +270,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -263,7 +283,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/superior_two_queens_02",
@@ -271,7 +292,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -283,7 +305,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/superior_two_queens_03",
@@ -291,7 +314,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -303,7 +327,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/superior_two_queens_04",
@@ -311,7 +336,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -323,7 +349,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/superior_two_queens_05",
@@ -331,7 +358,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Superior Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
@@ -365,7 +393,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/deluxe_king_01",
@@ -373,7 +402,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -385,7 +415,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/deluxe_king_02",
@@ -393,7 +424,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -405,7 +437,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/deluxe_king_03",
@@ -413,7 +446,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -425,7 +459,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/deluxe_king_04",
@@ -433,7 +468,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -445,7 +481,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/deluxe_king_05",
@@ -453,7 +490,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -465,7 +503,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/deluxe_king_06",
@@ -473,7 +512,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
@@ -501,7 +541,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/deluxe_two_queens_01",
@@ -509,7 +550,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -1697,7 +1739,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/deluxe_king_01",
@@ -1705,7 +1748,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1717,7 +1761,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/deluxe_king_02",
@@ -1725,7 +1770,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1737,7 +1783,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/deluxe_king_03",
@@ -1745,7 +1792,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1757,7 +1805,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/deluxe_king_04",
@@ -1765,7 +1814,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1777,7 +1827,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/deluxe_king_05",
@@ -1785,7 +1836,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -1797,7 +1849,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/deluxe_king_06",
@@ -1805,7 +1858,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Deluxe King",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
