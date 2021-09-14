@@ -2795,7 +2795,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Corner One-Bedroom Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "3456"
                 },
                 {
                   "src": "images/corner_one_bedroom_suite_05",
@@ -2803,7 +2804,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Corner One-Bedroom Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "3456"
                 }
               ]
             },
@@ -2815,7 +2817,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Corner One-Bedroom Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/corner_one_bedroom_suite_06",
@@ -2823,7 +2826,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Corner One-Bedroom Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             },
@@ -2835,7 +2839,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Corner One-Bedroom Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5318",
+                  "intrinsicheight": "3756"
                 },
                 {
                   "src": "images/corner_one_bedroom_suite_07",
@@ -2843,7 +2848,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Corner One-Bedroom Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5318",
+                  "intrinsicheight": "3756"
                 }
               ]
             }
@@ -3161,7 +3167,8 @@
                 "type": "jpg",
                 "src": "images/corner_one_bedroom_suite_04",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "1064" 
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536"
             },
             {
                 "classes": "image-loader",
@@ -3170,7 +3177,8 @@
                 "type": "jpg",
                 "src": "images/corner_one_bedroom_suite_04",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "750"
+                "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
             }
         ]
       }
