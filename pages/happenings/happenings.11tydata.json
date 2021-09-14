@@ -89,7 +89,7 @@
     {
       "id": 6,
       "date": { "day": 1, "month": 9, "year": 2021 },
-      "time": "6:00 PM - 9:00 PM",
+      "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
       "image": "images/happenings-events-carlos-reyes",
       "showIndexPage": false,
@@ -151,7 +151,7 @@
     {
       "id": 11,
       "date": { "day": 8, "month": 9, "year": 2021 },
-      "time": "6:00 PM - 9:00 PM",
+      "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
       "image": "images/happenings-events-carlos-reyes",
       "showIndexPage": false,
@@ -213,7 +213,7 @@
     {
       "id": 16,
       "date": { "day": 15, "month": 9, "year": 2021 },
-      "time": "6:00 PM - 9:00 PM",
+      "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
       "image": "images/happenings-events-carlos-reyes",
       "showIndexPage": true,
@@ -275,7 +275,7 @@
     {
       "id": 21,
       "date": { "day": 22, "month": 9, "year": 2021 },
-      "time": "6:00 PM - 9:00 PM",
+      "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
       "image": "images/happenings-events-carlos-reyes",
       "showIndexPage": false,
@@ -337,7 +337,7 @@
     {
       "id": 26,
       "date": { "day": 29, "month": 9, "year": 2021 },
-      "time": "6:00 PM - 9:00 PM",
+      "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
       "image": "images/happenings-events-carlos-reyes",
       "showIndexPage": false,
