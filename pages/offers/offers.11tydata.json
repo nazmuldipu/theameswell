@@ -8,7 +8,8 @@
                         "sizes": "50vw",
                         "src": "images/offers-2-desktop",
                         "alt": "The main entrance of the Ameswell Hotel",
-                        "intrinsicwidth": "552" 
+                        "intrinsicwidth": "1064" ,
+                        "intrinsicheight": "600" 
                     }
                 ]
             },
@@ -24,7 +25,8 @@
                         "sizes": "50vw",
                         "src": "images/offers-3-desktop",
                         "alt": "The lobby interior of the Ameswell Hotel",
-                        "intrinsicwidth": "552" 
+                        "intrinsicwidth": "1064" ,
+                        "intrinsicheight": "592" 
                     }
                 ]
             },
@@ -40,7 +42,8 @@
                         "sizes": "50vw",
                         "src": "images/offers-4-desktop",
                         "alt": "The outdoor pool in the evening at the Ameswell Hotel",
-                        "intrinsicwidth": "552" 
+                        "intrinsicwidth": "1064" ,
+                        "intrinsicheight": "601"
                     }
                 ]
             },
