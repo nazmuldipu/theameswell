@@ -6,4 +6,20 @@
     .title-display {
         padding-bottom: 0rem;
     }
+
+    .event:nth-child(even) .event__grid-cols{
+        @apply grid-cols-65-35;
+    }
+    .event:nth-child(odd) .event__grid-cols{
+        @apply grid-cols-35-65;
+    }
+
+    .event:nth-child(even) .event__image,
+    .event:nth-child(odd) .event__description{
+        @apply order-1;
+    }
+    .event:nth-child(odd) .event__image,
+    .event:nth-child(even) .event__description{
+        @apply order-2;
+    }
 }
