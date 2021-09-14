@@ -190,7 +190,7 @@
       "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
       "image": "images/happenings_evants-Yoga_Class",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
       "descriptions": [
         "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
@@ -216,7 +216,7 @@
       "time": "6:00 PM - 9:00 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
       "image": "images/happenings-events-carlos-reyes",
-      "showIndexPage": false,
+      "showIndexPage": true,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
