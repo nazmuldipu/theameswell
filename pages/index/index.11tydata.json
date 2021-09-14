@@ -234,7 +234,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "6557",
+          "intrinsicheight": "3781"
         },
         {
           "src": "images/corner_one_bedroom_suite_01",
@@ -242,7 +243,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "3781"
         }
       ]
     },
@@ -256,7 +258,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/arbor_suit_01",
@@ -264,7 +267,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     },
@@ -278,7 +282,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/arbor_suit_01",
@@ -286,7 +291,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     },
@@ -300,7 +306,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/superior_king_01",
@@ -308,7 +315,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     },
@@ -322,7 +330,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         },
         {
           "src": "images/superior_two_queens_01",
@@ -330,7 +339,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         }
       ]
     },
@@ -344,7 +354,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/deluxe_king_01",
@@ -352,7 +363,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     },
@@ -366,7 +378,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         },
         {
           "src": "images/deluxe_two_queens_01",
@@ -374,7 +387,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "5952",
+          "intrinsicheight": "4480"
         }
       ]
     },
@@ -388,7 +402,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/wellness_king_01",
@@ -396,7 +411,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     }
@@ -411,7 +427,8 @@
         "type": "jpg",
         "src": "images/happenings-desktop",
         "alt": "happenings",
-        "intrinsicwidth": "376"
+        "intrinsicwidth": "376",
+        "intrinsicheight": "376"
       },
       {
         "classes": "image-loader image-loader--white",
@@ -420,7 +437,8 @@
         "type": "jpg",
         "src": "images/happenings-mobile",
         "alt": "happenings",
-        "intrinsicwidth": "375"
+        "intrinsicwidth": "376",
+        "intrinsicheight": "376"
       }
     ]
   },
@@ -433,7 +451,8 @@
         "type": "jpg",
         "src": "images/homepage-3-desktop_xs",
         "alt": "Hotel room with view",
-        "intrinsicwidth": "1450"
+        "intrinsicwidth": "1450",
+        "intrinsicheight": "728"
       },
       {
         "classes": "image-loader",
@@ -442,7 +461,8 @@
         "type": "jpg",
         "src": "images/homepage-3-mobile_2xs",
         "alt": "Hotel room with view",
-        "intrinsicwidth": "612"
+        "intrinsicwidth": "612",
+        "intrinsicheight": "562"
       }
     ]
   },
@@ -456,7 +476,8 @@
         "type": "jpg",
         "src": "images/homepage-4-desktop",
         "alt": "The Roger Restaurant",
-        "intrinsicwidth": "600"
+        "intrinsicwidth": "600",
+        "intrinsicheight": "712"
       },
       {
         "classes": "image-loader image-loader--white",
@@ -465,7 +486,8 @@
         "type": "jpg",
         "src": "images/homepage-4-mobile",
         "alt": "The Roger Restaurant",
-        "intrinsicwidth": "480"
+        "intrinsicwidth": "480",
+        "intrinsicheight": "286"
       }
     ]
   },
@@ -479,7 +501,8 @@
         "type": "jpg",
         "src": "images/homepage-5-desktop",
         "alt": "Public area",
-        "intrinsicwidth": "600"
+        "intrinsicwidth": "600",
+        "intrinsicheight": "712"
       },
       {
         "classes": "image-loader image-loader--white",
@@ -488,7 +511,8 @@
         "type": "jpg",
         "src": "images/homepage-5-mobile",
         "alt": "Public area",
-        "intrinsicwidth": "480"
+        "intrinsicwidth": "480",
+        "intrinsicheight": "288"
       }
     ]
   },
@@ -502,7 +526,8 @@
         "type": "jpg",
         "src": "images/homepage-6-desktop",
         "alt": "The Airstream Bar",
-        "intrinsicwidth": "600"
+        "intrinsicwidth": "600",
+        "intrinsicheight": "712"
       },
       {
         "classes": "image-loader image-loader--white",
@@ -511,7 +536,8 @@
         "type": "jpg",
         "src": "images/homepage-6-mobile",
         "alt": "The Airstream Bar",
-        "intrinsicwidth": "480"
+        "intrinsicwidth": "480",
+        "intrinsicheight": "288"
       }
     ]
   },
@@ -524,7 +550,8 @@
         "type": "jpg",
         "src": "images/homepage-7-desktop",
         "alt": "The Ameswell exterior with pool and Airstream Bar",
-        "intrinsicwidth": "2496"
+        "intrinsicwidth": "2496",
+        "intrinsicheight": "1014"
       },
       {
         "classes": "image-loader",
@@ -533,7 +560,8 @@
         "type": "jpg",
         "src": "images/homepage-7-mobile",
         "alt": "The Ameswell exterior with pool and Airstream Bar",
-        "intrinsicwidth": "750"
+        "intrinsicwidth": "750",
+        "intrinsicheight": "718"
       }
     ]
   },
@@ -546,7 +574,8 @@
         "type": "jpg",
         "src": "images/homepage-8-desktop",
         "alt": "Outdoor event venue",
-        "intrinsicwidth": "1064"
+        "intrinsicwidth": "1064",
+        "intrinsicheight": "600"
       },
       {
         "classes": "image-loader",
@@ -555,7 +584,8 @@
         "type": "jpg",
         "src": "images/homepage-8-mobile",
         "alt": "Outdoor event venue",
-        "intrinsicwidth": "750"
+        "intrinsicwidth": "750",
+        "intrinsicheight": "320"
       }
     ]
   },
@@ -568,7 +598,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-1",
@@ -576,7 +607,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -591,7 +623,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-2",
@@ -599,7 +632,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -614,7 +648,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-3",
@@ -622,7 +657,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -637,7 +673,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-4",
@@ -645,7 +682,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -660,7 +698,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-5",
@@ -668,7 +707,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -684,7 +724,8 @@
                   "sizes": "50vw",
                   "src": "images/subfooter-join-the-a-list",
                   "alt": "elle",
-                  "intrinsicwidth": "533" 
+                  "intrinsicwidth": "533" ,
+                  "intrinsicheight": "300"
               }
           ]
       }
@@ -699,7 +740,8 @@
       "type": "jpg",
       "src": "images/homepage-art-desktop",
       "alt": "Huntington Beach",
-      "intrinsicwidth": "1248"
+      "intrinsicwidth": "1248",
+      "intrinsicheight": "508"
     },
     {
       "classes": "image-loader",
@@ -708,7 +750,8 @@
       "type": "jpg",
       "src": "images/homepage-art-desktop",
       "alt": "Huntington Beach",
-      "intrinsicwidth": "1248"
+      "intrinsicwidth": "1248",
+      "intrinsicheight": "508"
     }
   ]
  },
