@@ -2878,7 +2878,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/arbor_suit_01",
@@ -2886,7 +2887,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -2898,7 +2900,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/arbor_suit_02",
@@ -2906,7 +2909,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Wellness room with mirror fitness",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -2918,7 +2922,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Suite living room",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/arbor_suit_03",
@@ -2926,7 +2931,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -2938,7 +2944,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/arbor_suit_04",
@@ -2946,7 +2953,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -2958,7 +2966,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "3456"
                 },
                 {
                   "src": "images/arbor_suit_05",
@@ -2966,7 +2975,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Wellness room with mirror fitness",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "3456"
                 }
               ]
             },
@@ -2978,7 +2988,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Suite living room",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5318",
+                  "intrinsicheight": "3756"
                 },
                 {
                   "src": "images/arbor_suit_06",
@@ -2986,7 +2997,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Arbor Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5318",
+                  "intrinsicheight": "3756"
                 }
               ]
             }
@@ -3017,7 +3029,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-1",
@@ -3025,7 +3038,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -3037,7 +3051,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-2",
@@ -3045,7 +3060,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -3057,7 +3073,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-3",
@@ -3065,7 +3082,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Ameswell Suite",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             }
@@ -3088,7 +3106,8 @@
                 "type": "jpg",
                 "src": "images/room-detail-3",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "1064" 
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536"
             },
             {
                 "classes": "image-loader",
@@ -3097,7 +3116,8 @@
                 "type": "jpg",
                 "src": "images/room-detail-3",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "750"
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536"
             }
         ]
       }
@@ -3115,7 +3135,8 @@
                 "type": "jpg",
                 "src": "images/arbor_suit_05",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "1064" 
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "3456" 
             },
             {
                 "classes": "image-loader",
@@ -3124,7 +3145,8 @@
                 "type": "jpg",
                 "src": "images/arbor_suit_05",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "750"
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "3456"
             }
         ]
       }
@@ -3141,7 +3163,8 @@
                   "type": "jpg",
                   "src": "images/arbor_suit_02",
                   "alt": "Outdoor event venue",
-                  "intrinsicwidth": "1064" 
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
               },
               {
                   "classes": "image-loader",
@@ -3150,7 +3173,8 @@
                   "type": "jpg",
                   "src": "images/arbor_suit_02",
                   "alt": "Outdoor event venue",
-                  "intrinsicwidth": "750"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
               }
           ]
       }
@@ -3178,7 +3202,7 @@
                 "src": "images/corner_one_bedroom_suite_04",
                 "alt": "Outdoor event venue",
                 "intrinsicwidth": "2304",
-                  "intrinsicheight": "1536"
+                "intrinsicheight": "1536"
             }
         ]
       }
@@ -3194,7 +3218,8 @@
                 "type": "jpg",
                 "src": "images/wellness_king_01",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "1064" 
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536" 
             },
             {
                 "classes": "image-loader",
@@ -3203,7 +3228,8 @@
                 "type": "jpg",
                 "src": "images/wellness_king_01",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "750"
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536"
             }
         ]
       }
@@ -3219,7 +3245,8 @@
                 "type": "jpg",
                 "src": "images/room-detail-3",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "1064" 
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536"
             },
             {
                 "classes": "image-loader",
@@ -3228,7 +3255,8 @@
                 "type": "jpg",
                 "src": "images/room-detail-3",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "750"
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536"
             }
         ]
       }
@@ -3245,7 +3273,8 @@
                 "type": "jpg",
                 "src": "images/about-5",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "1064" 
+                "intrinsicwidth": "1064" ,
+                "intrinsicheight": "600"
             },
             {
                 "classes": "image-loader",
@@ -3254,7 +3283,8 @@
                 "type": "jpg",
                 "src": "images/about-5",
                 "alt": "Outdoor event venue",
-                "intrinsicwidth": "750"
+                "intrinsicwidth": "1064",
+                "intrinsicheight": "600"
             }
         ]
       }
@@ -3269,7 +3299,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-1",
@@ -3277,7 +3308,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -3292,7 +3324,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-2",
@@ -3300,7 +3333,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -3315,7 +3349,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-3",
@@ -3323,7 +3358,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -3338,7 +3374,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-4",
@@ -3346,7 +3383,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -3361,7 +3399,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/offer-detail-5",
@@ -3369,7 +3408,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
@@ -3385,7 +3425,8 @@
                   "sizes": "50vw",
                   "src": "images/subfooter-join-the-a-list",
                   "alt": "elle",
-                  "intrinsicwidth": "533" 
+                  "intrinsicwidth": "533" ,
+                  "intrinsicheight": "300"
               }
           ]
       }
