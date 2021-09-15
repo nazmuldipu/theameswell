@@ -598,8 +598,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304",
-          "intrinsicheight": "1536"
+          "intrinsicwidth": "735",
+          "intrinsicheight": "490"
         },
         {
           "src": "images/offer-detail-1",
@@ -607,8 +607,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "2304",
-          "intrinsicheight": "1536"
+          "intrinsicwidth": "735",
+          "intrinsicheight": "490"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
