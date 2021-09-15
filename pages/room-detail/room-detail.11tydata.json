@@ -1046,7 +1046,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/premium_two_queens_01",
@@ -1054,7 +1055,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -1066,7 +1068,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/premium_two_queens_02",
@@ -1074,7 +1077,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -1086,7 +1090,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/premium_two_queens_03",
@@ -1094,7 +1099,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1106,7 +1112,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/premium_two_queens_04",
@@ -1114,7 +1121,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -1126,7 +1134,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/premium_two_queens_05",
@@ -1134,7 +1143,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -1146,7 +1156,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/premium_two_queens_06",
@@ -1154,7 +1165,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
@@ -1190,7 +1202,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/king_accessible_01",
@@ -1198,7 +1211,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1210,7 +1224,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/king_accessible_02",
@@ -1218,7 +1233,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1230,7 +1246,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/king_accessible_03",
@@ -1238,7 +1255,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1250,7 +1268,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/king_accessible_04",
@@ -1258,7 +1277,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1270,7 +1290,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/king_accessible_04",
@@ -1278,7 +1299,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1290,7 +1312,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4475",
+                  "intrinsicheight": "5945"
                 },
                 {
                   "src": "images/king_accessible_05",
@@ -1298,7 +1321,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4475",
+                  "intrinsicheight": "5945"
                 }
               ]
             },
@@ -1310,7 +1334,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/king_accessible_06",
@@ -1318,7 +1343,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "King Accessible w/Roll in Shower",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
@@ -1348,7 +1374,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/two_queens_accessible_01",
@@ -1356,7 +1383,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -1368,7 +1396,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/two_queens_accessible_02",
@@ -1376,7 +1405,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1388,7 +1418,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/two_queens_accessible_03",
@@ -1396,7 +1427,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -1408,7 +1440,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/two_queens_accessible_04",
@@ -1416,7 +1449,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -1428,7 +1462,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4475",
+                  "intrinsicheight": "5945"
                 },
                 {
                   "src": "images/two_queens_accessible_05",
@@ -1436,7 +1471,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4475",
+                  "intrinsicheight": "5945"
                 }
               ]
             },
@@ -1448,7 +1484,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/two_queens_accessible_06",
@@ -1456,7 +1493,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
@@ -1486,7 +1524,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/two_queens_accessible_01",
@@ -1494,7 +1533,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -1506,7 +1546,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/two_queens_accessible_02",
@@ -1514,7 +1555,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -1526,7 +1568,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/two_queens_accessible_03",
@@ -1534,7 +1577,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -1546,7 +1590,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/two_queens_accessible_04",
@@ -1554,7 +1599,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -1566,7 +1612,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4475",
+                  "intrinsicheight": "5945"
                 },
                 {
                   "src": "images/two_queens_accessible_05",
@@ -1574,7 +1621,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4475",
+                  "intrinsicheight": "5945"
                 }
               ]
             },
@@ -1586,7 +1634,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/two_queens_accessible_06",
@@ -1594,7 +1643,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Two Queens Accessible",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
@@ -1623,7 +1673,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Hotel room with view",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-1",
@@ -1631,7 +1682,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Hotel room with view",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1643,7 +1695,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Wellness room with mirror fitness",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-2",
@@ -1651,7 +1704,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Wellness room with mirror fitness",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1663,7 +1717,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Suite living room",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-3",
@@ -1671,7 +1726,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Suite living room",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             }
@@ -1700,7 +1756,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Hotel room with view",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-1",
@@ -1708,7 +1765,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Hotel room with view",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1720,7 +1778,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Wellness room with mirror fitness",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-2",
@@ -1728,7 +1787,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Wellness room with mirror fitness",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             },
@@ -1740,7 +1800,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Suite living room",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 },
                 {
                   "src": "images/room-detail-3",
@@ -1748,7 +1809,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Suite living room",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "2304",
+                  "intrinsicheight": "1536"
                 }
               ]
             }
@@ -2224,7 +2286,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/premium_two_queens_01",
@@ -2232,7 +2295,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -2244,7 +2308,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/premium_two_queens_02",
@@ -2252,7 +2317,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -2264,7 +2330,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 },
                 {
                   "src": "images/premium_two_queens_03",
@@ -2272,7 +2339,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "4480",
+                  "intrinsicheight": "5952"
                 }
               ]
             },
@@ -2284,7 +2352,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 },
                 {
                   "src": "images/premium_two_queens_04",
@@ -2292,7 +2361,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6720",
+                  "intrinsicheight": "3780"
                 }
               ]
             },
@@ -2304,7 +2374,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 },
                 {
                   "src": "images/premium_two_queens_05",
@@ -2312,7 +2383,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "5952",
+                  "intrinsicheight": "4480"
                 }
               ]
             },
@@ -2324,7 +2396,8 @@
                   "imgtype": "jpg",
                   "sizes": "80vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 },
                 {
                   "src": "images/premium_two_queens_06",
@@ -2332,7 +2405,8 @@
                   "imgtype": "jpg",
                   "sizes": "100vw",
                   "imgalt": "Premium Two Queens",
-                  "intrinsicwidth": "2304"
+                  "intrinsicwidth": "6224",
+                  "intrinsicheight": "4479"
                 }
               ]
             }
