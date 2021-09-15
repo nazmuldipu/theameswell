@@ -233,19 +233,7 @@
       "descriptions": [
         "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
       ]
-    },
-    {
-      "id": 18,
-      "date": { "day": 16, "month": 9, "year": 2021 },
-      "time": "5:30 PM - 8:30 PM",
-      "title": "LIVE MUSIC WITH KINGSBOROUGH",
-      "image": "images/happenings-events-kingsborough",
-      "showIndexPage": false,
-      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
-      "descriptions": [
-        "Join us for an acoustic performance with frontman, Billy Kingsborough, and lead guitarist, Alex Leach, of San Francisco’s Kingsborough.  Influenced by the sounds and songwriting of The Beatles, The Black Keys, and Led Zeppelin, Kingsborough form a bond with fans by unleashing a brand of potent rock n’ roll that No Depression calls “laced with a vintage elegance that appeals to an ever-changing audience.” Produced by Grammy-nominated producer Damien Page Lewis (Rihanna, Katy Perry), Kingsborough’s second album, 1544, turned out the singles \"Low Down\" and \"Subtle Lies."
-      ]
-    },    
+    },   
     {
       "id": 19,
       "date": { "day": 19, "month": 9, "year": 2021 },
