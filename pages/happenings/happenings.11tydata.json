@@ -8,7 +8,8 @@
         "type": "jpg",
         "src": "images/happenings-desktop",
         "alt": "happenings",
-        "intrinsicwidth": "376"
+        "intrinsicwidth": "376",
+        "intrinsicheight": "376"
       },
       {
         "classes": "image-loader image-loader--white",
@@ -17,7 +18,8 @@
         "type": "jpg",
         "src": "images/happenings-mobile",
         "alt": "happenings",
-        "intrinsicwidth": "375"
+        "intrinsicwidth": "375",
+        "intrinsicheight": "375"
       }
     ]
   },
@@ -379,7 +381,8 @@
           "sizes": "50vw",
           "src": "images/subfooter-join-the-a-list",
           "alt": "elle",
-          "intrinsicwidth": "533"
+          "intrinsicwidth": "533",
+          "intrinsicheight": "300"
         }
       ]
     }
