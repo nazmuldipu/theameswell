@@ -8,18 +8,20 @@
     }
 
     .event:nth-child(even) .event__grid-cols{
-        @apply grid-cols-65-35;
+        @apply grid-cols-minmax-65-35;
+        @apply text-right;
     }
     .event:nth-child(odd) .event__grid-cols{
-        @apply grid-cols-35-65;
+        @apply grid-cols-minmax-35-65;
+        @apply text-left;
     }
 
     .event:nth-child(even) .event__image,
     .event:nth-child(odd) .event__description{
-        @apply order-1;
+        @apply xmed:order-1;
     }
     .event:nth-child(odd) .event__image,
     .event:nth-child(even) .event__description{
-        @apply order-2;
+        @apply xmed:order-2;
     }
 }

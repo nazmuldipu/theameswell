@@ -180,6 +180,8 @@ module.exports = {
         '40-60': '2fr 3fr',
         '60-40': '3fr 2fr',
         '35-65':'35% 65%',
+        'minmax-35-65':'minmax(0, 35%) minmax(0, 65%)',
+        'minmax-65-35':'minmax(0, 65%) minmax(0, 35%)',
         'auto-600': 'auto 600px',
         'slideshow': '55% 45%',
         'sm-auto': 'auto 1fr',
