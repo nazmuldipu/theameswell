@@ -6,7 +6,7 @@
             "image":{
                 "artDirection": [
                     {
-                        "src": "images/events-gallery-1",
+                        "src": "images/events-gallery-8",
                         "media": "(min-width:900.1px)",
                         "imgtype": "jpg",
                         "sizes": "65vw",
@@ -14,7 +14,7 @@
                         "intrinsicwidth": "805"
                     },
                     {
-                        "src": "images/events-gallery-1",
+                        "src": "images/events-gallery-8",
                         "media": "(max-width:900px)",
                         "imgtype": "jpg",
                         "sizes": "100vw",
@@ -30,7 +30,7 @@
             "image":{
                 "artDirection": [
                     {
-                        "src": "images/events-gallery-2",
+                        "src": "images/events-gallery-9",
                         "media": "(min-width:900.1px)",
                         "imgtype": "jpg",
                         "sizes": "80vw",
@@ -38,7 +38,7 @@
                         "intrinsicwidth": "805"
                     },
                     {
-                        "src": "images/events-gallery-2",
+                        "src": "images/events-gallery-9",
                         "media": "(max-width:900px)",
                         "imgtype": "jpg",
                         "sizes": "100vw",
@@ -54,7 +54,7 @@
             "image":{
                 "artDirection": [
                     {
-                        "src": "images/events-gallery-3",
+                        "src": "images/events-gallery-10",
                         "media": "(min-width:900.1px)",
                         "imgtype": "jpg",
                         "sizes": "80vw",
@@ -62,7 +62,7 @@
                         "intrinsicwidth": "805"
                     },
                     {
-                        "src": "images/events-gallery-3",
+                        "src": "images/events-gallery-10",
                         "media": "(max-width:900px)",
                         "imgtype": "jpg",
                         "sizes": "100vw",

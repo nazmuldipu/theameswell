@@ -6,7 +6,9 @@
     .title-display {
         padding-bottom: 0rem;
     }
-
+    .events__svgicon{
+        @apply hidden xmed:grid;
+    }
     .event:nth-child(even) .event__grid-cols{
         @apply grid-cols-minmax-65-35;
         @apply text-right;

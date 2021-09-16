@@ -49,10 +49,10 @@ module.exports = {
         'no-webp__hero--wellness': "url('/images/hero-wellness.jpg')",
         'hero--wellness-xmed': "url('/images/hero-wellness_xmed.webp')",
         'no-webp__hero--wellness-xmed': "url('/images/hero-wellness_xmed.jpg')",
-        'hero--events': "url('/images/hero-events.webp')",
-        'no-webp__hero--events': "url('/images/hero-events.jpg')",
-        'hero--events-xmed': "url('/images/hero-events_xmed.webp')",
-        'no-webp__hero--events-xmed': "url('/images/hero-events_xmed.jpg')",
+        'hero--rfp': "url('/images/hero-rfp.webp')",
+        'no-webp__hero--rfp': "url('/images/hero-rfp.jpg')",
+        'hero--rfp-xmed': "url('/images/hero-rfp_xmed.webp')",
+        'no-webp__hero--rfp-xmed': "url('/images/hero-rfp_xmed.jpg')",
         'hero--air-quality': "url('/images/hero-air-quality.webp')",
         'no-webp__hero--air-quality': "url('/images/hero-air-quality.jpg')",
         'hero--air-quality-xmed': "url('/images/hero-air-quality_xmed.webp')",
@@ -84,7 +84,11 @@ module.exports = {
         'hero--press': "url('/images/press-hero-desktop.webp')",
         'no-webp__hero--press': "url('/images/press-hero-desktop.jpg')",
         'hero--press-xmed': "url('/images/press-hero_xmed.webp')",
-        'no-webp__hero--press-xmed': "url('/images/press-hero_xmed.jpg')"
+        'no-webp__hero--press-xmed': "url('/images/press-hero_xmed.jpg')",
+        'hero--events': "url('/images/hero-events-desktop.webp')",
+        'no-webp__hero--events': "url('/images/hero-events-desktop.jpg')",
+        'hero--events-xmed': "url('/images/hero-events-mobile.webp')",
+        'no-webp__hero--events-xmed': "url('/images/hero-events-mobile.jpg')"
       },
       backgroundPosition: {
         'center-right': 'center right',
