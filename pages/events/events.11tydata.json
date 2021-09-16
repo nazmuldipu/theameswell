@@ -1,6 +1,7 @@
 {
     "event_items": [
-        {
+        {   
+            "id":"Weddings",
             "title":"Weddings",
             "p":"Located on ten scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer a dream wedding venue that will create memories for a lifetime.",
             "image":{
@@ -10,7 +11,7 @@
                         "media": "(min-width:900.1px)",
                         "imgtype": "jpg",
                         "sizes": "65vw",
-                        "imgalt": "The Airstream Bar and lounge area",
+                        "imgalt": "Wedding venue",
                         "intrinsicwidth": "805"
                     },
                     {
@@ -18,13 +19,14 @@
                         "media": "(max-width:900px)",
                         "imgtype": "jpg",
                         "sizes": "100vw",
-                        "imgalt": "The Airstream Bar and lounge area",
+                        "imgalt": "Wedding venue",
                         "intrinsicwidth": "805"
                     }
                 ]
             }
         },
-        {
+        {   
+            "id":"Meetings",
             "title":"Meetings",
             "p":"The flexible Infinity Ballroom has floor to ceiling windows that create generous space filled with natural light, easily accommodating large groups. For smaller meetings, the Discovery Boardroom, Curiosity Breakout Room, Ames Library and the Hangar One Art Gallery offer a variety of opportunities for creative gatherings or breakout sessions. The expansive Field and Meadow offer unique outside, open air venues where the sky really is the limit on what you and your team can create.",
             "image":{
@@ -33,8 +35,8 @@
                         "src": "images/events-gallery-9",
                         "media": "(min-width:900.1px)",
                         "imgtype": "jpg",
-                        "sizes": "80vw",
-                        "imgalt": "Lounge area",
+                        "sizes": "65vw",
+                        "imgalt": "Meeting area",
                         "intrinsicwidth": "805"
                     },
                     {
@@ -42,13 +44,14 @@
                         "media": "(max-width:900px)",
                         "imgtype": "jpg",
                         "sizes": "100vw",
-                        "imgalt": "Lounge area",
+                        "imgalt": "Meeting area",
                         "intrinsicwidth": "805"
                     }
                 ]
             }
         },
         {
+            "id":"Social",
             "title":"Social Events",
             "p":"From an alfresco birthday party on the Roger Patio or Beer Garden, or an annual fundraiser in the Infinity Ballroom, The Ameswell Hotel has a palette of options for you and welcomes your creativity, or the additional services of an event designer.",
             "image":{
@@ -57,8 +60,8 @@
                         "src": "images/events-gallery-10",
                         "media": "(min-width:900.1px)",
                         "imgtype": "jpg",
-                        "sizes": "80vw",
-                        "imgalt": "The Ameswell exterior with pool and Airstream Bar",
+                        "sizes": "65vw",
+                        "imgalt": "Social events",
                         "intrinsicwidth": "805"
                     },
                     {
@@ -66,7 +69,7 @@
                         "media": "(max-width:900px)",
                         "imgtype": "jpg",
                         "sizes": "100vw",
-                        "imgalt": "The Ameswell exterior with pool and Airstream Bar",
+                        "imgalt": "Social events",
                         "intrinsicwidth": "805"
                     }
                 ]
