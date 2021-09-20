@@ -417,8 +417,63 @@
       "descriptions": [
         "Description: Concerts are back at Shoreline Amphitheatre! Grab your tickets to Brad Paisley's 2021 Tour. Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for brunch the morning after!"
       ]
-    }
-    
+    },
+    {
+      "id": 34,
+      "date": { "day": 2, "month": 10, "year": 2021 },
+      "time": "10:00 AM - 2:00 PM",
+      "title": "G.O.A.T Fuel Wellness Day Benefitting Do It For The Love",
+      "showIndexPage": false,
+      "image": "images/happenings-goat-fuel-event",
+      "cta":[{"label":"Tickets Sold Here", "url": "https://www.eventbrite.com/e/goat-fuel-wellness-day-benefitting-do-it-for-the-love-tickets-173727933927"}],
+      "descriptions": [
+        "Join us for a wellness day of family-friendly fun and games on 'The Field' at The Ameswell Hotel with Jerry Rice and his team from G.O.A.T. Fuel, his health-focused energy drink.",
+        "Proceeds from the event will benefit Sara and Michael Franti's nonprofit, Do It For The Love.",
+        "Football Toss with Jerry Rice and the G.O.A.T. Fuel Team",
+        "Goat Yoga",
+        "Lawn Games: Cornhole, Hula Hoops, Bocce Ball, Connect Four and More",
+        "Juice Beauty Skincare Products",
+        "Team Fitnesse",
+        "Rejuv Spa",
+        "General admission $20 for adults and $10 for kids. Goat Yoga $45, includes general admission."
+      ]
+    },
+    {
+      "id": 35,
+      "date": { "day": 7, "month": 10, "year": 2021 },
+      "time": "7:00 PM",
+      "title": "MAROON 5 AND MEGHAN TRAINOR TOUR",
+      "showIndexPage": false,
+      "image": "images/events-shoreline-amphitheater",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the Maroon 5 and Meghan Trainor Tour! Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant!"
+      ]
+    },
+    {
+      "id": 36,
+      "date": { "day": 9, "month": 10, "year": 2021 },
+      "time": "7:00 PM",
+      "title": "LUKE BRYAN: PROUD TO BE RIGHT HERE TOUR",
+      "showIndexPage": false,
+      "image": "images/events-shoreline-amphitheater",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the Maroon 5 and Meghan Trainor Tour! Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for brunch the morning after!"
+      ]
+    },
+    {
+      "id": 37,
+      "date": { "day": 13, "month": 10, "year": 2021 },
+      "time": "7:00 PM",
+      "title": "THE DOOBIE BROTHERS 50TH ANNIVERSARY WITH MICHAEL MCDONALD",
+      "showIndexPage": false,
+      "image": "images/events-shoreline-amphitheater",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the Maroon 5 and Meghan Trainor Tour! Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant!"
+      ]
+    }    
   ],
   "subfooter_join_the_list": {
     "image": {
