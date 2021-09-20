@@ -8,18 +8,20 @@
                     {
                         "src": "images/events-gallery-8",
                         "media": "(min-width:900.1px)",
-                        "imgtype": "jpg",
+                        "type": "jpg",
                         "sizes": "65vw",
-                        "imgalt": "Wedding venue",
-                        "intrinsicwidth": "805"
+                        "alt": "Wedding venue",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
                     },
                     {
                         "src": "images/events-gallery-8",
                         "media": "(max-width:900px)",
-                        "imgtype": "jpg",
+                        "type": "jpg",
                         "sizes": "100vw",
-                        "imgalt": "Wedding venue",
-                        "intrinsicwidth": "805"
+                        "alt": "Wedding venue",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
                     }
                 ]
             }
@@ -32,18 +34,20 @@
                     {
                         "src": "images/events-gallery-9",
                         "media": "(min-width:900.1px)",
-                        "imgtype": "jpg",
+                        "type": "jpg",
                         "sizes": "65vw",
-                        "imgalt": "Meeting area",
-                        "intrinsicwidth": "805"
+                        "alt": "Meeting area",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
                     },
                     {
                         "src": "images/events-gallery-9",
                         "media": "(max-width:900px)",
-                        "imgtype": "jpg",
+                        "type": "jpg",
                         "sizes": "100vw",
-                        "imgalt": "Meeting area",
-                        "intrinsicwidth": "805"
+                        "alt": "Meeting area",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
                     }
                 ]
             }
@@ -56,18 +60,20 @@
                     {
                         "src": "images/events-gallery-10",
                         "media": "(min-width:900.1px)",
-                        "imgtype": "jpg",
+                        "type": "jpg",
                         "sizes": "65vw",
-                        "imgalt": "Social events",
-                        "intrinsicwidth": "805"
+                        "alt": "Social events",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
                     },
                     {
                         "src": "images/events-gallery-10",
                         "media": "(max-width:900px)",
-                        "imgtype": "jpg",
+                        "type": "jpg",
                         "sizes": "100vw",
-                        "imgalt": "Social events",
-                        "intrinsicwidth": "805"
+                        "alt": "Social events",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
                     }
                 ]
             }
