@@ -8,7 +8,8 @@
                         "sizes": "50vw",
                         "src": "images/press-1",
                         "alt": "Silicon Valley Magazine",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "399",
+                        "intrinsicheight": "295"
                     }
                 ]
             },
@@ -24,7 +25,8 @@
                         "sizes": "50vw",
                         "src": "images/press-2",
                         "alt": "Elle Decor",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "400",
+                        "intrinsicheight": "295"
                     }
                 ]
             },
@@ -40,7 +42,8 @@
                         "sizes": "50vw",
                         "src": "images/press-3",
                         "alt": "We Heart",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "400",
+                        "intrinsicheight": "299" 
                     }
                 ]
             },
@@ -56,7 +59,8 @@
                         "sizes": "50vw",
                         "src": "images/press-4",
                         "alt": "Luxury Travel Magazine",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "398",
+                        "intrinsicheight": "295"
                     }
                 ]
             },
@@ -72,7 +76,8 @@
                         "sizes": "50vw",
                         "src": "images/press-5",
                         "alt": "Superfuture",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "400",
+                        "intrinsicheight": "295"
                     }
                 ]
             },
@@ -88,7 +93,8 @@
                         "sizes": "50vw",
                         "src": "images/press-6",
                         "alt": "Eater SF",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "400",
+                        "intrinsicheight": "295"
                     }
                 ]
             },
@@ -104,7 +110,8 @@
                         "sizes": "50vw",
                         "src": "images/press-7",
                         "alt": "Mountain View Voice",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "400",
+                        "intrinsicheight": "295"
                     }
                 ]
             },
@@ -120,7 +127,8 @@
                         "sizes": "50vw",
                         "src": "images/press-8",
                         "alt": "Silicon Valley Business Journal",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "400",
+                        "intrinsicheight": "295" 
                     }
                 ]
             },
@@ -136,7 +144,8 @@
                         "sizes": "50vw",
                         "src": "images/press-9",
                         "alt": "elle",
-                        "intrinsicwidth": "424" 
+                        "intrinsicwidth": "400",
+                        "intrinsicheight": "295"
                     }
                 ]
             },
@@ -153,7 +162,8 @@
                     "sizes": "50vw",
                     "src": "images/press-10",
                     "alt": "elle",
-                    "intrinsicwidth": "532" 
+                    "intrinsicwidth": "532",
+                    "intrinsicheight": "300"
                 }
             ]
         }

@@ -8,7 +8,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 },
                 {
                     "src": "images/events-gallery-4",
@@ -16,7 +17,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -28,7 +30,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "Lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 },
                 {
                     "src": "images/events-gallery-5",
@@ -36,7 +39,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "Lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -48,7 +52,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "The Ameswell exterior with pool and Airstream Bar",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 },
                 {
                     "src": "images/events-gallery-6",
@@ -56,7 +61,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "The Ameswell exterior with pool and Airstream Bar",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -68,7 +74,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "The Ameswell hotel exterior",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 },
                 {
                     "src": "images/events-gallery-7",
@@ -76,7 +83,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "The Ameswell hotel exterior",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536"
                 }
             ]
         }
