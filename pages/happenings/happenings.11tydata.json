@@ -236,6 +236,18 @@
     },   
     {
       "id": 19,
+      "date": { "day": 18, "month": 9, "year": 2021 },
+      "time": "7:00 PM",
+      "title": "LADY A: WHAT A SONG CAN DO TOUR",
+      "showIndexPage": false,
+      "image": "images/events-shoreline-amphitheater",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the What A Song Can Do Tour with the one and only Lady A! Go all out and make it an overnight stay at The Ameswell Hotel! Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for bottomless mimosas the morning after! Detox after brunch with our complimentary yoga class!"
+      ]
+    },
+    {
+      "id": 20,
       "date": { "day": 19, "month": 9, "year": 2021 },
       "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
@@ -249,7 +261,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 21,
       "date": { "day": 21, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH BRANDON PASION",
@@ -261,7 +273,7 @@
       ]
     },     
     {
-      "id": 21,
+      "id": 22,
       "date": { "day": 22, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
@@ -273,7 +285,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 23,
       "date": { "day": 22, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -285,7 +297,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 24,
       "date": { "day": 23, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -297,7 +309,43 @@
       ]
     },
     {
-      "id": 24,
+      "id": 25,
+      "date": { "day": 23, "month": 9, "year": 2021 },
+      "time": "7:00 PM",
+      "title": "KINGS OF LEON: WHEN YOU SEE YOURSELF TOUR",
+      "image": "images/events-shoreline-amphitheater",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the When You See Yourself Tour with Kings Of Leon and Cold War Kids! Go all out and make it an overnight stay at The Ameswell Hotel! Grab dinner, drinks and enjoy a great performance from Jimmy Ashley at Roger Bar and Restaurant before the concert!"
+      ]
+    },
+    {
+      "id": 26,
+      "date": { "day": 24, "month": 9, "year": 2021 },
+      "time": "7:00 PM",
+      "title": "JASON ALDEAN: BACK IN THE SADDLE TOUR",
+      "image": "images/events-shoreline-amphitheater",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to Jason Aldean's Back In The Saddle Tour. Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for brunch the morning after!"
+      ]
+    },
+    {
+      "id": 27,
+      "date": { "day": 26, "month": 9, "year": 2021 },
+      "time": "8:00 PM",
+      "title": "PITBULL: I FEEL GOOD TOUR",
+      "image": "images/events-shoreline-amphitheater",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the I Feel Good Tour with Pitbull and Iggy Azalea! Go all out and make it an overnight stay at The Ameswell Hotel! Grab dinner, drinks and feel good Roger Bar and Restaurant before the concert!"
+      ]
+    },
+    {
+      "id": 28,
       "date": { "day": 26, "month": 9, "year": 2021 },
       "time": "10:00 - 11:00 am",
       "title": "YOGA ON THE LAWN",
@@ -311,7 +359,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 29,
       "date": { "day": 28, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH MEGAN CHENOT",
@@ -323,7 +371,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 30,
       "date": { "day": 29, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH CARLOS REYES",
@@ -335,7 +383,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 31,
       "date": { "day": 29, "month": 9, "year": 2021 },
       "time": "4PM - 12AM",
       "title": "WINE WEDNESDAYS",
@@ -347,7 +395,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 32,
       "date": { "day": 30, "month": 9, "year": 2021 },
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH JIMMY ASHLEY",
@@ -357,7 +405,20 @@
       "descriptions": [
         "Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
       ]
+    },
+    {
+      "id": 33,
+      "date": { "day": 1, "month": 10, "year": 2021 },
+      "time": "7:30 PM",
+      "title": "BRAD PAISLEY: 2021 TOUR",
+      "showIndexPage": false,
+      "image": "images/events-shoreline-amphitheater",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Description: Concerts are back at Shoreline Amphitheatre! Grab your tickets to Brad Paisley's 2021 Tour. Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for brunch the morning after!"
+      ]
     }
+    
   ],
   "subfooter_join_the_list": {
     "image": {
