@@ -8,7 +8,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-1",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -16,7 +17,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-1",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -28,7 +30,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-2",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1561" 
+                    "intrinsicwidth": "1561",
+                    "intrinsicheight": "960" 
                 },
                 {
                     "media": "(max-width:900px)",
@@ -36,7 +39,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-2",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "1561" 
+                    "intrinsicwidth": "1561" ,
+                    "intrinsicheight": "960"
                 }
             ]
         },
@@ -48,7 +52,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-3",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 },
                 {
                     "media": "(max-width:900px)",
@@ -56,7 +61,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-3",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667"  
                 }
             ]
         },
@@ -68,7 +74,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-4",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 },
                 {
                     "media": "(max-width:900px)",
@@ -76,7 +83,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-4",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 }
             ]
         },
@@ -88,7 +96,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-5",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667"  
                 },
                 {
                     "media": "(max-width:900px)",
@@ -96,7 +105,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-5",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 }
             ]
         },
@@ -108,7 +118,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-6",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 },
                 {
                     "media": "(max-width:900px)",
@@ -116,7 +127,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-6",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 }
             ]
         },
@@ -128,7 +140,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-7",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536" 
                 },
                 {
                     "media": "(max-width:900px)",
@@ -136,7 +149,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-7",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304",
+                    "intrinsicheight": "1536" 
                 }
             ]
         },
@@ -148,7 +162,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-8",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "6720" 
+                    "intrinsicwidth": "6720" ,
+                    "intrinsicheight": "3780"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -156,7 +171,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-8",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "6720" 
+                    "intrinsicwidth": "6720" ,
+                    "intrinsicheight": "3780"
                 }
             ]
         },
@@ -168,7 +184,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-9",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 },
                 {
                     "media": "(max-width:900px)",
@@ -176,7 +193,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-9",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667"  
                 }
             ]
         },
@@ -188,7 +206,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-10",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667"  
                 },
                 {
                     "media": "(max-width:900px)",
@@ -196,7 +215,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-10",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 }
             ]
         },
@@ -208,7 +228,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-11",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667"  
                 },
                 {
                     "media": "(max-width:900px)",
@@ -216,7 +237,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-11",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667"  
                 }
             ]
         },
@@ -228,7 +250,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-12",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 },
                 {
                     "media": "(max-width:900px)",
@@ -236,7 +259,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-12",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 }
             ]
         },
@@ -248,7 +272,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-13",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667"  
                 },
                 {
                     "media": "(max-width:900px)",
@@ -256,7 +281,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-13",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500",
+                    "intrinsicheight": "1667" 
                 }
             ]
         },
@@ -268,7 +294,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-14",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -276,7 +303,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-14",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -308,7 +336,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-16",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -316,7 +345,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-16",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -328,7 +358,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-17",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -336,7 +367,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-17",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -348,7 +380,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-18",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500" ,
+                    "intrinsicheight": "3421"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -356,7 +389,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-18",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2500" 
+                    "intrinsicwidth": "2500" ,
+                    "intrinsicheight": "3421"
                 }
             ]
         },
@@ -368,7 +402,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-19",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -376,7 +411,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-19",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 }
             ]
         },
@@ -388,7 +424,8 @@
                     "sizes": "50vw",
                     "src": "images/gallery-desktop-20",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 },
                 {
                     "media": "(max-width:900px)",
@@ -396,7 +433,8 @@
                     "sizes": "100vw",
                     "src": "images/gallery-desktop-20",
                     "alt": "ameswell gallery",
-                    "intrinsicwidth": "2304" 
+                    "intrinsicwidth": "2304" ,
+                    "intrinsicheight": "1536"
                 }
             ]
         }

@@ -8,7 +8,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "2500",
+          "intrinsicheight": "1667"
         },
         {
           "src": "images/wellness_1",
@@ -16,7 +17,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "2500",
+          "intrinsicheight": "1667"
         }
       ]
     },
@@ -28,7 +30,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6330",
+          "intrinsicheight": "3634"
         },
         {
           "src": "images/wellness_2",
@@ -36,7 +39,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6330",
+          "intrinsicheight": "3634"
         }
       ]
     },
@@ -48,7 +52,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6330",
+          "intrinsicheight": "3634"
         },
         {
           "src": "images/wellness_3",
@@ -56,7 +61,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6330",
+          "intrinsicheight": "3634"
         }
       ]
     },
@@ -68,7 +74,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6720",
+          "intrinsicheight": "4480"
         },
         {
           "src": "images/wellness_4",
@@ -76,7 +83,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "The pool at the Ameswell Hotel lit in the evening",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6720",
+          "intrinsicheight": "4480"
         }
       ]
     },
@@ -88,7 +96,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6720",
+          "intrinsicheight": "3780"
         },
         {
           "src": "images/wellness_5",
@@ -96,7 +105,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "6720",
+          "intrinsicheight": "3780"
         }
       ]
     },
@@ -108,7 +118,8 @@
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         },
         {
           "src": "images/wellness_6",
@@ -116,7 +127,8 @@
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-          "intrinsicwidth": "2300"
+          "intrinsicwidth": "2304",
+          "intrinsicheight": "1536"
         }
       ]
     }
@@ -145,7 +157,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "2304",
+              "intrinsicheight": "3456"
             },
             {
               "src": "images/pool-1",
@@ -153,7 +166,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "2304",
+              "intrinsicheight": "3456"
             }
           ]
         },
@@ -165,7 +179,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "2304",
+              "intrinsicheight": "1536"
             },
             {
               "src": "images/pool-2",
@@ -173,7 +188,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "2304",
+              "intrinsicheight": "1536"
             }
           ]
         }
@@ -216,7 +232,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "9504",
+              "intrinsicheight": "6336"
             },
             {
               "src": "images/spa-1",
@@ -224,7 +241,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "9504",
+              "intrinsicheight": "6336"
             }
           ]
         }
@@ -250,7 +268,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6719",
+              "intrinsicheight": "2368"
             },
             {
               "src": "images/fitness center-1",
@@ -258,7 +277,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6719",
+              "intrinsicheight": "2368"
             }
           ]
         },
@@ -270,7 +290,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6330",
+              "intrinsicheight": "3634"
             },
             {
               "src": "images/fitness center-2",
@@ -278,7 +299,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6330",
+              "intrinsicheight": "3634"
             }
           ]
         },
@@ -290,7 +312,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6720",
+              "intrinsicheight": "3780"
             },
             {
               "src": "images/fitness center-3",
@@ -298,7 +321,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6720",
+              "intrinsicheight": "3780"
             }
           ]
         },
@@ -310,7 +334,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6720",
+              "intrinsicheight": "3780"
             },
             {
               "src": "images/fitness center-4",
@@ -318,7 +343,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6720",
+              "intrinsicheight": "3780"
             }
           ]
         }
@@ -346,7 +372,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "2304",
+              "intrinsicheight": "1536"
             },
             {
               "src": "images/mirror by lululemon-1",
@@ -354,7 +381,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "2304",
+              "intrinsicheight": "1536"
             }
           ]
         },
@@ -366,7 +394,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "4414",
+              "intrinsicheight": "6621"
             },
             {
               "src": "images/mirror by lululemon-2",
@@ -374,7 +403,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "4414",
+              "intrinsicheight": "6621"
             }
           ]
         }
@@ -404,7 +434,8 @@
               "imgtype": "jpg",
               "sizes": "80vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6720",
+              "intrinsicheight": "4480"
             },
             {
               "src": "images/fitness-1",
@@ -412,7 +443,8 @@
               "imgtype": "jpg",
               "sizes": "100vw",
               "imgalt": "The rolling hils of the organic Juice Beauty farm on a sunny day",
-              "intrinsicwidth": "2300"
+              "intrinsicwidth": "6720",
+              "intrinsicheight": "4480"
             }
           ]
         }
