@@ -35,7 +35,7 @@ const createMenuItem = (event) => {
         <img class="w-full h-80 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70">
         <figcaption>
             <header class="p-4">
-                <span class="text-lg font-sans">
+                <span class="text-lg font-sans text-ams-primary">
                     ${dateString}
                 </span>
                 <a href="/happenings-detail.html?id=${event.id}">
