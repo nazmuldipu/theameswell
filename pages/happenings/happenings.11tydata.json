@@ -268,7 +268,7 @@
       "time": "5:30 PM - 8:30 PM",
       "title": "LIVE MUSIC WITH BRANDON PASION",
       "image": "images/happenings-events-brandon-pasion",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "Brandon Pasion us a SF Bay Area based singer songwriter. His heart-driven lyrics and melodies call back to the timeless storytelling of country music's glory days, supported by clean, powerful vocals that reveal his jazz roots and impeccable artistry."
@@ -410,6 +410,24 @@
     },
     {
       "id": 33,
+      "date": { "day": 30, "month": 9, "year": 2021 },
+      "time": "6:00 PM - 9:00 PM",
+      "title": "G.O.A.T Fuel Dinner Benefitting Do It For The Love",
+      "showIndexPage": true,
+      "image": "images/happenings-do-it-for-the-love",
+      "cta":[{"label":"Purchase Tickets", "url": "https://www.eventbrite.com/e/goat-fuel-dinner-benefitting-do-it-for-the-love-tickets-170365002308"}],
+      "descriptions": [
+        "You are cordially invited to a private dinner and silent auction by G.O.A.T Fuel and The Ameswell Hotel benefitting Michael and Sara Franti's non-profit, Do It For The Love.",
+        "Evening includes a silent auction, cocktail reception sponsored by Bacardi and Tansy wines and a 3-course dinner, along with some surprises you don't want to miss!",
+        "- MC: Hooman Khalili from 97.3 Radio Alice",
+        "- Speaker Panel: NFL Hall of Famer Jerry Rice, VC Legend Chris Kelly and Friends",
+        "- Special Guests: Sara and Michael Franti",
+        "Tickets: $250 pp ($150 is tax deductible)",
+        "Please show proof of vaccination or a negative Covid test result at check-in."
+      ]
+    },    
+    {
+      "id": 34,
       "date": { "day": 1, "month": 10, "year": 2021 },
       "time": "7:30 PM",
       "title": "BRAD PAISLEY: 2021 TOUR",
@@ -421,7 +439,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 35,
       "date": { "day": 2, "month": 10, "year": 2021 },
       "time": "10:00 AM - 2:00 PM",
       "title": "G.O.A.T Fuel Wellness Day Benefitting Do It For The Love",
@@ -441,7 +459,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 36,
       "date": { "day": 7, "month": 10, "year": 2021 },
       "time": "7:00 PM",
       "title": "MAROON 5 AND MEGHAN TRAINOR TOUR",
@@ -453,7 +471,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": 37,
       "date": { "day": 9, "month": 10, "year": 2021 },
       "time": "7:00 PM",
       "title": "LUKE BRYAN: PROUD TO BE RIGHT HERE TOUR",
@@ -465,7 +483,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": 38,
       "date": { "day": 13, "month": 10, "year": 2021 },
       "time": "7:00 PM",
       "title": "THE DOOBIE BROTHERS 50TH ANNIVERSARY WITH MICHAEL MCDONALD",
