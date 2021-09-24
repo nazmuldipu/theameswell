@@ -31,13 +31,13 @@ const createMenuItem = (event) => {
         ", " +
         date.getFullYear();
     let section = document.createElement("section");
-    section.className = "bg-ams-white mb-8 shadow-md mx-4 xmed:mx-0";
+    section.className = "bg-ams-white mb-8 shadow-md mx-6 xmed:mx-0";
     section.innerHTML = `    
     <figure>
         ${eventPicElement.outerHTML}
         <figcaption>
             <header class="p-4">
-                <span class="text-lg font-sans">
+                <span class="text-lg font-sans text-ams-primary">
                     ${dateString}
                 </span>
                 <a href="/happenings-detail.html?id=${event.id}">
