@@ -1,5 +1,5 @@
 "use strict";
-import * as data from './happenings.11tydata.json';
+import * as data from '../_data/data.json';
 const events = data.events;
 
 const hasEventListeners = !!window.addEventListener;
@@ -146,9 +146,10 @@ const renderBody = (year, month) => {
 };
 
 const renderEventCard = (event) => {
+  const eventPicElement = document.querySelector('.event_id_' + event.id);
   return `<section class="bg-ams-white xmed:shadow-2xl mb-4 border-b xmed: border-0 w-96 h-96">
             <figure>
-            <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
+              ${eventPicElement.outerHTML}
                 <figcaption>
                     <header class="px-6 py-4 text-left bg-ams-white">
                         <h3 class="text-lg font-sans">
@@ -165,6 +166,8 @@ const renderEventCard = (event) => {
 };
 
 const renderOurHappeningsCard = (event) => {
+  const eventPicElement = document.querySelector('.event_id_' + event.id)
+
   let ctaEle = '';
   event.cta.forEach(element => {
     ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
@@ -174,7 +177,7 @@ const renderOurHappeningsCard = (event) => {
   return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
             <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
-                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
+                ${eventPicElement.outerHTML}
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
@@ -189,7 +192,7 @@ const renderOurHappeningsCard = (event) => {
             </a>
             <span class="xmed:hidden">
               <figure>
-                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
+                ${eventPicElement.outerHTML}
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
@@ -405,7 +408,6 @@ Happenings.prototype = {
         const evn = events[i];
         const evnDate = new Date(evn.date.year, (evn.date.month - 1), evn.date.day);
         if(evnDate.getTime() >= today.getTime()){
-          console.log(evn.id, evn.title, evn.date);
           curEvents.push(evn);
         }        
         if(!this.viewAll && curEvents.length >= 3) break;

@@ -3,7 +3,7 @@ import "../../components/MediaCarousel/index.js";
 import "../../components/RoomsGallery/index.js";
 import "../../components/FormSender/index.js";
 import "../../components/WeatherWidget/index.js";
-import * as happenigsData from "../happenings/happenings.11tydata.json";
+import * as happenigsData from "../_data/data.json";
 
 const monthNames = [
     "January",
@@ -21,6 +21,8 @@ const monthNames = [
 ];
 
 const createMenuItem = (event) => {
+    const eventPicElement = document.querySelector('.event_id_' + event.id);
+
     const date = new Date(event.date.year, event.date.month - 1, event.date.day);
     const dateString =
         monthNames[date.getMonth()] +
@@ -32,7 +34,7 @@ const createMenuItem = (event) => {
     section.className = "bg-ams-white mb-8 shadow-md mx-4 xmed:mx-0";
     section.innerHTML = `    
     <figure>
-        <img class="w-full h-80 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70">
+        ${eventPicElement.outerHTML}
         <figcaption>
             <header class="p-4">
                 <span class="text-lg font-sans">
