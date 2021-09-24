@@ -39,6 +39,32 @@ fabExternalLink: true
         </h1>
     </header>
 </div>
+
+<section class="xmed:bg-ams-base w-full text-ams-primary hidden">
+    {% for event in data.events %}
+        {% set imgObj = {"artDirection": [
+      {
+        "classes": "image-loader",
+        "media": "(min-width:900.1px)",
+        "sizes": "100vw",
+        "type": "jpg",
+        "src": event.image,
+        "alt": "The Ameswell hotel exterior",
+        "intrinsicwidth": "800"
+      },
+      {
+        "classes": "image-loader",
+        "media": "(max-width:900px)",
+        "sizes": "100vw",
+        "type": "jpg",
+        "src": event.image,
+        "alt": "The Ameswell hotel exterior",
+        "intrinsicwidth": "800"
+      }
+    ], classes: 'w-full h-96 object-cover event_id_' + event.id }%}
+        {{ scaled_image(imgObj) }}
+    {% endfor %}
+</section>
 <!-- calendar start-->
 <section class="xmed:bg-ams-base w-full text-ams-primary">
     <section id="happening_calendar" class="px-2 xmed:px-10 max-w-ameswel m-auto relative">
