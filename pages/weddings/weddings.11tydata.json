@@ -15,7 +15,8 @@
                 "type": "jpg",
                 "src": "images/homepage-5-desktop",
                 "alt": "Public space",
-                "intrinsicwidth": "600" 
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             }
         ]
     },
@@ -27,7 +28,8 @@
                 "type": "jpg",
                 "src": "images/homepage-4-desktop",
                 "alt": "The Roger Restaurant",
-                "intrinsicwidth": "600" 
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             }
         ]
     },
@@ -39,7 +41,8 @@
                 "type": "jpg",
                 "src": "images/homepage-6-desktop",
                 "alt": "The Airstream Bar",
-                "intrinsicwidth": "600" 
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712" 
             }
         ]
     }
