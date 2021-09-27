@@ -91,7 +91,7 @@
 {% macro rooms_carousel(content) %}
     <media-carousel>
         <div class="swiper-container w-full h-full relative overflow-hidden">
-            <nav class="room-car-nav">
+            <nav class="room-car-nav px-4">
                 <div class="pl-2 pr-2 xmed:pt-3 xmed:pl-4 xmed:bg-ams-white xmed:shadow-md">
                     <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                             previous
@@ -119,13 +119,13 @@
                                 <div class="grid grid-cols-1 xmed:grid-cols-2 justify-items-center xmed:justify-items-start">
                                     <ul class="grid grid-flow-col auto-cols-max">
                                         <li class="rooms-gallery--icon-sqft grid justify-items-center content-start text-center w-28">
-                                            {{svg_icon("size",width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
-                                            <span>{{slide.icons.sqft}} ft<sup>2</sup> </span>
+                                            {{svg_icon("size",width="48", height="48", fill="#213E4C", sclass="icon inline-block")}}
+                                            <span class="text-ams-primary">{{slide.icons.sqft}} ft<sup>2</sup> </span>
                                         </li>
                                         <li class="rooms-gallery--icon-sleeps grid justify-items-center content-start text-center w-28">
                                             {# {{svg_icon("bed",width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
                                             <span>Sleeps {{slide.icons.capacity}} </span> #}
-                                            {{svg_icon("bed", "Sleeps " + slide.icons.capacity, width="48", height="48", fill="#ec008c", sclass="icon inline-block mt-2")}}
+                                            {{svg_icon("bed", "Sleeps " + slide.icons.capacity, width="48", height="48", fill="#213E4C", sclass="icon inline-block mt-2", textColor="true")}}
                                         </li>
                                     </ul>
                                     <div class="mt-10 xmed:mt-0 justify-self-center xmed:justify-self-end">
@@ -148,7 +148,7 @@
 {% macro homepage_offers_carousel(content, isRoomDetail = false) %}
     <media-carousel>
         <div class="swiper-container w-full h-full relative overflow-hidden">
-            <nav class="room-car-nav {{ 'px-8' if isRoomDetail == true }}">
+            <nav class="room-car-nav px-4 {{ 'px-8' if isRoomDetail == true }}">
                 <div class="pl-2 pr-2 xmed:pt-3 xmed:pl-4 xmed:bg-ams-white xmed:shadow-md">
                     <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                             previous
@@ -170,17 +170,17 @@
                                 <div class="swiper-lazy-preloader"></div>
                             </picture>
                             <article class="xmed:my-8 {{ 'px-4' if isRoomDetail == true }}">
-                                <h2 class="w-full {{ 'pr-5' if isRoomDetail == false }} title-display mt-12 xmed:mt-0 text-2xl xmed:text-4xl text-center xmed:text-left">
+                                <h2 class="w-full {{ 'pr-0 xmed:pr-5' if isRoomDetail == false }} title-display mt-12 xmed:mt-0 text-2xl xmed:text-4xl text-center xmed:text-left">
                                     {{slide.title}}
                                 </h2>
                                 <div class="block xmed:grid grid-cols-1 xmed:grid-cols-auto-max justify-items-center xmed:justify-items-start gap-20">
-                                    <div class="text-ams-primary">
+                                    <div class="text-ams-primary px-4">
                                         {{slide.p1}}
                                     </div>
                                     {% if (isRoomDetail == false) %}
                                         <div class="mt-10 mb-2 xmed:mt-0 justify-self-center xmed:justify-self-end text-center xmed:text-left">
                                         <a href="{{slide.link}}" class="hidden xmed:block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button" target="_blank">Book This Offer</a>
-                                        <a href="{{slide.link}}" class="xmed:hidden mt-6 segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">Book This Offer</a>
+                                        <a href="{{slide.link}}" class="xmed:hidden mt-6 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">Book Offer</a>
                                     </div>
                                     {% else %}
                                         <div class="mt-10 mb-8 xmed:mt-0 justify-self-center xmed:justify-self-end text-center xmed:text-left">
