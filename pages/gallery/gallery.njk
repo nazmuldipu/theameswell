@@ -22,11 +22,11 @@ fabExternalLink: true
 
 <div id="pageHero" class="bg-ams-taupe w-full justify-items-center pt-20 overflow-hidden"></div>
 
-<section class="segment-outer bg-ams-taupe pb-2 px-7 xmed:px-14">
+<section class="segment-outer bg-ams-taupe pb-2 px-6 xmed:px-14">
     {% set items = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ] %}
     {% set oddItems = items | select("odd") %}
     {% set evenItems = items | select("even") %}
-    <article class="segment-inner grid grid-cols-1 xmed:grid-cols-2 gap-16">
+    <article class="grid grid-cols-1 xmed:grid-cols-2 gap-16">
         <figure class="mobile-gallery xmed:hidden">
             {{renderGalleryItems(items)}}
         </figure>

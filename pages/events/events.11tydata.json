@@ -1,84 +1,82 @@
 {
-    "eventslides": [
-        {
-            "artDirection": [
-                {
-                    "src": "images/events-gallery-4",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
-                },
-                {
-                    "src": "images/events-gallery-4",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
-                }
-            ]
+    "event_items": [
+        {   
+            "title":"Weddings",
+            "p":"Located on ten scenic acres in Mountain View and boasting over 15,000 square feet of indoor and outdoor event space, we offer a dream wedding venue that will create memories for a lifetime.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-gallery-8",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "65vw",
+                        "alt": "Wedding venue",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
+                    },
+                    {
+                        "src": "images/events-gallery-8",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Wedding venue",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
+                    }
+                ]
+            }
+        },
+        {   
+            "title":"Meetings",
+            "p":"The flexible Infinity Ballroom has floor to ceiling windows that create generous space filled with natural light, easily accommodating large groups. For smaller meetings, the Discovery Boardroom, Curiosity Breakout Room, Ames Library and the Hangar One Art Gallery offer a variety of opportunities for creative gatherings or breakout sessions. The expansive Field and Meadow offer unique outside, open air venues where the sky really is the limit on what you and your team can create.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-gallery-9",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "65vw",
+                        "alt": "Meeting area",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
+                    },
+                    {
+                        "src": "images/events-gallery-9",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Meeting area",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
+                    }
+                ]
+            }
         },
         {
-            "artDirection": [
-                {
-                    "src": "images/events-gallery-5",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "Lounge area",
-                    "intrinsicwidth": "2304"
-                },
-                {
-                    "src": "images/events-gallery-5",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "Lounge area",
-                    "intrinsicwidth": "2304"
-                }
-            ]
-        },
-        {
-            "artDirection": [
-                {
-                    "src": "images/events-gallery-6",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "The Ameswell exterior with pool and Airstream Bar",
-                    "intrinsicwidth": "2304"
-                },
-                {
-                    "src": "images/events-gallery-6",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The Ameswell exterior with pool and Airstream Bar",
-                    "intrinsicwidth": "2304"
-                }
-            ]
-        },
-        {
-            "artDirection": [
-                {
-                    "src": "images/events-gallery-7",
-                    "media": "(min-width:900.1px)",
-                    "imgtype": "jpg",
-                    "sizes": "80vw",
-                    "imgalt": "The Ameswell hotel exterior",
-                    "intrinsicwidth": "2304"
-                },
-                {
-                    "src": "images/events-gallery-7",
-                    "media": "(max-width:900px)",
-                    "imgtype": "jpg",
-                    "sizes": "100vw",
-                    "imgalt": "The Ameswell hotel exterior",
-                    "intrinsicwidth": "2304"
-                }
-            ]
+            "title":"Social Events",
+            "p":"From an alfresco birthday party on the Roger Patio or Beer Garden, or an annual fundraiser in the Infinity Ballroom, The Ameswell Hotel has a palette of options for you and welcomes your creativity, or the additional services of an event designer.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-gallery-10",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "65vw",
+                        "alt": "Social events",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
+                    },
+                    {
+                        "src": "images/events-gallery-10",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Social events",
+                        "intrinsicwidth": "805",
+                        "intrinsicheight":"572"
+                    }
+                ]
+            }
         }
     ]
 }

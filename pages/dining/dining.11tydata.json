@@ -6,7 +6,8 @@
                 "type": "jpg",
                 "src": "images/dining-1",
                 "alt": "The Roger Restaurant",
-                "intrinsicwidth": "390"
+                "intrinsicwidth": "491",
+                "intrinsicheight": "316"
             }
         ]
     },
@@ -17,7 +18,8 @@
                 "type": "jpg",
                 "src": "images/dining-2",
                 "alt": "Public area",
-                "intrinsicwidth": "390"
+                "intrinsicwidth": "491",
+                "intrinsicheight": "316"
             }
         ]
     },
@@ -28,7 +30,8 @@
                 "type": "jpg",
                 "src": "images/dining-3",
                 "alt": "The Airstream Bar",
-                "intrinsicwidth": "390"
+                "intrinsicwidth": "491",
+                "intrinsicheight": "316"
             }
         ]
     }

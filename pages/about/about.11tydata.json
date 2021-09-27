@@ -18,7 +18,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "Front desk",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 },
                 {
                     "src": "images/about-gallery-7",
@@ -26,7 +27,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "Front desk",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 }
             ]
         },
@@ -38,7 +40,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "The Airstream Bar",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 },
                 {
                     "src": "images/about-gallery-8",
@@ -46,7 +49,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "The Airstream Bar",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 }
             ]
         },
@@ -58,7 +62,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 },
                 {
                     "src": "images/about-gallery-9",
@@ -66,7 +71,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "The Airstream Bar and lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 }
             ]
         },
@@ -78,7 +84,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "Lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 },
                 {
                     "src": "images/about-gallery-10",
@@ -86,7 +93,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "Lounge area",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 }
             ]
         },
@@ -98,7 +106,8 @@
                     "imgtype": "jpg",
                     "sizes": "80vw",
                     "imgalt": "Interior details",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 },
                 {
                     "src": "images/about-gallery-11",
@@ -106,7 +115,8 @@
                     "imgtype": "jpg",
                     "sizes": "100vw",
                     "imgalt": "Interior details",
-                    "intrinsicwidth": "2304"
+                    "intrinsicwidth": "2304",
+                    "intrinsicheigth": "1536"
                 }
             ]
         }
@@ -120,7 +130,8 @@
                 "type": "jpg",
                 "src": "images/about-8-desktop_2xs",
                 "alt": "Hotel room with view",
-                "intrinsicwidth": "600" 
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             },
             {
                 "classes": "image-loader image-loader--white",
@@ -129,7 +140,8 @@
                 "type": "jpg",
                 "src": "images/about-8-desktop_2xs",
                 "alt": "Hotel room with view",
-                "intrinsicwidth": "300"
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             }
         ]
     },
@@ -142,7 +154,8 @@
                 "type": "jpg",
                 "src": "images/about-9-desktop_2xs",
                 "alt": "The Airstream Bar and lounge area",
-                "intrinsicwidth": "600" 
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             },
             {
                 "classes": "image-loader image-loader--white",
@@ -151,7 +164,8 @@
                 "type": "jpg",
                 "src": "images/about-9-desktop_2xs",
                 "alt": "The Airstream Bar and lounge area",
-                "intrinsicwidth": "300"
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             }
         ]
     },
@@ -164,7 +178,8 @@
                 "type": "jpg",
                 "src": "images/about-10-desktop_2xs",
                 "alt": "Wellness room with mirror fitness",
-                "intrinsicwidth": "600" 
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             },
             {
                 "classes": "image-loader image-loader--white",
@@ -173,7 +188,8 @@
                 "type": "jpg",
                 "src": "images/about-10-desktop_2xs",
                 "alt": "Wellness room with mirror fitness",
-                "intrinsicwidth": "300"
+                "intrinsicwidth": "600",
+                "intrinsicheight": "712"
             }
         ]
     },
@@ -191,7 +207,8 @@
                         "type": "jpg",
                         "src": "images/about-1",
                         "alt": "The exterior of the Ameswell Hotel",
-                        "intrinsicwidth": "1064" 
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     },
                     {
                         "classes": "image-loader image-loader--white",
@@ -200,7 +217,8 @@
                         "type": "jpg",
                         "src": "images/about-1",
                         "alt": "The exterior of the Ameswell Hotel",
-                        "intrinsicwidth": "1064"
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     }
                 ]
             }
@@ -218,7 +236,8 @@
                         "type": "jpg",
                         "src": "images/about-2",
                         "alt": "A dark wood table in a conference room at the Ameswell Hotel",
-                        "intrinsicwidth": "1064" 
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     },
                     {
                         "classes": "image-loader image-loader--white",
@@ -227,7 +246,8 @@
                         "type": "jpg",
                         "src": "images/about-2",
                         "alt": "A dark wood table in a conference room at the Ameswell Hotel",
-                        "intrinsicwidth": "1064"
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     }
                 ]
             }
@@ -245,7 +265,8 @@
                         "type": "jpg",
                         "src": "images/about-3",
                         "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
-                        "intrinsicwidth": "1064" 
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     },
                     {
                         "classes": "image-loader image-loader--white",
@@ -254,7 +275,8 @@
                         "type": "jpg",
                         "src": "images/about-3",
                         "alt": "The in-room Mirror and exercise equipment at the Ameswell Hotel",
-                        "intrinsicwidth": "1064"
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     }
                 ]
             }
@@ -272,7 +294,8 @@
                         "type": "jpg",
                         "src": "images/about-4",
                         "alt": "A stylized view of the exterior of Hangar One",
-                        "intrinsicwidth": "1064" 
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     },
                     {
                         "classes": "image-loader image-loader--white",
@@ -281,7 +304,8 @@
                         "type": "jpg",
                         "src": "images/about-4",
                         "alt": "A stylized view of the exterior of Hangar One",
-                        "intrinsicwidth": "1064"
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     }
                 ]
             }
@@ -299,7 +323,8 @@
                         "type": "jpg",
                         "src": "images/about-5",
                         "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
-                        "intrinsicwidth": "1064" 
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     },
                     {
                         "classes": "image-loader image-loader--white",
@@ -308,7 +333,8 @@
                         "type": "jpg",
                         "src": "images/about-5",
                         "alt": "Couches and chairs decorate a lounge area at the Ameswell Hotel",
-                        "intrinsicwidth": "1064"
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     }
                 ]
             }
@@ -326,7 +352,8 @@
                         "type": "jpg",
                         "src": "images/about-6",
                         "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
-                        "intrinsicwidth": "1064" 
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     },
                     {
                         "classes": "image-loader image-loader--white",
@@ -335,7 +362,8 @@
                         "type": "jpg",
                         "src": "images/about-6",
                         "alt": "The exterior entrance of the Ameswell Hotel in the twilight",
-                        "intrinsicwidth": "1064"
+                        "intrinsicwidth": "1064",
+                        "intrinsicheight": "600"
                     }
                 ]
             }
