@@ -40,7 +40,7 @@
       "id": 2,
       "date": { "day": 21, "month": 8, "year": 2021 },
       "time": "7:00",
-      "title": "DIERKS BENTLEY: BEERS ON ME TOUR",
+      "title": "Playing at Shoreline: DIERKS BENTLEY: BEERS ON ME TOUR",
       "image": "images/happenings_evants-DIERKS_BENTLEY",
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://www.livenation.com/venue/KovZpZA6ta1A/shoreline-amphitheatre-events"}],
@@ -240,7 +240,7 @@
       "id": 19,
       "date": { "day": 18, "month": 9, "year": 2021 },
       "time": "7:00 PM",
-      "title": "LADY A: WHAT A SONG CAN DO TOUR",
+      "title": "Playing at Shoreline: LADY A: WHAT A SONG CAN DO TOUR",
       "showIndexPage": false,
       "image": "images/events-shoreline-amphitheater",
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
@@ -314,7 +314,7 @@
       "id": 25,
       "date": { "day": 23, "month": 9, "year": 2021 },
       "time": "7:00 PM",
-      "title": "KINGS OF LEON: WHEN YOU SEE YOURSELF TOUR",
+      "title": "Playing at Shoreline: KINGS OF LEON: WHEN YOU SEE YOURSELF TOUR",
       "image": "images/events-shoreline-amphitheater",
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
@@ -326,7 +326,7 @@
       "id": 26,
       "date": { "day": 24, "month": 9, "year": 2021 },
       "time": "7:00 PM",
-      "title": "JASON ALDEAN: BACK IN THE SADDLE TOUR",
+      "title": "Playing at Shoreline: JASON ALDEAN: BACK IN THE SADDLE TOUR",
       "image": "images/events-shoreline-amphitheater",
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
@@ -338,7 +338,7 @@
       "id": 27,
       "date": { "day": 26, "month": 9, "year": 2021 },
       "time": "8:00 PM",
-      "title": "PITBULL: I FEEL GOOD TOUR",
+      "title": "Playing at Shoreline: PITBULL: I FEEL GOOD TOUR",
       "image": "images/events-shoreline-amphitheater",
       "showIndexPage": false,
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
@@ -430,7 +430,7 @@
       "id": 34,
       "date": { "day": 1, "month": 10, "year": 2021 },
       "time": "7:30 PM",
-      "title": "BRAD PAISLEY: 2021 TOUR",
+      "title": "Playing at Shoreline: BRAD PAISLEY: 2021 TOUR",
       "showIndexPage": false,
       "image": "images/events-shoreline-amphitheater",
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
@@ -462,7 +462,7 @@
       "id": 36,
       "date": { "day": 7, "month": 10, "year": 2021 },
       "time": "7:00 PM",
-      "title": "MAROON 5 AND MEGHAN TRAINOR TOUR",
+      "title": "Playing at Shoreline: MAROON 5 AND MEGHAN TRAINOR TOUR",
       "showIndexPage": false,
       "image": "images/events-shoreline-amphitheater",
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
@@ -474,7 +474,7 @@
       "id": 37,
       "date": { "day": 9, "month": 10, "year": 2021 },
       "time": "7:00 PM",
-      "title": "LUKE BRYAN: PROUD TO BE RIGHT HERE TOUR",
+      "title": "Playing at Shoreline: LUKE BRYAN: PROUD TO BE RIGHT HERE TOUR",
       "showIndexPage": false,
       "image": "images/events-shoreline-amphitheater",
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
@@ -486,14 +486,26 @@
       "id": 38,
       "date": { "day": 13, "month": 10, "year": 2021 },
       "time": "7:00 PM",
-      "title": "THE DOOBIE BROTHERS 50TH ANNIVERSARY WITH MICHAEL MCDONALD",
+      "title": "Playing at Shoreline: THE DOOBIE BROTHERS 50TH ANNIVERSARY WITH MICHAEL MCDONALD",
       "showIndexPage": false,
       "image": "images/events-shoreline-amphitheater",
       "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
       "descriptions": [
         "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the Maroon 5 and Meghan Trainor Tour! Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant!"
       ]
-    }    
+    },
+    {
+      "id": 39,
+      "date": { "day": 23, "month": 10, "year": 2021 },
+      "time": "4:00 PM",
+      "title": "Playing at Shoreline: OUTLAW MUSIC FESTIVAL",
+      "showIndexPage": false,
+      "image": "images/events-shoreline-amphitheater",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to a day full of festivities at the Outlaw Music Festival featuring a jam-packed lineup with artists such as Willie Nelson, The Avett Brothers, Chris Stapleton and more. Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for brunch the morning after!"
+      ]
+    }
   ],
   "subfooter_join_the_list": {
     "image": {
