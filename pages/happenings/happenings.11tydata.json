@@ -493,7 +493,19 @@
       "descriptions": [
         "Concerts are back at Shoreline Amphitheatre! Grab your tickets to the Maroon 5 and Meghan Trainor Tour! Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant!"
       ]
-    }    
+    },
+    {
+      "id": 44,
+      "date": { "day": 23, "month": 10, "year": 2021 },
+      "time": "4:00 PM",
+      "title": "OUTLAW MUSIC FESTIVAL",
+      "showIndexPage": false,
+      "image": "images/events-shoreline-amphitheater",
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Concerts are back at Shoreline Amphitheatre! Grab your tickets to a day full of festivities at the Outlaw Music Festival featuring a jam-packed lineup with artists such as Willie Nelson, The Avett Brothers, Chris Stapleton and more. Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for brunch the morning after!"
+      ]
+    }
   ],
   "subfooter_join_the_list": {
     "image": {
