@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - dev
+    types: [labeled, opened]
   push:
     branches:
       - dev
@@ -10,31 +11,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup node environment (14.x)
+      - name: checkout branch
+        if: ${{ (github.event_name == 'pull_request' &&  github.event.action == 'opened') || (github.event.action == 'labeled' && github.event.label.name == 'visual-regression') }}
         uses: actions/checkout@v2
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-      - uses: actions/setup-node@v2
+      - name: Setup node environment (14.x)
+        if: ${{ (github.event_name == 'pull_request' &&  github.event.action == 'opened') || (github.event.action == 'labeled' && github.event.label.name == 'visual-regression') }}
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Install  npm packages
+        if: ${{ (github.event_name == 'pull_request' &&  github.event.action == 'opened') || (github.event.action == 'labeled' && github.event.label.name == 'visual-regression') }}
         run: npm install
       - name: Image resize
+        if: ${{ (github.event_name == 'pull_request' &&  github.event.action == 'opened') || (github.event.action == 'labeled' && github.event.label.name == 'visual-regression') }}
         run: npm run resize-images
       - name: Project build
+        if: ${{ (github.event_name == 'pull_request' &&  github.event.action == 'opened') || (github.event.action == 'labeled' && github.event.label.name == 'visual-regression') }}
         run: npm run build
+      - name: Install lighthouse globally
+        if: ${{ github.event_name == 'pull_request' &&  github.event.action == 'opened' }}
+        run: npm install -g @lhci/cli@0.7.x
+      - name: lighthouse run
+        if: ${{ github.event_name == 'pull_request' &&  github.event.action == 'opened' }}
+        run: lhci autorun && lhci upload
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
       - name: Percy Snapshots
+        if: ${{ github.event_name == 'pull_request' && github.event.action == 'labeled' && github.event.label.name == 'visual-regression' }}
         uses: percy/exec-action@v0.3.1
         with:
           command: "node snapshots.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-      - name: Install lighthouse globaly
-        if: ${{ github.event_name == 'pull_request' }}
-        run: npm install -g @lhci/cli@0.7.x
-      - name: lighthouse run
-        if: ${{ github.event_name == 'pull_request' }}
-        run: lhci autorun && lhci upload
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
         
