@@ -1,4 +1,4 @@
-import * as data from "../happenings/happenings.11tydata.json";
+import * as data from "../_data/data.json";
 const temp_id = window.location.search.split("=")[1];
 const events = data.events;
 let viewAll = false;
@@ -24,11 +24,13 @@ const isDate = (obj) => {
 };
 
 const render_left = (event) => {
+  const eventPicElement = document.querySelector('.event_id_' + event.id);
+
   return `<header class="xmed:hidden pb-4 px-6 xmed:px-0 block">
                     <h1 class="font-medium font-serif text-ams-primary text-2xl uppercase">${event.title}</h1>
             </header>
             <figure class="order-2">
-                <img src="${event.image}.jpg" class="w-full" loading="lazy" alt="${event.title}">
+                ${eventPicElement.outerHTML}
             </figure>`;
 };
 
@@ -61,6 +63,7 @@ const render_right = (event) => {
 };
 
 const renderOurHappeningsCard = (event) => {
+  const eventPicElement = document.querySelector('.event_id_' + event.id);
   let ctaEle = '';
   event.cta.forEach(element => {
     ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
@@ -70,7 +73,7 @@ const renderOurHappeningsCard = (event) => {
   return `<section class="bg-ams-white xmed:shadow-2xl xmed:mb-10 w-ful">
             <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
               <figure>
-                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
+                ${eventPicElement.outerHTML}
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
@@ -85,7 +88,7 @@ const renderOurHappeningsCard = (event) => {
             </a>
             <span class="xmed:hidden">
               <figure>
-                <img class="w-full h-96 object-cover" alt="Event" src="${event.image}.jpg" width="150" height="70" />
+                ${eventPicElement.outerHTML}
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
