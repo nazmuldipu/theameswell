@@ -59,11 +59,11 @@ fabCopy:
                             <span>Sustainable Outdoor Spaces<span>
                         </a>
                     </li>
-                    <li>{{svg_icon("venues",  'Indoor / Outdoor Venues' , fill="#213E4C", width="60", height="56", pclass="grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
+                    <li>{{svg_icon("venues",  'Indoor / Outdoor Venues' , fill="#213E4C", width="48", height="48", pclass="grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
                     <li class="events__svgicon">{{svg_icon("list",  'Dedicated Event Planner' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
                     <li class="events__svgicon">{{svg_icon("containers",  'Creative Event Catering' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
                     <li class="events__svgicon">{{svg_icon("sdrinks",  'Custom Signature Drinks' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
-                    <li class="events__svgicon">{{svg_icon("mic",  'Onsite Audio Visual' , width="49", height="57", fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
+                    <li class="events__svgicon">{{svg_icon("mic",  'Onsite Audio Visual' , width="48", height="48", fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
                     <li class="events__svgicon">{{svg_icon("wifi",  'Ultra Fast Wifi' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>                
             </ul>
             <div class="text-center xmed:hidden mt-4 xmed:mt-0">
@@ -79,7 +79,12 @@ fabCopy:
     {% endif %}}
     ">
         <article class="max-w-screen-xl mx-auto">
-            <section class="grid xmed:event__grid-cols items-center gap-x-8 pt-10">
+            <section class="grid xmed:event__grid-cols items-center gap-x-8
+                {% if loop.first %}
+                    pt-0 xmed:pt-10
+                {% else %}
+                    pt-10    
+                {% endif %}">
                 <figure class="event__image xmed:px-4">
                      {{ scaled_image(item.image) }}
                 </figure>
