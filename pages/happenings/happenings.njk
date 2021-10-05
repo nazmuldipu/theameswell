@@ -32,13 +32,13 @@ fabExternalLink: true
     </div>
 </section>
 {% endmacro %}
-<div id="pageHero" class="min-h-screen bg-hero--happenings-xmed xmed:bg-hero--happenings bg-cover bg-top w-full grid xmed:grid-rows-hero-home justify-items-center pt-48">
-<header class="grid xmed:items-end">
-        <h1 class="title--1 text-ams-white text-3xl xmed:text-7xl font-serif uppercase text-center">
-            HAPPENINGS
-        </h1>
-    </header>
-</div>
+
+<section id="pageHero" class="bg-ams-primary h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+    {{scaled_image(banner_image)}}
+    <h1 class="title--1 text-ams-white text-3xl xmed:text-7xl font-serif uppercase text-center pt-30">
+        HAPPENINGS
+    </h1>
+</section>
 
 <section class="xmed:bg-ams-base w-full text-ams-primary hidden">
     {% for event in data.events %}

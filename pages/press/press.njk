@@ -13,7 +13,10 @@ fabExternalLink: true
 {% from "buttons.njk" import primaryButton %}
 {% from "macros.njk" import scaled_image %}
 
-<div id="pageHero" class="bg-ams-primary bg-hero--press-xmed xmed:bg-hero--press bg-cover bg-center min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0"></div>
+<section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+    {{scaled_image(banner_image)}}
+</section>
+
 <div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-4 xmed:pt-16 px-6 pb-12 small:pb-10 xmed:pb-16 bg-pattern--ams-gold xmed:bg-pattern--ams-grey">
     <article class="w-full grid justify-items-center pt-4">
         <section class="w-full grid justify-items-center max-w-screen-lg">
