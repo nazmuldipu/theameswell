@@ -17,9 +17,10 @@ fabExternalLink: true
 {% from "macros.njk" import scaled_image, offersArticle %}
 {% from "svgicon.njk" import svg_icon %}
 
-<div id="pageHero" class="bg-ams-primary min-h-screen bg-hero--home-xmed xmed:bg-hero--home bg-cover bg-center large:bg-inherit w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
+<section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
+    {{ scaled_image(banner_image) }}
     <header class="grid xmed:items-end">
-        <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center">
+        <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0">
             UNCOMMON LUXURY IN<br class="xmed:hidden">
             SILICON VALLEY<br>
         </h1>
@@ -27,7 +28,8 @@ fabExternalLink: true
     <div class="pt-16">
         {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
     </div>
-</div>
+</section>
+
 <div class="grid justify-items-center w-full bg-ams-base">
     <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
         <section class="grid justify-items-center max-w-screen-xl xmed:px-4">
