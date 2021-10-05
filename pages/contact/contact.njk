@@ -9,7 +9,7 @@ permalinkBypassOutputDir: true
 fabUrl: https://reservations.travelclick.com/111994
 fabExternalLink: true
 ---
-{% from "macros.njk" import address_format %}
+{% from "macros.njk" import scaled_image, address_format %}
 {% from "buttons.njk" import primaryButton %}
 {% macro form_input(label, name, type="text", placeholder="", onkeypress='', pattern='', maxlength='', required = true) %}
     <label class="form-label">
@@ -19,8 +19,11 @@ fabExternalLink: true
         class="form-input__style" aria-required="true" {{ 'required' if (required == true) }}/>
     </label>
 {% endmacro %}
-<div id="pageHero" class="bg-ams-primary bg-hero--page-detail-xmed xmed:bg-hero--page-detail bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
-</div>
+
+<section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+    {{scaled_image(banner_image)}}
+</section>
+
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-40 xmed:pb-16 xmed:px-8 xmed:-mt-16">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:shadow-md">
         <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
