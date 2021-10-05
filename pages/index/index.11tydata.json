@@ -1,14 +1,29 @@
 {
-  "preload_images": [
-    {
-      "href": "images/hero-home-large_2400.webp",
-      "media": "(min-width:900.1px)"
-    },
-    {
-      "href": "images/hero-home_xmed_600.webp",
-      "media": "(max-width:900px)"
-    }
-  ],
+  "banner_image":{
+    "classes":"min-h-screen object-cover",
+    "artDirection": [
+      {
+        "classes": "image-loader",
+        "media": "(min-width:900.1px)",
+        "sizes": "100vw",
+        "type": "jpg",
+        "src": "images/hero-home",
+        "alt": "The Ameswell hotel exterior",
+        "intrinsicwidth": "4500",
+        "intrinsicheight": "2687"
+      },
+      {
+        "classes": "image-loader",
+        "media": "(max-width:900px)",
+        "sizes": "100vw",
+        "type": "jpg",
+        "src": "images/hero-home_xmed",
+        "alt": "The Ameswell hotel exterior",
+        "intrinsicwidth": "900",
+        "intrinsicheight": "1800"
+      }
+    ]
+  },
   "entrance_image": {
     "artDirection": [
       {

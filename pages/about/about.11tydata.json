@@ -1,14 +1,29 @@
 {
-    "preload_images": [
-        {
-            "href": "images/about-hero-desktop_2400.webp",
-            "media": "(min-width:900.1px)"
-        },
-        {
-            "href": "images/about-hero-mobile.webp",
-            "media": "(max-width:900px)"
-        }
-    ],
+    "banner_image":{
+        "classes":"min-h-screen min-w-full max-w-none",
+        "artDirection": [
+          {
+            "classes": "image-loader",
+            "media": "(min-width:900.1px)",
+            "sizes": "100vw",
+            "type": "jpg",
+            "src": "images/about-hero-desktop",
+            "alt": "The Ameswell about page hero image",
+            "intrinsicwidth": "4500",
+            "intrinsicheight": "2687"
+          },
+          {
+            "classes": "image-loader",
+            "media": "(max-width:900px)",
+            "sizes": "100vw",
+            "type": "jpg",
+            "src": "images/about-hero-mobile",
+            "alt": "The Ameswell about page mobile page hero image",
+            "intrinsicwidth": "900",
+            "intrinsicheight": "1800"
+          }
+        ]
+    },
     "slides": [
         {
             "artDirection": [

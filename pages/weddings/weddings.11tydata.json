@@ -1,4 +1,29 @@
 {
+    "banner_image": {
+        "classes": "min-h-screen min-w-full max-w-none",
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/hero-weddings",
+                "alt": "The Ameswell hotel weddings",
+                "intrinsicwidth": "2118",
+                "intrinsicheight": "900"
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/hero-weddings_xmed",
+                "alt": "The Ameswell hotel weddings",
+                "intrinsicwidth": "900",
+                "intrinsicheight": "900"
+            }
+        ]
+    },           
     "slides": [
         {
             "image": "images/weddings-1"

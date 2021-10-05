@@ -1,4 +1,29 @@
 {
+    "banner_image":{
+        "classes":"min-h-screen min-w-full max-w-none",
+        "artDirection": [
+          {
+            "classes": "image-loader",
+            "media": "(min-width:900.1px)",
+            "sizes": "100vw",
+            "type": "jpg",
+            "src": "images/hero-events-desktop",
+            "alt": "The Ameswell event page hero image",
+            "intrinsicwidth": "2560",
+            "intrinsicheight": "1707"
+          },
+          {
+            "classes": "image-loader",
+            "media": "(max-width:900px)",
+            "sizes": "100vw",
+            "type": "jpg",
+            "src": "images/hero-events-mobile",
+            "alt": "The Ameswell event page mobile page hero image",
+            "intrinsicwidth": "750",
+            "intrinsicheight": "1120"
+          }
+        ]
+    },
     "event_items": [
         {   
             "title":"Weddings",
