@@ -1,4 +1,29 @@
 {
+    "banner_image": {
+        "classes":"min-h-screen min-w-full max-w-none",
+        "artDirection": [
+          {
+            "classes": "image-loader",
+            "media": "(min-width:900.1px)",
+            "sizes": "100vw",
+            "type": "jpg",
+            "src": "images/offers-1-desktop",
+            "alt": "The Ameswell offers",
+            "intrinsicwidth": "5760",
+            "intrinsicheight": "2348"
+          },
+          {
+            "classes": "image-loader",
+            "media": "(max-width:900px)",
+            "sizes": "100vw",
+            "type": "jpg",
+            "src": "images/offers-1_xmed",
+            "alt": "The Ameswell hotel offers",
+            "intrinsicwidth": "1500",
+            "intrinsicheight": "2240"
+          }
+        ]
+    },
     "offers": [
         {
             "image": {

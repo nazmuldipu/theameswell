@@ -8,6 +8,7 @@ permalink: "build/rfp.html"
 permalinkBypassOutputDir: true
 ---
 {% from "buttons.njk" import primaryButton %}
+{% from "macros.njk" import scaled_image %}
 
 {% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="", readonly=false) %}
     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
@@ -18,8 +19,10 @@ permalinkBypassOutputDir: true
     </label>
 {% endmacro %}
 
-<div id="pageHero" class="bg-ams-primary bg-hero--rfp-xmed xmed:bg-hero--rfp bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
-</div>
+<section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+    {{scaled_image(banner_image)}}
+</section>
+
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:shadow-md">
         <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
