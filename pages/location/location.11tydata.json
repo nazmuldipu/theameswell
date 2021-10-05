@@ -1,4 +1,29 @@
 {
+  "banner_image":{
+    "classes":"min-h-screen min-w-full max-w-none",
+    "artDirection": [
+      {
+        "classes": "image-loader",
+        "media": "(min-width:900.1px)",
+        "sizes": "100vw",
+        "type": "jpg",
+        "src": "images/location-bg",
+        "alt": "The Ameswell event page hero image",
+        "intrinsicwidth": "2880",
+        "intrinsicheight": "1916"
+      },
+      {
+        "classes": "image-loader",
+        "media": "(max-width:900px)",
+        "sizes": "100vw",
+        "type": "jpg",
+        "src": "images/location-hero-mobile",
+        "alt": "The Ameswell event page mobile page hero image",
+        "intrinsicwidth": "751",
+        "intrinsicheight": "1120"
+      }
+    ]
+  },
   "all_categories": [
     {
       "header_title": "Live like a local",
