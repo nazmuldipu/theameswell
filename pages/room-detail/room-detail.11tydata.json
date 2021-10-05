@@ -24,16 +24,6 @@
       }
     ]
   },
-  "preload_images": [
-    {
-      "href": "images/rooms-hero-desktop_2400.webp",
-      "media": "(min-width:900.1px)"
-    },
-    {
-      "href": "images/rooms-hero-mobile.webp",
-      "media": "(max-width:900px)"
-    }
-  ],
   "slides": [
     {
       "src": "images/homepage-video-bg-3",
