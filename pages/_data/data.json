@@ -499,7 +499,125 @@
       "descriptions": [
         "Concerts are back at Shoreline Amphitheatre! Grab your tickets to a day full of festivities at the Outlaw Music Festival featuring a jam-packed lineup with artists such as Willie Nelson, The Avett Brothers, Chris Stapleton and more. Go all out and make it an overnight stay at The Ameswell Hotel. Grab dinner and drinks before the show at Roger Bar and Restaurant, and join us for brunch the morning after!"
       ]
-    }
+    },
+    {
+      "id": 40,
+      "date": { "day": 6, "month": 10, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },
+    {
+      "id": 41,
+      "date": { "day": 13, "month": 10, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },
+    {
+      "id": 42,
+      "date": { "day": 20, "month": 10, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },
+    {
+      "id": 43,
+      "date": { "day": 27, "month": 10, "year": 2021 },
+      "time": "4PM - 12AM",
+      "title": "WINE WEDNESDAYS",
+      "image": "images/happenings_evants-Wine_Wednesdays",
+      "showIndexPage": false,
+      "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+      "descriptions": [
+        "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+      ]
+    },
+    {
+      "id": 44,
+      "date": { "day": 3, "month": 10, "year": 2021 },
+      "time": "10:00 - 11:00 am",
+      "title": "YOGA ON THE LAWN",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
+      ]
+    },
+    {
+      "id": 45,
+      "date": { "day": 10, "month": 10, "year": 2021 },
+      "time": "10:00 - 11:00 am",
+      "title": "YOGA ON THE LAWN",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
+      ]
+    },
+    {
+      "id": 46,
+      "date": { "day": 17, "month": 10, "year": 2021 },
+      "time": "10:00 - 11:00 am",
+      "title": "YOGA ON THE LAWN",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
+      ]
+    },
+    {
+      "id": 47,
+      "date": { "day": 24, "month": 10, "year": 2021 },
+      "time": "10:00 - 11:00 am",
+      "title": "YOGA ON THE LAWN",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
+      ]
+    },
+    {
+      "id": 48,
+      "date": { "day": 31, "month": 10, "year": 2021 },
+      "time": "10:00 - 11:00 am",
+      "title": "YOGA ON THE LAWN",
+      "image": "images/happenings_evants-Yoga_Class",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+        "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+        "Join us after class for Sunday Brunch at Roger!"
+      ]
+    },
   ],
   "footer_content": [
     {
