@@ -618,6 +618,66 @@
         "Join us after class for Sunday Brunch at Roger!"
       ]
     },
+    {
+      "id": 49,
+      "date": { "day": 3, "month": 10, "year": 2021 },
+      "time": "9:00 AM - 1:00 PM",
+      "title": "Mountain View Farmers' Market",
+      "image": "images/happenings-evants-farmers-market-stock-image",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+      ]
+    },
+    {
+      "id": 50,
+      "date": { "day": 10, "month": 10, "year": 2021 },
+      "time": "9:00 AM - 1:00 PM",
+      "title": "Mountain View Farmers' Market",
+      "image": "images/happenings-evants-farmers-market-stock-image",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+      ]
+    },
+    {
+      "id": 51,
+      "date": { "day": 17, "month": 10, "year": 2021 },
+      "time": "9:00 AM - 1:00 PM",
+      "title": "Mountain View Farmers' Market",
+      "image": "images/happenings-evants-farmers-market-stock-image",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+      ]
+    },
+    {
+      "id": 52,
+      "date": { "day": 24, "month": 10, "year": 2021 },
+      "time": "9:00 AM - 1:00 PM",
+      "title": "Mountain View Farmers' Market",
+      "image": "images/happenings-evants-farmers-market-stock-image",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+      ]
+    },
+    {
+      "id": 53,
+      "date": { "day": 31, "month": 10, "year": 2021 },
+      "time": "9:00 AM - 1:00 PM",
+      "title": "Mountain View Farmers' Market",
+      "image": "images/happenings-evants-farmers-market-stock-image",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+      ]
+    },
   ],
   "footer_content": [
     {
