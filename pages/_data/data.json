@@ -678,6 +678,222 @@
         "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
       ]
     },
+    {
+      "id": 54,
+      "date": { "day": 12, "month": 10, "year": 2021 },
+      "time": "7:30pm",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 55,
+      "date": { "day": 13, "month": 10, "year": 2021 },
+      "time": "7:30pm",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 56,
+      "date": { "day": 14, "month": 10, "year": 2021 },
+      "time": "7:30pm",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 57,
+      "date": { "day": 15, "month": 10, "year": 2021 },
+      "time": "8:00pm",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 58,
+      "date": { "day": 16, "month": 10, "year": 2021 },
+      "time": "2:00 PM and 8:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 59,
+      "date": { "day": 17, "month": 10, "year": 2021 },
+      "time": "1:00 PM and 7:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 60,
+      "date": { "day": 19, "month": 10, "year": 2021 },
+      "time": "1:00 PM and 7:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 61,
+      "date": { "day": 20, "month": 10, "year": 2021 },
+      "time": "7:30 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 62,
+      "date": { "day": 21, "month": 10, "year": 2021 },
+      "time": "8:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 63,
+      "date": { "day": 22, "month": 10, "year": 2021 },
+      "time": "8:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 64,
+      "date": { "day": 23, "month": 10, "year": 2021 },
+      "time": "2:00 PM and 8:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 65,
+      "date": { "day": 24, "month": 10, "year": 2021 },
+      "time": "1:00 PM and 7:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 66,
+      "date": { "day": 26, "month": 10, "year": 2021 },
+      "time": "7:30 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 67,
+      "date": { "day": 27, "month": 10, "year": 2021 },
+      "time": "7:30 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 68,
+      "date": { "day": 28, "month": 10, "year": 2021 },
+      "time": "2:00 PM and 8:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 69,
+      "date": { "day": 29, "month": 10, "year": 2021 },
+      "time": "8:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 70,
+      "date": { "day": 30, "month": 10, "year": 2021 },
+      "time": "2:00 PM and 8:00 PM",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
+    {
+      "id": 71,
+      "date": { "day": 31, "month": 10, "year": 2021 },
+      "time": "1:00",
+      "title": "HAMILTON ON BROADWAY",
+      "image": "images/todo",
+      "showIndexPage": false,
+      "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+      "descriptions": [
+        "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
+      ]
+    },
   ],
   "footer_content": [
     {
