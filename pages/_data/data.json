@@ -526,8 +526,7 @@
                 "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
                 "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
                 "Join us after class for Sunday Brunch at Roger!"
-            ],
-            "newDate": "310"
+            ]
         },
         {
             "id": 41,
@@ -553,8 +552,7 @@
             ],
             "descriptions": [
                 "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
-            ],
-            "newDate": "310"
+            ]
         },
         {
             "id": 42,
@@ -575,8 +573,7 @@
             ],
             "descriptions": [
                 "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
-            ],
-            "newDate": "510"
+            ]
         },
         {
             "id": 43,
@@ -597,8 +594,7 @@
             ],
             "descriptions": [
                 "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
-            ],
-            "newDate": "610"
+            ]
         },
         {
             "id": 44,
@@ -619,8 +615,7 @@
             ],
             "descriptions": [
                 "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
-            ],
-            "newDate": "610"
+            ]
         },
         {
             "id": 45,
@@ -641,8 +636,7 @@
             ],
             "descriptions": [
                 "Bay Area Legend, Freddy Clarke is performing with members of his band, Wobbly World during dinner at Roger!  Freddy brings together a group of internationally recognized musician for an ethno-layering of melodic and rhythmic blend of several different world traditions to create a brilliant new sound. "
-            ],
-            "newDate": "710"
+            ]
         },
         {
             "id": 46,
@@ -668,8 +662,7 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "810"
+            ]
         },
         {
             "id": 47,
@@ -695,8 +688,7 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "910"
+            ]
         },
         {
             "id": 48,
@@ -724,8 +716,7 @@
                 "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
                 "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
                 "Join us after class for Sunday Brunch at Roger!"
-            ],
-            "newDate": "1010"
+            ]
         },
         {
             "id": 49,
@@ -751,8 +742,7 @@
             ],
             "descriptions": [
                 "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
-            ],
-            "newDate": "1010"
+            ]
         },
         {
             "id": 50,
@@ -778,11 +768,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "1010"
+            ]
         },
         {
-            "id": 52,
+            "id": 51,
             "date": {
                 "day": 12,
                 "month": 10,
@@ -805,11 +794,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "1210"
+            ]
         },
         {
-            "id": 53,
+            "id": 52,
             "date": {
                 "day": 12,
                 "month": 10,
@@ -827,11 +815,10 @@
             ],
             "descriptions": [
                 "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
-            ],
-            "newDate": "1210"
+            ]
         },
         {
-            "id": 54,
+            "id": 53,
             "date": {
                 "day": 13,
                 "month": 10,
@@ -849,11 +836,10 @@
             ],
             "descriptions": [
                 "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
-            ],
-            "newDate": "1310"
+            ]
         },
         {
-            "id": 55,
+            "id": 54,
             "date": {
                 "day": 13,
                 "month": 10,
@@ -876,11 +862,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "1310"
+            ]
         },
         {
-            "id": 56,
+            "id": 55,
             "date": {
                 "day": 13,
                 "month": 10,
@@ -898,11 +883,10 @@
             ],
             "descriptions": [
                 "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
-            ],
-            "newDate": "1310"
+            ]
         },
         {
-            "id": 57,
+            "id": 56,
             "date": {
                 "day": 13,
                 "month": 10,
@@ -920,11 +904,10 @@
             ],
             "descriptions": [
                 "Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "1310"
+            ]
         },
         {
-            "id": 58,
+            "id": 57,
             "date": {
                 "day": 14,
                 "month": 10,
@@ -947,11 +930,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "1410"
+            ]
         },
         {
-            "id": 59,
+            "id": 58,
             "date": {
                 "day": 14,
                 "month": 10,
@@ -969,11 +951,10 @@
             ],
             "descriptions": [
                 "Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
-            ],
-            "newDate": "1410"
+            ]
         },
         {
-            "id": 60,
+            "id": 59,
             "date": {
                 "day": 15,
                 "month": 10,
@@ -996,11 +977,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "1510"
+            ]
         },
         {
-            "id": 61,
+            "id": 60,
             "date": {
                 "day": 15,
                 "month": 10,
@@ -1023,11 +1003,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "1510"
+            ]
         },
         {
-            "id": 62,
+            "id": 61,
             "date": {
                 "day": 16,
                 "month": 10,
@@ -1050,11 +1029,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "1610"
+            ]
         },
         {
-            "id": 63,
+            "id": 62,
             "date": {
                 "day": 16,
                 "month": 10,
@@ -1077,11 +1055,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "1610"
+            ]
         },
         {
-            "id": 64,
+            "id": 63,
             "date": {
                 "day": 17,
                 "month": 10,
@@ -1106,11 +1083,10 @@
                 "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
                 "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
                 "Join us after class for Sunday Brunch at Roger!"
-            ],
-            "newDate": "1710"
+            ]
         },
         {
-            "id": 65,
+            "id": 64,
             "date": {
                 "day": 17,
                 "month": 10,
@@ -1133,11 +1109,10 @@
             ],
             "descriptions": [
                 "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
-            ],
-            "newDate": "1710"
+            ]
         },
         {
-            "id": 66,
+            "id": 65,
             "date": {
                 "day": 17,
                 "month": 10,
@@ -1160,11 +1135,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "1710"
+            ]
         },
         {
-            "id": 67,
+            "id": 66,
             "date": {
                 "day": 17,
                 "month": 10,
@@ -1187,11 +1161,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "1710"
+            ]
         },
         {
-            "id": 68,
+            "id": 67,
             "date": {
                 "day": 19,
                 "month": 10,
@@ -1214,11 +1187,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "1910"
+            ]
         },
         {
-            "id": 69,
+            "id": 68,
             "date": {
                 "day": 19,
                 "month": 10,
@@ -1236,11 +1208,10 @@
             ],
             "descriptions": [
                 "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
-            ],
-            "newDate": "1910"
+            ]
         },
         {
-            "id": 70,
+            "id": 69,
             "date": {
                 "day": 20,
                 "month": 10,
@@ -1258,11 +1229,10 @@
             ],
             "descriptions": [
                 "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
-            ],
-            "newDate": "2010"
+            ]
         },
         {
-            "id": 71,
+            "id": 70,
             "date": {
                 "day": 20,
                 "month": 10,
@@ -1285,11 +1255,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2010"
+            ]
         },
         {
-            "id": 72,
+            "id": 71,
             "date": {
                 "day": 20,
                 "month": 10,
@@ -1307,11 +1276,10 @@
             ],
             "descriptions": [
                 "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
-            ],
-            "newDate": "2010"
+            ]
         },
         {
-            "id": 73,
+            "id": 72,
             "date": {
                 "day": 21,
                 "month": 10,
@@ -1334,11 +1302,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2110"
+            ]
         },
         {
-            "id": 74,
+            "id": 73,
             "date": {
                 "day": 21,
                 "month": 10,
@@ -1356,11 +1323,10 @@
             ],
             "descriptions": [
                 "Come enjoy rock and country favorites with acoustic guitarist and singer, Jimmy Ashley. Sing along to everything from Ed Sheeran and Elton John to Willie Nelson and Bob Marley over dinner and drinks at Roger.  Jimmy’s crowd-pleasing music appeals to every audience so bring your friends and family!"
-            ],
-            "newDate": "2110"
+            ]
         },
         {
-            "id": 75,
+            "id": 74,
             "date": {
                 "day": 22,
                 "month": 10,
@@ -1383,11 +1349,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2210"
+            ]
         },
         {
-            "id": 76,
+            "id": 75,
             "date": {
                 "day": 22,
                 "month": 10,
@@ -1410,11 +1375,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "2210"
+            ]
         },
         {
-            "id": 77,
+            "id": 76,
             "date": {
                 "day": 23,
                 "month": 10,
@@ -1437,11 +1401,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2310"
+            ]
         },
         {
-            "id": 78,
+            "id": 77,
             "date": {
                 "day": 23,
                 "month": 10,
@@ -1464,11 +1427,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "2310"
+            ]
         },
         {
-            "id": 80,
+            "id": 78,
             "date": {
                 "day": 24,
                 "month": 10,
@@ -1493,11 +1455,10 @@
                 "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
                 "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
                 "Join us after class for Sunday Brunch at Roger!"
-            ],
-            "newDate": "2410"
+            ]
         },
         {
-            "id": 81,
+            "id": 79,
             "date": {
                 "day": 24,
                 "month": 10,
@@ -1520,11 +1481,10 @@
             ],
             "descriptions": [
                 "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
-            ],
-            "newDate": "2410"
+            ]
         },
         {
-            "id": 82,
+            "id": 80,
             "date": {
                 "day": 24,
                 "month": 10,
@@ -1547,11 +1507,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2410"
+            ]
         },
         {
-            "id": 84,
+            "id": 81,
             "date": {
                 "day": 26,
                 "month": 10,
@@ -1574,11 +1533,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2610"
+            ]
         },
         {
-            "id": 85,
+            "id": 82,
             "date": {
                 "day": 26,
                 "month": 10,
@@ -1596,11 +1554,10 @@
             ],
             "descriptions": [
                 "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
-            ],
-            "newDate": "2610"
+            ]
         },
         {
-            "id": 87,
+            "id": 83,
             "date": {
                 "day": 27,
                 "month": 10,
@@ -1618,11 +1575,10 @@
             ],
             "descriptions": [
                 "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
-            ],
-            "newDate": "2710"
+            ]
         },
         {
-            "id": 88,
+            "id": 84,
             "date": {
                 "day": 27,
                 "month": 10,
@@ -1645,11 +1601,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2710"
+            ]
         },
         {
-            "id": 89,
+            "id": 85,
             "date": {
                 "day": 27,
                 "month": 10,
@@ -1667,11 +1622,10 @@
             ],
             "descriptions": [
                 "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
-            ],
-            "newDate": "2710"
+            ]
         },
         {
-            "id": 91,
+            "id": 86,
             "date": {
                 "day": 28,
                 "month": 10,
@@ -1694,11 +1648,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2810"
+            ]
         },
         {
-            "id": 93,
+            "id": 87,
             "date": {
                 "day": 29,
                 "month": 10,
@@ -1721,11 +1674,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "2910"
+            ]
         },
         {
-            "id": 94,
+            "id": 88,
             "date": {
                 "day": 29,
                 "month": 10,
@@ -1748,11 +1700,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "2910"
+            ]
         },
         {
-            "id": 95,
+            "id": 89,
             "date": {
                 "day": 30,
                 "month": 10,
@@ -1775,11 +1726,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "3010"
+            ]
         },
         {
-            "id": 96,
+            "id": 90,
             "date": {
                 "day": 30,
                 "month": 10,
@@ -1802,11 +1752,10 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "3010"
+            ]
         },
         {
-            "id": 97,
+            "id": 91,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1831,11 +1780,10 @@
                 "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
                 "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
                 "Join us after class for Sunday Brunch at Roger!"
-            ],
-            "newDate": "3110"
+            ]
         },
         {
-            "id": 98,
+            "id": 92,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1858,11 +1806,10 @@
             ],
             "descriptions": [
                 "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
-            ],
-            "newDate": "3110"
+            ]
         },
         {
-            "id": 99,
+            "id": 93,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1885,11 +1832,10 @@
             ],
             "descriptions": [
                 "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all October from the cast of Hamilton on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
-            ],
-            "newDate": "3110"
+            ]
         },
         {
-            "id": 100,
+            "id": 94,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1912,8 +1858,7 @@
             ],
             "descriptions": [
                 " Grab your Oktoberfest attire and head over to the Oktobermixer in Open Space at The Ameswell Hotel hosted by DTCP, Deutsche Telekom, Bosch Venture Capital, and Munich Re Ventures. Need a place to wind down? Head over to the Roger Bar and Restaurant for a round of desserts!"
-            ],
-            "newDate": "3110"
+            ]
         }
   ],
   "footer_content": [
