@@ -585,7 +585,7 @@
             "time": "4PM - 12AM",
             "title": "WINE WEDNESDAYS",
             "image": "images/happenings_evants-Wine_Wednesdays",
-            "showIndexPage": true,
+            "showIndexPage": false,
             "cta": [
                 {
                     "label": "Book a Table",
@@ -700,7 +700,7 @@
             "time": "10:00 - 11:00 am",
             "title": "YOGA ON THE LAWN",
             "image": "images/happenings_evants-Yoga_Class",
-            "showIndexPage": false,
+            "showIndexPage": true,
             "cta": [
                 {
                     "label": "Book Table",
