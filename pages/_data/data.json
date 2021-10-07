@@ -407,7 +407,7 @@
       "date": { "day": 30, "month": 9, "year": 2021 },
       "time": "6:00 PM - 9:00 PM",
       "title": "G.O.A.T Fuel Dinner Benefitting Do It For The Love",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "image": "images/happenings-do-it-for-the-love",
       "cta":[{"label":"Purchase Tickets", "url": "https://www.eventbrite.com/e/goat-fuel-dinner-benefitting-do-it-for-the-love-tickets-170365002308"}],
       "descriptions": [
@@ -437,7 +437,7 @@
       "date": { "day": 2, "month": 10, "year": 2021 },
       "time": "10:00 AM - 2:00 PM",
       "title": "G.O.A.T Fuel Wellness Day Benefitting Do It For The Love",
-      "showIndexPage": true,
+      "showIndexPage": false,
       "image": "images/happenings-goat-fuel-event",
       "cta":[{"label":"Tickets Sold Here", "url": "https://www.eventbrite.com/e/goat-fuel-wellness-day-benefitting-do-it-for-the-love-tickets-173727933927"}],
       "descriptions": [
@@ -700,7 +700,7 @@
             "time": "10:00 - 11:00 am",
             "title": "YOGA ON THE LAWN",
             "image": "images/happenings_evants-Yoga_Class",
-            "showIndexPage": false,
+            "showIndexPage": true,
             "cta": [
                 {
                     "label": "Book Table",
@@ -806,7 +806,7 @@
             "time": "5:30 PM - 8:30 PM",
             "title": "LIVE MUSIC WITH MEGAN CHENOT",
             "image": "images/happenings-events-megan-chenot",
-            "showIndexPage": false,
+            "showIndexPage": true,
             "cta": [
                 {
                     "label": "Book a Table",
