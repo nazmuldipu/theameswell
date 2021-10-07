@@ -121,7 +121,7 @@
                 "artDirection": [
                     {
                         "media": "(min-width:900.1px)",
-                        "type": "png",
+                        "type": "jpg",
                         "sizes": "35vw",
                         "src": "images/art-1",
                         "alt": "The lobby interior of the Ameswell Hotel",
@@ -130,7 +130,7 @@
                     },
                     {
                         "media": "(max-width:900px)",
-                        "type": "png",
+                        "type": "jpg",
                         "sizes": "100vw",
                         "src": "images/art-1",
                         "alt": "The lobby interior of the Ameswell Hotel",
