@@ -26,4 +26,24 @@
     .event:nth-child(even) .event__description{
         @apply xmed:order-2;
     }
+
+    .tab__radio {
+        @apply hidden;
+    }
+    .all, .rooms, .hotel, .hamptons {
+        @apply hidden;
+    }
+    .tab--1:checked ~ .tab__containers .all,
+    .tab--2:checked ~ .tab__containers .rooms,
+    .tab--3:checked ~ .tab__containers .hotel,
+    .tab--4:checked ~ .tab__containers .hamptons {
+        @apply block;
+    }
+    .tab__label{
+        @apply cursor-pointer;
+    }
+    .tab__radio:checked + .tab__label {
+        @apply border-b;
+        @apply border-ams-primary;
+    }
 }

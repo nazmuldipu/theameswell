@@ -103,5 +103,475 @@
                 ]
             }
         }
+    ],
+    "event_places":[
+        {
+            "title":"The Field",
+            "description":"Surrounded by landscaping native to California, this natural setting is ideal for outdoor corporate team building, private concerts, and alfresco weddings, receptions, and social events.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-1",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "The Field",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-1",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "The Field",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"The Meadow",
+            "description":"Adjacent to The Field, this area is the site to plan your wedding ceremony under the evening sky, chill with friends at an open-air lounge, or enjoy a yoga class to begin your day centered and focused.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-2",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "The Meadow",
+                        "intrinsicwidth": "2440",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-2",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "The Meadow",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Roger Patio",
+            "description":"Enjoy Mountain View’s beautiful weather year-round on the Roger Patio. This alfresco location offers cool breezes during the day from two oversized fans and heaters at night to keep you warm. A large, artistic water fountain sets the stage for relaxing outdoor social gatherings and meetings.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-3",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Roger Patio",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-3",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Roger Patio",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Beer Garden",
+            "description":"Long picnic tables and large umbrellas set the tone for a modern twist on a classic beer garden customizable depending upon your social event or gathering. The space is a creative venue for an outdoor meeting or gathering in true Silicon Valley style.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-4",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Beer Garden",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-4",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Beer Garden",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Ameswell Airstream",
+            "description":"Plan your next event at the most Instagrammable venue in Silicon Valley. This vintage, refurbished 1960’s Airstream invites you to enjoy local beer, wine, craft cocktails, and casual bites under charming café lighting.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-5",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Ameswell Airstream",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-5",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Ameswell Airstream",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Game Lawn",
+            "description":"Try out your skills at everything from cornhole and life-sized Jenga to glow-in-the-dark bocce ball and hula hoops. Café lighting sets the perfect tone to gather with friends, family, or colleagues for casual socializing near the Ameswell Airstream Bar.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-6",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Game Lawn",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-6",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Game Lawn",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Roger Fire Pits",
+            "description":"The fire pits offer a warm and welcoming spot to gather with friends under the Mountain View stars. Open to all guests on a first come basis, the fire pits can also be reserved for private groups for an hourly fee and food and beverage minimum.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-7",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Roger Fire Pits",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-7",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Roger Fire Pits",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Yoga Lawn",
+            "description":"Step outside of our state-of-the-art fitness center onto the Yoga Lawn; a great place for individual yoga practice, a small wellness gathering, or spa party.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-8",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Yoga Lawn",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-8",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Yoga Lawn",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Infinity Ballroom",
+            "description":"Silicon Valley’s premier event destination, this impressive, flexible space is the perfect backdrop for creating memorable weddings, meetings, and social events. This spacious ballroom features elegant linen wallcoverings, soaring ceilings, gorgeous light fixtures, and floor-to-ceiling windows to let in natural light.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-9",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Infinity Ballroom",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-9",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Infinity Ballroom",
+                        "intrinsicwidth": "1500",
+                        "intrinsicheight":"948"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Infinity Ballroom Foyer",
+            "description":"Designed as a pre-function space featuring a unique rope wall, this area plays host to event registration, trade shows and cocktail receptions with easy access to an outdoor patio and plenty of room for guests to mingle.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-10",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Infinity Ballroom Foyer",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-10",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Infinity Ballroom Foyer",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Discovery Boardroom",
+            "description":"Featuring a fixed boardroom table and an audio-visual monitor, this room is the destination for hybrid board meetings, breakout sessions and teambuilding. Discovery is also a wonderful space for a private dinner party or luncheon.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-11",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Discovery Boardroom",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-11",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Discovery Boardroom",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Curiosity Breakout Room",
+            "description":"Full creativity is available in this room that features flexible set up options, such as a U-shape, conference, hollow square, theater-style or even beanbag chairs - whatever suits your mood. This room also makes a great lounge area for bridal parties or press events.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-12",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Curiosity Breakout Room",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-12",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Curiosity Breakout Room",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Roger Bar & Restaurant",
+            "description":"Enjoy casual Californian cuisine with a Mediterranean slant, while enjoying a view of The Field; large hangar doors bring the outside in. A custom playlist and lighting set a fun, uplifting vibe.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-13",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Roger Bar & Restaurant",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-13",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Roger Bar & Restaurant",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Private Dining Room",
+            "description":"Located within Roger Bar and Restaurant, the Private Dining Room features a large oval table for ten, perfect for family celebrations, business meals, or intimate dinner parties. A curtain can be pulled closed for total privacy or left open so you can take in the scene.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-14",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Private Dining Room",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-14",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Private Dining Room",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Roger Alcove",
+            "description":"This semi-private nook adjacent to the Roger Bar is a fun space for informal gatherings and happy hours, complete with bar stools and a shuffleboard table. Get your game on with friends or watch the big game on one of our large screen TVs.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-15",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Roger Alcove",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-15",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Roger Alcove",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Community Table",
+            "description":"Keep warm and enjoy a causal setting for group Only steps away from The Flyby café, natural lighting and ample charging stations welcome you to sip artisan coffee and enjoy a delicious breakfast to start your day. The location is great for individual work sessions or team collaboration.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-16",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Community Table",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-16",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Community Table",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Ames Library",
+            "description":"Lounge seating welcomes you to relax and gaze upon a curated collection of books and artifacts, all dedicated to aspects of flight throughout history. A wide range of games – from chess to dice - offer hours of tech-free entertainment with friends and family.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-17",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Ames Library",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-17",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Ames Library",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Hangar One Art Gallery",
+            "description":"Located just beyond a shimmering and dramatic curtain, this digital art gallery comes alive with sound and moving visuals to inspire contemplative relaxation – or wine tasting and great chats with friends. You decide.",
+            "image":{
+                "artDirection": [
+                    {
+                        "src": "images/events-desktop-18",
+                        "media": "(min-width:900.1px)",
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "alt": "Hangar One Art Gallery",
+                        "intrinsicwidth": "2444",
+                        "intrinsicheight":"1797"
+                    },
+                    {
+                        "src": "images/events-mobile-18",
+                        "media": "(max-width:900px)",
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "alt": "Hangar One Art Gallery",
+                        "intrinsicwidth": "1280",
+                        "intrinsicheight":"824"
+                    }
+                ]
+            }
+        }
     ]
 }

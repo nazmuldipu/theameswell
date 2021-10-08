@@ -17,7 +17,25 @@ fabCopy:
 {% from "media-carousel.njk" import  media_carousel %}
 {% from "svgicon.njk" import svg_icon %}
 {% from "macros.njk" import scaled_image %}
-
+{% macro events(items) %}
+    <section class="grid xmed:grid-cols-2 xmed:gap-8 justify-items-center max-w-screen-xl mx-auto pt-4 xmed:pt-8 px-4">
+        {% for item in items %}
+            <article class="grid items-center bg-ams-white shadow-sm mb-6 xmed:mb-0">
+                <figure>
+                    {{ scaled_image(item.image) }}
+                </figure>
+                <figcaption class="my-4 xmed:my-6 px-6">
+                    <h2 class="title-display pb-4 text-2xl xmed:text-3xl">
+                        {{item.title}}
+                    </h2>
+                    <p class="font-sans text-base xmed:text-lg">
+                        {{item.description}}
+                    </p>
+                </figcaption>
+            </article>
+        {% endfor %}        
+    </section>   
+{% endmacro %}
 <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
     {{scaled_image(banner_image)}}
 </section>
@@ -102,6 +120,24 @@ fabCopy:
         </article>
     </section>
 {% endfor %}
+   
+<section class="w-full bg-ams-base xmed:mb-12">
+    <input type="radio" id="tab--1" class="tab--1 tab__radio" name="tab__radio" checked>
+    <label for="tab--1" class="tab__label">All</label>
+
+    <input type="radio" id="tab--2" class="tab--2 tab__radio" name="tab__radio">
+    <label for="tab--2" class="tab__label ml-2">Indoor</label>
+
+    <input type="radio" id="tab--3" class="tab--3 tab__radio" name="tab__radio">
+    <label for="tab--3" class="tab__label ml-2">Outdoor</label>
+
+    <div class="tab__containers">
+        <section class="all">
+            {{ events(event_places)}}
+        </section>
+    </div>
+</section>
+
 <section class="grid w-full mb-10 xmed:mb-0 p-6 xmed:py-11 bg-ams-gold">
     <section class="max-w-screen-xl mx-auto w-full">
        <article class="text-center pt-12 xmed:pt-9 pb-6 xmed:pb-10 xmed:mx-4 bg-ams-white shadow-md">
