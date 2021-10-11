@@ -700,7 +700,7 @@
             "time": "10:00 - 11:00 am",
             "title": "YOGA ON THE LAWN",
             "image": "images/happenings_evants-Yoga_Class",
-            "showIndexPage": true,
+            "showIndexPage": false,
             "cta": [
                 {
                     "label": "Book Table",
@@ -874,7 +874,7 @@
             "time": "5:30 PM - 8:30 PM",
             "title": "LIVE MUSIC WITH CARLOS REYES",
             "image": "images/happenings-events-carlos-reyes",
-            "showIndexPage": false,
+            "showIndexPage": true,
             "cta": [
                 {
                     "label": "Book a Table",
