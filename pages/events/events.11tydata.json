@@ -574,7 +574,7 @@
             }
         }
     ],
-    "indoor":[
+    "outdoor":[
         {
             "title":"The Field",
             "description":"Surrounded by landscaping native to California, this natural setting is ideal for outdoor corporate team building, private concerts, and alfresco weddings, receptions, and social events.",
@@ -784,7 +784,7 @@
             }
         }
     ],
-    "outdoor":[
+    "indoor":[
         {
             "title":"Infinity Ballroom",
             "description":"Silicon Valley’s premier event destination, this impressive, flexible space is the perfect backdrop for creating memorable weddings, meetings, and social events. This spacious ballroom features elegant linen wallcoverings, soaring ceilings, gorgeous light fixtures, and floor-to-ceiling windows to let in natural light.",
