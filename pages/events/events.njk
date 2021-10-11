@@ -121,7 +121,7 @@ fabCopy:
     </section>
 {% endfor %}
    
-<section class="w-full bg-ams-base xmed:mb-12">
+<section class="w-full text-center bg-ams-base xmed:mb-12">
     <input type="radio" id="tab--1" class="tab--1 tab__radio" name="tab__radio" checked>
     <label for="tab--1" class="tab__label">All</label>
 
@@ -132,8 +132,14 @@ fabCopy:
     <label for="tab--3" class="tab__label ml-2">Outdoor</label>
 
     <div class="tab__containers">
-        <section class="all">
+        <section class="all text-left">
             {{ events(event_places)}}
+        </section>
+        <section class="indoor text-left">
+            {{ events(indoor)}}
+        </section>
+        <section class="outdoor text-left">
+            {{ events(outdoor)}}
         </section>
     </div>
 </section>
