@@ -13,8 +13,10 @@ fabExternalLink: true
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
 
-<div id="pageHero" class="bg-ams-primary bg-hero--dining-xmed xmed:bg-hero--dining bg-cover bg-top min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center pt-28 xmed:pt-0">
-</div>
+<section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+    {{scaled_image(banner_image)}}
+</section>
+
 <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 bg-pattern--ams-green">
     <article class="w-full grid justify-items-center">
         <section class="w-full grid justify-items-center max-w-screen-lg">

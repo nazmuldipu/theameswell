@@ -1,4 +1,29 @@
 {
+    "banner_image": {
+        "classes":"min-h-screen min-w-full max-w-none",
+        "artDirection": [
+            {
+                "classes": "image-loader",
+                "media": "(min-width:900.1px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/art-desktop",
+                "alt": "The Ameswell hotel exterior",
+                "intrinsicwidth": "2304",
+                "intrinsicheight": "1536"
+            },
+            {
+                "classes": "image-loader",
+                "media": "(max-width:900px)",
+                "sizes": "100vw",
+                "type": "jpg",
+                "src": "images/art-mobile",
+                "alt": "The Ameswell hotel exterior",
+                "intrinsicwidth": "717",
+                "intrinsicheight": "1536"
+            }
+        ]
+    },
     "art": [
         {
             "image": {

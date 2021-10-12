@@ -7,20 +7,20 @@
         "media": "(min-width:900.1px)",
         "sizes": "100vw",
         "type": "jpg",
-        "src": "images/hero-weddings",
-        "alt": "The Ameswell hotel weddings",
-        "intrinsicwidth": "2118",
-        "intrinsicheight": "900"
+        "src": "images/hero-rfp",
+        "alt": "The Ameswell hotel rfp",
+        "intrinsicwidth": "2880",
+        "intrinsicheight": "1174"
       },
       {
         "classes": "image-loader",
         "media": "(max-width:900px)",
         "sizes": "100vw",
         "type": "jpg",
-        "src": "images/hero-weddings_xmed",
-        "alt": "The Ameswell hotel weddings",
-        "intrinsicwidth": "900",
-        "intrinsicheight": "900"
+        "src": "images/hero-rfp_xmed",
+        "alt": "The Ameswell hotel exterior",
+        "intrinsicwidth": "750",
+        "intrinsicheight": "1120"
       }
     ]
   }
