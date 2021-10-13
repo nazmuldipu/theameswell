@@ -1,0 +1,95 @@
+name: GH action publish
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Desired branch name'
+        required: true
+        default: 'dev'
+      bucket:
+        description: 'S3 bucket name'
+        required: true
+      cloudfront_id:
+        description: 'Cloudfront id'
+        required: true
+      notification_webhook:
+        description: 'Webhook to trigger after the build has finished'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Github Access Token
+        run: echo "${{ secrets.GITHUB_TOKEN }}"
+      - name: Setup Node Environment (14.x)
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.branch }}
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: npm-cache
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: Install  npm Packages
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm install
+      - name: Project Build
+        run: npm run stage-build
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
+          aws-region: us-east-1
+      - name: Sync from Build Directory to s3 Bucket
+        run: aws s3 sync ./build s3://${{ github.event.inputs.bucket }} --acl public-read --exclude "*.html"
+      - name: Copy Each .html file and Rename it without File Extension on s3
+        run: |
+          cd build
+          shopt -s nullglob
+          html_files=(*.html)
+          for i in "${html_files[@]}"
+          do
+            object_name=${i:0:-5}
+            echo "${object_name}"
+            aws s3 cp ${i} s3://${{ github.event.inputs.bucket }}/${object_name} --acl public-read --content-type "text/html" #--dryrun
+          done
+      - name: rm synced .html Files
+        run: |
+          cd build
+          aws s3 rm s3://${{ github.event.inputs.bucket }} --recursive --exclude "*" --include "*.html"
+      - name: Create a new Cloudfront Invalidation as soon as the Built Files have been Uploaded to S3
+        run: aws cloudfront create-invalidation --distribution-id ${{ github.event.inputs.cloudfront_id }} --paths "/*"
+      - name: HTTP Request Action
+        if: ${{ always() && github.event.inputs.notification_webhook }}
+        run: |
+         curl "${{github.event.inputs.notification_webhook}}" -d '{"status": "${{job.status}}"}'
+      - name: Send mail notification for build
+        if: always()
+        uses: dawidd6/action-send-mail@v2
+        with:
+          # ses smtp server
+          server_address: email-smtp.us-east-1.amazonaws.com
+          # ses smtp port
+          server_port: 587
+          # ses user credentials
+          username: ${{ secrets.USERNAME_SMTP_SERVER }}
+          password: ${{ secrets.PASSWORD_SMTP_SERVER }}
+          # email subject
+          subject: ${{ github.repository }} - Build No ${{ github.run_number }} - ${{ job.status }}!!!
+          body: |
+            Build job status of ${{ github.repository }} - ${{ job.status }}.
+            Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
+            Thanks
+            DevOps Team
+            Skipper Hospitality
+          # comma-separated string, send email to
+          to: tariq@skipperhospitality.com, sany@skipperhospitality.com, tahsin@skipperhospitality.com
+          # from email name
+          from: Ameswell Site Build Report<no-reply@skipperhospitality.com>
