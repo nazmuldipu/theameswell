@@ -145,6 +145,35 @@
             "image": {
                 "artDirection": [
                     {
+                        "media": "(min-width:900.1px)", 
+                        "type": "jpg",
+                        "sizes": "35vw",
+                        "src": "images/art-20",
+                        "alt": "Las Hermanas Herraduras",
+                        "intrinsicwidth": "2500",
+                        "intrinsicheight": "1667" 
+                    },
+                    {
+                        "media": "(max-width:900.1px)", 
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "src": "images/art-20",
+                        "alt": "Las Hermanas Herraduras",
+                        "intrinsicwidth": "2500",
+                        "intrinsicheight": "1667"
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-18",
+            "slug":"las-hermanas-herraduras",
+            "p1": "Las Hermanas Herraduras<br/>Jalisco, Mexico<br/>2019<br/>Parota wood hewn and treated with natural materials",
+            "p2": "These three “sisters“ are solid wood, hand-cut from the trunk of one tree. Their mother tree was a 200 year-old Parota grown in Jalisco, Mexico. After the tree was struck by lightning, the pieces were salvaged and given a new life. They were cut and hewn using the simplest of tools and methods, allowing the natural ruggedness of the pieces to shine through. These special tree “sisters“ were given the name “Herradura“ to reflect their curved shape, like that of a horseshoe.",
+            "location":"Location"
+        },        
+        {
+            "image": {
+                "artDirection": [
+                    {
                         "media": "(min-width:900.1px)",
                         "type": "jpg",
                         "sizes": "35vw",
