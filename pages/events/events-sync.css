@@ -26,4 +26,23 @@
     .event:nth-child(even) .event__description{
         @apply xmed:order-2;
     }
+
+    .tab__radio {
+        @apply hidden;
+    }
+    .all, .indoor, .outdoor {
+        @apply hidden;
+    }
+    .tab--1:checked ~ .tab__containers .all,
+    .tab--2:checked ~ .tab__containers .indoor,
+    .tab--3:checked ~ .tab__containers .outdoor {
+        @apply block;
+    }
+    .tab__label{
+        @apply cursor-pointer;
+    }
+    .tab__radio:checked + .tab__label {
+        @apply border-b;
+        @apply border-ams-primary;
+    }
 }
