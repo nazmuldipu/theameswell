@@ -630,7 +630,7 @@
             "image": "images/happening-events-freddy-band-freddy-band",
             "cta": [
                 {
-                    "label": "Book Table",
+                    "label": "Book a Table",
                     "url": "https://rogerbarandrestaurant.com/reservations"
                 }
             ],
@@ -1653,6 +1653,27 @@
         {
             "id": 87,
             "date": {
+                "day": 28,
+                "month": 10,
+                "year": 2021
+            },
+            "time": "5:30 PM - 8:30 PM",
+            "title": "FREDDY CLARKE AND WOBBLY WORLD",
+            "showIndexPage": false,
+            "image": "images/happening-events-freddy-band-freddy-band",
+            "cta": [
+                {
+                    "label": "Book a Table",
+                    "url": "https://rogerbarandrestaurant.com/reservations"
+                }
+            ],
+            "descriptions": [
+                "Bay Area Legend, Freddy Clarke is performing with members of his band, Wobbly World during dinner at Roger!  Freddy brings together a group of internationally recognized musician for an ethno-layering of melodic and rhythmic blend of several different world traditions to create a brilliant new sound."
+            ]
+        },        
+        {
+            "id": 88,
+            "date": {
                 "day": 29,
                 "month": 10,
                 "year": 2021
@@ -1677,7 +1698,7 @@
             ]
         },
         {
-            "id": 88,
+            "id": 89,
             "date": {
                 "day": 29,
                 "month": 10,
@@ -1703,7 +1724,7 @@
             ]
         },
         {
-            "id": 89,
+            "id": 90,
             "date": {
                 "day": 30,
                 "month": 10,
@@ -1729,7 +1750,7 @@
             ]
         },
         {
-            "id": 90,
+            "id": 91,
             "date": {
                 "day": 30,
                 "month": 10,
@@ -1755,7 +1776,7 @@
             ]
         },
         {
-            "id": 91,
+            "id": 92,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1783,7 +1804,7 @@
             ]
         },
         {
-            "id": 92,
+            "id": 93,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1809,7 +1830,7 @@
             ]
         },
         {
-            "id": 93,
+            "id": 94,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1835,7 +1856,7 @@
             ]
         },
         {
-            "id": 94,
+            "id": 95,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1861,7 +1882,7 @@
             ]
         },
         {
-                "id": 95,
+                "id": 96,
                 "date": {
                     "day": 10,
                     "month": 11,
@@ -1882,7 +1903,7 @@
                 ]
             },
             {
-                "id": 96,
+                "id": 97,
                 "date": {
                     "day": 23,
                     "month": 11,
@@ -1903,7 +1924,7 @@
                 ]
             },
             {
-                "id": 97,
+                "id": 98,
                 "date": {
                     "day": 24,
                     "month": 11,
@@ -1924,7 +1945,7 @@
                 ]
             },
             {
-                "id": 98,
+                "id": 99,
                 "date": {
                     "day": 26,
                     "month": 11,
@@ -1945,7 +1966,7 @@
                 ]
             },
             {
-                "id": 99,
+                "id": 100,
                 "date": {
                     "day": 27,
                     "month": 11,
@@ -1966,7 +1987,7 @@
                 ]
             },
             {
-                "id": 100,
+                "id": 101,
                 "date": {
                     "day": 28,
                     "month": 11,
