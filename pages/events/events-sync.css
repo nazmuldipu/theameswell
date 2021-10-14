@@ -9,6 +9,9 @@
     .events__svgicon{
         @apply hidden xmed:grid;
     }
+    .event__description {
+        @apply text-left;
+    }
     .event:nth-child(even) .event__grid-cols{
         @apply grid-cols-minmax-65-35;
         @apply text-right;
