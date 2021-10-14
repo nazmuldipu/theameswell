@@ -47,19 +47,5 @@
         "intrinsicheight": "375"
       }
     ]
-  },
-  "subfooter_join_the_list": {
-    "image": {
-      "artDirection": [
-        {
-          "type": "png",
-          "sizes": "50vw",
-          "src": "images/subfooter-join-the-a-list",
-          "alt": "elle",
-          "intrinsicwidth": "533",
-          "intrinsicheight": "300"
-        }
-      ]
-    }
   }
 }

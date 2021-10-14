@@ -2050,5 +2050,17 @@
       "text": "Location",
       "href": "location.html"
     }
-  ]
+  ],
+  "subfooter_image": {
+      "artDirection": [
+        {
+          "type": "png",
+          "sizes": "50vw",
+          "src": "images/subfooter-join-the-a-list",
+          "alt": "elle",
+          "intrinsicwidth": "533",
+          "intrinsicheight": "300"
+        }
+      ]
+    }
 }
