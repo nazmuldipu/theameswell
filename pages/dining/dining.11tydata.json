@@ -9,8 +9,8 @@
             "type": "jpg",
             "src": "images/hero-dining",
             "alt": "The Ameswell hotel exterior",
-            "intrinsicwidth": "2880",
-            "intrinsicheight": "1174"
+            "intrinsicwidth": "5760",
+            "intrinsicheight": "2348"
           },
           {
             "classes": "image-loader",
@@ -19,8 +19,8 @@
             "type": "jpg",
             "src": "images/hero-dining_xmed",
             "alt": "The Ameswell hotel exterior",
-            "intrinsicwidth": "750",
-            "intrinsicheight": "1120"
+            "intrinsicwidth": "1500",
+            "intrinsicheight": "2240"
           }
         ]
     },
