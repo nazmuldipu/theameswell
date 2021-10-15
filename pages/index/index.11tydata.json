@@ -608,22 +608,22 @@
     {
       "artDirection": [
         {
-          "src": "images/offer-detail-1",
+          "src": "images/offer-desktop-detail-1",
           "media": "(min-width:900.1px)",
           "imgtype": "jpg",
           "sizes": "80vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "735",
-          "intrinsicheight": "490"
+          "intrinsicwidth": "2128",
+          "intrinsicheight": "1201"
         },
         {
-          "src": "images/offer-detail-1",
+          "src": "images/offer-mobile-detail-1",
           "media": "(max-width:900px)",
           "imgtype": "jpg",
           "sizes": "100vw",
           "imgalt": "Hotel room with view",
-          "intrinsicwidth": "735",
-          "intrinsicheight": "490"
+          "intrinsicwidth": "1280",
+          "intrinsicheight": "800"
         }
       ],
         "link": "https://reservations.travelclick.com/111994",
