@@ -40,6 +40,7 @@
             },
             "link": "https://reservations.travelclick.com/111994?RatePlanId=5318668 ",
             "title": "Fresh Start",
+            "slug":"fresh-start",
             "p1": "Start your day off right with a daily $20 credit at The Flyby café. Serving delicious and healthy breakfasts featuring made-to-order meals, grab and go options and artisan coffee."
         },
         {
@@ -57,6 +58,7 @@
             },
             "link": "https://reservations.travelclick.com/111994?RatePlanId=5454679",
             "title": "Puppy Love",
+            "slug":"puppy-love",
             "p1": "Treat your four-legged friend to an unforgettable stay at our pet-friendly property!  With a discounted pet fee of $50 (reg. $75), collapsible dog bowl, pet toy, and organic dog treat."
         },
         {
@@ -74,6 +76,7 @@
             },
             "link": "https://reservations.travelclick.com/111994?RatePlanId=5380636 ",
             "title": "Work from Ameswell",
+            "slug":"work-from-ameswell",
             "p1": "Work from one of our spacious, light filled guest rooms. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, and one coffee, tea, or G.O.A.T Fuel energy drink."
         },        
         {
@@ -91,6 +94,7 @@
             },
             "link": "https://reservations.travelclick.com/111994?RoomTypeID=514458",
             "title": "Wellness King",
+            "slug":"wellness-king",
             "p1": "Make the most of our wellness offerings when you book a room in our Wellness Wing. This offer includes an in-room Mirror, adjustable weights, resistance bands and a yoga mat by Team Fitness, choice of G.O.A.T Fuel energy drink, and access to the fitness center, pool, and spa treatment rooms."
         },
         {
@@ -108,6 +112,7 @@
             },
             "link": "https://reservations.travelclick.com/111994?RatePlanId=5380644",
             "title": "Date Night",
+            "slug":"date-night",
             "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
         }
     ]   
