@@ -14,7 +14,7 @@ fabExternalLink: true
 {% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
 {% from "media-carousel.njk" import media_carousel, special_carousel, homepage_art_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image, offersArticle %}
+{% from "macros.njk" import scaled_image, offersArticle, subfooter__form %}
 {% from "svgicon.njk" import svg_icon %}
 
 <section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
@@ -284,45 +284,7 @@ fabExternalLink: true
         </section>
     </article>
 </div>       
-<div class="grid justify-items-center bg-ams-primary w-full p-6">
-    <article class="max-w-screen-lg p-6 bg-ams-white w-full">
-        <section class="xmed:grid xmed:grid-cols-2 xmed:gap-8">
-            <figure class="grid">
-                <figcaption class="order-2 xmed:order-1">
-                    <h2 class="title-display pt-4 text-ams-primary font-serif text-2xl xmed:text-4xl pb-4 xmed:pt-0">
-                        Join The A-List
-                    </h2>
-                    <p class="text-ams-primary pb-4 font-sans text-md">
-                        You'll be the first to hear about events and promotions.
-                    </p>
-                </figcaption>
-                <figcaption class="order-1 xmed:order-2">
-                    {{ scaled_image(subfooter_join_the_list.image) }}
-                </figcaption>
-            </figure>
-            <form-sender data-type="alist">
-                <form class="pt-4 xmed:pt-16">
-                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
-                        <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
-                    </div>
-                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
-                        <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
-                    </div>
-                    <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                        <input type="text" required="required" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
-                        <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">EMAIL ADDRESS *</label>
-                    </div>
-                    <div class="text-center xmed:text-left">
-                        {{ primaryButton("#", 'Join the A-List', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
-                    </div>    
-                    <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
-                </form>
-            </form-sender>
-        </section>
-    </article>
-</div>
+{{subfooter__form(data.subfooter_image)}}
 <div class="bg-ams-primary w-full">
     <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
 </div>
