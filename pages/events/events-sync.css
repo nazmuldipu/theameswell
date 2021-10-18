@@ -9,6 +9,9 @@
     .events__svgicon{
         @apply hidden xmed:grid;
     }
+    .event__description {
+        @apply text-left;
+    }
     .event:nth-child(even) .event__grid-cols{
         @apply grid-cols-minmax-65-35;
         @apply text-right;
@@ -25,5 +28,24 @@
     .event:nth-child(odd) .event__image,
     .event:nth-child(even) .event__description{
         @apply xmed:order-2;
+    }
+
+    .tab__radio {
+        @apply hidden;
+    }
+    .all, .indoor, .outdoor {
+        @apply hidden;
+    }
+    .tab--1:checked ~ .tab__containers .all,
+    .tab--2:checked ~ .tab__containers .indoor,
+    .tab--3:checked ~ .tab__containers .outdoor {
+        @apply block;
+    }
+    .tab__label{
+        @apply cursor-pointer;
+    }
+    .tab__radio:checked + .tab__label {
+        @apply border-b;
+        @apply border-ams-primary;
     }
 }

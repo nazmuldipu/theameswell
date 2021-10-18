@@ -98,7 +98,8 @@ module.exports = {
         'ams-black':'#000000',
         'ams-main-15':'#B0A79E',
         'ams-main-16':'#DFDAD7',
-        'ams-main-17':'#5A4F4D'
+        'ams-main-17':'#5A4F4D',
+        'ams-main-18':'#082343'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
