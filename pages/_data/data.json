@@ -1067,7 +1067,7 @@
             "time": "10:00 - 11:00 am",
             "title": "YOGA ON THE LAWN",
             "image": "images/happenings_evants-Yoga_Class",
-            "showIndexPage": true,
+            "showIndexPage": false,
             "cta": [
                 {
                     "label": "Book Table",
@@ -1199,7 +1199,7 @@
             "time": "5:30 PM - 8:30 PM",
             "title": "LIVE MUSIC WITH MEGAN CHENOT",
             "image": "images/happenings-events-megan-chenot",
-            "showIndexPage": true,
+            "showIndexPage": false,
             "cta": [
                 {
                     "label": "Book a Table",
@@ -1439,7 +1439,7 @@
             "time": "10:00 - 11:00 am",
             "title": "YOGA ON THE LAWN",
             "image": "images/happenings_evants-Yoga_Class",
-            "showIndexPage": false,
+            "showIndexPage": true,
             "cta": [
                 {
                     "label": "Book Table",
@@ -1778,6 +1778,28 @@
         {
             "id": 92,
             "date": {
+                "day": 30,
+                "month": 10,
+                "year": 2021
+            },
+            "time": "4 PM - 9 PM",
+            "title": "FRIGHT NIGHT AT THE AMESWELL HOTEL",
+            "image": "images/fright-night-at-the-ameswell",
+            "showIndexPage": true,
+            "cta": [
+                {
+                    "label": "Buy your tickets",
+                    "url": "https://www.eventbrite.com/e/fright-night-at-the-ameswell-tickets-193702929677",
+                    "classes": "hidden xmed:block"
+                }
+            ],
+            "descriptions": [
+                "Come and join us for a spooky Saturday night movie! Bring a blanket, family, friends, even the dog! Show up starting at 4 PM for lawn games and Halloween cocktails and movie treats out of our retro Airstream bar. Tickets include a 10% discount at Roger, our bar & restaurant (limit one per party, show eventbrite ticket to redeem.)"
+            ]
+        },        
+        {
+            "id": 93,
+            "date": {
                 "day": 31,
                 "month": 10,
                 "year": 2021
@@ -1804,7 +1826,7 @@
             ]
         },
         {
-            "id": 93,
+            "id": 94,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1830,7 +1852,7 @@
             ]
         },
         {
-            "id": 94,
+            "id": 95,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1856,7 +1878,7 @@
             ]
         },
         {
-            "id": 95,
+            "id": 96,
             "date": {
                 "day": 31,
                 "month": 10,
@@ -1882,7 +1904,7 @@
             ]
         },
         {
-                "id": 96,
+                "id": 97,
                 "date": {
                     "day": 10,
                     "month": 11,
@@ -1903,7 +1925,7 @@
                 ]
             },
             {
-                "id": 97,
+                "id": 98,
                 "date": {
                     "day": 23,
                     "month": 11,
@@ -1924,7 +1946,7 @@
                 ]
             },
             {
-                "id": 98,
+                "id": 99,
                 "date": {
                     "day": 24,
                     "month": 11,
@@ -1945,7 +1967,7 @@
                 ]
             },
             {
-                "id": 99,
+                "id": 100,
                 "date": {
                     "day": 26,
                     "month": 11,
@@ -1966,7 +1988,7 @@
                 ]
             },
             {
-                "id": 100,
+                "id": 101,
                 "date": {
                     "day": 27,
                     "month": 11,
@@ -1987,7 +2009,7 @@
                 ]
             },
             {
-                "id": 101,
+                "id": 102,
                 "date": {
                     "day": 28,
                     "month": 11,
