@@ -1439,7 +1439,7 @@
             "time": "10:00 - 11:00 am",
             "title": "YOGA ON THE LAWN",
             "image": "images/happenings_evants-Yoga_Class",
-            "showIndexPage": true,
+            "showIndexPage": false,
             "cta": [
                 {
                     "label": "Book Table",
@@ -1613,7 +1613,7 @@
             "time": "5:30 PM - 8:30 PM",
             "title": "LIVE MUSIC WITH CARLOS REYES",
             "image": "images/happenings-events-carlos-reyes",
-            "showIndexPage": false,
+            "showIndexPage": true,
             "cta": [
                 {
                     "label": "Book a Table",
@@ -2028,7 +2028,244 @@
                 "descriptions": [
                     "Broadway shows are back at the San Jose Center for the Performing Arts! Sing along and witness great performances all November from the cast of Hairspray on selected dates. Grab a bite to eat for lunch or dinner, depending on your show time, before the curtain call!"
                 ]
-            }
+            },
+            {
+                "id": 103,
+                "date": {
+                    "day": 2,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 104,
+                "date": {
+                    "day": 9,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 105,
+                "date": {
+                    "day": 16,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 106,
+                "date": {
+                    "day": 23,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 107,
+                "date": {
+                    "day": 30,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 108,
+                "date": {
+                    "day": 3,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 109,
+                "date": {
+                    "day": 10,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 109,
+                "date": {
+                    "day": 17,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 109,
+                "date": {
+                    "day": 24,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 110,
+                "date": { "day": 3, "month": 11, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            },
+            {
+                "id": 111,
+                "date": { "day": 10, "month": 11, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            },
+            {
+                "id": 112,
+                "date": { "day": 17, "month": 11, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            },
+            {
+                "id": 113,
+                "date": { "day": 24, "month": 11, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            }                                                                                                                                                                                                                                 
   ],
   "footer_content": [
     {
