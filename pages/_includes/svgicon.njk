@@ -41,6 +41,7 @@
         {%if caption %}
         <a {% if href %} href="{{href}}" {% endif %}>
             <span class="
+            {% if not href=="" %} border-b border-ams-primary {% endif %}
             {% if textColor %} text-ams-primary {% endif %}"
             >{{caption}}</span>
         </a>
