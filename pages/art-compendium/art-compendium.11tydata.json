@@ -145,35 +145,6 @@
             "image": {
                 "artDirection": [
                     {
-                        "media": "(min-width:900.1px)", 
-                        "type": "jpg",
-                        "sizes": "35vw",
-                        "src": "images/art-20",
-                        "alt": "Las Hermanas Herraduras",
-                        "intrinsicwidth": "2500",
-                        "intrinsicheight": "1667" 
-                    },
-                    {
-                        "media": "(max-width:900.1px)", 
-                        "type": "jpg",
-                        "sizes": "100vw",
-                        "src": "images/art-20",
-                        "alt": "Las Hermanas Herraduras",
-                        "intrinsicwidth": "2500",
-                        "intrinsicheight": "1667"
-                    }
-                ]
-            },
-            "bgImage":"bg-ams-main-18",
-            "slug":"las-hermanas",
-            "p1": "Las Hermanas Herraduras<br/>Jalisco, Mexico<br/>2019<br/>Parota wood hewn and treated with natural materials",
-            "p2": "These three “sisters“ are solid wood, hand-cut from the trunk of one tree. Their mother tree was a 200 year-old Parota grown in Jalisco, Mexico. After the tree was struck by lightning, the pieces were salvaged and given a new life. They were cut and hewn using the simplest of tools and methods, allowing the natural ruggedness of the pieces to shine through. These special tree “sisters“ were given the name “Herradura“ to reflect their curved shape, like that of a horseshoe.",
-            "location":"Location"
-        },        
-        {
-            "image": {
-                "artDirection": [
-                    {
                         "media": "(min-width:900.1px)",
                         "type": "jpg",
                         "sizes": "35vw",
@@ -199,6 +170,35 @@
             "p2": "Ala Ebtekar’s work is an amalgam of mythology, science, and pop culture. In his Azimuth series, images from the  Hubble telescope are printed as negatives, then rendered with an almost alchemical cyanotype technique: exposed  over canvas by sun, moon and star light. The result is explosive photographic possibilities of the universe: red iron is  changed into blue, stark binaries crumble, photography meets painting, science converges with art, and ultimately,  opposing world-views synthesize.",
             "location":"Location"
         },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "media": "(min-width:900.1px)", 
+                        "type": "jpg",
+                        "sizes": "35vw",
+                        "src": "images/art-20",
+                        "alt": "Las Hermanas Herraduras",
+                        "intrinsicwidth": "2500",
+                        "intrinsicheight": "1667" 
+                    },
+                    {
+                        "media": "(max-width:900.1px)", 
+                        "type": "jpg",
+                        "sizes": "100vw",
+                        "src": "images/art-20",
+                        "alt": "Las Hermanas Herraduras",
+                        "intrinsicwidth": "2500",
+                        "intrinsicheight": "1667"
+                    }
+                ]
+            },
+            "bgImage":"bg-ams-main-18",
+            "slug":"las-hermanas",
+            "p1": "Las Hermanas Herraduras<br/>Jalisco, Mexico<br/>2019<br/>Parota wood hewn and treated with natural materials",
+            "p2": "These three “sisters“ are solid wood, hand-cut from the trunk of one tree. Their mother tree was a 200 year-old Parota grown in Jalisco, Mexico. After the tree was struck by lightning, the pieces were salvaged and given a new life. They were cut and hewn using the simplest of tools and methods, allowing the natural ruggedness of the pieces to shine through. These special tree “sisters“ were given the name “Herradura“ to reflect their curved shape, like that of a horseshoe.",
+            "location":"Location"
+        },        
         {
             "image": {
                 "artDirection": [
@@ -563,7 +563,7 @@
             "bgImage":"bg-ams-main-9",
             "slug":"sylvia-takken",
             "p1": "Sylvia Takken<br/>Breda, Netherlands<br/>In Bloom<br/>Archival print on paper",
-            "p2": "Sylvia is a Dutch artist, illustrator and designer. Her style is graphic and playful with an emphasis on color, shape and nature.",
+            "p2": "Sylvia is a Dutch artist, illustrator and designer. Her style is graphic and playful with an emphasis on color, shape and nature. <br/><br/> Please note, this art is located in one of our guest suites and is not available for public view (unless you’d like to book one, of course!)",
             "location":"Location"
         },
         {
@@ -592,7 +592,7 @@
             "bgImage":"bg-ams-main-8",
             "slug":"nate-harris",
             "p1": "Nate Harris<br/>Philadelphia, Pennyslvania, USA<br/>Suburbs COMMISSION<br/>Woodblock print on paper",
-            "p2": "Nate Harris is a Philadelphia based graphic artist working in an ever expanding array of mediums. His interest in process and material experimentation is at the root of his approach to printmaking, woodworking, public art, illustrations, posters and sculpture.",
+            "p2": "Nate Harris is a Philadelphia based graphic artist working in an ever expanding array of mediums. His interest in process and material experimentation is at the root of his approach to printmaking, woodworking, public art, illustrations, posters and sculpture. <br/><br/> Please note, this art is located in one of our guest suites and is not available for public view (unless you’d like to book one, of course!)",
             "location":"Location"
         },
         {
@@ -621,7 +621,7 @@
             "bgImage":"bg-ams-main-4",
             "slug":"deborah-zlotsky",
             "p1": "Deborah Zlotsky<br/>Albany, New York<br/> Oki Doki<br/>Archival print on paper",
-            "p2": "Zlotsky’s use of color, shape, form, and perspectival shifts create vibrant paintings that are both timeless and contemporary. Destruction and reconstruction are intrinsic to the process of creation in the work. Observing both monumental and architectural elements through undulating forms and layers of paint, the works suggest both receding and advancing forms.",
+            "p2": "Zlotsky’s use of color, shape, form, and perspectival shifts create vibrant paintings that are both timeless and contemporary. Destruction and reconstruction are intrinsic to the process of creation in the work. Observing both monumental and architectural elements through undulating forms and layers of paint, the works suggest both receding and advancing forms. <br/><br/> Please note, this art is located in one of our guest suites and is not available for public view (unless you’d like to book one, of course!)",
             "location":"Location"
         },
         {
