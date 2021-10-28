@@ -67,18 +67,19 @@
                     {
                         "type": "jpg",
                         "sizes": "50vw",
-                        "src": "images/offers-4-desktop",
-                        "alt": "The outdoor pool in the evening at the Ameswell Hotel",
+                        "src": "images/offers-7-desktop",
+                        "alt": "The lobby interior of the Ameswell Hotel",
                         "intrinsicwidth": "1064" ,
-                        "intrinsicheight": "601"
+                        "intrinsicheight": "600" 
                     }
                 ]
             },
-            "link": "https://reservations.travelclick.com/111994?RatePlanId=5380636 ",
-            "title": "Work from Ameswell",
-            "slug":"work-from-ameswell",
-            "p1": "Work from one of our spacious, light filled guest rooms. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, and one coffee, tea, or G.O.A.T Fuel energy drink."
-        },        
+
+            "link": "https://reservations.theameswellhotel.com/111994?RatePlanId=5704035",
+            "title": "Work | Play | Stay",
+            "p1": "Escape the four walls of your home office with our Work | Play | Stay package. Early check-in at 9AM and late check-out the next day at 5:00PM means plenty of time to get your work done and take advantage of our abundance of leisure amenities. Go ahead. Break for a massage. We won’t tell."
+        },             
+
         {
             "image": {
                 "artDirection": [
@@ -114,6 +115,39 @@
             "title": "Date Night",
             "slug":"date-night",
             "p1": "Enjoy a romantic getaway with a late check-out and daily $75 food and beverage credit to enjoy at Roger bar and Restaurant. Or make it a picnic on our expansive lawn with items from The Flyby."
+
+        },
+        {
+            "image": {
+                "artDirection": [
+                    {
+                        "type": "jpg",
+                        "sizes": "50vw",
+                        "src": "images/offers-4-desktop",
+                        "alt": "The outdoor pool in the evening at the Ameswell Hotel",
+                        "intrinsicwidth": "1064" ,
+                        "intrinsicheight": "601"
+                    }
+                ]
+            },
+            "link": "https://reservations.travelclick.com/111994?RatePlanId=5380636 ",
+            "title": "Work from Ameswell",
+            "p1": "Work from one of our spacious, light filled guest rooms. This package includes: day use of a King Room, access to the pool, fitness center, library, and art gallery, two bottled waters, and one coffee, tea, or G.O.A.T Fuel energy drink."
+        }        
+    ],
+    "subfooter_join_the_list":{
+        "image": {
+            "artDirection": [
+                {
+                    "type": "png",
+                    "sizes": "50vw",
+                    "src": "images/subfooter-join-the-a-list",
+                    "alt": "elle",
+                    "intrinsicwidth": "533" ,
+                    "intrinsicheight": "300"
+                }
+            ]
         }
-    ]   
+      }    
+
 }
