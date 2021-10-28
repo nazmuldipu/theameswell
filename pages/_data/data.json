@@ -1613,7 +1613,7 @@
             "time": "5:30 PM - 8:30 PM",
             "title": "LIVE MUSIC WITH CARLOS REYES",
             "image": "images/happenings-events-carlos-reyes",
-            "showIndexPage": true,
+            "showIndexPage": false,
             "cta": [
                 {
                     "label": "Book a Table",
@@ -1807,7 +1807,7 @@
             "time": "10:00 - 11:00 am",
             "title": "YOGA ON THE LAWN",
             "image": "images/happenings_evants-Yoga_Class",
-            "showIndexPage": false,
+            "showIndexPage": true,
             "cta": [
                 {
                     "label": "Book Table",
@@ -2232,6 +2232,27 @@
             },
             {
                 "id": 111,
+                "date": {
+                    "day": 4,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "FREDDY CLARKE AND WOBBLY WORLD",
+                "showIndexPage": false,
+                "image": "images/happening-events-freddy-band-freddy-band",
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "Bay Area Legend, Freddy Clarke is performing with members of his band, Wobbly World during dinner at Roger!  Freddy brings together a group of internationally recognized musician for an ethno-layering of melodic and rhythmic blend of several different world traditions to create a brilliant new sound. "
+                ]
+            },            
+            {
+                "id": 112,
                 "date": { "day": 10, "month": 11, "year": 2021 },
                 "time": "4PM - 12AM",
                 "title": "WINE WEDNESDAYS",
@@ -2243,7 +2264,28 @@
                 ]
             },
             {
-                "id": 112,
+                "id": 113,
+                "date": {
+                    "day": 11,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "FREDDY CLARKE AND WOBBLY WORLD",
+                "showIndexPage": false,
+                "image": "images/happening-events-freddy-band-freddy-band",
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "Bay Area Legend, Freddy Clarke is performing with members of his band, Wobbly World during dinner at Roger!  Freddy brings together a group of internationally recognized musician for an ethno-layering of melodic and rhythmic blend of several different world traditions to create a brilliant new sound. "
+                ]
+            },            
+            {
+                "id": 114,
                 "date": { "day": 17, "month": 11, "year": 2021 },
                 "time": "4PM - 12AM",
                 "title": "WINE WEDNESDAYS",
@@ -2255,7 +2297,7 @@
                 ]
             },
             {
-                "id": 113,
+                "id": 115,
                 "date": { "day": 24, "month": 11, "year": 2021 },
                 "time": "4PM - 12AM",
                 "title": "WINE WEDNESDAYS",
