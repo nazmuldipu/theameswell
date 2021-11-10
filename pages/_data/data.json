@@ -2286,7 +2286,32 @@
                 "descriptions": [
                   "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
                 ]
-            }                                                                                                                                                                                                                                 
+            },
+            {
+                "id": 116,
+                "date": {
+                    "day": 25,
+                    "month": 11,
+                    "year": 2021
+                },
+                "time": "2:00 PM - 8:00 PM",
+                "title": "THANKSGIVING DINNER AT ROGER",
+                "image": "images/happenings-roger-terrace",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://www.rogerbarandrestaurant.com/reservations"
+                    },
+                    {
+                        "label": "View Menu",
+                        "url": "https://rogerbarandrestaurant.com/pdf/Roger_Thanksgiving_Menu_2021.pdf"
+                    }                    
+                ],
+                "descriptions": [
+                    "Join the Roger family for a delightfully modern Thanksgiving dinner. We will be offering a three course pre-fixe at 95/head (35 for children 12 and under), featuring the classics you know and love and few delicious autumnal twists on our Roger staples. The menu is viewable on our website, www.rogerbarandrestaurant.com. Come give thanks with us!"
+                ]
+            }                                                                                                                                                                                                                                             
   ],
   "footer_content": [
     {
