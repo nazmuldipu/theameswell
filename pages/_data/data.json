@@ -2332,7 +2332,312 @@
                 "descriptions": [
                     "Join the Roger family for a delightfully modern Thanksgiving dinner. We will be offering a three course pre-fixe at 95/head (35 for children 12 and under), featuring the classics you know and love and few delicious autumnal twists on our Roger staples. The menu is viewable on our website, www.rogerbarandrestaurant.com. Come give thanks with us!"
                 ]
-            }                                                                                                                                                                                                                                             
+            },
+            {
+                "id": 118,
+                "date": { "day": 1, "month": 12, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            },
+            {
+                "id": 119,
+                "date": { "day": 8, "month": 12, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            }, 
+            {
+                "id": 120,
+                "date": { "day": 15, "month": 12, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            }, 
+            {
+                "id": 121,
+                "date": { "day": 22, "month": 12, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            }, 
+            {
+                "id": 122,
+                "date": { "day": 29, "month": 12, "year": 2021 },
+                "time": "4PM - 12AM",
+                "title": "WINE WEDNESDAYS",
+                "image": "images/happenings_evants-Wine_Wednesdays",
+                "showIndexPage": false,
+                "cta":[{"label":"Book a Table", "url": "https://rogerbarandrestaurant.com/reservations"}],
+                "descriptions": [
+                  "Special occasions (like Wednesdays) should always be celebrated with a glass of wine! Hop on over to Roger for 25% off any bottle of wine on our menu. Cheers!"
+                ]
+            },
+            {
+                "id": 123,
+                "date": { "day": 5, "month": 12, "year": 2021 },
+                "time": "10:00 - 11:00 am",
+                "title": "YOGA ON THE LAWN",
+                "image": "images/happenings_evants-Yoga_Class",
+                "showIndexPage": false,
+                "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+                "descriptions": [
+                  "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+                  "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+                  "Join us after class for Sunday Brunch at Roger!"
+                ]
+              },
+              {
+                "id": 124,
+                "date": { "day": 12, "month": 12, "year": 2021 },
+                "time": "10:00 - 11:00 am",
+                "title": "YOGA ON THE LAWN",
+                "image": "images/happenings_evants-Yoga_Class",
+                "showIndexPage": false,
+                "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+                "descriptions": [
+                  "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+                  "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+                  "Join us after class for Sunday Brunch at Roger!"
+                ]
+              },
+              {
+                "id": 125,
+                "date": { "day": 19, "month": 12, "year": 2021 },
+                "time": "10:00 - 11:00 am",
+                "title": "YOGA ON THE LAWN",
+                "image": "images/happenings_evants-Yoga_Class",
+                "showIndexPage": false,
+                "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+                "descriptions": [
+                  "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+                  "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+                  "Join us after class for Sunday Brunch at Roger!"
+                ]
+              },
+              {
+                "id": 126,
+                "date": { "day": 26, "month": 12, "year": 2021 },
+                "time": "10:00 - 11:00 am",
+                "title": "YOGA ON THE LAWN",
+                "image": "images/happenings_evants-Yoga_Class",
+                "showIndexPage": false,
+                "cta":[{"label":"Book Table", "url": "https://rogerbarandrestaurant.com/reservations", "classes":"hidden xmed:block"}, {"label":"Book Class", "url":"https://app.squarespacescheduling.com/schedule.php?owner=23496406"}],
+                "descriptions": [
+                  "Join us for an outdoor Hatha yoga class on our expansive outdoor lawn. You will be led through poses focused on alignment, and designed to strengthen, stretch, and balance your body to leave you feeling energized.",
+                  "All levels of experience are welcome. Please bring your mat. Hotel guests may request a mat from the Front Desk. Class is complimentary. Space is limited.",
+                  "Join us after class for Sunday Brunch at Roger!"
+                ]
+              }, 
+              {
+                "id": 127,
+                "date": {
+                    "day": 7,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": true,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 128,
+                "date": {
+                    "day": 14,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": true,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 129,
+                "date": {
+                    "day": 21,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": true,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 130,
+                "date": {
+                    "day": 28,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH MEGAN CHENOT",
+                "image": "images/happenings-events-megan-chenot",
+                "showIndexPage": true,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
+                ]
+            },
+            {
+                "id": 131,
+                "date": {
+                    "day": 1,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 132,
+                "date": {
+                    "day": 8,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 133,
+                "date": {
+                    "day": 15,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 134,
+                "date": {
+                    "day": 22,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            },
+            {
+                "id": 135,
+                "date": {
+                    "day": 29,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:30 PM - 8:30 PM",
+                "title": "LIVE MUSIC WITH CARLOS REYES",
+                "image": "images/happenings-events-carlos-reyes",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Book a Table",
+                        "url": "https://rogerbarandrestaurant.com/reservations"
+                    }
+                ],
+                "descriptions": [
+                    "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
+                ]
+            }                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
   ],
   "footer_content": [
     {
