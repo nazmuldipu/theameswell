@@ -2158,27 +2158,6 @@
             {
                 "id": 108,
                 "date": {
-                    "day": 30,
-                    "month": 11,
-                    "year": 2021
-                },
-                "time": "5:30 PM - 8:30 PM",
-                "title": "LIVE MUSIC WITH MEGAN CHENOT",
-                "image": "images/happenings-events-megan-chenot",
-                "showIndexPage": false,
-                "cta": [
-                    {
-                        "label": "Book a Table",
-                        "url": "https://rogerbarandrestaurant.com/reservations"
-                    }
-                ],
-                "descriptions": [
-                    "World-traveling solo performer Megan Chenot's set list has been called \"all spice, no filler\" as her extraordinarily versatile voice covers favorites from the 80s, 90s, classic rock and Motown eras, and much more. Using a looping pedal on her vocals, she creates intricate live harmonies and fun arrangements of an eclectic mix of crowd-pleasers and curveballs."
-                ]
-            },
-            {
-                "id": 109,
-                "date": {
                     "day": 3,
                     "month": 11,
                     "year": 2021
@@ -2198,7 +2177,7 @@
                 ]
             },
             {
-                "id": 110,
+                "id": 109,
                 "date": {
                     "day": 10,
                     "month": 11,
@@ -2219,7 +2198,7 @@
                 ]
             },
             {
-                "id": 111,
+                "id": 110,
                 "date": {
                     "day": 17,
                     "month": 11,
@@ -2240,7 +2219,7 @@
                 ]
             },
             {
-                "id": 112,
+                "id": 111,
                 "date": {
                     "day": 24,
                     "month": 11,
@@ -2261,7 +2240,7 @@
                 ]
             },
             {
-                "id": 113,
+                "id": 112,
                 "date": { "day": 3, "month": 11, "year": 2021 },
                 "time": "4PM - 12AM",
                 "title": "WINE WEDNESDAYS",
@@ -2273,7 +2252,7 @@
                 ]
             },
             {
-                "id": 114,
+                "id": 113,
                 "date": {
                     "day": 4,
                     "month": 11,
@@ -2294,7 +2273,7 @@
                 ]
             },            
             {
-                "id": 115,
+                "id": 114,
                 "date": { "day": 10, "month": 11, "year": 2021 },
                 "time": "4PM - 12AM",
                 "title": "WINE WEDNESDAYS",
@@ -2306,7 +2285,7 @@
                 ]
             },          
             {
-                "id": 116,
+                "id": 115,
                 "date": { "day": 17, "month": 11, "year": 2021 },
                 "time": "4PM - 12AM",
                 "title": "WINE WEDNESDAYS",
@@ -2318,7 +2297,7 @@
                 ]
             },
             {
-                "id": 117,
+                "id": 116,
                 "date": { "day": 24, "month": 11, "year": 2021 },
                 "time": "4PM - 12AM",
                 "title": "WINE WEDNESDAYS",
@@ -2330,7 +2309,7 @@
                 ]
             },
             {
-                "id": 118,
+                "id": 117,
                 "date": {
                     "day": 25,
                     "month": 11,
