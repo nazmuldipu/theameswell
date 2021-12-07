@@ -2637,6 +2637,51 @@
                 "descriptions": [
                     "World-renowned harpist and violinist, Carlos Reyes, is performing at Roger! This Grammy Award-winning artist has played around the globe with legendary performers like Willie Nelson, Steve Miller, MC Hammer and the Doobie Brothers.<br>Don’t miss this special opportunity to see Carlos perform at such an intimate venue, and prepare to be blown away by his sheer genius!"
                 ]
+            },
+            {
+                "id": 136,
+                "date": {
+                    "day": 12,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "9:00 AM - 12:00 PM",
+                "title": "MOUNTAIN VIEW FARMERS' MARKET",
+                "image": "images/happenings-events-farmers-market",
+                "showIndexPage": false,
+                "descriptions": [
+                    "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+                ]
+            },
+            {
+                "id": 136,
+                "date": {
+                    "day": 19,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "9:00 AM - 12:00 PM",
+                "title": "MOUNTAIN VIEW FARMERS' MARKET",
+                "image": "images/happenings-events-farmers-market",
+                "showIndexPage": false,
+                "descriptions": [
+                    "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+                ]
+            },
+            {
+                "id": 136,
+                "date": {
+                    "day": 26,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "9:00 AM - 12:00 PM",
+                "title": "MOUNTAIN VIEW FARMERS' MARKET",
+                "image": "images/happenings-events-farmers-market",
+                "showIndexPage": false,
+                "descriptions": [
+                    "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
+                ]
             }                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
   ],
   "footer_content": [
