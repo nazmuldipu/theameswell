@@ -3,7 +3,7 @@ import "../../components/MediaCarousel/index.js";
 import "../../components/RoomsGallery/index.js";
 import "../../components/FormSender/index.js";
 import "../../components/WeatherWidget/index.js";
-import * as happenigsData from "../_data/data.json";
+import * as happeningsData from "../_data/data.json";
 
 const monthNames = [
     "January",
@@ -51,9 +51,29 @@ const createMenuItem = (event) => {
   return section;
 };
 
+const shouldShowEvent = event => {
+    // Months are zero-indexed for months, and our data is one-indexed
+    const eventDate = new Date(event.date.year, event.date.month-1, event.date.day);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return event.showIndexPage && (eventDate.getTime() >= today.getTime());
+}
+
+const eventDateAscCmp = (a, b) => {
+    // Months are zero-indexed for months, and our data is one-indexed
+    const dateA = new Date(a.date.year, a.date.month-1, a.date.day);
+    const dateB = new Date(b.date.year, b.date.month-1, b.date.day);
+    return dateA.getTime() - dateB.getTime();
+}
+
+const HOMEPAGE_SHOW_COUNT = 2; 
 const happeningsEle = document.querySelector("#happenings");
-happenigsData.events.forEach((element) => {
-    if (element.showIndexPage === true) {
-        happeningsEle.appendChild(createMenuItem(element));
-    }
+
+const happeningsToShow = happeningsData.events
+    .filter(shouldShowEvent)
+    .sort(eventDateAscCmp)
+    .slice(0, HOMEPAGE_SHOW_COUNT);
+
+happeningsToShow.forEach((event) => {
+    happeningsEle.appendChild(createMenuItem(event));
 });
