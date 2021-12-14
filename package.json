@@ -55,6 +55,7 @@
     "html-minifier": "^4.0.0",
     "http-server": "^0.12.3",
     "imagetracerjs": "^1.2.6",
+    "just-compose": "^2.0.1",
     "p-all": "^3.0.0",
     "p-map": "^4.0.0",
     "postcss": "^8.2.10",
