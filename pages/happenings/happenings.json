@@ -1,1 +1,1 @@
-{"defer_js":"happenings/happenings-defer.js","module_js":"happenings/happenings-module.js","sync_css":"happenings/happenings-sync.css"}
+{"defer_js":"./happenings-defer.js","module_js":"./happenings-module.js","sync_css":"./happenings-sync.css"}

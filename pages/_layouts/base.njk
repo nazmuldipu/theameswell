@@ -7,29 +7,58 @@ canonical_href: https://www.theameswellhotel.com
 <!DOCTYPE html>
 <html lang="en">
     <head>
+<!-- Google Tag Manager -->
+<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KKQNLKM');
+</script>
+<!-- End Google Tag Manager -->
+<!-- begin GraphQL data dump -->
+{% if meta.env == 'development' %}
+	<div id="data-dump-view-toggle" class="inline-block cursor-pointer px-4 py-1 bg-ams-gold text-sm text-white uppercase tracking-wider fixed bottom-4 left-4">Data Toggle</div>
+	<pre id="data-dump-root" class="fixed inset-0 text-sm text-mono overflow-y-scroll p-1 pb-4 m-16 sm:m-32" style="display: none"></pre>
+	<span id="data-dump-underlay" class="fixed inset-0 bg-black bg-opacity-25" style="display: none; z-index: 999998"></span>
+	<style>#data-dump-view-toggle { z-index: 1000000 } #data-dump-root { display: none; z-index: 999999 } #data-dump-root .string { color: gray; } #data-dump-root .number { color: darkorange; } #data-dump-root .boolean { color: blue; } #data-dump-root .null { color: magenta; } #data-dump-root .key { color: coral; }</style>
 
-<!-- Shift Digital Google Tag Manager -->
-{% if (meta.env ===  'production') %}
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-55ZT9LJ');
-    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.0.0/jsoneditor.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.0.0/jsoneditor.min.js"></script>
+
+	<script>
+        const editor = new JSONEditor(
+			document.getElementById('data-dump-root'),
+			{
+	            modes: ['code', 'tree'],
+	            mode: 'code',
+	            ace: ace
+	        }
+		)
+
+        editor.set({
+			  globalCMS: {{globalCMS|json|safe}},
+			  pageCMS: {{pageCMS|json|safe}}
+		})
+
+        // get json
+        const updatedJson = editor.get();
+		(function() {
+        	document.getElementById('data-dump-view-toggle').addEventListener("click", function(){
+        		let el = document.getElementById('data-dump-root');
+        		let el2 = document.getElementById('data-dump-underlay');
+			    el2.style.display = (el.style.display === "none") ? "block" : "none";
+			    el.style.display = (el.style.display === "none") ? "block" : "none";
+			})
+		})();
+		console.log({
+			globalCMS: {{globalCMS|json|safe}},
+			pageCMS: {{pageCMS|json|safe}}
+		})
+   </script>
+	<!-- insert apollo-dine.njk code here -->
 {% endif %}
-<!-- End Shift Digital Google Tag Manager -->
-<!-- Skipper Google Tag Manager -->
-{% if (meta.env ===  'production') %}
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KKQNLKM');
-    </script>
-{% endif %}
-<!-- End Skipper Google Tag Manager -->
+<!-- end GraphQL data dump-->
         <meta charset="utf-8" />
         {% if meta_description %}
             <meta name="description" content="{{meta_description}}">

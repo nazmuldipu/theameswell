@@ -1,1 +1,1 @@
-{"defer_js":"rfp/rfp-defer.js","module_js":"rfp/rfp-module.js","sync_css":"rfp/rfp-sync.css"}
+{"defer_js":"./rfp-defer.js","module_js":"./rfp-module.js","sync_css":"./rfp-sync.css"}
