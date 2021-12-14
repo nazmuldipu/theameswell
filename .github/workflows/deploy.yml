@@ -1,11 +1,13 @@
-name: GH action publish
+name: Deploy
 on:
   workflow_dispatch:
     inputs:
+      brand_name:
+        description: 'Brand name'
+        default: 'Sundance'
       branch:
         description: 'Desired branch name'
         required: true
-        default: 'dev'
       bucket:
         description: 'S3 bucket name'
         required: true
@@ -19,11 +21,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch Github Access Token
-        run: echo "${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}"
       - name: Setup Node Environment (14.x)
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.inputs.branch }}
+#           ref: ${{ github.event.inputs.branch }}
+          fetch-depth: 1
+      - run: git checkout ${{ github.event.inputs.branch }}
       - name: Cache node modules
         uses: actions/cache@v2
         id: npm-cache
@@ -39,8 +44,16 @@ jobs:
       - name: Install  npm Packages
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm install
-      - name: Project Build
-        run: npm run stage-build
+      - name: Project Build (dev)
+        if: ${{ github.ref == 'refs/heads/cms-dev' }}
+#         run: npm run build-dev
+        run: npm run build-stage
+      - name: Project Build (stage)
+        if: ${{ github.ref == 'refs/heads/cms-stage' }}
+        run: npm run build-stage
+      - name: Project Build (prod)
+        if: ${{ github.ref == 'refs/heads/cms-prod' }}
+        run: npm run build-prod
       - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -48,25 +61,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
           aws-region: us-east-1
       - name: Sync from Build Directory to s3 Bucket
-        run: aws s3 sync ./build s3://${{ github.event.inputs.bucket }} --acl public-read --exclude "*.html"
-      - name: Copy Each .html file and Rename it without File Extension on s3
-        run: |
-          cd build
-          shopt -s nullglob
-          html_files=(*.html)
-          for i in "${html_files[@]}"
-          do
-            object_name=${i:0:-5}
-            echo "${object_name}"
-            aws s3 cp ${i} s3://${{ github.event.inputs.bucket }}/${object_name} --acl public-read --content-type "text/html" #--dryrun
-          done
-      - name: rm synced .html Files
-        run: |
-          cd build
-          aws s3 rm s3://${{ github.event.inputs.bucket }} --recursive --exclude "*" --include "*.html"
-      - name: Create a new Cloudfront Invalidation as soon as the Built Files have been Uploaded to S3
+        run: aws s3 sync ./build s3://${{ github.event.inputs.bucket }} --acl public-read
+      - name: Cloudfront Invalidation 
         run: aws cloudfront create-invalidation --distribution-id ${{ github.event.inputs.cloudfront_id }} --paths "/*"
-      - name: HTTP Request Action
+      - name: Notification Webhook (websocket)
         if: ${{ always() && github.event.inputs.notification_webhook }}
         run: |
          curl "${{github.event.inputs.notification_webhook}}" -d '{"status": "${{job.status}}"}'
@@ -82,14 +80,14 @@ jobs:
           username: ${{ secrets.USERNAME_SMTP_SERVER }}
           password: ${{ secrets.PASSWORD_SMTP_SERVER }}
           # email subject
-          subject: ${{ github.repository }} - Build No ${{ github.run_number }} - ${{ job.status }}!!!
+          subject: ${{ github.event.inputs.brand_name }} (${{ github.event.inputs.branch }}) - Build No ${{ github.run_number }} - ${{ job.status }}!!!
           body: |
-            Build job status of ${{ github.repository }} - ${{ job.status }}.
+            Build job status of ${{ github.event.inputs.brand_name }} (${{ github.event.inputs.branch }}) - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
             Thanks
             DevOps Team
             Skipper Hospitality
           # comma-separated string, send email to
-          to: tariq@skipperhospitality.com, sany@skipperhospitality.com, tahsin@skipperhospitality.com
+          to: devops@skipperhospitality.com
           # from email name
-          from: Ameswell Site Build Report<no-reply@skipperhospitality.com>
+          from: ${{ github.event.inputs.brand_name }} Site Build Report<no-reply@skipperhospitality.com>

@@ -1,4 +1,4 @@
-name: GH action (Percy, Lighthouse)
+name: QA.
 on:
   pull_request:
     branches:
@@ -45,4 +45,3 @@ jobs:
           command: "node snapshots.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        
