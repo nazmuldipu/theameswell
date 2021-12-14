@@ -12,7 +12,8 @@ import {
     BUILD_DIR,
     getWatchedPaths,
     setDifference,
-    setUnion
+    setUnion,
+    ROOT_DIR
 } from './lib.js';
 import { buildCSS } from './postcss.js';
 import { buildJS } from './esbuild.js';
@@ -48,12 +49,35 @@ const isTemplateExt = ext => {
  */
 const shouldRebuildPageJSON = path => {
     const ext = extname(path);
-    return path.startsWith(PAGES_DIR.pathname)
+    return ( path.startsWith(PAGES_DIR.pathname) || path.startsWith(ROOT_DIR.pathname) )
         && (
             ext === '.js'
             || ext === '.css'
         );
 }
+
+/**
+ * 
+ * @param {*} pageAssetMap 
+ * @param {*} extsToBuild 
+ * @param {*} path 
+ * @returns Boolean
+ */
+const shouldRebuildCSS = (pageAssetMap, extsToBuild, path) => 
+     ( pageAssetMap.has('.css') && extsToBuild.has('.css') )
+     || basename(path) === 'tailwind.config.cjs'
+     || [...extsToBuild].some(isTemplateExt);
+
+/**
+ * 
+ * @param {*} pageAssetMap 
+ * @param {*} extsToBuild 
+ * @param {*} path 
+ * @returns 
+ */
+const shouldRebuildJS = (pageAssetMap, extsToBuild, path) => 
+    ( pageAssetMap.has('.js') && extsToBuild.has('.js') )
+    || basename(path) === '.eleventy.cjs'
 
 /**
  * Eventually, I probably want to convert this to a watch manager
@@ -75,15 +99,15 @@ const shouldRebuildPageJSON = path => {
 // into a proper class
 let isCurrentlyBuilding = false;
 let nextBuild;
-let buildTypes = new Set();
+let buildExtTypes = new Set();
 
 const rebuildAssets = async (
-    watcher, extensions, outputDir, cb, event, pathsToBuild, path
+    watcher, extensions, outputDir, cb, event, extsToBuild, path
 ) => {
     console.log(`REBUILDING event::'${event}'`, path);
     const pageAssetMap = getPageAssetsExtMap(PAGES_DIR, extensions);
     const buildPromises = [];
-    if (pageAssetMap.has('.css') && pathsToBuild.has('.css')) {
+    if (shouldRebuildCSS(pageAssetMap, extsToBuild, path)) {
         buildPromises.push(
             buildCSS(
                 pageAssetMap.get('.css'),
@@ -92,7 +116,7 @@ const rebuildAssets = async (
             )
         );
     }
-    if (pageAssetMap.has('.js') && pathsToBuild.has('.js')) {
+    if (shouldRebuildJS(pageAssetMap, extsToBuild, path)) {
         buildPromises.push(
             buildJS(
                 pageAssetMap.get('.js'),
@@ -102,14 +126,15 @@ const rebuildAssets = async (
             ).then(({ buildDeps }) => buildDeps)
         );
     }
-    if ([...pathsToBuild].some(isTemplateExt)) {
+    if ([...extsToBuild].some(isTemplateExt)) {
         // we assume no need to add or remove manual files for this
         // class of files
         // resolves to a set to match resolutions of CSS and JS promises
         buildPromises.push(
-            exec('npm run build:html').then(() => new Set())
+            exec('npm run watch:html').then(() => new Set())
         );
     }
+
     let depPathSet = await Promise.all(buildPromises)
                                 .then(pathSets => setUnion(pathSets));
                                 // need to get extensions to govern build process, push to promises for Promises.all
@@ -135,8 +160,8 @@ const rebuildAssets = async (
         console.log(`enqueued rebuild beginning for ${nextBuild.path}`);
         const cache = { ...nextBuild }
         nextBuild = null;
-        const typesCache = new Set([...buildTypes]);
-        buildTypes.clear();
+        const typesCache = new Set([...buildExtTypes]);
+        buildExtTypes.clear();
         await rebuildAssets(
             cache.watcher,
             cache.extensions,
@@ -149,24 +174,38 @@ const rebuildAssets = async (
     }
 }
 
+const getBuildType = path => {
+    // get path basename
+    switch(basename(path)) {
+        case '.eleventy.cjs':
+            return '.njk'; // this is hacky. symptom of refactor need
+        case 'tailwind.config.cjs':
+            return '.css'; // see above
+        default:
+            return extname(path); 
+    } 
+}
+
 export const watchEventHandler = (watcher, extensions, outputDir, cb) => event => async path => {
-    buildTypes.add(extname(path));
+    // will want to edit below -- basically want a helper to check for the special files too
+    // e.g. if .eleventy, add '.njk' extension -- is a little brittle, but works
+    buildExtTypes.add(getBuildType(path));
     if (isCurrentlyBuilding) {
         console.log(`Currently building. Will queue up next build for ${path} when ready.`);
         // we only enqueue the most recent build request
         nextBuild = { 
             watcher, 
             extensions, 
-            outputDir, 
+            outputDir,
             cb, 
-            buildTypes, 
+            buildExtTypes, 
             event,
             path 
         };
     }
     else {
         isCurrentlyBuilding = true;
-        await rebuildAssets(watcher, extensions, outputDir, cb, event, buildTypes, path);
+        await rebuildAssets(watcher, extensions, outputDir, cb, event, buildExtTypes, path);
         isCurrentlyBuilding = false;
     }
 };

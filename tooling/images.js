@@ -40,10 +40,12 @@ const pathsForDimension = (imgFile, dimension) => {
  */
 const getResponsivePaths = (imgFile, width) => {
     const paths = [];
-    let dimension = 300;
-    while (dimension < width) {
+    // these dimensions are taken from default TailwindCSS breakpoints and 
+    // from backwards compatibility with some original values
+    const dimensions = [320, 600, 640, 900, 1200, 1280, 1536]
+    for (const dimension of dimensions) {
+        if (dimension > width) break;
         Array.prototype.push.apply(paths, pathsForDimension(imgFile, dimension));
-        dimension *= 2;
     }
     Array.prototype.push.apply(paths, pathsForDimension(imgFile));
     return paths;
