@@ -44,8 +44,11 @@ module.exports = function(eleventyConfig) {
 
     // dump object data.
     eleventyConfig.addNunjucksFilter( 'json', function ( value ) {
-        let str = JSON.stringify(value)
-        return str?.replace(/(<svg.*?<\/svg>)/g,"raw svg load from db")
+        if (value) {
+            let str = JSON.stringify(value)
+            return str?.replace(/(<svg.*?<\/svg>)/g,"raw svg load from db")
+        }
+        return '{}'
     } )
 
     eleventyConfig.addNunjucksFilter( 'getAssetsPath', function ( path, permalink) {
