@@ -1,8 +1,12 @@
 'use strict';
-import {extname, join, sep} from 'path';
-import {readdirSync, statSync, writeFileSync} from 'fs';
+import path, {extname, join, sep } from 'path';
+import { accessSync, readdirSync, statSync, writeFileSync, createReadStream } from 'fs';
 import {platform} from 'os';
 import {rm, writeFile} from 'fs/promises';
+import { once } from 'events';
+import { createInterface } from 'readline';
+import compose from "just-compose";
+import beautify from 'js-beautify';
 
 export const prettyJSONStringify = json => JSON.stringify(json, null, 2);
 
@@ -11,6 +15,8 @@ export const LOAD_TYPE_REGEX = /-([A-Za-z]+)\./;
 export const GITIGNORE_EMPTY_DIR = `*
 */
 !.gitignore`;
+
+export const INDEX_PAGE = 'index';
 
 /**
  * 
@@ -25,18 +31,20 @@ export const setUnion = setArr =>
 
 export const defaultExtValidator = fileName => {
     const extension = extname(fileName);
-    return extension === '.js' || extension === '.css';
+    return extension === '.js' || extension === '.css' || extension === '.html';
 };
+
+export const defaultIgnorePattern = ['_'];
 
 /**
  * 
  * @param {Object} obj 
  * @param {String} propertyPath -- a dotted path like 'a.b.c'
  */
-export const getNestedProperty = (obj, propertyPath) => 
-    propertyPath.split('.').reduce((layer, prop) => {
-        return layer?.[prop]
-    }, obj);
+ export const getNestedProperty = (obj, propertyPath) => 
+ propertyPath.split('.').reduce((layer, prop) => {
+     return layer?.[prop]
+ }, obj);
 
 export const globForExts = (extensions, prefix='**/*') => join(prefix, `**/*@(${extensions.join('|')})`);
 
@@ -49,21 +57,27 @@ export const getWatchedPaths = watcher => {
 }
 
 export const filterForExt = ext => filename => extname(filename) === ext;
-export const globForPrefixExt = prefix => exts => join(prefix, `!(_)**/*@(${exts.join('|')})`);
+export const globForPrefixExt = (prefix, fileGlob='*', dirGlob='**') => exts => join(prefix, `!(_)${dirGlob}/${fileGlob}@(${exts.join('|')})`);
 
 const pagesURL = new URL('../pages', import.meta.url);
 const buildURL = new URL('../build', import.meta.url);
+const scriptsURL = new URL('../scripts', import.meta.url);
+const componentLibURL = new URL('../components', import.meta.url);
 const rootURL = new URL('..', import.meta.url);
 
 let buildPathName = decodeURI(buildURL.pathname);
 let pagesPathName = decodeURI(pagesURL.pathname);
+let scriptsPathName = decodeURI(scriptsURL.pathname);
+let componentLibPathName = decodeURI(componentLibURL.pathname);
 let rootPathName = decodeURI(rootURL.pathname);
 
 if (platform() === 'win32') {
     // need to get rid of prefixing path on windows
     rootPathName = rootPathName.slice(1);
+    scriptsPathName = scriptsPathName.slice(1);
     buildPathName = buildPathName.slice(1);
     pagesPathName = pagesPathName.slice(1);
+    componentLibPathName = componentLibPathName.slice(1);
 }
 
 export const ROOT_DIR = {
@@ -75,8 +89,15 @@ export const BUILD_DIR = {
 export const PAGES_DIR = {
     pathname: pagesPathName
 };
+export const SCRIPTS_DIR = {
+    pathname: scriptsPathName
+};
+export const COMPONENT_DIR = {
+    pathname: componentLibPathName
+};
 
 export const globForPages = globForPrefixExt(PAGES_DIR.pathname);
+export const globForScripts = (fileGlob) => globForPrefixExt(SCRIPTS_DIR.pathname, fileGlob);
 
 /**
  * 
@@ -112,8 +133,8 @@ export const getPageAssetsExtMap = ({ pathname }, extensions) =>
         return extMap;
     }, new Map());
 
-export const getPageAssets = ({ pathname }, isValidExt=defaultExtValidator) => readdirSync(pathname)
-    .flatMap(pageName => {
+export const getAssetFiles = (pathname, isValidExt) => {
+    return readdirSync(pathname).flatMap(pageName => {
         // ignore non-page dirs
         const pageDirPath = join(pathname, pageName);
         if (!pageName.startsWith("_")
@@ -121,13 +142,59 @@ export const getPageAssets = ({ pathname }, isValidExt=defaultExtValidator) => r
                 && statSync(pageDirPath, { throwIfNoEntry: false }).isDirectory()) {
             const pageDirContents = readdirSync(pageDirPath)
                 // only process certain file types
-                .flatMap(fileName => isValidExt(fileName)
-                                        ? [ join(pathname, pageName, fileName) ]
-                                        : [] );
+                .flatMap(fileName => {
+                    return isValidExt(fileName)
+                    ? [ join(pathname, pageName, fileName) ]
+                    : []
+                } );
             return [ pageDirContents ]
         }
         return []
     });
+}    
+
+export const getPageAssets = ({ pathname }, isValidExt=defaultExtValidator) => {
+    return getAllFiles(pathname)
+        .filter(filePath => isValidExt(filePath))  
+}
+
+/**
+ * The purpose of this function is to collect the paths for 
+ * top level JS files in the parameter pathname
+ * We ignore nested directories
+ * @param {String} pathname 
+ */
+export const getJSLibAssets = (pathname) => 
+    readdirSync(pathname).reduce((jsAssets, assetName) => {
+        // ignore non-page dirs
+        const assetPath = join(pathname, assetName);
+        if (extname(assetPath) === '.js') {
+            jsAssets.push(assetPath);
+        }
+        return jsAssets;
+    }, []);
+
+/**
+ * we look in the top-levels for styles/bundle and styles/process
+ * @param {String} pathname 
+ */
+export const getCSSLibAssets = (pathname) => {
+    const retObj = {};
+    ['bundle', 'process'].forEach(term => {
+        try {
+            const assetsPath = join(pathname, 'styles', term);
+            accessSync(assetsPath);
+            retObj[term] = readdirSync(assetsPath).reduce((cssAssets, assetName) => {
+                const assetPath = join(pathname, 'styles', term, assetName);
+                if (extname(assetPath) === '.css') {
+                    cssAssets.push(assetPath);
+                }
+                return cssAssets;
+            }, []);
+        } catch (e) {} // we catch errors from fs.access as part of its detection of ENOENT
+    });
+    return retObj;
+}
 
 export const rmNoExist = (pathname) => {
     return rm(pathname, { recursive: true }).catch(err => {
@@ -139,20 +206,25 @@ export const rmNoExist = (pathname) => {
     });
 };
 
+export const getPathLoadType = token => LOAD_TYPE_REGEX.test(token)
+                                        ? LOAD_TYPE_REGEX.exec(token)[1]
+                                        : '';
 export const getPageDataMap = (outputFiles, prefix='') => outputFiles.reduce((map, assetPath) => {
     // we only want to build template data for handled file types
     if(defaultExtValidator(assetPath)) {
         const pathTokens = assetPath.split(sep).slice(-2);
-        if(!map.has(pathTokens[0])) {
-            map.set(pathTokens[0], {});
+        /* key is page url */
+        const key = path.parse(assetPath).dir.split('/build/')[1];
+        /* except for index file we need to use relative path to current directory */
+        const pathToUse = key !== INDEX_PAGE ? './' + pathTokens[1] : prefix + join(...pathTokens)
+        if(!map.has(key)) {
+            map.set(key, {});
         }
-        const prev = map.get(pathTokens[0]);
-        const loadType = LOAD_TYPE_REGEX.test(pathTokens[1])
-            ? LOAD_TYPE_REGEX.exec(pathTokens[1])[1]
-            : '';
-        map.set(pathTokens[0], { 
+        const prev = map.get(key);    
+        const loadType = getPathLoadType(pathTokens[1]);
+        map.set(key, { 
             ...prev,
-            [`${loadType}_${extname(pathTokens[1]).slice(1)}`]: prefix + join(...pathTokens)
+            [`${loadType}_${extname(pathTokens[1]).slice(1)}`]: pathToUse
         });
     }
     return map;
@@ -160,11 +232,12 @@ export const getPageDataMap = (outputFiles, prefix='') => outputFiles.reduce((ma
 
 export const getPageJSONFilePromises = (dataMap, dirPath) => platform() === 'win32'
                                             ? [] 
-                                            : [...dataMap.entries()].map(([page, assets]) =>
-                                                writeFile(
-                                                    join(dirPath, page, `${page}.json`),
+                                            : [...dataMap.entries()].map(([page, assets]) =>{
+                                                const fileName = page.includes('/') ? page.split('/').slice(-1)[0] : page;
+                                                return writeFile(
+                                                    join(dirPath, page, `${fileName}.json`),
                                                     JSON.stringify(assets)
-                                                ));
+                                                )});
 
 export const constructSiteMap = (dirPath, urlBase) => {
     const urls = readdirSync(dirPath)
@@ -180,4 +253,78 @@ export const constructSiteMap = (dirPath, urlBase) => {
     </urlset>`;
 
     writeFileSync(join(dirPath, 'sitemap.xml'), sitemapStr);
+}                                                
+
+export const metafilePath = (filename) => join(BUILD_DIR.pathname, filename);
+
+export const removeDuplicateFromPageData = (pageData) => {
+    if(!pageData) return pageData;
+    return pageData.split(';')
+        .map(x => x.replace('\n', '').replace('\n', ''))
+        .filter((value, index, array) => {
+            return array.indexOf(value) === index && value;
+        }).join(';');
+}
+export const addNewLineToString = (string) => {
+    if(!string) return string;
+    const stringArray = string.split(';');
+    return stringArray.filter(Boolean).map(x => x.replace('\n', '').replace('\n', '') + ';').join('\n');
+}
+export const addSemicolonIfMissing = (string) => {
+    if(!string) return string;
+    if(!string && typeof string !== 'string') return string;
+    return string.lastIndexOf(';') === string.length - 1 ? string : string + ";";
+}
+
+export const formatCode = (code) => {
+    return beautify(code, { indent_size: 2, space_in_empty_paren: true, preserve_newlines: true });
+}
+
+export const sanitizePageData = compose(removeDuplicateFromPageData, addSemicolonIfMissing, addNewLineToString, formatCode);
+
+const getAllFiles = (dirPath, arrayOfFiles = [], ignorePatterns = defaultIgnorePattern) => {
+    let files = readdirSync(dirPath)
+    arrayOfFiles = arrayOfFiles || []
+  
+    files.forEach(function(file) {  
+        // for each file in the directory
+        if (!isIgnoredFile(file, ignorePatterns) && statSync(dirPath + "/" + file, { throwIfNoEntry: false }).isDirectory()) {
+            getAllFiles(dirPath + "/" + file, arrayOfFiles)
+        } else if(!isIgnoredFile(file, ignorePatterns)) {
+            arrayOfFiles.push(path.join(dirPath, "/", file));
+        }
+    })  
+    return arrayOfFiles
+  }
+
+  const isIgnoredFile = (file, ignorePatterns) => {
+    return ignorePatterns.some(pattern => {
+        return file.startsWith(pattern);
+    });
+  }
+
+  export const getFirstLine = async (filePath) => {
+    let result = '';
+    let counter = 0;
+    try {
+      const rl = createInterface({
+        input: createReadStream(filePath),
+        crlfDelay: Infinity
+      });
+  
+      rl.on('line', (line) => {
+        if(counter > 0){
+            rl.close();
+        }else{
+            result = line;
+        }
+        counter++;
+      });
+  
+      await once(rl, 'close');
+      
+    } catch (err) {
+      console.error(err);
+    }
+    return result;
 }

@@ -1,1 +1,1 @@
-{"defer_js":"location/location-defer.js","module_js":"location/location-module.js","sync_css":"location/location-sync.css"}
+{"defer_js":"./location-defer.js","module_js":"./location-module.js","sync_css":"./location-sync.css"}

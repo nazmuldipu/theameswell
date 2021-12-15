@@ -1,0 +1,1 @@
+export const ignorePatterns = ['/* ignore */','/*ignore*/', '// ignore', '//ignore'];

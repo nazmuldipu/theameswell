@@ -1,0 +1,83 @@
+{% macro dump_data(options={seoDump:false}) %}
+        <!-- begin GraphQL data dump -->
+    {% if meta.env == 'local' %}
+    <style>
+    #data-dump-view-toggle{
+        height: auto;
+        position: fixed;
+        bottom: 40vh !important;
+        left: 20px !important;
+        padding: 8px;
+        border-radius: 0px 0px 2px 2px;
+        color: rgb(255, 255, 255);
+        background: rgb(61, 88, 102);
+        box-shadow: rgba(0, 0, 0, 0.3) -1px 1px 6px 0px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.45px;
+        cursor: pointer;
+        transform: rotate(-90deg);
+        transform-origin: left bottom;
+        width: auto;
+        overflow: hidden;
+        z-index: 9999
+    }
+    #data-dump-root{
+        width: 100%;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        position: fixed;
+        z-index: 999;
+        border-color: rgb(61, 88, 102) !important;
+    }
+    #data-dump-root .jsoneditor-menu {
+        background: rgb(61, 88, 102) !important;
+    }
+
+    </style>
+        <div id="data-dump-view-toggle" >Data Toggle</div>
+        <pre id="data-dump-root" style="display: none"></pre>
+        <span id="data-dump-underlay" style="display: none; z-index: 999998"></span>
+        {# <style>#data-dump-view-toggle { z-index: 1000000 } #data-dump-root { display: none; z-index: 999999 } #data-dump-root .string { color: gray; } #data-dump-root .number { color: darkorange; } #data-dump-root .boolean { color: blue; } #data-dump-root .null { color: magenta; } #data-dump-root .key { color: coral; }</style> #}
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.0.0/jsoneditor.css" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.0.0/jsoneditor.min.js"></script>
+
+        <script>
+            let dumpData = {}
+            let showSeoDump = {{ options.seoDump }}
+
+            if(showSeoDump){
+                dumpData["seoData"] = {{seoData|json|safe}}
+            }
+
+            dumpData["globalCMS"] = {{globalCMS|json|safe}}
+            dumpData["pageCMS"] = {{pageCMS|json|safe}}
+
+            let editor = new JSONEditor(
+                document.getElementById('data-dump-root'),
+                {
+                    mode: 'code',
+                    ace: ace
+                }
+            )
+            editor.set(dumpData)
+
+            // get json
+            const updatedJson = editor.get();
+            (function() {
+                document.getElementById('data-dump-view-toggle').addEventListener("click", function(){
+                    let el = document.getElementById('data-dump-root');
+                    let el2 = document.getElementById('data-dump-underlay');
+                    el2.style.display = (el.style.display === "none") ? "block" : "none";
+                    el.style.display = (el.style.display === "none") ? "block" : "none";
+                })
+            })();
+    </script>
+    {% endif %}
+    <!-- end GraphQL data dump-->
+{% endmacro %}
