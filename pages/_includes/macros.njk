@@ -155,3 +155,7 @@
       </article>
   </div>
 {% endmacro %}
+
+{% macro cms_desciption(description, class = 'cms-description') %}
+    <div class="{{class}}">{{description | safe}}</div>
+{% endmacro %}

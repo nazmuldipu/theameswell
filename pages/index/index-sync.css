@@ -9,3 +9,9 @@
         width: 30%;
     }
 }
+@layer base{
+    .cms-description a[type^="internal"] {
+        @apply font-bold;
+        @apply underline;
+    }
+}

@@ -9,8 +9,9 @@ permalinkBypassOutputDir: true
 {% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
 {% from "media-carousel.njk" import media_carousel, special_carousel, homepage_art_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image, offersArticle, subfooter__form %}
+{% from "macros.njk" import scaled_image, offersArticle, subfooter__form, cms_desciption %}
 {% from "svgicon.njk" import svg_icon %}
+{% from "global-image.njk" import global_image %}
 
 <section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
     {{ scaled_image(banner_image) }}
@@ -24,27 +25,34 @@ permalinkBypassOutputDir: true
         {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
     </div>
 </section>
-
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
-        <section class="grid justify-items-center max-w-screen-xl xmed:px-4">
-            <div class="order-2 xmed:order-1">
-                {{ scaled_image(entrance_image) }}
-            </div>
-            <div class="order-1 xmed:order-2 z-0 max-w-screen-lg mx-3 pb-4 px-8 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    We believe in a foundation of exceptional experiences, thoughtful amenities, and effortless quality.
-                </h2>
-                <div class="xmed:text-center text-ams-primary">
-                    Nestled on 10 acres in sunny <a href="location.html" class="font-bold underline">Mountain View</a>, The Ameswell Hotel brings together innovation, natural beauty and an <a href="wellness.html" class="font-bold underline">opportunity to play</a> unlike any other hotel in the Bay Area.
-                </div>
-                <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
-                    <a href="about.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">LEARN MORE</a>
-                </div>
-            </div>
-        </section>
-    </article>
-</div>
+{% if pageCMS['top-article'] and pageCMS['top-article'].simple_article %}
+    {% for item in pageCMS['top-article'].simple_article %}
+        <div class="grid justify-items-center w-full bg-ams-base">
+            <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
+                <section class="grid justify-items-center max-w-screen-xl xmed:px-4">
+                    <div class="order-2 xmed:order-1">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </div>
+                    <div class="order-1 xmed:order-2 z-0 max-w-screen-lg mx-3 pb-4 px-8 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                        <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                            {{item.title}}
+                        </h2>
+                        <div class="xmed:text-center text-ams-primary">
+                            {{cms_desciption(item.description)}}
+                        </div>
+                        <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
+                            {% for link in item.links %}
+                                <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{link.copy | safe}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
+{% endif %}
 
 <!--Rooms-and-offers-widget-->
 <section class="w-full bg-pattern--ams-grey xmed:pb-24 z-10">
@@ -52,20 +60,29 @@ permalinkBypassOutputDir: true
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:py-8">
             <aside>
                 <div class="shadow-md mb-9 xmed:mb-0 p-4 xmed:p-10 bg-ams-white">
-                    <h2 class="title-display text-2xl xmed:text-3xl pb-4">
-                        More than enough room
-                    </h2>
-                    <p class="text-ams-primary text-md">
-                        Each of our 255 guest rooms is defined by comfort and space, privacy and respite. Sitting area and workspace for your waking hours, organic bath products for self-care, and luxurious sleep.
-                    </p>
-                    <nav class="pt-7 pb-2 hidden xmed:block xmed:text-center">
-                        <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL ROOMS</a>
-                    </nav>
-                    <nav class="pt-7 pb-2 xmed:hidden xmed:text-center">
-                        <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW DETAILS</a>
-                    </nav> 
-
-                    </nav>                    
+                    {% if pageCMS['rooms-left'] and pageCMS['rooms-left'].simple_article %}
+                        {% for item in pageCMS['rooms-left'].simple_article %}
+                            <h2 class="title-display text-2xl xmed:text-3xl pb-4">
+                                {{item.title}}
+                            </h2>
+                            <div class="text-ams-primary text-md">
+                                {{cms_desciption(item.description)}}
+                            </div>
+                            {% for data in item.links %}
+                                {% set link = data.action %}
+                                {% if link.for_desctop %}
+                                    <nav class="pt-7 pb-2 hidden xmed:block xmed:text-center">
+                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">{{link.copy|safe}}</a>
+                                    </nav>
+                                {% endif %}
+                                {% if not link.for_desctop %}
+                                    <nav class="pt-7 pb-2 xmed:hidden xmed:text-center">
+                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{link.copy|safe}}</a>
+                                    </nav>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %} 
+                    {% endif %}                   
                 </div>
             </aside>
             <aside class="xmed:col-span-2">
