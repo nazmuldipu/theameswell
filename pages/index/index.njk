@@ -6,10 +6,10 @@ permalinkBypassOutputDir: true
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "buttons.njk" import primaryButton %}
-{% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
+{% from "component_carousel.njk" import cms_rooms_carousel, homepage_offers_carousel %}
 {% from "media-carousel.njk" import media_carousel, special_carousel, homepage_art_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image, offersArticle, subfooter__form, cms_desciption %}
+{% from "macros.njk" import scaled_image, offersArticle, subfooter__form, cms_description %}
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
@@ -40,7 +40,7 @@ permalinkBypassOutputDir: true
                             {{item.title}}
                         </h2>
                         <div class="xmed:text-center text-ams-primary">
-                            {{cms_desciption(item.description)}}
+                            {{cms_description(item.description)}}
                         </div>
                         <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
                             {% for link in item.links %}
@@ -66,7 +66,7 @@ permalinkBypassOutputDir: true
                                 {{item.title}}
                             </h2>
                             <div class="text-ams-primary text-md">
-                                {{cms_desciption(item.description)}}
+                                {{cms_description(item.description)}}
                             </div>
                             {% for data in item.links %}
                                 {% set link = data.action %}
@@ -87,7 +87,9 @@ permalinkBypassOutputDir: true
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white pb-4 px-0">
-                    {{ rooms_carousel(rooms) }}
+                    {% if pageCMS['rooms-right'] and pageCMS['rooms-right'].rooms %}
+                    {{ cms_rooms_carousel(pageCMS['rooms-right'].rooms) }}
+                    {% endif %}
                 </figure>
             </aside>
         </article>
