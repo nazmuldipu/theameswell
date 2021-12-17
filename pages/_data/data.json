@@ -2692,7 +2692,7 @@
                 },
                 "time": "5:00 PM - 9:00 PM",
                 "title": "JINGLE BALL MOVIE NIGHT",
-                "image": "",
+                "image": "images/jingle-ball-movie-night",
                 "showIndexPage": false,
                 "cta": [
                     {
@@ -2713,7 +2713,7 @@
                 },
                 "time": "4:00 PM - 12:00 AM",
                 "title": "NEW YEARS' EVE AT ROGER",
-                "image": "",
+                "image": "images/new-years-eve-at-roger",
                 "showIndexPage": false,
                 "cta": [
                     {
