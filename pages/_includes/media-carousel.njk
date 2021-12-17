@@ -207,17 +207,22 @@
                         <div class="swiper-slide">
                             <figcaption >
                                 <header class="p-4">
-                                    <h2 class="title-display pb-0 text-left xmed:text-center text-xl xmed:text-2xl my-4">{{slide.heading}}</h2>
+                                    <h2 class="title-display pb-0 text-left xmed:text-center text-xl xmed:text-2xl my-4">{{slide.title}}</h2>
                                     <div class="my-4 flex space-x-2 justify-start xmed:justify-center">
                                         {% set x = [1,2,3,4,5] %}
                                         {% for item in x %}
                                             {{svg_icon(name="rating", width="24", height="23", fill="#354656")}}
                                         {% endfor %}
                                     </div>
-                                    <p class="max-w-3xl mx-auto my-4 text-left xmed:text-center break-words font-sans text-base xmed:text-lg text-ams-primary">{{slide.quote}}</p>
-                                    <p class="text-left xmed:text-center my-4 font-sans font-bold text-base xmed:text-lg text-ams-primary">{{slide.p}}</p>
+                                    <div class="max-w-3xl mx-auto my-4 text-left xmed:text-center break-words font-sans text-base xmed:text-lg text-ams-primary cms-description">{{slide.description | safe}}</div>
+                                    <p class="text-left xmed:text-center my-4 font-sans font-bold text-base xmed:text-lg text-ams-primary">{{slide.footer}}</p>
                                     <div class="text-left xmed:text-center">
-                                        <a class="my-4 inline-block border-b border-ams-gold text-ams-gold font-serif font-medium text-lg text-center" href="{{slide.link}}">{{slide.textLink}}</a>
+                                        {% if item.links %}
+                                            {% for cta in item.links %}
+                                                {% set action = cta.action %}
+                                                <a class="my-4 inline-block border-b border-ams-gold text-ams-gold font-serif font-medium text-lg text-center" href="{{item.url}}">{{item.copy}}</a>
+                                            {% endfor %}  
+                                        {% endif %}
                                     <div>
                                 </header>
                             </figcaption>
