@@ -2682,7 +2682,49 @@
                 "descriptions": [
                     "Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!"
                 ]
-            }                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+            },
+            {
+                "id": 137,
+                "date": {
+                    "day": 18,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "5:00 PM - 9:00 PM",
+                "title": "JINGLE BALL MOVIE NIGHT",
+                "image": "images/jingle-ball-movie-night",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Reserve Your Spot",
+                        "url": "https://www.eventbrite.com/e/jingle-ball-movie-night-at-the-ameswell-hotel-tickets-221066294237"
+                    }
+                ],                
+                "descriptions": [
+                    "Join us at the Ameswell Hotel for a holiday movie night! We'll be showing Elf (Santa! I know him!) and serving warm and toasty drinks + seasonal treats out of our Airstream bar.  Bring the whole family (plus the dog!) and snuggle up on a blanket on our lawn near our electric heaters. Our Airstream bar will be open at 2:00 PM and we'll be selling DIY holiday cookie decorating kits. The movie will begin at 5:00 PM - join us for dinner at Roger Bar & Restaurant afterwards!"
+                ]
+            },
+            {
+                "id": 138,
+                "date": {
+                    "day": 31,
+                    "month": 12,
+                    "year": 2021
+                },
+                "time": "4:00 PM - 12:00 AM",
+                "title": "NEW YEARS' EVE AT ROGER",
+                "image": "images/new-years-eve-at-roger",
+                "showIndexPage": false,
+                "cta": [
+                    {
+                        "label": "Come Boogie With Us",
+                        "url": "https://www.rogerbarandrestaurant.com/reservations"
+                    }
+                ],                
+                "descriptions": [
+                    "Come enjoy the Roger menu classics, plus a few New Years' specials  - oysters, caviar and sparkling wine guarantee to make it an evening to remember. After dinner, grab one of our signature cocktails and get your groove on with a disco-themed playlist that we'll be playing 'til midnight!"
+                ]
+            }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
   ],
   "footer_content": [
     {
