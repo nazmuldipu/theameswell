@@ -37,7 +37,7 @@ const render_left = (event) => {
 const render_right = (event) => {
   let ctaEle = '';
   event.cta && event.cta.forEach(element => {
-    ctaEle += `<a class="w-40 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${element.url}" target="_blank">${element.label}</a>
+    ctaEle += `<a class="w-64 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${element.url}" target="_blank">${element.label}</a>
               `
   });
   
