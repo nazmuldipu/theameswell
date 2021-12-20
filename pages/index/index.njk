@@ -273,20 +273,28 @@ permalinkBypassOutputDir: true
         {% endfor %}
     </article>
     <article id="happenings" class="segment-inner xmed:grid items-start w-full xmed:grid-cols-3 xmed:gap-8">
+        {% if pageCMS['happenings-intro'] and pageCMS['happenings-intro'].simple_article %}
+        {% for item in pageCMS['happenings-intro'].simple_article %}
         <section class="mb-8 shadow-md mx-6 xmed:mx-0 xmed:px-0">
             <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
                 <h2 class="title-display text-2xl font-serif font-medium py-4">
-                    Happenings
+                    {{item.title}}
                 </h2>
-                <div class="text-base xmed:text-lg font-sans text-ams-primary">
-                    The Ameswell offers event programming to add something special to your stay.
+                <div class="text-base xmed:text-lg font-sans text-ams-primary cms-description">
+                    {{item.description | safe}}
                 </div>
-                <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
-                    <a href="happenings.html" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">View All Happenings</a>
-                </div>                
+                {% if item.links %}
+                    {% for cta in item.links %}
+                        {% set action = cta.action %}
+                        <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
+                            <a href="{{action.url}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{action.copy}}</a>
+                        </div>
+                    {% endfor %}  
+                {% endif %}                
             </div>
         </section>
-        
+        {% endfor %}
+        {% endif %}
     </article>
 </div>
 <!--art-widget-->
