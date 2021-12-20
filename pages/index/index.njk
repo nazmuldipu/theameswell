@@ -6,29 +6,33 @@ permalinkBypassOutputDir: true
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "buttons.njk" import primaryButton %}
-{% from "component_carousel.njk" import cms_rooms_carousel, cms_homepage_offers_carousel %}
+{% from "component_carousel.njk" import cms_rooms_carousel,
+cms_homepage_offers_carousel %}
 {% from "media-carousel.njk" import media_carousel, special_carousel, homepage_art_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image, offersArticle, subfooter__form, cms_description %}
+{% from "macros.njk" import scaled_image,
+offersArticle,
+subfooter__form,
+cms_description %}
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
 {% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
     {% for item in pageCMS['top-banner'].simple_article %}
-<section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
-    {% for img in item.image %}
-        {{ global_image(img.global_image) }}
+        <section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
+            {% for img in item.image %}
+                {{ global_image(img.global_image) }}
+            {% endfor %}
+            <header class="grid xmed:items-end">
+                <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0 cms-description">
+                    {{item.description | safe}}
+                </h1>
+            </header>
+            <div class="pt-16">
+                {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
+            </div>
+        </section>
     {% endfor %}
-    <header class="grid xmed:items-end">
-        <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0 cms-description">
-            {{item.description | safe}}
-        </h1>
-    </header>
-    <div class="pt-16">
-        {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
-    </div>
-</section>
-{% endfor %}
 {% endif %}
 {% if pageCMS['top-article'] and pageCMS['top-article'].simple_article %}
     {% for item in pageCMS['top-article'].simple_article %}
@@ -86,14 +90,14 @@ permalinkBypassOutputDir: true
                                     </nav>
                                 {% endif %}
                             {% endfor %}
-                        {% endfor %} 
-                    {% endif %}                   
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white pb-4 px-0">
                     {% if pageCMS['rooms-right'] and pageCMS['rooms-right'].rooms %}
-                    {{ cms_rooms_carousel(pageCMS['rooms-right'].rooms) }}
+                        {{ cms_rooms_carousel(pageCMS['rooms-right'].rooms) }}
                     {% endif %}
                 </figure>
             </aside>
@@ -102,15 +106,15 @@ permalinkBypassOutputDir: true
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
             <aside>
                 {% if pageCMS['offers-left'] and pageCMS['offers-left'].simple_article %}
-                {% for item in pageCMS['offers-left'].simple_article %}
-                    {{offersArticle(item)}}
-                {% endfor %}
+                    {% for item in pageCMS['offers-left'].simple_article %}
+                        {{offersArticle(item)}}
+                    {% endfor %}
                 {% endif %}
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white py-4 px-0">
                     {% if pageCMS['offers-right'] and pageCMS['offers-right'].offers %}
-                    {{ cms_homepage_offers_carousel(pageCMS['offers-right'].offers) }}
+                        {{ cms_homepage_offers_carousel(pageCMS['offers-right'].offers) }}
                     {% endif %}
                 </figure>
             </aside>
@@ -145,26 +149,26 @@ permalinkBypassOutputDir: true
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
             {% if pageCMS['restaurants'] and pageCMS['restaurants'].simple_article %}
                 {% for item in pageCMS['restaurants'].simple_article %}
-                <figure class="grid grid-cols-1  gap-4 items-center mb-6">
-                    {% for img in item.image %}
-                        {{ global_image(img.global_image) }}
-                    {% endfor %}
-                    <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
-                        <header class="text-left xmed:text-center">
-                            <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-ams-white">
-                                {% if item.links %}
-                                  {% for cta in item.links %}
-                                      {% set action = cta.action %}
-                                      <a href="{{action.url}}">{{item.title}}</a>
-                                  {% endfor %}  
-                                {% endif %}
-                            </h3>
-                        </header>
-                        <div class="text-left xmed:text-center cms-description">
-                            {{item.description|safe}}
-                        </div>
-                    </figcaption>
-                </figure>
+                    <figure class="grid grid-cols-1  gap-4 items-center mb-6">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                        <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
+                            <header class="text-left xmed:text-center">
+                                <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-ams-white">
+                                    {% if item.links %}
+                                        {% for cta in item.links %}
+                                            {% set action = cta.action %}
+                                            <a href="{{action.url}}">{{item.title}}</a>
+                                        {% endfor %}
+                                    {% endif %}
+                                </h3>
+                            </header>
+                            <div class="text-left xmed:text-center cms-description">
+                                {{item.description|safe}}
+                            </div>
+                        </figcaption>
+                    </figure>
                 {% endfor %}
             {% endif %}
         </section>
@@ -173,75 +177,75 @@ permalinkBypassOutputDir: true
 
 {% if pageCMS['middle-article-1'] and pageCMS['middle-article-1'].simple_article %}
     {% for item in pageCMS['middle-article-1'].simple_article %}
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="xmed:mt-4 xmed:mb-10 xmed:px-4">
-        <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
-            <div class="hidden xmed:block mx-4 xmed:mx-0 bg-ams-white xmed:bg-ams-base">
-                {% for img in item.image %}
-                    {{ global_image(img.global_image) }}
-                {% endfor %}
-            </div>
-            <div class="xmed:-mt-10 xmed:mx-0 mx-6 mt-12 mb-12 xmed:mb-0 p-6 xmed:p-10 z-0 max-w-screen-xmed xmed:shadow-md bg-ams-white">
-                <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    {{item.title}}
-                </h2>
-                <div class="xmed:text-center cms-description">
-                    {{item.description | safe}}
-                </div>
-                <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
-                    {% if item.links %}
-                        {% for cta in item.links %}
-                            {% set action = cta.action %}
-                            <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{action.copy}}</a>
-                        {% endfor %}  
-                    {% endif %}
-                </div>
-            </div>
-            <div class="xmed:hidden bg-ams-white xmed:bg-ams-base">
-                {% for img in item.image %}
-                    {{ global_image(img.global_image) }}
-                {% endfor %}
-            </div>
-        </section>
-    </article>
-</div>
-{% endfor %}
+        <div class="grid justify-items-center w-full bg-ams-base">
+            <article class="xmed:mt-4 xmed:mb-10 xmed:px-4">
+                <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
+                    <div class="hidden xmed:block mx-4 xmed:mx-0 bg-ams-white xmed:bg-ams-base">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </div>
+                    <div class="xmed:-mt-10 xmed:mx-0 mx-6 mt-12 mb-12 xmed:mb-0 p-6 xmed:p-10 z-0 max-w-screen-xmed xmed:shadow-md bg-ams-white">
+                        <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                            {{item.title}}
+                        </h2>
+                        <div class="xmed:text-center cms-description">
+                            {{item.description | safe}}
+                        </div>
+                        <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
+                            {% if item.links %}
+                                {% for cta in item.links %}
+                                    {% set action = cta.action %}
+                                    <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{action.copy}}</a>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="xmed:hidden bg-ams-white xmed:bg-ams-base">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </div>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
 {% endif %}
 {% if pageCMS['middle-article-2'] and pageCMS['middle-article-2'].simple_article %}
     {% for item in pageCMS['middle-article-2'].simple_article %}
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="py-4 xmed:px-4 my-4">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-auto-600 gap-4 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:hidden mx-6 my-4">
-                {% for img in item.image %}
-                    {{ global_image(img.global_image) }}
-                {% endfor %}
-            </figure>
-            <div class="mx-6 xmed:mx-0 mb-8 xmed:mb-0 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
-                <h2 class="title-display text-2xl pt-4 pb-4">
-                    {{item.title}}
-                </h2>
-                <div>
-                    {{item.description | safe}}
-                </div>
-                <div class="pt-4 pb-4">
-                    {% if item.links %}
-                        {% for cta in item.links %}
-                            {% set action = cta.action %}
-                            <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{action.copy}}</a>
-                        {% endfor %}  
-                    {% endif %}
-                </div>
-            </div>
-            <figure class="hidden xmed:block">
-                {% for img in item.image %}
-                    {{ global_image(img.global_image) }}
-                {% endfor %}
-            </figure>
-        </section>
-    </article>
-</div>
-{% endfor %}
+        <div class="grid justify-items-center w-full bg-ams-base">
+            <article class="py-4 xmed:px-4 my-4">
+                <section class="max-w-screen-lg xmed:grid xmed:grid-cols-auto-600 gap-4 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
+                    <figure class="xmed:hidden mx-6 my-4">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </figure>
+                    <div class="mx-6 xmed:mx-0 mb-8 xmed:mb-0 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
+                        <h2 class="title-display text-2xl pt-4 pb-4">
+                            {{item.title}}
+                        </h2>
+                        <div>
+                            {{item.description | safe}}
+                        </div>
+                        <div class="pt-4 pb-4">
+                            {% if item.links %}
+                                {% for cta in item.links %}
+                                    {% set action = cta.action %}
+                                    <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{action.copy}}</a>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <figure class="hidden xmed:block">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </figure>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
 {% endif %}
 <div class="segment-outer grid bg-pattern--ams-grey xmed:px-4 xmed:justify-items-center py-9 xmed:pt-24 xmed:pb-28">
     <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
@@ -274,98 +278,98 @@ permalinkBypassOutputDir: true
     </article>
     <article id="happenings" class="segment-inner xmed:grid items-start w-full xmed:grid-cols-3 xmed:gap-8">
         {% if pageCMS['happenings-intro'] and pageCMS['happenings-intro'].simple_article %}
-        {% for item in pageCMS['happenings-intro'].simple_article %}
-        <section class="mb-8 shadow-md mx-6 xmed:mx-0 xmed:px-0">
-            <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
-                <h2 class="title-display text-2xl font-serif font-medium py-4">
-                    {{item.title}}
-                </h2>
-                <div class="text-base xmed:text-lg font-sans text-ams-primary cms-description">
-                    {{item.description | safe}}
-                </div>
-                {% if item.links %}
-                    {% for cta in item.links %}
-                        {% set action = cta.action %}
-                        <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
-                            <a href="{{action.url}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{action.copy}}</a>
+            {% for item in pageCMS['happenings-intro'].simple_article %}
+                <section class="mb-8 shadow-md mx-6 xmed:mx-0 xmed:px-0">
+                    <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
+                        <h2 class="title-display text-2xl font-serif font-medium py-4">
+                            {{item.title}}
+                        </h2>
+                        <div class="text-base xmed:text-lg font-sans text-ams-primary cms-description">
+                            {{item.description | safe}}
                         </div>
-                    {% endfor %}  
-                {% endif %}                
-            </div>
-        </section>
-        {% endfor %}
+                        {% if item.links %}
+                            {% for cta in item.links %}
+                                {% set action = cta.action %}
+                                <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
+                                    <a href="{{action.url}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{action.copy}}</a>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </section>
+            {% endfor %}
         {% endif %}
     </article>
 </div>
 <!--art-widget-->
 {% if pageCMS['bottom-article'] and pageCMS['bottom-article'].simple_article %}
     {% for item in pageCMS['bottom-article'].simple_article %}
-<section class="w-full bg-ams-base xmed:pb-16">
-    <div class="max-w-7xl mx-auto px-6 py-6 xmed:py-0">
-        {% for img in item.image %}
-            {{ global_image(img.global_image) }}
-        {% endfor %}
-        <article class="relative bg-ams-white shadow-md xmed:mx-30 xmed:-mt-16 p-4 xmed:p-16 xmed:text-center ">
-            <header class="title-display text-2xl xmed:text-4xl">
-                {{item.title}}
-            </header>
-            <div class="font-sans text-base xmed:text-lg pb-4 xmed:py-10 text-ams-primary cms-description">
-                {{item.description | safe}}
+        <section class="w-full bg-ams-base xmed:pb-16">
+            <div class="max-w-7xl mx-auto px-6 py-6 xmed:py-0">
+                {% for img in item.image %}
+                    {{ global_image(img.global_image) }}
+                {% endfor %}
+                <article class="relative bg-ams-white shadow-md xmed:mx-30 xmed:-mt-16 p-4 xmed:p-16 xmed:text-center ">
+                    <header class="title-display text-2xl xmed:text-4xl">
+                        {{item.title}}
+                    </header>
+                    <div class="font-sans text-base xmed:text-lg pb-4 xmed:py-10 text-ams-primary cms-description">
+                        {{item.description | safe}}
+                    </div>
+                    <nav class="py-4 xmed:pb-0 ">
+                        {% if item.links %}
+                            {% for cta in item.links %}
+                                {% set action = cta.action %}
+                                <a href="{{item.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{item.copy}}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </nav>
+                </article>
             </div>
-            <nav class="py-4 xmed:pb-0 ">
-                {% if item.links %}
-                    {% for cta in item.links %}
-                        {% set action = cta.action %}
-                        <a href="{{item.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{item.copy}}</a>
-                    {% endfor %}  
-                {% endif %}
-            </nav>
-        </article>        
-    </div>
-</section>
-{% endfor %}
+        </section>
+    {% endfor %}
 {% endif %}
 <!--art-widget end-->
 
 <!--press widget-->
 {% if pageCMS['press-widget'] and pageCMS['press-widget'].simple_article %}
     {% for art in pageCMS['press-widget'].simple_article %}
-<section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
-    <div class="max-w-7xl mx-auto px-6">
-        <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
-            <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
-                <div class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">{{art.description | safe}}</div>
-                {% if art.links %}
-                    {% for link in art.links %}
-                        {% set cta = link.action %}
-                        {% if cta.type == 'author' %}
-                            <a href="{{cta.url}}" target="_blank">
-                                <p class="text-ams-cyan font-semibold underline">-{{cta.copy}}</p>
-                            </a>
+        <section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
+            <div class="max-w-7xl mx-auto px-6">
+                <article class="py-6 xmed:py-8 bg-ams-white shadow-md">
+                    <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
+                        <div class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">{{art.description | safe}}</div>
+                        {% if art.links %}
+                            {% for link in art.links %}
+                                {% set cta = link.action %}
+                                {% if cta.type == 'author' %}
+                                    <a href="{{cta.url}}" target="_blank">
+                                        <p class="text-ams-cyan font-semibold underline">-{{cta.copy}}</p>
+                                    </a>
+                                {% endif %}
+                                {% if cta.type == 'author' %}
+                                    <nav class="mt-8">
+                                        <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.copy}}</a>
+                                    </nav>
+                                {% endif %}
+                            {% endfor %}
                         {% endif %}
-                        {% if cta.type == 'author' %}
-                            <nav class="mt-8">
-                                <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.copy}}</a>
-                            </nav>
-                        {% endif %}
-                    {% endfor %}  
-                {% endif %}
+                    </div>
+                </article>
             </div>
-        </article>
-    </div>
-</section>
-{% endfor %}
+        </section>
+    {% endfor %}
 {% endif %}
 {% if pageCMS['press-carousel'] and pageCMS['press-carousel'].simple_article %}
     {% set item = pageCMS['press-carousel'].simple_article %}
-<div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
-    <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
-        <section>
-            {{  press_carousel(item, "bg-ams-white") }}
-        </section>
-    </article>
-</div>  
-{% endif %}     
+    <div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
+        <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
+            <section>
+                {{  press_carousel(item, "bg-ams-white") }}
+            </section>
+        </article>
+    </div>
+{% endif %}
 {{subfooter__form(data.subfooter_image)}}
 <div class="bg-ams-primary w-full">
     <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
