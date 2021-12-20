@@ -13,18 +13,23 @@ permalinkBypassOutputDir: true
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
 <section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
-    {{ scaled_image(banner_image) }}
+    {% for img in item.image %}
+        {{ global_image(img.global_image) }}
+    {% endfor %}
     <header class="grid xmed:items-end">
-        <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0">
-            UNCOMMON LUXURY IN<br class="xmed:hidden">
-            SILICON VALLEY<br>
+        <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0 cms-description">
+            {{item.description | safe}}
         </h1>
     </header>
     <div class="pt-16">
         {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
     </div>
 </section>
+{% endfor %}
+{% endif %}
 {% if pageCMS['top-article'] and pageCMS['top-article'].simple_article %}
     {% for item in pageCMS['top-article'].simple_article %}
         <div class="grid justify-items-center w-full bg-ams-base">
@@ -96,7 +101,11 @@ permalinkBypassOutputDir: true
 
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
             <aside>
-                {{offersArticle()}}
+                {% if pageCMS['offers-left'] and pageCMS['offers-left'].simple_article %}
+                {% for item in pageCMS['offers-left'].simple_article %}
+                    {{offersArticle(item)}}
+                {% endfor %}
+                {% endif %}
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white py-4 px-0">
@@ -311,21 +320,34 @@ permalinkBypassOutputDir: true
 <!--art-widget end-->
 
 <!--press widget-->
+{% if pageCMS['press-widget'] and pageCMS['press-widget'].simple_article %}
+    {% for art in pageCMS['press-widget'].simple_article %}
 <section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
     <div class="max-w-7xl mx-auto px-6">
-        {% for art in press_releases%}
-            <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
-                <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
-                    <p class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">“{{art.description}}”</p>
-                    <a href="{{art.link}}" target="_blank"><p class="text-ams-cyan font-semibold underline">-{{art.author}}</p></a>
-                    <nav class="mt-8">
-                        <a href="press.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">READ PRESS</a>
-                    </nav>
-                </div>
-            </article>
-        {% endfor %}
+        <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
+            <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
+                <div class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">{{art.description | safe}}</div>
+                {% if art.links %}
+                    {% for link in art.links %}
+                        {% set cta = link.action %}
+                        {% if cta.type == 'author' %}
+                            <a href="{{cta.url}}" target="_blank">
+                                <p class="text-ams-cyan font-semibold underline">-{{cta.copy}}</p>
+                            </a>
+                        {% endif %}
+                        {% if cta.type == 'author' %}
+                            <nav class="mt-8">
+                                <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.copy}}</a>
+                            </nav>
+                        {% endif %}
+                    {% endfor %}  
+                {% endif %}
+            </div>
+        </article>
     </div>
 </section>
+{% endfor %}
+{% endif %}
 {% if pageCMS['press-carousel'] and pageCMS['press-carousel'].simple_article %}
     {% set item = pageCMS['press-carousel'].simple_article %}
 <div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">

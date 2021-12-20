@@ -98,19 +98,30 @@
     </a>
 {% endmacro %}
 
-{% macro offersArticle() %}
+{% macro offersArticle(item) %}
   <article class="xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
-      <header>
-          <h2 class="title-display text-2xl xmed:text-3xl pb-4">
-              Offers
-          </h2>
-      </header>
-      <p class="text-ams-primary text-md">
-          Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
-      </p>
-      <nav class="pt-7 pb-2 xmed:text-center">
-          <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
-      </nav>
+        <header>
+            <h2 class="title-display text-2xl xmed:text-3xl pb-4">
+                {{item.title}}
+            </h2>
+        </header>
+        <div class="text-ams-primary text-md cms-description">
+            {{item.description | safe}}
+        </div>
+        {% if item.links %}
+            {% for cta in item.links %}
+                {% set action = cta.action %}
+                {% if action.for_desctop == true %}
+                    <nav class="{{ 'hidden xmed:block' if action.for_desctop == true }} pt-7 pb-2 xmed:text-center">
+                        <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW OFFERS</a>  
+                    </nav>
+                {% else %}
+                    <nav class="{{ 'block xmed:hidden' if action.for_desctop == false }} pt-7 pb-2 xmed:text-center">
+                        <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
+                    </nav>
+                {% endif %}
+            {% endfor %}  
+        {% endif %}
   </article>
 {% endmacro %}
 {% macro subfooter__form(image, maxWidth) %}
