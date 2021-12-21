@@ -52,7 +52,8 @@ cms_description %}
                             {{cms_description(item.description)}}
                         </div>
                         <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
-                            {% for link in item.links %}
+                            {% for cta in item.links %}
+                                {% set link = cta.action%}
                                 <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{link.copy | safe}}</a>
                             {% endfor %}
                         </div>
