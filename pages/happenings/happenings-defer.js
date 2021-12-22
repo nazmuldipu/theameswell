@@ -1,6 +1,8 @@
 "use strict";
 import * as data from '../_data/data.json';
-const events = data.events;
+// TODO: we should find ways to share and abstract out code between here and happenings-detail-defer.js
+const isEligible = event => event.shouldShow;
+const events = data.events.filter(isEligible);
 
 const hasEventListeners = !!window.addEventListener;
 const sto = window.setTimeout;
@@ -169,7 +171,7 @@ const renderOurHappeningsCard = (event) => {
   const eventPicElement = document.querySelector('.event_id_' + event.id)
 
   let ctaEle = '';
-  event.cta.forEach(element => {
+  event.cta && event.cta.forEach(element => {
     ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
               `
   });

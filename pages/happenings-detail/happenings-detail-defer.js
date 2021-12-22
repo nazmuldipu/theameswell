@@ -1,6 +1,7 @@
 import * as data from "../_data/data.json";
 const temp_id = window.location.search.split("=")[1];
-const events = data.events;
+const isEligible = event => event.shouldShow;
+const events = data.events.filter(isEligible);
 let viewAll = false;
 const months = [
   "January",
@@ -137,12 +138,14 @@ const viewAllEle = (event) => {
 if (events.length && !isNaN(temp_id) && temp_id > 0) {
   const id = Number(temp_id);
   const event = events.find((ev) => ev.id === id);
-  document.querySelector("#details_left").innerHTML = render_left(event);
-  document.querySelector("#details_right").innerHTML = render_right(event);
-    showAlsoLike(event);
-  const btn_view_all = document.querySelector(".btn_view_all");
-  btn_view_all.addEventListener('click', function(){
-    viewAllEle(event);
-    btn_view_all.style.visibility='hidden';
-  });
+  if(event) {
+    document.querySelector("#details_left").innerHTML = render_left(event);
+    document.querySelector("#details_right").innerHTML = render_right(event);
+      showAlsoLike(event);
+    const btn_view_all = document.querySelector(".btn_view_all");
+    btn_view_all.addEventListener('click', function(){
+      viewAllEle(event);
+      btn_view_all.style.visibility='hidden';
+    });
+  }
 }
