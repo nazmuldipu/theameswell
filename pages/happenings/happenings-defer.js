@@ -1,6 +1,8 @@
 "use strict";
 import * as data from '../_data/data.json';
-const events = data.events;
+// TODO: we should find ways to share and abstract out code between here and happenings-detail-defer.js
+const isEligible = event => event.shouldShow;
+const events = data.events.filter(isEligible);
 
 const hasEventListeners = !!window.addEventListener;
 const sto = window.setTimeout;
