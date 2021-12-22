@@ -1,20 +1,20 @@
 ---
 layout: base.njk
-pagename: offers
-meta_title: The Ameswell Hotel | Offers
-meta_description: "The Ameswell Hotel offers three unique offers outlets: Roger, an indoor/outdoor bar and restaurant, The Flyby, an all-day café, and the Airstream for snacks and craft cocktails relaxing by the pool or fire pits."
-canonical_href: https://www.theameswellhotel.com/offers.html
-permalink: "build/offers.html"
+pagename: index
+permalink: "build/offers/index.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
 ---
 {% from "icons.njk" import svgicon %}
 {% from "buttons.njk" import primaryButton %}
 {% from "macros.njk" import scaled_image, subfooter__form %}
+{% from "global-image.njk" import global_image %}
 
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
 <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
+    {% for img in item.image %}
+        {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+    {% endfor %}
 </section>
 
 <div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 bg-pattern--ams-grey">
@@ -22,40 +22,49 @@ fabExternalLink: true
         <section class="w-full grid justify-items-center max-w-screen-lg">
             <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                 <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
-                    Enhance Your Stay
+                    {{item.title}}
                 </h2>
-                <div class="xmed:text-center text-lg leading-6 tracking-wide">
-                    Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.    
+                <div class="xmed:text-center text-lg leading-6 tracking-wide cms-description">
+                    {{item.description | safe}}  
                 </div>
             </div>
         </section>
     </article>
 </div>
+{% endfor %}
+{% endif %}
+{% if pageCMS['offers'] and pageCMS['offers'].simple_article %}
+    
 <section class="grid justify-items-center w-full bg-ams-base pb-8 xmed:pt-8">
-    {% for item in offers %}
+    {% for item in pageCMS['offers'].simple_article %}
         <section id="{{item.slug}}" class="mb-5 xmed:mt-8">
-            <figure class="max-w-screen-xl xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
-                <figcaption class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
-                    {{ scaled_image(item.image) }}
-                </figcaption>
+            <section class="max-w-screen-xl xmed:grid xmed:items-center xmed:grid-cols-2 gap-4 xmed:gap-28 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
+                <figure class="xmed:order-2 grid justify-items-center pt-4 xmed:pt-0">
+                    {% for img in item.image %}
+                        {{ global_image(img.global_image) }}
+                    {% endfor %}
+                </figure>
                 <figcaption class="mt-8 xmed:mt-0 mx-6 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
                     <header>
                         <h2 class="title-display text-3xl pb-6">
                             {{ item.title | safe }}
                         </h2>
                     </header>
-                    <p class="mb-4 xmed:mb-12">
-                        {{ item.p1 }}
-                    </p>
-                    <p class="inline-block border-b border-ams-gold mx-4">
-                        {{ primaryButton(item.link, 'Book a Room', 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-xl', 'a', true) }}
-                    </p>
+                    <div class="mb-4 xmed:mb-12">
+                        {{ item.description | safe }}
+                    </div>
+                    {% for cta in item.links %}
+                        {% set link = cta.action%}
+                        <p class="inline-block border-b border-ams-gold mx-4">
+                            {{ primaryButton(link.url, link.copy, 'inline-block pb-1 -mx-4 text-ams-gold font-serif tracking-wide button--primary button text-xl', 'a', true) }}
+                        </p>
+                    {% endfor %}
                 </figcaption>
-            </figure>
+            </section>
         </section>
     {% endfor %}
 </section>
-
+{% endif %}
 {{subfooter__form(data.subfooter_image, maxWidth='max-w-screen-xl')}}
 
 <div class="bg-ams-primary w-full">
