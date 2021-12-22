@@ -171,7 +171,7 @@ const renderOurHappeningsCard = (event) => {
   const eventPicElement = document.querySelector('.event_id_' + event.id)
 
   let ctaEle = '';
-  event.cta.forEach(element => {
+  event.cta && event.cta.forEach(element => {
     ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
               `
   });
