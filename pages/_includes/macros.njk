@@ -109,17 +109,16 @@
             {{item.description | safe}}
         </div>
         {% if item.links %}
-            {% for cta in item.links %}
-                {% set action = cta.action %}
-                {% if action.for_desctop == true %}
-                    <nav class="{{ 'hidden xmed:block' if action.for_desctop == true }} pt-7 pb-2 xmed:text-center">
-                        <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW OFFERS</a>  
-                    </nav>
-                {% else %}
-                    <nav class="{{ 'block xmed:hidden' if action.for_desctop == false }} pt-7 pb-2 xmed:text-center">
-                        <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
-                    </nav>
-                {% endif %}
+            {% for action in item.links %}
+                {% set cta = action.action %}
+                <nav class="pt-7 pb-2 xmed:text-center">
+                    <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">
+                        <span class="hidden xmed:inline-block">{{cta.copy | safe}}</span>
+                        {% if cta.mobile_copy %}
+                            <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                        {% endif %}
+                    </a>  
+                </nav>
             {% endfor %}  
         {% endif %}
   </article>
