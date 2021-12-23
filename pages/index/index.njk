@@ -106,16 +106,16 @@ cms_description %}
 
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
             <aside>
-                {% if pageCMS['offers-left'] and pageCMS['offers-left'].simple_article %}
-                    {% for item in pageCMS['offers-left'].simple_article %}
+                {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
+                    {% for item in globalCMS['offers-article'].simple_article %}
                         {{offersArticle(item)}}
                     {% endfor %}
                 {% endif %}
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white py-4 px-0">
-                    {% if pageCMS['offers-right'] and pageCMS['offers-right'].offers %}
-                        {{ cms_homepage_offers_carousel(pageCMS['offers-right'].offers) }}
+                    {% if globalCMS['offers'] and globalCMS['offers'].offers %}
+                        {{ cms_homepage_offers_carousel(globalCMS['offers'].offers) }}
                     {% endif %}
                 </figure>
             </aside>
