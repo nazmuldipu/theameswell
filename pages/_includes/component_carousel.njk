@@ -15,9 +15,9 @@
             media="{{ direction.media }}"
             sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
             type="image/{{ direction.type | getImgSourceType }}">
-        {% endfor %}
-        {% set default = artDirection | first %}
-        <img 
+    {% endfor %}
+    {% set default = artDirection | first %}
+    <img 
             data-srcset="{{ default | imgObjSrcSet }}"
             data-src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
             class="swiper-lazy w-full h-full object-cover"
@@ -34,50 +34,38 @@
                         <button class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                             previous
                         </button>
-                    </div>    
+                    </div>
                     <div class="px-2 xmed:px-3 xmed:pt-3 xmed:pb-1 xmed:bg-ams-white xmed:shadow-md">
                         <button class="carousel-button-next inline-block w-4 h-4 transform rotate-45 justify-self-start border-t-2 border-r-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                             next
                         </button>
-                    </div>    
+                    </div>
                 </nav>
 
                 <div class="swiper-wrapper z-10">
                     {% for slide in content %}
                         <div class="swiper-slide">
                             <div class="grid grid-cols-1 xmed:grid-cols-2 xmed:mx-24 ">
-                               <picture>
-                                    {% for direction in slide.artDirection %}
-                                        <source 
-                                            srcset="{{ direction | imgObjSrcSet('webp') }}"
-                                            media="{{ direction.media }}"
-                                            sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                            type="image/webp">
-                                        <source 
-                                            srcset="{{ direction | imgObjSrcSet }}" 
-                                            media="{{ direction.media }}"
-                                            sizes="{{ direction.sizes if direction.sizes else '75vw' }}"
-                                            type="image/{{ direction.type | getImgSourceType }}">
-                                    {% endfor %}
-                                    {% set default = slide.artDirection|first %}
-                                        <img 
-                                            srcset="{{ default | imgObjSrcSet }}"
-                                            src="{{ default.src }}.{{ default.type if default.type else 'jpg' }}" 
-                                            class="swiper-lazy w-full h-auto {{ 'px-5' if splitNav }}"
-                                            sizes="{{ default.sizes if default.sizes else '75vw' }}" 
-                                            loading="auto"
-                                            alt="{{ default.imgalt }}">
-                                        <div class="swiper-lazy-preloader"></div>
-                                </picture>
+                                {{global_image(image = slide.image.global_image, classes= 'flex', imgClass = 'swiper-lazy w-full h-auto swiper-lazy-loaded')}}
                                 <div class="mx-8 mt-8 mb-0">
                                     <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 text-center">
                                         {{slide.title}}
                                     </h2>
-                                    <div class="xmed:text-center text-base xmed:text-lg mt-4 h-48 overflow-hidden">
-                                        {{slide.p1}}
+                                    <div class="xmed:text-center text-base xmed:text-lg mt-4 h-48 overflow-hidden cms-description">
+                                        {{slide.description | safe}}
                                     </div>
                                     <div class="pt-4 pb-4 text-center">
-                                        <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">VIEW OFFERS</a>
+                                        {% for act in slide.actions %}
+                                            {% set cta = act.action %}
+                                            {% if cta.type == '' %}
+                                                <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">
+                                                    <span class="hidden xmed:inline-block">{{cta.copy | safe}}</span>
+                                                    {% if cta.mobile_copy %}
+                                                        <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                                                    {% endif %}
+                                                </a>
+                                            {% endif %}
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
@@ -122,7 +110,8 @@
                                     <ul class="grid grid-flow-col auto-cols-max">
                                         <li class="rooms-gallery--icon-sqft grid justify-items-center content-start text-center w-28">
                                             {{svg_icon("size",width="48", height="48", fill="#213E4C", sclass="icon inline-block")}}
-                                            <span class="text-ams-primary">{{slide.icons.sqft}} ft<sup>2</sup> </span>
+                                            <span class="text-ams-primary">{{slide.icons.sqft}} ft<sup>2</sup>
+                                            </span>
                                         </li>
                                         <li class="rooms-gallery--icon-sleeps grid justify-items-center content-start text-center w-28">
                                             {# {{svg_icon("bed",width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
@@ -134,7 +123,7 @@
                                         <a href="https://reservations.theameswellhotel.com/111994?_ga=2.47358439.1701343345.1627359188-567585118.1626186950" class="block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button" target="_blank">Book a Room</a>
                                         <div class="hidden xmed:block mt-6 text-xs text-center">
                                             <a href="room-detail.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW DETAILS</a>
-                                        </div>                                          
+                                        </div>
                                     </div>
                                 </div>
 
@@ -181,12 +170,12 @@
                                     </div>
                                     {% if (isRoomDetail == false) %}
                                         <div class="mt-10 mb-2 xmed:mt-0 justify-self-center xmed:justify-self-end text-center xmed:text-left">
-                                        <a href="{{slide.link}}" class="hidden xmed:block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button" target="_blank">Book This Offer</a>
-                                        <a href="{{slide.link}}" class="xmed:hidden mt-6 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">Book Offer</a>
-                                    </div>
+                                            <a href="{{slide.link}}" class="hidden xmed:block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button" target="_blank">Book This Offer</a>
+                                            <a href="{{slide.link}}" class="xmed:mt-0 mt-6 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">Book Offer</a>
+                                        </div>
                                     {% else %}
                                         <div class="mt-10 mb-8 xmed:mt-0 justify-self-center xmed:justify-self-end text-center xmed:text-left">
-                                            <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a> 
+                                            <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>
                                         </div>
                                     {% endif %}
                                 </div>
@@ -232,7 +221,8 @@
                                                     {% if iconItem.icon == '' %}
                                                         {{svg_icon("size",width="48", height="48", fill="#213E4C", sclass="icon inline-block")}}
                                                     {% endif %}
-                                                    <span class="text-ams-primary">{{cms_description(iconItem.description + ' ft<sup>2</sup>')}} </span>
+                                                    <span class="text-ams-primary">{{cms_description(iconItem.description + ' ft<sup>2</sup>')}}
+                                                    </span>
                                                 </li>
                                             {% endif %}
 
@@ -243,7 +233,8 @@
                                                     {% if iconItem.icon == '' %}
                                                         {{svg_icon("bed", width="48", height="48", fill="#213E4C", sclass="icon inline-block mt-2", textColor="true")}}
                                                     {% endif %}
-                                                    <span class="text-ams-primary">{{cms_description(iconItem.description)}} </span>
+                                                    <span class="text-ams-primary">{{cms_description(iconItem.description)}}
+                                                    </span>
                                                 </li>
                                             {% endif %}
                                         {% endfor %}
@@ -258,9 +249,9 @@
                                                 {% if cta.type == 'secondary' %}
                                                     <div class="hidden xmed:block mt-6 text-xs text-center">
                                                         <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">{{cta.copy}}</a>
-                                                    </div> 
+                                                    </div>
                                                 {% endif %}
-                                            {% endfor %}                                         
+                                            {% endfor %}
                                         </div>
                                     {% endif %}
                                 </div>
@@ -306,12 +297,29 @@
                                     </div>
                                     {% if (isRoomDetail == false) %}
                                         <div class="mt-10 mb-2 xmed:mt-0 justify-self-center xmed:justify-self-end text-center xmed:text-left">
-                                        <a href="{{slide.link}}" class="hidden xmed:block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button" target="_blank">Book This Offer</a>
-                                        <a href="{{slide.link}}" class="xmed:hidden mt-6 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">Book Offer</a>
-                                    </div>
+                                            {% for act in slide.actions %}
+                                                {% set cta = act.action %}
+                                                {% if cta.type == 'book-offer' %}
+                                                    <a href="{{cta.url}}" class="xmed:mt-0 mt-6 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">
+                                                        <span class="hidden xmed:inline-block">{{cta.copy | safe}}</span>
+                                                        {% if cta.mobile_copy %}
+                                                            <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                                                        {% endif %}
+                                                    </a>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
                                     {% else %}
                                         <div class="mt-10 mb-8 xmed:mt-0 justify-self-center xmed:justify-self-end text-center xmed:text-left">
-                                            <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a> 
+                                            {% for act in slide.actions %}
+                                                {% set cta = act.action %}
+                                                <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                                    <span class="hidden xmed:inline-block">{{cta.copy | safe}}</span>
+                                                    {% if cta.mobile_copy %}
+                                                        <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                                                    {% endif %}
+                                                </a>
+                                            {% endfor %}
                                         </div>
                                     {% endif %}
                                 </div>
