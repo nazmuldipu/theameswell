@@ -8,7 +8,7 @@ fabCopy:
     - Spa
 ---
 {% from "icons.njk" import svgicon %}
-{% from "buttons.njk" import primaryButton %}
+{% from "buttons.njk" import primaryButton, cms_primaryButton %}
 {% from "media-carousel.njk" import media_carousel, cms_media_carousel %}
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
@@ -91,17 +91,29 @@ fabCopy:
                 </section>
                 {%endif%}
                 <section class="w-full grid justify-items-center max-w-screen-xl">
+                    {% if pageCMS['amenities-article'] and pageCMS['amenities-article'].simple_article %}
+                    {% for item in pageCMS['amenities-article'].simple_article %}
                     <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                         <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
-                            Take a deep breath...
+                            {{item.title}}
                         </h2>
-                        <div class="text-center">
-                            At The Ameswell Hotel, we understand that the quality of air we breathe affects our health, comfort, and well-being.  Our property was designed to provide the best air quality for our guests. Air throughout The Ameswell Hotel is continuously circulated with a Dedicated Outside Air System (DOAS), which runs 24/7, constantly providing fresh, filtered air. 
+                        <div class="text-center cms-description">
+                            {{item.description | safe}}
                         </div>
                         <div class="pt-7 pb-2 text-center">
-                            <a href="air-quality.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">LEARN MORE</a>
+                            {% for cta in item.links %}
+                                {% set btn = cta.action %}
+                                <a href="{{btn.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                    <span class="{{ 'hidden xmed:inline-block' if not btn.mobile_copy == '' }}">{{btn.copy | safe}}</span>
+                                    {% if btn.mobile_copy %}
+                                        <span class="xmed:hidden">{{btn.mobile_copy | safe}}</span>
+                                    {% endif %}
+                                </a>
+                            {% endfor %}
                         </div>
                     </div>
+                    {% endfor %}
+                    {% endif %}
                 </section>
                 <section class="w-full grid justify-items-center xmed:hidden">
                     <div class="w-full pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
@@ -160,9 +172,10 @@ fabCopy:
 
                             {% if amenity.buttons | length %}
                                 <div class="w-full py-8 grid xmed:grid-flow-col xmed:auto-cols-max gap-6 justify-items-center">
-                                    {% for btn in amenity.buttons %}
-                                        <span class="{{btn.classes}}">
-                                            {{ primaryButton(btn.link, btn.label) }}
+                                    {% for cta in amenity.buttons %}
+                                        {% set btn = cta.action %}
+                                        <span>
+                                            {{ cms_primaryButton(src = btn.url, copy = btn.copy, mobile_copy = btn.mobile_copy) }}
                                         </span>
                                     {% endfor %}
                                 </div>

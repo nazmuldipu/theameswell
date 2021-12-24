@@ -113,9 +113,9 @@
                 {% set cta = action.action %}
                 <nav class="pt-7 pb-2 xmed:text-center">
                     <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">
-                        <span class="hidden xmed:inline-block">{{cta.copy | safe}}</span>
-                        {% if cta.mobile_copy %}
-                            <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                        <span class="{{ 'hidden xmed:inline-block' if not mobile_copy == '' }}">{{copy | safe}}</span>
+                        {% if mobile_copy %}
+                            <span class="xmed:hidden">{{mobile_copy | safe}}</span>
                         {% endif %}
                     </a>  
                 </nav>
