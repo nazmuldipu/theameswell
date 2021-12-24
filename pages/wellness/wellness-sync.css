@@ -16,7 +16,7 @@
   @apply object-cover;
 }
 
-.read-more:checked ~ label ~ p {
+.read-more:checked ~ label ~ div {
   max-height: 300px;
   @apply pt-6;
 }

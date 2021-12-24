@@ -121,7 +121,7 @@ fabCopy:
                 </section>
             </article>
         </div>
-        {# {% if amenitiesData.items %}
+        {% if amenitiesData.items %}
         <div class="w-full grid justify-items-center pt-8 xmed:py-6 bg-ams-base">
             {% for amenity in amenitiesData.items %}
                 {% set outer_loop_index = loop.index %}
@@ -129,10 +129,12 @@ fabCopy:
                     <div class="grid grid-cols-1 xmed:grid-cols-2 py-5">
                         <div class="amenity-xs-swiper max-w-screen-xl overflow-hidden xmed:hidden mx-3">
                             {% if amenity.slides.length > 1 %}
-                                {{ media_carousel(amenity.slides, "", "") }}
+                                {{ cms_media_carousel(amenity.slides, "", "") }}
                             {% else %}
                                 <div class="mb-5">
-                                    {{ scaled_image(amenity.slides[0]) }}
+                                    {% for img in amenity.slides %}
+                                        {{ global_image(img.global_image, imgClass = 'w-full') }}
+                                    {% endfor %}
                                 </div>
                             {% endif %}
                         </div>
@@ -143,22 +145,18 @@ fabCopy:
                                 <div class="text-sm xmed:text-lg font-bold">{{amenity.access}}</div>
                                 <div class="text-sm xmed:text-lg font-bold">{{amenity.note}}</div>
                             </div>
-                            {% for txt in amenity.texts %}
                                 <div class="pt-6">
-                                    <span class="text-sm xmed:text-lg">{{txt}}</span>
-                                    {% if loop.last %}
+                                    <span class="text-sm xmed:text-lg cms-description">{{amenity.texts | safe}}</span>
                                         <span class="relative">
                                             <input type="checkbox" id="read_more_{{outer_loop_index}}" class="read-more absolute top-0 left-0 w-full h-full opacity-0">
 
                                             <label for="read_more_{{outer_loop_index}}" class="segment__cta segment__cta--gold relative text-ams-gold text-xs font-serif-display uppercase cursor-pointer">READ MORE</label>
 
-                                            {% for mtxt in amenity.more_texts %}
-                                                <p class="amenities-more overflow-hidden max-h-0">{{mtxt}}</p>
-                                            {% endfor %}
+                                            <div class="amenities-more overflow-hidden max-h-0 cms-description">
+                                                {{amenity.more_texts | safe}}
+                                            </div>
                                         </span>
-                                    {% endif %}
                                 </div>
-                            {% endfor %}
 
                             {% if amenity.buttons | length %}
                                 <div class="w-full py-8 grid xmed:grid-flow-col xmed:auto-cols-max gap-6 justify-items-center">
@@ -172,10 +170,12 @@ fabCopy:
                         </div>
                         <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">
                             {% if amenity.slides.length > 1 %}
-                                {{ media_carousel(amenity.slides, "", "", true) }}
+                                {{ cms_media_carousel(amenity.slides, "", "", true) }}
                             {% else %}
                                 <div class="px-5">
-                                    {{ scaled_image(amenity.slides[0]) }}
+                                    {% for img in amenity.slides %}
+                                        {{ global_image(img.global_image, imgClass = 'w-full') }}
+                                    {% endfor %}
                                 </div>
                             {% endif %}
                         </div>
@@ -183,4 +183,4 @@ fabCopy:
                 </article>
             {% endfor %}
         </div>
-        {% endif %} #}
+        {% endif %}
