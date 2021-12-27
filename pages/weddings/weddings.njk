@@ -1,124 +1,118 @@
 ---
 layout: base.njk
-pagename: weddings
-meta_title: Bay Area Wedding Venues | The Ameswell Hotel | Mountain View
-meta_description: "Celebrate your wedding at one of the most unique and inspiring venues in the Bay Area. Our flexible Infinity Ballroom and expansive Event Lawn offer a perfect setting for enjoying large or more intimate ceremonies and receptions."
-canonical_href: https://www.theameswellhotel.com/weddings.html
-permalink: "build/weddings.html"
+pagename: index
+permalink: "build/weddings/index.html"
 permalinkBypassOutputDir: true
-fabUrl: "wedding-rfp.html"
-fabBg: "857550"
-fabCopy:
-    - Plan
-    - Wedding
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
+{% from "global-image.njk" import global_image %}
 
-<section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-</section>
-
-<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-16 xmed:pb-30 bg-pattern--ams-gold">
-    <article class="w-full grid justify-items-center pt-4">
-        <section class="w-full grid justify-items-center max-w-screen-lg">
-            <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    Our Mountain View Wedding Venue
-                </h2>
-                <div class="xmed:text-center">
-                    Whether you envision a grand wedding reception or an intimate family affair, The Ameswell Hotel offers infinite possibilities for your special day. Our Infinity Ballroom with floor-to-ceiling windows and immaculately crafted finishes and furnishings delights as a light-filled and contemporary venue. Our expansive grounds offer a unique setting for outdoor ceremonies and unforgettable celebrations under the Mountain View stars, where “Meadow Meets Modern.”
-                </div>
-            </div>
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
+        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+            {% for img in item.image %}
+                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+            {% endfor %}
         </section>
-    </article>
-</div>
+
+        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-16 xmed:pb-30 bg-pattern--ams-gold">
+            <article class="w-full grid justify-items-center pt-4">
+                <section class="w-full grid justify-items-center max-w-screen-lg">
+                    <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                        <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                            {{item.title}}
+                        </h2>
+                        <div class="xmed:text-center cms-description">
+                            {{item.description | safe}}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
+{% endif %}
 <div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
     <article class="w-full max-w-screen-lg overflow-hidden">
         {{ lazyvideo([{ src: "videos/weddings-video-1.mp4", type: "video/mp4"}], "images/weddings-1.jpg", "lazy") }}
     </article>
 </div>
-<div class="w-full grid justify-items-center px-6 py-8 xmed:px-4 pb-8 bg-ams-base">
-    <article class="w-full grid justify-items-center">
-        <section class="w-full grid justify-items-center max-w-screen-lg pb-4 px-4 xmed:p-10 bg-ams-white xmed:shadow-md">
-            <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
-                Resort amenities in an intimate &amp; convenient location
-            </h2>
-            <ul class="xmed:grid xmed:grid-cols-4 xmed:gap-4">
-                {{svg_icon("group",  'Intimate or large gatherings', stroke="#857550",pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}   
-                {{svg_icon("containers",  'Catering' , fill="#857550", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}   
-                {{svg_icon("drink",  'Custom Designed Signature Drinks' ,stroke="#857550", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}   
-                {{svg_icon("resort",  'Resort Style Amenities' , fill="#857550", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}
-                {{svg_icon("tent",  'Indoor and Outdoor Venues' , stroke="#857550", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}
-                {{svg_icon("percent",  'Groups' , fill="#857550", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}
-                {{svg_icon("list",  'Event Planner' , fill="#857550", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}
-                {{svg_icon("ceremonies",  'Ceremonies and Receptions' , fill="#857550", pclass="grid-cols-sm-auto gap-4 xmed:px-8")}}                
-            </ul>
-        </section>
-    </article>
-</div>
-<div class="bg-ams-primary w-full">
-    <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block"></div>
-</div>
-<div class="bg-ams-primary w-full grid justify-items-center py-8 px-6 relative z-0">
-    <article class="w-full max-w-screen-lg">
-        <h2 class="title-display text-2xl py-4 text-ams-white">
-            Diverse Dining Options
-        </h2>
-        <p class="pb-6 text-ams-white">
-            Roger is perfect for rehearsal dinners, after-parties and next-day breakfasts, while The Flyby and the Airstream Bar provide options for more casual and impromptu gatherings.
-        </p>
-        <a href="dining.html" class="segment__cta segment__cta--white relative text-ams-white text-lg font-serif uppercase">LEARN MORE</a>
-        <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
-            <figure class="grid grid-cols-2 xmed:grid-cols-1 gap-4 items-center mb-6">
-                {{ scaled_image(flyby_image) }}
-                <figcaption class="text-ams-white xmed:px-8">
-                    <header class="xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="
-                            {% if (meta.env === 'production') %} https://rogerbarandrestaurant.com/flyby-menu 
-                            {% else %} https://roger-staging.skipperhospitality.com/flyby-menu
-                            {% endif %}" target="_blank">
-                            THE FLYBY</a>
-                        </h3>
-                    </header>
-                    <p class="xmed:text-center">
-                        All-day coffee and fast casual meals
-                    </p>
-                </figcaption>
-            </figure>
-            <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                {{ scaled_image(roger_image) }}
-                <figcaption class="text-ams-white xmed:px-8">
-                    <header class="xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="
-                            {% if (meta.env === 'production') %} https://rogerbarandrestaurant.com/ 
-                            {% else %} https://roger-staging.skipperhospitality.com/
-                            {% endif %}" target="_blank">
-                            ROGER</a>
-                        </h3>
-                    </header>
-                    <p class="xmed:text-center">
-                        An indoor/outdoor bar and restaurant
-                    </p>
-                </figcaption>
-            </figure>
-            <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-end gap-4 items-center mb-6">
-                {{ scaled_image(airstream_image) }}
-                <figcaption class="text-ams-white xmed:px-8">
-                    <header class="xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                            <a href="dining.html#airstream_bar">AIRSTREAM BAR</a>
-                        </h3>
-                    </header>
-                    <p class="xmed:text-center">
-                        Outdoor bar for the pool, lawn and events
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
-    </article>
-</div>
+{% if pageCMS['icons'] and pageCMS['icons']
+    .icon_list and pageCMS['icons']
+    .icon_list
+    .icons %}
+    {% set icon_list = pageCMS['icons'].icon_list%}
+
+    <div class="w-full grid justify-items-center px-6 py-8 xmed:px-4 pb-8 bg-ams-base">
+        <article class="w-full grid justify-items-center">
+            <section class="w-full grid justify-items-center max-w-screen-lg pb-4 px-4 xmed:p-10 bg-ams-white xmed:shadow-md">
+                <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
+                    {{icon_list.title}}
+                </h2>
+                <ul class="xmed:grid xmed:grid-cols-4 xmed:gap-4">
+                    {% for data in icon_list.icons %}
+                        <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center grid-cols-sm-auto gap-4 xmed:px-8">
+                            {{data.icon | safe}}
+                            <a>
+                                <span>{{ data.title }}</span>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </ul>
+            </section>
+        </article>
+    </div>
+    {%endif%}
+    <div class="bg-ams-primary w-full">
+        <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block"></div>
+    </div>
+    <div class="bg-ams-primary w-full grid justify-items-center py-8 px-6 relative z-0">
+        <article class="w-full max-w-screen-lg">
+            {% if pageCMS['restaurants-intro'] and pageCMS['restaurants-intro'].simple_article %}
+                {% for item in pageCMS['restaurants-intro'].simple_article %}
+                    <h2 class="title-display text-2xl py-4 text-ams-white">
+                        {{item.title}}
+                    </h2>
+                    <div class="pb-6 text-ams-white">
+                        {{item.description | safe}}
+                    </div>
+                    {% if item.links %}
+                        {% for cta in item.links %}
+                            {% set action = cta.action %}
+                            <a href="{{action.url}}" class="segment__cta segment__cta--white relative text-ams-white text-lg font-serif uppercase">{{action.copy}}</a>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            {% if pageCMS['restaurants'] and pageCMS['restaurants'].simple_article %}
+
+                <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
+                    {% for item in pageCMS['restaurants'].simple_article %}
+                        <figure class="grid grid-cols-2 xmed:grid-cols-1 gap-4 items-center mb-6">
+                            {% for img in item.image %}
+                                {{ global_image(img.global_image) }}
+                            {% endfor %}
+                            <figcaption class="text-ams-white xmed:px-8">
+                                <header class="xmed:text-center">
+                                    <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
+                                        {% if item.links %}
+                                            {% for cta in item.links %}
+                                                {% set action = cta.action %}
+                                                <a href="{{action.url}}" target="_blank">
+                                                    {{item.title}}</a>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </h3>
+                                </header>
+                                <div class="xmed:text-center cms-description">
+                                    {{item.description | safe}}
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </section>
+                {% endfor %}
+            {% endif %}
+        </article>
+    </div>
