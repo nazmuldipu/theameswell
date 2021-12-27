@@ -1,8 +1,17 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
-@import "../../components/DayPicker/daypicker.css";
 
-.page-fab {
-  @apply hidden;
+@layer base {
+  .page-fab {
+    @apply hidden;
+  }
+  
+    /** the typeform iframe will not by default fill this container unless
+        the height + width are thus set
+    **/
+    iframe[src*='typeform'] {
+      height: 100%;
+      width: 100%;
+  }
 }

@@ -42,77 +42,7 @@ permalinkBypassOutputDir: true
                 <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
                     Event request form
                 </h2>
-                <form-sender data-type="rfp">
-                    <form>
-                        {{form_input("firstName","FIRST NAME *", "text", "Al")}}
-                        {{form_input("lastName","LAST NAME *", "text", "Shepard")}}
-                        {{form_input("company","Company/Organization", "text", "Company/Organization name", false)}}
-                        {{form_input("phone","PHONE NUMBER *", "tel", "718-555-1212")}}
-                        {{form_input("email","EMAIL ADDRESS *", "email", "ashepard@example.com")}}
-                        {{form_input("eventName","EVENT NAME *", "text", "")}}
-                        
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            EVENT TYPE *<br>
-                            <select required="required" aria-required="true" name="eventType" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
-                                <option value="" disabled selected hidden></option>
-                                <option value="wedding">Wedding</option>
-                                <option value="event">Event</option>
-                                <option value="meeting">Meeting</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </label>
-
-                        {{form_input("startDate","START DATE *", "text", "YYYY-MM-DD", true, "datepicker relative", readonly=true)}}
-                        {{form_input("endDate","END DATE", "text", "YYYY-MM-DD", false, "datepicker relative", readonly=true)}}
-                        {{form_input("startTime","Event Start Time: ", "time", "Start Time", false)}}
-                        {{form_input("endTime","Event End Time:", "time", "End Time", false)}}
-                        {{form_input("guestRoomCount","How many guest rooms? ", "number", "", false, "", 0)}}
-                       
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                            DO YOU REQUIRE A/V?<br>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="yes" name="audioVisual" id="audioVisualYes" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold" checked>
-                                <label for="audioVisualYes">Yes</label>
-                            </div>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="no" name="audioVisual" id="audioVisualNo" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                <label for="audioVisualNo">No</label>
-                            </div>
-                        </label>
-
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2 uppercase">
-                            Do you require food &amp; beverage?<br>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="yes" name="foodBeverage" id="foodBeverageYes" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                <label for="foodBeverageYes">Yes</label>
-                            </div>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="no" name="foodBeverage" id="foodBeverageNo" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold" checked>
-                                <label for="foodBeverageNo" >No</label>
-                            </div>
-                        </label>
-
-                        <label id="foodBeverageYesText" class="foodBeverageYesText block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                            What food &amp; beverage? <br>
-                            <select required="required" aria-required="true" id="foodBeverageItemsSelect" name="foodBeverageItems" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
-                                <option value="" disabled selected hidden></option>
-                                <option value="breakfast">Breakfast</option>
-                                <option value="lunch">Lunch</option>
-                                <option value="dinner">Dinner</option>
-                                <option value="breaks">Breaks</option>
-                                <option value="reception">Reception</option>
-                            </select>
-                        </label>
-
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                            Additional Details <br>
-                            <textarea name="additionalDetails" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary min-h-l bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50"></textarea>
-                        </label>
-                        
-                        {{ primaryButton("#", 'Submit','submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
-                        <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
-                    </form>
-                </form-sender>
+                <div id="rfp-form"></div>
             </article>
         </div>
     </div>
