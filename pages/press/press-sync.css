@@ -2,6 +2,10 @@
 @import "../../styles/global.css";
 /****  end imports  ********************************/
 @layer base{
+    .cms-email .primary-email__color{
+        @apply text-ams-cyan;
+        @apply underline;
+    }
     .form-label{
         @apply block;
         @apply mb-4;
