@@ -371,7 +371,10 @@ cms_description %}
         </article>
     </div>
 {% endif %}
-{{subfooter__form(data.subfooter_image)}}
+{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form %}
+    {% set subfooter_form = globalCMS['join-the-a-list'].form%}
+    {{subfooter__form(subfooter_form)}}
+{% endif %}
 <div class="bg-ams-primary w-full">
     <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
 </div>

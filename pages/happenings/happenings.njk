@@ -102,5 +102,7 @@ fabExternalLink: true
         {{ primaryButton("javascript:void(0)", 'View All', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
     </div>
 </section>
-{{subfooter__form(data.subfooter_image, maxWidth='max-w-screen-xl')}}
-
+{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form %}
+    {% set subfooter_form = globalCMS['join-the-a-list'].form%}
+    {{subfooter__form(subfooter_form)}}
+{% endif %}
