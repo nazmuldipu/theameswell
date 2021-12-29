@@ -4,7 +4,7 @@ pagename: events
 meta_title: Silicon Valley Event Venue | The Ameswell Hotel | Mountain View
 meta_description: "Located on 11 scenic acres in Mountain View with over 15,000 sq. ft. of indoor and outdoor event space, The Ameswell Hotel offers endless opportunities to create memorable meetings and events."
 canonical_href: https://www.theameswellhotel.com/events.html
-permalink: "build/events.html"
+permalink: "build/events/index.html"
 permalinkBypassOutputDir: true
 fabUrl: "rfp.html"
 fabBg: "857550"
@@ -17,6 +17,7 @@ fabCopy:
 {% from "media-carousel.njk" import  media_carousel %}
 {% from "svgicon.njk" import svg_icon %}
 {% from "macros.njk" import scaled_image %}
+{% from "global-image.njk" import global_image %}
 {% macro events(items) %}
     <section class="grid xmed:grid-cols-2 xmed:gap-8 justify-items-center max-w-screen-xl mx-auto pt-4 xmed:pt-8 px-6 xmed:px-4">
         {% for item in items %}
@@ -36,62 +37,93 @@ fabCopy:
         {% endfor %}        
     </section>   
 {% endmacro %}
-<section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-</section>
 
-<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 xmed:pb-36 bg-pattern--ams-grey">
-    <article class="w-full grid justify-items-center">
-        <section class="w-full grid justify-items-center max-w-screen-lg">
-            <div class="pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-8 bg-ams-white">
-                <h2 class="title-display text-3xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    The sky is the limit
-                </h2>
-                <div class="text-base xmed:text-lg xmed:text-center">
-                    Whether you are planning a corporate meeting, fundraising dinner or celebratory event, the Ameswell Hotel offers a variety of unique indoor and outdoor venues to help you bring your vision to life in the heart of Silicon Valley.
+{# Top Banner Image #}
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+        
+        {% for item in pageCMS['top-banner'].simple_article %}
+            {% set top_banner_image = item.image %}
+            
+            {% for img in top_banner_image %}
+                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+            {% endfor %}
+
+        {% endfor %}
+        
+    </section>
+{% endif %}
+
+{# Top Banner Title and Description #}
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% set top_banner_article = pageCMS['top-banner'].simple_article %}
+    {% for item in top_banner_article %}
+        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 xmed:pb-36 bg-pattern--ams-grey">
+            <article class="w-full grid justify-items-center">
+                <section class="w-full grid justify-items-center max-w-screen-lg">
+                    <div class="pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-8 bg-ams-white">
+                        {% if item.title %}
+                            <h2 class="title-display text-3xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                                {{ item.title | safe }}
+                            </h2>
+                        {% endif %}
+
+                        {% if item.description %}
+                            <div class="text-base xmed:text-lg xmed:text-center">
+                                {{ item.description | safe }}
+                            </div>
+                        {% endif %}
+                        
+                        <ul class="grid grid-cols-3 text-ams-primary title-display text-2xl xmed:text-3xl font-medium gap-y-8 justify-items-center text-center pt-8 xmed:mx-16">
+                            {% for link in item.links %}
+                                {% set trg = '_blank' if not link.action.internal else '_self' %}
+                                <li><a class="border-b border-ams-primary" target="{{trg}}" href="{{link.action.url}}">{{link.action.copy}}</a></li>
+                            {% endfor %}                
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
+{% endif %}
+
+{# Resort amenities Icons #}
+{% if pageCMS['icons'] and pageCMS['icons'].icon_list 
+    and pageCMS['icons'].icon_list.icons %}
+    {% set icon_list = pageCMS['icons'].icon_list%}
+
+    <div class="grid justify-items-center w-full bg-ams-grey">
+        <article class="max-w-screen-xl w-full grid justify-items-center p-6">
+            <section class="w-full grid pb-4 px-4 xmed:my-8 xmed:p-8 bg-ams-white xmed:shadow-md">
+                {% if icon_list.title %}
+                     <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
+                        {{ icon_list.title | safe }}
+                    </h2>
+                {% endif %}
+               
+                <ul class="xmed:grid xmed:grid-cols-4 xmed:gap-4 text-ams-primary">
+                    {% for data in icon_list.icons %}
+                        <li class="{% if data.class %} {{data.class}} {% endif %}">
+                            <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center grid-cols-sm-auto gap-4 xmed:px-8">
+                                {{data.icon | safe}}
+                                <a>
+                                    <span>{{ data.title }}</span>
+                                </a>
+                            </div>
+                        </li>
+                    {% endfor %}             
+                </ul>   
+                
+                <div class="text-center xmed:hidden mt-4 xmed:mt-0">
+                    {% if icon_list.action_copy %}
+                        <a class="show-all__amenities inline-block py-3 px-12 bg-ams-gold text-ams-white font-serif text-lg tracking-wide button--primary button focus:outline-none xmed:px-8">{{ icon_list.action_copy | safe }}</a>
+                    {% endif %}
                 </div>
-                <ul class="grid grid-cols-3 text-ams-primary title-display text-2xl xmed:text-3xl font-medium gap-y-8 justify-items-center text-center pt-8 xmed:mx-16">
-                    <li><a class="border-b border-ams-primary" href="wedding-rfp.html">Weddings</a></li>                 
-                    <li><a class="border-b border-ams-primary" href="rfp.html">Social Events</a></li>                 
-                    <li><a class="border-b border-ams-primary" href="rfp.html">Meetings</a></li>                 
-                </ul>
-            </div>
-        </section>
-    </article>
-</div>
+            </section>
+        </article>
+    </div>
+{% endif %}
 
-<div class="grid justify-items-center w-full bg-ams-grey">
-    <article class="max-w-screen-xl w-full grid justify-items-center p-6">
-        <section class="w-full grid pb-4 px-4 xmed:my-8 xmed:p-8 bg-ams-white xmed:shadow-md">
-            <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
-                Resort amenities in a spacious and convenient location
-            </h2>
-            <ul class="xmed:grid xmed:grid-cols-4 xmed:gap-4 text-ams-primary">
-                    <li class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center grid-cols-sm-auto gap-4 xmed:px-8 items-center">
-                        <img src="/images/sunglass_icon.svg" width="48" height="48" />
-                        <a>
-                            <span>Full resort amenities<span>
-                        </a>
-                    </li>
-                    <li class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center grid-cols-sm-auto gap-4 xmed:px-8 items-center">
-                        <img src="/images/sustainable_icon.svg" width="48" height="48"/>
-                        <a>
-                            <span>Sustainable outdoor spaces<span>
-                        </a>
-                    </li>
-                    <li>{{svg_icon("venues",  'Indoor / outdoor venues' , fill="#213E4C", width="48", height="48", pclass="grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
-                    <li class="events__svgicon">{{svg_icon("list",  'Dedicated event planner' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
-                    <li class="events__svgicon">{{svg_icon("containers",  'Creative event catering' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
-                    <li class="events__svgicon">{{svg_icon("sdrinks",  'Custom signature drinks' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
-                    <li class="events__svgicon">{{svg_icon("mic",  'Onsite audio visual' , width="48", height="48", fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>
-                    <li class="events__svgicon">{{svg_icon("wifi",  'Ultra fast wifi' , fill="#213E4C", pclass="events__svgicon grid-cols-sm-auto gap-4 xmed:px-8 items-center")}}</li>                
-            </ul>
-            <div class="text-center xmed:hidden mt-4 xmed:mt-0">
-                <a class="show-all__amenities inline-block py-3 px-12 bg-ams-gold text-ams-white font-serif text-lg tracking-wide button--primary button focus:outline-none xmed:px-8">Show All</a>
-            </div>
-        </section>
-    </article>
-</div>
 {% for item in event_items %}
     <section class="event grid justify-items-center w-full bg-ams-base
     {% if loop.last %}
