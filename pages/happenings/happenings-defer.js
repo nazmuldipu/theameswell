@@ -1,7 +1,17 @@
 "use strict";
-import * as data from '../_data/data.json';
-const events = data.events;
+import * as data from '../_data/happenings-data.json';
 
+const events = data.happenings.map((item)=> {
+  return {
+    ...item,
+    date: {
+      day: parseInt(item.date.day),
+      month: parseInt(item.date.month),
+      year: parseInt(item.date.year),
+    }
+  }
+})
+console.log(events)
 const hasEventListeners = !!window.addEventListener;
 const sto = window.setTimeout;
 const months = [
