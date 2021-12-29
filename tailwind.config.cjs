@@ -99,7 +99,8 @@ module.exports = {
         'ams-main-15':'#B0A79E',
         'ams-main-16':'#DFDAD7',
         'ams-main-17':'#5A4F4D',
-        'ams-main-18':'#082343'
+        'ams-main-18':'#082343',
+        'ams-main-21':'#C59494'
       },
       placeholderColor: theme => theme('colors'),
       fontFamily: {
