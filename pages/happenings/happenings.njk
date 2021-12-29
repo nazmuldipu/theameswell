@@ -1,45 +1,26 @@
 ---
 layout: base.njk
-pagename: happenings
-meta_title: Mountain View Events | Silicon Valley Hotels | Ameswell
-meta_description: "Join us at The Ameswell Hotel and Roger Bar and Restaurant in Mountain View for fun live events. Guests can enjoy live music, fitness classes, expert speakers series and more. Check our event calendar for details."
-canonical_href: https://www.theameswellhotel.com
-permalink: "build/happenings.html"
+pagename: index
+permalink: "build/happenings/index.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
-
 ---
-{% from "macros.njk" import scaled_image, subfooter__form %}
+{% from "macros.njk" import scaled_image,
+subfooter__form %}
 {% from "buttons.njk" import primaryButton %}
-{% macro eventCard() %}
-<section class="bg-ams-white xmed:shadow-2xl h-96 w-96">
-    <figure>
-        {{ scaled_image(happenings_image) }}
-        <figcaption>
-            <header class="px-6 py-4 text-left bg-ams-white">
-                <h3 class="text-lg font-sans">
-                        July 3, 2021
-                    </h3>
-                <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
-                        LIVE MUSIC WITH FREDDY CLARKE AND WOBBLY WORLD
-                    </h2>
-            </header>
-        </figcaption>
-    </figure>
-    <div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium">
-        {{ primaryButton("#", 'View More') }}        
-    </div>
-</section>
-{% endmacro %}
-
-<section id="pageHero" class="bg-ams-primary h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-    <h1 class="title--1 text-ams-white text-3xl xmed:text-7xl font-serif uppercase text-center pt-30">
-        HAPPENINGS
-    </h1>
-</section>
-
+{% from "global-image.njk" import global_image %}
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
+        <section id="pageHero" class="bg-ams-primary h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+            {% for img in item.image %}
+                {{ global_image(img.global_image) }}
+            {% endfor %}
+            <h1 class="title--1 text-ams-white text-3xl xmed:text-7xl font-serif uppercase text-center pt-30">
+                {{item.title}}
+            </h1>
+        </section>
+    {% endfor %}
+{% endif %}
+<div id=""></div>
 <section class="xmed:bg-ams-base w-full text-ams-primary hidden">
     {% for event in data.events %}
         {% set imgObj = {"artDirection": [
@@ -82,25 +63,83 @@ fabExternalLink: true
             <div class="bg-ams-primary text-ams-base">Fri</div>
             <div class="bg-ams-primary text-ams-base">Sat</div>
         </div>
-        <div class="calendar-body grid grid-cols-7 gap-x-1 mb-8 text-center">        
-        </div>
+        <div class="calendar-body grid grid-cols-7 gap-x-1 mb-8 text-center"></div>
     </section>
 </section>
 <!-- calendar end-->
 <hr class="xmed:hidden border-solid border-4 w-11/12 border-ams-primary">
 <!--event List-->
 <section class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-20">
-    <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
-        <h2 id="our_happenings_title" class="title-display text-2xl text-center px-16 font-serif font-medium py-4 uppercase">
-            Our Happenings
-        </h2>
-    </header>
-    <article id="our_happenings" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24">
-        
+    {% if pageCMS['happenings-article'] and pageCMS['happenings-article'].simple_article %}
+        {% set object = pageCMS['happenings-article'].simple_article%}
+    {% endif %}
+    {% if object %}
+        <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
+            <h2 id="our_happenings_title" class="title-display text-2xl text-center px-16 font-serif font-medium py-4 uppercase">
+                {{object[0].title}}
+            </h2>
+        </header>
+    {% endif %}
+    
+    <article class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24">
+        {% if globalCMS['happenings'] and globalCMS['happenings'].happenings %}
+            {% for item in globalCMS['happenings'].happenings %}
+                {% set to_link = '/happenings-detail/?id=' + item.id%}
+                <section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
+                    <a class="hidden xmed:block" href="{{to_link}}">
+                        <figure>
+                            {{global_image(item.image_.global_image)}}
+                            <figcaption>
+                                <header class="px-6 py-4 text-left bg-ams-white">
+                                    <h3 class="text-lg font-sans">
+                                    {{item.time}}
+                                    </h3>
+                                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
+                                    {{item.title}}
+                                    </h2>
+                                </header>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <span class="xmed:hidden">
+                        <figure>
+                            {{global_image(item.image_.global_image)}}
+                            <figcaption>
+                                <header class="px-6 py-4 text-left bg-ams-white">
+                                    <h3 class="text-lg font-sans">
+                                    {{item.time}}
+                                    </h3>
+                                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
+                                    {{item.title}}
+                                    </h2>
+                                </header>
+                            </figcaption>
+                        </figure>
+                    </span>
+                    <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
+                        {% for data in item.actions %}
+                            {% set cta = data.action %}
+                            {% if cta.type == 'details-link-outline' %}
+                                <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="{{to_link}}">
+                                {{cta.copy}}
+                                </a>
+                            {% elif cta.type == 'primary' %}
+                                <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display " href="{{cta.url}}" target="_blank">
+                                {{cta.copy}}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </section>
+            {% endfor %}
+        {% endif %}
     </article>
-    <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
-        {{ primaryButton("javascript:void(0)", 'View All', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
-    </div>
+    {% if object %}
+        <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
+            {{ primaryButton("javascript:void(0)", object[0].footer, 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
+        </div>
+    {% endif %}
+    
 </section>
 {% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form %}
     {% set subfooter_form = globalCMS['join-the-a-list'].form%}
