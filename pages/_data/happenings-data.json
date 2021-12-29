@@ -1,0 +1,74 @@
+{
+    "happenings": [
+        {
+            "id": 136,
+            "cta": [
+                {
+                    "url": "https://www.rogerbarandrestaurant.com/reservations",
+                    "label": "Come Boogie With Us"
+                }
+            ],
+            "date": {
+                "day": "31",
+                "year": "2021",
+                "month": "12"
+            },
+            "time": "9:00 AM - 12:00 PM",
+            "image": "images/happenings-events-farmers-market",
+            "title": "MOUNTAIN VIEW FARMERS' MARKET",
+            "image_": {
+                "global_image": {
+                    "alt": "The Ameswell hotel exterior",
+                    "src": "stage/upload/storey/theameswell/f3cb7bc6671140a0-new-years-eve-at-roger.jpg",
+                    "sizes": [
+                        {
+                            "src": "",
+                            "view": "30vw",
+                            "media": "(min-width:900.1px)",
+                            "intrinsicwidth": 0,
+                            "intrinsicheight": 0
+                        },
+                        {
+                            "src": "",
+                            "view": "100vw",
+                            "media": "(max-width:900px)",
+                            "intrinsicwidth": 0,
+                            "intrinsicheight": 0
+                        }
+                    ],
+                    "types": [
+                        "webp",
+                        "jpg"
+                    ],
+                    "background": true,
+                    "intrinsicwidth": 4800,
+                    "intrinsicheight": 3200
+                }
+            },
+            "actions": [
+                {
+                    "action": {
+                        "url": "https://www.rogerbarandrestaurant.com/reservations",
+                        "copy": "Come Boogie With Us",
+                        "type": "primary",
+                        "internal": false,
+                        "for_desctop": true,
+                        "mobile_copy": ""
+                    }
+                },
+                {
+                    "action": {
+                        "url": "/happenings-detail",
+                        "copy": "More Info",
+                        "type": "details-link-outline",
+                        "internal": true,
+                        "for_desctop": true,
+                        "mobile_copy": ""
+                    }
+                }
+            ],
+            "descriptions": "<p>Shop local and enjoy a variety of culinary goods and artisans from vendors near and far every Sunday in downtown Mountain View. Wind down from all the walking and head over to Roger Bar and Restaurant for bottomless mimosas and Dutch Baby pancakes!</p>",
+            "showindexpage": false
+        }
+    ]
+}
