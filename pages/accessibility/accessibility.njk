@@ -1,56 +1,37 @@
 ---
 layout: base.njk
 pagename: accessibility
-meta_title: Silicon Valley Accessible Hotels | The Ameswell Hotel | Mountain View
-meta_description: "The Ameswell Hotel is dedicated to making it as effortless as possible for people of all abilities to be able to access information about our property and to be able to enjoy our hotel, restaurants, and other amenities."
-canonical_href: https://www.theameswellhotel.com/accessibility.html
-permalink: "build/accessibility.html"
+permalink: "build/accessibility/index.html"
 permalinkBypassOutputDir: true
-noindex: true
-header_not_docked: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
 ---
 {% from "macros.njk" import address_format %}
 
 <section class="w-full xmed:max-w-screen-lg mt-24 mb-16">
     <article class="px-6 xmed:px-0">
-        <h2 class="title text-2xl pb-8">
-            Accessibility Policy
-        </h2>
-        <h3 class="title text-1xl pb-2">
-            Compatibility
-        </h3>
-        <p class="pb-4">
-            This website is designed to be used with JavaScript, which is necessary for achieving conformance with the accessibility standards used. This website may not be readily compatible with browsers older than 3 major versions or mobile operating systems older than 5 years.
-        </p>
-        <h3 class="title text-1xl pb-2">
-            Text Size
-        </h3>
-        <p class="pb-4">
-            This website is compatible with browser-specific zoom shortcuts, such as Crtl+Plus to increase text size and Ctrl+Minus to decrease text size.
-        </p>
-        <h3 class="title text-1xl pb-2">
-            Focus Indicator and Skip Link
-        </h3>
-        <p class="pb-4">
-            To assist motor impaired users in accessing content, a focus indicator and skip link can be enabled by navigating with the Tab and Shift+Tab keyboard shortcuts.
-        </p>
-        <h3 class="title text-1xl pb-2">
-            ACCESSIBILITY STATEMENT
-        </h3>
-        <p class="pb-4">
-            The Ameswell Hotel aims to make it as effortless as possible for people of all abilities to be able to access information about our hotel. We strive to provide online content that offers an exceptional user experience for visitors of all abilities, using any type of assistive technology to access our website.
-        </p>
-        <p class="pb-4">
-            To ensure this, our website accessibility standards are based on the Web Content Accessibility Guidelines 2.1 and 2.2, and levels A + AA + AAA success criteria. We actively work to maintain, evaluate, and improve the usability and accessibility of our website through training of staff, engagement of experts and regular testing of our digital accessibility. Our website has been tested by a third-party team of experts and meets or exceeds the highest levels of accessibility standards.
-        </p>
-        <p class="pb-4">
-            If you encounter problems learning about our hotel, we encourage you to contact us by telephone or email. Our helpful staff will be delighted to assist you. Here is how to reach us:
-        </p>
-        The Ameswell Hotel<br>
-        <a href="tel:650-880-1000" class="text-ams-cyan">650-880-1000</a><br>
-        <a href="mailto:michaelcasey@theameswellhotel.com" target="_blank" class="text-ams-cyan">michaelcasey@theameswellhotel.com</a><br>
-        <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-gold underline">{{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}</a>
+        {% if pageCMS['contents'] and pageCMS['contents'].simple_article %}
+            {% for item in pageCMS['contents'].simple_article %}
+                {% if item.title %}
+                    <h2 class="title text-2xl pb-8">
+                        {{item.title}}
+                    </h2>
+                {% endif %}
+                <h3 class="title text-1xl pb-2">
+                    {{item.sub_title}}
+                </h3>
+                <div class="pb-4 cms-description">
+                    {{item.description | safe}}
+                </div>
+            {% endfor %}
+        {% endif %}
+        {% if pageCMS['address'] and pageCMS['address'].address %}
+        {% set item = pageCMS['address'].address %}
+        {% set phone = pageCMS['address'].address.phone.simple_action %}
+        {% set email = pageCMS['address'].address.email.simple_action %}
+        {% set location = pageCMS['address'].address.location %}
+        {{item.label}}<br>
+        <a href="{{phone.href}}" class="text-ams-cyan">{{phone.copy}}</a><br>
+        <a href="{{email.href}}" target="_blank" class="text-ams-cyan">{{email.copy}}</a><br>
+        <a href="{{location.href}}" target="_blank" rel="noreferrer" class="text-ams-gold underline">{{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}</a>
+    {% endif %}
     </article>
 </section>
