@@ -18,24 +18,26 @@ fabCopy:
 {% from "svgicon.njk" import svg_icon %}
 {% from "macros.njk" import scaled_image %}
 {% from "global-image.njk" import global_image %}
-{% macro events(items) %}
-    <section class="grid xmed:grid-cols-2 xmed:gap-8 justify-items-center max-w-screen-xl mx-auto pt-4 xmed:pt-8 px-6 xmed:px-4">
-        {% for item in items %}
-            <article class="bg-ams-white shadow-sm mb-6 xmed:mb-0">
-                <figure>
-                    {{ scaled_image(item.image) }}
-                </figure>
-                <figcaption class="my-4 xmed:my-6 px-6">
-                    <h2 class="title-display pb-4 text-2xl xmed:text-3xl">
-                        {{item.title}}
-                    </h2>
-                    <p class="font-sans text-base xmed:text-lg">
-                        {{item.description}}
-                    </p>
-                </figcaption>
-            </article>
-        {% endfor %}        
-    </section>   
+{% macro events(item) %}
+    <article class="bg-ams-white shadow-sm mb-6 xmed:mb-0">
+        {% if item.image.global_image %}
+            <figure>
+                {{ global_image(item.image.global_image) }}
+            </figure>
+        {% endif %}
+        <figcaption class="my-4 xmed:my-6 px-6">
+            {% if item.title %}
+                <h2 class="title-display pb-4 text-2xl xmed:text-3xl">
+                    {{ item.title | safe }}
+                </h2>
+            {% endif %}
+            {% if item.description %}
+                <div class="font-sans text-base xmed:text-lg">
+                    {{ item.description | safe }}
+                </div>
+            {% endif %}
+        </figcaption>
+    </article>   
 {% endmacro %}
 
 {# Top Banner Image #}
@@ -124,35 +126,54 @@ fabCopy:
     </div>
 {% endif %}
 
-{% for item in event_items %}
-    <section class="event grid justify-items-center w-full bg-ams-base
-    {% if loop.last %}
-        pb-10 xmed:pb-14
-    {% endif %}}
-    ">
-        <article class="max-w-screen-xl mx-auto">
-            <section class="grid xmed:event__grid-cols items-center gap-x-8
-                {% if loop.first %}
-                    pt-0 xmed:pt-10
-                {% else %}
-                    pt-10    
-                {% endif %}">
-                <figure class="event__image xmed:px-4">
-                     {{ scaled_image(item.image) }}
-                </figure>
-                <figcaption class="event__description mt-8 xmed:mt-0 px-6">
-                    <h2 class="title-display pb-4 text-3xl xmed:text-4xl">
-                        {{item.title}}
-                    </h2>
-                    <p>
-                        {{item.p}}
-                    </p>
-                </figcaption>
-            </section>
-        </article>
-    </section>
-{% endfor %}
-   
+{# Horizontal Cards #}
+{% if pageCMS['horizontal-cards'] and pageCMS['horizontal-cards'].cards
+    and pageCMS['horizontal-cards'].cards.card %}
+    {% set horizontal_cards = pageCMS['horizontal-cards'].cards.card %}
+    
+    {% for item in horizontal_cards %}
+        <section class="event grid justify-items-center w-full bg-ams-base
+        {% if loop.last %}
+            pb-10 xmed:pb-14
+        {% endif %}}
+        ">
+            <article class="max-w-screen-xl mx-auto">
+                <section class="grid xmed:event__grid-cols items-center gap-x-8
+                    {% if loop.first %}
+                        pt-0 xmed:pt-10
+                    {% else %}
+                        pt-10    
+                    {% endif %}">
+
+                    {% if item.image.global_image %}
+                        <figure class="event__image xmed:px-4">
+                            {{ global_image(item.image.global_image) }}
+                        </figure>
+                    {% endif %}
+                    
+                    <figcaption class="event__description mt-8 xmed:mt-0 px-6">
+                        {% if item.title %}
+                            <h2 class="title-display pb-4 text-3xl xmed:text-4xl">
+                                {{ item.title | safe }}
+                            </h2>
+                        {% endif %}
+
+                        {% if item.description %}
+                            <p>
+                                {{ item.description | safe}}
+                            </p>
+                        {% endif %}                        
+                    </figcaption>
+                </section>
+            </article>
+        </section>
+    {% endfor %}
+{% endif %}
+
+{# Vertical Cards #}
+{% if pageCMS['vertical-cards'] and pageCMS['vertical-cards'].cards and pageCMS['vertical-cards'].cards.card %} 
+{% set vertical_cards = pageCMS['vertical-cards'].cards.card %}
+
 <section class="w-full text-center font-serif font-medium text-xl xmed:text-2.5xl text-ams-primary bg-ams-base xmed:pb-12">
     <input type="radio" id="tab--1" class="tab--1 tab__radio" name="tab__radio" checked>
     <label for="tab--1" class="tab__label">All</label>
@@ -163,28 +184,57 @@ fabCopy:
     <input type="radio" id="tab--2" class="tab--2 tab__radio" name="tab__radio">
     <label for="tab--2" class="tab__label ml-2">Indoor</label>
 
-    
-
-    <div class="tab__containers">
+    <div class="tab__containers">            
         <section class="all text-left">
-            {{ events(event_places)}}
-        </section>
+            <section class="grid xmed:grid-cols-2 xmed:gap-8 justify-items-center max-w-screen-xl mx-auto pt-4 xmed:pt-8 px-6 xmed:px-4">
+                {% for item in vertical_cards %}
+                    {{ events(item)}}
+                {% endfor %}
+            </section>                    
+        </section>                   
         <section class="outdoor text-left">
-            {{ events(outdoor)}}
+            <section class="grid xmed:grid-cols-2 xmed:gap-8 justify-items-center max-w-screen-xl mx-auto pt-4 xmed:pt-8 px-6 xmed:px-4">
+                {% for item in vertical_cards %}
+                    {% if item.category == 'outdoor' %}
+                        {{ events(item)}}
+                    {% endif %}
+                {% endfor %}  
+            </section>                  
         </section>
         <section class="indoor text-left">
-            {{ events(indoor)}}
-        </section>
+            <section class="grid xmed:grid-cols-2 xmed:gap-8 justify-items-center max-w-screen-xl mx-auto pt-4 xmed:pt-8 px-6 xmed:px-4">
+                {% for item in vertical_cards %}
+                    {% if item.category == 'indoor' %}
+                        {{ events(item)}}
+                    {% endif %}
+                {% endfor %} 
+            </section>
+        </section>        
     </div>
 </section>
 
-<section class="grid w-full mb-10 xmed:mb-0 p-6 xmed:py-11 bg-ams-gold">
-    <section class="max-w-screen-xl mx-auto w-full">
-       <article class="text-center pt-12 xmed:pt-9 pb-6 xmed:pb-10 xmed:mx-4 bg-ams-white shadow-md">
-            <h2 class="px-12 pb-5 xmed:pb-8 font-serif text-2xl xmed:text-4xl text-ams-taupe">Start planning your event now</h2>
-            <div class="text-center">
-                <a class="inline-block py-3 px-12 bg-ams-gold text-ams-white font-serif text-xl xmed:text-lg tracking-wide button--primary button focus:outline-none xmed:px-8" href="rfp.html">Click Here</a>
-            </div>
-       </article>
+{% endif %}
+
+{# Action Card #}
+{% if pageCMS['action-card'] and pageCMS['action-card'].action_card %}
+    {% set action_card = pageCMS['action-card'].action_card %}
+    <section class="grid w-full mb-10 xmed:mb-0 p-6 xmed:py-11 bg-ams-gold">
+        <section class="max-w-screen-xl mx-auto w-full">
+            <article class="text-center pt-12 xmed:pt-9 pb-6 xmed:pb-10 xmed:mx-4 bg-ams-white shadow-md">
+                    {% if action_card.title %}
+                        <h2 class="px-12 pb-5 xmed:pb-8 font-serif text-2xl xmed:text-4xl text-ams-taupe">{{ action_card.title | safe }}</h2>
+                    {% endif %}
+                    
+                    {% if action_card.action.simple_action %}
+                        {% set cta = action_card.action.simple_action %}
+                        {% set trg = '_blank' if not cta.internal else '_self' %}
+                        <div class="text-center">
+                            <a class="inline-block py-3 px-12 bg-ams-gold text-ams-white font-serif text-xl xmed:text-lg tracking-wide button--primary button focus:outline-none xmed:px-8" target="{{trg}}" href="{{cta.href}}">{{ cta.copy | safe }}</a>
+                        </div>
+                    {% endif %}
+                    
+            </article>
+        </section>
     </section>
-</section>
+{% endif %}
+
