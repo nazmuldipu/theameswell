@@ -1,23 +1,19 @@
 ---
 layout: base.njk
-pagename: happenings-detail
-meta_title: Mountain View Events | Silicon Valley Hotels | Ameswell
-meta_description: "Join us at The Ameswell Hotel and Roger Bar and Restaurant in Mountain View for fun live events. Guests can enjoy live music, fitness classes, expert speakers series and more. Check our event calendar for details."
-canonical_href: https://www.theameswellhotel.com
-permalink: "build/happenings-detail.html"
+pagename: index
+permalink: "build/happenings-detail/index.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
 ---
 {% from "macros.njk" import scaled_image %}
 {% from "buttons.njk" import primaryButton %}
+{% from "global-image.njk" import global_image %}
 
 <div id="pageHero" class="bg-ams-primary w-full pt-12 xmed:pt-16">
 </div>
 <section class="bg-ams-base w-full">
     <section class="grid grid-cols-1 xmed:grid-cols-3 max-w-ameswel  m-auto mt-7 xmed:mt-16 mb-12 xmed:mb-40 gap-x-8">
         <section class="xmed:max-w-md">
-            <a class="block pb-1 xmed:pb-8" href="/happenings.html">
+            <a class="block pb-1 xmed:pb-8" href="/happenings">
                 <img class="inline-block pl-6 xmed:pl-0" alt="previous icon" src="/images/prev_icon.svg" class="prev" width="15" height="24"></img>
                 <span class="text-lg">back to the happenings</span>
             </a>
@@ -38,30 +34,9 @@ fabExternalLink: true
         </h2>
     </header>
     <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
-        {% for event in data.events %}
-            {% set imgObj = {"artDirection": [
-                {
-                    "classes": "image-loader",
-                    "media": "(min-width:900.1px)",
-                    "sizes": "100vw",
-                    "type": "jpg",
-                    "src": event.image,
-                    "alt": "The Ameswell hotel exterior",
-                    "intrinsicwidth": "800"
-                },
-                {
-                    "classes": "image-loader",
-                    "media": "(max-width:900px)",
-                    "sizes": "100vw",
-                    "type": "jpg",
-                    "src": event.image,
-                    "alt": "The Ameswell hotel exterior",
-                    "intrinsicwidth": "800"
-                }
-                ], classes: 'w-full h-96 object-cover event_id_' + event.id }%}
-
-            {{ scaled_image(imgObj) }}
-        {% endfor %}
+        {% for event in data2.happenings %}
+        {{ global_image(event.image_.global_image, classes = 'w-full h-96 object-cover event_id_' + event.id, imgClass = 'w-full h-96 object-cover') }}
+    {% endfor %}
     </article>
     <article id="also_like" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 gap-6 xmed:gap-16">
     </article>
