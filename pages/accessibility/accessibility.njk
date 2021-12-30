@@ -31,7 +31,7 @@ permalinkBypassOutputDir: true
         {{item.label}}<br>
         <a href="{{phone.href}}" class="text-ams-cyan">{{phone.copy}}</a><br>
         <a href="{{email.href}}" target="_blank" class="text-ams-cyan">{{email.copy}}</a><br>
-        <a href="{{location.href}}" target="_blank" rel="noreferrer" class="text-ams-gold underline">{{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}</a>
+        <a href="{{location.href}}" target="_blank" rel="noreferrer" class="text-ams-gold underline">{{ address_format(location.street_address, location.city, location.state, location.zip) }}</a>
     {% endif %}
     </article>
 </section>
