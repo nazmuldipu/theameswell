@@ -1,5 +1,5 @@
 "use strict";
-import * as data from '../_data/happenings-data.json';
+import * as data from '../_data/data2.json';
 
 const events = data.happenings.map((item)=> {
   return {
@@ -179,9 +179,15 @@ const renderOurHappeningsCard = (event) => {
   const eventPicElement = document.querySelector('.event_id_' + event.id)
 
   let ctaEle = '';
-  event.cta.forEach(element => {
-    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
+  event.actions.forEach(item => {
+    const element = item.action
+    if (element.type == 'primary') {
+      ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.copy}</a>
               `
+    }else if (element.type == 'details-link-outline') {
+      ctaEle += `<a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">${element.copy}</a>`
+    }
+    
   });
 
   return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
@@ -217,7 +223,6 @@ const renderOurHappeningsCard = (event) => {
             </span>
             <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
               ${ctaEle}
-              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">More Info</a>
             </div>
           </section>`;
 }

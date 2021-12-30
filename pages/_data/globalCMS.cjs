@@ -32,7 +32,7 @@ async function getAllData() {
         manipulateData = {}
     }
 
-    fs.writeFileSync(`${__dirname}/happenings-data.json`, JSON.stringify(manipulateData.happenings, null, 4))
+    fs.writeFileSync(`${__dirname}/data2.json`, JSON.stringify(manipulateData.happenings, null, 4))
 
     return  manipulateData
 

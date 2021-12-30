@@ -8,6 +8,7 @@ permalinkBypassOutputDir: true
 subfooter__form %}
 {% from "buttons.njk" import primaryButton %}
 {% from "global-image.njk" import global_image %}
+
 {% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
     {% for item in pageCMS['top-banner'].simple_article %}
         <section id="pageHero" class="bg-ams-primary h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
@@ -20,30 +21,9 @@ subfooter__form %}
         </section>
     {% endfor %}
 {% endif %}
-<div id=""></div>
 <section class="xmed:bg-ams-base w-full text-ams-primary hidden">
-    {% for event in data.events %}
-        {% set imgObj = {"artDirection": [
-      {
-        "classes": "image-loader",
-        "media": "(min-width:900.1px)",
-        "sizes": "100vw",
-        "type": "jpg",
-        "src": event.image,
-        "alt": "The Ameswell hotel exterior",
-        "intrinsicwidth": "800"
-      },
-      {
-        "classes": "image-loader",
-        "media": "(max-width:900px)",
-        "sizes": "100vw",
-        "type": "jpg",
-        "src": event.image,
-        "alt": "The Ameswell hotel exterior",
-        "intrinsicwidth": "800"
-      }
-    ], classes: 'w-full h-96 object-cover event_id_' + event.id }%}
-        {{ scaled_image(imgObj) }}
+    {% for event in data2.happenings %}
+        {{ global_image(event.image_.global_image, classes = 'w-full h-96 object-cover event_id_' + event.id) }}
     {% endfor %}
 </section>
 <!-- calendar start-->
@@ -81,58 +61,8 @@ subfooter__form %}
         </header>
     {% endif %}
     
-    <article class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24">
-        {% if globalCMS['happenings'] and globalCMS['happenings'].happenings %}
-            {% for item in globalCMS['happenings'].happenings %}
-                {% set to_link = '/happenings-detail/?id=' + item.id%}
-                <section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
-                    <a class="hidden xmed:block" href="{{to_link}}">
-                        <figure>
-                            {{global_image(item.image_.global_image)}}
-                            <figcaption>
-                                <header class="px-6 py-4 text-left bg-ams-white">
-                                    <h3 class="text-lg font-sans">
-                                    {{item.time}}
-                                    </h3>
-                                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
-                                    {{item.title}}
-                                    </h2>
-                                </header>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <span class="xmed:hidden">
-                        <figure>
-                            {{global_image(item.image_.global_image)}}
-                            <figcaption>
-                                <header class="px-6 py-4 text-left bg-ams-white">
-                                    <h3 class="text-lg font-sans">
-                                    {{item.time}}
-                                    </h3>
-                                    <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
-                                    {{item.title}}
-                                    </h2>
-                                </header>
-                            </figcaption>
-                        </figure>
-                    </span>
-                    <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
-                        {% for data in item.actions %}
-                            {% set cta = data.action %}
-                            {% if cta.type == 'details-link-outline' %}
-                                <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="{{to_link}}">
-                                {{cta.copy}}
-                                </a>
-                            {% elif cta.type == 'primary' %}
-                                <a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display " href="{{cta.url}}" target="_blank">
-                                {{cta.copy}}
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </section>
-            {% endfor %}
-        {% endif %}
+    <article id="our_happenings" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24">
+        
     </article>
     {% if object %}
         <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
