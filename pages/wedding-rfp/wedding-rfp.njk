@@ -22,6 +22,7 @@ permalinkBypassOutputDir: true
             {{ 'readonly' if (item.readonly == true) }}/>
     </label>
 {% endmacro %}
+
 {% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
     {% for item in pageCMS['top-banner'].simple_article %}
         <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
@@ -31,70 +32,25 @@ permalinkBypassOutputDir: true
         </section>
     {% endfor %}
 {% endif %}
-{% if pageCMS['rfp-form'] and pageCMS['rfp-form'].form %}
-    {% set item = pageCMS['rfp-form'].form %}
-    <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
-        <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:border-2 xmed:shadow-md">
-            <div class="w-full grid justify-items-center -mt-24 xmed:-mt-16 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
-                <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
-                    <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
-                        <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
-                            {{item.title}}
-                        </h2>
-                        <h3 class="title xmed:title-display text-xl xmed:text-3xl py-4 xmed:py-8">
-                            {{item.sub_title}}
-                        </h3>
-                    </section>
-                </article>
-            </div>
-            <div class="w-full grid justify-items-center px-6 xmed:px-0 bg-ams-base xmed:bg-transparent">
-                <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
-                    <form-sender data-type="wedding">
-                        <form>
-                            {% for inp in item.inputs %}
-                                {% if inp.title %}
-                                    <h3 class="title xmed:text-xl py-4 xmed:py-8">
-                                        {{inp.title}}
-                                    </h3>
-                                {% endif %}
 
-                                {% if inp.type == 'radio' %}
-                                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                                        {% for radio in inp.items %}
-                                            <div class="space-x-2 items-center">
-                                                <input type="radio" name="desiredLocation" id="{{radio.id}}" value="{{radio.value}}" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                                <label for="greatLawn">{{radio.title}}</label>
-                                            </div>
-                                        {% endfor %}
-                                    </label>
-
-                                {% elif inp.type == 'dropdown' %}
-                                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                                        {{inp.label}}<br>
-                                        <select aria-required="true" name="ceremonyPlace" id="ceremonyPlace" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
-                                            <option value="" disabled selected hidden></option>
-                                            {% for option in inp.items %}
-                                                <option value="{{option.value}}">{{option.title}}</option>
-                                            {% endfor %}
-                                        </select>
-                                    </label>
-
-                                {% elif inp.type == 'textarea' %}
-                                    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                                        {{inp.label}}<br>
-                                        <textarea name="{{item.name}}" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary min-h-l bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50"></textarea>
-                                    </label>
-                                {% else %}
-                                    {{form_input(item = inp)}}
-                                {% endif %}
-                            {% endfor %}
-
-                            {{ primaryButton("#", item.cta, 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
-                            <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
-                        </form>
-                    </form-sender>
-                </article>
-            </div>
+<div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
+    <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:border-2 xmed:shadow-md">
+        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-16 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
+            <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
+                <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
+                    <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
+                        Congratulations!
+                    </h2>
+                    <h3 class="title xmed:title-display text-xl xmed:text-3xl py-4 xmed:py-8">
+                        Let’s start planning your wedding
+                    </h3>
+                </section>
+            </article>
+        </div>
+        <div class="w-full grid justify-items-center px-6 xmed:px-0 bg-ams-base xmed:bg-transparent">
+            <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
+                <div id="wedding-rfp-form"></div>
+            </article>
         </div>
     </div>
 {% endif %}
