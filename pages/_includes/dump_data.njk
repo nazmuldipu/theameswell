@@ -1,6 +1,6 @@
 {% macro dump_data(options={seoDump:false}) %}
         <!-- begin GraphQL data dump -->
-    {% if meta.env == 'local' %}
+    {% if meta.env == 'development' %}
     <style>
     #data-dump-view-toggle{
         height: auto;

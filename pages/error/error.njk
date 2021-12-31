@@ -6,21 +6,28 @@ permalinkBypassOutputDir: true
 ---
 
 <section class="w-full xmed:max-w-screen-lg mt-24 mb-16 min-h-screen">
-    {% if pageCMS[''] %}
-        
-    {% endif %}
-    <article class="px-8 xmed:px-0">
-        <h2 class="title text-3xl pb-8">
-            404 Error
-        </h2>
+    {% if pageCMS['contents'] and pageCMS['contents'].simple_article %}
+        {% for item in pageCMS['contents'].simple_article %}
+            <article class="px-8 xmed:px-0">
+                <h2 class="title text-3xl pb-8">
+                    {{item.title}}
+                </h2>
 
-        <h3 class="title text-2xl">
-            Sorry, it looks like the link is broken or the page has been moved.
-        </h3>
-        <p>
-            <a class="text-ams-gold underline" href="#" onclick="window.history.back();">Go back</a> 
-            or head to the 
-            <a class="text-ams-gold underline" href="index.html">homepage</a>.
-        </p>
-    </article>
+                <h3 class="title text-2xl">
+                    {{item.sub_title}}
+                </h3>
+                <div>
+                    {% for data in item.links %}
+                        {% set cta = data.action %}
+                        {% if cta.type == 'back' %}
+                            <a class="text-ams-gold underline" href="#" onclick="window.history.back();">{{cta.copy}}</a> 
+                            {{item.footer}}
+                        {% else %}
+                            <a class="text-ams-gold underline" href="index.html">{{cta.copy}}</a>.
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </article>
+        {% endfor %}
+    {% endif %}
 </section>
