@@ -1,6 +1,7 @@
 "use strict";
-import * as data from '../_data/data2.json';
+import * as data from '../_data/happeningsData.json';
 
+if (data.happenings && data.happenings.length) {
 const events = data.happenings.map((item)=> {
   return {
     ...item,
@@ -438,3 +439,4 @@ Happenings.prototype = {
 };
 
 new Happenings();
+}

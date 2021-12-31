@@ -1,6 +1,16 @@
-import * as data from "../_data/data2.json";
+import * as data from "../_data/happeningsData.json";
 const temp_id = window.location.search.split("=")[1];
-const events = data.happenings;
+if (data.happenings && data.happenings.length) {
+const events = data.happenings.map((item)=> {
+  return {
+    ...item,
+    date: {
+      day: parseInt(item.date.day),
+      month: parseInt(item.date.month),
+      year: parseInt(item.date.year),
+    }
+  }
+})
 let viewAll = false;
 const months = [
   "January",
@@ -150,4 +160,4 @@ if (events.length && !isNaN(temp_id) && temp_id > 0) {
     viewAllEle(event);
     btn_view_all.style.visibility='hidden';
   });
-}
+}}
