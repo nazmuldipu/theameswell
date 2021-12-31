@@ -22,9 +22,11 @@ subfooter__form %}
     {% endfor %}
 {% endif %}
 <section class="xmed:bg-ams-base w-full text-ams-primary hidden">
-    {% for event in data2.happenings %}
-        {{ global_image(event.image_.global_image, classes = 'w-full h-96 object-cover event_id_' + event.id) }}
-    {% endfor %}
+    {% if happeningsData.happenings and happeningsData.happenings | length > 0 %}
+        {% for event in happeningsData.happenings %}
+            {{ global_image(event.image_.global_image, classes = 'w-full h-96 object-cover event_id_' + event.id) }}
+        {% endfor %}
+    {% endif %}
 </section>
 <!-- calendar start-->
 <section class="xmed:bg-ams-base w-full text-ams-primary">

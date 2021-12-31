@@ -34,9 +34,11 @@ permalinkBypassOutputDir: true
         </h2>
     </header>
     <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
-        {% for event in data2.happenings %}
-        {{ global_image(event.image_.global_image, classes = 'w-full h-96 object-cover event_id_' + event.id, imgClass = 'w-full h-96 object-cover') }}
-    {% endfor %}
+        {% if happeningsData.happenings and happeningsData.happenings | length > 0 %}
+            {% for event in happeningsData.happenings %}
+                {{ global_image(event.image_.global_image, classes = 'w-full h-96 object-cover event_id_' + event.id, imgClass = 'w-full h-96 object-cover') }}
+            {% endfor %}
+        {% endif %}
     </article>
     <article id="also_like" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 gap-6 xmed:gap-16">
     </article>
