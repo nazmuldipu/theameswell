@@ -1,40 +1,52 @@
 ---
 layout: base.njk
 pagename: gallery
-meta_title: "theameswellhotel | Gallery"
-meta_description: "Gallery"
-permalink: "build/gallery.html"
+permalink: "build/gallery/index.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
 ---
 {% from "macros.njk" import scaled_image %}
+{% from "global-image.njk" import global_image %}
 
-{% macro renderGalleryItems(items) %}
-    {% for item in items %}
-        {% set image = gallery_images[item] %}
-        {% set defaultHref = image.artDirection | first %}
-        <div href="{{defaultHref.src}}.jpg" class="cursor-pointer pb-6 xmed:pb-16" >
-            {{ scaled_image(image) }}
-        </div>
-    {% endfor %}
-{% endmacro %}
+{% if pageCMS['images'] and pageCMS['images']
+    .global_image_arr and pageCMS['images']
+    .global_image_arr
+    .images %}
+    {% set cmsImags = pageCMS['images'].global_image_arr.images %}
+{% endif %}
 
-<div id="pageHero" class="bg-ams-taupe w-full justify-items-center pt-20 overflow-hidden"></div>
+{% if cmsImags %}
+    {% macro renderGalleryItems(items) %}
 
-<section class="segment-outer bg-ams-taupe pb-2 px-6 xmed:px-14">
-    {% set items = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ] %}
-    {% set oddItems = items | select("odd") %}
-    {% set evenItems = items | select("even") %}
-    <article class="grid grid-cols-1 xmed:grid-cols-2 gap-16">
-        <figure class="mobile-gallery xmed:hidden">
-            {{renderGalleryItems(items)}}
-        </figure>
-        <figure class="gallery hidden xmed:block">
-            {{renderGalleryItems(evenItems)}}
-        </figure>
-        <figure class="gallery hidden xmed:block">
-            {{renderGalleryItems(oddItems)}}            
-        </figure>
-    </article>
-</section>
+        {% for item in items %}
+            {% set image = cmsImags[item].global_image %}
+            <div href="{{image.src | theImgSrc}}" class="cursor-pointer pb-6 xmed:pb-16" >
+                {{ global_image(image) }}
+            </div>
+        {% endfor %}
+
+    {% endmacro %}
+
+    <div id="pageHero" class="bg-ams-taupe w-full justify-items-center pt-20 overflow-hidden"></div>
+
+    <section class="segment-outer bg-ams-taupe pb-2 px-6 xmed:px-14">
+        {% set items = [] %}
+        {% for image in cmsImags %}
+            {% set items = (items.push(loop.index0), items) %}
+        {% endfor %}
+
+        {% set oddItems = items | select("odd") %}
+        {% set evenItems = items | select("even") %}
+        <article class="grid grid-cols-1 xmed:grid-cols-2 gap-16">
+            <figure class="mobile-gallery xmed:hidden">
+                {{renderGalleryItems(items)}}
+            </figure>
+            <figure class="gallery hidden xmed:block">
+                {{renderGalleryItems(evenItems)}}
+            </figure>
+            <figure class="gallery hidden xmed:block">
+                {{renderGalleryItems(oddItems)}}
+            </figure>
+        </article>
+    </section>
+
+{% endif %}
