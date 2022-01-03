@@ -321,7 +321,7 @@ cms_description %}
                         {% if item.links %}
                             {% for cta in item.links %}
                                 {% set action = cta.action %}
-                                <a href="{{item.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{item.copy}}</a>
+                                <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{action.copy}}</a>
                             {% endfor %}
                         {% endif %}
                     </nav>
@@ -345,10 +345,10 @@ cms_description %}
                                 {% set cta = link.action %}
                                 {% if cta.type == 'author' %}
                                     <a href="{{cta.url}}" target="_blank">
-                                        <p class="text-ams-cyan font-semibold underline">-{{cta.copy}}</p>
+                                        <p class="text-ams-cyan font-semibold underline">{{cta.copy}}</p>
                                     </a>
                                 {% endif %}
-                                {% if cta.type == 'author' %}
+                                {% if cta.type == 'primary' %}
                                     <nav class="mt-8">
                                         <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.copy}}</a>
                                     </nav>

@@ -218,10 +218,10 @@
                                     <div class="max-w-3xl mx-auto my-4 text-left xmed:text-center break-words font-sans text-base xmed:text-lg text-ams-primary cms-description">{{slide.description | safe}}</div>
                                     <p class="text-left xmed:text-center my-4 font-sans font-bold text-base xmed:text-lg text-ams-primary">{{slide.footer}}</p>
                                     <div class="text-left xmed:text-center">
-                                        {% if item.links %}
-                                            {% for cta in item.links %}
+                                        {% if slide.links %}
+                                            {% for cta in slide.links %}
                                                 {% set action = cta.action %}
-                                                <a class="my-4 inline-block border-b border-ams-gold text-ams-gold font-serif font-medium text-lg text-center" href="{{item.url}}">{{item.copy}}</a>
+                                                <a class="my-4 inline-block border-b border-ams-gold text-ams-gold font-serif font-medium text-lg text-center" href="{{action.url}}">{{action.copy}}</a>
                                             {% endfor %}  
                                         {% endif %}
                                     <div>
