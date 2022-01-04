@@ -10,7 +10,6 @@
     }
 }
 @layer base{
-    /* TODO */
     .bold-and-underline {
         @apply font-bold;
         @apply underline;

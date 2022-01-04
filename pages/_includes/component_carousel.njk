@@ -57,11 +57,11 @@
                                     <div class="pt-4 pb-4 text-center">
                                         {% for act in slide.actions %}
                                             {% set cta = act.action %}
-                                            {% if cta.type == '' %}
+                                            {% if cta.type == 'view-offer' %}
                                                 <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">
-                                                    <span class="{{ 'hidden xmed:inline-block' if not mobile_copy == '' }}">{{copy | safe}}</span>
-                                                    {% if mobile_copy %}
-                                                        <span class="xmed:hidden">{{mobile_copy | safe}}</span>
+                                                    <span class="{{ 'hidden xmed:inline-block' if not cta.mobile_copy == '' }}">{{cta.copy | safe}}</span>
+                                                    {% if cta.mobile_copy %}
+                                                        <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
                                                     {% endif %}
                                                 </a>
                                             {% endif %}
@@ -224,12 +224,19 @@
                                                     <span class="text-ams-primary">{{cms_description(iconItem.description + ' ft<sup>2</sup>')}}
                                                     </span>
                                                 </li>
-                                            {% endif %}
 
-                                            {% if iconItem.type == 'bed' %}
+                                            {% elif iconItem.type == 'bed' %}
                                                 <li class="rooms-gallery--icon-sleeps grid justify-items-center content-start text-center w-28">
                                                     {# {{svg_icon("bed",width="48", height="48", fill="#ec008c", sclass="icon inline-block")}}
                                                     <span>Sleeps {{slide.icons.capacity}} </span> #}
+                                                    {% if iconItem.icon == '' %}
+                                                        {{svg_icon("bed", width="48", height="48", fill="#213E4C", sclass="icon inline-block mt-2", textColor="true")}}
+                                                    {% endif %}
+                                                    <span class="text-ams-primary">{{cms_description(iconItem.description)}}
+                                                    </span>
+                                                </li>
+                                            {% else %}
+                                                <li class="rooms-gallery--icon-sleeps grid justify-items-center content-start text-center w-28">
                                                     {% if iconItem.icon == '' %}
                                                         {{svg_icon("bed", width="48", height="48", fill="#213E4C", sclass="icon inline-block mt-2", textColor="true")}}
                                                     {% endif %}
@@ -286,7 +293,7 @@
                 {% for slide in content %}
                     <div class="swiper-slide">
                         <div class="grid grid-cols-1 xmed:mx-4 xmed:mt-12">
-                            {{global_image(slide.image.global_image)}}
+                            {{global_image(slide.image.global_image, classes="h-72 xmed:h-96", imgClass = 'swiper-lazy w-full h-full object-cover swiper-lazy-loaded')}}
                             <article class="xmed:my-8 {{ 'px-4' if isRoomDetail == true }}">
                                 <h2 class="w-full {{ 'pr-0 xmed:pr-5' if isRoomDetail == false }} title-display mt-12 xmed:mt-0 text-2xl xmed:text-4xl text-center xmed:text-left">
                                     {{slide.title}}
@@ -313,12 +320,14 @@
                                         <div class="mt-10 mb-8 xmed:mt-0 justify-self-center xmed:justify-self-end text-center xmed:text-left">
                                             {% for act in slide.actions %}
                                                 {% set cta = act.action %}
-                                                <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
-                                                    <span class="{{ 'hidden xmed:inline-block' if not mobile_copy == '' }}">{{copy | safe}}</span>
-                                                    {% if mobile_copy %}
-                                                        <span class="xmed:hidden">{{mobile_copy | safe}}</span>
-                                                    {% endif %}
-                                                </a>
+                                                {% if cta.type == 'view-offer' %}
+                                                    <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                                        <span class="{{ 'hidden xmed:inline-block' if not cta.mobile_copy == '' }}">{{cta.copy | safe}}</span>
+                                                        {% if cta.mobile_copy %}
+                                                            <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                                                        {% endif %}
+                                                    </a>
+                                                {% endif %}
                                             {% endfor %}
                                         </div>
                                     {% endif %}

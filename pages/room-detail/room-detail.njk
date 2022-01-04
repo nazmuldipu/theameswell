@@ -212,9 +212,9 @@ subfooter__form %}
                                     {% for action in item.links %}
                                         {% set cta = action.action %}
                                         <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
-                                            <span class="{{ 'hidden xmed:inline-block' if not mobile_copy == '' }}">{{copy | safe}}</span>
-                                            {% if mobile_copy %}
-                                                <span class="xmed:hidden">{{mobile_copy | safe}}</span>
+                                            <span class="{{ 'hidden xmed:inline-block' if not cta.mobile_copy == '' }}">{{cta.copy | safe}}</span>
+                                            {% if cta.mobile_copy %}
+                                                <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
                                             {% endif %}
                                         </a>
                                     {% endfor %}
