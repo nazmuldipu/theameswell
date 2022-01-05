@@ -4,7 +4,7 @@
 {% if not fabCopyLines %}
   {% set fabCopyLines = ['Book', 'a Room'] %}
 {% endif %}
-<a href="{{ fabUrl if fabUrl else 'contact.html' }}" {{ 'target="_blank"' if fabExternalLink }} class="page-fab fixed bottom-0 right-4 z-50 w-fab-container-sm xmed:w-fab-container-lg">
+<a href="{{ fabUrl if fabUrl else 'contact/' }}" {{ 'target="_blank"' if fabExternalLink }} class="page-fab fixed bottom-0 right-4 z-50 w-fab-container-sm xmed:w-fab-container-lg">
     <svg viewBox="0 0 176 163" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-fab-width-sm h-fab-height-sm xmed:w-fab-width-lg xmed:h-fab-height-lg">
         <path d="M31.5472 44H144.453L176 164H0L31.5472 44Z" fill="#{{ fabBg if fabBg else '857550' }}"/>
         <path d="M148 56C144.694 41.0141 140.992 26.9041 129.989 16.402C118.985 5.89998 104.061 1.1213e-06 88.5 0C72.9388 -1.1213e-06 58.0149 5.89998 47.0115 16.402C36.0081 26.9041 32.3056 41.8028 29 56H88.5H148Z" fill="#{{ fabBg if fabBg else '857550' }}"/>
@@ -109,7 +109,7 @@
           Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
       </p>
       <nav class="pt-7 pb-2 xmed:text-center">
-          <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
+          <a href="offers/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
       </nav>
   </article>
 {% endmacro %}
