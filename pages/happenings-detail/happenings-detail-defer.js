@@ -71,7 +71,7 @@ const renderOurHappeningsCard = (event) => {
   });
 
   return `<section class="bg-ams-white xmed:shadow-2xl xmed:mb-10 w-ful">
-            <a class="hidden xmed:block" href="/happenings-detail.html?id=${event.id}">
+            <a class="hidden xmed:block" href="/happenings-detail/?id=${event.id}">
               <figure>
                 ${eventPicElement.outerHTML}
                 <figcaption>
@@ -103,7 +103,7 @@ const renderOurHappeningsCard = (event) => {
             </span>
             <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 pb-5">
               ${ctaEle}
-              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail.html?id=${event.id}">More Info</a>
+              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail/?id=${event.id}">More Info</a>
             </div>
           </section>`;
 }
