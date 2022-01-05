@@ -2687,11 +2687,11 @@
   "footer_content": [
     {
       "text": "Accessibility",
-      "href": "accessibility.html"
+      "href": "accessibility/"
     },
     {
       "text": "Offers",
-      "href": "offers.html"
+      "href": "offers/"
     },
     {
       "text": "Careers",
@@ -2701,19 +2701,19 @@
     },
     {
       "text": "Press",
-      "href": "press.html"
+      "href": "press/"
     },
     {
       "text": "Contact Us",
-      "href": "contact.html"
+      "href": "contact/"
     },
     {
       "text": "Privacy Policy",
-      "href": "privacy.html"
+      "href": "privacy/"
     },
     {
       "text": "FAQ",
-      "href": "faq.html"
+      "href": "faq/"
     },
     {
       "text": "Storey Hotel Mgmt.",
@@ -2724,7 +2724,7 @@
     },
     {
       "text": "Location",
-      "href": "location.html"
+      "href": "location/"
     }
   ],
   "subfooter_image": {
