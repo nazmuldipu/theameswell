@@ -60,8 +60,11 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
           aws-region: us-east-1
-      - name: Sync from Build Directory to s3 Bucket
-        run: aws s3 sync ./build s3://${{ github.event.inputs.bucket }} --acl public-read
+      - name: Sync from Build Directory to s3 Bucket(Encode only .html File with UTF-8)
+        run: |
+          aws s3 sync ./build s3://${{ github.event.inputs.bucket }} --include "*" --exclude "*.html" --acl public-read \
+          && \
+          aws s3 sync ./build s3://${{ github.event.inputs.bucket }} --exclude "*" --include "*.html" --content-type "text/html; charset=utf-8" --acl public-read
       - name: Cloudfront Invalidation 
         run: aws cloudfront create-invalidation --distribution-id ${{ github.event.inputs.cloudfront_id }} --paths "/*"
       - name: Notification Webhook (websocket)
