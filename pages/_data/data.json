@@ -1,19 +1,19 @@
 {
   "preload_fonts": [
     {
-      "href": "fonts/MarkPro.woff2",
+      "href": "/fonts/MarkPro.woff2",
       "type": "font/woff2"
     },
     {
-      "href": "fonts/MarkPro-Bold.woff2",
+      "href": "/fonts/MarkPro-Bold.woff2",
       "type": "font/woff2"
     },
     {
-      "href": "fonts/EksellDisplayWeb-Small.woff2",
+      "href": "/fonts/EksellDisplayWeb-Small.woff2",
       "type": "font/woff2"
     },
     {
-      "href": "fonts/EksellDisplayWeb-Large.woff2",
+      "href": "/fonts/EksellDisplayWeb-Large.woff2",
       "type": "font/woff2"
     }
   ],

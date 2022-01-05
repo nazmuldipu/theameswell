@@ -14,7 +14,7 @@
     @font-face {
         font-display: swap;
         font-family: 'Mark Pro';
-        src: url('../fonts/MarkPro.woff2'), url('../fonts/MarkPro.woff');
+        src: url('/fonts/MarkPro.woff2'), url('/fonts/MarkPro.woff');
         font-weight: 400;
         font-style: normal;
         unicode-range: U+000-5FF;
@@ -23,7 +23,7 @@
     @font-face {
         font-display: swap;
         font-family: 'Mark Pro';
-        src: url('../fonts/MarkPro-Bold.woff2'), url('../fonts/MarkPro-Bold.woff');
+        src: url('/fonts/MarkPro-Bold.woff2'), url('/fonts/MarkPro-Bold.woff');
         font-weight: 700;
         font-style: normal;
         unicode-range: U+000-5FF;
@@ -31,7 +31,7 @@
     @font-face {
         font-display: swap;
         font-family: 'Eksell Display Small';
-        src: url('../fonts/EksellDisplayWeb-Small.woff2'), url('../fonts/EksellDisplayWeb-Small.woff');
+        src: url('/fonts/EksellDisplayWeb-Small.woff2'), url('/fonts/EksellDisplayWeb-Small.woff');
         font-weight: 400;
         font-style: normal;
         unicode-range: U+000-5FF;
@@ -39,7 +39,7 @@
     @font-face {
         font-display: swap;
         font-family: 'Eksell Display Large';
-        src: url('../fonts/EksellDisplayWeb-Large.woff2'), url('../fonts/EksellDisplayWeb-Large.woff');
+        src: url('/fonts/EksellDisplayWeb-Large.woff2'), url('/fonts/EksellDisplayWeb-Large.woff');
         font-weight: 400;
         font-style: normal;
         unicode-range: U+000-5FF;
