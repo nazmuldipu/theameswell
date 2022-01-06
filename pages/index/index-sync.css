@@ -10,11 +10,11 @@
     }
 }
 @layer base{
-    .bold-and-underline {
+    .cms-description .bold-and-underline {
         @apply font-bold;
         @apply underline;
     }
-    .no-underline-text-cyan{
+    .cms-description .no-underline-text-cyan{
         @apply no-underline;
         @apply text-ams-cyan;
     }
