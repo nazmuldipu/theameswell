@@ -38,12 +38,14 @@ permalinkBypassOutputDir: true
 </div>
 {% endfor %}
 {% endif %}
-<div class="grid xmed:justify-items-center w-full bg-ams-base pt-8 xmed:pb-8">
+{% if pageCMS['categories'] and pageCMS['categories'].location_category %}
+
+<div id="location-component" data-categories="{{pageCMS['categories'].location_category | stringify}}" class="location-component grid xmed:justify-items-center w-full bg-ams-base pt-8 xmed:pb-8">
 
     <article class="p-0 xmed:mt-4 xmed:mb-4">
         <section id="desktop_component" class="max-w-screen-xl grid xmed:grid-cols-50-50 gap-4 xmed:p-4">
             <div>
-                <div id="titleBox" class="xmed:pt-8 px-6 xmed:p-10 xmed:bg-ams-white xmed:shadow-md"></div>
+                <div id="titleBox" data-pp="10" class="xmed:pt-8 px-6 xmed:p-10 xmed:bg-ams-white xmed:shadow-md"></div>
                 <nav class="flex flex-row items-center relative m-auto w-max py-2 top-14 xmed:-top-4 px-10 bg-ams-white shadow-md z-20">
                     <button id="previousCategory" class="carousel-button-prev inline-block w-4 h-4 transform rotate-45 justify-self-end border-b-2 border-l-2 border-ams-gold focus:outline-none -indent-xl overflow-hidden">
                         previous
@@ -85,3 +87,5 @@ permalinkBypassOutputDir: true
         </section>
     </article>
 </div>
+
+{% endif %}
