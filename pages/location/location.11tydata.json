@@ -24,37 +24,6 @@
       }
     ]
   },
-  "all_categories": [
-    {
-      "header_title": "Live like a local",
-      "header_body": "Plan your visit with the help of our guide to the best local experiences and find out what it is like to live like a Silicon Valley native."
-    },
-    {
-      "header_title": "Shop",
-      "header_body": "Silicon Valley offers some of the best retail therapy in California."
-    },
-    {
-      "header_title": "Explore",
-      "header_body": "Explore the wide array of local museums that celebrate some of the greatest achievements in space exploration, technology, architecture and art from Mountain View and around the world."
-    },
-    {
-      "header_title": "Sip",
-      "header_body": "Explore the wide array of local museums that celebrate some of the greatest achievements in space exploration, technology, architecture and art from Mountain View and around the world."
-    },
-    {
-      "header_title": "Play",
-      "header_body": "From outdoor adventures to live performances, you will find a wide variety of reasons to stay and to play longer in Mountain View."
-    },
-    {
-      "header_title": "Learn",
-      "header_body": "Whether you are touring or teaching, The Ameswell Hotel is located close to several top-notch institutions."
-    },
-    {
-      "header_title": "Cheer",
-      "header_body": "No matter what season it is or sport you love, you will find world-class teams to support and games to enjoy."
-    }
-  ],
-
   "ameswell":{
     "title": "Ameswell",
     "lat": 37.40739352704049,
