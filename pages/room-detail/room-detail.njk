@@ -1,237 +1,307 @@
 ---
 layout: base.njk
 pagename: room-detail
-meta_title: Mountain View Hotel Rooms | The Ameswell Hotel | Modern Luxury
-meta_description: "Our spacious guest rooms were designed for the ultimate sleep experience, with special attention given to wellness: air, sound, and lighting; organic amenities by Juice Beauty; Wellness Rooms with the Mirror by Lululemon."
-canonical_href: https://www.theameswellhotel.com/room-detail.html
-permalink: "build/room-detail.html"
+permalink: "build/room-detail/index.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "icons.njk" import svgicon %}
-{% from "media-carousel.njk" import media_carousel, special_carousel %}
-{% from "component_carousel.njk" import component_carousel, homepage_offers_carousel %}
-{% from "macros.njk" import scaled_image, offersArticle, subfooter__form %}
+{% from "media-carousel.njk" import media_carousel, special_carousel, cms_media_carousel, cms_special_carousel %}
+{% from "component_carousel.njk" import component_carousel,
+cms_homepage_offers_carousel %}
+{% from "macros.njk" import scaled_image,
+offersArticle,
+subfooter__form %}
 {% from "buttons.njk" import primaryButton %}
 {% from "svgicon.njk" import svg_icon %}
+{% from "global-image.njk" import global_image %}
 
 {% macro textCard(title, text, pClass, childClass)%}
-<section class="w-full grid {{pClass}}">
-    <div class="xmed:mx-9 xmed:pb-4 px-4 xmed:p-6 shadow-sm xmed:shadow-md bg-ams-white {{childClass}}">
-        {% if title %}
-        <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
-            {{title}}
-        </h2>
-        {% endif %}
-        <div class="xmed:text-center text-lg max-w-6xl mx-auto"> {{text}} </div>
-    </div>
-</section>
+    <section class="w-full grid {{pClass}}">
+        <div class="xmed:mx-9 xmed:pb-4 px-4 xmed:p-6 shadow-sm xmed:shadow-md bg-ams-white {{childClass}}">
+            {% if title %}
+                <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
+                    {{title}}
+                </h2>
+            {% endif %}
+            <div class="xmed:text-center text-lg max-w-6xl mx-auto">
+                {{text | safe}}
+            </div>
+        </div>
+    </section>
 {% endmacro %}
-
-<section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-</section>
-
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
+        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+            {% for img in item.image %}
+                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+            {% endfor %}
+        </section>
+    {% endfor %}
+{% endif %}
 <div
     class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-12 pb-8 xmed:pb-14 px-6 bg-pattern--ams-gold">
     <article class="w-full grid justify-items-center">
-        <section class="w-full grid justify-items-center max-w-screen-lg shadow-md">
-            <div class="pb-4 px-4 xmed:shadow-md xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    Sleep is a necessity.<br class="hidden xmed:block">
-                    Really good sleep is a luxury.
-                </h2>
-                <div class="xmed:text-center">
-                    Whether you are working or getting away, your safety is prioritized through our sanitation process,
-                    and your comfort is ensured through thoughtful design, with special attention given to air,
-                    lighting, water and sound quality via state-of-the-art systems. Rest and relaxation is ensured with
-                    luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath
-                    amenities by Juice Beauty.
-                </div>
-            </div>
-        </section>
-        <section class="w-full grid mt-4 xmed:my-12 max-w-screen-lg mx-auto">
-            <div class="py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
-                <div class="xmed:mx-4">
-                    <h2 class="pb-10 title-display text-2xl xmed:text-4xl text-center">
-                        Our rooms feature
-                    </h2>
-                    <div class="grid grid-cols-3 xmed:grid-cols-6 gap-4 xmed:gap-8">
-                    {{svg_icon("wifi", 'Ultra High Speed Wifi', fill="#213e4c", pclass="justify-items-center text-center")}}
-                    {{svg_icon("bed", 'Suite, 1 Bed or 2 Beds', fill="#213e4c", pclass="justify-items-center text-center")}}
-                    {{svg_icon("tv", '65” HD Smart TV', fill="#213e4c", pclass="justify-items-center text-center")}}
-                    {{svg_icon("table", 'Work Space', stroke="#213e4c", pclass="justify-items-center text-center")}}
-                    {{svg_icon("containers", '3 Dining Options', fill="#213e4c", pclass="justify-items-center text-center")}}
-                    {{svg_icon("bath", '100% Organic Toiletries', fill="#213e4c", pclass="justify-items-center text-center")}}                    
+        {% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+            {% for item in pageCMS['top-banner'].simple_article %}
+                <section class="w-full grid justify-items-center max-w-screen-lg shadow-md">
+                    <div class="pb-4 px-4 xmed:shadow-md xmed:p-10 bg-ams-white">
+                        <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                            {{item.title}}<br class="hidden xmed:block">
+                            {{item.sub_title}}
+                        </h2>
+                        <div class="xmed:text-center cms-description">
+                            {{item.description | safe}}
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+        {% endif %}
+        {% if pageCMS['icons'] and pageCMS['icons']
+            .icon_list and pageCMS['icons']
+            .icon_list
+            .icons %}
+            {% set item = pageCMS['icons'].icon_list%}
+            <section class="w-full grid mt-4 xmed:my-12 max-w-screen-lg mx-auto">
+                <div class="py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
+                    <div class="xmed:mx-4">
+                        <h2 class="pb-10 title-display text-2xl xmed:text-4xl text-center">
+                            {{item.title}}
+                        </h2>
+                        <div class="grid grid-cols-3 xmed:grid-cols-6 gap-4 xmed:gap-8">
+                            {% for data in item.icons %}
+                                <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center justify-items-center text-center">
+                                    {{data.icon | safe}}
+                                    <a>
+                                        <span>{{data.title}}</span>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        {% endif %}
     </article>
 </div>
 
 <div class="grid auto-cols-fr justify-items-center w-full bg-ams-base pb-6 xmed:pt-12">
-    <figure class="hidden xmed:block w-full max-w-screen-xl overflow-hidden">
-        {{ media_carousel(imageSlides) }}
-    </figure>
-    <div class="w-full grid justify-items-center max-w-screen-2xl">
-        {{textCard('','Rest and relaxation is ensured with luxurious robes and Rivolta Italian bed linens, plush Sealy mattresses and 100% organic bath amenities by Juice Beauty.', 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
-    </div>
-    <figure class=" xmed:hidden w-full max-w-screen-xl overflow-hidden">
-        {{ special_carousel(imageSlides) }}
-    </figure>
+    {% if pageCMS['slider-images'] and pageCMS['slider-images'].global_image_arr and pageCMS['slider-images'].global_image_arr.images %}
+        <!-- Room list -->
+        {% set items = pageCMS['slider-images'].global_image_arr.images %}
+        <figure class="hidden xmed:block w-full max-w-screen-xl overflow-hidden">
+            {{ cms_media_carousel(items) }}
+        </figure>
+
+        <div class="w-full grid justify-items-center max-w-screen-2xl">
+            {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].text_content %}
+                {{textCard('', pageCMS['rooms-top-content'].text_content.description, 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
+            {% endif %}
+        </div>
+        <figure class=" xmed:hidden w-full max-w-screen-xl overflow-hidden">
+            {{ cms_special_carousel(items) }}
+        </figure>
+    {% endif %}
 </div>
 
 <div class="w-full grid justify-items-center bg-pattern--ams-grey pb-8">
-    <section class="w-full px-6 grid mx-8 my-8 xmed:my-12 justify-items-center max-w-screen-md">
-        <div class="w-full mx-6 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
-            <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                Rooms
-            </h2>
-        </div>
-    </section>  
-
-    <!-- Room list -->
-    {% for room in rooms %}
-    <div class="room-list w-full max-w-screen-2xl border-t border-ams-primary xmed:border-0">
-        {{textCard(room.name, room.description, 'text-center z-10', 'summury pb-20')}}
-
-        <div class="accordion-item grid justify-items-center w-full -mt-16 xmed:-mt-20 xmed:pt-16 pb-6">
-            <!-- toggle button -->
-            <div class="accordion-button hidden xmed:grid grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
-                <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span> <span>View</span>
-            </div>
-
-            <!-- Toggle content -->
-            <div class="accordion-content w-full overflow-hidden transition justify-items-center z-0">
-                {% for type in room.types %}
-                    <article class="mx-6 xmed:mx-9">
-                        <div class="grid grid-cols-1 xmed:grid-cols-2 gap-2 mt-20 mb-16">
-                            <!-- sliding images -->
-                            <div class="rooms-carousel hidden xmed:block xmed:h-carousel-lg xmed:overflow-hidden">
-                                {{ media_carousel(type.imageSlides, '', '', true) }}
-                            </div>
-                            <!-- room types content -->
-                            <div class="shadow-sm xmed:shadow-md bg-ams-white">
-                                <h2 class="title-display px-2 text-2xl xmed:text-4xl pt-4 py-5 text-center">
-                                    {{type.name}}
-                                </h2>
-                                {% for des in type.description %}
-                                    <div class="text-center xmed:text-left text-lg max-w-6xl mx-auto px-6 pb-4">{{des}}</div>
-                                {% endfor %}
-
-                                <!-- svg icons -->
-                                <div class="w-full grid justify-items-center" >
-                                    <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
-                                        {{svg_icon("size",  type.icons.sqft + ' sqft', width="48", height="48", fill="#ec008c", pclass="justify-items-center text-center", sclass="w-20 xmed:w-28 icon inline-block")}}
-                                        {{svg_icon("bed",  type.icons.beds, width="48", height="48", fill="#ec008c", pclass="justify-items-center text-center", sclass=" w-20 xmed:w-28 icon inline-block")}}
-                                        {{svg_icon("group",  'Sleeps ' + type.icons.capacity , width="48", height="48", fill="#ec008c", pclass="justify-items-center text-center", sclass="w-20 xmed:w-28 icon inline-block")}}
-                                    </div>
-                                </div>
-
-                                <!-- mobile slider -->
-                                <div class="rooms-carousel block xmed:hidden mx-7">
-                                    {{ media_carousel(type.imageSlides) }}
-                                </div>
-                                <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
-                                    Details
-                                </h2>
-                                <ul class="list-disc px-6 xmed:max-w-xl mx-4 text-base xmed:text-lg pb-8">
-                                    {% for det in type.details %}
-                                        <li>{{det}}</li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {% if not loop.last %}                            
-                            <div class="hidden xmed:block max-w-5xl mx-auto">
-                                <div class="w-full border-t-4 border-ams-gold h-1"></div>
-                            </div>
-                        {% endif %}
-                    </article>
-                {% endfor %}
-            </div>
-
-            <div class="accordion-button grid xmed:hidden grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
-                <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span> <span>View</span>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-<!--offers desktop design-->
-
-<div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
-    <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
-        <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
-            <figcaption class="mx-20 px-2 mb-8">
-                <h2 class="title-display text-2xl xmed:text-4xl pb-4 text-ams-primary xmed:text-center"> Offers </h2>
-                <div class="xmed:text-center text-ams-primary text-lg"> Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel. </div>
-                <div class="text-center pt-4 pb-4">
-                    <a href="offers.html" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW All OFFERS</a>
-                </div>
-                <hr class="border-solid border border-ams-gold xmed:mx-3">
-            </figcaption>
-            <figure class="w-full max-w-screen-xl overflow-hidden">
-                {{ component_carousel(offers) }}
-            </figure>    
-        </div>
-    </section>
-</div>
-
-<!--offers desktop design end-->
-<div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
-    <div class="w-full grid justify-items-center bg-ams-base">
-        <div class="w-full px-6 grid justify-items-center max-w-screen-md">
-            <div class="w-full mx-6 my-8 py-4 px-4 xmed:p-8 xmed:my-0 shadow-sm xmed:shadow-md bg-ams-white">
+    {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].text_content %}
+        <section class="w-full px-6 grid mx-8 my-8 xmed:my-12 justify-items-center max-w-screen-md">
+            <div class="w-full mx-6 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
                 <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                    Room Amenities
+                    {{pageCMS['rooms-top-content'].text_content.title}}
                 </h2>
             </div>
-        </div>
-    </div> 
-    {% for feature in features %}
-        <div class="w-full grid justify-items-center max-w-screen-xl xmed:mt-14 {{feature.classes}}" >
-            <section class="shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2 xmed:mx-4">
-                <div class="px-6 mt-6 block xmed:hidden">
-                    <figure>
-                        {{ scaled_image(feature.img) }}
-                    </figure>
-                </div>
-                <div class="p-6">
-                    <h2 class="title-display text-2xl xmed:text-4xl xmed:pt-8">{{feature.title}}</h2>
-                    <div class="pt-2 pb-0 text-base xmed:text-lg max-w-6xl"> {{feature.text}} </div>
-                </div>
-                <div class="p-8 hidden xmed:block">
-                    <figure>
-                        {{ scaled_image(feature.img) }}
-                    </figure>
-                </div>
-            </section>
-        </div>
-    {% endfor %}
-</div>
+        </section>
+        {%endif%}
 
-<section class="xmed:hidden w-full bg-pattern--ams-grey xmed:pb-24 z-10">
-    <section class="max-w-7xl mx-auto px-6">
-        <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
-            <aside class="mb-12">
-                {{offersArticle()}}
-            </aside>
-            <aside class="xmed:col-span-2">
-                <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white">
-                    {{ homepage_offers_carousel(offers, isRoomDetail = true) }}
-                </figure>
-            </aside>
-        </article>
+        {% if pageCMS['rooms'] and pageCMS['rooms'].room_detail %}
+            <!-- Room list -->
+            {% for room in pageCMS['rooms'].room_detail %}
+                <div class="room-list w-full max-w-screen-2xl border-t border-ams-primary xmed:border-0">
+                    {{textCard(room.name, room.description, 'text-center z-10', 'summury pb-20')}}
+
+                    <div class="accordion-item grid justify-items-center w-full -mt-16 xmed:-mt-20 xmed:pt-16 pb-6">
+                        <!-- toggle button -->
+                        <div class="accordion-button hidden xmed:grid grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
+                            <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span>
+                            <span>View</span>
+                        </div>
+
+                        <!-- Toggle content -->
+                        <div class="accordion-content w-full overflow-hidden transition justify-items-center z-0">
+                            {% for type in room.types %}
+                                <article class="mx-6 xmed:mx-9">
+                                    <div class="grid grid-cols-1 xmed:grid-cols-2 gap-2 mt-20 mb-16">
+                                        <!-- sliding images -->
+                                        <div class="rooms-carousel hidden xmed:block xmed:h-carousel-lg xmed:overflow-hidden">
+                                            {{ cms_media_carousel(type.images, '', '', true) }}
+                                        </div>
+                                        <!-- room types content -->
+                                        <div class="shadow-sm xmed:shadow-md bg-ams-white">
+                                            <h2 class="title-display px-2 text-2xl xmed:text-4xl pt-4 py-5 text-center">
+                                                {{type.name}}
+                                            </h2>
+                                            <div class="text-center xmed:text-left text-lg max-w-6xl mx-auto px-6 pb-4">
+                                                {{type.description | safe}}
+                                            </div>
+
+                                            <!-- svg icons -->
+                                            <div class="w-full grid justify-items-center" >
+                                                <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
+                                                    {% for icon in type.icon_list %}
+                                                        <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center justify-items-center text-center">
+                                                            {{icon.icon | safe}}
+                                                            <a>
+                                                                <span>{{icon.title}}</span>
+                                                            </a>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+
+                                            <!-- mobile slider -->
+                                            <div class="rooms-carousel block xmed:hidden mx-7">
+                                                {{ cms_media_carousel(type.images) }}
+                                            </div>
+                                            <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
+                                            Details
+                                        </h2>
+                                            <ul class="list-disc px-6 xmed:max-w-xl mx-4 text-base xmed:text-lg pb-8">
+                                                {% for det in type.details %}
+                                                    <li>{{det}}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    {% if not loop.last %}
+                                        <div class="hidden xmed:block max-w-5xl mx-auto">
+                                            <div class="w-full border-t-4 border-ams-gold h-1"></div>
+                                        </div>
+                                    {% endif %}
+                                </article>
+                            {% endfor %}
+                        </div>
+
+                        <div class="accordion-button grid xmed:hidden grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
+                            <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span>
+                            <span>View</span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <!--offers desktop design-->
+
+    <div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
+        <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
+            <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
+                {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
+                    {% for item in globalCMS['offers-article'].simple_article %}
+                        <figcaption class="mx-20 px-2 mb-8">
+                            <h2 class="title-display text-2xl xmed:text-4xl pb-4 text-ams-primary xmed:text-center">
+                                {{item.title}}
+                            </h2>
+                            <div class="xmed:text-center text-ams-primary text-lg">
+                                {{item.description | safe}}
+                            </div>
+                            <div class="text-center pt-4 pb-4">
+                                {% if item.links %}
+                                    {% for action in item.links %}
+                                        {% set cta = action.action %}
+                                        <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                            <span class="{{ 'hidden xmed:inline-block' if not cta.mobile_copy == '' }}">{{cta.copy | safe}}</span>
+                                            {% if cta.mobile_copy %}
+                                                <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                                            {% endif %}
+                                        </a>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                            <hr class="border-solid border border-ams-gold xmed:mx-3">
+                        </figcaption>
+                    {% endfor %}
+                {% endif %}
+
+                {% if globalCMS['offers'] and globalCMS['offers'].offers %}
+                    <figure class="w-full max-w-screen-xl overflow-hidden">
+                        {{ component_carousel(globalCMS['offers'].offers) }}
+                    </figure>
+                {% endif %}
+            </div>
+        </section>
+    </div>
+
+    <!--offers desktop design end-->
+    <div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
+        {% if pageCMS['features-title'] and pageCMS['features-title'].text_content %}
+            <div class="w-full grid justify-items-center bg-ams-base">
+                <div class="w-full px-6 grid justify-items-center max-w-screen-md">
+                    <div class="w-full mx-6 my-8 py-4 px-4 xmed:p-8 xmed:my-0 shadow-sm xmed:shadow-md bg-ams-white">
+                        <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
+                            {{pageCMS['features-title'].text_content.title}}
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        {% if pageCMS['features'] and pageCMS['features'].simple_article %}
+            {% for item in pageCMS['features'].simple_article %}
+                <div class="w-full grid justify-items-center max-w-screen-xl xmed:mt-14 {{feature.classes}}" >
+                    <section class="shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2 xmed:mx-4">
+                        <div class="px-6 mt-6 block xmed:hidden">
+                            <figure>
+                                {% for img in item.image %}
+                                    {{ global_image(img.global_image, imgClass = "w-full") }}
+                                {% endfor %}
+                            </figure>
+                        </div>
+                        <div class="p-6">
+                            <h2 class="title-display text-2xl xmed:text-4xl xmed:pt-8">{{item.title}}</h2>
+                            <div class="pt-2 pb-0 text-base xmed:text-lg max-w-6xl cms-description">
+                                {{item.description | safe}}
+                            </div>
+                        </div>
+                        <div class="p-8 hidden xmed:block">
+                            <figure>
+                                {% for img in item.image %}
+                                    {{ global_image(img.global_image, imgClass = "w-full") }}
+                                {% endfor %}
+                            </figure>
+                        </div>
+                    </section>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <section class="xmed:hidden w-full bg-pattern--ams-grey xmed:pb-24 z-10">
+        <section class="max-w-7xl mx-auto px-6">
+            <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
+                <aside class="mb-12">
+                    {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
+                        {% for item in globalCMS['offers-article'].simple_article %}
+                            {{offersArticle(item)}}
+                        {% endfor %}
+                    {% endif %}
+                </aside>
+                <aside class="xmed:col-span-2">
+                    {% if globalCMS['offers'] and globalCMS['offers'].offers %}
+                        <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white">
+                            {{ cms_homepage_offers_carousel(globalCMS['offers'].offers, isRoomDetail = true) }}
+                        </figure>
+                    {% endif %}
+                </aside>
+            </article>
+        </section>
     </section>
-</section>
 
-{{subfooter__form(data.subfooter_image, maxWidth='max-w-screen-xl')}}
-
-<div class="bg-ams-primary w-full">
-    <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
-</div>
+{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form %}
+    {% set subfooter_form = globalCMS['join-the-a-list'].form%}
+    {{subfooter__form(subfooter_form)}}
+{% endif %}
+    <div class="bg-ams-primary w-full">
+        <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
+    </div>

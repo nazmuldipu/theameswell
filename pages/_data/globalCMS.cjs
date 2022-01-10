@@ -1,5 +1,5 @@
 const fetchPageData = require('../../scripts/utils/fetch-page-data.cjs')
-
+const fs = require('fs')
 /**
  * fetch data of dine page
  * 
@@ -31,6 +31,8 @@ async function getAllData() {
     }else{
         manipulateData = {}
     }
+
+    fs.writeFileSync(`${__dirname}/happeningsData.json`, JSON.stringify(manipulateData.happenings, null, 4))
 
     return  manipulateData
 

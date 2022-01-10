@@ -9,3 +9,21 @@
     </button>
     {% endif %}
 {% endmacro %}
+
+{% macro cms_primaryButton(src='#', copy='', className='inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', type='a', external=false, mobile_copy) %}
+    {% if type === 'a' %}
+    <a  href="{{ src }}" {{ 'target="_blank"' if external }} class="{{ className }} button--primary button">
+        <span class="{{ 'hidden xmed:inline-block' if not mobile_copy == '' }}">{{copy | safe}}</span>
+        {% if mobile_copy %}
+            <span class="xmed:hidden">{{mobile_copy | safe}}</span>
+        {% endif %}
+    </a>
+    {% else %}
+    <button class="{{ className }} button--primary button focus:outline-none">
+        <span class="{{ 'hidden xmed:inline-block' if not mobile_copy == '' }}">{{copy | safe}}</span>
+        {% if mobile_copy %}
+            <span class="xmed:hidden">{{mobile_copy | safe}}</span>
+        {% endif %}
+    </button>
+    {% endif %}
+{% endmacro %}

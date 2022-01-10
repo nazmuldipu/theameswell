@@ -1,109 +1,83 @@
 ---
 layout: base.njk
 pagename: dining
-meta_title: Restaurants Mountain View | Roger | The Ameswell Hotel
-meta_description: "The Ameswell Hotel offers three unique dining outlets: Roger, an indoor/outdoor bar and restaurant, The Flyby, an all-day café, and the Airstream for snacks and craft cocktails relaxing by the pool or fire pits."
-canonical_href: https://www.theameswellhotel.com/dining.html
-permalink: "build/dining.html"
+permalink: "build/dining/index.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
 ---
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
+{% from "global-image.njk" import global_image %}
 
-<section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-</section>
-
-<div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 bg-pattern--ams-green">
-    <article class="w-full grid justify-items-center">
-        <section class="w-full grid justify-items-center max-w-screen-lg">
-            <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-8 bg-ams-white">
-                <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    Destination Dining 
-                </h2>
-                <div class="xmed:text-center">
-                    Roger, the Flyby, and the Airstream provide options for every meal and in between craving, and every dietary desire—you can eat and drink with us all day, every day, and still want more. Enjoy on your own, or with friends and colleagues.
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
+        <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+            {% for img in item.image %}
+                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+            {% endfor %}
+        </section>
+    {% endfor %}
+{% endif %}
+{% if pageCMS['icons'] and pageCMS['icons']
+    .icon_list and pageCMS['icons']
+    .icon_list
+    .icons %}
+    {% set item = pageCMS['icons'].icon_list%}
+    <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 bg-pattern--ams-green">
+        <article class="w-full grid justify-items-center">
+            <section class="w-full grid justify-items-center max-w-screen-lg">
+                <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-8 bg-ams-white">
+                    <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                        {{item.title}}
+                    </h2>
+                    <div class="xmed:text-center">
+                        {{item.description}}
+                    </div>
+                    <div class="grid grid-cols-3 gap-y-8 justify-items-center pt-8 xmed:mx-16">
+                        {% for data in item.icons %}
+                            <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center justify-items-center small:title-display small:text-3xl">
+                                {{data.icon | safe}}
+                                <a href="{{data.url}}">
+                                    <span class="border-b border-ams-primary">{{data.title}}</span>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="grid grid-cols-3 gap-y-8 justify-items-center pt-8 xmed:mx-16">
-                    {{svg_icon("drink", 'Drink up', fill="#00a651", pclass="justify-items-center small:title-display small:text-3xl", href="https://www.rogerbarandrestaurant.com/drinks")}}
-                    {{svg_icon("containers", 'Dine in', fill="#00a651", pclass="justify-items-center small:title-display small:text-3xl", href="https://www.rogerbarandrestaurant.com/reservations")}}
-                    {{svg_icon("bag", 'Take out', fill="#00a651", pclass="justify-items-center small:title-display small:text-3xl", href="https://www.toasttab.com/roger/v3/")}}
-                </div>                
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base" id="roger">
-    <article class="mb-4 xmed:mt-8">
-        <section class="max-w-screen-xl xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:pb-8 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid items-center justify-items-center">
-                {{ scaled_image(roger_image) }}
-            </figure>
-            <div class="m-6 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    Roger
-                </h2>
-                <h3 class="title-display text-lg uppercase">
-                    BAR &amp; RESTAURANT
-                </h3>
-                <p>
-                    At Roger, we're taking an adventurous and innovative approach to California cuisine. We've redefined dining to make it all about you. Experience our playful and sustainable California cuisine on-demand - how you want it, when you want it.
-                </p>
-                <br>
-                <p>Enjoy our finely crafted menu indoors or out, alone or with friends, have a quick bite or shut down the bar; there's no wrong way to Roger.</p>
-                <br>
-                <div class="xmed:text-left text-center">
-                    <a class="inline-block py-2 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button focus:outline-none xmed:px-8" href="https://www.rogerbarandrestaurant.com/reservations" target="_blank">Book A Table</a>
-                    <a class="inline-block ml-4 py-2 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button focus:outline-none xmed:px-8" href="https://rogerbarandrestaurant.com" target="_blank">Visit Website</a>
-                </div>
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base" id="the_flyby">
-    <article class="mb-4 xmed:mt-8">
-        <section class="max-w-screen-xl xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:pb-8 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 items-center grid justify-items-center pt-4 xmed:pt-0">
-                {{ scaled_image(flyby_image) }}
-            </figure>
-            <div class="m-6 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    The Flyby
-                </h2>
-                <h3 class="title-display text-lg uppercase">
-                    QUICK &amp; CASUAL CAFÉ
-                </h3>
-                <p>
-                    Flyby is Roger's out-of-the-box little brother. With a coffee bar, made-to-order breakfast and lunch, and a quirky list of homegrown snacks and beverages, the options are endless. Grab a bite for the patio or settle in at a table to finish those slides before your evening adventures. Go ahead, order a local brew with that breakfast sammy - no judgement here.
-                </p>
-                <br>
-                <div class="xmed:text-left text-center">
-                    <a class="inline-block py-2 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button focus:outline-none xmed:px-8" href="https://rogerbarandrestaurant.com/flyby-menu" target="_blank">View Menu</a>                    
-                </div>                
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base xmed:pb-20" id="airstream_bar">
-    <article class="xmed:mt-8">
-        <section class="max-w-screen-xl xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:pb-8 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:order-2 grid items-center justify-items-center xmed:pt-0">
-                {{ scaled_image(airstream_image) }}
-            </figure>
-            <div class="m-6 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
-                <h2 class="title-display text-3xl">
-                    Airstream Bar
-                </h2>
-                <h3 class="title-display text-lg uppercase">
-                    OUTDOOR BAR &amp; SNACKS
-                </h3>
-                <p>
-                    Whether you want a signature cocktail on tap or a cold PBR, the Airstream bar is your spot. Order a snack poolside, in our beer garden, or while you crush your friends in cornhole on our lawn. Our bar bites - bo bells and whistles, just comfort food - are perfect for sharing around our outdoor fire pits. Cheers.
-                </p>
-            </div>
-        </section>
-    </article>
-</div>
+            </section>
+        </article>
+    </div>
+{% endif %}
+{% if pageCMS['dining-items'] and pageCMS['dining-items'].simple_article %}
+    {% for item in pageCMS['dining-items'].simple_article %}
+        <div class="grid justify-items-center w-full bg-ams-base" id="roger">
+            <article class="mb-4 xmed:mt-8">
+                <section class="max-w-screen-xl xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:pb-8 xmed:bg-ams-white xmed:shadow-md">
+                    <figure class="xmed:order-2 grid items-center justify-items-center">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image, classes = "w-full") }}
+                        {% endfor %}
+                    </figure>
+                    <div class="m-6 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
+                        <h2 class="title-display text-3xl">
+                            {{item.title}}
+                        </h2>
+                        <h3 class="title-display text-lg uppercase">
+                            {{item.sub_title}}
+                        </h3>
+                        <div>
+                            {{item.description | safe}}
+                        </div>
+                        <br>
+                        <div class="xmed:text-left text-center">
+                            {% for cta in item.links %}
+                                {% set link = cta.action%}
+                                <a class="inline-block py-2 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button focus:outline-none xmed:px-8 {{ 'xmed:ml-4' if not loop.first }}" href="{{link.url}}" target="_blank">{{link.copy}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
+{% endif %}
