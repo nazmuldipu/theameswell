@@ -3,6 +3,10 @@
 /****  end imports  ********************************/
 
 @layer base {
+    .cms-description a{
+        @apply underline;
+        @apply text-ams-cyan;
+    }
     .page-fab{
         @apply hidden;
     }

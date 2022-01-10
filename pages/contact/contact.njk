@@ -1,75 +1,111 @@
 ---
 layout: base.njk
 pagename: contact
-meta_title: Contact | The Ameswell Hotel | Silicon Valley
-meta_description: "Have a question? We would love to hear from you! Send us an email or give us a call."
-canonical_href: https://www.theameswellhotel.com/contact.html
-permalink: "build/contact.html"
+permalink: "build/contact/index.html"
 permalinkBypassOutputDir: true
-fabUrl: https://reservations.travelclick.com/111994
-fabExternalLink: true
 ---
 {% from "macros.njk" import scaled_image, address_format %}
 {% from "buttons.njk" import primaryButton %}
-{% macro form_input(label, name, type="text", placeholder="", onkeypress='', pattern='', maxlength='', required = true) %}
+{% from "global-image.njk" import global_image %}
+{% macro form_input(item) %}
     <label class="form-label">
         {{label}}<br>
-        <input {% if onkeypress !== "" %} onkeypress="{{onkeypress}}" {% endif %} type="{{type}}" name="{{name}}" placeholder="{{ placeholder }}"
-        {% if pattern !== "" %} pattern="{{pattern}}" {% endif %} {% if maxlength !== "" %} maxlength="{{maxlength}}" {% endif %}
-        class="form-input__style" aria-required="true" {{ 'required' if (required == true) }}/>
+        <input {% if item.onkeypress !== "" %} onkeypress="{{item.onkeypress}}" {% endif %}
+               {% if item.type %} type="{{item.type}}" {% endif %}
+               {% if item.name %} name="{{item.name}}" {% endif %} 
+               {% if item.placeholder %} placeholder="{{item.placeholder}}" {% endif %}
+               {% if item.pattern !== "" %} pattern="{{item.pattern}}" {% endif %}
+               {% if item.maxlength !== "" %} maxlength="{{item.maxlength}}" {% endif %}
+               {{ 'required' if (item.required == true) }}               
+               class="form-input__style" aria-required="true" />
     </label>
 {% endmacro %}
 
-<section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-</section>
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].top_banner %}
+    {% set top_banner = pageCMS['top-banner'].top_banner %}
+    <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+        {{ global_image(top_banner.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+    </section>
+{% endif %}
+
 
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-40 xmed:pb-16 xmed:px-8 xmed:-mt-16">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:shadow-md">
-        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
-            <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
-                <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
-                    <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
-                        Reach out or&nbsp;<br class="hidden xmed:block">come by
-                    </h2>
-                    <p class="pb-4">
-                        <a href="https://goo.gl/maps/UBPsrp6kvzVFc8BC7" target="_blank" rel="noreferrer" class="text-ams-cyan underline">
-                            {{ address_format('800 Moffett Boulevard', 'Mountain View', 'CA', '94043') }}
-                        </a>
-                    </p>
-                    <p class="pb-4">
-                        <a href="tel:1-650-880-1000" class="text-ams-cyan underline">650-880-1000</a>
-                    </p>
-                    <p class="pb-4">
-                        <a href="mailto:info@theameswellhotel.com" target="_blank" class="text-ams-cyan underline">info@theameswellhotel.com</a>
-                    </p>
-                    <p class="pb-4">
-                        For press inquiries, <br>
-                        Please email <a href="mailto:ameswell@m18pr.com" target="_blank" class="text-ams-cyan underline">ameswell@m18pr.com</a>
-                    </p>
-                </section>
-            </article>
-        </div>
-        <div class="w-full grid justify-items-center px-6 xmed:px-0 xmed:-mt-16 bg-ams-base xmed:bg-transparent">
-            <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
-                <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
-                    Contact Form
-                </h2>
-                <form-sender data-type="contact">
-                    <form>
-                        {{form_input("FIRST NAME *","firstName", "text", "Al", "return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)")}}
-                        {{form_input("LAST NAME *","lastName", "text", "Shepard", "return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)")}}                        
-                        {{form_input("PHONE NUMBER *","phone", "tel", "718-555-1212", "", "[0-9]{3}-[0-9]{3}-[0-9]{4}", "12")}}
-                        {{form_input("EMAIL ADDRESS *","email", "email", "ashepard@example.com")}}
-                        <label name="message" class="form-label">
-                            MESSAGE<br>
-                            <textarea required="required" minlength="10" name="message" class="form-input__style min-h-l"></textarea>
-                        </label>
-                        {{ primaryButton("#", 'Submit', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
-                        <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
-                    </form>
-                </form-sender>
-            </article>
-        </div>
+        {% if pageCMS['contact-address'] and pageCMS['contact-address'].address %}
+            {% set contact_address = pageCMS['contact-address'].address %}
+            <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
+                <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
+                    <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
+                        {% if contact_address.header %}
+                            <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
+                                {{ contact_address.header | safe }}
+                            </h2>
+                        {% endif %}
+                        {% if contact_address.location %}
+                            {% set loc = contact_address.location %}
+                            {% set trg = '_blank' if not loc.internal else '_self' %}
+                            <p class="pb-4">                                
+                                <a href="{{loc.href}}" target="{{trg}}" rel="noreferrer" class="text-ams-cyan underline">
+                                    {{ address_format(loc.street_address, loc.city, loc.state, loc.zip) }}
+                                </a>
+                            </p>
+                        {% endif %}
+                        
+                        {% if contact_address.phone and contact_address.phone.simple_action %}
+                            {% set phone = contact_address.phone.simple_action %}
+                            <p class="pb-4">
+                                <a href="tel:{{phone.href}}" class="text-ams-cyan underline">{{ phone.copy | safe }}</a>
+                            </p>
+                        {% endif %}
+                        
+                        {% if contact_address.email and contact_address.email.simple_action %}
+                            {% set email = contact_address.email.simple_action %}
+                            <p class="pb-4">
+                                <a href="mailto:{{ email.href}}" target="_blank" class="text-ams-cyan underline">{{ email.copy | safe }}</a>
+                            </p>
+                        {% endif %}
+
+                        {% if contact_address.description %}
+                            <div class="pb-4 email cms-description">
+                                {{ contact_address.description | safe }}
+                            </div>
+                        {% endif %}   
+                        
+                    </section>
+                </article>
+            </div>
+        {% endif %}
+        {% if pageCMS['contact-form'] and pageCMS['contact-form'].form %}
+            {% set contact_form = pageCMS['contact-form'].form %}
+            <div class="w-full grid justify-items-center px-6 xmed:px-0 xmed:-mt-16 bg-ams-base xmed:bg-transparent">
+                <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
+                    {% if contact_form.title %}
+                         <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
+                            {{ contact_form.title | safe }}
+                        </h2>
+                    {% endif %}
+                   
+                    <form-sender data-type="contact">
+                        <form>
+                            {% for input in contact_form.inputs %}
+                                {% if  input.type == 'textarea' %}
+                                    <label name="{{input.name}}" class="form-label">
+                                        {{input.label}}<br>
+                                        <textarea required="{{input.required}}" minlength="{{input.min}}" name="{{input.name}}" class="form-input__style min-h-l"></textarea>
+                                    </label>                                   
+                                {% else %}
+
+                                    {{form_input(item=input)}}
+                                {% endif %}
+                            {% endfor %}                        
+                            
+                            {{ primaryButton("#", contact_form.cta, 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                            <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
+                        </form>
+                    </form-sender>
+                </article>
+            </div>
+        {% endif %}
+        
     </div>
 </div>
