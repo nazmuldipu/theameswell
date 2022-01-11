@@ -248,34 +248,12 @@ cms_description %}
         </div>
     {% endfor %}
 {% endif %}
-<div class="segment-outer grid bg-pattern--ams-grey xmed:px-4 xmed:justify-items-center py-9 xmed:pt-24 xmed:pb-28">
+{% if globalCMS['happenings'] and globalCMS['happenings'].happenings %}
+<div id="happenings-data" data-happenings="{{globalCMS['happenings'].happenings | stringify}}" class="happenings-data segment-outer grid bg-pattern--ams-grey xmed:px-4 xmed:justify-items-center py-9 xmed:pt-24 xmed:pb-28">
     <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
-        {% for event in data.events %}
-            {% if event.showIndexPage %}
-                {% set imgObj = {"artDirection": [
-                    {
-                        "classes": "image-loader",
-                        "media": "(min-width:900.1px)",
-                        "sizes": "100vw",
-                        "type": "jpg",
-                        "src": event.image,
-                        "alt": "The Ameswell hotel exterior",
-                        "intrinsicwidth": "800"
-                    },
-                    {
-                        "classes": "image-loader",
-                        "media": "(max-width:900px)",
-                        "sizes": "100vw",
-                        "type": "jpg",
-                        "src": event.image,
-                        "alt": "The Ameswell hotel exterior",
-                        "intrinsicwidth": "800"
-                    }
-                    ], classes: 'w-full h-80 object-cover event_id_' + event.id }%}
-
-                {{ scaled_image(imgObj) }}
-            {% endif %}
-        {% endfor %}
+        {% for event in globalCMS['happenings'].happenings %}
+                {{ global_image(event.image_.global_image, classes = 'w-full h-80 object-cover event_id_' + event.id) }}
+            {% endfor %}
     </article>
     <article id="happenings" class="segment-inner xmed:grid items-start w-full xmed:grid-cols-3 xmed:gap-8">
         {% if pageCMS['happenings-intro'] and pageCMS['happenings-intro'].simple_article %}
@@ -302,6 +280,7 @@ cms_description %}
         {% endif %}
     </article>
 </div>
+{% endif %}
 <!--art-widget-->
 {% if pageCMS['bottom-article'] and pageCMS['bottom-article'].simple_article %}
     {% for item in pageCMS['bottom-article'].simple_article %}

@@ -8,41 +8,37 @@ permalinkBypassOutputDir: true
 {% from "buttons.njk" import primaryButton %}
 {% from "global-image.njk" import global_image %}
 
-<div id="pageHero" class="bg-ams-primary w-full pt-12 xmed:pt-16">
-</div>
-<section class="bg-ams-base w-full">
-    <section class="grid grid-cols-1 xmed:grid-cols-3 max-w-ameswel  m-auto mt-7 xmed:mt-16 mb-12 xmed:mb-40 gap-x-8">
-        <section class="xmed:max-w-md">
-            <a class="block pb-1 xmed:pb-8" href="/happenings">
-                <img class="inline-block pl-6 xmed:pl-0" alt="previous icon" src="/images/prev_icon.svg" class="prev" width="15" height="24"></img>
-                <span class="text-lg">back to the happenings</span>
-            </a>
-            <div id="details_left">
-            </div>
-        </section>
-        <section class="mt-4 xmed:col-span-2 xmed:mt-16 px-6 xmed:px-0">
-            <article id="details_right">
-            </article>            
+<div id="pageHero" class="bg-ams-primary w-full pt-12 xmed:pt-16"></div>
+{% if globalCMS['happenings'] and globalCMS['happenings'].happenings | length > 0 %}
+    <section id="happenings-details" data-happenings="{{globalCMS['happenings'].happenings | stringify}}" class="bg-ams-base w-full happenings-details">
+        <section class="grid grid-cols-1 xmed:grid-cols-3 max-w-ameswel  m-auto mt-7 xmed:mt-16 mb-12 xmed:mb-40 gap-x-8">
+            <section class="xmed:max-w-md">
+                <a class="block pb-1 xmed:pb-8" href="/happenings">
+                    <img class="inline-block pl-6 xmed:pl-0" alt="previous icon" src="/images/prev_icon.svg" class="prev" width="15" height="24"></img>
+                    <span class="text-lg">back to the happenings</span>
+                </a>
+                <div id="details_left"></div>
+            </section>
+            <section class="mt-4 xmed:col-span-2 xmed:mt-16 px-6 xmed:px-0">
+                <article id="details_right"></article>
+            </section>
         </section>
     </section>
-</section>
 
-<section class="grid bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
-    <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
-        <h2 class="title-display text-2xl xmed:text-3xl text-center px-4 xmed:px-16 font-serif font-medium py-4">
+    <section class="grid bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-28">
+        <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
+            <h2 class="title-display text-2xl xmed:text-3xl text-center px-4 xmed:px-16 font-serif font-medium py-4">
             YOU MIGHT ALSO LIKE
         </h2>
-    </header>
-    <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
-        {% if happeningsData.happenings and happeningsData.happenings | length > 0 %}
-            {% for event in happeningsData.happenings %}
+        </header>
+        <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
+            {% for event in globalCMS['happenings'].happenings %}
                 {{ global_image(event.image_.global_image, classes = 'w-full h-96 object-cover event_id_' + event.id, imgClass = 'w-full h-96 object-cover') }}
             {% endfor %}
-        {% endif %}
-    </article>
-    <article id="also_like" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 gap-6 xmed:gap-16">
-    </article>
-    <div class="pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center xmed:mt-16">
-        {{ primaryButton("javascript:void(0)", 'View All', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
-    </div>
-</section>
+        </article>
+        <article id="also_like" class="grid items-start max-w-ameswel w-full xmed:grid-cols-3 gap-6 xmed:gap-16"></article>
+        <div class="pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center xmed:mt-16">
+            {{ primaryButton("javascript:void(0)", 'View All', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
+        </div>
+    </section>
+{% endif %}
