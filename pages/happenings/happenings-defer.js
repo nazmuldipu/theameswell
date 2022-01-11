@@ -1,8 +1,7 @@
 "use strict";
-import * as data from '../_data/happeningsData.json';
 
-if (data.happenings && data.happenings.length) {
-const events = data.happenings.map((item)=> {
+const handleHappenings = (happenings) => {
+const events = happenings.map((item)=> {
   return {
     ...item,
     date: {
@@ -12,7 +11,6 @@ const events = data.happenings.map((item)=> {
     }
   }
 })
-console.log(events)
 const hasEventListeners = !!window.addEventListener;
 const sto = window.setTimeout;
 const months = [
@@ -172,7 +170,7 @@ const renderEventCard = (event) => {
                     </header>
                 </figcaption>
             </figure>
-            <div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium"> <a  href="happenings-detail?id=${event.id}" class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button"> View More </a></div>
+            <div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium"> <a  href="/happenings-detail?id=${event.id}" class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button"> View More </a></div>
           </section>`;
 };
 
@@ -440,3 +438,13 @@ Happenings.prototype = {
 
 new Happenings();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const html = document.querySelector("#our_happenings")
+  if(html){
+      const items = JSON.parse(html.dataset.happenings);
+      if(items && items.length > 0){
+        handleHappenings(items)
+      }
+  }
+})

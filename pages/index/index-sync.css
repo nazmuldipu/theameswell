@@ -10,9 +10,12 @@
     }
 }
 @layer base{
-    /* TODO */
-    .cms-description a[type^="internal"] {
+    .cms-description .bold-and-underline {
         @apply font-bold;
         @apply underline;
+    }
+    .cms-description .no-underline-text-cyan{
+        @apply no-underline;
+        @apply text-ams-cyan;
     }
 }

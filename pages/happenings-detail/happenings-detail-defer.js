@@ -1,7 +1,6 @@
-import * as data from "../_data/happeningsData.json";
 const temp_id = window.location.search.split("=")[1];
-if (data.happenings && data.happenings.length) {
-const events = data.happenings.map((item)=> {
+const handleHappenings = (happenings)=> {
+const events = happenings.map((item)=> {
   return {
     ...item,
     date: {
@@ -161,3 +160,15 @@ if (events.length && !isNaN(temp_id) && temp_id > 0) {
     btn_view_all.style.visibility='hidden';
   });
 }}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const html = document.querySelector("#happenings-details")
+  if(html){
+      const items = JSON.parse(html.dataset.happenings);
+      if(items && items.length > 0){
+        handleHappenings(items)
+        html.dataset.items = []
+      }
+  }
+})
