@@ -34,11 +34,16 @@ permalinkBypassOutputDir: true
         </div>
     {% endfor %}
 {% endif %}
+{% if pageCMS['video-content'] and pageCMS['video-content'].video_component_ and pageCMS['video-content'].video_component_.image and pageCMS['video-content'].video_component_.image.global_image %}
+
 <div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
+    {% set image = pageCMS['video-content'].video_component_.image.global_image.src %}
     <article class="w-full max-w-screen-lg overflow-hidden">
-        {{ lazyvideo([{ src: "videos/weddings-video-1.mp4", type: "video/mp4"}], "images/weddings-1.jpg", "lazy") }}
+        {{ lazyvideo([{ src: "videos/weddings-video-1.mp4", type: "video/mp4"}], image | theImgSrc, "lazy") }}
     </article>
 </div>
+
+{% endif %}
 {% if pageCMS['icons'] and pageCMS['icons']
     .icon_list and pageCMS['icons']
     .icon_list
@@ -111,8 +116,8 @@ permalinkBypassOutputDir: true
                                 </div>
                             </figcaption>
                         </figure>
-                    </section>
-                {% endfor %}
+                    {% endfor %}
+                </section>
             {% endif %}
         </article>
     </div>
