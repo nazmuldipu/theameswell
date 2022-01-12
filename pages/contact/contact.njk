@@ -9,7 +9,7 @@ permalinkBypassOutputDir: true
 {% from "global-image.njk" import global_image %}
 {% macro form_input(item) %}
     <label class="form-label">
-        {{label}}<br>
+        {{item.label}}<br>
         <input {% if item.onkeypress !== "" %} onkeypress="{{item.onkeypress}}" {% endif %}
                {% if item.type %} type="{{item.type}}" {% endif %}
                {% if item.name %} name="{{item.name}}" {% endif %} 
