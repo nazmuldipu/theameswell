@@ -66,7 +66,7 @@ const shouldShowEvent = event => {
     const eventDate = new Date(event.date.year, event.date.month-1, event.date.day);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    return event.shouldShow && event.showIndexPage && (eventDate.getTime() >= today.getTime());
+    return event.should_show && event.showIndexPage && (eventDate.getTime() >= today.getTime());
 }
 
 const eventDateAscCmp = (a, b) => {
