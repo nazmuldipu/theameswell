@@ -50,7 +50,7 @@ const createMenuItem = (event) => {
                 <span class="text-lg font-sans text-ams-primary">
                     ${dateString}
                 </span>
-                <a href="/happenings-detail.html?id=${event.id}">
+                <a href="/happenings-detail/?id=${event.id}">
                 <h2 class="title-display text-xl xmed:text-2xl text-left font-serif font-medium">
                    ${event.title}
                 </h2></a>
