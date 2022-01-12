@@ -29,12 +29,13 @@ permalinkBypassOutputDir: true
 
         {% if item.location %}
             {% set location = pageCMS['address'].address.location %}
-            <a href="{{location.href}}" target="_blank" rel="noreferrer" class="text-ams-gold underline">{{ address_format(location.street_address, location.city, location.state, location.zip) }}</a>
+            <a href="{{location.href}}" target="_blank" rel="noreferrer" class="text-ams-gold underline">
+            {{ address_format(location.street_address, location.city, location.state, location.zip) }}</a><br>
         {% endif %}
 
         {% if item.phone and item.phone.simple_action %}
             {% set phone = pageCMS['address'].address.phone.simple_action %}
-            <a href="{{phone.href}}" class="text-ams-cyan">{{phone.copy}}</a><br>
+            <a href="{{phone.href}}" class="text-ams-cyan">{{phone.copy}}</a>
         {% endif %}
     {% endif %}
     </article>

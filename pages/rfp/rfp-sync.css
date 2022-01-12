@@ -14,4 +14,8 @@
       height: 100%;
       width: 100%;
   }
+  .cms-description .text-cyan-and-underline {
+    @apply text-ams-cyan;
+    @apply underline;
+  }
 }
