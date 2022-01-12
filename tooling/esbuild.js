@@ -137,7 +137,13 @@ const getSkipperWebsiteToken = () => {
     }
 };
 
-const getGoogleMapsApiToken = () => {
+
+
+/**
+ * Google Maps API Token goes here
+ * @returns API_KEY
+ */
+ const getGoogleMapsApiToken = () => {
     switch(process.env.NODE_ENV) {
         // TODO:: token call from env
         case 'production':
@@ -156,6 +162,58 @@ const pathResolvePlugin = {
       })
     },
 }
+
+/**
+ * Wedding RFP Typeform API ID goes here
+ * @returns String
+ */
+const getWeddingRFPTypeformID = () => {
+    switch(process.env.NODE_ENV) {
+        case 'production':
+            return '"ROLAbgh6"';
+        default:
+            return '"ROLAbgh6"';
+    }
+};
+
+/**
+ * RFP Typeform API ID goes here
+ * @returns String
+ */
+ const getRFPTypeformID = () => {
+    switch(process.env.NODE_ENV) {
+        case 'production':
+            return '"cvPUGI6P"';
+        default:
+            return '"cvPUGI6P"';
+    }
+}
+
+/**
+ * Shift Digital GTM ID goes here
+ * @returns String
+ */
+const getShiftDigitalGTMID = () => {
+    switch(process.env.NODE_ENV) {
+        case 'production':
+            return '"GTM-55ZT9LJ"';
+        default:
+            return '"GTM-FAKE"';
+    }
+};
+
+/**
+ * Skipper GTM ID goes here
+ * @returns String
+ */
+ const getSkipperGTMID = () => {
+    switch(process.env.NODE_ENV) {
+        case 'production':
+            return '"GTM-KKQNLKM"';
+        default:
+            return '"GTM-FAKE"';
+    }
+};
 
 /**
  * 
@@ -191,7 +249,11 @@ export const buildJS = async (inputPaths, outDir, outBase, metafilePath) => {
         define: {
             GOOGLE_MAPS_API_KEY: getGoogleMapsApiToken(),
             SKIPPER_WEBSITE_API_BASE: getSkipperWebsiteAPIBase(),
-            SKIPPER_WEB_API_TOKEN: getSkipperWebsiteToken()
+            SKIPPER_WEB_API_TOKEN: getSkipperWebsiteToken(),
+            RFP_TYPEFORM_ID: getRFPTypeformID(),
+            WEDDING_RFP_TYPEFORM_ID: getWeddingRFPTypeformID(),
+            SKIPPER_GTM_ID: getSkipperGTMID(),
+            SHIFT_DIGITAL_GTM_ID: getShiftDigitalGTMID()
         }
     });
 
