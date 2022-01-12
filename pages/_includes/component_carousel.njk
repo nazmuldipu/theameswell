@@ -246,14 +246,14 @@
                                             {% endif %}
                                         {% endfor %}
                                     </ul>
-                                    {% if content[0] and content[0].actions %}
+                                    {% if content and content.actions and content.actions | length %}
                                         <div class="mt-10 xmed:mt-0 justify-self-center xmed:justify-self-end">
-                                            {% for act in content[0].actions %}
+                                            {% for act in content.actions %}
                                                 {% set cta = act.action %}
-                                                {% if cta.type == 'primary' %}
+                                                {% if cta.type == 'book-room' %}
                                                     <a href="{{cta.url}}" class="block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button" target="_blank">{{cta.copy}}</a>
                                                 {% endif %}
-                                                {% if cta.type == 'secondary' %}
+                                                {% if cta.type == 'view-details' %}
                                                     <div class="hidden xmed:block mt-6 text-xs text-center">
                                                         <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">{{cta.copy}}</a>
                                                     </div>
