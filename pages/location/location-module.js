@@ -2,7 +2,7 @@
 import "../../components/WeatherWidget/index.js";
 import "../../components/MediaCarousel/index.js";
 import * as data from "./location.11tydata.json";
-const CLOUDFRONT_URL="https://d1bnb47sm4re13.cloudfront.net/"; //TODO, instructed by Mostafa, added by Sarjis
+
 const ameswellLocation = data.ameswell;
 /** Creation of script tag */
 const script = document.createElement("script");

@@ -3,6 +3,7 @@ layout: base.njk
 pagename: dining
 permalink: "build/dining/index.html"
 permalinkBypassOutputDir: true
+canonical_href: https://www.theameswellhotel.com/dining/
 ---
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image %}
@@ -13,7 +14,7 @@ permalinkBypassOutputDir: true
     {% for item in pageCMS['top-banner'].simple_article %}
         <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
             {% for img in item.image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+                {{ global_image(img.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass = "min-h-screen min-w-full max-w-none") }}
             {% endfor %}
         </section>
     {% endfor %}

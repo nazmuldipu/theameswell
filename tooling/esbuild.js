@@ -145,12 +145,21 @@ const getSkipperWebsiteToken = () => {
  */
  const getGoogleMapsApiToken = () => {
     switch(process.env.NODE_ENV) {
-        // TODO:: token call from env
         case 'production':
-            return '""';
+            return '"AIzaSyAqBsnxV5uQbDoZYikoRuMOd3eKcZ7E568"';
         default:
-            return '""';
+            return '"AIzaSyAghG_1W2IXIpylPJN6mdQKLcqicijD2vY"';
     }
+};
+/**
+ * Cloud Front URL goes here
+ * @returns URL
+ */
+ const getCloudFrontUrl = () => {
+    if (process?.env?.CLOUDFRONT_URL) {
+        return `"${process.env.CLOUDFRONT_URL}'`
+    }
+    return '"https://d1bnb47sm4re13.cloudfront.net/"'
 };
 
 const pathResolvePlugin = {
@@ -253,7 +262,8 @@ export const buildJS = async (inputPaths, outDir, outBase, metafilePath) => {
             RFP_TYPEFORM_ID: getRFPTypeformID(),
             WEDDING_RFP_TYPEFORM_ID: getWeddingRFPTypeformID(),
             SKIPPER_GTM_ID: getSkipperGTMID(),
-            SHIFT_DIGITAL_GTM_ID: getShiftDigitalGTMID()
+            SHIFT_DIGITAL_GTM_ID: getShiftDigitalGTMID(),
+            CLOUDFRONT_URL: getCloudFrontUrl()
         }
     });
 
