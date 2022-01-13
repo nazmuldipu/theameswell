@@ -6,45 +6,63 @@ permalinkBypassOutputDir: true
 ---
 {% from "videos.njk" import lazyvideo %}
 {% from "buttons.njk" import primaryButton %}
-{% from "component_carousel.njk" import rooms_carousel, homepage_offers_carousel %}
+{% from "component_carousel.njk" import cms_rooms_carousel,
+cms_homepage_offers_carousel %}
 {% from "media-carousel.njk" import media_carousel, special_carousel, homepage_art_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
-{% from "macros.njk" import scaled_image, offersArticle, subfooter__form %}
+{% from "macros.njk" import scaled_image,
+offersArticle,
+subfooter__form,
+cms_description %}
 {% from "svgicon.njk" import svg_icon %}
+{% from "global-image.njk" import global_image %}
 
-<section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
-    {{ scaled_image(banner_image) }}
-    <header class="grid xmed:items-end">
-        <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0">
-            UNCOMMON LUXURY IN<br class="xmed:hidden">
-            SILICON VALLEY<br>
-        </h1>
-    </header>
-    <div class="pt-16">
-        {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
-    </div>
-</section>
-
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
-        <section class="grid justify-items-center max-w-screen-xl xmed:px-4">
-            <div class="order-2 xmed:order-1">
-                {{ scaled_image(entrance_image) }}
-            </div>
-            <div class="order-1 xmed:order-2 z-0 max-w-screen-lg mx-3 pb-4 px-8 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    We believe in a foundation of exceptional experiences, thoughtful amenities, and effortless quality.
-                </h2>
-                <div class="xmed:text-center text-ams-primary">
-                    Nestled on 10 acres in sunny <a href="location/" class="font-bold underline">Mountain View</a>, The Ameswell Hotel brings together innovation, natural beauty and an <a href="wellness/" class="font-bold underline">opportunity to play</a> unlike any other hotel in the Bay Area.
-                </div>
-                <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
-                    <a href="about/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">LEARN MORE</a>
-                </div>
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
+        <section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
+            {% for img in item.image %}
+                {{ global_image(img.global_image) }}
+            {% endfor %}
+            <header class="grid xmed:items-end">
+                <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0 cms-description">
+                    {{item.description | safe}}
+                </h1>
+            </header>
+            <div class="pt-16">
+                {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
             </div>
         </section>
-    </article>
-</div>
+    {% endfor %}
+{% endif %}
+{% if pageCMS['top-article'] and pageCMS['top-article'].simple_article %}
+    {% for item in pageCMS['top-article'].simple_article %}
+        <div class="grid justify-items-center w-full bg-ams-base">
+            <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
+                <section class="grid justify-items-center max-w-screen-xl xmed:px-4">
+                    <div class="order-2 xmed:order-1">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </div>
+                    <div class="order-1 xmed:order-2 z-0 max-w-screen-lg mx-3 pb-4 px-8 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                        <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                            {{item.title}}
+                        </h2>
+                        <div class="xmed:text-center text-ams-primary">
+                            {{cms_description(item.description)}}
+                        </div>
+                        <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
+                            {% for cta in item.links %}
+                                {% set link = cta.action%}
+                                <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{link.copy | safe}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
+{% endif %}
 
 <!--Rooms-and-offers-widget-->
 <section class="w-full bg-pattern--ams-grey xmed:pb-24 z-10">
@@ -52,36 +70,53 @@ permalinkBypassOutputDir: true
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:py-8">
             <aside>
                 <div class="shadow-md mb-9 xmed:mb-0 p-4 xmed:p-10 bg-ams-white">
-                    <h2 class="title-display text-2xl xmed:text-3xl pb-4">
-                        More than enough room
-                    </h2>
-                    <p class="text-ams-primary text-md">
-                        Each of our 255 guest rooms is defined by comfort and space, privacy and respite. Sitting area and workspace for your waking hours, organic bath products for self-care, and luxurious sleep.
-                    </p>
-                    <nav class="pt-7 pb-2 hidden xmed:block xmed:text-center">
-                        <a href="room-detail/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">VIEW ALL ROOMS</a>
-                    </nav>
-                    <nav class="pt-7 pb-2 xmed:hidden xmed:text-center">
-                        <a href="room-detail/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW DETAILS</a>
-                    </nav> 
-
-                    </nav>                    
+                    {% if pageCMS['rooms-left'] and pageCMS['rooms-left'].simple_article %}
+                        {% for item in pageCMS['rooms-left'].simple_article %}
+                            <h2 class="title-display text-2xl xmed:text-3xl pb-4">
+                                {{item.title}}
+                            </h2>
+                            <div class="text-ams-primary text-md">
+                                {{cms_description(item.description)}}
+                            </div>
+                            {% for data in item.links %}
+                                {% set link = data.action %}
+                                {% if link.for_desctop %}
+                                    <nav class="pt-7 pb-2 hidden xmed:block xmed:text-center">
+                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">{{link.copy|safe}}</a>
+                                    </nav>
+                                {% endif %}
+                                {% if not link.for_desctop %}
+                                    <nav class="pt-7 pb-2 xmed:hidden xmed:text-center">
+                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{link.copy|safe}}</a>
+                                    </nav>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white pb-4 px-0">
-                    {{ rooms_carousel(rooms) }}
+                    {% if pageCMS['rooms-right'] and pageCMS['rooms-right'].rooms %}
+                        {{ cms_rooms_carousel(pageCMS['rooms-right'].rooms) }}
+                    {% endif %}
                 </figure>
             </aside>
         </article>
 
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
             <aside>
-                {{offersArticle()}}
+                {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
+                    {% for item in globalCMS['offers-article'].simple_article %}
+                        {{offersArticle(item)}}
+                    {% endfor %}
+                {% endif %}
             </aside>
             <aside class="xmed:col-span-2">
                 <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white py-4 px-0">
-                    {{ homepage_offers_carousel(offers) }}
+                    {% if globalCMS['offers'] and globalCMS['offers'].offers %}
+                        {{ cms_homepage_offers_carousel(globalCMS['offers'].offers) }}
+                    {% endif %}
                 </figure>
             </aside>
         </article>
@@ -91,195 +126,234 @@ permalinkBypassOutputDir: true
 
 <div class="bg-ams-primary w-full grid justify-items-center pt-0 xmed:pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
-        <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white text-left">
-            Bar. Restaurant. Cafe.
-        </h2>
-        <p class="pb-6 text-ams-white text-left">
-            Options for every meal and in between craving, and every dietary desire—you can eat and drink with us all day, every day.
-        </p>
-        <div class="text-left">
-            <a href="dining/" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase xmed:hidden text-xs xmed:text-lg">LEARN MORE</a>
-            <a href="dining/" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase hidden xmed:inline-block">VIEW DINING</a>
-        </div>
+        {% if pageCMS['restaurants-intro'] and pageCMS['restaurants-intro'].simple_article %}
+            {% for item in pageCMS['restaurants-intro'].simple_article %}
+                <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white text-left">
+                    {{item.title}}
+                </h2>
+                <div class="pb-6 text-ams-white text-left cms-description">
+                    {{item.description | safe}}
+                </div>
+                <div class="text-left">
+                    {% for ac in item.links %}
+                        {% set cta = ac.action %}
+                        {% if cta.type == 'desktop' %}
+                            <a href="{{cta.url}}" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase hidden xmed:inline-block">{{cta.copy}}</a>
+                        {% endif %}
+                        {% if cta.type == 'mobile' %}
+                            <a href="{{cta.url}}" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase xmed:hidden text-xs xmed:text-lg">{{cta.copy}}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        {% endif %}
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
-            <figure class="grid grid-cols-1  gap-4 items-center mb-6">
-                {{ scaled_image(roger_image) }}
-                <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
-                    <header class="text-left xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-ams-white">
-                           <a href="dining/#roger">ROGER</a>
-                        </h3>
-                    </header>
-                    <p class="text-left xmed:text-center">
-                        An indoor/outdoor bar and restaurant
-                    </p>
-                </figcaption>
-            </figure>
-            <figure class="grid grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                {{ scaled_image(flyby_image) }}
-                <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
-                    <header class="text-left xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-ams-white">
-                           <a href="dining/#the_flyby">THE FLYBY</a>
-                        </h3>
-                    </header>
-                    <p class="text-left xmed:text-center">
-                        All-day coffee and fast casual meals
-                    </p>
-                </figcaption>
-            </figure>
-            <figure class="grid grid-cols-1 xmed:justify-items-end gap-4 items-center mb-6">
-                {{ scaled_image(airstream_image) }}
-                <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
-                    <header class="text-left xmed:text-center">
-                        <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-ams-white">
-                            <a href="dining/#airstream_bar">AIRSTREAM BAR</a>
-                        </h3>
-                    </header>
-                    <p class="text-left xmed:text-center">
-                        Outdoor bar for the pool, lawn and events
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
-    </article>
-</div>
-
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="xmed:mt-4 xmed:mb-10 xmed:px-4">
-        <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
-            <div class="hidden xmed:block mx-4 xmed:mx-0 bg-ams-white xmed:bg-ams-base">
-                {{ scaled_image(event_spaces_image) }}
-            </div>
-            <div class="xmed:-mt-10 xmed:mx-0 mx-6 mt-12 mb-12 xmed:mb-0 p-6 xmed:p-10 z-0 max-w-screen-xmed xmed:shadow-md bg-ams-white">
-                <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                    Not your typical meeting
-                </h2>
-                <div class="xmed:text-center">
-                    Whether you are looking for a tech-enabled meeting room or an inspirational outdoor space for your Silicon Valley corporate gathering, The Ameswell Hotel offers a diverse array of safe spaces to meet any need.
-                </div>
-                <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
-                    <a href="events/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">LEARN MORE</a>
-                </div>
-            </div>
-            <div class="xmed:hidden bg-ams-white xmed:bg-ams-base">
-                {{ scaled_image(event_spaces_image) }}
-            </div>
-        </section>
-    </article>
-</div>
-<div class="grid justify-items-center w-full bg-ams-base">
-    <article class="py-4 xmed:px-4 my-4">
-        <section class="max-w-screen-lg xmed:grid xmed:grid-cols-auto-600 gap-4 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
-            <figure class="xmed:hidden mx-6 my-4">
-                {{ scaled_image(wedding_image) }}
-            </figure>
-            <div class="mx-6 xmed:mx-0 mb-8 xmed:mb-0 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
-                <h2 class="title-display text-2xl pt-4 pb-4">
-                    Our Mountain View wedding venue
-                </h2>
-                <p>
-                    Celebrate your wedding at one of the most unique and inspiring venues in the Bay Area.
-                </p>
-                <div class="pt-4 pb-4">
-                    <a href="weddings/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">LEARN MORE</a>
-                </div>
-            </div>
-            <figure class="hidden xmed:block">
-                {{ scaled_image(wedding_image) }}
-            </figure>
-        </section>
-    </article>
-</div>
-<div class="segment-outer grid bg-pattern--ams-grey xmed:px-4 xmed:justify-items-center py-9 xmed:pt-24 xmed:pb-28">
-    <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
-        {% for event in data.events %}
-            {% if event.showIndexPage %}
-                {% set imgObj = {"artDirection": [
-                    {
-                        "classes": "image-loader",
-                        "media": "(min-width:900.1px)",
-                        "sizes": "100vw",
-                        "type": "jpg",
-                        "src": event.image,
-                        "alt": "The Ameswell hotel exterior",
-                        "intrinsicwidth": "800"
-                    },
-                    {
-                        "classes": "image-loader",
-                        "media": "(max-width:900px)",
-                        "sizes": "100vw",
-                        "type": "jpg",
-                        "src": event.image,
-                        "alt": "The Ameswell hotel exterior",
-                        "intrinsicwidth": "800"
-                    }
-                    ], classes: 'w-full h-80 object-cover event_id_' + event.id }%}
-
-                {{ scaled_image(imgObj) }}
+            {% if pageCMS['restaurants'] and pageCMS['restaurants'].simple_article %}
+                {% for item in pageCMS['restaurants'].simple_article %}
+                    <figure class="grid grid-cols-1  gap-4 items-center mb-6">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                        <figcaption class="text-ams-white xmed:px-8 order-1 xmed:order-2">
+                            <header class="text-left xmed:text-center">
+                                <h3 class="segment__cta segment__cta--green relative inline-block mb-4 text-ams-white">
+                                    {% if item.links %}
+                                        {% for cta in item.links %}
+                                            {% set action = cta.action %}
+                                            <a href="{{action.url}}">{{item.title}}</a>
+                                        {% endfor %}
+                                    {% endif %}
+                                </h3>
+                            </header>
+                            <div class="text-left xmed:text-center cms-description">
+                                {{item.description|safe}}
+                            </div>
+                        </figcaption>
+                    </figure>
+                {% endfor %}
             {% endif %}
-        {% endfor %}
+        </section>
+    </article>
+</div>
+
+{% if pageCMS['middle-article-1'] and pageCMS['middle-article-1'].simple_article %}
+    {% for item in pageCMS['middle-article-1'].simple_article %}
+        <div class="grid justify-items-center w-full bg-ams-base">
+            <article class="xmed:mt-4 xmed:mb-10 xmed:px-4">
+                <section class="grid justify-items-center max-w-screen-lg xmed:px-4">
+                    <div class="hidden xmed:block mx-4 xmed:mx-0 bg-ams-white xmed:bg-ams-base">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </div>
+                    <div class="xmed:-mt-10 xmed:mx-0 mx-6 mt-12 mb-12 xmed:mb-0 p-6 xmed:p-10 z-0 max-w-screen-xmed xmed:shadow-md bg-ams-white">
+                        <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                            {{item.title}}
+                        </h2>
+                        <div class="xmed:text-center cms-description">
+                            {{item.description | safe}}
+                        </div>
+                        <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
+                            {% if item.links %}
+                                {% for cta in item.links %}
+                                    {% set action = cta.action %}
+                                    <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{action.copy}}</a>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="xmed:hidden bg-ams-white xmed:bg-ams-base">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </div>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
+{% endif %}
+{% if pageCMS['middle-article-2'] and pageCMS['middle-article-2'].simple_article %}
+    {% for item in pageCMS['middle-article-2'].simple_article %}
+        <div class="grid justify-items-center w-full bg-ams-base">
+            <article class="py-4 xmed:px-4 my-4">
+                <section class="max-w-screen-lg xmed:grid xmed:grid-cols-auto-600 gap-4 xmed:p-8 xmed:bg-ams-white xmed:shadow-md">
+                    <figure class="xmed:hidden mx-6 my-4">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </figure>
+                    <div class="mx-6 xmed:mx-0 mb-8 xmed:mb-0 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white">
+                        <h2 class="title-display text-2xl pt-4 pb-4">
+                            {{item.title}}
+                        </h2>
+                        <div>
+                            {{item.description | safe}}
+                        </div>
+                        <div class="pt-4 pb-4">
+                            {% if item.links %}
+                                {% for cta in item.links %}
+                                    {% set action = cta.action %}
+                                    <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{action.copy}}</a>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <figure class="hidden xmed:block">
+                        {% for img in item.image %}
+                            {{ global_image(img.global_image) }}
+                        {% endfor %}
+                    </figure>
+                </section>
+            </article>
+        </div>
+    {% endfor %}
+{% endif %}
+{% if globalCMS['happenings'] and globalCMS['happenings'].happenings %}
+<div id="happenings-data" data-happenings="{{globalCMS['happenings'].happenings | stringify}}" class="happenings-data segment-outer grid bg-pattern--ams-grey xmed:px-4 xmed:justify-items-center py-9 xmed:pt-24 xmed:pb-28">
+    <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
+        {% for event in globalCMS['happenings'].happenings %}
+                {{ global_image(event.image_.global_image, classes = 'w-full h-80 object-cover event_id_' + event.id) }}
+            {% endfor %}
     </article>
     <article id="happenings" class="segment-inner xmed:grid items-start w-full xmed:grid-cols-3 xmed:gap-8">
-        <section class="mb-8 shadow-md mx-6 xmed:mx-0 xmed:px-0">
-            <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
-                <h2 class="title-display text-2xl font-serif font-medium py-4">
-                    Happenings
-                </h2>
-                <div class="text-base xmed:text-lg font-sans text-ams-primary">
-                    The Ameswell offers event programming to add something special to your stay.
-                </div>
-                <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
-                    <a href="happenings/" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">View All Happenings</a>
-                </div>                
-            </div>
-        </section>
-        
+        {% if pageCMS['happenings-intro'] and pageCMS['happenings-intro'].simple_article %}
+            {% for item in pageCMS['happenings-intro'].simple_article %}
+                <section class="mb-8 shadow-md mx-6 xmed:mx-0 xmed:px-0">
+                    <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
+                        <h2 class="title-display text-2xl font-serif font-medium py-4">
+                            {{item.title}}
+                        </h2>
+                        <div class="text-base xmed:text-lg font-sans text-ams-primary cms-description">
+                            {{item.description | safe}}
+                        </div>
+                        {% if item.links %}
+                            {% for cta in item.links %}
+                                {% set action = cta.action %}
+                                <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
+                                    <a href="{{action.url}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{action.copy}}</a>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </section>
+            {% endfor %}
+        {% endif %}
     </article>
 </div>
+{% endif %}
 <!--art-widget-->
-<section class="w-full bg-ams-base xmed:pb-16">
-    <div class="max-w-7xl mx-auto px-6 py-6 xmed:py-0">
-        {{ scaled_image(homepage_art_image) }}
-        <article class="relative bg-ams-white shadow-md xmed:mx-30 xmed:-mt-16 p-4 xmed:p-16 xmed:text-center ">
-            <header class="title-display text-2xl xmed:text-4xl">
-                Ameswell Art Compendium
-            </header>
-            <p class="font-sans text-base xmed:text-lg pb-4 xmed:py-10 text-ams-primary">
-                We are proud to showcase our extensive art collection throughout our property. Check out the <a href="art-compendium/" class="text-ams-cyan">Ameswell Art Compendium</a> for a virtual tour.
-            </p>
-            <nav class="py-4 xmed:pb-0 ">
-                <a href="art-compendium/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">LEARN MORE</a>
-            </nav>
-        </article>        
-    </div>
-</section>
+{% if pageCMS['bottom-article'] and pageCMS['bottom-article'].simple_article %}
+    {% for item in pageCMS['bottom-article'].simple_article %}
+        <section class="w-full bg-ams-base xmed:pb-16">
+            <div class="max-w-7xl mx-auto px-6 py-6 xmed:py-0">
+                {% for img in item.image %}
+                    {{ global_image(img.global_image) }}
+                {% endfor %}
+                <article class="relative bg-ams-white shadow-md xmed:mx-30 xmed:-mt-16 p-4 xmed:p-16 xmed:text-center ">
+                    <header class="title-display text-2xl xmed:text-4xl">
+                        {{item.title}}
+                    </header>
+                    <div class="font-sans text-base xmed:text-lg pb-4 xmed:py-10 text-ams-primary cms-description">
+                        {{item.description | safe}}
+                    </div>
+                    <nav class="py-4 xmed:pb-0 ">
+                        {% if item.links %}
+                            {% for cta in item.links %}
+                                {% set action = cta.action %}
+                                <a href="{{action.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{action.copy}}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </nav>
+                </article>
+            </div>
+        </section>
+    {% endfor %}
+{% endif %}
 <!--art-widget end-->
 
 <!--press widget-->
-<section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
-    <div class="max-w-7xl mx-auto px-6">
-        {% for art in press_releases%}
-            <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
-                <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
-                    <p class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">“{{art.description}}”</p>
-                    <a href="{{art.link}}" target="_blank"><p class="text-ams-cyan font-semibold underline">-{{art.author}}</p></a>
-                    <nav class="mt-8">
-                        <a href="press/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">READ PRESS</a>
-                    </nav>
-                </div>
-            </article>
-        {% endfor %}
-    </div>
-</section>
-<div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
-    <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
-        <section>
-            {{  press_carousel(press__widget, "bg-ams-white") }}
+{% if pageCMS['press-widget'] and pageCMS['press-widget'].simple_article %}
+    {% for art in pageCMS['press-widget'].simple_article %}
+        <section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
+            <div class="max-w-7xl mx-auto px-6">
+                <article class="py-6 xmed:py-8 bg-ams-white shadow-md">
+                    <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
+                        <div class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">{{art.description | safe}}</div>
+                        {% if art.links %}
+                            {% for link in art.links %}
+                                {% set cta = link.action %}
+                                {% if cta.type == 'author' %}
+                                    <a href="{{cta.url}}" target="_blank">
+                                        <p class="text-ams-cyan font-semibold underline">{{cta.copy}}</p>
+                                    </a>
+                                {% endif %}
+                                {% if cta.type == 'primary' %}
+                                    <nav class="mt-8">
+                                        <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.copy}}</a>
+                                    </nav>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </article>
+            </div>
         </section>
-    </article>
-</div>       
-{{subfooter__form(data.subfooter_image)}}
+    {% endfor %}
+{% endif %}
+{% if pageCMS['press-carousel'] and pageCMS['press-carousel'].simple_article %}
+    {% set item = pageCMS['press-carousel'].simple_article %}
+    <div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
+        <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
+            <section>
+                {{  press_carousel(item, "bg-ams-white") }}
+            </section>
+        </article>
+    </div>
+{% endif %}
+{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form %}
+    {% set subfooter_form = globalCMS['join-the-a-list'].form%}
+    {{subfooter__form(subfooter_form)}}
+{% endif %}
 <div class="bg-ams-primary w-full">
     <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
 </div>

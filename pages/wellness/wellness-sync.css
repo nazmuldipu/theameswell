@@ -16,7 +16,7 @@
   @apply object-cover;
 }
 
-.read-more:checked ~ label ~ p {
+.read-more:checked ~ label ~ div {
   max-height: 300px;
   @apply pt-6;
 }
@@ -27,4 +27,8 @@
 
 .amenities-more {
   transition: max-height 0.7s ease;
+}
+
+.cms-description .bold-and-underline {
+  font-weight: bold;
 }

@@ -3,8 +3,18 @@ import "../../components/MediaCarousel/index.js";
 import "../../components/RoomsGallery/index.js";
 import "../../components/FormSender/index.js";
 import "../../components/WeatherWidget/index.js";
-import * as happeningsData from "../_data/data.json";
 
+const handleHappenings = (happenings)=> {
+const events = happenings.map((item)=> {
+    return {
+      ...item,
+      date: {
+        day: parseInt(item.date.day),
+        month: parseInt(item.date.month),
+        year: parseInt(item.date.year),
+      }
+    }
+  })
 const monthNames = [
     "January",
     "February",
@@ -56,7 +66,7 @@ const shouldShowEvent = event => {
     const eventDate = new Date(event.date.year, event.date.month-1, event.date.day);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    return event.showIndexPage && (eventDate.getTime() >= today.getTime());
+    return event.should_show && event.showIndexPage && (eventDate.getTime() >= today.getTime());
 }
 
 const eventDateAscCmp = (a, b) => {
@@ -69,7 +79,7 @@ const eventDateAscCmp = (a, b) => {
 const HOMEPAGE_SHOW_COUNT = 2; 
 const happeningsEle = document.querySelector("#happenings");
 
-const happeningsToShow = happeningsData.events
+const happeningsToShow = events
     .filter(shouldShowEvent)
     .sort(eventDateAscCmp)
     .slice(0, HOMEPAGE_SHOW_COUNT);
@@ -77,3 +87,14 @@ const happeningsToShow = happeningsData.events
 happeningsToShow.forEach((event) => {
     happeningsEle.appendChild(createMenuItem(event));
 });
+}
+document.addEventListener("DOMContentLoaded", function () {
+    const html = document.querySelector("#happenings-data")
+    if(html){
+        const items = JSON.parse(html.dataset.happenings);
+        if(items && items.length > 0){
+          handleHappenings(items)
+          html.dataset.items = []
+        }
+    }
+  })

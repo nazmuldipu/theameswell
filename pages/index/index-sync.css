@@ -9,3 +9,13 @@
         width: 30%;
     }
 }
+@layer base{
+    .cms-description .bold-and-underline {
+        @apply font-bold;
+        @apply underline;
+    }
+    .cms-description .no-underline-text-cyan{
+        @apply no-underline;
+        @apply text-ams-cyan;
+    }
+}

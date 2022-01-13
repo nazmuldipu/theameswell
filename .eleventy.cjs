@@ -63,6 +63,10 @@ module.exports = function(eleventyConfig) {
         return toIgnorePatterns.filter(pattern => url.includes(pattern)).length > 0 ? url : "/" + url;
     } )
 
+    eleventyConfig.addNunjucksFilter("stringify", function(obj) {
+        return JSON.stringify(obj);
+    });
+
     if (process.env.MINIMAL_PREVIEW) {
          // nothing to copy for preview
     } else {

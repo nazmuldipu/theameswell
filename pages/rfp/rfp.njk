@@ -1,119 +1,61 @@
 ---
 layout: base.njk
 pagename: rfp
-meta_title: The Ameswell Hotel | Book an Event
-meta_description: "Book an event unlike any other with the Ameswell Hotel."
-canonical_href: https://www.theameswellhotel.com/rfp/
 permalink: "build/rfp/index.html"
 permalinkBypassOutputDir: true
+canonical_href: https://www.theameswellhotel.com/rfp/
 ---
 {% from "buttons.njk" import primaryButton %}
 {% from "macros.njk" import scaled_image %}
+{% from "global-image.njk" import global_image %}
 
-{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="", readonly=false) %}
+{% macro form_input(name, label, type = "text", placeholder = "", required = true, parentClass = "", val = "", readonly = false) %}
     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
         {{label}}<br>
         <input type="{{type}}" id="{{name}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
         class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
-        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }} {{ 'readonly' if (readonly == true) }} />
+        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }} {{ 'readonly' if (readonly == true) }}/>
     </label>
 {% endmacro %}
 
-<section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-</section>
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
+        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+            {% for img in item.image %}
+                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+            {% endfor %}
+        </section>
+    {% endfor %}
+{% endif %}
 
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:shadow-md">
-        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
-            <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
-                <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
-                    <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
-                        Start Planning Your Event
-                    </h2>
-                    <p>
-                        Please let us know details of your event and a member of our team will reach out to you shortly to discuss! If you need anything in the meantime, please contact our team at <a href="tel:1-650-880-1000" class="text-ams-cyan underline">650-880-1000</a> or <a href="mailto:keithbattaglia@theameswellhotel.com" target="_blank" class="text-ams-cyan underline break-all">keithbattaglia@theameswellhotel.com</a>
-                    </p>
-                </section>
-            </article>
-        </div>
+        {% if pageCMS['form-left'] and pageCMS['form-left'].text_content %}
+            {% set item = pageCMS['form-left'].text_content %}
+            <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
+                <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
+                    <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
+                        <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
+                            {{item.title}}
+                        </h2>
+                        <div class="cms-description">
+                            {{item.description | safe}}
+                        </div>
+                    </section>
+                </article>
+            </div>
+        {% endif %}
+
         <div class="w-full grid justify-items-center xmed:-mt-16 px-6 xmed:px-0 bg-ams-base xmed:bg-transparent">
-            <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
-                <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
-                    Event request form
-                </h2>
-                <form-sender data-type="rfp">
-                    <form>
-                        {{form_input("firstName","FIRST NAME *", "text", "Al")}}
-                        {{form_input("lastName","LAST NAME *", "text", "Shepard")}}
-                        {{form_input("company","Company/Organization", "text", "Company/Organization name", false)}}
-                        {{form_input("phone","PHONE NUMBER *", "tel", "718-555-1212")}}
-                        {{form_input("email","EMAIL ADDRESS *", "email", "ashepard@example.com")}}
-                        {{form_input("eventName","EVENT NAME *", "text", "")}}
-                        
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs">
-                            EVENT TYPE *<br>
-                            <select required="required" aria-required="true" name="eventType" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
-                                <option value="" disabled selected hidden></option>
-                                <option value="wedding">Wedding</option>
-                                <option value="event">Event</option>
-                                <option value="meeting">Meeting</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </label>
-
-                        {{form_input("startDate","START DATE *", "text", "YYYY-MM-DD", true, "datepicker relative", readonly=true)}}
-                        {{form_input("endDate","END DATE", "text", "YYYY-MM-DD", false, "datepicker relative", readonly=true)}}
-                        {{form_input("startTime","Event Start Time: ", "time", "Start Time", false)}}
-                        {{form_input("endTime","Event End Time:", "time", "End Time", false)}}
-                        {{form_input("guestRoomCount","How many guest rooms? ", "number", "", false, "", 0)}}
-                       
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                            DO YOU REQUIRE A/V?<br>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="yes" name="audioVisual" id="audioVisualYes" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold" checked>
-                                <label for="audioVisualYes">Yes</label>
-                            </div>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="no" name="audioVisual" id="audioVisualNo" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                <label for="audioVisualNo">No</label>
-                            </div>
-                        </label>
-
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2 uppercase">
-                            Do you require food &amp; beverage?<br>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="yes" name="foodBeverage" id="foodBeverageYes" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                <label for="foodBeverageYes">Yes</label>
-                            </div>
-                            <div class="space-x-2 items-center">
-                                <input required="required" aria-required="true" type="radio" value="no" name="foodBeverage" id="foodBeverageNo" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold" checked>
-                                <label for="foodBeverageNo" >No</label>
-                            </div>
-                        </label>
-
-                        <label id="foodBeverageYesText" class="foodBeverageYesText block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                            What food &amp; beverage? <br>
-                            <select required="required" aria-required="true" id="foodBeverageItemsSelect" name="foodBeverageItems" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
-                                <option value="" disabled selected hidden></option>
-                                <option value="breakfast">Breakfast</option>
-                                <option value="lunch">Lunch</option>
-                                <option value="dinner">Dinner</option>
-                                <option value="breaks">Breaks</option>
-                                <option value="reception">Reception</option>
-                            </select>
-                        </label>
-
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                            Additional Details <br>
-                            <textarea name="additionalDetails" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary min-h-l bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50"></textarea>
-                        </label>
-                        
-                        {{ primaryButton("#", 'Submit','submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
-                        <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
-                    </form>
-                </form-sender>
-            </article>
+            {% if pageCMS['form-right'] and pageCMS['form-right'].text_content %}
+                {% set item = pageCMS['form-right'].text_content %}
+                <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
+                    <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
+                        {{item.title}}
+                    </h2>
+                    <div id="rfp-form"></div>
+                </article>
+            {% endif %}
         </div>
     </div>
 </div>

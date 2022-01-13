@@ -1,7 +1,16 @@
 "use strict";
-import * as data from '../_data/data.json';
-const events = data.events;
 
+const handleHappenings = (happenings) => {
+const events = happenings.map((item)=> {
+  return {
+    ...item,
+    date: {
+      day: parseInt(item.date.day),
+      month: parseInt(item.date.month),
+      year: parseInt(item.date.year),
+    }
+  }
+})
 const hasEventListeners = !!window.addEventListener;
 const sto = window.setTimeout;
 const months = [
@@ -161,7 +170,7 @@ const renderEventCard = (event) => {
                     </header>
                 </figcaption>
             </figure>
-            <div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium"> <a  href="happenings-detail/?id=${event.id}" class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button"> View More </a></div>
+            <div class="pb-5 text-left pl-6 bg-ams-white text-xs text-ams-primary font-medium"> <a  href="/happenings-detail?id=${event.id}" class="inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button"> View More </a></div>
           </section>`;
 };
 
@@ -169,13 +178,19 @@ const renderOurHappeningsCard = (event) => {
   const eventPicElement = document.querySelector('.event_id_' + event.id)
 
   let ctaEle = '';
-  event.cta.forEach(element => {
-    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.label}</a>
+  event.actions && event.actions.forEach(item => {
+    const element = item.action
+    if (element.type == 'primary') {
+      ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${element.classes? element.classes : ''}" href="${element.url}" target="_blank">${element.copy}</a>
               `
+    }else if (element.type == 'details-link-outline') {
+      ctaEle += `<a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail?id=${event.id}">${element.copy}</a>`
+    }
+    
   });
 
   return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
-            <a class="hidden xmed:block" href="/happenings-detail/?id=${event.id}">
+            <a class="hidden xmed:block" href="/happenings-detail?id=${event.id}">
               <figure>
                 ${eventPicElement.outerHTML}
                 <figcaption>
@@ -207,7 +222,6 @@ const renderOurHappeningsCard = (event) => {
             </span>
             <div class="xmed:hidden grid grid-cols-2 gap-3 px-6 ">
               ${ctaEle}
-              <a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail/?id=${event.id}">More Info</a>
             </div>
           </section>`;
 }
@@ -423,3 +437,14 @@ Happenings.prototype = {
 };
 
 new Happenings();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const html = document.querySelector("#our_happenings")
+  if(html){
+      const items = JSON.parse(html.dataset.happenings);
+      if(items && items.length > 0){
+        handleHappenings(items)
+      }
+  }
+})

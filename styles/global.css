@@ -412,6 +412,10 @@ input[type="date"]::-webkit-calendar-picker-indicator{
         padding-top: 1.6px;
     }
 }
+.hidden-in-mobile-view-able-in-desktop{
+    @apply hidden;
+    @apply xmed:block;
+}
 
 /** https://tailwindcss.com/docs/functions-and-directives#theme **/
 /*

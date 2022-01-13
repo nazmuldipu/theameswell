@@ -1,24 +1,15 @@
 'use strict';
-import '../../components/FormSender/index.js';
 import '../../components/WeatherWidget/index.js';
 
-const infoBox = document.getElementById('foodBeverageYesText');
-infoBox.style.display = 'none';
+import { createWidget } from '@typeform/embed'
+import '@typeform/embed/build/css/widget.css'
 
-const foodBeverageItemsSelect = document.getElementById('foodBeverageItemsSelect');
-foodBeverageItemsSelect.required = "";
-
-const radios = document.querySelectorAll('input[name="foodBeverage"]');
-function changeHandler(event) {
-   if ( this.value === 'yes' ) {
-      infoBox.style.display = 'block';
-      foodBeverageItemsSelect.required = "required";
-   } else if ( this.value === 'no' ) {
-      infoBox.style.display = 'none';
-      foodBeverageItemsSelect.required = "";
-   }  
-}
-
-Array.prototype.forEach.call(radios, function(radio) {
-   radio.addEventListener('change', changeHandler);
+const { refresh } = createWidget(RFP_TYPEFORM_ID, { 
+   container: document.querySelector('#rfp-form'),
+   shareGaInstance: true,
+   hideFooter: true,
+   hideHeaders: true,
+   opacity: 0,
+   lazy: true,
+   height: 500
 });

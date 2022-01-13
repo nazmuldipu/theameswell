@@ -1,4 +1,5 @@
 {% from "buttons.njk" import primaryButton %}
+{% from "global-image.njk" import global_image %}
 
 {% macro fab(fabUrl, fabBg, fabCopyLines, fabExternalLink) %}
 {% if not fabCopyLines %}
@@ -98,22 +99,32 @@
     </a>
 {% endmacro %}
 
-{% macro offersArticle() %}
+{% macro offersArticle(item) %}
   <article class="xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
-      <header>
-          <h2 class="title-display text-2xl xmed:text-3xl pb-4">
-              Offers
-          </h2>
-      </header>
-      <p class="text-ams-primary text-md">
-          Looking for a little something extra on your next visit to Silicon Valley? Treat yourself to one of these exclusive offers from The Ameswell Hotel.
-      </p>
-      <nav class="pt-7 pb-2 xmed:text-center">
-          <a href="offers/" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">VIEW <span class="xmed:hidden">ALL</span> OFFERS</a>  
-      </nav>
+        <header>
+            <h2 class="title-display text-2xl xmed:text-3xl pb-4">
+                {{item.title}}
+            </h2>
+        </header>
+        <div class="text-ams-primary text-md cms-description">
+            {{item.description | safe}}
+        </div>
+        {% if item.links %}
+            {% for action in item.links %}
+                {% set cta = action.action %}
+                <nav class="pt-7 pb-2 xmed:text-center">
+                    <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">
+                        <span class="{{ 'hidden xmed:inline-block' if not cta.mobile_copy == '' }}">{{cta.copy | safe}}</span>
+                        {% if cta.mobile_copy %}
+                            <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                        {% endif %}
+                    </a>  
+                </nav>
+            {% endfor %}  
+        {% endif %}
   </article>
 {% endmacro %}
-{% macro subfooter__form(image, maxWidth) %}
+{% macro subfooter__form(item, maxWidth) %}
   <div class="grid justify-items-center bg-ams-primary w-full p-6">
       <article class="{% if maxWidth %} {{maxWidth}} {% else %} max-w-screen-lg {% endif %}
            p-6 bg-ams-white w-full">
@@ -121,32 +132,26 @@
               <figure class="grid">
                   <figcaption class="order-2 xmed:order-1">
                       <h2 class="title-display pt-4 text-ams-primary font-serif text-2xl xmed:text-4xl pb-4 xmed:pt-0">
-                          Join The A-List
+                          {{item.title}}
                       </h2>
-                      <p class="text-ams-primary pb-4 font-sans text-md">
-                          You'll be the first to hear about events and promotions.
-                      </p>
+                      <div class="text-ams-primary pb-4 font-sans text-md cms-description">
+                          {{item.description | safe}}
+                      </div>
                   </figcaption>
                   <figcaption class="order-1 xmed:order-2">
-                      {{ scaled_image(image) }}
+                      {{ global_image(item.image.global_image) }}
                   </figcaption>
               </figure>
               <form-sender data-type="alist">
                   <form class="pt-4 xmed:pt-16">
-                      <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                          <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode == 32) || (event.key == '-') || (event.key == '.')" required="required" type="text" id="firstName" name="firstName" placeholder="John" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
-                          <label for="firstName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">FIRST NAME *</label>
-                      </div>
-                      <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                          <input onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode == 32) || (event.key == '-') || (event.key == '.')" required="required" type="text" id="lastName" name="lastName" placeholder="Galen" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
-                          <label for="lastName" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">LAST NAME *</label>
-                      </div>
-                      <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
-                          <input type="text" required="required" id="email" name="email" placeholder="johnglenn@example.com" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
-                          <label for="email" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">EMAIL ADDRESS *</label>
-                      </div>
+                      {% for inp in item.inputs %}
+                          <div class="floating-input mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs relative">
+                                <input onkeypress="{{inp.onkeypress}}" required="required" type="{{inp.type}}" id="{{inp.id}}" name="{{inp.name}}" placeholder="{{inp.placeholder}}" class="border-0 border-b-2 border-ams-label bg-ams-label text-base w-full p-3 h-8 focus:outline-none focus:ring-transparent focus:border-ams-label"/>
+                                <label for="{{inp.id}}" class="absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out">{{inp.label}}</label>
+                            </div>
+                      {% endfor %}
                       <div class="text-center xmed:text-left">
-                          {{ primaryButton("#", 'Join the A-List', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
+                          {{ primaryButton("#", item.cta, 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
                       </div>    
                       <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
                   </form>
@@ -154,4 +159,8 @@
           </section>
       </article>
   </div>
+{% endmacro %}
+
+{% macro cms_description(description, class = 'cms-description') %}
+    <div class="{{class}}">{{description | safe}}</div>
 {% endmacro %}

@@ -86,7 +86,7 @@ const removeMarkers = () => {
   markers = [];
 };
 
-const categories = data.categories;
+const handleCategories = (categories = [])=> {
 const categoryMapElement = document.querySelector("#categoryMap");
 const subCategoryMapElement = document.querySelector("#subCategoryMap");
 const nextCategory = document.querySelector("#nextCategory");
@@ -114,18 +114,20 @@ const removeAllWhiteBackground = () =>{
 const renderSubCategories = (category) => {
   let html = "";
   category.locations.forEach((item) => {
+    const imgSrc = CLOUDFRONT_URL + item.image_.global_image.src;
+    const imgalt = item.image_.global_image.alt;
     html += `<div class="mb-10 ">
-        <div id="${item.cardTitle}" class="sub_cat grid xmed:grid-cols-40-60">
+        <div id="${item.card_title}" class="sub_cat grid xmed:grid-cols-40-60">
             <div class="relative">
-                <div class="absolute bg-ams-white text-xs w-24 p-2 top-2 right-2 text-center">${item.categoryName}</div>
-                <img src="${item.image}" class="w-full" alt="${item.imgalt}">
+                <div class="absolute bg-ams-white text-xs w-24 p-2 top-2 right-2 text-center">${item.category_name}</div>
+                <img src="${imgSrc}" class="w-full" alt="${imgalt}">
             </div>
             <div class="xmed:px-4">
                 <div class="flex xmed:justify-between xmed:mb-0">
-                    <div class="title justify-items-start"><a class="cursor-pointer" href="${item.url}  "target="_blank">${item.cardTitle}</a></div>
+                    <div class="title justify-items-start"><a class="cursor-pointer" href="${item.url}  "target="_blank">${item.card_title}</a></div>
                     <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
                 </div>
-                <p>${item.cardBody}</p>
+                <p>${item.card_body}</p>
             </div>
         </div>
     </div>`;
@@ -139,19 +141,21 @@ const renderSubCategory = (category) => {
                 <div class="swiper-wrapper">`;
 
   category.locations.forEach((item) => {
+    const imgSrc = CLOUDFRONT_URL + item.image_.global_image.src;
+    const imgalt = item.image_.global_image.alt;
     html += `<div class="swiper-slide bg-ams-white" >
               <div id="sub" class="mb-6">
                 <div class="grid xmed:grid-cols-40-60">
                     <div class="cat-image relative">
-                        <div class="absolute bg-ams-white text-xs w-24 left-6 bottom-6 p-2 text-center">${item.categoryName}</div>
-                        <img src="${item.image}" class="w-full p-4 max-h-80 object-cover object-center" alt="${item.imgalt}">
+                        <div class="absolute bg-ams-white text-xs w-24 left-6 bottom-6 p-2 text-center">${item.category_name}</div>
+                        <img src="${imgSrc}" class="w-full p-4 max-h-80 object-cover object-center" alt="${imgalt}">
                     </div>
                     <div class="px-4">
                         <div class="flex justify-between">
-                          <div class="title justify-items-start">${item.cardTitle}</div>
+                          <div class="title justify-items-start">${item.card_title}</div>
                           <div class="justify-items-end text-ams-gold pl-3">${item.distance}</div>
                         </div>
-                        <p class="mb-8 xmed:mb-4 text-sm leading-snug">${item.cardBody}</p>
+                        <p class="mb-8 xmed:mb-4 text-sm leading-snug">${item.card_body}</p>
                     </div>
                 </div>
               </div>
@@ -174,7 +178,10 @@ const loadMap = (category, small) => {
     category.locations.forEach((item) => {
       if (item.positions.length) {
         item.positions.forEach(locObj => {
-          locations.push({ ...locObj, "id": item.cardTitle });
+          locations.push({ ...locObj,
+            lat: parseFloat(locObj.lat),
+            long: parseFloat(locObj.long),
+            "id": item.card_title });
         })
       }
     });
@@ -238,3 +245,14 @@ previousCategory.addEventListener("click", function (e) {
 });
 
 updateUI(index);
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const html = document.querySelector("#location-component")
+  if(html){
+      const categories = JSON.parse(html.dataset.categories);
+      if(categories && categories.length > 0){
+        handleCategories(categories)
+        html.dataset.categories = []
+      }
+  }
+})

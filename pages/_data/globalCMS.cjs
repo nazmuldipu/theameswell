@@ -1,5 +1,4 @@
 const fetchPageData = require('../../scripts/utils/fetch-page-data.cjs')
-
 /**
  * fetch data of dine page
  * 

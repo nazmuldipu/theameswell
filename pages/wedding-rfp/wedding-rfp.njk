@@ -1,110 +1,58 @@
 ---
 layout: base.njk
 pagename: wedding-rfp
-meta_title: The Ameswell Hotel | Wedding Request
-meta_description: Plan your dream wedding at the Ameswell Hotel.
-canonical_href: https://www.theameswellhotel.com/wedding-rfp/
 permalink: "build/wedding-rfp/index.html"
 permalinkBypassOutputDir: true
+canonical_href: https://www.theameswellhotel.com/wedding-rfp/
 ---
 {% from "buttons.njk" import primaryButton %}
 {% from "macros.njk" import scaled_image %}
+{% from "global-image.njk" import global_image %}
 
-{% macro form_input( name, label, type="text", placeholder="", required = true, parentClass="", val="", readonly=false) %}
+{% macro form_input(item = {}, parentClass = "") %}
     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
-        {{label}}<br>
-        <input type="{{type}}" id="{{name}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
-        class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
-        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }} {{ 'readonly' if (readonly == true) }}/>
+        {{item.label}}<br>
+        <input type="{{item.type}}" 
+            id="{{item.name}}" 
+            name="{{item.name}}" 
+            placeholder="{{ item.placeholder }}"  
+            {% if item.val !== "" %} value="{{item.val}}" {% endif %}
+            class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
+            placeholder-ams-primary placeholder-opacity-50" 
+            aria-required="true" {{ 'required' if (item.required == true) }} 
+            {{ 'readonly' if (item.readonly == true) }}/>
     </label>
 {% endmacro %}
 
-<section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-    {{scaled_image(banner_image)}}
-</section>
+{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+    {% for item in pageCMS['top-banner'].simple_article %}
+        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+            {% for img in item.image %}
+                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+            {% endfor %}
+        </section>
+    {% endfor %}
+{% endif %}
 
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:border-2 xmed:shadow-md">
+        {% if pageCMS['submit-form-content'] and pageCMS['submit-form-content'].text_content %}
         <div class="w-full grid justify-items-center -mt-24 xmed:-mt-16 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
             <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
                 <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
                     <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
-                        Congratulations!
+                        {{pageCMS['submit-form-content'].text_content.title}}
                     </h2>
                     <h3 class="title xmed:title-display text-xl xmed:text-3xl py-4 xmed:py-8">
-                        Let’s start planning your wedding
+                        {{pageCMS['submit-form-content'].text_content.description | safe}}
                     </h3>
                 </section>
             </article>
         </div>
+        {% endif %}
         <div class="w-full grid justify-items-center px-6 xmed:px-0 bg-ams-base xmed:bg-transparent">
             <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
-                <form-sender data-type="wedding">
-                    <form>
-                        <h3 class="title xmed:text-xl py-4 xmed:py-8">
-                            What are your names?
-                        </h3>
-
-                        {{form_input("name","YOUR NAME *", "text", "First and Last")}}
-                        {{form_input("fianceName","FIANCÉ NAME", "text", "First and Last", false)}}
-
-                        <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
-                            Where would you like to get married?
-                        </h3>
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                            <div class="space-x-2 items-center">
-                                <input type="radio" name="desiredLocation" id="greatLawn" value="great-lawn" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                <label for="greatLawn">Great Lawn</label>
-                            </div>
-                            <div class="space-x-2 items-center">
-                                <input type="radio" name="desiredLocation" id="infinityBallroom" value="infinity-ballroom" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                <label for="infinityBallroom">Infinity Ballroom</label>
-                            </div>
-                            <div class="space-x-2 items-center">
-                                <input type="radio" name="desiredLocation" id="notSure" value="not-sure" class="focus:ring-transparent focus:ring-offset-0 border-2 text-ams-gold">
-                                <label for="notSure">Not Sure</label>
-                            </div>
-                        </label>
-
-                        <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
-                            What is your wedding date?
-                        </h3>
-                        {{form_input("desiredDate","DESIRED DATE", "text", "YYYY-MM-DD", false, "datepicker relative", readonly=true)}}
-                        {{form_input("startTime","Event Start Time: ", "time", "Start Time", false)}}
-                        {{form_input("endTime","Event End Time:", "time", "End Time", false)}}
-
-                        <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
-                            Please tell us more about your special day.
-                        </h3>
-                        {{form_input("guestCount","HOW MANY GUESTS? *", "number")}}
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs space-y-2">
-                            WHERE IS YOUR CEREMONY?<br>
-                            <select aria-required="true" name="ceremonyPlace" id="ceremonyPlace" class="block w-full p-0 border-0 focus:ring-transparent bg-ams-label text-base focus:outline-none">
-                                <option value="" disabled selected hidden></option>
-                                <option value="onsite">On Site</option>
-                                <option value="offsite">Off Site</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </label>
-                        {{form_input("ceremonyLocation","WHERE IS YOUR CEREMONY LOCATION?", "text", "", false, "ceremonyLocation")}}
-                        {{form_input("guestRoomCount","How many guest rooms? ", "number", "", true, "", 0)}}
-                        {{form_input("budget","WHAT IS YOUR BUDGET?", "number", "", false)}}
-                        {{form_input("additionalEvents","Will you be holding any additional events?", "text", "Rehearsal Dinner, Post Wedding Brunch", false)}}
-
-                        <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase">
-                            Additional Information<br>
-                            <textarea name="additionalInfo" class="block w-full p-0 border-0 focus:ring-transparent focus:border-ams-primary focus:border-opacity-30 focus:border-b-2 border-ams-primary min-h-l bg-ams-label text-base focus:outline-none placeholder-ams-primary placeholder-opacity-50"></textarea>
-                        </label>
-                        <h3 class="title text-lg xmed:text-xl py-4 xmed:py-8">
-                            How can we reach you?
-                        </h3>
-                        {{form_input("phone","PHONE NUMBER *", "tel", "718-555-1212")}}
-                        {{form_input("email","EMAIL ADDRESS *", "email", "ashepard@example.com")}}
-
-                        {{ primaryButton("#", 'Submit', 'submit__button inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', 'button') }}
-                        <div class="ajax__status text-ams-primary text-ams-green text-rose-600 text-xs pt-2 hidden"></div>
-                    </form>
-                </form-sender>
+                <div id="wedding-rfp-form"></div>
             </article>
         </div>
     </div>
