@@ -35,7 +35,7 @@ subfooter__form %}
     {% for item in pageCMS['top-banner'].simple_article %}
         <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
             {% for img in item.image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+                {{ global_image(img.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
             {% endfor %}
         </section>
     {% endfor %}

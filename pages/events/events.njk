@@ -41,7 +41,7 @@ canonical_href: https://www.theameswellhotel.com/events/
             {% set top_banner_image = item.image %}
             
             {% for img in top_banner_image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+                {{ global_image(img.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
             {% endfor %}
 
         {% endfor %}
