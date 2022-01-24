@@ -252,27 +252,25 @@ cms_description %}
             {% endfor %}
     </article>
     <article id="happenings" class="segment-inner xmed:grid items-start w-full xmed:grid-cols-3 xmed:gap-8">
-        {% if pageCMS['happenings-intro'] and pageCMS['happenings-intro'].simple_article %}
-            {% for item in pageCMS['happenings-intro'].simple_article %}
+        {% if pageCMS['happenings-introduction'] and pageCMS['happenings-introduction'].article_with_actions %}
+            {% set item = pageCMS['happenings-introduction'].article_with_actions %}
                 <section class="mb-8 shadow-md mx-6 xmed:mx-0 xmed:px-0">
                     <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
                         <h2 class="title-display text-2xl font-serif font-medium py-4">
                             {{item.title}}
                         </h2>
                         <div class="text-base xmed:text-lg font-sans text-ams-primary cms-description">
-                            {{item.description | safe}}
+                            {{item.descriptions | safe}}
                         </div>
-                        {% if item.links %}
-                            {% for cta in item.links %}
-                                {% set action = cta.action %}
+                        {% if item.actions %}
+                            {% for cta in item.actions %}
                                 <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
-                                    <a href="{{action.url}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{action.copy}}</a>
+                                    <a href="{{cta.href}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{cta.copy}}</a>
                                 </div>
                             {% endfor %}
                         {% endif %}
                     </div>
                 </section>
-            {% endfor %}
         {% endif %}
     </article>
 </div>
@@ -308,36 +306,26 @@ cms_description %}
 <!--art-widget end-->
 
 <!--press widget-->
-{% if pageCMS['press-widget'] and pageCMS['press-widget'].simple_article %}
-    {% for art in pageCMS['press-widget'].simple_article %}
+{% if pageCMS['press-releases'] and pageCMS['press-releases'].press_releases %}
+    {% set art = pageCMS['press-releases'].press_releases %}
         <section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
             <div class="max-w-7xl mx-auto px-6">
-                <article class="py-6 xmed:py-8 bg-ams-white shadow-md">
+                <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
                     <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
                         <div class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">{{art.description | safe}}</div>
-                        {% if art.links %}
-                            {% for link in art.links %}
-                                {% set cta = link.action %}
-                                {% if cta.type == 'author' %}
-                                    <a href="{{cta.url}}" target="_blank">
-                                        <p class="text-ams-cyan font-semibold underline">{{cta.copy}}</p>
-                                    </a>
-                                {% endif %}
-                                {% if cta.type == 'primary' %}
-                                    <nav class="mt-8">
-                                        <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.copy}}</a>
-                                    </nav>
-                                {% endif %}
+                        <a href="{{art.link}}" target="_blank"><p class="text-ams-cyan font-semibold underline">-{{art.author}}</p></a>
+                        <nav class="mt-8">
+                            {% for cta in art.actions %}
+                                <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.label}}</a>
                             {% endfor %}
-                        {% endif %}
+                        </nav>
                     </div>
                 </article>
             </div>
         </section>
-    {% endfor %}
 {% endif %}
-{% if pageCMS['press-carousel'] and pageCMS['press-carousel'].simple_article %}
-    {% set item = pageCMS['press-carousel'].simple_article %}
+{% if pageCMS['press-widget-carousel'] and pageCMS['press-widget-carousel'].press_widget %}
+    {% set item = pageCMS['press-widget-carousel'].press_widget %}
     <div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
         <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
             <section>
