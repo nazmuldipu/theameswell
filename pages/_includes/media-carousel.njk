@@ -267,7 +267,13 @@
             <div class="swiper-wrapper z-10">
                     {% for slide in slides %}
                         <div class="swiper-slide">
-                            {{global_image(slide.global_image)}}
+                            {% if splitNav %}
+                                {% set imgClass = "swiper-lazy w-full h-auto px-5"  %}
+                            {% else %}
+                                {% set imgClass = "swiper-lazy w-full h-auto "  %}
+                            {% endif %}
+                            
+                            {{global_image(slide.global_image, imgClass =  imgClass)}}
                         </div>
                     {% endfor %}
             </div>
