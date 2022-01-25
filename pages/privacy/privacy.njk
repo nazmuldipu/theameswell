@@ -5,39 +5,30 @@ permalink: "build/privacy/index.html"
 permalinkBypassOutputDir: true
 canonical_href: https://www.theameswellhotel.com/privacy/
 ---
-{% from "macros.njk" import address_format %}
 
 <section class="w-full xmed:max-w-screen-lg mt-24 mb-16">
     <article class="px-6 xmed:px-0">
-        {% if pageCMS['contents'] and pageCMS['contents'].simple_article %}
-            {% for item in pageCMS['contents'].simple_article %}
-                {% if item.title %}
-                    <h2 class="title text-2xl pb-8">
-                        {{item.title}}
-                    </h2>
-                {% endif %}
+        {% if pageCMS['page-title'].simple_text %}
+            <h2 class="title text-2xl pb-8">
+                {{pageCMS['page-title'].simple_text}}
+            </h2>
+        {% endif %}
+
+        {% if pageCMS['page-content'].single_article_arr.length > 0 %}
+            {% for item in pageCMS['page-content'].single_article_arr %}
                 <h3 class="title text-1xl pb-2">
-                    {{item.sub_title}}
+                    {{item.title}}
                 </h3>
                 <div class="pb-4 cms-description">
                     {{item.description | safe}}
                 </div>
             {% endfor %}
         {% endif %}
-        {% if pageCMS['address'] and pageCMS['address'].address %}
-        {% set item = pageCMS['address'].address %}
-        {{item.label}}<br>
 
-        {% if item.location %}
-            {% set location = pageCMS['address'].address.location %}
-            <a href="{{location.href}}" target="_blank" rel="noreferrer" class="text-ams-gold underline">
-            {{ address_format(location.street_address, location.city, location.state, location.zip) }}</a><br>
+        {% if pageCMS['address'].single_article %}
+            <div class="pb-4 address">
+                {{pageCMS['address'].single_article.description | safe}}
+            </div>
         {% endif %}
-
-        {% if item.phone and item.phone.simple_action %}
-            {% set phone = pageCMS['address'].address.phone.simple_action %}
-            <a href="{{phone.href}}" class="text-ams-cyan">{{phone.copy}}</a>
-        {% endif %}
-    {% endif %}
     </article>
 </section>
