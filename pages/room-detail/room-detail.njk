@@ -11,7 +11,7 @@ canonical_href: https://www.theameswellhotel.com/room-detail/
 {% from "component_carousel.njk" import component_carousel,
 cms_homepage_offers_carousel %}
 {% from "macros.njk" import scaled_image,
-offersArticle,
+cms_offersArticle,
 subfooter__form %}
 {% from "buttons.njk" import primaryButton %}
 {% from "svgicon.njk" import svg_icon %}
@@ -31,32 +31,30 @@ subfooter__form %}
         </div>
     </section>
 {% endmacro %}
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
+{% if pageCMS['hero-image'] and pageCMS['hero-image'].global_image %}
+    {% set item = pageCMS['hero-image'].global_image %}
         <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
+            {{ global_image(item, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
         </section>
-    {% endfor %}
 {% endif %}
 <div
     class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-12 pb-8 xmed:pb-14 px-6 bg-pattern--ams-gold">
     <article class="w-full grid justify-items-center">
-        {% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-            {% for item in pageCMS['top-banner'].simple_article %}
+        {% if pageCMS['hero-article'] and pageCMS['hero-article'].titles_and_description %}
+            {% set item = pageCMS['hero-article'].titles_and_description %}
                 <section class="w-full grid justify-items-center max-w-screen-lg shadow-md">
                     <div class="pb-4 px-4 xmed:shadow-md xmed:p-10 bg-ams-white">
                         <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                            {{item.title}}<br class="hidden xmed:block">
-                            {{item.sub_title}}
+                            {% for title in item.title %}
+                            {{title}}
+                            <br class="hidden xmed:block">
+                            {% endfor %}
                         </h2>
                         <div class="xmed:text-center cms-description">
                             {{item.description | safe}}
                         </div>
                     </div>
                 </section>
-            {% endfor %}
         {% endif %}
         {% if pageCMS['icons'] and pageCMS['icons']
             .icon_list and pageCMS['icons']
@@ -95,8 +93,8 @@ subfooter__form %}
         </figure>
 
         <div class="w-full grid justify-items-center max-w-screen-2xl">
-            {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].text_content %}
-                {{textCard('', pageCMS['rooms-top-content'].text_content.description, 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
+            {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].single_article %}
+                {{textCard('', pageCMS['rooms-top-content'].single_article.description, 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
             {% endif %}
         </div>
         <figure class=" xmed:hidden w-full max-w-screen-xl overflow-hidden">
@@ -106,11 +104,11 @@ subfooter__form %}
 </div>
 
 <div class="w-full grid justify-items-center bg-pattern--ams-grey pb-8">
-    {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].text_content %}
+    {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].single_article %}
         <section class="w-full px-6 grid mx-8 my-8 xmed:my-12 justify-items-center max-w-screen-md">
             <div class="w-full mx-6 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
                 <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                    {{pageCMS['rooms-top-content'].text_content.title}}
+                    {{pageCMS['rooms-top-content'].single_article.title}}
                 </h2>
             </div>
         </section>
@@ -151,7 +149,7 @@ subfooter__form %}
                                             <div class="w-full grid justify-items-center" >
                                                 <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
                                                     {% for icon in type.icon_list %}
-                                                        <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center justify-items-center text-center">
+                                                        <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center justify-items-center text-center cms-svg">
                                                             {{icon.icon | safe}}
                                                             <a>
                                                                 <span>{{icon.title}}</span>
@@ -199,8 +197,8 @@ subfooter__form %}
     <div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
         <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
             <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
-                {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
-                    {% for item in globalCMS['offers-article'].simple_article %}
+                {% if pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                    {% set item = pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
                         <figcaption class="mx-20 px-2 mb-8">
                             <h2 class="title-display text-2xl xmed:text-4xl pb-4 text-ams-primary xmed:text-center">
                                 {{item.title}}
@@ -209,13 +207,12 @@ subfooter__form %}
                                 {{item.description | safe}}
                             </div>
                             <div class="text-center pt-4 pb-4">
-                                {% if item.links %}
-                                    {% for action in item.links %}
-                                        {% set cta = action.action %}
-                                        <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
-                                            <span class="{{ 'hidden xmed:inline-block' if not cta.mobile_copy == '' }}">{{cta.copy | safe}}</span>
-                                            {% if cta.mobile_copy %}
-                                                <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                                {% if item.actions %}
+                                    {% for link in item.actions %}
+                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                            <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
+                                            {% if link.mobile_label %}
+                                                <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
                                             {% endif %}
                                         </a>
                                     {% endfor %}
@@ -223,7 +220,6 @@ subfooter__form %}
                             </div>
                             <hr class="border-solid border border-ams-gold xmed:mx-3">
                         </figcaption>
-                    {% endfor %}
                 {% endif %}
 
                 {% if globalCMS['offers'] and globalCMS['offers'].offers %}
@@ -237,26 +233,26 @@ subfooter__form %}
 
     <!--offers desktop design end-->
     <div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
-        {% if pageCMS['features-title'] and pageCMS['features-title'].text_content %}
+        {% if pageCMS['features-headline'] and pageCMS['features-headline'].simple_text %}
             <div class="w-full grid justify-items-center bg-ams-base">
                 <div class="w-full px-6 grid justify-items-center max-w-screen-md">
                     <div class="w-full mx-6 my-8 py-4 px-4 xmed:p-8 xmed:my-0 shadow-sm xmed:shadow-md bg-ams-white">
                         <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                            {{pageCMS['features-title'].text_content.title}}
+                            {{pageCMS['features-headline'].simple_text}}
                         </h2>
                     </div>
                 </div>
             </div>
         {% endif %}
-        {% if pageCMS['features'] and pageCMS['features'].simple_article %}
-            {% for item in pageCMS['features'].simple_article %}
+        {% if pageCMS['feature-list'] and pageCMS['feature-list'].article_with_image %}
+            {% for item in pageCMS['feature-list'].article_with_image %}
                 <div class="w-full grid justify-items-center max-w-screen-xl xmed:mt-14 {{feature.classes}}" >
                     <section class="shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2 xmed:mx-4">
                         <div class="px-6 mt-6 block xmed:hidden">
                             <figure>
-                                {% for img in item.image %}
-                                    {{ global_image(img.global_image, imgClass = "w-full") }}
-                                {% endfor %}
+                                {% if item.photo %}
+                                    {{ global_image(item.photo.global_image, imgClass = "w-full") }}
+                                {% endif %}
                             </figure>
                         </div>
                         <div class="p-6">
@@ -267,9 +263,9 @@ subfooter__form %}
                         </div>
                         <div class="p-8 hidden xmed:block">
                             <figure>
-                                {% for img in item.image %}
-                                    {{ global_image(img.global_image, imgClass = "w-full") }}
-                                {% endfor %}
+                                {% if item.photo %}
+                                    {{ global_image(item.photo.global_image, imgClass = "w-full") }}
+                                {% endif %}
                             </figure>
                         </div>
                     </section>
@@ -282,10 +278,9 @@ subfooter__form %}
         <section class="max-w-7xl mx-auto px-6">
             <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
                 <aside class="mb-12">
-                    {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
-                        {% for item in globalCMS['offers-article'].simple_article %}
-                            {{offersArticle(item)}}
-                        {% endfor %}
+                    {% if pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                        {% set item = pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                            {{cms_offersArticle(item)}}
                     {% endif %}
                 </aside>
                 <aside class="xmed:col-span-2">
@@ -299,9 +294,11 @@ subfooter__form %}
         </section>
     </section>
 
-{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form %}
+{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form
+    and globalCMS['join-the-a-list-form-image'] and globalCMS['join-the-a-list-form-image'] %}
     {% set subfooter_form = globalCMS['join-the-a-list'].form%}
-    {{subfooter__form(subfooter_form)}}
+    {% set footerImage = globalCMS['join-the-a-list-form-image'] %}
+    {{subfooter__form(subfooter_form, formImage=footerImage)}}
 {% endif %}
     <div class="bg-ams-primary w-full">
         <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>

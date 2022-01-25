@@ -124,7 +124,7 @@
         {% endif %}
   </article>
 {% endmacro %}
-{% macro subfooter__form(item, maxWidth) %}
+{% macro subfooter__form(item, maxWidth, formImage) %}
   <div class="grid justify-items-center bg-ams-primary w-full p-6">
       <article class="{% if maxWidth %} {{maxWidth}} {% else %} max-w-screen-lg {% endif %}
            p-6 bg-ams-white w-full">
@@ -139,7 +139,7 @@
                       </div>
                   </figcaption>
                   <figcaption class="order-1 xmed:order-2">
-                      {{ global_image(item.image.global_image) }}
+                      {{ global_image(formImage.global_image) }}
                   </figcaption>
               </figure>
               <form-sender data-type="alist">
@@ -163,4 +163,29 @@
 
 {% macro cms_description(description, class = 'cms-description') %}
     <div class="{{class}}">{{description | safe}}</div>
+{% endmacro %}
+
+{% macro cms_offersArticle(item) %}
+  <article class="xmed:shadow-md p-4 xmed:p-10 bg-ams-white">
+        <header>
+            <h2 class="title-display text-2xl xmed:text-3xl pb-4">
+                {{item.title}}
+            </h2>
+        </header>
+        <div class="text-ams-primary text-md cms-description">
+            {{item.description | safe}}
+        </div>
+        {% if item.actions %}
+            {% for link in item.actions %}
+                <nav class="pt-7 pb-2 xmed:text-center">
+                    <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">
+                        <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
+                          {% if link.mobile_label %}
+                              <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
+                          {% endif %}
+                    </a>  
+                </nav>
+            {% endfor %}  
+        {% endif %}
+  </article>
 {% endmacro %}

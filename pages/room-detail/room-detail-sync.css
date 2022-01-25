@@ -28,6 +28,10 @@
     .com-car-nav {
         @apply px-8;
     }
+    .cms-svg svg {
+        @apply w-20 xmed:w-28; 
+        @apply inline-block;
+    }
 }
 
 @media all and ( max-width: 899px ) {

@@ -6,48 +6,39 @@ permalinkBypassOutputDir: true
 canonical_href: https://www.theameswellhotel.com/wellness/
 ---
 {% from "icons.njk" import svgicon %}
-{% from "buttons.njk" import primaryButton, cms_primaryButton %}
+{% from "buttons.njk" import primaryButton,
+cms_primaryButton %}
 {% from "media-carousel.njk" import media_carousel, cms_media_carousel %}
 {% from "macros.njk" import scaled_image %}
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
-        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
-        </section>
+{% if pageCMS['hero-image'] and pageCMS['hero-article'].article_with_actions %}
+    <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+        {{ global_image( pageCMS['hero-image'].global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
+    </section>
 
-        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 xmed:pb-36 bg-pattern--ams-grey xmed:bg-pattern--ams-yellow">
-            <article class="w-full grid justify-items-center">
-                <section class="w-full grid justify-items-center max-w-screen-lg">
-                    <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                        <h2 class="title-display text-3xl xmed:text-5xl pt-6 xmed:pt-0 pb-3 xmed:text-center">
-                            {{item.title}}
-                        </h2>
-                        <div class="xmed:text-center tracking-tight text-ams-primary cms-description">
-                            {{item.description | safe}}
-                        </div>
-                        <div class="text-center">
-                            {% if item.links %}
-                                {% for action in item.links %}
-                                    {% set cta = action.action %}
-                                    {{ primaryButton(cta.url, cta.copy, 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
-                                {% endfor %}
-                            {% endif %}
-                        </div>
-                        {# TODO: If this button needed, please remove the comment #}
-                        {# <div class="text-center xmed:hidden py-2">
-                    {{ primaryButton("https://app.squarespacescheduling.com/schedule.php?owner=23496406", 'Make Spa Appointment', 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
-                </div> #}
+    <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 xmed:pb-36 bg-pattern--ams-grey xmed:bg-pattern--ams-yellow">
+        <article class="w-full grid justify-items-center">
+            <section class="w-full grid justify-items-center max-w-screen-lg">
+                <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-3xl xmed:text-5xl pt-6 xmed:pt-0 pb-3 xmed:text-center">
+                        {{pageCMS['hero-article'].article_with_actions.title}}
+                    </h2>
+                    <div class="xmed:text-center tracking-tight text-ams-primary cms-description">
+                        {{pageCMS['hero-article'].article_with_actions.descriptions | safe}}
                     </div>
-                </section>
-            </article>
-        </div>
-    {% endfor %}
+                    <div class="text-center">
+                        {% for action in pageCMS['hero-article'].article_with_actions.actions %}
+                            {{ primaryButton(action.href, action.copy, 'submit__button inline-block mt-4 xmed:mt-10 py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide', external=true) }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
 {% endif %}
+
 {% if pageCMS['slider-images'] and pageCMS['slider-images'].global_image_arr and pageCMS['slider-images'].global_image_arr.images %}
     {% set items = pageCMS['slider-images'].global_image_arr.images %}
     <div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
@@ -56,142 +47,136 @@ canonical_href: https://www.theameswellhotel.com/wellness/
         </article>
     </div>
 {% endif %}
-{% if pageCMS['amenities'] and pageCMS['amenities'].amenities and pageCMS['amenities'].amenities.items %}
+
+{% if pageCMS['amenities'] and pageCMS['amenities']
+    .amenities and pageCMS['amenities']
+    .amenities
+    .items %}
     {% set amenitiesData = pageCMS['amenities'].amenities%}
 {% endif %}
-{% if pageCMS['icons'] and pageCMS['icons']
-    .icon_list and pageCMS['icons']
-    .icon_list
-    .icons %}
-    {% set icon_list = pageCMS['icons'].icon_list%}
-{%endif%}
-    <div class="w-full grid justify-items-center pt-8 xmed:pt-6 px-6 xmed:pb-14 bg-ams-base xmed:bg-pattern--ams-grey">
-        {% if icon_list %}
-            <p class="xmed:hidden mb-10 text-center text-ams-primary">{{icon_list.description | safe}}</p>
-        {% endif %}
-        <article class="w-full grid justify-items-center space-y-8 xmed:space-y-24">
-            {% if icon_list %}
-                {% set item = icon_list %}
-                <section class="w-full grid justify-items-center max-w-screen-xl pb-4 px-4 xmed:mt-6 xmed:p-10 bg-ams-white xmed:shadow-md">
-                    <h2 class="px-10 title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 text-center">
-                        {{item.title}}
-                    </h2>
-                    <ul class="xmed:grid xmed:grid-cols-4 xmed:gap-4">
-                        {% for data in item.icons %}
-                            <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center grid-cols-sm-auto gap-4 xmed:px-8 items-center">
-                                {{data.icon | safe}}
-                                <a>
-                                    <span class="text-ams-primary">{{data.title}}</span>
-                                </a>
-                            </div>
-                        {% endfor %}
-                    </ul>
-                </section>
-                {%endif%}
-                <section class="w-full grid justify-items-center max-w-screen-xl">
-                    {% if pageCMS['amenities-article'] and pageCMS['amenities-article'].simple_article %}
-                    {% for item in pageCMS['amenities-article'].simple_article %}
-                    <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                        <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
-                            {{item.title}}
-                        </h2>
-                        <div class="text-center cms-description">
-                            {{item.description | safe}}
+<div class="w-full grid justify-items-center pt-8 xmed:pt-6 px-6 xmed:pb-14 bg-ams-base xmed:bg-pattern--ams-grey">
+    {% if pageCMS['icons'].icon_list %}
+        {% set icon_list = pageCMS['icons'].icon_list%}
+        <p class="xmed:hidden mb-10 text-center text-ams-primary">{{icon_list.description | safe}}</p>
+    {% endif %}
+    <article class="w-full grid justify-items-center space-y-8 xmed:space-y-24">
+        {% if pageCMS['icons'].icon_list %}
+            {% set icon_list = pageCMS['icons'].icon_list%}
+            <section class="w-full grid justify-items-center max-w-screen-xl pb-4 px-4 xmed:mt-6 xmed:p-10 bg-ams-white xmed:shadow-md">
+                <h2 class="px-10 title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 text-center">
+                    {{icon_list.title}}
+                </h2>
+                <ul class="xmed:grid xmed:grid-cols-4 xmed:gap-4">
+                    {% for data in icon_list.icons %}
+                        <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center grid-cols-sm-auto gap-4 xmed:px-8 items-center">
+                            {{data.icon | safe}}
+                            <a>
+                                <span class="text-ams-primary">{{data.title}}</span>
+                            </a>
                         </div>
-                        <div class="pt-7 pb-2 text-center">
-                            {% for cta in item.links %}
-                                {% set btn = cta.action %}
-                                <a href="{{btn.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
-                                    <span class="{{ 'hidden xmed:inline-block' if not btn.mobile_copy == '' }}">{{btn.copy | safe}}</span>
-                                    {% if btn.mobile_copy %}
-                                        <span class="xmed:hidden">{{btn.mobile_copy | safe}}</span>
-                                    {% endif %}
-                                </a>
-                            {% endfor %}
-                        </div>
-                    </div>
                     {% endfor %}
-                    {% endif %}
-                </section>
-                <section class="w-full grid justify-items-center xmed:hidden">
-                    <div class="w-full pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                        {% if amenitiesData.title %}
-                            <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
-                                {{amenitiesData.title}}
-                            </h2>
-                        {% endif %}
-                        {% if amenitiesData.items %}
-                           {% for amenity in amenitiesData.items %}
-                                <a href="#{{amenity.slug}}" class="block text-center underline text-ams-primary mb-5">
-                                    {{amenity.title}}
-                                </a>
-                            {% endfor %} 
-                        {% endif %}
-                    </div>
-                </section>
-            </article>
-        </div>
-        {% if amenitiesData.items %}
-        <div class="w-full grid justify-items-center pt-8 xmed:py-6 bg-ams-base">
-            {% for amenity in amenitiesData.items %}
-                {% set outer_loop_index = loop.index %}
-                <article id="{{amenity.slug}}" class="xmed:w-full xmed:max-w-screen-xl mb-8 bg-ams-white shadow-md mx-6 xmed:mx-auto text-ams-primary">
-                    <div class="grid grid-cols-1 xmed:grid-cols-2 py-5">
-                        <div class="amenity-xs-swiper max-w-screen-xl overflow-hidden xmed:hidden mx-3">
-                            {% if amenity.slides.length > 1 %}
-                                {{ cms_media_carousel(amenity.slides, "", "") }}
-                            {% else %}
-                                <div class="mb-5">
-                                    {% for img in amenity.slides %}
-                                        {{ global_image(img.global_image, imgClass = 'w-full') }}
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                        </div>
-                        <div class="px-4 xmed:px-8">
-                            <div class="mr-10 pb-3 border-b border-ams-gold">
-                                <h2 class="text-2xl xmed:text-4xl font-serif">{{amenity.title}}</h2>
-                                <div class="text-sm xmed:text-lg font-bold">{{amenity.time}}</div>
-                                <div class="text-sm xmed:text-lg font-bold">{{amenity.access}}</div>
-                                <div class="text-sm xmed:text-lg font-bold">{{amenity.note}}</div>
-                            </div>
-                                <div class="pt-6">
-                                    <span class="text-sm xmed:text-lg cms-description">{{amenity.texts | safe}}</span>
-                                        <span class="relative">
-                                            <input type="checkbox" id="read_more_{{outer_loop_index}}" class="read-more absolute top-0 left-0 w-full h-full opacity-0">
-
-                                            <label for="read_more_{{outer_loop_index}}" class="segment__cta segment__cta--gold relative text-ams-gold text-xs font-serif-display uppercase cursor-pointer">READ MORE</label>
-
-                                            <div class="amenities-more overflow-hidden max-h-0 cms-description">
-                                                {{amenity.more_texts | safe}}
-                                            </div>
-                                        </span>
-                                </div>
-
-                            {% if amenity.buttons | length %}
-                                <div class="w-full py-8 grid xmed:grid-flow-col xmed:auto-cols-max gap-6 justify-items-center">
-                                    {% for cta in amenity.buttons %}
-                                        {% set btn = cta.action %}
-                                        <span>
-                                            {{ cms_primaryButton(src = btn.url, copy = btn.copy, mobile_copy = btn.mobile_copy) }}
-                                        </span>
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                        </div>
-                        <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">
-                            {% if amenity.slides.length > 1 %}
-                                {{ cms_media_carousel(amenity.slides, "", "", true) }}
-                            {% else %}
-                                <div class="px-5">
-                                    {% for img in amenity.slides %}
-                                        {{ global_image(img.global_image, imgClass = 'w-full') }}
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                        </div>
-                    </div>
-                </article>
-            {% endfor %}
-        </div>
+                </ul>
+            </section>
         {% endif %}
+        <section class="w-full grid justify-items-center max-w-screen-xl">
+            {% if pageCMS['amenities-article'].article_with_actions %}
+                <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
+                        {{pageCMS['amenities-article'].article_with_actions.title}}
+                    </h2>
+                    <div class="text-center cms-description">
+                        {{pageCMS['amenities-article'].article_with_actions.descriptions | safe}}
+                    </div>
+                    <div class="pt-7 pb-2 text-center">
+                        {% for cta in pageCMS['amenities-article'].article_with_actions.actions %}
+                            {% set btn = cta.action %}
+                            <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                {{cta.copy | safe}}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </section>
+        <section class="w-full grid justify-items-center xmed:hidden">
+            <div class="w-full pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                {% if pageCMS['amenities'].amenities %}
+                    <h2 class="title-display text-2xl xmed:text-4xl pt-4 xmed:pt-0 pb-4 text-center">
+                        {{pageCMS['amenities'].amenities.title}}
+                    </h2>
+                {% endif %}
+                {% if pageCMS['amenities'].amenities %}
+                    {% for amenity in pageCMS['amenities'].amenities.items %}
+                        <a href="#{{amenity.slug}}" class="block text-center underline text-ams-primary mb-5">
+                            {{amenity.title}}
+                        </a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </section>
+    </article>
+</div>
+{% if pageCMS['amenities'].amenities.items.length > 0 %}
+    <div class="w-full grid justify-items-center pt-8 xmed:py-6 bg-ams-base">
+        {% for amenity in pageCMS['amenities'].amenities.items %}
+            {% set outer_loop_index = loop.index %}
+            <article id="{{amenity.slug}}" class="xmed:w-full xmed:max-w-screen-xl mb-8 bg-ams-white shadow-md mx-6 xmed:mx-auto text-ams-primary">
+                <div class="grid grid-cols-1 xmed:grid-cols-2 py-5">
+                    <div class="amenity-xs-swiper max-w-screen-xl overflow-hidden xmed:hidden mx-3">
+                        {% if amenity.slides.length > 1 %}
+                            {{ cms_media_carousel(amenity.slides, "", "") }}
+                        {% else %}
+                            <div class="mb-5">
+                                {% for img in amenity.slides %}
+                                    {{ global_image(img.global_image, imgClass = 'w-full') }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="px-4 xmed:px-8">
+                        <div class="mr-10 pb-3 border-b border-ams-gold">
+                            <h2 class="text-2xl xmed:text-4xl font-serif">{{amenity.title}}</h2>
+                            <div class="text-sm xmed:text-lg font-bold">{{amenity.time}}</div>
+                            <div class="text-sm xmed:text-lg font-bold">{{amenity.access}}</div>
+                            <div class="text-sm xmed:text-lg font-bold">{{amenity.note}}</div>
+                        </div>
+                        <div class="pt-6">
+                            <span class="text-sm xmed:text-lg cms-description read-more__text">{{amenity.texts | safe}}</span>
+                            <span class="relative">
+                                <input type="checkbox" id="read_more_{{outer_loop_index}}" class="read-more absolute top-0 left-0 w-full h-full opacity-0">
+
+                                <label for="read_more_{{outer_loop_index}}" class="segment__cta segment__cta--gold relative text-ams-gold text-xs font-serif-display uppercase cursor-pointer">READ MORE</label>
+
+                                <div class="amenities-more overflow-hidden max-h-0 cms-description">
+                                    {{amenity.more_texts | safe}}
+                                </div>
+                            </span>
+                        </div>
+
+                        {% if amenity.buttons | length %}
+                            <div class="w-full py-8 grid xmed:grid-flow-col xmed:auto-cols-max gap-6 justify-items-center">
+                                {% for cta in amenity.buttons %}
+                                    {% set btn = cta.action %}
+                                    <span>
+                                        {{ cms_primaryButton(src = btn.url, copy = btn.copy, mobile_copy = btn.mobile_copy) }}
+                                    </span>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="amenity-swiper hidden xmed:block w-full overflow-hidden">
+                        {% if amenity.slides.length > 1 %}
+                            {{ cms_media_carousel(amenity.slides, "", "", true) }}
+                        {% else %}
+                            <div class="px-5">
+                                {% for img in amenity.slides %}
+                                    {{ global_image(img.global_image, imgClass = 'w-full') }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+{% endif %}

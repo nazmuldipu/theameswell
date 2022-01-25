@@ -1,3 +1,15 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+
+.ams-address a[href^="tel:"],
+.ams-address a[href^="mailto:"] {
+    --tw-text-opacity: 1;
+    color: rgba(0, 174, 239, var(--tw-text-opacity));
+}
+
+.ams-address a {
+    text-decoration: underline;
+    --tw-text-opacity: 1;
+    color: rgba(133, 117, 80, var(--tw-text-opacity));
+}

@@ -17,7 +17,7 @@
 }
 
 .read-more:checked ~ label ~ div {
-  max-height: 300px;
+  max-height: 340px;
   @apply pt-6;
 }
 
@@ -31,4 +31,7 @@
 
 .cms-description .bold-and-underline {
   font-weight: bold;
+}
+.cms-description.read-more__text p:last-of-type {
+  display: inline;
 }

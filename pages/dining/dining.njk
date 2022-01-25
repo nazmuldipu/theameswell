@@ -10,14 +10,11 @@ canonical_href: https://www.theameswellhotel.com/dining/
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
-        <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
-        </section>
-    {% endfor %}
+{% if pageCMS['hero-banner'] %}
+    {% set banner_image = pageCMS['hero-banner'] %}
+    <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+        {{ global_image(banner_image.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass = "min-h-screen w-auto max-w-none") }}
+    </section>
 {% endif %}
 {% if pageCMS['icons'] and pageCMS['icons']
     .icon_list and pageCMS['icons']
@@ -49,22 +46,20 @@ canonical_href: https://www.theameswellhotel.com/dining/
         </article>
     </div>
 {% endif %}
-{% if pageCMS['dining-items'] and pageCMS['dining-items'].simple_article %}
-    {% for item in pageCMS['dining-items'].simple_article %}
-        <div class="grid justify-items-center w-full bg-ams-base" id="roger">
+{% if pageCMS['dining-item'] and pageCMS['dining-item'].simple_blog %}
+    {% for item in pageCMS['dining-item'].simple_blog %}
+        <div class="grid justify-items-center w-full bg-ams-base {% if loop.last %}  xmed:pb-20 {% endif %}">
             <article class="mb-4 xmed:mt-8">
                 <section class="max-w-screen-xl xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:pb-8 xmed:bg-ams-white xmed:shadow-md">
                     <figure class="xmed:order-2 grid items-center justify-items-center">
-                        {% for img in item.image %}
-                            {{ global_image(img.global_image, classes = "w-full") }}
-                        {% endfor %}
+                        {{ global_image(item.image.global_image, classes = "w-full") }}                        
                     </figure>
                     <div class="m-6 p-4 xmed:p-0 shadow-md xmed:shadow-none bg-ams-white xmed:order-1">
                         <h2 class="title-display text-3xl">
                             {{item.title}}
                         </h2>
                         <h3 class="title-display text-lg uppercase">
-                            {{item.sub_title}}
+                            {{item.subtitle}}
                         </h3>
                         <div>
                             {{item.description | safe}}
@@ -72,8 +67,9 @@ canonical_href: https://www.theameswellhotel.com/dining/
                         <br>
                         <div class="xmed:text-left text-center">
                             {% for cta in item.links %}
-                                {% set link = cta.action%}
-                                <a class="inline-block py-2 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button focus:outline-none xmed:px-8 {{ 'xmed:ml-4' if not loop.first }}" href="{{link.url}}" target="_blank">{{link.copy}}</a>
+                                {% set link = cta.simple_action%}
+                                {% set trg = '_blank' if not link.internal else '_self' %}
+                                <a class="inline-block py-2 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button focus:outline-none xmed:px-8 {{ 'xmed:ml-4' if not loop.first }}" href="{{link.href}}" target="{{ trg }}">{{link.copy}}</a>
                             {% endfor %}
                         </div>
                     </div>

@@ -10,30 +10,27 @@ permalinkBypassOutputDir: true
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
-        <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, classes = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
-        </section>
+{% if pageCMS['hero-image'] and pageCMS['hero-article'].single_article %}
+    <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+        {{ global_image(pageCMS['hero-image'].global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
+    </section>
 
-        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-16 xmed:pb-44 bg-pattern--ams-cyan">
-            <article class="w-full grid justify-items-center pt-4">
-                <section class="w-full grid justify-items-center max-w-screen-lg">
-                    <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                        <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center xmed:max-w-xl m-auto">
-                            {{item.title}}
-                        </h2>
-                        <div class="xmed:text-center cms-description">
-                            {{item.description | safe}}
-                        </div>
+    <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-16 xmed:pb-44 bg-pattern--ams-cyan">
+        <article class="w-full grid justify-items-center pt-4">
+            <section class="w-full grid justify-items-center max-w-screen-lg">
+                <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center xmed:max-w-xl m-auto">
+                        {{pageCMS['hero-article'].single_article.title}}
+                    </h2>
+                    <div class="xmed:text-center cms-description">
+                        {{pageCMS['hero-article'].single_article.description | safe}}
                     </div>
-                </section>
-            </article>
-        </div>
-    {% endfor %}
+                </div>
+            </section>
+        </article>
+    </div>
 {% endif %}
+
 {% if pageCMS['slider-images'] and pageCMS['slider-images'].global_image_arr and pageCMS['slider-images'].global_image_arr.images %}
     <div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
         <article class="w-full max-w-screen-lg overflow-hidden">
@@ -41,71 +38,66 @@ permalinkBypassOutputDir: true
         </article>
     </div>
 {% endif %}
-{% if pageCMS['map-article'] and pageCMS['map-article'].simple_article %}
-    {% for item in pageCMS['map-article'].simple_article %}
-        <div class="grid justify-items-center w-full xmed:py-8 bg-ams-base xmed:bg-ams-primary">
-            <article class="max-w-screen-lg xmed:grid xmed:grid-cols-slideshow xmed:content-stretch">
-                <section class="px-6 py-4 xmed:bg-ams-white">
-                    <h2 class="title xmed:title-display text-xl xmed:text-4xl">
-                        {{item.title}}
-                    </h2>
-                    <div class="cms-description">
-                        {{item.description | safe}}
-                    </div>
-                    {% for cta in item.links %}
-                        {% set link = cta.action%}
-                        {% if link.type == 'address' %}
-                            <p class="pt-4">
-                                <a href="{{link.url}}" target="_blank" rel="noreferrer" class="text-ams-cyan font-bold underline xmed:no-underline skip-ink">
-                                    {{link.copy}}
-                                </a>
-                            </p>
-                        {% else %}
-                            <div class="pt-4 pb-4 xmed:pb-0">
-                                {# TODO: uncomment and link to the location page when it goes live --Alex July 15, 2021 #}
-                                <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">{{link.copy}}</a>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                </section>
-                <section class="xmed:bg-ams-white xmed:grid xmed:content-center xmed:justify-items-center xmed:pr-8">
-                    <div id="map" class="block w-full h-72 p-0 relative"></div>
-                </section>
-            </article>
-        </div>
-    {% endfor %}
+
+{% if pageCMS['address'].article_with_actions %}
+    <div class="grid justify-items-center w-full xmed:py-8 bg-ams-base xmed:bg-ams-primary">
+        <article class="max-w-screen-lg xmed:grid xmed:grid-cols-slideshow xmed:content-stretch">
+            <section class="px-6 py-4 xmed:bg-ams-white">
+                <h2 class="title xmed:title-display text-xl xmed:text-4xl">
+                    {{pageCMS['address'].article_with_actions.title}}
+                </h2>
+                <div class="cms-description">
+                    {{pageCMS['address'].article_with_actions.descriptions | safe}}
+                </div>
+                {% for cta in pageCMS['address'].article_with_actions.actions %}
+
+                    {% if loop.index === 1 %}
+                        <p class="pt-4">
+                            <a href="{{cta.url}}" target="_blank" rel="noreferrer" class="text-ams-cyan font-bold underline xmed:no-underline skip-ink">
+                                {{cta.copy}}
+                            </a>
+                        </p>
+                    {% else %}
+                        <div class="pt-4 pb-4 xmed:pb-0">
+                            {# TODO: uncomment and link to the location page when it goes live --Alex July 15, 2021 #}
+                            <a href="{{cta.href}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">{{cta.copy}}</a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </section>
+            <section class="xmed:bg-ams-white xmed:grid xmed:content-center xmed:justify-items-center xmed:pr-8">
+                <div id="map" class="block w-full h-72 p-0 relative"></div>
+            </section>
+        </article>
+    </div>
 {% endif %}
+
 <div class="bg-ams-primary w-full grid justify-items-center p-6">
     <article class="w-full max-w-screen-lg">
-        {% if pageCMS['restaurants-intro'] and pageCMS['restaurants-intro'].simple_article %}
-            {% for item in pageCMS['restaurants-intro'].simple_article %}
-                <h2 class="title-display text-2xl py-4 text-ams-white xmed:text-center xmed:text-4xl">
-                    {{item.title}}
-                </h2>
-                <div class="pb-6 text-ams-white cms-description">
-                    {{item.description | safe}}
-                </div>
-            {% endfor %}
+        {% if pageCMS['restaurants-intro'] and pageCMS['restaurants-intro'].single_article %}
+            <h2 class="title-display text-2xl py-4 text-ams-white xmed:text-center xmed:text-4xl">
+                {{pageCMS['restaurants-intro'].single_article.title}}
+            </h2>
+            <div class="pb-6 text-ams-white cms-description">
+                {{pageCMS['restaurants-intro'].single_article.description | safe}}
+            </div>
         {% endif %}
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:items-start">
-            {% if pageCMS['restaurants'] and pageCMS['restaurants'].simple_article %}
-                {% for item in pageCMS['restaurants'].simple_article %}
+            {% if pageCMS['restaurants'] and pageCMS['restaurants'].image_article_array.length > 0 %}
+                {% for item in pageCMS['restaurants'].image_article_array %}
                     <figure class="grid grid-cols-2 xmed:grid-cols-1 xmed:justify-items-center gap-4 items-center mb-6">
-                        {% for img in item.image %}
-                            {{ global_image(img.global_image, classes = "w-full") }}
-                        {% endfor %}
+                        {{ global_image(item.image_article.image.global_image, classes = "w-full") }}
                         <figcaption class="text-ams-white xmed:text-center">
                             <header>
                                 <h3 class="segment__cta segment__cta--grey relative inline-block mb-4 text-ams-white">
-                                    {{item.title}}
+                                    {{item.image_article.title}}
                                 </h3>
                             </header>
                             <div class="mb-2 xmed:px-16 xmed:text-center cms-description">
-                                {{item.description | safe}}
+                                {{item.image_article.description | safe}}
                             </div>
-                            {% for cta in item.links %}
-                                {% set link = cta.action%}
-                                <a href="{{link.url}}" class="font-bold text-ams-white uppercase underline">{{link.copy}}</a>
+                            {% for cta in item.image_article.actions %}
+                                <a href="{{cta.href}}" class="font-bold text-ams-white uppercase underline">{{cta.copy}}</a>
                             {% endfor %}
                         </figcaption>
                     </figure>
@@ -114,22 +106,22 @@ permalinkBypassOutputDir: true
         </section>
     </article>
 </div>
+
+
 <div class="w-full grid justify-items-center p-6 bg-pattern--ams-cyan">
-    {% if pageCMS['restaurants-bottom'] and pageCMS['restaurants-bottom'].simple_article %}
-        {% for item in pageCMS['restaurants-bottom'].simple_article %}
-            <article class="w-full grid justify-items-center">
-                <section class="w-full grid justify-items-center max-w-screen-lg">
-                    <div class="pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                        <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
-                            {{item.title}}
-                        </h2>
-                        <div class="xmed:text-center cms-description">
-                            {{item.description | safe}}
-                        </div>
+    {% if pageCMS['sustainability'].single_article %}
+        <article class="w-full grid justify-items-center">
+            <section class="w-full grid justify-items-center max-w-screen-lg">
+                <div class="pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
+                        {{pageCMS['sustainability'].single_article.title}}
+                    </h2>
+                    <div class="xmed:text-center cms-description">
+                        {{pageCMS['sustainability'].single_article.description | safe}}
                     </div>
-                </section>
-            </article>
-        {% endfor %}
+                </div>
+            </section>
+        </article>
     {% endif %}
     {% if pageCMS['icons'] and pageCMS['icons']
         .icon_list and pageCMS['icons']
@@ -155,36 +147,31 @@ permalinkBypassOutputDir: true
         </article>
     {% endif %}
 </div>
-{% if pageCMS['about-us-intro'] and pageCMS['about-us-intro'].simple_article %}
-    {% for item in pageCMS['about-us-intro'].simple_article %}
-        <div class="w-full grid justify-items-center bg-ams-base">
-            <section class="w-full px-6 grid mx-8 my-8 xmed:my-12 justify-items-center max-w-screen-md">
-                <div class="w-full mx-6 py-4 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
-                    <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                        {{item.title}}
-                    </h2>
-                </div>
-            </section>
-        </div>
-    {% endfor %}
+
+{% if pageCMS['about-title'] %}
+    <div class="w-full grid justify-items-center bg-ams-base">
+        <section class="w-full px-6 grid mx-8 my-8 xmed:my-12 justify-items-center max-w-screen-md">
+            <div class="w-full mx-6 py-4 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
+                <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
+                    {{pageCMS['about-title'].simple_text}}
+                </h2>
+            </div>
+        </section>
+    </div>
 {% endif %}
-{% if pageCMS['about-items'] and pageCMS['about-items'].simple_article %}
-    {% for item in pageCMS['about-items'].simple_article %}
+
+{% if pageCMS['about-us'] and pageCMS['about-us'].image_article_array.length > 0 %}
+    {% for item in pageCMS['about-us'].image_article_array %}
         <div class="grid justify-items-center w-full bg-ams-base">
             <article class="mb-12">
                 <section class="max-w-screen-xl xmed:grid xmed:grid-cols-2 gap-8 p-6 bg-ams-white xmed:shadow-md">
-                    {% for img in item.image %}
-                        {{ global_image(img.global_image, classes = "w-full") }}
-                    {% endfor %}
+                    {{ global_image(item.image_article.image.global_image, classes = "w-full") }}
                     <div class="mt-8 xmed:mt-0 xmed:order-first">
                         <h2 class="title-display text-3xl">
-                            {{item.title}}
+                            {{item.image_article.title}}
                         </h2>
-                        <h3 class="text-ams-primary font-sans font-bold xmed:font-normal text-lg pb-8 pt-0 xmed:pb-4">
-                            {{item.sub_title}}
-                        </h3>
                         <div class="cms-description">
-                            {{item.description | safe}}
+                            {{item.image_article.description | safe}}
                         </div>
                     </div>
                 </section>

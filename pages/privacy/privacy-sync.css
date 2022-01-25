@@ -1,3 +1,22 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
 /****  end imports  ********************************/
+
+.cms-description ul {
+    @apply list-disc;
+    @apply pl-8;
+}
+
+.cms-description ul li {
+    @apply pb-2;
+}
+.address a[href^="tel:"] {
+    --tw-text-opacity: 1;
+    color: rgba(0, 174, 239, var(--tw-text-opacity));
+}
+
+.address a {
+    text-decoration: underline;
+    --tw-text-opacity: 1;
+    color: rgba(133, 117, 80, var(--tw-text-opacity));
+}

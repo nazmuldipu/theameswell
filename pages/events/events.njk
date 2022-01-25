@@ -34,52 +34,45 @@ canonical_href: https://www.theameswellhotel.com/events/
 {% endmacro %}
 
 {# Top Banner Image #}
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-        
-        {% for item in pageCMS['top-banner'].simple_article %}
-            {% set top_banner_image = item.image %}
-            
-            {% for img in top_banner_image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
 
-        {% endfor %}
-        
-    </section>
+{% if pageCMS['hero-banner'] %}
+    {% set banner_image = pageCMS['hero-banner'] %}
+    <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+        {{ global_image(banner_image.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
+    </section> 
 {% endif %}
 
+
 {# Top Banner Title and Description #}
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% set top_banner_article = pageCMS['top-banner'].simple_article %}
-    {% for item in top_banner_article %}
+{% if pageCMS['top-banner-article'] and pageCMS['top-banner-article'].hero_banner_caption %}
+    {% set top_banner_article = pageCMS['top-banner-article'].hero_banner_caption %}
+    
         <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-12 xmed:pb-36 bg-pattern--ams-grey">
             <article class="w-full grid justify-items-center">
                 <section class="w-full grid justify-items-center max-w-screen-lg">
                     <div class="pb-4 px-4 xmed:shadow-md xmed:-mt-10 xmed:p-8 bg-ams-white">
-                        {% if item.title %}
+                        {% if top_banner_article.title %}
                             <h2 class="title-display text-3xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                                {{ item.title | safe }}
+                                {{ top_banner_article.title | safe }}
                             </h2>
                         {% endif %}
 
-                        {% if item.description %}
+                        {% if top_banner_article.description %}
                             <div class="text-base xmed:text-lg xmed:text-center">
-                                {{ item.description | safe }}
+                                {{ top_banner_article.description | safe }}
                             </div>
                         {% endif %}
                         
                         <ul class="grid grid-cols-3 text-ams-primary title-display text-2xl xmed:text-3xl font-medium gap-y-8 justify-items-center text-center pt-8 xmed:mx-16">
-                            {% for link in item.links %}
-                                {% set trg = '_blank' if not link.action.internal else '_self' %}
-                                <li><a class="border-b border-ams-primary" target="{{trg}}" href="{{link.action.url}}">{{link.action.copy}}</a></li>
+                            {% for link in top_banner_article.links %}
+                                {% set trg = '_blank' if not link.simple_action.internal else '_self' %}
+                                <li><a class="border-b border-ams-primary" target="{{trg}}" href="{{link.simple_action.href}}">{{link.simple_action.copy}}</a></li>
                             {% endfor %}                
                         </ul>
                     </div>
                 </section>
             </article>
         </div>
-    {% endfor %}
 {% endif %}
 
 {# Resort amenities Icons #}
@@ -110,9 +103,7 @@ canonical_href: https://www.theameswellhotel.com/events/
                 </ul>   
                 
                 <div class="text-center xmed:hidden mt-4 xmed:mt-0">
-                    {% if icon_list.action_copy %}
-                        <a class="show-all__amenities inline-block py-3 px-12 bg-ams-gold text-ams-white font-serif text-lg tracking-wide button--primary button focus:outline-none xmed:px-8">{{ icon_list.action_copy | safe }}</a>
-                    {% endif %}
+                    <a class="show-all__amenities inline-block py-3 px-12 bg-ams-gold text-ams-white font-serif text-lg tracking-wide button--primary button focus:outline-none xmed:px-8">Show All</a>
                 </div>
             </section>
         </article>
@@ -152,9 +143,9 @@ canonical_href: https://www.theameswellhotel.com/events/
                         {% endif %}
 
                         {% if item.description %}
-                            <p>
+                            <div>
                                 {{ item.description | safe}}
-                            </p>
+                            </div>
                         {% endif %}                        
                     </figcaption>
                 </section>
