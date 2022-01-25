@@ -19,3 +19,10 @@
     @apply underline;
   }
 }
+
+.cms-description a[href^="tel:"],
+.cms-description a[href^="mailto:"]{
+  text-decoration: underline;
+  --tw-text-opacity: 1;
+  color: rgba(0, 174, 239, var(--tw-text-opacity));
+}
