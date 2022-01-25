@@ -11,18 +11,18 @@ cms_homepage_offers_carousel %}
 {% from "media-carousel.njk" import media_carousel, special_carousel, homepage_art_carousel, press_carousel %}
 {% from "icons.njk" import svgicon %}
 {% from "macros.njk" import scaled_image,
-offersArticle,
+cms_offersArticle,
 subfooter__form,
 cms_description %}
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
+{% if pageCMS['hero-article'] and pageCMS['hero-article'].complex_description %}
+    {% set item = pageCMS['hero-article'].complex_description %}
         <section id="pageHero" class="bg-ams-primary min-h-screen bg-cover bg-center w-full grid grid-rows-home-hero justify-items-center">
-            {% for img in item.image %}
-                {{ global_image(img.global_image) }}
-            {% endfor %}
+            {% if pageCMS['hero-image'] and pageCMS['hero-image'].global_image %}
+                {{ global_image(pageCMS['hero-image'].global_image, classes = "min-h-screen object-cover", imgClass = "min-h-screen object-cover") }}
+            {% endif %}
             <header class="grid xmed:items-end">
                 <h1 class="title--1 text-ams-white text-2xl xmed:text-4xl uppercase text-center pt-28 xmed:pt-0 cms-description">
                     {{item.description | safe}}
@@ -32,17 +32,16 @@ cms_description %}
                 {{svg_icon("logo_2", width="590", height="160", sclass="hidden xmed:block fill-current text-ams-white w-80")}}
             </div>
         </section>
-    {% endfor %}
 {% endif %}
-{% if pageCMS['top-article'] and pageCMS['top-article'].simple_article %}
-    {% for item in pageCMS['top-article'].simple_article %}
+{% if pageCMS['top-article'] and pageCMS['top-article'].image_article %}
+    {% set item = pageCMS['top-article'].image_article %}
         <div class="grid justify-items-center w-full bg-ams-base">
             <article class="pt-4 xmed:mb-10 xmed:px-4 xmed:mt-4 bg-ams-white xmed:bg-ams-base">
                 <section class="grid justify-items-center max-w-screen-xl xmed:px-4">
                     <div class="order-2 xmed:order-1">
-                        {% for img in item.image %}
-                            {{ global_image(img.global_image) }}
-                        {% endfor %}
+                        {% if item.image and item.image.global_image %}
+                            {{ global_image(item.image.global_image) }}
+                        {% endif %}
                     </div>
                     <div class="order-1 xmed:order-2 z-0 max-w-screen-lg mx-3 pb-4 px-8 xmed:shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
                         <h2 class="title-display text-2xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
@@ -52,16 +51,14 @@ cms_description %}
                             {{cms_description(item.description)}}
                         </div>
                         <div class="pt-4 pb-4 xmed:pb-0 xmed:text-center">
-                            {% for cta in item.links %}
-                                {% set link = cta.action%}
-                                <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{link.copy | safe}}</a>
+                            {% for cta in item.actions %}
+                                <a href="{{cta.href}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{cta.copy | safe}}</a>
                             {% endfor %}
                         </div>
                     </div>
                 </section>
             </article>
         </div>
-    {% endfor %}
 {% endif %}
 
 <!--Rooms-and-offers-widget-->
@@ -70,28 +67,24 @@ cms_description %}
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:py-8">
             <aside>
                 <div class="shadow-md mb-9 xmed:mb-0 p-4 xmed:p-10 bg-ams-white">
-                    {% if pageCMS['rooms-left'] and pageCMS['rooms-left'].simple_article %}
-                        {% for item in pageCMS['rooms-left'].simple_article %}
+                    {% if pageCMS['room-left-article'] and pageCMS['room-left-article'].article_and_actions_with_multiple_copy %}
+                        {% set item = pageCMS['room-left-article'].article_and_actions_with_multiple_copy %}
                             <h2 class="title-display text-2xl xmed:text-3xl pb-4">
                                 {{item.title}}
                             </h2>
                             <div class="text-ams-primary text-md">
                                 {{cms_description(item.description)}}
                             </div>
-                            {% for data in item.links %}
-                                {% set link = data.action %}
-                                {% if link.for_desctop %}
-                                    <nav class="pt-7 pb-2 hidden xmed:block xmed:text-center">
-                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">{{link.copy|safe}}</a>
-                                    </nav>
-                                {% endif %}
-                                {% if not link.for_desctop %}
-                                    <nav class="pt-7 pb-2 xmed:hidden xmed:text-center">
-                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase text-xs xmed:text-lg">{{link.copy|safe}}</a>
-                                    </nav>
-                                {% endif %}
+                            {% for link in item.actions %}
+                                <nav class="pt-7 pb-2 hidden xmed:block xmed:text-center">
+                                    <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                        <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
+                                        {% if link.mobile_label %}
+                                            <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
+                                        {% endif %}
+                                    </a>
+                                </nav>
                             {% endfor %}
-                        {% endfor %}
                     {% endif %}
                 </div>
             </aside>
@@ -106,10 +99,9 @@ cms_description %}
 
         <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
             <aside>
-                {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
-                    {% for item in globalCMS['offers-article'].simple_article %}
-                        {{offersArticle(item)}}
-                    {% endfor %}
+                {% if pageCMS['offers-left-article'] and pageCMS['offers-left-article'].article_and_actions_with_multiple_copy %}
+                    {% set item = pageCMS['offers-left-article'].article_and_actions_with_multiple_copy %}
+                        {{cms_offersArticle(item)}}
                 {% endif %}
             </aside>
             <aside class="xmed:col-span-2">
@@ -126,8 +118,8 @@ cms_description %}
 
 <div class="bg-ams-primary w-full grid justify-items-center pt-0 xmed:pt-24 pr-4 pl-4 xmed:-mt-24 relative z-0">
     <article class="p-4 w-full max-w-screen-lg">
-        {% if pageCMS['restaurants-intro'] and pageCMS['restaurants-intro'].simple_article %}
-            {% for item in pageCMS['restaurants-intro'].simple_article %}
+        {% if pageCMS['restaurants-introduction'] and pageCMS['restaurants-introduction'].article_and_actions_with_multiple_copy %}
+            {% set item = pageCMS['restaurants-introduction'].article_and_actions_with_multiple_copy %}
                 <h2 class="title-display text-2xl xmed:text-4xl py-4 text-ams-white text-left">
                     {{item.title}}
                 </h2>
@@ -135,17 +127,21 @@ cms_description %}
                     {{item.description | safe}}
                 </div>
                 <div class="text-left">
-                    {% for ac in item.links %}
-                        {% set cta = ac.action %}
-                        {% if cta.type == 'desktop' %}
-                            <a href="{{cta.url}}" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase hidden xmed:inline-block">{{cta.copy}}</a>
-                        {% endif %}
-                        {% if cta.type == 'mobile' %}
-                            <a href="{{cta.url}}" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase xmed:hidden text-xs xmed:text-lg">{{cta.copy}}</a>
-                        {% endif %}
+                    {% for link in item.actions %}
+                        <a href="{{link.url}}" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase hidden xmed:inline-block">
+                            <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
+                            {% if link.mobile_label %}
+                                <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
+                            {% endif %}
+                        </a>
+                        <a href="{{link.url}}" class="segment__cta segment__cta--white relative text-ams-white font-serif-display uppercase xmed:hidden text-xs xmed:text-lg">
+                            <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
+                            {% if link.mobile_label %}
+                                <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
+                            {% endif %}
+                        </a>
                     {% endfor %}
                 </div>
-            {% endfor %}
         {% endif %}
         <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
             {% if pageCMS['restaurants'] and pageCMS['restaurants'].simple_article %}
@@ -256,27 +252,25 @@ cms_description %}
             {% endfor %}
     </article>
     <article id="happenings" class="segment-inner xmed:grid items-start w-full xmed:grid-cols-3 xmed:gap-8">
-        {% if pageCMS['happenings-intro'] and pageCMS['happenings-intro'].simple_article %}
-            {% for item in pageCMS['happenings-intro'].simple_article %}
+        {% if pageCMS['happenings-introduction'] and pageCMS['happenings-introduction'].article_with_actions %}
+            {% set item = pageCMS['happenings-introduction'].article_with_actions %}
                 <section class="mb-8 shadow-md mx-6 xmed:mx-0 xmed:px-0">
                     <div class="shadow-md p-4 pb-8 xmed:p-8 bg-ams-white">
                         <h2 class="title-display text-2xl font-serif font-medium py-4">
                             {{item.title}}
                         </h2>
                         <div class="text-base xmed:text-lg font-sans text-ams-primary cms-description">
-                            {{item.description | safe}}
+                            {{item.descriptions | safe}}
                         </div>
-                        {% if item.links %}
-                            {% for cta in item.links %}
-                                {% set action = cta.action %}
+                        {% if item.actions %}
+                            {% for cta in item.actions %}
                                 <div class="mt-10 pb-2 text-center xmed:block xmed:text-lg font-serif font-medium">
-                                    <a href="{{action.url}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{action.copy}}</a>
+                                    <a href="{{cta.href}}" class="py-4 px-4 bg-ams-gold text-ams-white font-serif tracking-wide button--primary button">{{cta.copy}}</a>
                                 </div>
                             {% endfor %}
                         {% endif %}
                     </div>
                 </section>
-            {% endfor %}
         {% endif %}
     </article>
 </div>
@@ -312,36 +306,26 @@ cms_description %}
 <!--art-widget end-->
 
 <!--press widget-->
-{% if pageCMS['press-widget'] and pageCMS['press-widget'].simple_article %}
-    {% for art in pageCMS['press-widget'].simple_article %}
+{% if pageCMS['press-releases'] and pageCMS['press-releases'].press_releases %}
+    {% set art = pageCMS['press-releases'].press_releases %}
         <section class="w-full bg-pattern--ams-grey py-6 xmed:py-20 z-10">
             <div class="max-w-7xl mx-auto px-6">
-                <article class="py-6 xmed:py-8 bg-ams-white shadow-md">
+                <article class="py-6 xmed:py-8 bg-ams-white shadow-md"> 
                     <div class="max-w-4xl mx-auto px-4 xmed:px-12 xmed:text-center">
                         <div class="xmed:px-8 pb-4 text-base text-ams-primary xmed:text-lg">{{art.description | safe}}</div>
-                        {% if art.links %}
-                            {% for link in art.links %}
-                                {% set cta = link.action %}
-                                {% if cta.type == 'author' %}
-                                    <a href="{{cta.url}}" target="_blank">
-                                        <p class="text-ams-cyan font-semibold underline">{{cta.copy}}</p>
-                                    </a>
-                                {% endif %}
-                                {% if cta.type == 'primary' %}
-                                    <nav class="mt-8">
-                                        <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.copy}}</a>
-                                    </nav>
-                                {% endif %}
+                        <a href="{{art.link}}" target="_blank"><p class="text-ams-cyan font-semibold underline">-{{art.author}}</p></a>
+                        <nav class="mt-8">
+                            {% for cta in art.actions %}
+                                <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display text-xs xmed:text-lg uppercase">{{cta.label}}</a>
                             {% endfor %}
-                        {% endif %}
+                        </nav>
                     </div>
                 </article>
             </div>
         </section>
-    {% endfor %}
 {% endif %}
-{% if pageCMS['press-carousel'] and pageCMS['press-carousel'].simple_article %}
-    {% set item = pageCMS['press-carousel'].simple_article %}
+{% if pageCMS['press-widget-carousel'] and pageCMS['press-widget-carousel'].press_widget %}
+    {% set item = pageCMS['press-widget-carousel'].press_widget %}
     <div class="grid auto-cols-fr justify-items-center w-full py-0 xmed:py-8 bg-ams-base">
         <article class="w-full max-w-screen-lg p-6 xmed:p-8 bg-ams-taupe overflow-hidden">
             <section>
