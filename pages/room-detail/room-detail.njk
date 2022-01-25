@@ -197,8 +197,8 @@ subfooter__form %}
     <div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
         <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
             <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
-                {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
-                    {% for item in globalCMS['offers-article'].simple_article %}
+                {% if globalCMS['offers-article'] and globalCMS['offers-article'].pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                    {% for item in globalCMS['offers-article'].pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
                         <figcaption class="mx-20 px-2 mb-8">
                             <h2 class="title-display text-2xl xmed:text-4xl pb-4 text-ams-primary xmed:text-center">
                                 {{item.title}}
@@ -208,12 +208,11 @@ subfooter__form %}
                             </div>
                             <div class="text-center pt-4 pb-4">
                                 {% if item.links %}
-                                    {% for action in item.links %}
-                                        {% set cta = action.action %}
-                                        <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
-                                            <span class="{{ 'hidden xmed:inline-block' if not cta.mobile_copy == '' }}">{{cta.copy | safe}}</span>
-                                            {% if cta.mobile_copy %}
-                                                <span class="xmed:hidden">{{cta.mobile_copy | safe}}</span>
+                                    {% for link in item.links %}
+                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                            <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
+                                            {% if link.mobile_label %}
+                                                <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
                                             {% endif %}
                                         </a>
                                     {% endfor %}
@@ -246,15 +245,15 @@ subfooter__form %}
                 </div>
             </div>
         {% endif %}
-        {% if pageCMS['features'] and pageCMS['features'].simple_article %}
-            {% for item in pageCMS['features'].simple_article %}
+        {% if pageCMS['feature-list'] and pageCMS['feature-list'].article_with_image %}
+            {% for item in pageCMS['feature-list'].article_with_image %}
                 <div class="w-full grid justify-items-center max-w-screen-xl xmed:mt-14 {{feature.classes}}" >
                     <section class="shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2 xmed:mx-4">
                         <div class="px-6 mt-6 block xmed:hidden">
                             <figure>
-                                {% for img in item.image %}
-                                    {{ global_image(img.global_image, imgClass = "w-full") }}
-                                {% endfor %}
+                                {% if item.photo %}
+                                    {{ global_image(item.photo.global_image, imgClass = "w-full") }}
+                                {% endif %}
                             </figure>
                         </div>
                         <div class="p-6">
@@ -265,9 +264,9 @@ subfooter__form %}
                         </div>
                         <div class="p-8 hidden xmed:block">
                             <figure>
-                                {% for img in item.image %}
-                                    {{ global_image(img.global_image, imgClass = "w-full") }}
-                                {% endfor %}
+                                {% if item.photo %}
+                                    {{ global_image(item.photo.global_image, imgClass = "w-full") }}
+                                {% endif %}
                             </figure>
                         </div>
                     </section>
