@@ -7,28 +7,19 @@ canonical_href: https://www.theameswellhotel.com/404/
 ---
 
 <section class="w-full xmed:max-w-screen-lg mt-24 mb-16 min-h-screen">
-    {% if pageCMS['contents'] and pageCMS['contents'].simple_article %}
-        {% for item in pageCMS['contents'].simple_article %}
-            <article class="px-8 xmed:px-0">
-                <h2 class="title text-3xl pb-8">
-                    {{item.title}}
-                </h2>
-
+    <article class="px-8 xmed:px-0">
+        {% if pageCMS['page-title'] %}
+            <h2 class="title text-3xl pb-8">
+                {{pageCMS['page-title'].simple_text}}
+            </h2>
+        {% endif %}
+        {% if pageCMS['page-content'].single_article %}
                 <h3 class="title text-2xl">
-                    {{item.sub_title}}
+                    {{ pageCMS['page-content'].single_article.title }}
                 </h3>
-                <div>
-                    {% for data in item.links %}
-                        {% set cta = data.action %}
-                        {% if cta.type == 'back' %}
-                            <a class="text-ams-gold underline" href="#" onclick="window.history.back();">{{cta.copy}}</a> 
-                            {{item.footer}}
-                        {% else %}
-                            <a class="text-ams-gold underline" href="index.html">{{cta.copy}}</a>.
-                        {% endif %}
-                    {% endfor %}
+                <div class="page-content">
+                    {{ pageCMS['page-content'].single_article.description | safe }}
                 </div>
-            </article>
-        {% endfor %}
-    {% endif %}
+        {% endif %}
+    </article>
 </section>
