@@ -31,32 +31,30 @@ subfooter__form %}
         </div>
     </section>
 {% endmacro %}
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
+{% if pageCMS['hero-image'] and pageCMS['hero-image'].global_image %}
+    {% set item = pageCMS['hero-image'].global_image %}
         <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
-            {% endfor %}
+            {{ global_image(item, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
         </section>
-    {% endfor %}
 {% endif %}
 <div
     class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-12 pb-8 xmed:pb-14 px-6 bg-pattern--ams-gold">
     <article class="w-full grid justify-items-center">
-        {% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-            {% for item in pageCMS['top-banner'].simple_article %}
+        {% if pageCMS['hero-article'] and pageCMS['hero-article'].titles_and_description %}
+            {% set item = pageCMS['hero-article'].titles_and_description %}
                 <section class="w-full grid justify-items-center max-w-screen-lg shadow-md">
                     <div class="pb-4 px-4 xmed:shadow-md xmed:p-10 bg-ams-white">
                         <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                            {{item.title}}<br class="hidden xmed:block">
-                            {{item.sub_title}}
+                            {% for title in item.title %}
+                            {{title}}
+                            <br class="hidden xmed:block">
+                            {% endfor %}
                         </h2>
                         <div class="xmed:text-center cms-description">
                             {{item.description | safe}}
                         </div>
                     </div>
                 </section>
-            {% endfor %}
         {% endif %}
         {% if pageCMS['icons'] and pageCMS['icons']
             .icon_list and pageCMS['icons']
@@ -95,8 +93,8 @@ subfooter__form %}
         </figure>
 
         <div class="w-full grid justify-items-center max-w-screen-2xl">
-            {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].text_content %}
-                {{textCard('', pageCMS['rooms-top-content'].text_content.description, 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
+            {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].single_article %}
+                {{textCard('', pageCMS['rooms-top-content'].single_article.description, 'hidden xmed:block', 'mx-6 pt-6 pb-6')}}
             {% endif %}
         </div>
         <figure class=" xmed:hidden w-full max-w-screen-xl overflow-hidden">
@@ -106,11 +104,11 @@ subfooter__form %}
 </div>
 
 <div class="w-full grid justify-items-center bg-pattern--ams-grey pb-8">
-    {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].text_content %}
+    {% if pageCMS['rooms-top-content'] and pageCMS['rooms-top-content'].single_article %}
         <section class="w-full px-6 grid mx-8 my-8 xmed:my-12 justify-items-center max-w-screen-md">
             <div class="w-full mx-6 py-6 px-4 xmed:p-8 shadow-sm xmed:shadow-md bg-ams-white">
                 <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                    {{pageCMS['rooms-top-content'].text_content.title}}
+                    {{pageCMS['rooms-top-content'].single_article.title}}
                 </h2>
             </div>
         </section>
