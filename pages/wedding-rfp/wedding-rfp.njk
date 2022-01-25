@@ -9,7 +9,13 @@ canonical_href: https://www.theameswellhotel.com/wedding-rfp/
 {% from "macros.njk" import scaled_image %}
 {% from "global-image.njk" import global_image %}
 
-{% macro form_input(item = {}, parentClass = "") %}
+{% if pageCMS['hero-image'] %}
+    <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+        {{ global_image(pageCMS['hero-image'].global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
+    </section>
+{% endif %}
+
+{# {% macro form_input(item = {}, parentClass = "") %}
     <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
         {{item.label}}<br>
         <input type="{{item.type}}" 
@@ -32,23 +38,23 @@ canonical_href: https://www.theameswellhotel.com/wedding-rfp/
             {% endfor %}
         </section>
     {% endfor %}
-{% endif %}
+{% endif %} #}
 
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:border-2 xmed:shadow-md">
-        {% if pageCMS['submit-form-content'] and pageCMS['submit-form-content'].text_content %}
-        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-16 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
-            <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
-                <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
-                    <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
-                        {{pageCMS['submit-form-content'].text_content.title}}
-                    </h2>
-                    <h3 class="title xmed:title-display text-xl xmed:text-3xl py-4 xmed:py-8">
-                        {{pageCMS['submit-form-content'].text_content.description | safe}}
-                    </h3>
-                </section>
-            </article>
-        </div>
+        {% if pageCMS['form-left'].single_article %}
+            <div class="w-full grid justify-items-center -mt-24 xmed:-mt-16 xmed:m-0 p-0 xmed:pt-0 px-6 pb-16 xmed:px-0 xmed:pb-0 bg-pattern--ams-grey xmed:bg-none">
+                <article class="w-full grid justify-items-center pt-12 xmed:pt-16">
+                    <section class="w-full max-w-screen-lg pb-4 px-4 xmed:px-12 shadow-md grid content-start bg-ams-white xmed:shadow-none">
+                        <h2 class="title-display text-2xl xmed:text-5xl py-4 xmed:py-8">
+                            {{ pageCMS['form-left'].single_article.title }}
+                        </h2>
+                        <h3 class="title xmed:title-display text-xl xmed:text-3xl py-4 xmed:py-8">
+                            {{ pageCMS['form-left'].single_article.description | safe }}
+                        </h3>
+                    </section>
+                </article>
+            </div>
         {% endif %}
         <div class="w-full grid justify-items-center px-6 xmed:px-0 bg-ams-base xmed:bg-transparent">
             <article class="w-full m-8 xmed:m-0 pb-8 px-4 xmed:px-8 bg-ams-white shadow-md max-w-screen-lg xmed:shadow-none">
