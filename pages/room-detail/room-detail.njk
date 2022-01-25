@@ -11,7 +11,7 @@ canonical_href: https://www.theameswellhotel.com/room-detail/
 {% from "component_carousel.njk" import component_carousel,
 cms_homepage_offers_carousel %}
 {% from "macros.njk" import scaled_image,
-offersArticle,
+cms_offersArticle,
 subfooter__form %}
 {% from "buttons.njk" import primaryButton %}
 {% from "svgicon.njk" import svg_icon %}
@@ -197,8 +197,8 @@ subfooter__form %}
     <div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
         <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
             <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
-                {% if globalCMS['offers-article'] and globalCMS['offers-article'].pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
-                    {% for item in globalCMS['offers-article'].pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                {% if pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                    {% set item = pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
                         <figcaption class="mx-20 px-2 mb-8">
                             <h2 class="title-display text-2xl xmed:text-4xl pb-4 text-ams-primary xmed:text-center">
                                 {{item.title}}
@@ -207,8 +207,8 @@ subfooter__form %}
                                 {{item.description | safe}}
                             </div>
                             <div class="text-center pt-4 pb-4">
-                                {% if item.links %}
-                                    {% for link in item.links %}
+                                {% if item.actions %}
+                                    {% for link in item.actions %}
                                         <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
                                             <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
                                             {% if link.mobile_label %}
@@ -220,7 +220,6 @@ subfooter__form %}
                             </div>
                             <hr class="border-solid border border-ams-gold xmed:mx-3">
                         </figcaption>
-                    {% endfor %}
                 {% endif %}
 
                 {% if globalCMS['offers'] and globalCMS['offers'].offers %}
@@ -234,12 +233,12 @@ subfooter__form %}
 
     <!--offers desktop design end-->
     <div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
-        {% if pageCMS['features-title'] and pageCMS['features-title'].text_content %}
+        {% if pageCMS['features-headline'] and pageCMS['features-headline'].simple_text %}
             <div class="w-full grid justify-items-center bg-ams-base">
                 <div class="w-full px-6 grid justify-items-center max-w-screen-md">
                     <div class="w-full mx-6 my-8 py-4 px-4 xmed:p-8 xmed:my-0 shadow-sm xmed:shadow-md bg-ams-white">
                         <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                            {{pageCMS['features-title'].text_content.title}}
+                            {{pageCMS['features-headline'].simple_text}}
                         </h2>
                     </div>
                 </div>
@@ -279,10 +278,9 @@ subfooter__form %}
         <section class="max-w-7xl mx-auto px-6">
             <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
                 <aside class="mb-12">
-                    {% if globalCMS['offers-article'] and globalCMS['offers-article'].simple_article %}
-                        {% for item in globalCMS['offers-article'].simple_article %}
-                            {{offersArticle(item)}}
-                        {% endfor %}
+                    {% if pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                        {% set item = pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                            {{cms_offersArticle(item)}}
                     {% endif %}
                 </aside>
                 <aside class="xmed:col-span-2">
