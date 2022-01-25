@@ -26,46 +26,35 @@ canonical_href: https://www.theameswellhotel.com/press/
 {% endmacro %}
 
 {# Top Banner Image #}
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
+{% if pageCMS['hero-banner'] %}
     <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-        
-        {% for item in pageCMS['top-banner'].simple_article %}
-            {% set top_banner_image = item.image %}
-            
-            {% for img in top_banner_image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
-
-        {% endfor %}
-        
+        {% set top_banner_image = pageCMS['hero-banner'] %}         
+        {{ global_image(top_banner_image.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
     </section>
 {% endif %}
 
 {# Top Banner Title and Description #}
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% set top_banner_article = pageCMS['top-banner'].simple_article %}
-    {% for item in top_banner_article %}
+{% if pageCMS['hero-banner-caption'] and pageCMS['hero-banner-caption'].single_article %}
+    {% set top_banner_article = pageCMS['hero-banner-caption'].single_article %}
         <div class="w-full grid justify-items-center -mt-16 xmed:-mt-32 pt-4 xmed:pt-16 px-6 pb-12 small:pb-10 xmed:pb-16 bg-pattern--ams-gold xmed:bg-pattern--ams-grey">
             <article class="w-full grid justify-items-center pt-4">
                 <section class="w-full grid justify-items-center max-w-screen-lg">
                     <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white text-ams-primary">
-                        {% if item.title %}
+                        {% if top_banner_article.title %}
                             <h2 class="title-display font-serif-display font-medium xmed:font-normal text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:pb-8 xmed:text-center">
-                                {{ item.title | safe }}
+                                {{ top_banner_article.title | safe }}
                             </h2>
                         {% endif %}
                         
-                        {% if item.description %}
+                        {% if top_banner_article.description %}
                             <div class="xmed:text-center font-medium xmed:font-normal font-sans text-base xmed:text-lg leading-6 tracking-wide">
-                                {{ item.description | safe }}
+                                {{ top_banner_article.description | safe }}
                             </div>
                         {% endif %}                    
                     </div>
                 </section>
             </article>
-        </div>
-    {% endfor %}
-    
+        </div>    
 {% endif %}
 
 {# Press Cards #}
@@ -105,8 +94,8 @@ canonical_href: https://www.theameswellhotel.com/press/
                         {% endif %}                        
                     </div>
                     <p class="inline-block border-b border-ams-gold mx-4">
-                        {% if item.action %}
-                            {{ primaryButton(item.action.link, item.action.copy, 'inline-block pb-1 -mx-4 text-ams-gold font-serif font-medium uppercase tracking-wide button--primary button text-xl', 'a', item.action.external) }}
+                        {% if item.actions %}
+                            {{ primaryButton(item.actions[0].link, item.actions[0].copy, 'inline-block pb-1 -mx-4 text-ams-gold font-serif font-medium uppercase tracking-wide button--primary button text-xl', 'a', item.actions[0].external) }}
                         {% endif %}                        
                     </p>
                 </div>
@@ -138,8 +127,9 @@ canonical_href: https://www.theameswellhotel.com/press/
                         
                     </figcaption>
                     <figcaption class="order-1 xmed:order-2">
-                        {% if subfooter_form.image %}
-                            {{ global_image(subfooter_form.image.global_image) }}
+                        {% if pageCMS['press-form-image'] and pageCMS['press-form-image'].global_image %}
+                            {% set formImage = pageCMS['press-form-image']%}
+                            {{ global_image(formImage.global_image) }}
                         {% endif %}                        
                     </figcaption>
                 </figure>
