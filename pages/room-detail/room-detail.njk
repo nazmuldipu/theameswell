@@ -299,9 +299,11 @@ subfooter__form %}
         </section>
     </section>
 
-{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form %}
+{% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form
+    and globalCMS['join-the-a-list-form-image'] and globalCMS['join-the-a-list-form-image'] %}
     {% set subfooter_form = globalCMS['join-the-a-list'].form%}
-    {{subfooter__form(subfooter_form)}}
+    {% set footerImage = globalCMS['join-the-a-list-form-image'] %}
+    {{subfooter__form(subfooter_form, formImage=footerImage)}}
 {% endif %}
     <div class="bg-ams-primary w-full">
         <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
