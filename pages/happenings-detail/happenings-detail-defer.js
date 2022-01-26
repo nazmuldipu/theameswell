@@ -48,7 +48,7 @@ const render_right = (event) => {
   event.actions && event.actions.forEach(item => {
     const element = item.action
     if (element.type == 'primary') {
-        ctaEle += `<a class="w-40 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${element.url}" target="_blank">${element.copy}</a>
+        ctaEle += `<a class="w-64 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${element.url}" target="_blank">${element.copy}</a>
        `
     }
   });
