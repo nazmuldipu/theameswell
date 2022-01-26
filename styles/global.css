@@ -67,6 +67,18 @@
     .bg-pattern--ams-cyan {
         background-image: url("../images/ams-cyan.svg");
     }
+    .bg-pattern--ams-gold {
+        background-image: url("../images/ams-gold.svg");
+    }
+    .bg-pattern--ams-grey {
+        background-image: url("../images/ams-grey.svg");
+    }
+    .bg-pattern--ams-green {
+        background-image: url("../images/ams-green.svg");
+    }
+    .bg-pattern--ams-yellow {
+        background-image: url("../images/ams-yellow.svg");
+    }
 }
 
 /**** custom utilities ****/
