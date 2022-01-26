@@ -24,8 +24,8 @@ canonical_href: https://www.theameswellhotel.com/contact/
 
 {% if pageCMS['top-banner'] and pageCMS['top-banner'].top_banner %}
     {% set top_banner = pageCMS['top-banner'].top_banner %}
-    <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-        {{ global_image(top_banner.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+    <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">    
+        {{ global_image(top_banner.global_image, classes="min-h-screen min-w-full max-w-none", imgClass = "min-h-screen min-w-full max-w-none  w-auto ") }}
     </section>
 {% endif %}
 
