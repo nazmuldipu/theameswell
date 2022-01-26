@@ -13,7 +13,7 @@ canonical_href: https://www.theameswellhotel.com/offers/
 {% if pageCMS['hero-banner'] %}
 <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
         {% set top_banner_image = pageCMS['hero-banner'] %} 
-        {{ global_image(top_banner_image.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
+        {{ global_image(top_banner_image.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass = "min-h-screen min-w-full max-w-none w-auto") }}
 </section>
 {% endif %}
 
