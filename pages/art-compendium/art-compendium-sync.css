@@ -17,6 +17,9 @@
     .remove-outline{
         outline:none;
     }
+    .panel img {
+        max-height: 42.5rem;
+    }
 }
 
 #artComponent{
