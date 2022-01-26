@@ -19,12 +19,18 @@ function initMap(locations, element) {
   setTimeout(() => {
     map = new google.maps.Map(element, {
       zoom: 11,
-      center: { lat: locations[0].lat, lng: locations[0].long },
+      center: { lat: parseFloat(locations[0].lat), lng: parseFloat(locations[0].long) },
     });
     addMarkers(locations);
   }, 1000);
 }
 
+const removeAllWhiteBackground = () =>{
+  const ele = document.querySelectorAll('.sub_cat');
+  ele.forEach(item =>{
+    item.classList.remove('bg-ams-white')
+  })
+}
 
 const addMarkers = (locations) => {
   const { InfoWindow } = google.maps;
@@ -32,7 +38,7 @@ const addMarkers = (locations) => {
   bounds = new google.maps.LatLngBounds();
   locations.forEach((item) => {
     let marker = new google.maps.Marker({
-      position: { lat: item.lat, lng: item.long },
+      position: { lat: parseFloat(item.lat), lng: parseFloat(item.long) },
       map,
       title: item.title,
     });
@@ -74,8 +80,8 @@ const addMarkers = (locations) => {
   if (locations.length > 1) map.fitBounds(bounds);
   else if ((locations.length = 1)) {
     map.setCenter({
-      lat: Number(locations[0].lat - 0.11),
-      lng: locations[0].long,
+      lat: Number(parseFloat(locations[0].lat) - 0.11),
+      lng: parseFloat(locations[0].long),
     });
   }
 };
@@ -103,13 +109,6 @@ const renderTitleBox = (category) => {
   document.querySelector("#titleBox").innerHTML = titleText;
   document.querySelector("#navTitle").innerHTML = category.title;
 };
-
-const removeAllWhiteBackground = () =>{
-  const ele = document.querySelectorAll('.sub_cat');
-  ele.forEach(item =>{
-    item.classList.remove('bg-ams-white')
-  })
-}
 
 const renderSubCategories = (category) => {
   let html = "";
@@ -188,7 +187,12 @@ const loadMap = (category, small) => {
   } else {
     if (category.positions.length) {
       category.positions.forEach(locObj => {
-        locations.push(locObj);
+        locations.push(
+          { ...locObj,
+            lat: parseFloat(locObj.lat),
+            long: parseFloat(locObj.long) 
+          }
+        );
       })
     }
   }
