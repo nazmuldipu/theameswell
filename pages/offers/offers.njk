@@ -68,7 +68,7 @@ canonical_href: https://www.theameswellhotel.com/offers/
     and globalCMS['join-the-a-list-form-image'] and globalCMS['join-the-a-list-form-image'] %}
     {% set subfooter_form = globalCMS['join-the-a-list'].form%}
     {% set footerImage = globalCMS['join-the-a-list-form-image'] %}
-    {{subfooter__form(subfooter_form, formImage=footerImage)}}
+    {{subfooter__form(subfooter_form, "max-w-screen-xl", footerImage)}}
 {% endif %}
 
 <div class="bg-ams-primary w-full">
