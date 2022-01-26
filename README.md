@@ -33,7 +33,7 @@
 - **tailwind-class-safelist.txt** -- where you can put CSS class names that you don't want [Tailwind](https://tailwindcss.com/docs/just-in-time-mode#known-limitations) to [purge](https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html)
 - **tailwind.config.js** -- Tailwind [configuration](https://tailwindcss.com/docs/configuration) file
 
-## Doing Stuff
+## Doing Stuff 
 - `npm install` to start
 - `npm run build` will build the site for production
 - `npm run watch` will build the site for development. You will see hot module reloads for changes to some files.
