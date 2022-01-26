@@ -5,3 +5,8 @@
 #categoryMap{
     position: sticky !important;
 }
+
+.cms-description a {
+    --tw-text-opacity: 1;
+    color: rgba(0, 174, 239, var(--tw-text-opacity));
+}

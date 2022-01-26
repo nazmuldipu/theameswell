@@ -10,17 +10,13 @@ subfooter__form %}
 {% from "buttons.njk" import primaryButton %}
 {% from "global-image.njk" import global_image %}
 
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
-        <section id="pageHero" class="bg-ams-primary h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
-            {% endfor %}
-            <h1 class="title--1 text-ams-white text-3xl xmed:text-7xl font-serif uppercase text-center pt-30">
-                {{item.title}}
-            </h1>
-        </section>
-    {% endfor %}
+{% if pageCMS['hero-image'].global_image %}
+    <section id="pageHero" class="bg-ams-primary h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+        {{ global_image(pageCMS['hero-image'].global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
+        <h1 class="title--1 text-ams-white text-3xl xmed:text-7xl font-serif uppercase text-center pt-30">
+            {{pageCMS['hero-image'].global_image.title}}
+        </h1>
+    </section>
 {% endif %}
 <section class="xmed:bg-ams-base w-full text-ams-primary hidden">
     {% if globalCMS['happenings'] and globalCMS['happenings'].happenings | length > 0 %}
@@ -53,27 +49,21 @@ subfooter__form %}
 <hr class="xmed:hidden border-solid border-4 w-11/12 border-ams-primary">
 <!--event List-->
 <section class="grid xmed:bg-pattern--ams-grey xmed:justify-items-center w-full xmed:pt-24 xmed:pb-20">
-    {% if pageCMS['happenings-article'] and pageCMS['happenings-article'].simple_article %}
-        {% set object = pageCMS['happenings-article'].simple_article%}
-    {% endif %}
-    {% if object %}
+    {% if pageCMS['events-title'].simple_text %}
         <header class="bg-ams-white w-full mb-0 xmed:mb-24 xmed:w-2/5 xmed:shadow-md">
             <h2 id="our_happenings_title" class="title-display text-2xl text-center px-16 font-serif font-medium py-4 uppercase">
-                {{object[0].title}}
+                {{pageCMS['events-title'].simple_text }}
             </h2>
         </header>
     {% endif %}
     {% if globalCMS['happenings'] and globalCMS['happenings'].happenings %}
-        <article id="our_happenings" data-happenings="{{globalCMS['happenings'].happenings | stringify}}" class="our_happenings grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24">
-            
-        </article>
+        <article id="our_happenings" data-happenings="{{globalCMS['happenings'].happenings | stringify}}" class="our_happenings grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24"></article>
     {% endif %}
-    {% if object %}
-        <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
-            {{ primaryButton("javascript:void(0)", object[0].footer, 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
-        </div>
-    {% endif %}
-    
+
+    <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">
+        {{ primaryButton("javascript:void(0)", 'View All ', 'btn_view_all inline-block py-2 px-8 bg-ams-gold text-ams-white font-serif tracking-wide') }}
+    </div>
+
 </section>
 {% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form
     and globalCMS['join-the-a-list-form-image'] and globalCMS['join-the-a-list-form-image'] %}
