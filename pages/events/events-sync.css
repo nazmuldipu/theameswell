@@ -12,22 +12,22 @@
     .event__description {
         @apply text-left;
     }
-    .event:nth-child(odd) .event__grid-cols{
+    .event:nth-child(even) .event__grid-cols{
         @apply grid-cols-minmax-65-35;
         @apply text-right;
     }
-    .event:nth-child(even) .event__grid-cols{
+    .event:nth-child(odd) .event__grid-cols{
         @apply grid-cols-minmax-35-65;
         @apply text-left;
     }
 
     .event:nth-child(odd) .event__image,
     .event:nth-child(even) .event__description{
-        @apply xmed:order-1;
+        @apply xmed:order-2;
     }
     .event:nth-child(even) .event__image,
     .event:nth-child(odd) .event__description{
-        @apply xmed:order-2;
+        @apply xmed:order-1;
     }
 
     .tab__radio {
