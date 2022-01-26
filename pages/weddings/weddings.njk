@@ -11,40 +11,36 @@ canonical_href: https://www.theameswellhotel.com/weddings/
 {% from "svgicon.njk" import svg_icon %}
 {% from "global-image.njk" import global_image %}
 
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
-        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
-        </section>
+{% if pageCMS['hero-image'] and pageCMS['hero-article'].single_article %}
+    <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
+        {{ global_image(pageCMS['hero-image'].global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
+    </section>
 
-        <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-16 xmed:pb-30 bg-pattern--ams-gold">
-            <article class="w-full grid justify-items-center pt-4">
-                <section class="w-full grid justify-items-center max-w-screen-lg">
-                    <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
-                        <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                            {{item.title}}
-                        </h2>
-                        <div class="xmed:text-center cms-description">
-                            {{item.description | safe}}
-                        </div>
+    <div class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-16 px-6 pb-16 xmed:pb-44 bg-pattern--ams-gold">
+        <article class="w-full grid justify-items-center pt-4">
+            <section class="w-full grid justify-items-center max-w-screen-lg">
+                <div class="pb-4 px-4 shadow-md xmed:-mt-10 xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                        {{pageCMS['hero-article'].single_article.title}}
+                    </h2>
+                    <div class="xmed:text-center cms-description">
+                        {{pageCMS['hero-article'].single_article.description | safe}}
                     </div>
-                </section>
-            </article>
-        </div>
-    {% endfor %}
+                </div>
+            </section>
+        </article>
+    </div>
 {% endif %}
+
 {% if pageCMS['video-content'] and pageCMS['video-content'].video_component_ and pageCMS['video-content'].video_component_.image and pageCMS['video-content'].video_component_.image.global_image %}
-
-<div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
-    {% set image = pageCMS['video-content'].video_component_.image.global_image.src %}
-    <article class="w-full max-w-screen-lg overflow-hidden">
-        {{ lazyvideo([{ src: "videos/weddings-video-1.mp4", type: "video/mp4"}], image | theImgSrc, "lazy") }}
-    </article>
-</div>
-
+    <div class="grid auto-cols-fr justify-items-center w-full xmed:-mt-16 xmed:mb-8 bg-ams-base xmed:bg-transparent">
+        {% set image = pageCMS['video-content'].video_component_.image.global_image.src %}
+        <article class="w-full max-w-screen-lg overflow-hidden">
+            {{ lazyvideo([{ src: "videos/weddings-video-1.mp4", type: "video/mp4"}], image | theImgSrc, "lazy") }}
+        </article>
+    </div>
 {% endif %}
+
 {% if pageCMS['icons'] and pageCMS['icons']
     .icon_list and pageCMS['icons']
     .icon_list
@@ -70,55 +66,52 @@ canonical_href: https://www.theameswellhotel.com/weddings/
             </section>
         </article>
     </div>
-    {%endif%}
-    <div class="bg-ams-primary w-full">
-        <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block"></div>
-    </div>
-    <div class="bg-ams-primary w-full grid justify-items-center py-8 px-6 relative z-0">
-        <article class="w-full max-w-screen-lg">
-            {% if pageCMS['restaurants-intro'] and pageCMS['restaurants-intro'].simple_article %}
-                {% for item in pageCMS['restaurants-intro'].simple_article %}
-                    <h2 class="title-display text-2xl py-4 text-ams-white">
-                        {{item.title}}
-                    </h2>
-                    <div class="pb-6 text-ams-white">
-                        {{item.description | safe}}
-                    </div>
-                    {% if item.links %}
-                        {% for cta in item.links %}
-                            {% set action = cta.action %}
-                            <a href="{{action.url}}" class="segment__cta segment__cta--white relative text-ams-white text-lg font-serif uppercase">{{action.copy}}</a>
-                        {% endfor %}
-                    {% endif %}
+{% endif %}
+
+<div class="bg-ams-primary w-full">
+    <div class="bg-pattern--ams-grey w-full h-20 hidden xmed:block"></div>
+</div>
+
+<div class="bg-ams-primary w-full grid justify-items-center py-8 px-6 relative z-0">
+    <article class="w-full max-w-screen-lg">
+    
+        {% if pageCMS['restaurants-intro'].hero_banner_caption %}
+            <h2 class="title-display text-2xl py-4 text-ams-white">
+                {{pageCMS['restaurants-intro'].hero_banner_caption.title}}
+            </h2>
+            <div class="pb-6 text-ams-white">
+                {{pageCMS['restaurants-intro'].hero_banner_caption.description | safe}}
+            </div>
+            {% if pageCMS['restaurants-intro'].hero_banner_caption.links %}
+                {% for cta in pageCMS['restaurants-intro'].hero_banner_caption.links %}
+                    {% set action = cta.simple_action %}
+                    <a href="{{action.href}}" class="segment__cta segment__cta--white relative text-ams-white text-lg font-serif uppercase">{{action.copy}}</a>
                 {% endfor %}
             {% endif %}
-            {% if pageCMS['restaurants'] and pageCMS['restaurants'].simple_article %}
+        {% endif %}
 
-                <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
-                    {% for item in pageCMS['restaurants'].simple_article %}
-                        <figure class="grid grid-cols-2 xmed:grid-cols-1 gap-4 items-center mb-6">
-                            {% for img in item.image %}
-                                {{ global_image(img.global_image) }}
-                            {% endfor %}
-                            <figcaption class="text-ams-white xmed:px-8">
-                                <header class="xmed:text-center">
-                                    <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
-                                        {% if item.links %}
-                                            {% for cta in item.links %}
-                                                {% set action = cta.action %}
-                                                <a href="{{action.url}}" target="_blank">
-                                                    {{item.title}}</a>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </h3>
-                                </header>
-                                <div class="xmed:text-center cms-description">
-                                    {{item.description | safe}}
-                                </div>
-                            </figcaption>
-                        </figure>
-                    {% endfor %}
-                </section>
-            {% endif %}
-        </article>
-    </div>
+        {% if pageCMS['restaurants'].image_article_array.length > 0 %}
+
+            <section class="pt-9 xmed:grid xmed:grid-cols-3 xmed:gap-4 xmed:justify-between xmed:items-start">
+                {% for item in pageCMS['restaurants'].image_article_array %}
+                    <figure class="grid grid-cols-2 xmed:grid-cols-1 gap-4 items-center mb-6">
+                        {{ global_image(item.image_article.image.global_image) }}
+                        <figcaption class="text-ams-white xmed:px-8">
+                            <header class="xmed:text-center">
+                                <h3 class="segment__cta segment__cta--green relative inline-block mb-4 font-serif-display text-xl text-ams-white">
+                                    {# {% for cta in item.image_article.actions %} #}
+                                    {% set action = (item.image_article.actions | first) %}
+                                    <a href="{{action.href}}" target="_blank">{{action.copy}}</a>
+                                    {# {% endfor %} #}
+                                </h3>
+                            </header>
+                            <div class="xmed:text-center cms-description">
+                                {{item.image_article.description | safe}}
+                            </div>
+                        </figcaption>
+                    </figure>
+                {% endfor %}
+            </section>
+        {% endif %}
+    </article>
+</div>

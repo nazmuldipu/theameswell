@@ -75,4 +75,9 @@
     </div>
 </footer>
 {{ skipper_footer("text-ams-primary uppercase", "bg-ams-white pb-28 small:pb-4 xmed:pb-4") }}
+
+{# set fab icon #}
+{% set fabUrl = pageCMS.bookinglink.fab_icon.href %}
+{% set fabCopy = pageCMS.bookinglink.fab_icon.title %}
+{% set fabExternalLink = pageCMS.bookinglink.fab_icon.external %}
 {{ fab(fabUrl, fabBg, fabCopy, fabExternalLink) }}

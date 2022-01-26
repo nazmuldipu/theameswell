@@ -5,34 +5,13 @@ permalink: "build/rfp/index.html"
 permalinkBypassOutputDir: true
 canonical_href: https://www.theameswellhotel.com/rfp/
 ---
-{% from "buttons.njk" import primaryButton %}
-{% from "macros.njk" import scaled_image %}
 {% from "global-image.njk" import global_image %}
-
-{% macro form_input(name, label, type = "text", placeholder = "", required = true, parentClass = "", val = "", readonly = false) %}
-    <label class="block mb-4 p-2 bg-ams-label shadow-md text-ams-primary text-xs uppercase {{parentClass}}">
-        {{label}}<br>
-        <input type="{{type}}" id="{{name}}" name="{{name}}" placeholder="{{ placeholder }}"  {% if val !== "" %} value={{val}} {% endif %}
-        class="w-full p-0 bg-ams-label border-0 focus:ring-transparent focus:border-b-2 focus:border-ams-primary focus:border-opacity-30 focus:outline-none 
-        placeholder-ams-primary placeholder-opacity-50" aria-required="true" {{ 'required' if (required == true) }} {{ 'readonly' if (readonly == true) }}/>
-    </label>
-{% endmacro %}
 
 {% if pageCMS['hero-image'] %}
     <section id="pageHero" class="bg-ams-primary min-h-screen w-full grid xmed:grid-rows-hero-home justify-items-center overflow-hidden">
         {{ global_image(pageCMS['hero-image'].global_image, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
     </section>
 {% endif %}
-{# 
-{% if pageCMS['top-banner'] and pageCMS['top-banner'].simple_article %}
-    {% for item in pageCMS['top-banner'].simple_article %}
-        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-            {% for img in item.image %}
-                {{ global_image(img.global_image, imgClass = "min-h-screen min-w-full max-w-none") }}
-            {% endfor %}
-        </section>
-    {% endfor %}
-{% endif %} #}
 
 <div class="w-full xmed:grid xmed:justify-items-center xmed:bg-pattern--ams-grey xmed:pt-8 xmed:pb-16 xmed:px-8">
     <div class="w-full xmed:max-w-screen-lg xmed:grid xmed:grid-cols-40-60 xmed:-mt-16 xmed:shadow-md">
