@@ -33,28 +33,28 @@ subfooter__form %}
 {% endmacro %}
 {% if pageCMS['hero-image'] and pageCMS['hero-image'].global_image %}
     {% set item = pageCMS['hero-image'].global_image %}
-        <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
-            {{ global_image(item, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
-        </section>
+    <section id="pageHero" class="bg-ams-primary h-screen w-full grid grid-rows-1 justify-items-center items-center overflow-hidden">
+        {{ global_image(item, classes = "min-h-screen min-w-full max-w-none", imgClass="min-h-screen w-auto max-w-none") }}
+    </section>
 {% endif %}
 <div
     class="w-full grid justify-items-center -mt-24 xmed:-mt-32 pt-8 xmed:pt-12 pb-8 xmed:pb-14 px-6 bg-pattern--ams-gold">
     <article class="w-full grid justify-items-center">
         {% if pageCMS['hero-article'] and pageCMS['hero-article'].titles_and_description %}
             {% set item = pageCMS['hero-article'].titles_and_description %}
-                <section class="w-full grid justify-items-center max-w-screen-lg shadow-md">
-                    <div class="pb-4 px-4 xmed:shadow-md xmed:p-10 bg-ams-white">
-                        <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
-                            {% for title in item.title %}
+            <section class="w-full grid justify-items-center max-w-screen-lg shadow-md">
+                <div class="pb-4 px-4 xmed:shadow-md xmed:p-10 bg-ams-white">
+                    <h2 class="title-display text-2xl xmed:text-5xl pt-4 xmed:pt-0 pb-4 xmed:text-center">
+                        {% for title in item.title %}
                             {{title}}
                             <br class="hidden xmed:block">
-                            {% endfor %}
-                        </h2>
-                        <div class="xmed:text-center cms-description">
-                            {{item.description | safe}}
-                        </div>
+                        {% endfor %}
+                    </h2>
+                    <div class="xmed:text-center cms-description">
+                        {{item.description | safe}}
                     </div>
-                </section>
+                </div>
+            </section>
         {% endif %}
         {% if pageCMS['icons'] and pageCMS['icons']
             .icon_list and pageCMS['icons']
@@ -112,194 +112,194 @@ subfooter__form %}
                 </h2>
             </div>
         </section>
-        {%endif%}
+    {% endif %}
 
-        {% if pageCMS['rooms'] and pageCMS['rooms'].room_detail %}
-            <!-- Room list -->
-            {% for room in pageCMS['rooms'].room_detail %}
-                <div class="room-list w-full max-w-screen-2xl border-t border-ams-primary xmed:border-0">
-                    {{textCard(room.name, room.description, 'text-center z-10', 'summury pb-20')}}
+    {% if pageCMS['rooms'] and pageCMS['rooms'].room_detail %}
+        <!-- Room list -->
+        {% for room in pageCMS['rooms'].room_detail %}
+            <div class="room-list w-full max-w-screen-2xl border-t border-ams-primary xmed:border-0">
+                {{textCard(room.name, room.description, 'text-center z-10', 'summury pb-20')}}
 
-                    <div class="accordion-item grid justify-items-center w-full -mt-16 xmed:-mt-20 xmed:pt-16 pb-6">
-                        <!-- toggle button -->
-                        <div class="accordion-button hidden xmed:grid grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
-                            <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span>
-                            <span>View</span>
-                        </div>
+                <div class="accordion-item grid justify-items-center w-full -mt-16 xmed:-mt-20 xmed:pt-16 pb-6">
+                    <!-- toggle button -->
+                    <div class="accordion-button hidden xmed:grid grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
+                        <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span>
+                        <span>View</span>
+                    </div>
 
-                        <!-- Toggle content -->
-                        <div class="accordion-content w-full overflow-hidden transition justify-items-center z-0">
-                            {% for type in room.types %}
-                                <article class="mx-6 xmed:mx-9">
-                                    <div class="grid grid-cols-1 xmed:grid-cols-2 gap-2 mt-20 mb-16">
-                                        <!-- sliding images -->
-                                        <div class="rooms-carousel hidden xmed:block xmed:h-carousel-lg xmed:overflow-hidden">
-                                            {{ cms_media_carousel(type.images, '', '', true) }}
-                                        </div>
-                                        <!-- room types content -->
-                                        <div class="shadow-sm xmed:shadow-md bg-ams-white">
-                                            <h2 class="title-display px-2 text-2xl xmed:text-4xl pt-4 py-5 text-center">
-                                                {{type.name}}
-                                            </h2>
-                                            <div class="text-center xmed:text-left text-lg max-w-6xl mx-auto px-6 pb-4">
-                                                {{type.description | safe}}
-                                            </div>
-
-                                            <!-- svg icons -->
-                                            <div class="w-full grid justify-items-center" >
-                                                <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
-                                                    {% for icon in type.icon_list %}
-                                                        <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center justify-items-center text-center cms-svg">
-                                                            {{icon.icon | safe}}
-                                                            <a>
-                                                                <span>{{icon.title}}</span>
-                                                            </a>
-                                                        </div>
-                                                    {% endfor %}
-                                                </div>
-                                            </div>
-
-                                            <!-- mobile slider -->
-                                            <div class="rooms-carousel block xmed:hidden mx-7">
-                                                {{ cms_media_carousel(type.images) }}
-                                            </div>
-                                            <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
-                                            Details
-                                        </h2>
-                                            <ul class="list-disc px-6 xmed:max-w-xl mx-4 text-base xmed:text-lg pb-8">
-                                                {% for det in type.details %}
-                                                    <li>{{det}}</li>
-                                                {% endfor %}
-                                            </ul>
-                                        </div>
+                    <!-- Toggle content -->
+                    <div class="accordion-content w-full overflow-hidden transition justify-items-center z-0">
+                        {% for type in room.types %}
+                            <article class="mx-6 xmed:mx-9">
+                                <div class="grid grid-cols-1 xmed:grid-cols-2 gap-2 mt-20 mb-16">
+                                    <!-- sliding images -->
+                                    <div class="rooms-carousel hidden xmed:block xmed:h-carousel-lg xmed:overflow-hidden">
+                                        {{ cms_media_carousel(type.images, '', '', true) }}
                                     </div>
-
-                                    {% if not loop.last %}
-                                        <div class="hidden xmed:block max-w-5xl mx-auto">
-                                            <div class="w-full border-t-4 border-ams-gold h-1"></div>
+                                    <!-- room types content -->
+                                    <div class="shadow-sm xmed:shadow-md bg-ams-white">
+                                        <h2 class="title-display px-2 text-2xl xmed:text-4xl pt-4 py-5 text-center">
+                                            {{type.name}}
+                                        </h2>
+                                        <div class="text-center xmed:text-left text-lg max-w-6xl mx-auto px-6 pb-4">
+                                            {{type.description | safe}}
                                         </div>
-                                    {% endif %}
-                                </article>
-                            {% endfor %}
-                        </div>
 
-                        <div class="accordion-button grid xmed:hidden grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
-                            <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span>
-                            <span>View</span>
-                        </div>
+                                        <!-- svg icons -->
+                                        <div class="w-full grid justify-items-center" >
+                                            <div class="grid grid-flow-col auto-cols-max gap-2 xmed:gap-5 my-6">
+                                                {% for icon in type.icon_list %}
+                                                    <div class="grid xmed:grid-cols-1 xmed:justify-items-center content-start mb-2 xmed:text-center justify-items-center text-center cms-svg">
+                                                        {{icon.icon | safe}}
+                                                        <a>
+                                                            <span>{{icon.title}}</span>
+                                                        </a>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+
+                                        <!-- mobile slider -->
+                                        <div class="rooms-carousel block xmed:hidden mx-7">
+                                            {{ cms_media_carousel(type.images) }}
+                                        </div>
+                                        <h2 class="title-display text-2xl xmed:text-4xl pt-4 py-5 text-center">
+                                                Details
+                                            </h2>
+                                        <ul class="list-disc px-6 xmed:max-w-xl mx-4 text-base xmed:text-lg pb-8">
+                                            {% for det in type.details %}
+                                                <li>{{det}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                {% if not loop.last %}
+                                    <div class="hidden xmed:block max-w-5xl mx-auto">
+                                        <div class="w-full border-t-4 border-ams-gold h-1"></div>
+                                    </div>
+                                {% endif %}
+                            </article>
+                        {% endfor %}
+                    </div>
+
+                    <div class="accordion-button grid xmed:hidden grid-flow-col auto-cols-min gap-3 px-3 py-2 text-white text-lg font-serif cursor-pointer bg-ams-taupe z-10 h-10">
+                        <span class="arrow inline-block w-4 h-4 border-t-2 border-r-2 border-white"></span>
+                        <span>View</span>
                     </div>
                 </div>
-            {% endfor %}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+<!--offers desktop design-->
+
+<div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
+    <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
+        <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
+            {% if pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                {% set item = pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
+                <figcaption class="mx-20 px-2 mb-8">
+                    <h2 class="title-display text-2xl xmed:text-4xl pb-4 text-ams-primary xmed:text-center">
+                        {{item.title}}
+                    </h2>
+                    <div class="xmed:text-center text-ams-primary text-lg">
+                        {{item.description | safe}}
+                    </div>
+                    <div class="text-center pt-4 pb-4">
+                        {% if item.actions %}
+                            {% for link in item.actions %}
+                                <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                                    <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
+                                    {% if link.mobile_label %}
+                                        <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
+                                    {% endif %}
+                                </a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <hr class="border-solid border border-ams-gold xmed:mx-3">
+                </figcaption>
+            {% endif %}
+
+            {% if globalCMS['offers'] and globalCMS['offers'].offers %}
+                <figure class="w-full max-w-screen-xl overflow-hidden">
+                    {{ component_carousel(globalCMS['offers'].offers) }}
+                </figure>
+            {% endif %}
+        </div>
+    </section>
+</div>
+
+<!--offers desktop design end-->
+<div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
+    {% if pageCMS['features-headline'] and pageCMS['features-headline'].simple_text %}
+        <div class="w-full grid justify-items-center bg-ams-base">
+            <div class="w-full px-6 grid justify-items-center max-w-screen-md">
+                <div class="w-full mx-6 my-8 py-4 px-4 xmed:p-8 xmed:my-0 shadow-sm xmed:shadow-md bg-ams-white">
+                    <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
+                        {{pageCMS['features-headline'].simple_text}}
+                    </h2>
+                </div>
+            </div>
         </div>
     {% endif %}
-    <!--offers desktop design-->
+    {% if pageCMS['feature-list'] and pageCMS['feature-list'].article_with_image %}
+        {% for item in pageCMS['feature-list'].article_with_image %}
+            <div class="w-full grid justify-items-center max-w-screen-xl xmed:mt-14 {{feature.classes}}" >
+                <section class="shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2 xmed:mx-4">
+                    <div class="px-6 mt-6 block xmed:hidden">
+                        <figure>
+                            {% if item.photo %}
+                                {{ global_image(item.photo.global_image, imgClass = "w-full") }}
+                            {% endif %}
+                        </figure>
+                    </div>
+                    <div class="p-6">
+                        <h2 class="title-display text-2xl xmed:text-4xl xmed:pt-8">{{item.title}}</h2>
+                        <div class="pt-2 pb-0 text-base xmed:text-lg max-w-6xl cms-description">
+                            {{item.description | safe}}
+                        </div>
+                    </div>
+                    <div class="p-8 hidden xmed:block">
+                        <figure>
+                            {% if item.photo %}
+                                {{ global_image(item.photo.global_image, imgClass = "w-full") }}
+                            {% endif %}
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
 
-    <div class="auto-cols-fr justify-items-center w-full hidden xmed:grid bg-ams-base py-6 xmed:px-12 xmed:pt-8 pb-12">
-        <section class="w-full grid mt-6 justify-items-center max-w-screen-xl mx-auto">
-            <div class="w-full grid py-4 xmed:py-9 shadow-sm xmed:shadow-md bg-ams-white">
+<section class="xmed:hidden w-full bg-pattern--ams-grey xmed:pb-24 z-10">
+    <section class="max-w-7xl mx-auto px-6">
+        <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
+            <aside class="mb-12">
                 {% if pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
                     {% set item = pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
-                        <figcaption class="mx-20 px-2 mb-8">
-                            <h2 class="title-display text-2xl xmed:text-4xl pb-4 text-ams-primary xmed:text-center">
-                                {{item.title}}
-                            </h2>
-                            <div class="xmed:text-center text-ams-primary text-lg">
-                                {{item.description | safe}}
-                            </div>
-                            <div class="text-center pt-4 pb-4">
-                                {% if item.actions %}
-                                    {% for link in item.actions %}
-                                        <a href="{{link.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
-                                            <span class="{{ 'hidden xmed:inline-block' if not link.mobile_label == '' }}">{{link.label | safe}}</span>
-                                            {% if link.mobile_label %}
-                                                <span class="xmed:hidden">{{link.mobile_label | safe}}</span>
-                                            {% endif %}
-                                        </a>
-                                    {% endfor %}
-                                {% endif %}
-                            </div>
-                            <hr class="border-solid border border-ams-gold xmed:mx-3">
-                        </figcaption>
+                    {{cms_offersArticle(item)}}
                 {% endif %}
-
+            </aside>
+            <aside class="xmed:col-span-2">
                 {% if globalCMS['offers'] and globalCMS['offers'].offers %}
-                    <figure class="w-full max-w-screen-xl overflow-hidden">
-                        {{ component_carousel(globalCMS['offers'].offers) }}
+                    <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white">
+                        {{ cms_homepage_offers_carousel(globalCMS['offers'].offers, isRoomDetail = true) }}
                     </figure>
                 {% endif %}
-            </div>
-        </section>
-    </div>
-
-    <!--offers desktop design end-->
-    <div class="w-full grid justify-items-center bg-ams-base xmed:pb-12">
-        {% if pageCMS['features-headline'] and pageCMS['features-headline'].simple_text %}
-            <div class="w-full grid justify-items-center bg-ams-base">
-                <div class="w-full px-6 grid justify-items-center max-w-screen-md">
-                    <div class="w-full mx-6 my-8 py-4 px-4 xmed:p-8 xmed:my-0 shadow-sm xmed:shadow-md bg-ams-white">
-                        <h2 class="pb-0 title-display text-3xl xmed:text-5xl text-center">
-                            {{pageCMS['features-headline'].simple_text}}
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        {% endif %}
-        {% if pageCMS['feature-list'] and pageCMS['feature-list'].article_with_image %}
-            {% for item in pageCMS['feature-list'].article_with_image %}
-                <div class="w-full grid justify-items-center max-w-screen-xl xmed:mt-14 {{feature.classes}}" >
-                    <section class="shadow-sm xmed:shadow-md bg-ams-white grid grid-cols-1 xmed:grid-cols-2 xmed:mx-4">
-                        <div class="px-6 mt-6 block xmed:hidden">
-                            <figure>
-                                {% if item.photo %}
-                                    {{ global_image(item.photo.global_image, imgClass = "w-full") }}
-                                {% endif %}
-                            </figure>
-                        </div>
-                        <div class="p-6">
-                            <h2 class="title-display text-2xl xmed:text-4xl xmed:pt-8">{{item.title}}</h2>
-                            <div class="pt-2 pb-0 text-base xmed:text-lg max-w-6xl cms-description">
-                                {{item.description | safe}}
-                            </div>
-                        </div>
-                        <div class="p-8 hidden xmed:block">
-                            <figure>
-                                {% if item.photo %}
-                                    {{ global_image(item.photo.global_image, imgClass = "w-full") }}
-                                {% endif %}
-                            </figure>
-                        </div>
-                    </section>
-                </div>
-            {% endfor %}
-        {% endif %}
-    </div>
-
-    <section class="xmed:hidden w-full bg-pattern--ams-grey xmed:pb-24 z-10">
-        <section class="max-w-7xl mx-auto px-6">
-            <article class="grid grid-cols-1 xmed:grid-cols-3 gap-0 xmed:gap-8 py-4 xmed:pb-12">
-                <aside class="mb-12">
-                    {% if pageCMS['offers-article'] and pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
-                        {% set item = pageCMS['offers-article'].article_and_actions_with_multiple_copy %}
-                            {{cms_offersArticle(item)}}
-                    {% endif %}
-                </aside>
-                <aside class="xmed:col-span-2">
-                    {% if globalCMS['offers'] and globalCMS['offers'].offers %}
-                        <figure class="w-full max-w-screen-xl overflow-hidden shadow-md bg-ams-white">
-                            {{ cms_homepage_offers_carousel(globalCMS['offers'].offers, isRoomDetail = true) }}
-                        </figure>
-                    {% endif %}
-                </aside>
-            </article>
-        </section>
+            </aside>
+        </article>
     </section>
+</section>
 
 {% if globalCMS['join-the-a-list'] and globalCMS['join-the-a-list'].form
     and globalCMS['join-the-a-list-form-image'] and globalCMS['join-the-a-list-form-image'] %}
     {% set subfooter_form = globalCMS['join-the-a-list'].form%}
     {% set footerImage = globalCMS['join-the-a-list-form-image'] %}
-    {{subfooter__form(subfooter_form, formImage=footerImage)}}
+    {{subfooter__form(subfooter_form, "max-w-screen-xl", footerImage)}}
 {% endif %}
-    <div class="bg-ams-primary w-full">
-        <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
-    </div>
+<div class="bg-ams-primary w-full">
+    <div class="bg-pattern--ams-grey w-full h-20 my-4 hidden xmed:block"></div>
+</div>
