@@ -4,7 +4,7 @@ on:
     inputs:
       brand_name:
         description: 'Brand name'
-        default: 'Sundance'
+        default: 'Ameswell'
       branch:
         description: 'Desired branch name'
         required: true
