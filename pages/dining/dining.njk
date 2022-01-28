@@ -48,7 +48,7 @@ canonical_href: https://www.theameswellhotel.com/dining/
 {% endif %}
 {% if pageCMS['dining-item'] and pageCMS['dining-item'].simple_blog %}
     {% for item in pageCMS['dining-item'].simple_blog %}
-        <div class="grid justify-items-center w-full bg-ams-base {% if loop.last %}  xmed:pb-20 {% endif %}">
+        <div class="grid justify-items-center w-full bg-ams-base {% if loop.last %}  xmed:pb-20 {% endif %}" id="dining-{{loop.index}}">
             <article class="mb-4 xmed:mt-8">
                 <section class="max-w-screen-xl xmed:grid xmed:grid-cols-60-40 gap-4 xmed:p-4 xmed:pb-8 xmed:bg-ams-white xmed:shadow-md">
                     <figure class="xmed:order-2 grid items-center justify-items-center">
