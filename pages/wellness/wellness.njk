@@ -90,7 +90,7 @@ cms_primaryButton %}
                     <div class="pt-7 pb-2 text-center">
                         {% for cta in pageCMS['amenities-article'].article_with_actions.actions %}
                             {% set btn = cta.action %}
-                            <a href="{{cta.url}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
+                            <a href="{{cta.href}}" class="segment__cta segment__cta--gold relative text-ams-gold font-serif-display uppercase">
                                 {{cta.copy | safe}}
                             </a>
                         {% endfor %}
