@@ -62,11 +62,12 @@ const createMenuItem = (event) => {
 };
 
 const shouldShowEvent = event => {
+    console.log('shouldShowEvent', event)
     // Months are zero-indexed for months, and our data is one-indexed
     const eventDate = new Date(event.date.year, event.date.month-1, event.date.day);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    return event.should_show && event.showIndexPage && (eventDate.getTime() >= today.getTime());
+    return event.should_show && event.show_index_page && (eventDate.getTime() >= today.getTime());
 }
 
 const eventDateAscCmp = (a, b) => {
