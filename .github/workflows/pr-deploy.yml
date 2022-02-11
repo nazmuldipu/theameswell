@@ -50,6 +50,26 @@ jobs:
           dist: build
           teardown: 'true'
           build: echo ""
+
+      - name: Expose git commit data
+        uses: rlespinasse/git-commit-data-action@v1
+      - name: Print git commit data
+        run: |
+          echo "Get commit info"
+          echo " - ${{ env.GIT_COMMIT_SHA }}"
+          echo " - ${{ env.GIT_COMMIT_SHORT_SHA }}"
+          echo "Get author info"
+          echo " - ${{ env.GIT_COMMIT_AUTHOR }}"
+          echo " - ${{ env.GIT_COMMIT_AUTHOR_NAME }}"
+          echo " - ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+          echo "Get committer info"
+          echo " - ${{ env.GIT_COMMIT_COMMITTER }}"
+          echo " - ${{ env.GIT_COMMIT_COMMITTER_NAME }}"
+          echo " - ${{ env.GIT_COMMIT_COMMITTER_EMAIL }}"
+          echo "Get message info"
+          echo " - ${{ env.GIT_COMMIT_MESSAGE_SUBJECT }}"
+          echo " - ${{ env.GIT_COMMIT_MESSAGE_SUBJECT_SANITIZED }}"
+          echo " - ${{ env.GIT_COMMIT_MESSAGE_BODY }}"
           
       - name: Send mail notification for build
         if: always()
@@ -65,8 +85,10 @@ jobs:
           # email subject
           subject: ${{ github.event.repository.name }} (${{ github.head_ref }}->${{ github.event.pull_request.base.ref }}) - PR # ${{ github.event.number }} - ${{ job.status }}!!!
           body: |
-            sender1 ${{ github.pull_request }} -- ${{ toJson(github.pull_request) }}
-            sender2 ${{ github.pull_request.commit }} -- ${{ toJson(github.pull_request.commit) }}
+            sender1  ${{ github.event.pull_request }} -- ${{ toJson(github.event.pull_request) }}
+            sender2  ${{ github.event.commit }} -- ${{ toJson(github.event.commit) }}
+            sender3  ${{ github.event.commit }} -- ${{ toJson(github.event.commit) }}
+            commits[][author][email]
             
             Build job status of PR # ${{ github.event.number }} for ${{ github.event.repository.name }} (${{ github.head_ref }}) - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
