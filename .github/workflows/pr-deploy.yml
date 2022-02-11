@@ -65,13 +65,13 @@ jobs:
           # email subject
           subject: ${{ github.event.repository.name }} (${{ github.head_ref }}->${{ github.event.pull_request.base.ref }}) - PR # ${{ github.event.number }} - ${{ job.status }}!!!
           body: |
-            ${{github.event.pusher.email}}
+            ${{github.commits.author.email}}
             Build job status of PR # ${{ github.event.number }} for ${{ github.event.repository.name }} (${{ github.head_ref }}) - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
             Thanks
             DevOps Team
             Skipper Hospitality
           # comma-separated string, send email to
-          to: ${{github.event.pusher.email}}
+          to: ${{github.commits.author.email}}
           # from email name
           from: ${{ github.event.repository.name }} Site Build Report<no-reply@skipperhospitality.com>
