@@ -64,7 +64,7 @@ jobs:
           username: ${{ secrets.USERNAME_SMTP_SERVER }}
           password: ${{ secrets.PASSWORD_SMTP_SERVER }}
           # email subject
-          subject: ${{ github.event.repository.name.uppercase }} (${{ github.head_ref.uppercase }} to ${{ github.event.pull_request.base.ref.uppercase }}) - PR Build # ${{ github.event.number }} - ${{ job.status }}!!!
+          subject: ${{ github.event.repository.name }} (${{ github.head_ref }} to ${{ github.event.pull_request.base.ref }}) - PR Build # ${{ github.event.number }} - ${{ job.status }}!!!
           body: |
             Build job status of PR # ${{ github.event.number }} for ${{ github.event.repository.name }}: ${{ github.head_ref }} - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
@@ -75,4 +75,4 @@ jobs:
           # comma-separated string, send email to
           to: ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}
           # from email name
-          from: ${{ github.event.repository.name.uppercase }} PR Build<no-reply@skipperhospitality.com>
+          from: ${{ github.event.repository.name }} PR Build<no-reply@skipperhospitality.com>
