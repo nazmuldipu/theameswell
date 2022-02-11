@@ -68,7 +68,8 @@ jobs:
           body: |
             Build job status of PR # ${{ github.event.number }} for ${{ github.event.repository.name }}: ${{ github.head_ref }} - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
-            
+            And, please click on the url to preview PR Build here ➵ ${{ steps.preview_step.outputs.preview_url }}.
+
             Thanks
             DevOps Team
             Skipper Hospitality
