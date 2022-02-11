@@ -1,7 +1,8 @@
 name: Deploy
 on:
   pull_request:
-    types: [opened, reopened, edited]
+    # when using teardown: 'true', add default event types + closed event type
+    types: [opened, reopened, edited, synchronize, closed] 
     branches: ['cms-dev', 'cms-stage', 'cms-prod']
 jobs:
   build:
@@ -47,6 +48,7 @@ jobs:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dist: build
+          teardown: 'true'
           build: echo ""
           
       - name: Send mail notification for build
@@ -69,6 +71,6 @@ jobs:
             DevOps Team
             Skipper Hospitality
           # comma-separated string, send email to
-          to: devops@skipperhospitality.com
+          to: ${{ github.actor }} <${{ github.actor }}@skipperhospitality.com>
           # from email name
           from: ${{ github.event.repository.name }} Site Build Report<no-reply@skipperhospitality.com>
