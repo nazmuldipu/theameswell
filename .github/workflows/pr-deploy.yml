@@ -65,10 +65,9 @@ jobs:
           # email subject
           subject: ${{ github.event.repository.name }} (${{ github.head_ref }}->${{ github.event.pull_request.base.ref }}) - PR # ${{ github.event.number }} - ${{ job.status }}!!!
           body: |
-            sender ${{github}} -- ${{ toJson(github) }}
-            sender1 ${{github.committer.email}} -- ${{ toJson(github.committer.commit) }}
-            sender2 ${{github.commit}} -- ${{ toJson(github.commit) }}
-            sender3 ${{ toJson(github.committer) }}
+            sender1 ${{github.event.committer.email}} -- ${{ toJson(github.event.committer.email) }}
+            sender2 ${{github.event.commit}} -- ${{ toJson(github.event.commit) }}
+            sender3 ${{ toJson(github.event.committer) }}
             
             Build job status of PR # ${{ github.event.number }} for ${{ github.event.repository.name }} (${{ github.head_ref }}) - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
@@ -76,6 +75,6 @@ jobs:
             DevOps Team
             Skipper Hospitality
           # comma-separated string, send email to
-          to: nazmuldipu@gmail.com
+          to: tariq@skipperhospitality.com
           # from email name
           from: ${{ github.event.repository.name }} Site Build Report<no-reply@skipperhospitality.com>
