@@ -65,9 +65,7 @@ jobs:
           # email subject
           subject: ${{ github.event.repository.name }} (${{ github.head_ref }}->${{ github.event.pull_request.base.ref }}) - PR # ${{ github.event.number }} - ${{ job.status }}!!!
           body: |
-            pusher ${{github.event.pusher}} -- ${{ toJson(github.event.pusher) }}
-            sender ${{github.event.sender}} -- ${{ toJson(github.event.sender) }}
-            author ${{github.event.author}} -- ${{ toJson(github.event.author) }}
+            sender ${{github.commit.commit.committer.email}} -- ${{ toJson(github.commit.commit) }}
             Build job status of PR # ${{ github.event.number }} for ${{ github.event.repository.name }} (${{ github.head_ref }}) - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
             Thanks
