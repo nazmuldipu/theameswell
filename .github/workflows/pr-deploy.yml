@@ -50,8 +50,6 @@ jobs:
           dist: build
           teardown: 'true'
           build: echo ""
-      - name: Add Pull Request Reviewer
-        uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
       - name: Get git commit data
         uses: rlespinasse/git-commit-data-action@v1
       - name: Send mail notification for build
@@ -68,11 +66,6 @@ jobs:
           # email subject
           subject: ${{ github.event.repository.name }} (${{ github.head_ref }}->${{ github.event.pull_request.base.ref }}) - PR # ${{ github.event.number }} - ${{ job.status }}!!!
           body: |
-            ${{ github.reviewers }}
-            ${{ env.reviewers }}
-            ${{ github.REVIEWERS }}
-            ${{ env.REVIEWERS }}
-
             Build job status of PR # ${{ github.event.number }} for ${{ github.event.repository.name }} (${{ github.head_ref }}) - ${{ job.status }}.
             Check console output at https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} to view the full result.
             Thanks
@@ -80,8 +73,5 @@ jobs:
             Skipper Hospitality
           # comma-separated string, send email to
           to: ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}
-          cc: ${{ env.GIT_COMMIT_COMMITTER_EMAIL }}
-          # Optional blind carbon copy recipients:
-          bcc: tariq@skipperhospitality.com
           # from email name
           from: ${{ github.event.repository.name }} Site Build Report<no-reply@skipperhospitality.com>
