@@ -31,8 +31,6 @@ class EventComponent extends HTMLElement{
             events.push(item.node.values.data)
         });
         
-        console.log(events)
-        
         // set html inside shadow dom
         this.shadow.innerHTML = `
         <style>${CommodityHelper.getAllCss()}</style>
