@@ -1,5 +1,23 @@
 "use strict";
 
+import { getCommodity } from '../../scripts/utils/commodity/get-commodity';
+
+const getData = async() => {
+  let commodity = await getCommodity('f81a570d-09f6-4127-92d5-170a62043abb');
+  let getData = commodity.data.allCommodity.edges[0].node.commodityitemSet.edges
+  let events = []
+  
+  getData.forEach(item => {
+    events.push(item.node.values.data)
+  });
+        
+  return events;
+}
+
+getData().then(data => { 
+  console.log(data);
+});
+
 const handleHappenings = (happenings) => {
 const events = happenings.map((item)=> {
   return {
