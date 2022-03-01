@@ -1,8 +1,6 @@
 import { getCommodity } from "./get-commodity";
 
 const getEventTimeString = (start, end)=>{
-    // TODO: FIX your desired logic
-    return
     const startTime = start?.split('T')[1]?.split(':');
     const endTime = end?.split('T')[1]?.split(':');
     return startTime[0] + ':' + startTime[1] + ' - ' + endTime[0] + ':' + endTime[1];
@@ -18,7 +16,7 @@ const getEventDateObject = (date) => {
 }
 
 const getId = (id, date)=>{
-    return id + "dd"+ date.year + date.month + date.day;
+    return id + "dd"+ date.year + '_' + date.month + '_' + date.day;
 }
 
 const transformEvent = (event) => {
@@ -31,11 +29,11 @@ const transformEvent = (event) => {
   const { title, description } = info;
   
   // add action buttons
-  const cta = [];
-  if(button_1.url.length > 3 ) cta.push(button_1);
-  if(button_2.url.length > 3 ) cta.push(button_2);
-  if(button_3.url.length > 3 ) cta.push(button_3);
-  if(button_4.url.length > 3 ) cta.push(button_4);
+  const actions = [];
+  if(button_1.url.length > 3 ) actions.push(button_1);
+  if(button_2.url.length > 3 ) actions.push(button_2);
+  if(button_3.url.length > 3 ) actions.push(button_3);
+  if(button_4.url.length > 3 ) actions.push(button_4);
 
   // add image
   let image = eventData.image.image[0];
@@ -47,7 +45,7 @@ const transformEvent = (event) => {
     const time = getEventTimeString(start_time, end_time);
     recurrenceDate.forEach((dateObj) => { 
         const date = getEventDateObject(dateObj);
-        const evObj = {id: getId(id, date), date, time, image, title, description, cta}
+        const evObj = {id: getId(id, date), date, time, image, title, description, actions}
         res.push(evObj);
     });
     return res;
@@ -56,7 +54,7 @@ const transformEvent = (event) => {
       const {start_date, start_time, end_time} = preset_timeline;
       const date = getEventDateObject(start_date);
       const time = getEventTimeString(start_time, end_time);
-      return [{id: getId(id, date), date, time, image, title, description, cta}];
+      return [{id: getId(id, date), date, time, image, title, description, actions}];
   }
 };
 
@@ -67,7 +65,7 @@ const transformEvent = (event) => {
  */
 const getAllCommodity = async (pageUid='', itemId='') => {
     // let commodity = await getCommodity("2f729ffb-2290-46ad-83b5-fdc468531220");
-    let commodity = await getCommodity("78351230-3601-42c8-9b3e-a3a7f6179e45",pageUid,itemId='');
+    let commodity = await getCommodity("78351230-3601-42c8-9b3e-a3a7f6179e45", pageUid, itemId);
     
     let getData =
         commodity.data.allCommodity.edges[0].node.commodityitemSet.edges;

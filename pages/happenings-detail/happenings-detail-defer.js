@@ -1,4 +1,14 @@
-const temp_id = window.location.search.split("=")[1];
+import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
+
+const event_id = window.location.search.split("=")[1]; 
+const temp_id = event_id.split('dd')[0];
+const date_info = event_id.split('dd')[1].split('_');
+
+getAllCommodity('3cd0acd5-58d2-47da-8a2b-18cd8e2b6080', temp_id).then((data) => {
+    console.log(data);
+    handleHappenings(data);
+});
+
 const handleHappenings = (happenings) => {
     const events = happenings.map((item) => {
         return {
@@ -34,25 +44,18 @@ const handleHappenings = (happenings) => {
     };
 
     const render_left = (event) => {
-        const eventPicElement = document.querySelector(".event_id_" + event.id);
-
         return `<header class="xmed:hidden pb-4 px-6 xmed:px-0 block">
                     <h1 class="font-medium font-serif text-ams-primary text-2xl uppercase">${event.title}</h1>
-            </header>
-            <figure class="order-2">
-                ${eventPicElement.outerHTML}
-            </figure>`;
+                </header>
+                <img src="${event.image}" alt="${event.title}" loading="lazy" class="order-2" decoding="async" alt="">`;
     };
 
     const render_right = (event) => {
         let ctaEle = "";
         event.actions &&
-            event.actions.forEach((item) => {
-                const element = item.action;
-                if (element.type == "primary") {
-                    ctaEle += `<a class="w-64 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${element.url}" target="_blank">${element.copy}</a>
-       `;
-                }
+        event.actions.forEach((item) => {
+            console.log(item);
+                ctaEle += `<a class="w-64 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${item.url}" target="_blank">${item.label}</a>`;
             });
 
         let html = `
@@ -67,26 +70,24 @@ const handleHappenings = (happenings) => {
     <p class="pb-3 text-lg">${event.time}</p>
     <hr class="border-solid border-3 w-11/12 xmed:w-1/2 border-ams-gold">`;
         html += `
-        <div class="pt-3 text-lg"> ${event.descriptions} </div>
+        <div class="pt-3 text-lg"> ${event.description} </div>
         `;
         html += `<div class="pt-10 xmed:pt-14 text-center xmed:text-left text-lg grid xmed:grid-flow-col gap-3 justify-center xmed:justify-start items-center">${ctaEle}</div>`;
         return html;
     };
 
     const renderOurHappeningsCard = (event) => {
-        const eventPicElement = document.querySelector(".event_id_" + event.id);
         let ctaEle = "";
+        console.log('action', event.actions);
         event.actions &&
             event.actions.forEach((item) => {
                 const element = item.action;
-                if (element.type == "primary") {
-                    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${
-                        element.classes ? element.classes : ""
-                    }" href="${element.url}" target="_blank">${element.copy}</a>
+                // if (element.type == "primary") {
+                    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display href="${item.url}" target="_blank">${item.label}</a>
               `;
-                } else if (element.type == "details-link-outline") {
-                    ctaEle += `<a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail/?id=${event.id}">${element.copy}</a>`;
-                }
+                // } else if (element.type == "details-link-outline") {
+                //     ctaEle += `<a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail/?id=${event.id}">${element.copy}</a>`;
+                // }
             });
 
         return `<section class="bg-ams-white xmed:shadow-2xl xmed:mb-10 w-ful">
@@ -94,7 +95,7 @@ const handleHappenings = (happenings) => {
                 event.id
             }">
               <figure>
-                ${eventPicElement.outerHTML}
+                <img src="${event.image}" alt="${event.title}" loading="lazy" decoding="async" alt="">
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
@@ -111,7 +112,7 @@ const handleHappenings = (happenings) => {
             </a>
             <span class="xmed:hidden">
               <figure>
-                ${eventPicElement.outerHTML}
+                <img src="${event.image}" alt="${event.title}" loading="lazy" decoding="async" alt="">
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
@@ -157,10 +158,8 @@ const handleHappenings = (happenings) => {
         viewAll = true;
         showAlsoLike(event);
     };
-
     if (events.length && (temp_id !== undefined) && (temp_id !== null) && (temp_id.length > 0)) {
-        const id = Number(temp_id);
-        const event = events.find((ev) => ev.id === temp_id);
+        const event = events.find((ev) => ev.id === event_id);
         document.querySelector("#details_left").innerHTML = render_left(event);
         document.querySelector("#details_right").innerHTML =
             render_right(event);
@@ -173,13 +172,13 @@ const handleHappenings = (happenings) => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-    const html = document.querySelector("#happenings-details");
-    if (html) {
-        const items = JSON.parse(html.dataset.happenings);
-        if (items && items.length > 0) {
-            handleHappenings(items);
-            html.dataset.items = [];
-        }
-    }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     const html = document.querySelector("#happenings-details");
+//     if (html) {
+//         const items = JSON.parse(html.dataset.happenings);
+//         if (items && items.length > 0) {
+//             handleHappenings(items);
+//             html.dataset.items = [];
+//         }
+//     }
+// });

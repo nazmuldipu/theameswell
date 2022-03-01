@@ -198,15 +198,13 @@ const handleHappenings = (happenings) => {
         let ctaEle = "";
         event.actions &&
             event.actions.forEach((item) => {
-                const element = item.action;
-                if (element.type == "primary") {
-                    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display ${
-                        element.classes ? element.classes : ""
-                    }" href="${element.url}" target="_blank">${element.copy}</a>
+                // const element = item.action;
+                // if (element.type == "primary") {
+                    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display href="${item.url}" target="_blank">${item.label}</a>
               `;
-                } else if (element.type == "details-link-outline") {
-                    ctaEle += `<a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail/?id=${event.id}">${element.copy}</a>`;
-                }
+                // } else if (element.type == "details-link-outline") {
+                //     ctaEle += `<a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail/?id=${event.id}">${element.copy}</a>`;
+                // }
             });
 
         return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
