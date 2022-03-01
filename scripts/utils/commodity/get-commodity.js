@@ -9,13 +9,17 @@ import CommodityHelper from './commodity-helper'
  * @param {string} pageUid page uid is optional.
  * @returns {json}
  */
- async function getCommodity(commodityId='',pageUid='') {
+ async function getCommodity(commodityId='',pageUid='', itemId='') {
 
     let url = CommodityHelper.getBaseUri()
     let variables = {"allCommodityId": commodityId}
 
     if (pageUid !== '') {
       variables['pagesId'] = pageUid
+    }
+
+    if (itemId !== '') {
+      variables['commodityitemSetId'] = itemId
     }
 
     let options = {
@@ -26,15 +30,15 @@ import CommodityHelper from './commodity-helper'
         },
         body: JSON.stringify({
             query: `
-            query AllCommodity($allCommodityId: UUID, $pagesId: UUID) {
-                allCommodity(id: $allCommodityId, pages_Id: $pagesId) {
+            query AllCommodity($allCommodityId: UUID, $pagesId: UUID, $commodityitemSetId: UUID) {
+                allCommodity(id: $allCommodityId) {
                   edges {
                     node {
                       title
                       slug
                       name
                       queries
-                      commodityitemSet {
+                      commodityitemSet(pages_Id: $pagesId, id: $commodityitemSetId) {
                         edges {
                           node {
                             values
