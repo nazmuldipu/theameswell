@@ -1,8 +1,10 @@
 import { getCommodity } from "./get-commodity";
 
 const getEventTimeString = (start, end)=>{
-    const startTime = start.split('T')[1].split(':');
-    const endTime = end.split('T')[1].split(':');
+    // TODO: FIX your desired logic
+    return
+    const startTime = start?.split('T')[1]?.split(':');
+    const endTime = end?.split('T')[1]?.split(':');
     return startTime[0] + ':' + startTime[1] + ' - ' + endTime[0] + ':' + endTime[1];
 }
 
@@ -58,10 +60,14 @@ const transformEvent = (event) => {
   }
 };
 
-const getAllCommodity = async (pageName) => {
-    console.log('pagename', pageName);
+/**
+ * 
+ * @param {*} pageName 
+ * @returns 
+ */
+const getAllCommodity = async (pageUid="") => {
     // let commodity = await getCommodity("2f729ffb-2290-46ad-83b5-fdc468531220");
-    let commodity = await getCommodity("78351230-3601-42c8-9b3e-a3a7f6179e45");
+    let commodity = await getCommodity("78351230-3601-42c8-9b3e-a3a7f6179e45",pageUid);
     
     let getData =
         commodity.data.allCommodity.edges[0].node.commodityitemSet.edges;

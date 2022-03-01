@@ -2,7 +2,7 @@
 
 import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
 
-getAllCommodity('happenings').then((data) => {
+getAllCommodity('3cd0acd5-58d2-47da-8a2b-18cd8e2b6080').then((data) => {
     console.log(data);
     handleHappenings(data);
 });
