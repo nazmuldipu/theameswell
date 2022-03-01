@@ -36,6 +36,8 @@ import CommodityHelper from './commodity-helper'
                             id
                             isOnline
                             isFeature
+                            isRecurrence
+                            recurrenceDate
                           }
                         }
                       }
