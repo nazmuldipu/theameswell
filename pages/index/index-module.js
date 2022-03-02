@@ -5,7 +5,7 @@ import "../../components/FormSender/index.js";
 import "../../components/WeatherWidget/index.js";
 import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
 
-getAllCommodity('3cd0acd5-58d2-47da-8a2b-18cd8e2b6080').then((data) => {
+getAllCommodity('bc06758c-a3d5-48ae-916e-005771058e05').then((data) => {
     handleHappenings(data);
 });
 
