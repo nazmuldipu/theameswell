@@ -1,4 +1,5 @@
 import { getCommodity } from "./get-commodity";
+import { HAPPENINGS_COMMODITY_ID } from "../../../components/lib/constants";
 
 const getEventTimeString = (start, end)=>{
     const startTime = start?.split('T')[1]?.split(':');
@@ -63,8 +64,8 @@ const transformEvent = (event) => {
  * @param {*} pageName 
  * @returns 
  */
-const getAllCommodity = async (pageUid='', itemId='') => {
-    let commodity = await getCommodity("78351230-3601-42c8-9b3e-a3a7f6179e45", pageUid, itemId);
+const getAllCommodity = async (pageUid = "", itemId = "") => {
+    let commodity = await getCommodity(HAPPENINGS_COMMODITY_ID, pageUid, itemId);
     
     let getData =
         commodity.data.allCommodity.edges[0].node.commodityitemSet.edges;

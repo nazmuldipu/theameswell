@@ -1,8 +1,8 @@
 "use strict";
-
+import { HAPPENINGS_PAGE_ID } from "../../components/lib/constants";
 import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
 
-getAllCommodity('3cd0acd5-58d2-47da-8a2b-18cd8e2b6080').then((data) => {
+getAllCommodity(HAPPENINGS_PAGE_ID).then((data) => {
     handleHappenings(data);
 });
 

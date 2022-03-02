@@ -25,9 +25,7 @@ subfooter__form %}
         {% endfor %}
     {% endif %}
 </section>
-{# dummy web component #}
-{# <event-component></event-component> #}
-<!-- calendar start-->
+
 <section class="xmed:bg-ams-base w-full text-ams-primary">
     <section id="happening_calendar" class="px-6 xmed:px-10 max-w-ameswel m-auto relative">
         <header class="flex items-center justify-center mt-10 mb-7 text-center font-sans">
@@ -59,7 +57,7 @@ subfooter__form %}
         </header>
     {% endif %}
     {% if globalCMS['happenings'] and globalCMS['happenings'].happenings %}
-        <article id="our_happenings" data-happenings="{{globalCMS['happenings'].happenings | stringify}}" class="our_happenings grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24"></article>
+        <article id="our_happenings" class="our_happenings grid items-start max-w-ameswel w-full xmed:grid-cols-3 xmed:gap-16 xmed:px-24"></article>
     {% endif %}
 
     <div class="bg-pattern--ams-grey pt-6 pb-11 xmed:pt-0 xmed:pb-0 text-center mt-16">

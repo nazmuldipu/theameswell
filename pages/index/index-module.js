@@ -4,8 +4,9 @@ import "../../components/RoomsGallery/index.js";
 import "../../components/FormSender/index.js";
 import "../../components/WeatherWidget/index.js";
 import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
+import { INDEX_PAGE_ID } from "../../components/lib/constants";
 
-getAllCommodity('bc06758c-a3d5-48ae-916e-005771058e05').then((data) => {
+getAllCommodity(INDEX_PAGE_ID).then((data) => {
     handleHappenings(data);
 });
 
