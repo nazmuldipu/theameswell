@@ -3,6 +3,12 @@ import "../../components/MediaCarousel/index.js";
 import "../../components/RoomsGallery/index.js";
 import "../../components/FormSender/index.js";
 import "../../components/WeatherWidget/index.js";
+import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
+import { INDEX_PAGE_ID } from "../../components/lib/constants";
+
+getAllCommodity(INDEX_PAGE_ID).then((data) => {
+    handleHappenings(data);
+});
 
 const handleHappenings = (happenings)=> {
 const events = happenings.map((item)=> {
@@ -31,8 +37,6 @@ const monthNames = [
 ];
 
 const createMenuItem = (event) => {
-    const eventPicElement = document.querySelector('.event_id_' + event.id);
-
     const date = new Date(event.date.year, event.date.month - 1, event.date.day);
     const dateString =
         monthNames[date.getMonth()] +
@@ -44,7 +48,9 @@ const createMenuItem = (event) => {
     section.className = "bg-ams-white mb-8 shadow-md mx-6 xmed:mx-0";
     section.innerHTML = `    
     <figure>
-        ${eventPicElement.outerHTML}
+        <div class="w-full overflow-hidden grid justify-center">
+            <img src="${event.image}" alt="${event.title}" loading="lazy" class="max-w-none w-auto h-96" decoding="async" alt="">
+        </div>
         <figcaption>
             <header class="p-4">
                 <span class="text-lg font-sans text-ams-primary">
@@ -62,12 +68,11 @@ const createMenuItem = (event) => {
 };
 
 const shouldShowEvent = event => {
-    console.log('shouldShowEvent', event)
     // Months are zero-indexed for months, and our data is one-indexed
     const eventDate = new Date(event.date.year, event.date.month-1, event.date.day);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    return event.should_show && event.showindexpage && (eventDate.getTime() >= today.getTime());
+    return (eventDate.getTime() >= today.getTime());
 }
 
 const eventDateAscCmp = (a, b) => {
@@ -89,13 +94,3 @@ happeningsToShow.forEach((event) => {
     happeningsEle.appendChild(createMenuItem(event));
 });
 }
-document.addEventListener("DOMContentLoaded", function () {
-    const html = document.querySelector("#happenings-data")
-    if(html){
-        const items = JSON.parse(html.dataset.happenings);
-        if(items && items.length > 0){
-          handleHappenings(items)
-          html.dataset.items = []
-        }
-    }
-  })
