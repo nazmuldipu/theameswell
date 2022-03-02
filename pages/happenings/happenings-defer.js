@@ -3,7 +3,6 @@
 import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
 
 getAllCommodity('3cd0acd5-58d2-47da-8a2b-18cd8e2b6080').then((data) => {
-    console.log(data);
     handleHappenings(data);
 });
 
@@ -19,7 +18,6 @@ const handleHappenings = (happenings) => {
         };
     });
     const hasEventListeners = !!window.addEventListener;
-    // const sto = window.setTimeout;
     const months = [
         "January",
         "February",
@@ -166,8 +164,6 @@ const handleHappenings = (happenings) => {
     };
 
     const renderEventCard = (event) => {
-        // const eventPicElement = document.querySelector(".event_id_" + event.id);
-        // ${eventPicElement.outerHTML}
         return `<section class="bg-ams-white xmed:shadow-2xl mb-4 border-b xmed: border-0 w-96 h-96">
             <figure>
                 <figcaption>
@@ -191,20 +187,11 @@ const handleHappenings = (happenings) => {
         };
         
         const renderOurHappeningsCard = (event) => {
-          // const eventPicElement = document.querySelector(".event_id_" + event.id);
-          // ${eventPicElement.outerHTML}
-      // ${eventPicElement.outerHTML}
 
         let ctaEle = "";
         event.actions &&
             event.actions.forEach((item) => {
-                // const element = item.action;
-                // if (element.type == "primary") {
-                    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display href="${item.url}" target="_blank">${item.label}</a>
-              `;
-                // } else if (element.type == "details-link-outline") {
-                //     ctaEle += `<a class="w-full h-12 flex justify-center items-center border-4 border-ams-gold text-ams-gold text-lg font-medium font-serif-display" href="/happenings-detail/?id=${event.id}">${element.copy}</a>`;
-                // }
+                    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display href="${item.url}" target="_blank">${item.label}</a>`;
             });
 
         return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
@@ -216,9 +203,7 @@ const handleHappenings = (happenings) => {
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
-                      ${months[event.date.month - 1]}, ${event.date.day}, ${
-            event.date.year
-        }
+                      ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
                     </h3>
                     <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
                       ${event.title}
@@ -233,9 +218,7 @@ const handleHappenings = (happenings) => {
                 <figcaption>
                   <header class="px-6 py-4 text-left bg-ams-white">
                     <h3 class="text-lg font-sans">
-                      ${months[event.date.month - 1]}, ${event.date.day}, ${
-            event.date.year
-        }
+                      ${months[event.date.month - 1]}, ${event.date.day}, ${event.date.year}
                     </h3>
                     <h2 class="title-display text-xl xmed:text-2xl font-serif font-medium">
                       ${event.title}
@@ -476,13 +459,3 @@ const handleHappenings = (happenings) => {
 
     new Happenings();
 };
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const html = document.querySelector("#our_happenings");
-//     if (html) {
-//         const items = JSON.parse(html.dataset.happenings);
-//         if (items && items.length > 0) {
-//             handleHappenings(items);
-//         }
-//     }
-// });

@@ -64,7 +64,6 @@ const transformEvent = (event) => {
  * @returns 
  */
 const getAllCommodity = async (pageUid='', itemId='') => {
-    // let commodity = await getCommodity("2f729ffb-2290-46ad-83b5-fdc468531220");
     let commodity = await getCommodity("78351230-3601-42c8-9b3e-a3a7f6179e45", pageUid, itemId);
     
     let getData =
