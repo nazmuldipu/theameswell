@@ -17,7 +17,7 @@ export const GITIGNORE_EMPTY_DIR = `*
 !.gitignore`;
 
 export const INDEX_PAGE = 'index';
-
+export const HOTEL_SITE_URL = 'https://www.theameswellhotel.com/';
 /**
  * 
  * @param {Set} a 
