@@ -99,7 +99,7 @@ try {
     }
     await Promise.all(buildPromises);
 
-    constructSiteMap(BUILD_DIR.pathname, 'https://www.marrammontauk.com')
+    constructSiteMap(BUILD_DIR.pathname, 'https://www.theameswellhotel.com/')
     
     console.log('SUCCESS -- site assets built');
 }
