@@ -17,8 +17,7 @@ import {
     getPageJSONFilePromises,
     filterForExt,
     rmNoExist,
-    constructSiteMap,
-    HOTEL_SITE_URL,
+    constructSiteMap
 } from './lib.js';
 import { buildCSS, generateTailwindSafeList } from './postcss.js';
 import { buildJS, addGlobalBehavior, removeGlobalBehavior } from './esbuild.js';
@@ -100,7 +99,7 @@ try {
     }
     await Promise.all(buildPromises);
 
-    constructSiteMap(BUILD_DIR.pathname, HOTEL_SITE_URL);
+    constructSiteMap(BUILD_DIR.pathname, 'https://www.marrammontauk.com')
     
     console.log('SUCCESS -- site assets built');
 }

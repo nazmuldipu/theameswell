@@ -245,7 +245,7 @@ cms_description %}
     {% endfor %}
 {% endif %}
 {% if globalCMS['happenings'] and globalCMS['happenings'].happenings %}
-<div id="happenings-data" class="happenings-data segment-outer grid bg-pattern--ams-grey xmed:px-4 xmed:justify-items-center py-9 xmed:pt-24 xmed:pb-28">
+<div id="happenings-data" data-happenings="{{globalCMS['happenings'].happenings | stringify}}" class="happenings-data segment-outer grid bg-pattern--ams-grey xmed:px-4 xmed:justify-items-center py-9 xmed:pt-24 xmed:pb-28">
     <article class="xmed:bg-ams-base w-full text-ams-primary hidden">
         {% for event in globalCMS['happenings'].happenings %}
                 {{ global_image(event.image_.global_image, classes = 'w-full h-80 object-cover event_id_' + event.id) }}
