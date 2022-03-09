@@ -1,6 +1,6 @@
 'use strict';
 import path, {extname, join, sep } from 'path';
-import { accessSync, readdirSync, statSync, writeFileSync, createReadStream } from 'fs';
+import { accessSync, readdirSync, statSync, writeFileSync, createReadStream, existsSync } from 'fs';
 import {platform} from 'os';
 import {rm, writeFile} from 'fs/promises';
 import { once } from 'events';
