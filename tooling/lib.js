@@ -1,6 +1,6 @@
 'use strict';
 import path, {extname, join, sep } from 'path';
-import { accessSync, readdirSync, statSync, writeFileSync, createReadStream } from 'fs';
+import { accessSync, readdirSync, statSync, writeFileSync, createReadStream, existsSync } from 'fs';
 import {platform} from 'os';
 import {rm, writeFile} from 'fs/promises';
 import { once } from 'events';
@@ -17,7 +17,7 @@ export const GITIGNORE_EMPTY_DIR = `*
 !.gitignore`;
 
 export const INDEX_PAGE = 'index';
-
+export const HOTEL_SITE_URL = "https://www.theameswellhotel.com/";
 /**
  * 
  * @param {Set} a 
@@ -241,11 +241,18 @@ export const getPageJSONFilePromises = (dataMap, dirPath) => platform() === 'win
 
 export const constructSiteMap = (dirPath, urlBase) => {
     const urls = readdirSync(dirPath)
-        .filter(fileName => extname(fileName) === '.html')
+        .filter(fileDir => {
+            const isIndex = fileDir === INDEX_PAGE;
+            const isValidPage = existsSync(join(dirPath, fileDir, 'index.html'));
+            return isIndex || isValidPage;
+        })
+        /* to prevent a url of www.sitename.com/index */
+        .map(fileName => fileName === INDEX_PAGE ? '' : fileName)
         .map(fileName => `<url>
-        <loc>${new URL(fileName, urlBase).href}</loc>
-        <lastmod>${new Date().toISOString()}</lastmod>
-        </url>`);
+            <loc>${new URL(fileName, urlBase).href}</loc>
+            <lastmod>${new Date().toISOString()}</lastmod>
+            </url>`
+        );
 
     const sitemapStr = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -253,7 +260,7 @@ export const constructSiteMap = (dirPath, urlBase) => {
     </urlset>`;
 
     writeFileSync(join(dirPath, 'sitemap.xml'), sitemapStr);
-}                                                
+}                                               
 
 export const metafilePath = (filename) => join(BUILD_DIR.pathname, filename);
 
