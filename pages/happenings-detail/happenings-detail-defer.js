@@ -2,7 +2,7 @@ import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
 import { HAPPENINGS_PAGE_ID } from "../../components/lib/constants";
 
 const event_id = window.location.search.split("=")[1]; 
-const temp_id = event_id.split('dd')[0];
+const temp_id = event_id.split('__dd')[0];
 
 getAllCommodity( HAPPENINGS_PAGE_ID, temp_id).then((data) => {
     handleHappenings(data);

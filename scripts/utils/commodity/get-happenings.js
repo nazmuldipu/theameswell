@@ -17,7 +17,7 @@ const getEventDateObject = (date) => {
 }
 
 const getId = (id, date)=>{
-    return id + "dd"+ date.year + '_' + date.month + '_' + date.day;
+    return id + "__dd"+ date.year + '_' + date.month + '_' + date.day;
 }
 
 const transformEvent = (event) => {
@@ -26,15 +26,17 @@ const transformEvent = (event) => {
   //object destructuring
   const { id, isRecurrence, recurrenceDate } = event;
   const eventData = event.values.data;
-  const { info, button_1, button_2, button_3, button_4, preset_timeline, preset_recurrence } = eventData;
+  const { info, buttons, preset_timeline, preset_recurrence } = eventData;
   const { title, description } = info;
-  
+    console.log(eventData);
   // add action buttons
   const actions = [];
-  if(button_1.url.length > 3 ) actions.push(button_1);
-  if(button_2.url.length > 3 ) actions.push(button_2);
-  if(button_3.url.length > 3 ) actions.push(button_3);
-  if(button_4.url.length > 3 ) actions.push(button_4);
+  if(buttons.length > 0) {
+      buttons.forEach((button) => {
+            const { label, url } = button;
+            actions.push(button);
+      });
+  }
 
   // add image
   let image = eventData.image.image[0];
