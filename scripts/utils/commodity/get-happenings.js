@@ -28,7 +28,7 @@ const transformEvent = (event) => {
   const eventData = event.values.data;
   const { info, buttons, preset_timeline, preset_recurrence } = eventData;
   const { title, description } = info;
-    console.log(eventData);
+
   // add action buttons
   const actions = [];
   if(buttons.length > 0) {
