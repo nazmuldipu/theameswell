@@ -17,7 +17,7 @@ export const GITIGNORE_EMPTY_DIR = `*
 !.gitignore`;
 
 export const INDEX_PAGE = 'index';
-export const HOTEL_SITE_URL = 'https://www.theameswellhotel.com/';
+export const HOTEL_SITE_URL = "https://www.theameswellhotel.com/";
 /**
  * 
  * @param {Set} a 
@@ -260,7 +260,7 @@ export const constructSiteMap = (dirPath, urlBase) => {
     </urlset>`;
 
     writeFileSync(join(dirPath, 'sitemap.xml'), sitemapStr);
-}                                                
+}                                               
 
 export const metafilePath = (filename) => join(BUILD_DIR.pathname, filename);
 
