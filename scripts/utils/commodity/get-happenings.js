@@ -2,17 +2,17 @@ import { getCommodity } from "./get-commodity";
 import { HAPPENINGS_COMMODITY_ID } from "../../../components/lib/constants";
 
 const getEventTimeString = (start, end)=>{
-    const startTime = start?.split('T')[1]?.split(':');
-    const endTime = end?.split('T')[1]?.split(':');
-    return startTime[0] + ':' + startTime[1] + ' - ' + endTime[0] + ':' + endTime[1];
+    const startTime = start?.split(', ')[1].split(" ");
+    const endTime = end?.split(', ')[1].split(" ");
+    return startTime[0].split(':')[0] + ':' + startTime[0].split(':')[1] + ' ' +startTime[1] + ' - ' + endTime[0].split(':')[0] + ':' + endTime[0].split(':')[1] + ' ' + endTime[1];
 }
 
 const getEventDateObject = (date) => {
-    const evDate = date.split(/[ T]+/)[0].split('-');
+    const evDate = date.split(',')[0].split('/');
     return {
-        day: evDate[2],
-        month: evDate[1],
-        year: evDate[0],
+        day: evDate[1],
+        month: evDate[0],
+        year: evDate[2],
     };
 }
 
@@ -53,7 +53,6 @@ const transformEvent = (event) => {
     });
     return res;
   }else{
-      //TODO: update date event here > start_date
       const {start_date, start_time, end_time} = preset_timeline;
       const date = getEventDateObject(start_date);
       const time = getEventTimeString(start_time, end_time);

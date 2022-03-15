@@ -62,7 +62,7 @@ const handleHappenings = (happenings) => {
             event.title
         }</h1>
     </header>
-    <p class="xmed:pt-4 pb-2 text-lg">${months[event.date.month - 1]}, ${
+    <p class="xmed:pt-4 pb-2 text-lg">${months[event.date.month - 1]} ${
             event.date.day
         }, ${event.date.year}</p>
     <p class="pb-3 text-lg">${event.time}</p>
