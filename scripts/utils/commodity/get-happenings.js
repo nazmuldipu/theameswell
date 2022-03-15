@@ -3,7 +3,6 @@ import { HAPPENINGS_COMMODITY_ID } from "../../../components/lib/constants";
 
 const getEventTimeString = (start, end)=>{
     const startTime = start?.split(', ')[1].split(" ");
-    console.log('start', end);
     const endTime = end?.split(', ')[1].split(" ");
     return startTime[0].split(':')[0] + ':' + startTime[0].split(':')[1] + ' ' +startTime[1] + ' - ' + endTime[0].split(':')[0] + ':' + endTime[0].split(':')[1] + ' ' + endTime[1];
 }
