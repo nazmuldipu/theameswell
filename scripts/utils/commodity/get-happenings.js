@@ -77,6 +77,10 @@ const getAllCommodity = async (pageUid = "", itemId = "") => {
       events.push(...transformEvent(item.node));
     });
     
+    events.sort( (a, b) => {
+        return new Date(`${a.date.year}-${a.date.month}-${a.date.day}`) - new Date(`${b.date.year}-${b.date.month}-${b.date.day}`);
+    })
+    
     return events;
 };
 
