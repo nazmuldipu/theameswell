@@ -48,7 +48,7 @@ const transformEvent = (event) => {
     const time = getEventTimeString(start_time, end_time);
     recurrenceDate.forEach((dateObj) => { 
         const date = getEventDateObject(dateObj);
-        const evObj = {id: getId(id, date), date, time, image, title, description, actions}
+        const evObj = {id: getId(id, date), date, time, image, title, description, actions, jsDate: Date.parse(dateObj)}
         res.push(evObj);
     });
     return res;
@@ -56,7 +56,7 @@ const transformEvent = (event) => {
       const {start_date, start_time, end_time} = preset_timeline;
       const date = getEventDateObject(start_date);
       const time = getEventTimeString(start_time, end_time);
-      return [{id: getId(id, date), date, time, image, title, description, actions}];
+      return [{id: getId(id, date), date, time, image, title, description, actions, jsDate: Date.parse(start_date)}];
   }
 };
 
@@ -78,7 +78,7 @@ const getAllCommodity = async (pageUid = "", itemId = "") => {
     });
     
     events.sort( (a, b) => {
-        return new Date(`${a.date.year}-${a.date.month}-${a.date.day}`) - new Date(`${b.date.year}-${b.date.month}-${b.date.day}`);
+        return (a.jsDate > b.jsDate) ? 1 : (a.jsDate < b.jsDate) ?  -1 : 0;
     })
     
     return events;
