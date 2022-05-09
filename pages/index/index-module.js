@@ -3,6 +3,7 @@ import "../../components/MediaCarousel/index.js";
 import "../../components/RoomsGallery/index.js";
 import "../../components/FormSender/index.js";
 import "../../components/WeatherWidget/index.js";
+import "../../components/LightBox/pdfLightbox.js";
 import { getAllCommodity } from "../../scripts/utils/commodity/get-happenings";
 import { INDEX_PAGE_ID } from "../../components/lib/constants";
 
