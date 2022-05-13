@@ -1,5 +1,6 @@
 /****  start imports  ********************************/
 @import "../../styles/global.css";
+@import "basiclightbox/dist/basicLightbox.min.css";
 /****  end imports  ********************************/
 
 @media all and ( max-width: 899px ) {

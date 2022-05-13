@@ -4,3 +4,21 @@
         <a class="self-auto" href="https://www.skipperhospitality.com/?utm_source=Partner&utm_medium=Web&utm_campaign=The%20Ameswell"><img alt="Skipper Hospitality" src="/images/skipper_logo.svg" width="108" height="17"></a>
     </aside>
 {% endmacro %}
+
+{% macro pdfLightbox() %}
+    <template style="display:none" id="pdf-lightbox">
+        <div class="pdf-lightbox">
+            <div class="pdf-lightbox-inner">
+                <div class="close-icon" data-close="pdf-lighbox">
+                    <i>X</i>
+                </div>
+                <div title="Amswell Logo" class="logo-section"></div>
+                <p class="pdf-lightbox-text">To our valued guests, </p>
+                <p class="pdf-lightbox-text">On <strong>Monday, May 23rd</strong> and <strong>Tuesday, May 24th</strong>, many spaces at The Ameswell Hotel will be inaccessible due to a private group buyout, including The Flyby Cafe, Roger Bar and Restaurant, and Rejuv Spa.</p>
+                <p class="pdf-lightbox-text">Access to amenities such as our 24/7 fitness center, heated saltwater outdoor pool and yoga lawn will remain open to all in-house guests. </p>
+                <p class="pdf-lightbox-text">We sincerely apologize for any inconvenience and thank you for your understanding.</p>
+                <p>From our team at The Ameswell Hotel</p>
+            </div>
+        </div>
+    </template>    
+{% endmacro %}
