@@ -468,3 +468,11 @@ body {
 .pdf-lightbox-text {
     padding-bottom: 20px;
 }
+.pdf-lightbox .logo-section{
+    background: url("/images/black_loading_icon.svg") no-repeat center center;
+    width: 90px;
+    height: 90px;
+    margin-top: -40px;
+    margin-left: -40px;
+    margin-bottom: 30px;
+}
