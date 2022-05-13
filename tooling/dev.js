@@ -39,6 +39,7 @@ const pageEntryPoints = getPageAssets(PAGES_DIR).flat();
 // so that asynchronously loaded components can dynamically rely on the libraries
 const componentJSLibEntryPoints = getJSLibAssets(join(COMPONENT_DIR.pathname, 'lib'));
 const componentCSSLibEntryPoints = getCSSLibAssets(join(COMPONENT_DIR.pathname, 'lib'));
+const globalScriptsJSEntryPoints = getJSLibAssets(join(SCRIPTS_DIR.pathname, 'global-scripts'));
 const outputPoints = pageEntryPoints.map(point => 
     replacePathBase(point, BUILD_DIR.pathname, basename(PAGES_DIR.pathname)));      
 const pageDataMap = getPageDataMap(outputPoints);
@@ -107,6 +108,19 @@ try {
             )
         );
     }
+
+    // build global scripts
+    if(globalScriptsJSEntryPoints.length) {
+        buildPromises.push(
+            buildJS(
+                globalScriptsJSEntryPoints,
+                BUILD_DIR.pathname,
+                SCRIPTS_DIR.pathname,
+                metafilePath('meta-global-scripts.json')
+            )
+        );
+    }
+
     const [cssDepSet, {buildDeps: jsDepSet}] = await Promise.all(buildPromises);
     console.log('js and css and html built; now setting up dev server and file watchers');
     // watch
