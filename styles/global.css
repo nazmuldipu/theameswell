@@ -449,3 +449,22 @@ body {
     font-weight: theme('fontWeight.medium');
 }
 */
+
+/** temp lightbox styles **/
+.pdf-lightbox {
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    padding: 60px;
+    background: white;
+}
+
+.pdf-lightbox-inner {
+    padding: 60px;
+    border: 4px solid black;
+    text-align: center;
+}
+
+.pdf-lightbox-text {
+    padding-bottom: 20px;
+}
