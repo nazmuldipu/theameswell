@@ -450,13 +450,17 @@ body {
 }
 */
 
-/** temp lightbox styles **/
+
 .pdf-lightbox {
-    width: 80%;
+    width: 100%;
     max-width: 900px;
     margin: auto;
-    padding: 60px;
+    padding: 1rem;
     background: white;
+    @media all and (min-width: 768px) {
+        padding: 60px;
+        width: 100%;
+    }
 }
 
 .pdf-lightbox-inner {
@@ -472,7 +476,31 @@ body {
     background: url("/images/black_loading_icon.svg") no-repeat center center;
     width: 90px;
     height: 90px;
-    margin-top: -40px;
-    margin-left: -40px;
+    margin-top: -10px;
+    margin-left: -10px;
     margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+        margin-top: -40px;
+        margin-left: -40px;
+        margin-bottom: 30px;
+    }
+}
+.close-icon{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 25px;
+    height: 25px;
+    font-size: 20px ;
+    font-style: normal;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+    @media all and (min-width: 768px) {
+        display: none;
+    }
 }
