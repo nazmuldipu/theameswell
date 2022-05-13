@@ -4,3 +4,9 @@
         <a class="self-auto" href="https://www.skipperhospitality.com/?utm_source=Partner&utm_medium=Web&utm_campaign=The%20Ameswell"><img alt="Skipper Hospitality" src="/images/skipper_logo.svg" width="108" height="17"></a>
     </aside>
 {% endmacro %}
+
+{% macro pdfLightbox(pdfUrl="http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true") %}
+    <template style="display:none" id="pdf-lightbox">
+        <iframe src="https://docs.google.com/viewer?url={{pdfUrl}}" style="width:60vw; height:600px;" frameborder="0"></iframe>
+    </template>    
+{% endmacro %}

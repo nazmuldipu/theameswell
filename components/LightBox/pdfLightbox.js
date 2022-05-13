@@ -1,9 +1,19 @@
 import * as basicLightbox from 'basiclightbox';
-
-const instance = basicLightbox.create(`
-<iframe src="https://docs.google.com/viewer?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:80vw; height:600px;" frameborder="0"></iframe>
-`, {
+const LIGHTBOX_KEY = 'lightbox';
+const lightBoxElement = document.getElementById('pdf-lightbox');
+lightBoxElement.style.display = 'block';
+const instance = basicLightbox.create(lightBoxElement, {
     closable: true,
+    onClose: (instance) => {
+        localStorage.setItem(LIGHTBOX_KEY, 'closed');
+    },
+    onShow: (instance) => {
+        localStorage.setItem(LIGHTBOX_KEY, 'open');
+    }
 });
 
-instance.show();
+const lightBoxState = localStorage.getItem(LIGHTBOX_KEY);
+const isLightBoxClosed = lightBoxState === 'closed';
+if(!isLightBoxClosed) {
+    instance.show();
+}
