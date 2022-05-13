@@ -5,8 +5,8 @@
     </aside>
 {% endmacro %}
 
-{% macro pdfLightbox(pdfUrl="http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true") %}
+{% macro pdfLightbox(pdfUrl="") %}
     <template style="display:none" id="pdf-lightbox">
-        <iframe src="https://docs.google.com/viewer?url={{pdfUrl}}" style="width:60vw; height:600px;" frameborder="0"></iframe>
+        <iframe src="https://docs.google.com/viewer?url={{pdfUrl}}" style="width:60vw; height:700px;" frameborder="0"></iframe>
     </template>    
 {% endmacro %}
