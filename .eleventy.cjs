@@ -1,7 +1,7 @@
 'use strict';
 
 const htmlmin = require('html-minifier');
-const { basename, join, parse, relative, posix } = require('path');
+const { basename, join, parse } = require('path');
 const { copyFileSync,  readdirSync, renameSync, openSync } = require('fs');
 const { getImgSizes, getSrcSet, buildOutputDir, get_resized_image_url, getImageUrl } = require('./tooling/eleventy.cjs');
 const util = require('util');
@@ -66,12 +66,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksFilter("stringify", function(obj) {
         return JSON.stringify(obj);
     });
-
-    eleventyConfig.addNunjucksShortcode('script', function(script, pageUrl){
-        const relativePath = relative(pageUrl, "/build") || './';
-        const scriptPath = posix.join(relativePath,`${process.env.SCRIPT_PATH|| ''}`, script);
-        return `<script src="${scriptPath}" type="module"></script>`;
-    })
 
     if (process.env.MINIMAL_PREVIEW) {
          // nothing to copy for preview
