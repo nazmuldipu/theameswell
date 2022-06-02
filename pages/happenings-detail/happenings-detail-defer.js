@@ -53,7 +53,7 @@ const handleHappenings = (happenings) => {
         let ctaEle = "";
         event.actions &&
         event.actions.forEach((item) => {
-                ctaEle += `<a class="w-64 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href="${item.url}" target="_blank">${item.label}</a>`;
+                ctaEle += `<a class="w-64 h-12 bg-ams-gold flex justify-center items-center text-ams-white text-lg font-medium font-serif-display" href='${item.url.replace(/\s/g, "")}' target="_blank">${item.label}</a>`;
             });
 
         let html = `
