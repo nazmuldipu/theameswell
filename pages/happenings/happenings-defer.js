@@ -6,6 +6,10 @@ getAllCommodity(HAPPENINGS_PAGE_ID).then((data) => {
     handleHappenings(data);
 });
 
+function openUrl(url){
+    window.open(url, '_blank');
+}
+
 const handleHappenings = (happenings) => {
     const events = happenings.map((item) => {
         return {
@@ -187,11 +191,16 @@ const handleHappenings = (happenings) => {
         };
         
         const renderOurHappeningsCard = (event) => {
-
+            function openUrl(e){
+                const url = e.target.getAttribute("data-url");
+                window.open(url, '_self');
+            }
+            window.openUrl = openUrl;
         let ctaEle = "";
         event.actions &&
             event.actions.forEach((item) => {
-                    ctaEle += `<a class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display href="${item.url}" target="_blank">${item.label}</a>`;
+                    const url = new URL(item.url);
+                    ctaEle += `<a data-url=${item.url} class="w-full h-12 flex justify-center items-center bg-ams-gold text-ams-white text-lg font-medium font-serif-display href="${url.toString()}" onclick="openUrl(event)" target="_blank">${item.label}</a>`;
             });
 
         return `<section class="bg-ams-white xmed:shadow-2xl mb-10 w-full">
