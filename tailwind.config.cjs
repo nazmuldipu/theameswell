@@ -112,6 +112,7 @@ module.exports = {
       },
       gridTemplateRows: {
         'hero-home': '400px auto',
+        'happenings-home': '230px auto',
         'home-hero': '0px auto',
         'slideshow': 'repeat(3, auto)',
         'footer': 'repeat(3, auto)'
